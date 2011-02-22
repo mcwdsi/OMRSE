@@ -43,6 +43,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&owl;deprecated"/>
     
 
 
@@ -197,6 +198,7 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000012">
         <rdfs:label xml:lang="en">health care provider</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000010"/>
+        <owl:deprecated rdf:datatype="&xsd;boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -231,7 +233,7 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000016">
-        <rdfs:label>health care provider person</rdfs:label>
+        <rdfs:label xml:lang="en">person health care provider role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000010"/>
     </owl:Class>
     
@@ -267,10 +269,10 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000022">
-        <rdfs:label>collection of organisms</rdfs:label>
+        <rdfs:label xml:lang="en">collection of organisms</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;ObjectAggregate"/>
-        <rdfs:comment>Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  </rdfs:comment>
-        <IAO_0000115>An object aggregate of organisms.</IAO_0000115>
+        <IAO_0000115 xml:lang="en">An object aggregate of organisms.</IAO_0000115>
+        <rdfs:comment xml:lang="en">Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  </rdfs:comment>
     </owl:Class>
     
 
@@ -278,9 +280,9 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023">
-        <rdfs:label>collection of humans</rdfs:label>
+        <rdfs:label xml:lang="en">collection of humans</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000022"/>
-        <rdfs:comment>An object aggregate all of whose components are human beings.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An object aggregate all of whose components are human beings.</rdfs:comment>
     </owl:Class>
     
 
@@ -288,9 +290,9 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000024">
-        <rdfs:label>role in human social processes</rdfs:label>
+        <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;Role"/>
-        <IAO_0000115>A role played by an entity in human social processes.</IAO_0000115>
+        <IAO_0000115 xml:lang="en">A role played by an entity in human social processes.</IAO_0000115>
     </owl:Class>
     
 
@@ -298,9 +300,9 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000025">
-        <rdfs:label>organization social role</rdfs:label>
+        <rdfs:label xml:lang="en">organization social role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000024"/>
-        <IAO_0000115>A role in human social processes played by an organization.</IAO_0000115>
+        <IAO_0000115 xml:lang="en">A role in human social processes played by an organization.</IAO_0000115>
     </owl:Class>
     
 
@@ -308,10 +310,10 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000026">
-        <rdfs:label>organism social role</rdfs:label>
+        <rdfs:label xml:lang="en">organism social role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000024"/>
-        <IAO_0000115>A role in human social processes played by an organism.</IAO_0000115>
-        <rdfs:comment>Includes animals as well as humans.  For example, pet, assistance animal, animal grown for food, work animal, domesticated animal, K-9, etc.  Human roles include gender role, party to legal entities, health care provider roles like doctor, nurse, etc.</rdfs:comment>
+        <IAO_0000115 xml:lang="en">A role in human social processes played by an organism.</IAO_0000115>
+        <rdfs:comment xml:lang="en">Includes animals as well as humans.  For example, pet, assistance animal, animal grown for food, work animal, domesticated animal, K-9, etc.  Human roles include gender role, party to legal entities, health care provider roles like doctor, nurse, etc.</rdfs:comment>
     </owl:Class>
     
 
@@ -319,9 +321,9 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000027">
-        <rdfs:label>organization health care role</rdfs:label>
+        <rdfs:label xml:lang="en">organization health care role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000025"/>
-        <IAO_0000115>An organization social role played by an organization in health care processes.</IAO_0000115>
+        <IAO_0000115 xml:lang="en">An organization social role played by an organization in health care processes.</IAO_0000115>
     </owl:Class>
     
 
@@ -339,5 +341,5 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
 
 
 
-<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.0.0.1451) http://owlapi.sourceforge.net -->
 
