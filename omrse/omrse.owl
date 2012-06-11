@@ -41,8 +41,8 @@
 
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    <owl:AnnotationProperty rdf:about="&owl;deprecated"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&owl;deprecated"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
@@ -476,7 +476,7 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245">
         <rdfs:label xml:lang="en">organization</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;IndependentContinuant"/>
+        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
         <IAO_0000119 rdf:datatype="&xsd;string">GROUP: OBI</IAO_0000119>
         <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Alan Ruttenberg</IAO_0000117>
         <IAO_0000117 rdf:datatype="&xsd;string">PERSON: Bjoern Peters</IAO_0000117>
@@ -960,7 +960,7 @@ Mathias Brochhausen</IAO_0000117>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&snap;IndependentContinuant"/>
+        <rdfs:subClassOf rdf:resource="&snap;ObjectAggregate"/>
         <IAO_0000115 xml:lang="en">An aggregate of organizations that have some feature in common, but is not itself an organization.</IAO_0000115>
         <rdfs:comment xml:lang="en">It is often convenient to group organizations together that otherwise might not even interact with one another. </rdfs:comment>
         <IAO_0000117 xml:lang="en">William R. Hogan</IAO_0000117>
