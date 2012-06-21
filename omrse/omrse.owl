@@ -25,6 +25,7 @@
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&#39;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY (http://ub2020.buffalo.edu/strategicstrengths/announcements/wp-content/uploads/2010/09/ehr-september-22.pdf)</rdfs:comment>
         <dc:creator xml:lang="en">William Hogan</dc:creator>
+        <rdfs:comment xml:lang="en">test</rdfs:comment>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
         <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
     </owl:Ontology>
@@ -41,8 +42,8 @@
 
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     <owl:AnnotationProperty rdf:about="&owl;deprecated"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
