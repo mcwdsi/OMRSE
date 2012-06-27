@@ -44,8 +44,8 @@
 
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     <owl:AnnotationProperty rdf:about="&owl;deprecated"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
@@ -1057,6 +1057,9 @@ Mathias Brochhausen</IAO_0000117>
         <IAO_0000115 xml:lang="en">A role borne by a human individual or by a collection of humans regarded as possessing rights and duties enforeable at law.</IAO_0000115>
         <IAO_0000117>Mathias Brochhausen</IAO_0000117>
         <IAO_0000119>Malcolm N. Shaw: International Law. Cambridge University Press, Cambridge, 2008.</IAO_0000119>
+        <rdfs:comment xml:lang="en">We are aware of the fact that Wikipedia&#39;s definition differs from ours by saying that &quot;Legal personality (...) is the characteristic of a non-living entity regarded by law to have the status of personhood&quot; (http://en.wikipedia.org/wiki/Legal_personality) 
+However, Shaw explicates:
+&quot;In any legal system, certain entities, whether they be individuals or companies, will be regarded as possessing rights and duties enforceable at law. Thus an individual may prosecute or be prosecuted for assault and a company can sue for breach of contract. They are able to do this because the law recognises them as &#39;legal persons&#39; possessing the capacity to have and to maintain certain rights, and being subject to perform specific duties. (...) In municipal law individuals, limited companies and public corporations are recognized as each possessing a distinct legal personality, the terms of which are circumscribed by the relevant legislation&quot; (Shaw MN: International Law. Sixth Edition. Cambridge University Press, Cambridge, 2008).                We hold that Shaw&#39;s position is ontological more prolific since it not only allows to explain how groups of individuals become recognized as unities at law, but also how different individuals can hold different legal personality roles (always against the context of one legal system). The latter will proof useful when dealing with the representing comatous patients or minorsat law in ontologies.</rdfs:comment>
     </owl:Class>
     
 
