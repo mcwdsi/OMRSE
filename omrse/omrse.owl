@@ -44,8 +44,8 @@
 
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    <owl:AnnotationProperty rdf:about="&owl;deprecated"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&owl;deprecated"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
@@ -591,7 +591,9 @@ This issue is outside the scope of OBI.</IAO_0000116>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000000">
         <rdfs:label xml:lang="en">social security number</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
+        <dc:creator>Cheng Chen(cxchen1@ualr.edu)</dc:creator>
         <IAO_0000118>SSN</IAO_0000118>
+        <IAO_0000119>http://en.wikipedia.org/wiki/Social_Security_number</IAO_0000119>
         <IAO_0000115>Social Security Number(SSN) is a  Centrally Registered IDentifier that is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents under section 205(c) of the Social Security Act, codified as 42 U.S.C. § 405(c). The number is issued to an individual by the Social Security Administration, an independent agency of the United States government. Its primary purpose is to track individuals for Social Security purposes.</IAO_0000115>
     </owl:Class>
     
