@@ -7,8 +7,10 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY omrse2 "http://purl.obolibrary.org/obo/omrse.owl#" >
     <!ENTITY omrse "http://purl.obolibrary.org/obo/omrse.owl/" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
 
 
@@ -20,7 +22,9 @@
      xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:omrse2="http://purl.obolibrary.org/obo/omrse.owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse.owl">
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <dc:creator>Amanda Hicks</dc:creator>
@@ -46,8 +50,8 @@
 
     <owl:AnnotationProperty rdf:about="&dc;creator"/>
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    <owl:AnnotationProperty rdf:about="&owl;deprecated"/>
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&owl;deprecated"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label xml:lang="en">definition</rdfs:label>
     </owl:AnnotationProperty>
@@ -138,6 +142,33 @@
         <IAO_0000117 rdf:datatype="&xsd;string">Person:Helen Parkinson</IAO_0000117>
         <IAO_0000115 rdf:datatype="&xsd;string">Relating a legal person to an organization in the case where the legal person has a role as member of the organization</IAO_0000115>
         <IAO_0000111 rdf:datatype="&xsd;string">is member of organization</IAO_0000111>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001688"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001688 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0001688">
+        <rdfs:label xml:lang="en">has organization member</rdfs:label>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -595,8 +626,8 @@ This issue is outside the scope of OBI.</IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000578"/>
         <dc:creator>Cheng Chen(cxchen1@ualr.edu)</dc:creator>
         <IAO_0000118>SSN</IAO_0000118>
+        <IAO_0000115>Social Security Number(SSN) is a Centrally Registered IDentifier that is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents under section 205(c) of the Social Security Act, codified as 42 U.S.C. § 405(c). The number is issued to an individual by the Social Security Administration, an independent agency of the United States government. Its primary purpose is to track individuals for Social Security purposes.</IAO_0000115>
         <IAO_0000119>http://en.wikipedia.org/wiki/Social_Security_number</IAO_0000119>
-        <IAO_0000115>Social Security Number(SSN) is a  Centrally Registered IDentifier that is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents under section 205(c) of the Social Security Act, codified as 42 U.S.C. § 405(c). The number is issued to an individual by the Social Security Administration, an independent agency of the United States government. Its primary purpose is to track individuals for Social Security purposes.</IAO_0000115>
     </owl:Class>
     
 
@@ -711,6 +742,7 @@ William R. Hogan</IAO_0000117>
         <rdfs:label xml:lang="en">human health care role</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000024"/>
         <IAO_0000115 xml:lang="en">A human social role that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. </IAO_0000117>
         <IAO_0000117 xml:lang="en">William R. Hogan
 Mathias Brochhausen</IAO_0000117>
         <IAO_0000118 xml:lang="en">health care role</IAO_0000118>
@@ -733,7 +765,9 @@ Mathias Brochhausen</IAO_0000117>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <IAO_0000115 xml:lang="en">A human health care role that inheres in an organism [human?] as the recipient of a health care service.</IAO_0000115>
         <IAO_0000115 xml:lang="en">A role borne by an organism being as the recipient of a health care service.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
         <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
         <IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Patient</IAO_0000119>
         <IAO_0000118 xml:lang="en">patient</IAO_0000118>
@@ -939,49 +973,14 @@ Mathias Brochhausen</IAO_0000117>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000028 -->
+       <!-- http://purl.obolibrary.org/obo/OMRSE_00000028 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000028">
         <rdfs:label xml:lang="en">geopolitical organization</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <IAO_0000115 xml:lang="en">An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii).</IAO_0000115>
         <IAO_0000117 xml:lang="en">William R. Hogan</IAO_0000117>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000029 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000029">
-        <rdfs:label xml:lang="en">sovereign state</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000028"/>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
-        <IAO_0000115 xml:lang="en">A geopolitical entity with a defined territory on which it exercises internal and external sovereignty, a permanent population, a government, and the capacity to enter into relations with other sovereign states.</IAO_0000115>
-        <rdfs:comment xml:lang="en">Per Wikipedia, the word &#39;nation&#39; does not always refer to soverign states.  For example, the &quot;nation of Islam&quot;.</rdfs:comment>
-        <IAO_0000117 xml:lang="en">William R. Hogan</IAO_0000117>
-        <IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Sovereign_state</IAO_0000119>
-        <IAO_0000118 xml:lang="en">nation</IAO_0000118>
-        <IAO_0000118 xml:lang="en">nation state</IAO_0000118>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000030 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000030">
-        <rdfs:label xml:lang="en">subnational entity</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000846"/>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000029"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000028"/>
-        <IAO_0000115 xml:lang="en">A geopolitical entity that recognizes a sovereign state as its only higher political authority.</IAO_0000115>
-        <IAO_0000117 xml:lang="en">William R. Hogan</IAO_0000117>
-    </owl:Class>
-    
 
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000031 -->
@@ -991,12 +990,13 @@ Mathias Brochhausen</IAO_0000117>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000846"/>
-                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000029"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000045"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000046"/>
         <IAO_0000115 xml:lang="en">A subnational entity that is the primary organizational member of a nation, is subject to the full set of laws of the nation, enjoys all the privileges established under the laws of the nation, is not a member of any other geopolitical entity, and itself governs a part of the geographical region governed by the nation.</IAO_0000115>
+        <rdfs:comment>example: Northern Ireland</rdfs:comment>
     </owl:Class>
     
 
@@ -1005,7 +1005,7 @@ Mathias Brochhausen</IAO_0000117>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000032">
         <rdfs:label xml:lang="en">geopolitical dependency</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000046"/>
         <IAO_0000115 xml:lang="en">A subnational entity that does not possess full political independence or sovereignty as a sovereign state, but remains politically outside of the controlling state and controls a geographical region that is outside the controlling state&#39;s integral region.</IAO_0000115>
         <rdfs:comment xml:lang="en">Typically, the common feature is that the dependency does not conduct foreign affairs, and relegates this authority to the sovereign state.  BUt otherwise, it is largely or completely autonomous relative to the administrative subdivisions.  Examples include Puerto Rico (U.S.), Guam (U.S.), Greenland (Denmark), French Polynesia (France), and Falkland Islands (United Kingdom). </rdfs:comment>
     </owl:Class>
@@ -1017,15 +1017,28 @@ Mathias Brochhausen</IAO_0000117>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033">
         <rdfs:label xml:lang="en">aggregate of organizations</rdfs:label>
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&snap;ObjectAggregate"/>
-        <IAO_0000115 xml:lang="en">An aggregate of organizations that have some feature in common, but is not itself an organization.</IAO_0000115>
+        <IAO_0000115 xml:lang="en">An object aggregate that is not itself an organization and whose members are only organizations that have some feature in common</IAO_0000115>
         <rdfs:comment xml:lang="en">It is often convenient to group organizations together that otherwise might not even interact with one another. </rdfs:comment>
-        <IAO_0000117 xml:lang="en">William R. Hogan</IAO_0000117>
+        <IAO_0000117 xml:lang="en">William R. Hogan
+Amanda Hicks</IAO_0000117>
     </owl:Class>
     
 
@@ -1035,12 +1048,25 @@ Mathias Brochhausen</IAO_0000117>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000034">
         <rdfs:label xml:lang="en">aggregate of sovereign states</rdfs:label>
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000029"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000045"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000045"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000045"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000035"/>
+        <IAO_0000117 xml:lang="en">An aggregate of geopoli organizations that is not itself a sovereign state and whose members are only sovereign states that have some feature in common</IAO_0000117>
         <IAO_0000115 xml:lang="en">An aggregate of sovereign states that share some feature in common, but is not an organization nor necessarily the outcome of some treaty among them.</IAO_0000115>
         <IAO_0000117 xml:lang="en">William R. Hogan</IAO_0000117>
     </owl:Class>
@@ -1050,17 +1076,29 @@ Mathias Brochhausen</IAO_0000117>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000035">
-        <rdfs:label xml:lang="en">aggregate of geopolitical organizations</rdfs:label>
+        <rdfs:label xml:lang="en">aggregate of geopoli organizations</rdfs:label>
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000028"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000028"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000028"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000028"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000033"/>
-        <IAO_0000115 xml:lang="en">An aggregate of geopolitical organizations with some feature in common.</IAO_0000115>
-        <rdfs:comment xml:lang="en">Examples: all sovereign states whose territory is part of North America, all British Crown Dependencies, all midwestern US States, all US dependencies, etc.</rdfs:comment>
-        <IAO_0000117 xml:lang="en">William R. Hogan</IAO_0000117>
+        <IAO_0000115 xml:lang="en">An object aggregate that is not itself a geopolitical organization and whose members are only geopolitical organizations that have some feature in common</IAO_0000115>
+        <IAO_0000117 xml:lang="en">William R. Hogan
+Amanda Hicks</IAO_0000117>
     </owl:Class>
     
 
@@ -1070,12 +1108,26 @@ Mathias Brochhausen</IAO_0000117>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000036">
         <rdfs:label xml:lang="en">aggregate of dependencies</rdfs:label>
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000032"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000032"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000032"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000032"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000035"/>
+        <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
+        <IAO_0000115 xml:lang="en">An aggregate of geopoli organizations that is not itself a geopolitical dependency and whose members are only geopolitical dependencies that have some feature in common.</IAO_0000115>
     </owl:Class>
     
 
@@ -1085,12 +1137,26 @@ Mathias Brochhausen</IAO_0000117>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000037">
         <rdfs:label xml:lang="en">aggregate of major administrative subdivisions</rdfs:label>
         <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000031"/>
-            </owl:Restriction>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000031"/>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000031"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000031"/>
+                        <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000035"/>
+        <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
+        <IAO_0000115 xml:lang="en">An aggregate of geopoli organizations that is not itself a major administrative subdivision and whose members are only major administrative subdivisions that have some feature in common</IAO_0000115>
     </owl:Class>
     
 
@@ -1120,6 +1186,136 @@ Mathias Brochhausen</IAO_0000117>
 However, Shaw explicates:
 &quot;In any legal system, certain entities, whether they be individuals or companies, will be regarded as possessing rights and duties enforceable at law. Thus an individual may prosecute or be prosecuted for assault and a company can sue for breach of contract. They are able to do this because the law recognises them as &#39;legal persons&#39; possessing the capacity to have and to maintain certain rights, and being subject to perform specific duties. (...) In municipal law individuals, limited companies and public corporations are recognized as each possessing a distinct legal personality, the terms of which are circumscribed by the relevant legislation&quot; (Shaw MN: International Law. Sixth Edition. Cambridge University Press, Cambridge, 2008).                We hold that Shaw&#39;s position is ontological more prolific since it not only allows to explain how groups of individuals become recognized as unities at law, but also how different individuals can hold different legal personality roles (always against the context of one legal system). The latter will proof useful when dealing with the representing comatous patients or minorsat law in ontologies.</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000039 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000039">
+        <rdfs:label xml:lang="en">smoker</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;RealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000040">
+        <rdfs:label xml:lang="en">intravenous drug user</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;RealizableEntity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000041 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000041">
+        <rdfs:label xml:lang="en">intergovernmental organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000028"/>
+        <IAO_0000115>an intergovernmental organization that has at least three member states, that has activies in at least three states, and that is unified by some formal intergovernmental agreement</IAO_0000115>
+        <IAO_0000119>&quot;IGOs are organizations whose memebers include at lesat three states, that have activities in several states, and whose members are held together by a formal intergovernmental agreement ... These organizations range in size from three members (North American Free Trade Argreement [NAFTA]) to more than 190 memembers (Universal Postal Union (UPU)].  Memebers may come from primarily one georgraphic regioni (Oragnaization of American States [OAS]) or from all geographic regions (World Bank).  although soem IGOs are designed to achieve a single purpose (Organization of Petroleum exporting countries [OPEC]), others have been developed for multiple tasks (United Nations [UN}).  ... IGOs are recognized subjects of international law with separate standing fromt heir member states.&quot; Karns and Mingst I(2004) p. 7</IAO_0000119>
+        <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
+        <dc:contributor xml:lang="en">Katrina Donovan</dc:contributor>
+        <rdfs:comment xml:lang="en">examples:
+North American Free Trade Argreement [NAFTA] , Universal Postal Union [UPU], Oragnaization of American States [OAS], World Bank), Organization of Petroleum exporting countries [OPEC] United Nations [UN[, The World Trade Organization [WTO], The World Health Organization [WHO], UNICEF</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000042 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000042">
+        <rdfs:label xml:lang="en">nongovernmental organizations</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000028"/>
+        <rdfs:comment xml:lang="en">Examples:
+Internaltion Federation of Red Cross and Red Crescent Societies, Oxfam, CARE, Doctors Without Borders, World Wildlife Fund, Transparency International, Human Rights Watch, Amnesty International, and Save the Children.</rdfs:comment>
+        <dc:contributor xml:lang="en">Katrina Donovan</dc:contributor>
+        <IAO_0000119 xml:lang="en">NGOs are private voluntary organizations whose members are individuals or associations that come together to acheive a common purpose.  Some organizations are formed to advocate a particular cause such as human rights, peace, or envirnomental projetion.  Others are established to provide services such as disaster relief, humantarian aid in war-torn socieities, or development assistance.  ... National level groups are often called interest or pressure groups, and many of them are now linked to counterpart groups in other countries through transnational networks or federations.  International NGOs, like IGOs, may draw their members from one region or several regions, and they may have very specific functions or be multi-functional.
+
+Karns and Mingst (2004) p. 10f.</IAO_0000119>
+        <IAO_0000115 xml:lang="en">a geopolitical organization that is voluntary and private, whose members are individual persons or organizations that come together to acheive a common purpose.</IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000043">
+        <rdfs:label xml:lang="en">private governance organizations</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000028"/>
+        <IAO_0000119>&quot;Although the very meaning of the term is controversial, it involves authoritative decsionmaking in areas that once were part of national legal frameworks, the government, the sovereign state, or the public sector.&quot;
+
+Karns and Mingst (2004) p. 14.</IAO_0000119>
+        <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
+        <rdfs:comment xml:lang="en">Examples: private bond-rating agencies such as Moody&#39;s Investors Service, International Chamber of Commerce, Worldwide Responsible Apparel Manufacturing Principles, Forest Stewardship</rdfs:comment>
+        <dc:contributor xml:lang="en">Katrina Donovan</dc:contributor>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000044">
+        <rdfs:label xml:lang="en">governmental organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
+        <IAO_0000115 xml:lang="en">An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii). 
+
+Note: this definition was taken over from &quot;geopolitical organization&quot;.</IAO_0000115>
+        <rdfs:comment xml:lang="en">IMPORTANT: The label &quot;geopolitical organization&quot; was previously used for OMRSE_00000044 (governmental organization).  &quot;geopoli organization&quot; is a label for a new and different class.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000045">
+        <rdfs:label xml:lang="en">sovereign state</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000044"/>
+        <rdfs:comment xml:lang="en"></rdfs:comment>
+        <IAO_0000115 xml:lang="en">A governmental organization with a defined territory on which it exercises internal and external sovereignty, a permanent population, a government, and the capacity to enter into relations with other sovereign states.</IAO_0000115>
+        <rdfs:comment xml:lang="en">Per Wikipedia, the word &#39;nation&#39; does not always refer to soverign states.  For example, the &quot;nation of Islam&quot;.</rdfs:comment>
+        <IAO_0000117 xml:lang="en">William R. Hogan</IAO_0000117>
+        <IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Sovereign_state</IAO_0000119>
+        <IAO_0000118 xml:lang="en">nation</IAO_0000118>
+        <IAO_0000118 xml:lang="en">nation state</IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000046 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000046">
+        <rdfs:label xml:lang="en">subnational entity</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000846"/>
+                <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000045"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000044"/>
+        <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
+        <IAO_0000117 xml:lang="en">William R. Hogan</IAO_0000117>
+        <IAO_0000115 xml:lang="en">a governmental organization that has a local, regional, or territorial government that recognizes a sovereign state as its higher political authority</IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000047">
+        <rdfs:label xml:lang="en">supranational entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000044"/>
+        <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
+        <rdfs:comment>e.g., the EU</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+
+    <owl:Class rdf:about="&oboInOwl;ObsoleteClass"/>
     
 
 
