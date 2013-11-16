@@ -268,14 +268,6 @@
         <rdfs:label xml:lang="en">administrates</rdfs:label>
         <rdfs:comment xml:lang="en">A definition of &quot;tranfers&quot; object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl</rdfs:comment>
         <IAO_0000115 xml:lang="en">a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a.</IAO_0000115>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -286,6 +278,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -297,14 +297,6 @@
         <IAO_0000119 xml:lang="en">Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.</IAO_0000119>
         <IAO_0000115 xml:lang="en">a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b.</IAO_0000115>
         <owl:inverseOf rdf:resource="&obo;OMIABIS_0000008"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -315,6 +307,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
     </owl:ObjectProperty>
     
 
@@ -1793,6 +1793,26 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000059 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000059">
+        <rdfs:label xml:lang="en">nursery school role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000055"/>
+        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000060 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000060">
+        <rdfs:label xml:lang="en">primary school role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000055"/>
+        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000061 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000061">
@@ -1892,6 +1912,16 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000062"/>
         <IAO_0000115 xml:lang="en">A facility that is run by a school organization and is the bearer of a school function.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000065 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000065">
+        <rdfs:label xml:lang="en">secondary school role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000055"/>
         <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
     </owl:Class>
     
