@@ -27,15 +27,14 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;omrse.owl">
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
-        <owl:versionInfo>2013-10-04</owl:versionInfo>
+        <owl:versionInfo>2013-12-03</owl:versionInfo>
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
-        <rdfs:comment xml:lang="en">Obsoleted terms in the organization branch as part of moving them to GEO.  Added &apos;inheres in&apos; relations to roles. </rdfs:comment>
         <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <dc:creator xml:lang="en">William Hogan</dc:creator>
-        <owl:imports rdf:resource="http://purl.obofoundry.org/obo/iao/d-acts/2013-06-28/d-acts.owl"/>
+        <owl:imports rdf:resource="http://purl.obofoundry.org/obo/iao/d-acts/2013-11-27/d-acts.owl"/>
         <owl:imports rdf:resource="&obo;iao/ontology-metadata.owl"/>
         <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
     </owl:Ontology>
@@ -149,8 +148,10 @@
     <owl:ObjectProperty rdf:about="&obo;BFO_0000052">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">inheres in</rdfs:label>
+        <IAO_0000118 xml:lang="en">&apos;inheres in at all times&apos;</IAO_0000118>
         <IAO_0000118 xml:lang="en">inheres_in</IAO_0000118>
         <owl:inverseOf rdf:resource="&obo;BFO_0000053"/>
+        <owl:equivalentProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
     </owl:ObjectProperty>
     
 
@@ -161,15 +162,8 @@
         <rdfs:label xml:lang="en">is bearer of</rdfs:label>
         <IAO_0000118 xml:lang="en">bearer of</IAO_0000118>
         <IAO_0000118 xml:lang="en">bearer_of</IAO_0000118>
+        <owl:equivalentProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000058 -->
-
-    <rdf:Description rdf:about="&obo;BFO_0000058">
-        <owl:equivalentProperty rdf:resource="&obo;OBI_0000294"/>
-    </rdf:Description>
     
 
 
@@ -182,12 +176,6 @@
         <owl:equivalentProperty rdf:resource="&obo;OMRSE_00000020"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000294 -->
-
-    <rdf:Description rdf:about="&obo;OBI_0000294"/>
     
 
 
@@ -239,14 +227,6 @@
         <rdfs:label xml:lang="en">owns</rdfs:label>
         <IAO_0000119 xml:lang="en">Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.</IAO_0000119>
         <IAO_0000600 xml:lang="en">This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. </IAO_0000600>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -257,6 +237,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -383,6 +371,18 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
             </owl:Restriction>
         </rdfs:domain>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#bearer_of -->
+
+    <rdf:Description rdf:about="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#inheres_in -->
+
+    <rdf:Description rdf:about="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
     
 
 
@@ -1199,19 +1199,6 @@ This issue is outside the scope of OBI.</IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -1220,6 +1207,19 @@ This issue is outside the scope of OBI.</IAO_0000116>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</IAO_0000115>
@@ -1942,6 +1942,23 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
 
     <owl:Class rdf:about="&snap;Role"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&obo;BFO_0000058">
+        <IAO_0000118 xml:lang="en">concretized by at some time</IAO_0000118>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;OBI_0000294">
+        <rdfs:comment xml:lang="en">It is recommended to not use this if possible in OMRSE.  According to OntoBee this relation has been obsoleted and replaced with &apos;concretization of at all times&apos;.  As of Dec. 2, 2013 iao-main still uses this relation.  </rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
 
 
