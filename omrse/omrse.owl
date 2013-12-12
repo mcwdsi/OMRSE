@@ -27,16 +27,16 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;omrse.owl">
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
-        <owl:versionInfo>2013-12-03</owl:versionInfo>
+        <dc:creator>Mathias Brochhausen</dc:creator>
+        <owl:versionInfo>2013-10-04</owl:versionInfo>
         <dc:creator>Amanda Hicks</dc:creator>
-        <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
+        <rdfs:comment xml:lang="en">Obsoleted terms in the organization branch as part of moving them to GEO.  Added &apos;inheres in&apos; relations to roles. </rdfs:comment>
         <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <dc:creator xml:lang="en">William Hogan</dc:creator>
-        <owl:imports rdf:resource="http://purl.obofoundry.org/obo/iao/d-acts/2013-11-27/d-acts.owl"/>
-        <owl:imports rdf:resource="&obo;iao/ontology-metadata.owl"/>
-        <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+        <owl:imports rdf:resource="http://purl.obofoundry.org/obo/iao/d-acts/dev/d-acts.owl"/>
+        <owl:imports rdf:resource="&obo;omrse.owl"/>
     </owl:Ontology>
     
 
@@ -52,11 +52,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
     <rdf:Description rdf:about="&obo;IAO_0000112">
         <rdfs:label xml:lang="en">example of usage</rdfs:label>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114"/>
     
 
 
@@ -100,11 +112,29 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000231"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000232"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
     <rdf:Description rdf:about="&obo;IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
     
 
 
@@ -148,7 +178,6 @@
     <owl:ObjectProperty rdf:about="&obo;BFO_0000052">
         <rdf:type rdf:resource="&owl;FunctionalProperty"/>
         <rdfs:label xml:lang="en">inheres in</rdfs:label>
-        <IAO_0000118 xml:lang="en">&apos;inheres in at all times&apos;</IAO_0000118>
         <IAO_0000118 xml:lang="en">inheres_in</IAO_0000118>
         <owl:inverseOf rdf:resource="&obo;BFO_0000053"/>
         <owl:equivalentProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
@@ -173,9 +202,20 @@
         <rdfs:label xml:lang="en">is aggregate of</rdfs:label>
         <IAO_0000118 xml:lang="en">aggregate of</IAO_0000118>
         <IAO_0000118 xml:lang="en">aggregate_of</IAO_0000118>
-        <owl:equivalentProperty rdf:resource="&obo;OMRSE_00000020"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000299"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000300 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000300"/>
     
 
 
@@ -221,92 +261,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMIABIS_0000008 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OMIABIS_0000008">
-        <rdfs:label xml:lang="en">owns</rdfs:label>
-        <IAO_0000119 xml:lang="en">Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.</IAO_0000119>
-        <IAO_0000600 xml:lang="en">This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. </IAO_0000600>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                    <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                    <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMIABIS_0000009 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OMIABIS_0000009">
-        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
-        <rdfs:label xml:lang="en">administrates</rdfs:label>
-        <rdfs:comment xml:lang="en">A definition of &quot;tranfers&quot; object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl</rdfs:comment>
-        <IAO_0000115 xml:lang="en">a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a.</IAO_0000115>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                    <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                    <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMIABIS_0000048 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OMIABIS_0000048">
-        <rdfs:label xml:lang="en">is owned by</rdfs:label>
-        <IAO_0000119 xml:lang="en">Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.</IAO_0000119>
-        <IAO_0000115 xml:lang="en">a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b.</IAO_0000115>
-        <owl:inverseOf rdf:resource="&obo;OMIABIS_0000008"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
-                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                    <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
-                    <rdf:Description rdf:about="&obo;OMRSE_00000033"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000020 -->
 
     <owl:ObjectProperty rdf:about="&obo;OMRSE_00000020">
@@ -332,57 +286,21 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000068 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OMRSE_00000068">
-        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
-        <rdfs:label xml:lang="en">is administrated by</rdfs:label>
-        <owl:inverseOf rdf:resource="&obo;OMIABIS_0000009"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000070 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OMRSE_00000070">
-        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
-        <rdfs:label xml:lang="en">is enrolled in school</rdfs:label>
-        <rdfs:range rdf:resource="&obo;OMRSE_00000057"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
-                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000058"/>
-            </owl:Restriction>
-        </rdfs:domain>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000071 -->
-
-    <owl:ObjectProperty rdf:about="&obo;OMRSE_00000071">
-        <rdfs:label xml:lang="en">is admitted to hospital</rdfs:label>
-        <rdfs:range rdf:resource="&obo;OMRSE_00000056"/>
-        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
-                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000011"/>
-            </owl:Restriction>
-        </rdfs:domain>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/obo/owl/OBO_REL#bearer_of -->
 
-    <rdf:Description rdf:about="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
     
 
 
     <!-- http://purl.org/obo/owl/OBO_REL#inheres_in -->
 
-    <rdf:Description rdf:about="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+    
+
+
+    <!-- http://www.obofoundry.org/ro/ro.owl#has_agent -->
+
+    <owl:ObjectProperty rdf:about="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
     
 
 
@@ -394,6 +312,12 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000027"/>
     
 
 
@@ -417,6 +341,12 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
         <IAO_0000112 xml:lang="en">The following URL: &quot;http://www.ncbi.nlm.nih.gov/pubmed/19918065&quot;</IAO_0000112>
         <IAO_0000112 xml:lang="en">The following sentence contains a CRID: &quot;The article with Pubmed ID: 19918065&quot;. </IAO_0000112>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021003 -->
+
+    <owl:Class rdf:about="&obo;IAO_0021003"/>
     
 
 
@@ -1083,7 +1013,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
 
     <owl:Class rdf:about="&obo;OMRSE_00000013">
         <rdfs:label xml:lang="en">physician role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000010"/>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
@@ -1102,7 +1032,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
 
     <owl:Class rdf:about="&obo;OMRSE_00000014">
         <rdfs:label xml:lang="en">nurse role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000010"/>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
@@ -1154,8 +1084,14 @@ This issue is outside the scope of OBI.</IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000018 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000018">
-        <rdfs:label xml:lang="en">obsolete_hospital role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
+        <rdfs:label xml:lang="en">hospital role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000245"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en">A role borne by an organization and realized by providing healthcare services by healthcare professionals of multiple different disciplines of medicine and enabling stationary treatment.</IAO_0000115>
         <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
         <IAO_0000118 xml:lang="en">hospital</IAO_0000118>
@@ -1694,235 +1630,84 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000052 -->
+    <!-- http://purl.obolibrary.org/obo/omrse.owl/MOCK_00000000 -->
 
-    <owl:Class rdf:about="&obo;OMRSE_00000052">
-        <rdfs:label xml:lang="en">hospital function</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;Function"/>
-        <IAO_0000115 xml:lang="en">A function inhering in a facility that manifests by the facility participating in providing inpatient and outpatient healthcare to a patient population.</IAO_0000115>
-        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000053 -->
-
-    <owl:Class rdf:about="&obo;OMRSE_00000053">
-        <rdfs:label xml:lang="en">school function</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;Function"/>
-        <IAO_0000115 xml:lang="en">A function inhering in a facility that manifests by the facility participating in providing formal education to a student population.</IAO_0000115>
-        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000054 -->
-
-    <owl:Class rdf:about="&obo;OMRSE_00000054">
-        <rdfs:label xml:lang="en">hospital role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000015"/>
-        <IAO_0000115 xml:lang="en">A healthcare provider role that inheres in an organization and is realized by providing inpatient and outpatient care.</IAO_0000115>
-        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000055 -->
-
-    <owl:Class rdf:about="&obo;OMRSE_00000055">
-        <rdfs:label xml:lang="en">school role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000025"/>
-        <IAO_0000117 xml:lang="en">An organization social role that inheres in an organization and is realized by providing formal education to students.</IAO_0000117>
-        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000056 -->
-
-    <owl:Class rdf:about="&obo;OMRSE_00000056">
-        <rdfs:label xml:lang="en">hospital organization</rdfs:label>
-        <owl:equivalentClass>
+    <owl:Class rdf:about="&obo;omrse.owl/MOCK_00000000">
+        <rdfs:label xml:lang="en">gender identification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0021003"/>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000054"/>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000001"/>
+                                    <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000002"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="&obo;OMRSE_00000011"/>
+                                                    <rdf:Description rdf:about="&obo;OMRSE_00000012"/>
+                                                    <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000003"/>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000245"/>
-        <IAO_0000115 xml:lang="en">An organization that is the bearer of a hospital role.</IAO_0000115>
-        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000057 -->
+    <!-- http://purl.obolibrary.org/obo/omrse.owl/MOCK_00000001 -->
 
-    <owl:Class rdf:about="&obo;OMRSE_00000057">
-        <rdfs:label xml:lang="en">school organization</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000055"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000245"/>
-        <IAO_0000115 xml:lang="en">An organization that is the bearer of a school role.</IAO_0000115>
-        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
+    <owl:Class rdf:about="&obo;omrse.owl/MOCK_00000001">
+        <rdfs:label xml:lang="en">identified gender</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000058 -->
+    <!-- http://purl.obolibrary.org/obo/omrse.owl/MOCK_00000002 -->
 
-    <owl:Class rdf:about="&obo;OMRSE_00000058">
-        <rdfs:label xml:lang="en">student role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000001"/>
-        <IAO_0000115 xml:lang="en">A human social role that is realized by the process of formal education that the bearer undergoes.</IAO_0000115>
-        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
+    <owl:Class rdf:about="&obo;omrse.owl/MOCK_00000002">
+        <rdfs:label xml:lang="en">gender unknown</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000007"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000116>Would it appropriate to use &apos;is about&apos; to describe this ICE as being about a gender role?</IAO_0000116>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000059 -->
+    <!-- http://purl.obolibrary.org/obo/omrse.owl/MOCK_00000003 -->
 
-    <owl:Class rdf:about="&obo;OMRSE_00000059">
-        <rdfs:label xml:lang="en">nursery school role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000055"/>
-        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000060 -->
-
-    <owl:Class rdf:about="&obo;OMRSE_00000060">
-        <rdfs:label xml:lang="en">primary school role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000055"/>
-        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000061 -->
-
-    <owl:Class rdf:about="&obo;OMRSE_00000061">
-        <rdfs:label xml:lang="en">architectural structure</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
-        <rdfs:comment xml:lang="en">&quot;Building&quot; is a subclass of this. </rdfs:comment>
-        <IAO_0000115 xml:lang="en">A material entity that is a human made strcuture with firm connection between its foundation and the ground.</IAO_0000115>
-        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
-        <rdfs:comment xml:lang="en">This type of entity is referred to as &quot;Bauwerk&quot; or &quot;Bauliche Anlage&quot;.</rdfs:comment>
-        <IAO_0000119 xml:lang="en">http://de.wikipedia.org/wiki/Bauwerk</IAO_0000119>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000062 -->
-
-    <owl:Class rdf:about="&obo;OMRSE_00000062">
-        <rdfs:label xml:lang="en">facility</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OMRSE_00000061"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
-                        <owl:someValuesFrom rdf:resource="&snap;Function"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000061"/>
-        <IAO_0000115 xml:lang="en">An architectural structure that bears some function.</IAO_0000115>
-        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000063 -->
-
-    <owl:Class rdf:about="&obo;OMRSE_00000063">
-        <rdfs:label xml:lang="en">hospital facility</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OMRSE_00000062"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OMIABIS_0000048"/>
-                                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000056"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OMRSE_00000068"/>
-                                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000056"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000052"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000062"/>
-        <IAO_0000115 xml:lang="en">A facility that is run by a hospital organization and is the bearer of a hospital function.</IAO_0000115>
-        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000064 -->
-
-    <owl:Class rdf:about="&obo;OMRSE_00000064">
-        <rdfs:label xml:lang="en">school facility</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OMRSE_00000062"/>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OMIABIS_0000048"/>
-                                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000057"/>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OMRSE_00000068"/>
-                                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000057"/>
-                            </owl:Restriction>
-                        </owl:unionOf>
-                    </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000053"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000062"/>
-        <IAO_0000115 xml:lang="en">A facility that is run by a school organization and is the bearer of a school function.</IAO_0000115>
-        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000065 -->
-
-    <owl:Class rdf:about="&obo;OMRSE_00000065">
-        <rdfs:label xml:lang="en">secondary school role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000055"/>
-        <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
+    <owl:Class rdf:about="&obo;omrse.owl/MOCK_00000003">
+        <rdfs:label xml:lang="en">intake personnel role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
     </owl:Class>
     
 
@@ -1930,6 +1715,12 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
 
     <owl:Class rdf:about="&oboInOwl;ObsoleteClass"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#MaterialEntity -->
+
+    <owl:Class rdf:about="&snap;MaterialEntity"/>
     
 
 
@@ -1945,20 +1736,363 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     
 
 
+    <!-- http://www.ifomis.org/bfo/1.1/span#Process -->
+
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#Process"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Annotations
+    // Individuals
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="&obo;BFO_0000058">
-        <IAO_0000118 xml:lang="en">concretized by at some time</IAO_0000118>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;OBI_0000294">
-        <rdfs:comment xml:lang="en">It is recommended to not use this if possible in OMRSE.  According to OntoBee this relation has been obsoleted and replaced with &apos;concretization of at all times&apos;.  As of Dec. 2, 2013 iao-main still uses this relation.  </rdfs:comment>
-    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/omrse.owl/MOCK_00000006 -->
+
+    <owl:NamedIndividual rdf:about="&obo;omrse.owl/MOCK_00000006">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OMRSE_00000007"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000002"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000000"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+                                                                <owl:someValuesFrom>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                                        <owl:someValuesFrom rdf:resource="&obo;omrse.owl/MOCK_00000003"/>
+                                                                    </owl:Restriction>
+                                                                </owl:someValuesFrom>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000030"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">AAA</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/omrse.owl/MOCK_00000007 -->
+
+    <owl:NamedIndividual rdf:about="&obo;omrse.owl/MOCK_00000007">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000030"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OMRSE_00000007"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000002"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000000"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+                                                                <owl:someValuesFrom>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000014"/>
+                                                                    </owl:Restriction>
+                                                                </owl:someValuesFrom>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">AAB</rdfs:label>
+        <rdfs:comment xml:lang="en">The nurse documented that s/he the patient&apos;s gender as unknown.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/omrse.owl/MOCK_00000008 -->
+
+    <owl:NamedIndividual rdf:about="&obo;omrse.owl/MOCK_00000008">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000030"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OMRSE_00000009"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000001"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000000"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+                                                                <owl:someValuesFrom>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                                        <owl:someValuesFrom rdf:resource="&obo;omrse.owl/MOCK_00000003"/>
+                                                                    </owl:Restriction>
+                                                                </owl:someValuesFrom>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">AAC</rdfs:label>
+        <rdfs:comment xml:lang="en">This patient was identified as female by an intake personnel.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/omrse.owl/MOCK_00000009 -->
+
+    <owl:NamedIndividual rdf:about="&obo;omrse.owl/MOCK_00000009">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000030"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OMRSE_00000009"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000001"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000000"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+                                                                <owl:someValuesFrom>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                                                                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000014"/>
+                                                                    </owl:Restriction>
+                                                                </owl:someValuesFrom>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">AAD</rdfs:label>
+        <rdfs:comment xml:lang="en">This patient was identified as female by a nurse.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/omrse.owl/MOCK_00000010 -->
+
+    <owl:NamedIndividual rdf:about="&obo;omrse.owl/MOCK_00000010">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OMRSE_00000009"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000001"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000000"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+                                                                <owl:hasSelf rdf:datatype="&xsd;boolean">true</owl:hasSelf>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000030"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">AAE</rdfs:label>
+        <rdfs:comment xml:lang="en">This patient has self-identified as female.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/omrse.owl/MOCK_00000011 -->
+
+    <owl:NamedIndividual rdf:about="&obo;omrse.owl/MOCK_00000011">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OMRSE_00000008"/>
+                            <owl:Restriction>
+                                <owl:onProperty>
+                                    <rdf:Description>
+                                        <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
+                                    </rdf:Description>
+                                </owl:onProperty>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000001"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="&obo;omrse.owl/MOCK_00000000"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+                                                                <owl:hasSelf rdf:datatype="&xsd;boolean">true</owl:hasSelf>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">AAF</rdfs:label>
+        <rdfs:comment xml:lang="en">This patient has self identified as male.</rdfs:comment>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
