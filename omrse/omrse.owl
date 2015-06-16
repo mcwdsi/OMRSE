@@ -16,19 +16,19 @@
 
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
      xml:base="http://purl.obolibrary.org/obo/"
-     xmlns:omrse="&obo;omrse.owl/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:omrse="&obo;omrse.owl/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#">
     <owl:Ontology rdf:about="&obo;omrse.owl">
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
-        <owl:versionInfo>2013-12-03</owl:versionInfo>
         <dc:creator>Amanda Hicks</dc:creator>
+        <owl:versionInfo>2015-06-12</owl:versionInfo>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
@@ -186,8 +186,8 @@
         <IAO_0000116 rdf:datatype="&xsd;string">2009/10/01 Alan Ruttenberg. Barry prefers generic is-member-of. Question of what the range should be. For now organization. Is organization a population? Would the same relation be used to record members of a population</IAO_0000116>
         <IAO_0000119 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</IAO_0000119>
         <IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</IAO_0000117>
-        <IAO_0000117 rdf:datatype="&xsd;string">Person:Helen Parkinson</IAO_0000117>
         <IAO_0000119 rdf:datatype="&xsd;string">Person:Helen Parkinson</IAO_0000119>
+        <IAO_0000117 rdf:datatype="&xsd;string">Person:Helen Parkinson</IAO_0000117>
         <IAO_0000115 rdf:datatype="&xsd;string">Relating a legal person to an organization in the case where the legal person has a role as member of the organization</IAO_0000115>
         <IAO_0000111 rdf:datatype="&xsd;string">is member of organization</IAO_0000111>
         <rdfs:range rdf:resource="&obo;OBI_0000245"/>
@@ -227,6 +227,14 @@
         <rdfs:label xml:lang="en">owns</rdfs:label>
         <IAO_0000119 xml:lang="en">Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.</IAO_0000119>
         <IAO_0000600 xml:lang="en">This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. </IAO_0000600>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -237,14 +245,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -256,6 +256,14 @@
         <rdfs:label xml:lang="en">administrates</rdfs:label>
         <rdfs:comment xml:lang="en">A definition of &quot;tranfers&quot; object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl</rdfs:comment>
         <IAO_0000115 xml:lang="en">a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a.</IAO_0000115>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -266,14 +274,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -809,10 +809,10 @@ This issue is outside the scope of OBI.</IAO_0000116>
     <owl:Class rdf:about="&obo;OGMS_0000097">
         <rdfs:label>health care encounter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
-        <IAO_0000115 xml:lang="en">A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter</IAO_0000115>
-        <IAO_0000232>creation date: 2011-02-21T09:57:44Z</IAO_0000232>
         <IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</IAO_0000119>
+        <IAO_0000115 xml:lang="en">A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter</IAO_0000115>
         <IAO_0000117>Albert Goldfain</IAO_0000117>
+        <IAO_0000232>creation date: 2011-02-21T09:57:44Z</IAO_0000232>
     </owl:Class>
     
 
@@ -822,9 +822,9 @@ This issue is outside the scope of OBI.</IAO_0000116>
     <owl:Class rdf:about="&obo;OMRSE_00000000">
         <rdfs:label xml:lang="en">social security number</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000578"/>
+        <IAO_0000118>SSN</IAO_0000118>
         <IAO_0000119>http://en.wikipedia.org/wiki/Social_Security_number</IAO_0000119>
         <IAO_0000115>Social Security Number(SSN) is a Centrally Registered IDentifier that is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents under section 205(c) of the Social Security Act, codified as 42 U.S.C. § 405(c). The number is issued to an individual by the Social Security Administration, an independent agency of the United States government. Its primary purpose is to track individuals for Social Security purposes.</IAO_0000115>
-        <IAO_0000118>SSN</IAO_0000118>
         <dc:creator>Cheng Chen(cxchen1@ualr.edu)</dc:creator>
     </owl:Class>
     
@@ -1030,6 +1030,9 @@ This issue is outside the scope of OBI.</IAO_0000116>
         </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en">A human health care role that inheres in an organism [human?] as the recipient of a health care service.</IAO_0000115>
         <IAO_0000115 xml:lang="en">A role borne by an organism being as the recipient of a health care service.</IAO_0000115>
+        <IAO_0000115 xml:lang="en">A role borne by an organism who presents to a health care provider in a clinical encounter.
+
+(From Trauma SME team)</IAO_0000115>
         <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
         <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
         <IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Patient</IAO_0000119>
@@ -1199,19 +1202,6 @@ This issue is outside the scope of OBI.</IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -1220,6 +1210,19 @@ This issue is outside the scope of OBI.</IAO_0000116>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</IAO_0000115>
@@ -1318,6 +1321,7 @@ Mathias Brochhausen</IAO_0000117>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <IAO_0000115 xml:lang="en">A patient role that inheres in a human being.</IAO_0000115>
     </owl:Class>
     
 
@@ -1455,8 +1459,11 @@ Amanda Hicks</IAO_0000117>
             </owl:Class>
         </rdfs:subClassOf>
         <IAO_0000117>Mathias Brochhausen</IAO_0000117>
-        <IAO_0000115 xml:lang="en">A role borne by a human individual or by a collection of humans regarded as possessing rights and duties enforeable at law.</IAO_0000115>
         <IAO_0000119>Malcolm N. Shaw: International Law. Cambridge University Press, Cambridge, 2008.</IAO_0000119>
+        <IAO_0000115 xml:lang="en">A role borne by a human individual or by a collection of humans regarded as possessing rights and duties enforeable at law.</IAO_0000115>
+        <IAO_0000115 xml:lang="en">A role borne by an organism who presents to a health care provider in a clinical encounter.
+
+(From Trauma SME team)</IAO_0000115>
         <rdfs:comment xml:lang="en">We are aware of the fact that Wikipedia&apos;s definition differs from ours by saying that &quot;Legal personality (...) is the characteristic of a non-living entity regarded by law to have the status of personhood&quot; (http://en.wikipedia.org/wiki/Legal_personality) 
 However, Shaw explicates:
 &quot;In any legal system, certain entities, whether they be individuals or companies, will be regarded as possessing rights and duties enforceable at law. Thus an individual may prosecute or be prosecuted for assault and a company can sue for breach of contract. They are able to do this because the law recognises them as &apos;legal persons&apos; possessing the capacity to have and to maintain certain rights, and being subject to perform specific duties. (...) In municipal law individuals, limited companies and public corporations are recognized as each possessing a distinct legal personality, the terms of which are circumscribed by the relevant legislation&quot; (Shaw MN: International Law. Sixth Edition. Cambridge University Press, Cambridge, 2008).                We hold that Shaw&apos;s position is ontological more prolific since it not only allows to explain how groups of individuals become recognized as unities at law, but also how different individuals can hold different legal personality roles (always against the context of one legal system). The latter will proof useful when dealing with the representing comatous patients or minorsat law in ontologies.</rdfs:comment>
@@ -1500,9 +1507,9 @@ However, Shaw explicates:
         <rdfs:label xml:lang="en">intergovernmental organization</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <IAO_0000119>&quot;IGOs are organizations whose memebers include at lesat three states, that have activities in several states, and whose members are held together by a formal intergovernmental agreement ... These organizations range in size from three members (North American Free Trade Argreement [NAFTA]) to more than 190 memembers (Universal Postal Union (UPU)].  Memebers may come from primarily one georgraphic regioni (Oragnaization of American States [OAS]) or from all geographic regions (World Bank).  although soem IGOs are designed to achieve a single purpose (Organization of Petroleum exporting countries [OPEC]), others have been developed for multiple tasks (United Nations [UN}).  ... IGOs are recognized subjects of international law with separate standing fromt heir member states.&quot; Karns and Mingst I(2004) p. 7</IAO_0000119>
-        <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
         <dc:contributor xml:lang="en">Katrina Donovan</dc:contributor>
         <IAO_0000115>an intergovernmental organization that has at least three member states, that has activies in at least three states, and that is unified by some formal intergovernmental agreement</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
         <rdfs:comment xml:lang="en">examples:
 North American Free Trade Argreement [NAFTA] , Universal Postal Union [UPU], Oragnaization of American States [OAS], World Bank), Organization of Petroleum exporting countries [OPEC] United Nations [UN[, The World Trade Organization [WTO], The World Health Organization [WHO], UNICEF</rdfs:comment>
     </owl:Class>
@@ -1587,8 +1594,8 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     <owl:Class rdf:about="&obo;OMRSE_00000047">
         <rdfs:label xml:lang="en">supranational entity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
-        <rdfs:comment>e.g., the EU</rdfs:comment>
         <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
+        <rdfs:comment>e.g., the EU</rdfs:comment>
     </owl:Class>
     
 
@@ -1927,6 +1934,81 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000066 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000066">
+        <rdfs:label xml:lang="en">pediatric trauma patient role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000030"/>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
+        <IAO_0000115 xml:lang="en">&quot;A trauma patient role that inheres in a homo sapiens who is under the age of 15 years.&quot;</IAO_0000115>
+        <IAO_0000119 xml:lang="en">The following definition for &apos;pediatric trauma patient&apos; was approved by the CAFE team of domain experts (experts in trauma care) May 29, 2015.
+
+&quot;A trauma patient who is under the age of 15 years.&quot;</IAO_0000119>
+        <IAO_0000118 xml:lang="en">pediatric trauma patient</IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000067 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000067">
+        <rdfs:label xml:lang="en">injured patient role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000011"/>
+        <IAO_0000115 xml:lang="en">A patient role that inheres an organism suffering one or more injuries.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
+        <IAO_0000119 xml:lang="en">The following definition for &apos;injured patient&apos; was approved by the CAFE team of domain experts (experts in trauma care) May 29, 2015.
+
+A patient suffering one or more injuries.</IAO_0000119>
+        <IAO_0000118 xml:lang="en">injured patient</IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000069 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000069">
+        <rdfs:label xml:lang="en">burn patient role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000067"/>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
+        <IAO_0000115 xml:lang="en">A patient role that inheres in an organism suffering a thermal, electrical, chemical or radiation burn.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">The following definition for &apos;burn  patient&apos; was approved by the CAFE team of domain experts (experts in trauma care) May 29, 2015.
+
+A patient suffering a thermal, electrical, chemical or radiation burn.</IAO_0000117>
+        <IAO_0000117 xml:lang="en">burn patient</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000072 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000072">
+        <rdfs:label xml:lang="en">physiatrist role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000010"/>
+        <IAO_0000115 xml:lang="en">A health care role borne by a human being and realized by training and certification in rehabilitation medicine.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
+        <IAO_0000119 xml:lang="en">The following definition for &apos;physiatrist&apos; was approved by the CAFE team of domain experts (experts in trauma care) May 29, 2015.
+
+A physician with training and certification in rehabilitation/physical medicine.</IAO_0000119>
+        <IAO_0000118 xml:lang="en">physiatrist</IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000073 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000073">
+        <rdfs:label xml:lang="en">trauma patient role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000011"/>
+        <IAO_0000115 xml:lang="en">A patient role that inheres in an organism with some non-superficial traumatic injury.  The role is realized by admision to a hospital, transfer from one hospital to another for the purpose of trauma care, or has death as a result of the traumatic injury.</IAO_0000115>
+        <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
+        <IAO_0000119 xml:lang="en">The following definition for &apos;trauma  patient&apos; was approved by the CAFE team of domain experts (experts in trauma care) May 29, 2015.
+
+A patient sustaining an injury who has been admitted to the hospital, transferred from one hospital to another for the purpose of trauma care, or has died as a result of the traumatic injury.</IAO_0000119>
+        <IAO_0000118 xml:lang="en">trauma patient</IAO_0000118>
+    </owl:Class>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
 
     <owl:Class rdf:about="&oboInOwl;ObsoleteClass"/>
@@ -1953,15 +2035,15 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <rdf:Description rdf:about="&obo;BFO_0000058">
-        <IAO_0000118 xml:lang="en">concretized by at some time</IAO_0000118>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0000294">
         <rdfs:comment xml:lang="en">It is recommended to not use this if possible in OMRSE.  According to OntoBee this relation has been obsoleted and replaced with &apos;concretization of at all times&apos;.  As of Dec. 2, 2013 iao-main still uses this relation.  </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000058">
+        <IAO_0000118 xml:lang="en">concretized by at some time</IAO_0000118>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
 
