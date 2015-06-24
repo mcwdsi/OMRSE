@@ -1759,7 +1759,7 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     <owl:Class rdf:about="&obo;OMRSE_00000052">
         <rdfs:label xml:lang="en">hospital function</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;Function"/>
-        <IAO_0000115 xml:lang="en">A function inhering in a facility that manifests by the facility participating in providing inpatient and outpatient healthcare to a patient population.</IAO_0000115>
+        <IAO_0000115 xml:lang="en">A function inhering in a material entity that is realized by the material entity being the site at which inpatient and outpatient healthcare is provided to a patient population.</IAO_0000115>
         <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
     </owl:Class>
     
@@ -1770,7 +1770,7 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     <owl:Class rdf:about="&obo;OMRSE_00000053">
         <rdfs:label xml:lang="en">school function</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;Function"/>
-        <IAO_0000115 xml:lang="en">A function inhering in a facility that manifests by the facility participating in providing formal education to a student population.</IAO_0000115>
+        <IAO_0000115 xml:lang="en">A function inhering in a material entity that isr ealized by that material entity being the site at which formal education is provided to a student population.</IAO_0000115>
         <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
     </owl:Class>
     
@@ -2212,6 +2212,7 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
         <rdfs:label xml:lang="en">workplace function</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;Function"/>
         <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
+        <IAO_0000115 xml:lang="en">a function inhering in a material entity that is realized by that material entity being the site where the work of some organization is carried out</IAO_0000115>
     </owl:Class>
     
 
