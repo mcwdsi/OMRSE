@@ -16,20 +16,20 @@
 
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/"
      xml:base="http://purl.obolibrary.org/obo/"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:omrse="&obo;omrse.owl/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#">
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;omrse.owl">
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
-        <dc:contributor>Daniel Welch</dc:contributor>
-        <dc:creator>Amanda Hicks</dc:creator>
         <owl:versionInfo>2015-07-01</owl:versionInfo>
+        <dc:creator>Amanda Hicks</dc:creator>
+        <dc:contributor>Daniel Welch</dc:contributor>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
@@ -228,8 +228,8 @@
     <owl:ObjectProperty rdf:about="&obo;OBI_0000846">
         <rdfs:label rdf:datatype="&xsd;string">is member of organization</rdfs:label>
         <IAO_0000116 rdf:datatype="&xsd;string">2009/10/01 Alan Ruttenberg. Barry prefers generic is-member-of. Question of what the range should be. For now organization. Is organization a population? Would the same relation be used to record members of a population</IAO_0000116>
-        <IAO_0000119 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</IAO_0000119>
         <IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</IAO_0000117>
+        <IAO_0000119 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</IAO_0000119>
         <IAO_0000119 rdf:datatype="&xsd;string">Person:Helen Parkinson</IAO_0000119>
         <IAO_0000117 rdf:datatype="&xsd;string">Person:Helen Parkinson</IAO_0000117>
         <IAO_0000115 rdf:datatype="&xsd;string">Relating a legal person to an organization in the case where the legal person has a role as member of the organization</IAO_0000115>
@@ -271,6 +271,14 @@
         <rdfs:label xml:lang="en">owns</rdfs:label>
         <IAO_0000119 xml:lang="en">Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.</IAO_0000119>
         <IAO_0000600 xml:lang="en">This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. </IAO_0000600>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -281,14 +289,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -300,14 +300,6 @@
         <rdfs:label xml:lang="en">administrates</rdfs:label>
         <rdfs:comment xml:lang="en">A definition of &quot;tranfers&quot; object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl</rdfs:comment>
         <IAO_0000115 xml:lang="en">a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a.</IAO_0000115>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -318,6 +310,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -461,10 +461,10 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <owl:Class rdf:about="&obo;IAO_0000578">
         <rdfs:label xml:lang="en">CRID</rdfs:label>
         <IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/iao.owl</IAO_0000412>
+        <IAO_0000115 xml:lang="en">An information content entity that consists of a CRID symbol and additional information about which CRID registry it belongs. </IAO_0000115>
+        <IAO_0000118>Centrally Registered IDentifier</IAO_0000118>
         <IAO_0000116 xml:lang="en">Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation. 
 </IAO_0000116>
-        <IAO_0000118>Centrally Registered IDentifier</IAO_0000118>
-        <IAO_0000115 xml:lang="en">An information content entity that consists of a CRID symbol and additional information about which CRID registry it belongs. </IAO_0000115>
         <IAO_0000112 xml:lang="en">Entries in a Column of which the header is &quot;Pubmed ID&quot; </IAO_0000112>
         <IAO_0000116 xml:lang="en">Note, IAO call 20101124: URIs are not always CRID, as not centrally registered. We acknowledge that CRID is a subset of a larger identifier class, but this subset fulfills our current needs. OBI PURLs are CRID as they are registered with OCLC. UPCs (Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered.</IAO_0000116>
         <IAO_0000119 xml:lang="en">Original proposal from Bjoern, discussions at IAO calls</IAO_0000119>
@@ -868,10 +868,10 @@ This issue is outside the scope of OBI.</IAO_0000116>
     <owl:Class rdf:about="&obo;OGMS_0000097">
         <rdfs:label>health care encounter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.ifomis.org/bfo/1.1/span#Process"/>
-        <IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</IAO_0000119>
-        <IAO_0000115 xml:lang="en">A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter</IAO_0000115>
         <IAO_0000117>Albert Goldfain</IAO_0000117>
+        <IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</IAO_0000119>
         <IAO_0000232>creation date: 2011-02-21T09:57:44Z</IAO_0000232>
+        <IAO_0000115 xml:lang="en">A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter</IAO_0000115>
     </owl:Class>
     
 
@@ -882,11 +882,11 @@ This issue is outside the scope of OBI.</IAO_0000116>
         <rdfs:label>injury</rdfs:label>
         <rdfs:subClassOf rdf:resource="&snap;MaterialEntity"/>
         <IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/ogms.owl</IAO_0000412>
-        <IAO_0000117>Albert Goldfain</IAO_0000117>
-        <IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5</IAO_0000119>
-        <IAO_0000116>At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making &apos;injury&apos; a subtype of &apos;disorder&apos;.</IAO_0000116>
         <IAO_0000115 xml:lang="en">A part of an organism that has undergone a change in structural integrity and has a higher chance of dysfunction or causing dysfunction in another structure.</IAO_0000115>
+        <IAO_0000117>Albert Goldfain</IAO_0000117>
         <IAO_0000232>creation date: 2011-09-20T09:57:44Z</IAO_0000232>
+        <IAO_0000116>At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making &apos;injury&apos; a subtype of &apos;disorder&apos;.</IAO_0000116>
+        <IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5</IAO_0000119>
     </owl:Class>
     
 
@@ -896,10 +896,10 @@ This issue is outside the scope of OBI.</IAO_0000116>
     <owl:Class rdf:about="&obo;OMRSE_00000000">
         <rdfs:label xml:lang="en">social security number</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000578"/>
-        <IAO_0000118>SSN</IAO_0000118>
-        <IAO_0000119>http://en.wikipedia.org/wiki/Social_Security_number</IAO_0000119>
-        <IAO_0000115>Social Security Number(SSN) is a Centrally Registered IDentifier that is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents under section 205(c) of the Social Security Act, codified as 42 U.S.C. § 405(c). The number is issued to an individual by the Social Security Administration, an independent agency of the United States government. Its primary purpose is to track individuals for Social Security purposes.</IAO_0000115>
         <dc:creator>Cheng Chen(cxchen1@ualr.edu)</dc:creator>
+        <IAO_0000118>SSN</IAO_0000118>
+        <IAO_0000115>Social Security Number(SSN) is a Centrally Registered IDentifier that is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents under section 205(c) of the Social Security Act, codified as 42 U.S.C. § 405(c). The number is issued to an individual by the Social Security Administration, an independent agency of the United States government. Its primary purpose is to track individuals for Social Security purposes.</IAO_0000115>
+        <IAO_0000119>http://en.wikipedia.org/wiki/Social_Security_number</IAO_0000119>
     </owl:Class>
     
 
@@ -1083,8 +1083,8 @@ This issue is outside the scope of OBI.</IAO_0000116>
                 <owl:someValuesFrom rdf:resource="&obo;OGMS_0000097"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000115 xml:lang="en">A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. </IAO_0000115>
         <rdfs:comment>Mathias Brochhausen</rdfs:comment>
+        <IAO_0000115 xml:lang="en">A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. </IAO_0000115>
         <IAO_0000117 xml:lang="en">William R. Hogan</IAO_0000117>
         <IAO_0000118 xml:lang="en">health care role</IAO_0000118>
     </owl:Class>
@@ -1273,19 +1273,6 @@ This issue is outside the scope of OBI.</IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -1294,6 +1281,19 @@ This issue is outside the scope of OBI.</IAO_0000116>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</IAO_0000115>
@@ -1402,8 +1402,8 @@ Mathias Brochhausen</IAO_0000117>
     <owl:Class rdf:about="&obo;OMRSE_00000031">
         <rdfs:label xml:lang="en">major administrative subdivision</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
-        <rdfs:comment>example: Northern Ireland</rdfs:comment>
         <IAO_0000115 xml:lang="en">A subnational entity that is the primary organizational member of a nation, is subject to the full set of laws of the nation, enjoys all the privileges established under the laws of the nation, is not a member of any other geopolitical entity, and itself governs a part of the geographical region governed by the nation.</IAO_0000115>
+        <rdfs:comment>example: Northern Ireland</rdfs:comment>
     </owl:Class>
     
 
@@ -1529,9 +1529,9 @@ Amanda Hicks</IAO_0000117>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <IAO_0000117>Mathias Brochhausen</IAO_0000117>
         <IAO_0000119>Malcolm N. Shaw: International Law. Cambridge University Press, Cambridge, 2008.</IAO_0000119>
         <IAO_0000115 xml:lang="en">A role borne by a human individual or by a collection of humans regarded as possessing rights and duties enforeable at law.</IAO_0000115>
+        <IAO_0000117>Mathias Brochhausen</IAO_0000117>
         <rdfs:comment xml:lang="en">We are aware of the fact that Wikipedia&apos;s definition differs from ours by saying that &quot;Legal personality (...) is the characteristic of a non-living entity regarded by law to have the status of personhood&quot; (http://en.wikipedia.org/wiki/Legal_personality) 
 However, Shaw explicates:
 &quot;In any legal system, certain entities, whether they be individuals or companies, will be regarded as possessing rights and duties enforceable at law. Thus an individual may prosecute or be prosecuted for assault and a company can sue for breach of contract. They are able to do this because the law recognises them as &apos;legal persons&apos; possessing the capacity to have and to maintain certain rights, and being subject to perform specific duties. (...) In municipal law individuals, limited companies and public corporations are recognized as each possessing a distinct legal personality, the terms of which are circumscribed by the relevant legislation&quot; (Shaw MN: International Law. Sixth Edition. Cambridge University Press, Cambridge, 2008).                We hold that Shaw&apos;s position is ontological more prolific since it not only allows to explain how groups of individuals become recognized as unities at law, but also how different individuals can hold different legal personality roles (always against the context of one legal system). The latter will proof useful when dealing with the representing comatous patients or minorsat law in ontologies.</rdfs:comment>
@@ -1574,10 +1574,10 @@ However, Shaw explicates:
     <owl:Class rdf:about="&obo;OMRSE_00000041">
         <rdfs:label xml:lang="en">intergovernmental organization</rdfs:label>
         <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
-        <IAO_0000119>&quot;IGOs are organizations whose memebers include at lesat three states, that have activities in several states, and whose members are held together by a formal intergovernmental agreement ... These organizations range in size from three members (North American Free Trade Argreement [NAFTA]) to more than 190 memembers (Universal Postal Union (UPU)].  Memebers may come from primarily one georgraphic regioni (Oragnaization of American States [OAS]) or from all geographic regions (World Bank).  although soem IGOs are designed to achieve a single purpose (Organization of Petroleum exporting countries [OPEC]), others have been developed for multiple tasks (United Nations [UN}).  ... IGOs are recognized subjects of international law with separate standing fromt heir member states.&quot; Karns and Mingst I(2004) p. 7</IAO_0000119>
-        <dc:contributor xml:lang="en">Katrina Donovan</dc:contributor>
         <IAO_0000115>an intergovernmental organization that has at least three member states, that has activies in at least three states, and that is unified by some formal intergovernmental agreement</IAO_0000115>
+        <IAO_0000119>&quot;IGOs are organizations whose memebers include at lesat three states, that have activities in several states, and whose members are held together by a formal intergovernmental agreement ... These organizations range in size from three members (North American Free Trade Argreement [NAFTA]) to more than 190 memembers (Universal Postal Union (UPU)].  Memebers may come from primarily one georgraphic regioni (Oragnaization of American States [OAS]) or from all geographic regions (World Bank).  although soem IGOs are designed to achieve a single purpose (Organization of Petroleum exporting countries [OPEC]), others have been developed for multiple tasks (United Nations [UN}).  ... IGOs are recognized subjects of international law with separate standing fromt heir member states.&quot; Karns and Mingst I(2004) p. 7</IAO_0000119>
         <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
+        <dc:contributor xml:lang="en">Katrina Donovan</dc:contributor>
         <rdfs:comment xml:lang="en">examples:
 North American Free Trade Argreement [NAFTA] , Universal Postal Union [UPU], Oragnaization of American States [OAS], World Bank), Organization of Petroleum exporting countries [OPEC] United Nations [UN[, The World Trade Organization [WTO], The World Health Organization [WHO], UNICEF</rdfs:comment>
     </owl:Class>
@@ -2084,8 +2084,8 @@ A patient suffering one or more injuries.</IAO_0000119>
     <owl:Class rdf:about="&obo;OMRSE_00000069">
         <rdfs:label xml:lang="en">burn patient role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000067"/>
-        <IAO_0000117>Amanda Hicks</IAO_0000117>
         <IAO_0000115 xml:lang="en">A patient role that inheres in an organism suffering a thermal, electrical, chemical or radiation burn.</IAO_0000115>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
         <IAO_0000117 xml:lang="en">The following definition for &apos;burn  patient&apos; was approved by the CAFE team of domain experts (experts in trauma care) May 29, 2015.
 
 A patient suffering a thermal, electrical, chemical or radiation burn.</IAO_0000117>
@@ -2227,7 +2227,7 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000086"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000294"/>
+                <owl:onProperty rdf:resource="&obo;RO_0000059"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -2267,8 +2267,8 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <IAO_0000118>employee</IAO_0000118>
         <IAO_0000117>Amanda hicks</IAO_0000117>
+        <IAO_0000118>employee</IAO_0000118>
     </owl:Class>
     
 
@@ -2315,8 +2315,8 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">A US Census householder role is a human social role  that is realized by that person being a member of a household and either owning or renting the housing unit in which that household resides and being designated as the householder. If there is only one member of the household who owns or rents the housing unit, that person is designated the householder by default.</rdfs:comment>
         <IAO_0000117>Amanda Hicks</IAO_0000117>
+        <rdfs:comment xml:lang="en">A US Census householder role is a human social role  that is realized by that person being a member of a household and either owning or renting the housing unit in which that household resides and being designated as the householder. If there is only one member of the household who owns or rents the housing unit, that person is designated the householder by default.</rdfs:comment>
         <IAO_0000119 xml:lang="en">http://www.census.gov/cps/about/cpsdef.html
 
 last accessed on June 30, 2015</IAO_0000119>
@@ -2331,12 +2331,6 @@ last accessed on June 30, 2015</IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -2349,6 +2343,12 @@ last accessed on June 30, 2015</IAO_0000119>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en">A US cenus reference person role is a human social role that inheres in a Homo sapiens who is a member of a household and is realized by other persons in the household being recorded in the US census in relation to that person.</IAO_0000115>
@@ -2431,6 +2431,262 @@ last accessed June 30, 2015</IAO_0000119>
     <owl:Class rdf:about="&obo;OMRSE_00000088">
         <rdfs:label xml:lang="en">age measurement datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000416"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000089 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000089">
+        <rdfs:label xml:lang="en">contract</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000310"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021002"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000090 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000090">
+        <rdfs:label xml:lang="en">indemnity contract</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OMRSE_00000089"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000005"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000007"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000104"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000091 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000091">
+        <rdfs:label xml:lang="en">insurance policy</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OMRSE_00000090"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0021002"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000093"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="&obo;RO_0002351"/>
+                                                        <owl:allValuesFrom>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                                                                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000094"/>
+                                                            </owl:Restriction>
+                                                        </owl:allValuesFrom>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000092 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000092">
+        <rdfs:label xml:lang="en">insured party role</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OMRSE_00000024"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000056"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0021002"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000091"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0000001"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000091"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000093 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000093">
+        <rdfs:label xml:lang="en">insurance company</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000053"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000096"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000053"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;OMRSE_00000095"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="&obo;IAO_0021004"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0021002"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty>
+                            <rdf:Description>
+                                <owl:inverseOf rdf:resource="&obo;IAO_0000136"/>
+                            </rdf:Description>
+                        </owl:onProperty>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0000007"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000091"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000094 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000094">
+        <rdfs:label xml:lang="en">policy holder role</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OMRSE_00000092"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000053"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000096"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000095 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000095">
+        <rdfs:label xml:lang="en">payor role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000024"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000096 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000096">
+        <rdfs:label xml:lang="en">party to an insurance policy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000097 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000097">
+        <rdfs:label xml:lang="en">enrollment date</rdfs:label>
     </owl:Class>
     
 
