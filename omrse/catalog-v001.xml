@@ -2,6 +2,6 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2014-05-03/bfo.owl" uri="http://purl.obolibrary.org/obo/bfo.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1436387980069" name="http://purl.obolibrary.org/obo/" uri="omrse.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1437747997230" name="http://purl.obolibrary.org/obo/" uri="omrse.owl"/>
     </group>
 </catalog>
