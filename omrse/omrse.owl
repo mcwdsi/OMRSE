@@ -299,6 +299,14 @@
         <rdfs:label xml:lang="en">administrates</rdfs:label>
         <rdfs:comment xml:lang="en">A definition of &quot;tranfers&quot; object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl</rdfs:comment>
         <IAO_0000115 xml:lang="en">a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a.</IAO_0000115>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -309,14 +317,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -1272,19 +1272,6 @@ This issue is outside the scope of OBI.</IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -1293,6 +1280,19 @@ This issue is outside the scope of OBI.</IAO_0000116>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</IAO_0000115>
@@ -1977,7 +1977,7 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000062"/>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
         <IAO_0000115 xml:lang="en">A facility that is run by a hospital organization and is the bearer of a hospital function.</IAO_0000115>
         <IAO_0000117 xml:lang="en">Mathias Brochhausen</IAO_0000117>
     </owl:Class>
@@ -2331,6 +2331,12 @@ last accessed on June 30, 2015</IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -2343,12 +2349,6 @@ last accessed on June 30, 2015</IAO_0000119>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en">A US cenus reference person role is a human social role that inheres in a Homo sapiens who is a member of a household and is realized by other persons in the household being recorded in the US census in relation to that person.</IAO_0000115>
@@ -2800,6 +2800,306 @@ last accessed June 30, 2015</IAO_0000119>
                                 <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                                 <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000100"/>
                             </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000102 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000102">
+        <rdfs:label xml:lang="en">health care facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000062"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000103 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000103">
+        <rdfs:label xml:lang="en">US Census unemployed role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000001"/>
+        <rdfs:comment xml:lang="en">A US Census unemployed role is a human social role that inheres in a human who is legally eligible to work, is conferred by the U.S. Census Bureau, and is realized by the bearer not working and either making active efforts to find employment in the four weeks prior to the reference week or waiting to be recalled from temporary layoff.</rdfs:comment>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000104 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000104">
+        <rdfs:label xml:lang="en">hospice facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000117"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000105 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000105">
+        <rdfs:label xml:lang="en">skilled nursing facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000106 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000106">
+        <rdfs:label xml:lang="en">rehabilitation facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000107 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000107">
+        <rdfs:label xml:lang="en">nursing home facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
+        <IAO_0000115 xml:lang="en">A facility that is run by a nursing home organization and is the bearer of a nursing home function.</IAO_0000115>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000108 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000108">
+        <rdfs:label xml:lang="en">residential facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000109 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000109">
+        <rdfs:label xml:lang="en">overnight dialysis facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000110 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000110">
+        <rdfs:label xml:lang="en">outpatient clinic facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000111 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000111">
+        <rdfs:label xml:lang="en">physician office facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000112 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000112">
+        <rdfs:label xml:lang="en">ambulatory surgery facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000116"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000113 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000113">
+        <rdfs:label xml:lang="en">urgent care facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000115"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000114 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000114">
+        <rdfs:label xml:lang="en">emergency department facility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000115 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000115">
+        <rdfs:label xml:lang="en">urgent care function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000116 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000116">
+        <rdfs:label xml:lang="en">ambulatory surgery function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Function"/>
+        <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000117 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000117">
+        <rdfs:label xml:lang="en">hospice function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000118 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000118">
+        <rdfs:label xml:lang="en">emergency department function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000119 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000119">
+        <rdfs:label xml:lang="en">physician office function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000120 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000120">
+        <rdfs:label xml:lang="en">outpatient clinic function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000121 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000121">
+        <rdfs:label xml:lang="en">overnight dialysis function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000122 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000122">
+        <rdfs:label xml:lang="en">rehabilitation function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000123 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000123">
+        <rdfs:label xml:lang="en">skilled nursing function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000124 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000124">
+        <rdfs:label xml:lang="en">residential function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000125 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000125">
+        <rdfs:label xml:lang="en">nursing home function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Function"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000126 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000126">
+        <rdfs:label xml:lang="en">patient discharge</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0021002"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;IAO_0000310"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000059"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000005"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000059"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000007"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000059"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000104"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.obofoundry.org/ro/ro.owl#has_agent"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;RO_0000053"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000012"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
                         </owl:someValuesFrom>
                     </owl:Restriction>
                 </owl:intersectionOf>
