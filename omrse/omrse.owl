@@ -5,6 +5,7 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY OBO_REL "http://purl.org/obo/owl/OBO_REL#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
@@ -19,6 +20,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:OBO_REL="http://purl.org/obo/owl/OBO_REL#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:omrse="&obo;omrse.owl/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -186,7 +188,7 @@
         <IAO_0000118 xml:lang="en">&apos;inheres in at all times&apos;</IAO_0000118>
         <IAO_0000118 xml:lang="en">inheres_in</IAO_0000118>
         <owl:inverseOf rdf:resource="&obo;BFO_0000053"/>
-        <owl:equivalentProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+        <owl:equivalentProperty rdf:resource="&OBO_REL;inheres_in"/>
     </owl:ObjectProperty>
     
 
@@ -197,8 +199,14 @@
         <rdfs:label xml:lang="en">is bearer of</rdfs:label>
         <IAO_0000118 xml:lang="en">bearer of</IAO_0000118>
         <IAO_0000118 xml:lang="en">bearer_of</IAO_0000118>
-        <owl:equivalentProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+        <owl:equivalentProperty rdf:resource="&OBO_REL;bearer_of"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000059 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000059"/>
     
 
 
@@ -299,14 +307,6 @@
         <rdfs:label xml:lang="en">administrates</rdfs:label>
         <rdfs:comment xml:lang="en">A definition of &quot;tranfers&quot; object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl</rdfs:comment>
         <IAO_0000115 xml:lang="en">a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a.</IAO_0000115>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -317,6 +317,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                    <rdf:Description rdf:about="&snap;MaterialEntity"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -419,13 +427,13 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
 
     <!-- http://purl.org/obo/owl/OBO_REL#bearer_of -->
 
-    <rdf:Description rdf:about="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+    <rdf:Description rdf:about="&OBO_REL;bearer_of"/>
     
 
 
     <!-- http://purl.org/obo/owl/OBO_REL#inheres_in -->
 
-    <rdf:Description rdf:about="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+    <rdf:Description rdf:about="&OBO_REL;inheres_in"/>
     
 
 
@@ -1028,11 +1036,11 @@ This issue is outside the scope of OBI.</IAO_0000116>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+                        <owl:onProperty rdf:resource="&OBO_REL;inheres_in"/>
                         <owl:someValuesFrom rdf:resource="&obo;OBI_0100026"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+                        <owl:onProperty rdf:resource="&OBO_REL;inheres_in"/>
                         <owl:allValuesFrom rdf:resource="&obo;OBI_0100026"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1054,11 +1062,11 @@ This issue is outside the scope of OBI.</IAO_0000116>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+                        <owl:onProperty rdf:resource="&OBO_REL;inheres_in"/>
                         <owl:someValuesFrom rdf:resource="&obo;OBI_0100026"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#inheres_in"/>
+                        <owl:onProperty rdf:resource="&OBO_REL;inheres_in"/>
                         <owl:allValuesFrom rdf:resource="&obo;OBI_0100026"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1156,7 +1164,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
 
     <owl:Class rdf:about="&obo;OMRSE_00000013">
         <rdfs:label xml:lang="en">physician role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000010"/>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
@@ -1175,7 +1183,7 @@ This issue is outside the scope of OBI.</IAO_0000116>
 
     <owl:Class rdf:about="&obo;OMRSE_00000014">
         <rdfs:label xml:lang="en">nurse role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000010"/>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000012"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
@@ -1937,7 +1945,7 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;OMRSE_00000061"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                        <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
                         <owl:someValuesFrom rdf:resource="&snap;Function"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -1971,7 +1979,7 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                        <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
                         <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000052"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2005,7 +2013,7 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
                         </owl:unionOf>
                     </owl:Class>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                        <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
                         <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000053"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -2098,7 +2106,7 @@ A patient suffering a thermal, electrical, chemical or radiation burn.</IAO_0000
 
     <owl:Class rdf:about="&obo;OMRSE_00000072">
         <rdfs:label xml:lang="en">physiatrist role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000010"/>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000012"/>
         <IAO_0000115 xml:lang="en">A health care role borne by a human being and realized by training and certification in rehabilitation medicine.</IAO_0000115>
         <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
         <IAO_0000119 xml:lang="en">The following definition for &apos;physiatrist&apos; was approved by the CAFE team of domain experts (experts in trauma care) May 29, 2015.
@@ -2280,7 +2288,7 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000062"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000079"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2331,12 +2339,6 @@ last accessed on June 30, 2015</IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000052"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -2351,11 +2353,26 @@ last accessed on June 30, 2015</IAO_0000119>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <IAO_0000115 xml:lang="en">A US cenus reference person role is a human social role that inheres in a Homo sapiens who is a member of a household and is realized by other persons in the household being recorded in the US census in relation to that person.</IAO_0000115>
         <IAO_0000117 xml:lang="en">Amanda Hicks</IAO_0000117>
         <IAO_0000119 xml:lang="en">http://www.census.gov/cps/about/cpsdef.html
 
 last accessed June 30, 2015</IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000083 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000083">
+        <rdfs:label xml:lang="en">OMB ethnic identity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000100"/>
     </owl:Class>
     
 
@@ -2513,7 +2530,7 @@ last accessed June 30, 2015</IAO_0000119>
                                                         <owl:onProperty rdf:resource="&obo;RO_0002351"/>
                                                         <owl:allValuesFrom>
                                                             <owl:Restriction>
-                                                                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                                                                <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
                                                                 <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000094"/>
                                                             </owl:Restriction>
                                                         </owl:allValuesFrom>
@@ -2836,7 +2853,7 @@ last accessed June 30, 2015</IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2923,7 +2940,7 @@ last accessed June 30, 2015</IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2939,7 +2956,7 @@ last accessed June 30, 2015</IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000102"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.org/obo/owl/OBO_REL#bearer_of"/>
+                <owl:onProperty rdf:resource="&OBO_REL;bearer_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000115"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3109,75 +3126,109 @@ last accessed June 30, 2015</IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/omrse.owl/OMRSE_00000180 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000127 -->
 
-    <owl:Class rdf:about="&obo;omrse.owl/OMRSE_00000180">
+    <owl:Class rdf:about="&obo;OMRSE_00000127">
+        <rdfs:label xml:lang="en">hispanic or latino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000083"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000128 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000128">
+        <rdfs:label xml:lang="en">not hispanic or latino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000083"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000129 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000129">
+        <rdfs:label xml:lang="en">US physician assistant role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&OBO_REL;inheres_in"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <IAO_0000115 xml:lang="en">A human health care provider role that inheres in a human being that is created by state licensing and that is realized by taking patient histories, performing physical exams, diagnosing illnesses, developing treatment plans, ordering lab tests, prescribing medications, counselling and educating patients, suturing wounds, and assisting in surgery under the supervision of a physician or a surgeon.</IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000180 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000180">
         <rdfs:label xml:lang="en">American Indian or Alaska Native identity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;omrse.owl/OMRSE_00000185"/>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000185"/>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
         <IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment.</IAO_0000115>
-        <IAO_0000117>Amanda Hicks</IAO_0000117>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/omrse.owl/OMRSE_00000181 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000181 -->
 
-    <owl:Class rdf:about="&obo;omrse.owl/OMRSE_00000181">
+    <owl:Class rdf:about="&obo;OMRSE_00000181">
         <rdfs:label xml:lang="en">Asian identity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;omrse.owl/OMRSE_00000185"/>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000185"/>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
         <IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent.</IAO_0000115>
-        <IAO_0000117>Amanda Hicks</IAO_0000117>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/omrse.owl/OMRSE_00000182 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000182 -->
 
-    <owl:Class rdf:about="&obo;omrse.owl/OMRSE_00000182">
+    <owl:Class rdf:about="&obo;OMRSE_00000182">
         <rdfs:label xml:lang="en">black or African American identity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;omrse.owl/OMRSE_00000185"/>
-        <IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the black racial groups of Africa.</IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000185"/>
         <IAO_0000117>Amanda Hicks</IAO_0000117>
+        <IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the black racial groups of Africa.</IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/omrse.owl/OMRSE_00000183 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000183 -->
 
-    <owl:Class rdf:about="&obo;omrse.owl/OMRSE_00000183">
+    <owl:Class rdf:about="&obo;OMRSE_00000183">
         <rdfs:label xml:lang="en">Native Hawaiian or other Pacific Islander identity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;omrse.owl/OMRSE_00000185"/>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000185"/>
         <IAO_0000117>Amanda Hicks</IAO_0000117>
         <IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands.</IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/omrse.owl/OMRSE_00000184 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000184 -->
 
-    <owl:Class rdf:about="&obo;omrse.owl/OMRSE_00000184">
+    <owl:Class rdf:about="&obo;OMRSE_00000184">
         <rdfs:label xml:lang="en">white identity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;omrse.owl/OMRSE_00000185"/>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000185"/>
         <IAO_0000117>Amanda Hicks</IAO_0000117>
         <IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Europe, the Middle East, or North Africa.</IAO_0000115>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/omrse.owl/OMRSE_00000185 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000185 -->
 
-    <owl:Class rdf:about="&obo;omrse.owl/OMRSE_00000185">
+    <owl:Class rdf:about="&obo;OMRSE_00000185">
         <rdfs:label xml:lang="en">OMB racial identity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000098"/>
-        <IAO_0000117>Amanda Hicks</IAO_0000117>
         <IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms.</IAO_0000115>
+        <IAO_0000117>Amanda Hicks</IAO_0000117>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/omrse.owl/OMRSE_00000186 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000186 -->
 
-    <owl:Class rdf:about="&obo;omrse.owl/OMRSE_00000186">
+    <owl:Class rdf:about="&obo;OMRSE_00000186">
         <rdfs:label xml:lang="en">heavy smoker role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000039"/>
         <IAO_0000115 xml:lang="en">A role that inheres in an organism and is realized by habitually smoking 10 or more tobacco cigerettes a day or the equivalent in other tobacco products.</IAO_0000115>
@@ -3185,9 +3236,9 @@ last accessed June 30, 2015</IAO_0000119>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/omrse.owl/OMRSE_00000187 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000187 -->
 
-    <owl:Class rdf:about="&obo;omrse.owl/OMRSE_00000187">
+    <owl:Class rdf:about="&obo;OMRSE_00000187">
         <rdfs:label xml:lang="en">light smoker role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000039"/>
         <IAO_0000115 xml:lang="en">A role that inheres in an organism and is realized by habitually smoking 1&gt;10 tobacco cigerettes a day or the equivalent in other tobacco products.</IAO_0000115>
@@ -3219,40 +3270,15 @@ last accessed June 30, 2015</IAO_0000119>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Site -->
 
+    <owl:Class rdf:about="&snap;Site"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000083 -->
+    <!-- http://www.ifomis.org/bfo/1.1/span#Process -->
 
-    <owl:NamedIndividual rdf:about="&obo;OMRSE_00000083">
-        <rdf:type>
-            <owl:Class>
-                <owl:complementOf>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000053"/>
-                        <owl:someValuesFrom rdf:resource="&obo;BFO_0000023"/>
-                    </owl:Restriction>
-                </owl:complementOf>
-            </owl:Class>
-        </rdf:type>
-        <rdfs:label xml:lang="en">joe</rdfs:label>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000084 -->
-
-    <owl:NamedIndividual rdf:about="&obo;OMRSE_00000084">
-        <rdfs:label xml:lang="en">joe</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:Class rdf:about="http://www.ifomis.org/bfo/1.1/span#Process"/>
     
 
 
