@@ -264,6 +264,14 @@
         <obo:IAO_0000119 xml:lang="en">Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.</obo:IAO_0000119>
         <obo:IAO_0000600 xml:lang="en">This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. </obo:IAO_0000600>
         <owl:inverseOf rdf:resource="&obo;OMIABIS_0000048"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -274,14 +282,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -294,14 +294,6 @@
         <rdfs:comment xml:lang="en">A definition of &quot;tranfers&quot; object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl</rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a.</obo:IAO_0000115>
         <owl:inverseOf rdf:resource="&obo;OMRSE_00000068"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -312,6 +304,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -484,21 +484,6 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="&obo;BFO_0000040"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ERO_0000783 -->
-
-    <owl:Class rdf:about="&obo;ERO_0000783">
-        <rdfs:label rdf:datatype="&xsd;string">student role</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000024"/>
-        <obo:IAO_0000112 rdf:datatype="&xsd;string">A college student.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A role inhering in a person that is realized when the bearer participates a course of study, as in a school, college, university, etc.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
-        <obo:IAO_0000412 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/ero.owl</obo:IAO_0000412>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://www.thefreedictionary.com/student</obo:IAO_0000119>
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
-    </owl:Class>
     
 
 
@@ -2363,15 +2348,11 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
                                     <owl:Class>
                                         <owl:intersectionOf rdf:parseType="Collection">
                                             <rdf:Description rdf:about="&obo;IAO_0021005"/>
-                                            <owl:Class>
-                                                <owl:intersectionOf rdf:parseType="Collection">
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="&obo;RO_0000053"/>
-                                                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000087"/>
-                                                    </owl:Restriction>
-                                                    <owl:Restriction>
-                                                        <owl:onProperty rdf:resource="&obo;RO_0002218"/>
-                                                        <owl:someValuesFrom>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;RO_0002218"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
                                                             <owl:Class>
                                                                 <owl:unionOf rdf:parseType="Collection">
                                                                     <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
@@ -2379,10 +2360,14 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
                                                                     <rdf:Description rdf:about="&obo;OMRSE_00000023"/>
                                                                 </owl:unionOf>
                                                             </owl:Class>
-                                                        </owl:someValuesFrom>
-                                                    </owl:Restriction>
-                                                </owl:intersectionOf>
-                                            </owl:Class>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="&obo;RO_0000053"/>
+                                                                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000087"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
                                         </owl:intersectionOf>
                                     </owl:Class>
                                 </owl:someValuesFrom>
@@ -2452,14 +2437,8 @@ last accessed on June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000082 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000082">
-        <rdfs:label xml:lang="en">US census reference person role</rdfs:label>
+        <rdfs:label xml:lang="en">US Census reference person role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000052"/>
@@ -2476,6 +2455,12 @@ last accessed on June 30, 2015</obo:IAO_0000119>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A US cenus reference person role is a human social role that inheres in a Homo sapiens who is a member of a household and is realized by other persons in the household being recorded in the US census in relation to that person.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">http://www.census.gov/cps/about/cpsdef.html
@@ -2490,6 +2475,15 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;OMRSE_00000083">
         <rdfs:label xml:lang="en">OMB ethnic identity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000100"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000084 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000084">
+        <rdfs:label xml:lang="en">enrollment end date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000130"/>
     </owl:Class>
     
 
@@ -2821,7 +2815,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;OMRSE_00000097">
         <rdfs:label xml:lang="en">enrollment start date</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000038"/>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000130"/>
     </owl:Class>
     
 
@@ -3274,6 +3268,15 @@ last accessed June 30, 2015</obo:IAO_0000119>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A human health care provider role that inheres in a human being that is created by state licensing and that is realized by taking patient histories, performing physical exams, diagnosing illnesses, developing treatment plans, ordering lab tests, prescribing medications, counselling and educating patients, suturing wounds, and assisting in surgery under the supervision of a physician or a surgeon.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000130 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000130">
+        <rdfs:label xml:lang="en">date</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000038"/>
     </owl:Class>
     
 
