@@ -6,7 +6,8 @@
     <uri id="Imports Wizard Entry" name="http://www.ifomis.org/bfo/1.1" uri="file:/Users/aehicks/Dropbox/Home/bfo-1.1.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2014-05-03/bfo.owl" uri="http://purl.obolibrary.org/obo/bfo.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1444245856713" name="http://purl.obolibrary.org/obo/" uri="omrse1.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1444245856713" name="http://purl.obolibrary.org/obo/omrse.owl" uri="omrse.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1444743482047" name="http://purl.obolibrary.org/obo/" uri="omrse1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1444743482047" name="duplicate:http://purl.obolibrary.org/obo/omrse.owl" uri="omrse.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1444743482047" name="duplicate:http://purl.obolibrary.org/obo/omrse.owl" uri="omrse2.owl"/>
     </group>
 </catalog>
