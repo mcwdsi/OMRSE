@@ -294,14 +294,6 @@
         <rdfs:comment xml:lang="en">A definition of &quot;tranfers&quot; object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl</rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a.</obo:IAO_0000115>
         <owl:inverseOf rdf:resource="&obo;OMRSE_00000068"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -312,6 +304,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -1336,6 +1336,30 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;OMRSE_00000017">
         <rdfs:label xml:lang="en">physician practice</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;OBI_0001688"/>
+                                <owl:onClass>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;RO_0000053"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000013"/>
+                                    </owl:Restriction>
+                                </owl:onClass>
+                                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A health care provider organization role that inheres in an organization consisting of two or more physicians.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1357,6 +1381,24 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <owl:Class rdf:about="&obo;OMRSE_00000019">
         <rdfs:label xml:lang="en">integrated delivery network</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;OBI_0001688"/>
+                                <owl:allValuesFrom rdf:resource="&obo;OBI_0000245"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A health care provider organization role that inheres in an organization that is comprised of other organizations.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -2506,6 +2548,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="&obo;IAO_0021004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000117 xml:lang="en">A role that concretizes a socio-lega generically dependent continuant</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -2548,6 +2592,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000117 xml:lang="en">A socio-legal human social role that concretizes a socio-legally generically dependent continuat that was created by a declaration performed by an organization.</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -2711,6 +2757,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000117 xml:lang="en">A role that inheres in an organism that is able to receive benefits from an insurance policy. The role is realized by receiving benefits that are covered by the insurance policy.</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -2796,6 +2844,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">An insured party role that inheres in a person who participates in the creation of the insurance contract and is elidgible to receive benefits as specified by the insurance contract.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3287,15 +3337,15 @@ last accessed June 30, 2015</obo:IAO_0000119>
                                 <owl:intersectionOf rdf:parseType="Collection">
                                     <rdf:Description rdf:about="&obo;IAO_0000310"/>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                                         <owl:someValuesFrom rdf:resource="&obo;IAO_0000005"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                                         <owl:someValuesFrom rdf:resource="&obo;IAO_0000007"/>
                                     </owl:Restriction>
                                     <owl:Restriction>
-                                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                                         <owl:someValuesFrom rdf:resource="&obo;IAO_0000104"/>
                                     </owl:Restriction>
                                 </owl:intersectionOf>
@@ -3485,6 +3535,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;OMRSE_00000504">
         <rdfs:label xml:lang="en">government assistance income data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000506"/>
     </owl:Class>
     
 
