@@ -179,9 +179,27 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000050"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000054"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000055"/>
     
 
 
@@ -264,14 +282,6 @@
         <obo:IAO_0000119 xml:lang="en">Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.</obo:IAO_0000119>
         <obo:IAO_0000600 xml:lang="en">This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. </obo:IAO_0000600>
         <owl:inverseOf rdf:resource="&obo;OMIABIS_0000048"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -282,6 +292,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -432,6 +450,12 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000056"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
 
     <owl:ObjectProperty rdf:about="&obo;RO_0000059">
@@ -443,6 +467,18 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/RO_0002218 -->
 
     <owl:ObjectProperty rdf:about="&obo;RO_0002218"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002350 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002350"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002351"/>
     
 
 
@@ -2520,10 +2556,10 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000083 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000083">
-        <rdfs:label xml:lang="en">OMB ethnic identity</rdfs:label>
+        <rdfs:label xml:lang="en">OMB ethnic identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000100"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">An ethnic identity that is the output of an ethnic identification process that uses OMB terminology for ethnicity or terminology that is mapped the OMB ethnicity terms.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An ethnic identity datum that is the output of an ethnic identification process that uses OMB terminology for ethnicity or terminology that is mapped the OMB ethnicity terms.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2887,7 +2923,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000098 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000098">
-        <rdfs:label xml:lang="en">racial identity</rdfs:label>
+        <rdfs:label xml:lang="en">racial identity datum</rdfs:label>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2945,34 +2981,38 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000100 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000100">
-        <rdfs:label xml:lang="en">ethnic identity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
-        <rdfs:subClassOf>
+        <rdfs:label xml:lang="en">ethnic identity datum</rdfs:label>
+        <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0020022"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                        <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;IAO_0000030"/>
                             <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000101"/>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="&obo;IAO_0020022"/>
                             </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
-                    </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                                <owl:someValuesFrom>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000101"/>
+                                    </owl:Restriction>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">An ethnic identity is an information content entity that is the output of some ethnic identitification process and is intended to be a truthful statement about the cultural or national heritage of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An ethnic identity datum is an information content entity that is the output of some ethnic identitification process and is intended to be a truthful statement about the cultural or national heritage of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3383,9 +3423,10 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000127 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000127">
-        <rdfs:label xml:lang="en">hispanic or latino</rdfs:label>
+        <rdfs:label xml:lang="en">hispanic or latino identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000083"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">An OMB ethnic identity datum that indicates the person identified is of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3393,9 +3434,10 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000128 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000128">
-        <rdfs:label xml:lang="en">not hispanic or latino</rdfs:label>
+        <rdfs:label xml:lang="en">not hispanic or latino identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000083"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">An OMB ethnic identity datum that indicates the person identified is not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3444,7 +3486,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000180 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000180">
-        <rdfs:label xml:lang="en">American Indian or Alaska Native identity</rdfs:label>
+        <rdfs:label xml:lang="en">American Indian or Alaska Native identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000185"/>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment.</obo:IAO_0000115>
@@ -3455,7 +3497,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000181 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000181">
-        <rdfs:label xml:lang="en">Asian identity</rdfs:label>
+        <rdfs:label xml:lang="en">Asian identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000185"/>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent.</obo:IAO_0000115>
@@ -3466,7 +3508,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000182 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000182">
-        <rdfs:label xml:lang="en">black or African American identity</rdfs:label>
+        <rdfs:label xml:lang="en">black or African American identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000185"/>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the black racial groups of Africa.</obo:IAO_0000115>
@@ -3477,7 +3519,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000183 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000183">
-        <rdfs:label xml:lang="en">Native Hawaiian or other Pacific Islander identity</rdfs:label>
+        <rdfs:label xml:lang="en">Native Hawaiian or other Pacific Islander identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000185"/>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands.</obo:IAO_0000115>
@@ -3488,7 +3530,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000184 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000184">
-        <rdfs:label xml:lang="en">white identity</rdfs:label>
+        <rdfs:label xml:lang="en">white identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000185"/>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Europe, the Middle East, or North Africa.</obo:IAO_0000115>
@@ -3499,7 +3541,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000185 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000185">
-        <rdfs:label xml:lang="en">OMB racial identity</rdfs:label>
+        <rdfs:label xml:lang="en">OMB racial identity datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000098"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
