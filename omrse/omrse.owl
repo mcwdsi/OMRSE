@@ -2008,7 +2008,7 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     <owl:Class rdf:about="&obo;OMRSE_00000052">
         <rdfs:label xml:lang="en">hospital function</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000034"/>
-        <obo:IAO_0000115 xml:lang="en">A function inhering in a material entity that is realized by the material entity being the site at which inpatient and outpatient healthcare is provided to a patient population.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A function inhering in a material entity that, if realized, is realized by the material entity being the site at which inpatient and outpatient healthcare is provided to a patient population.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
     </owl:Class>
     
@@ -2668,7 +2668,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000117 xml:lang="en">A socio-legal human social role that concretizes a socio-legally generically dependent continuat that was created by a declaration performed by an organization.</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A socio-legal human social role that concretizes a socio-legally generically dependent continuat that was created by a declaration performed by an organization.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
     
