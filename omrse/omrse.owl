@@ -2019,7 +2019,7 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     <owl:Class rdf:about="&obo;OMRSE_00000053">
         <rdfs:label xml:lang="en">school function</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000034"/>
-        <obo:IAO_0000115 xml:lang="en">A function inhering in a material entity that isr ealized by that material entity being the site at which formal education is provided to a student population.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A function inhering in a material entity that, if realized, is realized by that material entity being the site at which formal education is provided to a student population.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
     </owl:Class>
     
@@ -2410,7 +2410,7 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A function that inheres in a material entity and is realized by protecting persons and their possessions from weather and by some person or group of persons habitually sleeping in at least one site that is contained by that material entity.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A function that inheres in a material entity and, if realized, is realized by protecting persons and their possessions from weather and by some person or group of persons habitually sleeping in at least one site that is contained by that material entity.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
     
@@ -2528,7 +2528,7 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
         <rdfs:label xml:lang="en">workplace function</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000034"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000115 xml:lang="en">a function inhering in a material entity that is realized by that material entity being the site where the work of some organization is carried out</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a function inhering in a material entity that, if realized, is realized by that material entity being the site where the work of some organization is carried out</obo:IAO_0000115>
     </owl:Class>
     
 
