@@ -3773,6 +3773,24 @@ last accessed June 30, 2015</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000144 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000144">
+        <rdfs:label xml:lang="en">rehabilitation specialist role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000012"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A healthcare provider role borne by a human being and if realized, is realized by providing assessment and treatment that follows surgery, or treatment of a disease or of an injury, and which restores a patient&apos;s preferable functionality.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://github.com/ufbmi/OMRSE/issues/50#issuecomment-235711549</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000180 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000180">
