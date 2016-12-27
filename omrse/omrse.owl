@@ -3791,6 +3791,19 @@ last accessed June 30, 2015</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000145 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000145">
+        <rdfs:label xml:lang="en">general surgeon role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000138"/>
+        <obo:IAO_0000119>https://github.com/ufbmi/OMRSE/issues/50</obo:IAO_0000119>
+        <obo:IAO_0000119>https://www.facs.org/education/resources/residency-search/specialties/general</obo:IAO_0000119>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A surgeon role role borne by a human being and that, if realized, is being realized by its bearer using operative manual and instrumental techniques on patients to investigate and/or treat pathological conditions such as diseases or injuries in all of the nine primary components to surgery (1. alimentary tract, 2. abdomen and its contents, 3. breast, skin, and soft tissue, 4. head and neck, 5. vascular system, excluding the intracranial vessels and heart, 6. endocrine system, 7. surgical oncology, 8. comprehensive management of trauma, 9. complete care of critically ill patients with underlying surgical conditions, in the emergency room, intensive care unit, and trauma/burn units), to help improve bodily function or appearance or to repair unwanted ruptured areas.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000180 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000180">
