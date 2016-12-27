@@ -3695,8 +3695,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:label xml:lang="en">surgeon role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000013"/>
         <obo:IAO_0000115 xml:lang="en">A physician role borne by a human being and that, if realized, is being realized by its bearer using operative manual and instrumental techniques on a patient to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://github.com/ufbmi/OMRSE/issues/50#issuecomment-235711549</obo:IAO_0000119>
+        <obo:IAO_0000119>https://github.com/ufbmi/OMRSE/issues/50#issuecomment-235711549</obo:IAO_0000119>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -3706,9 +3706,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <owl:Class rdf:about="&obo;OMRSE_00000139">
         <rdfs:label xml:lang="en">emergency medicine physician role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000013"/>
+        <obo:IAO_0000119>https://github.com/ufbmi/OMRSE/issues/50#issuecomment-235711549</obo:IAO_0000119>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A physician role that inheres in a human being and that, if realized, is realized by its bearer providing care for undifferentiated and unscheduled patients with illnesses or injuries requiring immediate medical attention.</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">https://github.com/ufbmi/OMRSE/issues/50#issuecomment-235711549</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -3719,8 +3719,32 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:label xml:lang="en">neurosurgeon role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000138"/>
         <obo:IAO_0000115 xml:lang="en">A surgeon role borne by a human being and, that, if realized, is realized by its bearer using operative manual and instrumental techniques on the nervous system of a patient to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://github.com/ufbmi/OMRSE/issues/50#issuecomment-235711549</obo:IAO_0000119>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://github.com/ufbmi/OMRSE/issues/50#issuecomment-235711549</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000141 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000141">
+        <rdfs:label xml:lang="en">occupational therapist role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000012"/>
+        <obo:IAO_0000115 xml:lang="en">A healthcare provider role borne by a human being and that, if realized, realized by providing assessment and treatment to develop, recover, or maintain the daily living and work skills of people with a physical, mental, or cognitive disorder.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://github.com/ufbmi/OMRSE/issues/50#issuecomment-235711549</obo:IAO_0000119>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000142 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000142">
+        <rdfs:label xml:lang="en">orthopedic surgeon role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000138"/>
+        <obo:IAO_0000115 xml:lang="en">A surgeon role borne by a human being and, that, if realized, is realized by its bearer using operative manual or instrumental techniques on the musculoskeletal system of a patient to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://github.com/ufbmi/OMRSE/issues/50#issuecomment-235711549</obo:IAO_0000119>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
     </owl:Class>
     
 
