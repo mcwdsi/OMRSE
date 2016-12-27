@@ -355,6 +355,14 @@
         <rdfs:label xml:lang="en">is owned by</rdfs:label>
         <obo:IAO_0000119 xml:lang="en">Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b.</obo:IAO_0000115>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -365,14 +373,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
     </owl:ObjectProperty>
     
 
@@ -487,9 +487,33 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002217 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002217">
+        <rdfs:label xml:lang="en">actively participates in</rdfs:label>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000118>agent in</obo:IAO_0000118>
+        <obo:IAO_0000115>x actively participates in y if and only if x participates in y and x realizes some active role</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_0000056"/>
+        <owl:inverseOf rdf:resource="&obo;RO_0002218"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002218 -->
 
-    <owl:ObjectProperty rdf:about="&obo;RO_0002218"/>
+    <owl:ObjectProperty rdf:about="&obo;RO_0002218">
+        <rdfs:label xml:lang="en">has active participant</rdfs:label>
+        <obo:IAO_0000112>&apos;heart development&apos; has active participant some Shh protein</obo:IAO_0000112>
+        <obo:IAO_0000118>has agent</obo:IAO_0000118>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000116>This may be obsoleted and replaced by the original &apos;has agent&apos; relation</obo:IAO_0000116>
+        <obo:IAO_0000115>x has participant y if and only if x realizes some active role that inheres in y</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;RO_0000057"/>
+        <oboInOwl:inSubset rdf:resource="&obo;ro/subsets#ro-eco"/>
+    </owl:ObjectProperty>
     
 
 
@@ -1574,19 +1598,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000052"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -1595,6 +1606,19 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo:IAO_0000115>
@@ -2634,12 +2658,6 @@ last accessed on June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000052"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -2652,6 +2670,12 @@ last accessed on June 30, 2015</obo:IAO_0000119>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A US cenus reference person role is a human social role that inheres in a Homo sapiens who is a member of a household and is realized by other persons in the household being recorded in the US census in relation to that person.</obo:IAO_0000115>
@@ -3800,6 +3824,34 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.facs.org/education/resources/residency-search/specialties/general</obo:IAO_0000119>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A surgeon role role borne by a human being and that, if realized, is being realized by its bearer using operative manual and instrumental techniques on patients to investigate and/or treat pathological conditions such as diseases or injuries in all of the nine primary components to surgery (1. alimentary tract, 2. abdomen and its contents, 3. breast, skin, and soft tissue, 4. head and neck, 5. vascular system, excluding the intracranial vessels and heart, 6. endocrine system, 7. surgical oncology, 8. comprehensive management of trauma, 9. complete care of critically ill patients with underlying surgical conditions, in the emergency room, intensive care unit, and trauma/burn units), to help improve bodily function or appearance or to repair unwanted ruptured areas.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000146 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000146">
+        <rdfs:label xml:lang="en">chief medical officer role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000086"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;NCBITaxon_9606"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000053"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OMRSE_00000013"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A human role within an organization that is borne by a physician and that is realized by leading the organization and management of medical services in a health care facility</obo:IAO_0000115>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000119>https://github.com/ufbmi/OMRSE/issues/50</obo:IAO_0000119>
     </owl:Class>
     
 
