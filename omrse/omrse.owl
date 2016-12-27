@@ -297,14 +297,6 @@
         <obo:IAO_0000119 xml:lang="en">Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.</obo:IAO_0000119>
         <obo:IAO_0000600 xml:lang="en">This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. </obo:IAO_0000600>
         <owl:inverseOf rdf:resource="&obo;OMIABIS_0000048"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -315,6 +307,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -355,14 +355,6 @@
         <rdfs:label xml:lang="en">is owned by</rdfs:label>
         <obo:IAO_0000119 xml:lang="en">Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b.</obo:IAO_0000115>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -373,6 +365,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
     </owl:ObjectProperty>
     
 
@@ -2634,6 +2634,12 @@ last accessed on June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000052"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -2646,12 +2652,6 @@ last accessed on June 30, 2015</obo:IAO_0000119>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A US cenus reference person role is a human social role that inheres in a Homo sapiens who is a member of a household and is realized by other persons in the household being recorded in the US census in relation to that person.</obo:IAO_0000115>
@@ -3685,6 +3685,18 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000138 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000138">
+        <rdfs:label xml:lang="en">surgeon role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000013"/>
+        <obo:IAO_0000115 xml:lang="en">A physician role borne by a human being and that, if realized, is being realized by its bearer using operative manual and instrumental techniques on a patient to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">https://github.com/ufbmi/OMRSE/issues/50#issuecomment-235711549</obo:IAO_0000119>
     </owl:Class>
     
 
