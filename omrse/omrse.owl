@@ -3856,6 +3856,18 @@ last accessed June 30, 2015</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000147 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000147">
+        <rdfs:label xml:lang="en">director of clinical services role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000086"/>
+        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A human role within an organization that is borne by human being typically holding a health-related degree and that, if realized, is realized by coordinating patient care activities in a facility to maintain standards of patient care</obo:IAO_0000115>
+        <obo:IAO_0000119>https://github.com/ufbmi/OMRSE/issues/50</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000180 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000180">
