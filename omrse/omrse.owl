@@ -297,6 +297,14 @@
         <obo:IAO_0000119 xml:lang="en">Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.</obo:IAO_0000119>
         <obo:IAO_0000600 xml:lang="en">This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. </obo:IAO_0000600>
         <owl:inverseOf rdf:resource="&obo;OMIABIS_0000048"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -307,14 +315,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -3713,6 +3713,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     
 
 
+<<<<<<< HEAD
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000138 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000138">
@@ -3880,6 +3881,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
     
 
 
+=======
+>>>>>>> parent of 17f9716... added OMRSE_00000138 surgeon role class and definition.
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000180 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000180">
