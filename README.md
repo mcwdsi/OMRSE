@@ -12,4 +12,4 @@ There is a Google Group for discussing the project at http://groups.google.com/g
 
 [OntoNeo](https://ontoneo.com/): Obstetric and Neonatal Ontology
 
-[OOST](https://github.com/OOSTT/OOSTT:) Ontology of Organizational Structures of Trauma centers and Trauma systems
+[OOST](https://github.com/OOSTT/OOSTT:): Ontology of Organizational Structures of Trauma centers and Trauma systems
