@@ -6,7 +6,7 @@ There is an [OMRSE Google Group](http://groups.google.com/group/omrse-discuss) f
 
 ## Projects and ontologies that use OMRSE
 
-[Apollo Structured Vocabulary](http://code.google.com/p/apollo/)
+[Apollo Structured Vocabulary](https://github.com/ApolloDev)
 
 [OBIB](https://github.com/biobanking/biobanking): Ontology for Biobanking
 
