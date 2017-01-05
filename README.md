@@ -7,6 +7,9 @@ There is a Google Group for discussing the project at http://groups.google.com/g
 ## Projects and ontologies that use OMRSE
 
 [Apollo Structured Vocabulary](http://code.google.com/p/apollo/)
+
 [OBIB](https://github.com/biobanking/biobanking): Ontology for Biobanking
+
 [OntoNeo](https://ontoneo.com/): Obstetric and Neonatal Ontology
+
 [OOST]https://github.com/OOSTT/OOSTT: Ontology of Organizational Structures of Trauma centers and Trauma systems
