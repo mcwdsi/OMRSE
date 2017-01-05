@@ -14,4 +14,4 @@ There is an [OMRSE Google Group](http://groups.google.com/group/omrse-discuss) f
 
 [Oral Health and Disease Ontology](https://github.com/wdduncan/ohd-ontology)
 
-[OOST](https://github.com/OOSTT/OOSTT:): Ontology of Organizational Structures of Trauma centers and Trauma systems
+[OOST](https://github.com/OOSTT/): Ontology of Organizational Structures of Trauma centers and Trauma systems
