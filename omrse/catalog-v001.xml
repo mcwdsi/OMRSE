@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://purl.obofoundry.org/obo/iao/d-acts/20150916/d-acts.owl" uri="file:/Users/amandahicks/projects/ontologies/NTDS_owl/NTDS_Data_Work/Files/OUTPUT/d-acts.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1448973956741" name="http://purl.obolibrary.org/obo/omrse.owl" uri="omrse.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1471258782420" name="http://purl.obolibrary.org/obo/omrse.owl" uri="omrse.owl"/>
     </group>
 </catalog>
