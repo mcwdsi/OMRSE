@@ -136,6 +136,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OAE_0004334 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;OAE_0004334"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000080 -->
 
     <owl:AnnotationProperty rdf:about="&obo;OMRSE_00000080">
@@ -327,6 +333,14 @@
         <rdfs:comment xml:lang="en">A definition of &quot;tranfers&quot; object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl</rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a.</obo:IAO_0000115>
         <owl:inverseOf rdf:resource="&obo;OMRSE_00000068"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -337,14 +351,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
     </owl:ObjectProperty>
     
 
@@ -355,6 +361,14 @@
         <rdfs:label xml:lang="en">is owned by</rdfs:label>
         <obo:IAO_0000119 xml:lang="en">Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b.</obo:IAO_0000115>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
+                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -365,14 +379,6 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
-                    <rdf:Description rdf:about="&obo;IAO_0000030"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
     </owl:ObjectProperty>
     
 
@@ -1072,6 +1078,48 @@ The term is used in the following meaning of being self generated. It does not s
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OAE_0000002 -->
+
+    <owl:Class rdf:about="&obo;OAE_0000002">
+        <rdfs:label>medical intervention</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <obo:IAO_0000115>medical intervention is a planned process that has the goal of diagnosing, preventing or relieving illness or injury. </obo:IAO_0000115>
+        <obo:IAO_0000116>The act of intervening, interfering or interceding with the intent of modifying the outcome. In medicine, an intervention is usually undertaken to help treat or cure a condition. For example, &quot;Acupuncture as a therapeutic intervention is widely practiced in the United States,&quot; 
+Reference:
+http://www.medterms.com/script/main/art.asp?articlekey=34214 . Some interventions can be used for diagnosis. </obo:IAO_0000116>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://wiki.answers.com/Q/What_is_medical_intervention</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0000067 -->
+
+    <owl:Class rdf:about="&obo;OAE_0000067">
+        <rdfs:label>surgery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OAE_0002807"/>
+        <obo:OAE_0004334 rdf:datatype="&xsd;string">10042609</obo:OAE_0004334>
+        <obo:IAO_0000115>Surgery is a medical procedure that uses operative manual and instrumental techniques on a patient to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance. The key difference between a surgery and a general procedure is the need for an incision. Making an incision, or cutting into the skin to gain access to the body’s deeper tissues or organs, is a defining characteristic of surgery.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm</obo:IAO_0000119>
+        <obo:IAO_0000117>YH, SS</obo:IAO_0000117>
+        <obo:IAO_0000118>surgical procedure</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Surgery</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0002807 -->
+
+    <owl:Class rdf:about="&obo;OAE_0002807">
+        <rdfs:label xml:lang="en">medical procedure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OAE_0000002"/>
+        <obo:IAO_0000117>YH, SS</obo:IAO_0000117>
+        <obo:IAO_0000115>a medical intervention that refers to any series of pre-defined steps that should be followed to achieve a desired result.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="&obo;OBI_0000011"/>
@@ -1598,19 +1646,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
-                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
@@ -1619,6 +1654,19 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0000245"/>
+                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo:IAO_0000115>
@@ -2658,6 +2706,12 @@ last accessed on June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000052"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -2670,12 +2724,6 @@ last accessed on June 30, 2015</obo:IAO_0000119>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A US cenus reference person role is a human social role that inheres in a Homo sapiens who is a member of a household and is realized by other persons in the household being recorded in the US census in relation to that person.</obo:IAO_0000115>
@@ -3713,6 +3761,54 @@ last accessed June 30, 2015</obo:IAO_0000119>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000138 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000138">
+        <rdfs:label xml:lang="en">female gender identity datume</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000133"/>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">a gender identity datum resulting from a gender identification process in which ‘female’ is selected based on the participant&apos;s subjective sense of gender</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000139 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000139">
+        <rdfs:label xml:lang="en">surgeon role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000013"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;OAE_0000067"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000140 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000140">
+        <rdfs:label xml:lang="en">neurosurgereon role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000139"/>
+        <obo:IAO_0000115 xml:lang="en">A surgeon role realized by its bearer using performing neurosurgery.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000141 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000141">
+        <rdfs:label xml:lang="en">male gender identity datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OMRSE_00000133"/>
+        <obo:IAO_0000119 xml:lang="en"></obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">a gender identity datum resulting from a gender identification process in which ‘male’ is selected based on the participant&apos;s subjective sense of gender</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000180 -->
 
     <owl:Class rdf:about="&obo;OMRSE_00000180">
@@ -3743,6 +3839,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the black racial groups of Africa.</obo:IAO_0000115>
     </owl:Class>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000183 -->
 
