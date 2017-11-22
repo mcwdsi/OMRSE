@@ -1642,7 +1642,9 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">Definition needed, but the idea is that we want to differentiate between provider and payer organizations.  Some organizaitons have both roles (e.g., UPMC has a Hospital Division, a Physician Divison, and an Insurance Division).</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in an organization and that is realized by the providing of services in a health care encounter.</obo:IAO_0000115>
+        <dc:contributor>Mathias Brochhausen</dc:contributor>
+        <dc:creator>Amanda Hicks</dc:creator>
         <rdfs:label xml:lang="en">health care provider organization role</rdfs:label>
     </owl:Class>
     
@@ -4128,6 +4130,20 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000506">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:label xml:lang="en">socio-economic data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PCO_0000020 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PCO_0000020">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000022"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000115 xml:lang="en">A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Needs axioms for family relationships.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25173</obo:IAO_0000119>
+        <rdfs:comment>Family membership through marriage or adoption apply primarily to human families. In most species, family membership is defined by common anscestry.</rdfs:comment>
+        <rdfs:label xml:lang="en">family</rdfs:label>
     </owl:Class>
     
 
