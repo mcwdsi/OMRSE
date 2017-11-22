@@ -3941,18 +3941,44 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000142 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000142">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000532"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000532"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is about human travel.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/ufbmi/OMRSE/issues/79</obo:IAO_0000119>
         <dc:contributor>Jie Zheng</dc:contributor>
         <dc:creator>Amanda Hicks</dc:creator>
         <rdfs:label xml:lang="en">human traveling information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000143 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000143">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000028"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000076"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <dc:contributor xml:lang="en">A symbol that denotes a specific household</dc:contributor>
+        <dc:contributor>Jie Zheng</dc:contributor>
+        <dc:creator>Amanda Hicks</dc:creator>
+        <rdfs:label xml:lang="en">household identifier</rdfs:label>
     </owl:Class>
     
 
