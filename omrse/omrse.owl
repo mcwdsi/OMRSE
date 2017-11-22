@@ -4097,7 +4097,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000500">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000506"/>
-        <rdfs:label xml:lang="en">employment data</rdfs:label>
+        <rdfs:label xml:lang="en">employment data item</rdfs:label>
     </owl:Class>
     
 
@@ -4106,7 +4106,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000501">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000506"/>
-        <rdfs:label xml:lang="en">income data</rdfs:label>
+        <rdfs:label xml:lang="en">income data item</rdfs:label>
     </owl:Class>
     
 
@@ -4115,7 +4115,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000502">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000506"/>
-        <rdfs:label xml:lang="en">government assistance health care plan data</rdfs:label>
+        <rdfs:label xml:lang="en">government assistance health care plan data item</rdfs:label>
     </owl:Class>
     
 
@@ -4124,7 +4124,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000503">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000506"/>
-        <rdfs:label xml:lang="en">health care plan data</rdfs:label>
+        <rdfs:label xml:lang="en">health care plan data item</rdfs:label>
     </owl:Class>
     
 
@@ -4133,7 +4133,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000504">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000506"/>
-        <rdfs:label xml:lang="en">government assistance income data</rdfs:label>
+        <rdfs:label xml:lang="en">government assistance income data item</rdfs:label>
     </owl:Class>
     
 
@@ -4142,7 +4142,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000505">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000506"/>
-        <rdfs:label xml:lang="en">WIC data</rdfs:label>
+        <rdfs:label xml:lang="en">WIC data item</rdfs:label>
     </owl:Class>
     
 
@@ -4151,7 +4151,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000506">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <rdfs:label xml:lang="en">socio-economic data</rdfs:label>
+        <rdfs:label xml:lang="en">socio-economic data item</rdfs:label>
     </owl:Class>
     
 
