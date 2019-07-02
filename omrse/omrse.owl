@@ -2,6 +2,7 @@
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/omrse.owl/"
      xml:base="http://purl.obolibrary.org/obo/omrse.owl/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -3916,6 +3917,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000179"/>
         <obo:IAO_0000115 xml:lang="en">An identity datum is an information content entity that is the output of some identitification process and is intended to be a truthful statement about a person&apos;s social identity.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
         <dc:creator>Amanda Hicks</dc:creator>
         <rdfs:label xml:lang="en">identity datum</rdfs:label>
@@ -4352,6 +4354,20 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000163 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000163">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000168"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">Note that not all responses to a question asking process are answers. For example, a refusal to answer is not an answer. A refusal to answer is also not a specified output of the question asking process since it does not acheive the objective of asking the question, which is to get an answer.</rdfs:comment>
+        <rdfs:label xml:lang="en">response to a question asking process</rdfs:label>
+    </owl:Class>
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000164 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000164">
@@ -4408,6 +4424,25 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     </owl:Class>
     
 
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000168">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000173"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">questions asking process</rdfs:label>
+    </owl:Class>
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000169 -->
 
@@ -4478,6 +4513,70 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <rdfs:label xml:lang="en">health care function</rdfs:label>
     </owl:Class>
     
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000173 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">material information bearer of question text plus answer set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000163"/>
+        <rdfs:label xml:lang="en">refusal to answer datum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000175 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000175">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000163"/>
+        <rdfs:label xml:lang="en">response to an identity question asking process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000176 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000176">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000168"/>
+        <rdfs:label xml:lang="en">identity question asking process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000177 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000177">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000176"/>
+        <rdfs:label xml:lang="en">ethnic identity question asking process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000178 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000178">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000176"/>
+        <rdfs:label xml:lang="en">race identity question asking process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000179 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000179">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000175"/>
+        <rdfs:label xml:lang="en">answer to identity question</rdfs:label>
+    </owl:Class>
+    
+
 
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000180 -->
@@ -4562,6 +4661,39 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000039"/>
         <obo:IAO_0000115 xml:lang="en">A role that inheres in an organism and is realized by habitually smoking 1&gt;10 tobacco cigerettes a day or the equivalent in other tobacco products.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">light smoker role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000188 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000188">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label xml:lang="en">answer set</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000189 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000189">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:label xml:lang="en">question text</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000190 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000190">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002350"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000188"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">option as member of some answer set</rdfs:label>
     </owl:Class>
     
 
