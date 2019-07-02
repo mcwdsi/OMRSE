@@ -4367,8 +4367,6 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Note that not all responses to a question asking process are answers. For example, a refusal to answer is not an answer. A refusal to answer is also not a specified output of the question asking process since it does not acheive the objective of asking the question, which is to get an answer.</rdfs:comment>
         <rdfs:label xml:lang="en">response to a question asking process</rdfs:label>
     </owl:Class>
-    
-
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000164 -->
 
@@ -4445,8 +4443,6 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">questions asking process</rdfs:label>
     </owl:Class>
-    
-
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000169 -->
 
@@ -4580,6 +4576,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <rdfs:label xml:lang="en">answer to identity question</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000180 -->
