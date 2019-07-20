@@ -2503,8 +2503,9 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000160"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A facility that is run by a hospital organization and is the bearer of a hospital function.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A health care facility that bears the function to provide acute and intensive healthcare services and that is run by a hospital organization and is the bearer of a hospital function.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
         <rdfs:label xml:lang="en">hospital facility</rdfs:label>
     </owl:Class>
     
@@ -3416,7 +3417,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000117 xml:lang="en">A facility that is administered by a health care organization for the purpose of providing health care to a patient or patient population.</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population.</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
         <rdfs:label xml:lang="en">health care facility</rdfs:label>
     </owl:Class>
     
@@ -3449,7 +3451,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A facility providing care for the sick or terminally ill</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A heatlh care facility that bears a function to provide healthcare to the sick or terminally ill</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Emma Norris</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
@@ -3593,7 +3595,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000120"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A facility to provide low intensity healthcare services to patients on a short-term basis, with patients leaving on the same date as arriving (i.e., without them staying overnight)</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A health care facility that bears a function to provide low intensity healthcare services to patients on a short-term basis, with patients leaving on the same date as arriving (i.e., without them staying overnight)</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Emma Norris</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
@@ -3674,7 +3676,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000118"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A facility specialising in the provision of emergency healthcare services and the acute care of patients who present without prior appointment, having arrived either by their own means or by ambulance</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A health care facility that bears a function to provide emergency healthcare services and the acute care of patients who present without prior appointment, having arrived either by their own means or by ambulance</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Emma Norris</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
@@ -4229,7 +4231,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">a health care facility in which the patients are also residents of the facility</rdfs:comment>
+        <rdfs:comment xml:lang="en">a health care facility that also bears a residence function and thus one in which the patients are also residents of the facility</rdfs:comment>
         <rdfs:label xml:lang="en">community living health care facility</rdfs:label>
     </owl:Class>
     
