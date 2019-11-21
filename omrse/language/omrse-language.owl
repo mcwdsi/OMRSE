@@ -77,9 +77,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000191 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000192 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000191">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000192">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <obo:IAO_0000115 xml:lang="en">A process in which some participant shares some information content entity about some state of that participant with some other participant.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
@@ -91,9 +91,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000192 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000193 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000192">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000193">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:IAO_0000115 xml:lang="en">A disposition inhering in a material entity that, if realized, is realized by that material entity’s communicating via some linguistic concretization.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
@@ -105,9 +105,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000193 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000194 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000193">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000194">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
         <obo:IAO_0000115 xml:lang="en">A disposition inhering in a linguistic community that (i) is a maximal aggregate of communicatively compatible linguistic competences, and (ii) if realized, is realized by any and all realizations of those linguistic competences.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
@@ -119,9 +119,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000194 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000195 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000194">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000195">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <obo:IAO_0000115 xml:lang="en">A maximal aggregate of material entities such that each member bears a linguistic competence for the same language.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
@@ -133,9 +133,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000195 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000196 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000195">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000196">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
         <obo:IAO_0000115 xml:lang="en">A social act in which the active participant states a preference for some communicative process to be in a certain language.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
@@ -147,9 +147,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000196 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000197 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000196">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000197">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that (i) is the specified output of an expression of preferred language; (ii) is about some person, some language, and some language competence; and (iii) conveys the language with which that person prefers to communicate within some given context.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
