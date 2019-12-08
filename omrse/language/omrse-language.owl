@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/sdowland/ontologies/2019/9/untitled-ontology-108#"
-     xml:base="http://www.semanticweb.org/sdowland/ontologies/2019/9/untitled-ontology-108"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/omrse/dev/language.owl/"
+     xml:base="http://purl.obolibrary.org/obo/omrse/dev/language.owl/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -158,6 +158,8 @@
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <rdfs:label xml:lang="en">preferred language information content entity</rdfs:label>
     </owl:Class>
+    
+
 </rdf:RDF>
 
 

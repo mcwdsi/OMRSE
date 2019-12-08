@@ -4809,6 +4809,19 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     </owl:Class>
     
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000507 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000507">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000133"/>
+        <obo:IAO_0000111 xml:lang="en">non-binary gender identity datum</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant&apos;s subjective sense of gender.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Paul Fabry</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">Alternatively: A gender identity datum stating that a person&apos;s subjective sense of gender is non-binary.)
+
+Examples of usage: ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)</rdfs:comment>
+        <rdfs:label xml:lang="en">non-binary gender identity datum</rdfs:label>
+    </owl:Class>
 
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
 
