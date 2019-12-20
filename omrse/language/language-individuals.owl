@@ -200,8 +200,8 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000194"/>
         <obo:IAO_0000118 xml:lang="sq">Shqip</obo:IAO_0000118>
         <obo:OMRSE_00002025>sq</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026>alb </obo:OMRSE_00002026>
-        <obo:OMRSE_00002027> sqi</obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>alb</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>sqi</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Albanian</rdfs:label>
     </owl:NamedIndividual>
     
@@ -315,8 +315,8 @@
         <obo:IAO_0000118 xml:lang="hy">Հայերեն</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="hy">Հայերէն</obo:IAO_0000118>
         <obo:OMRSE_00002025>hy</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026>arm </obo:OMRSE_00002026>
-        <obo:OMRSE_00002027> hye</obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>arm</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>hye</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Armenian</rdfs:label>
     </owl:NamedIndividual>
     
@@ -510,8 +510,8 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000194"/>
         <obo:IAO_0000118 xml:lang="eu">euskara</obo:IAO_0000118>
         <obo:OMRSE_00002025>eu</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026>baq </obo:OMRSE_00002026>
-        <obo:OMRSE_00002027> eus</obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>baq</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>eus</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Basque</rdfs:label>
     </owl:NamedIndividual>
     
@@ -648,8 +648,8 @@
         <obo:IAO_0000118 xml:lang="bo">བོད་སྐད་</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="bo">ལྷ་སའི་སྐད་</obo:IAO_0000118>
         <obo:OMRSE_00002025>bo</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026> tib</obo:OMRSE_00002026>
-        <obo:OMRSE_00002027>bod </obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>tib</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>bod</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Tibetan</rdfs:label>
     </owl:NamedIndividual>
     
@@ -738,7 +738,7 @@
         <obo:IAO_0000118 xml:lang="my">မြန်မာစာ</obo:IAO_0000118>
         <obo:OMRSE_00002025>my</obo:OMRSE_00002025>
         <obo:OMRSE_00002026>bur </obo:OMRSE_00002026>
-        <obo:OMRSE_00002027> mya</obo:OMRSE_00002027>
+        <obo:OMRSE_00002027>mya</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Burmese</rdfs:label>
     </owl:NamedIndividual>
     
@@ -815,8 +815,8 @@
         <obo:IAO_0000118 xml:lang="cs">český jazyk</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="cs">čeština</obo:IAO_0000118>
         <obo:OMRSE_00002025>cs</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026> cze</obo:OMRSE_00002026>
-        <obo:OMRSE_00002027>ces </obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>cze</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>ces</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Czech</rdfs:label>
     </owl:NamedIndividual>
     
@@ -882,8 +882,8 @@
         <obo:IAO_0000118 xml:lang="zh">汉语</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="zh">漢語</obo:IAO_0000118>
         <obo:OMRSE_00002025>zh</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026>chi </obo:OMRSE_00002026>
-        <obo:OMRSE_00002027> zho</obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>chi</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>zho</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Chinese</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1107,7 +1107,7 @@
         <obo:IAO_0000118 xml:lang="cy">y Gymraeg</obo:IAO_0000118>
         <obo:OMRSE_00002025>cy</obo:OMRSE_00002025>
         <obo:OMRSE_00002026> wel</obo:OMRSE_00002026>
-        <obo:OMRSE_00002027>cym </obo:OMRSE_00002027>
+        <obo:OMRSE_00002027>cym</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Welsh</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1180,8 +1180,8 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000194"/>
         <obo:IAO_0000118 xml:lang="de">Deutsch</obo:IAO_0000118>
         <obo:OMRSE_00002025>de</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026> ger</obo:OMRSE_00002026>
-        <obo:OMRSE_00002027>deu </obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>ger</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>deu</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">German</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1284,8 +1284,8 @@
         <obo:IAO_0000118 xml:lang="nl">Nederlands</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="nl">Vlaams</obo:IAO_0000118>
         <obo:OMRSE_00002025>nl</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026>dut </obo:OMRSE_00002026>
-        <obo:OMRSE_00002027> nld</obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>dut</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>nld</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Dutch</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1355,8 +1355,8 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000194"/>
         <obo:IAO_0000118 xml:lang="el">Νέα Ελληνικά</obo:IAO_0000118>
         <obo:OMRSE_00002025>el</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026> gre</obo:OMRSE_00002026>
-        <obo:OMRSE_00002027>ell </obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>gre</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>ell</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Greek, Modern (1453–)</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1477,8 +1477,8 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000194"/>
         <obo:IAO_0000118 xml:lang="fa">فارسی</obo:IAO_0000118>
         <obo:OMRSE_00002025>fa</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026> per</obo:OMRSE_00002026>
-        <obo:OMRSE_00002027>fas </obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>per</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>fas</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Persian</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1555,8 +1555,8 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000194"/>
         <obo:IAO_0000118 xml:lang="fr">français</obo:IAO_0000118>
         <obo:OMRSE_00002025>fr</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026> fre</obo:OMRSE_00002026>
-        <obo:OMRSE_00002027>fra </obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>fre</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>fra</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">French</rdfs:label>
     </owl:NamedIndividual>
     
@@ -1697,8 +1697,8 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000194"/>
         <obo:IAO_0000118 xml:lang="ka">ქართული</obo:IAO_0000118>
         <obo:OMRSE_00002025>ka</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026>geo </obo:OMRSE_00002026>
-        <obo:OMRSE_00002027> kat</obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>geo</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>kat</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Georgian</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2141,8 +2141,8 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000194"/>
         <obo:IAO_0000118 xml:lang="is">íslenska</obo:IAO_0000118>
         <obo:OMRSE_00002025>is</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026>ice </obo:OMRSE_00002026>
-        <obo:OMRSE_00002027> isl</obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>ice</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>isl</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Icelandic</rdfs:label>
     </owl:NamedIndividual>
     
@@ -2987,8 +2987,8 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000194"/>
         <obo:IAO_0000118 xml:lang="mk">македонски јазик</obo:IAO_0000118>
         <obo:OMRSE_00002025>mk</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026>mac </obo:OMRSE_00002026>
-        <obo:OMRSE_00002027> mkd</obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>mac</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>mkd</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Macedonian</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3088,8 +3088,8 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000194"/>
         <obo:IAO_0000118 xml:lang="mi">Te Reo Māori</obo:IAO_0000118>
         <obo:OMRSE_00002025>mi</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026>mao </obo:OMRSE_00002026>
-        <obo:OMRSE_00002027> mri</obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>mao</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>mri</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Maori</rdfs:label>
     </owl:NamedIndividual>
     
@@ -3126,8 +3126,8 @@
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000194"/>
         <obo:IAO_0000118 xml:lang="ms">Bahasa Melayu</obo:IAO_0000118>
         <obo:OMRSE_00002025>ms</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026>may </obo:OMRSE_00002026>
-        <obo:OMRSE_00002027> msa</obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>may</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>msa</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Malay</rdfs:label>
     </owl:NamedIndividual>
     
@@ -4014,8 +4014,8 @@
         <obo:IAO_0000118 xml:lang="en">Moldovan</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="ro">limba română</obo:IAO_0000118>
         <obo:OMRSE_00002025>ro</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026> rum</obo:OMRSE_00002026>
-        <obo:OMRSE_00002027>ron </obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>rum</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>ron</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Romanian</rdfs:label>
     </owl:NamedIndividual>
     
@@ -4241,8 +4241,8 @@
         <obo:IAO_0000118 xml:lang="sk">slovenský jazyk</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="sk">slovenčina</obo:IAO_0000118>
         <obo:OMRSE_00002025>sk</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026>slo </obo:OMRSE_00002026>
-        <obo:OMRSE_00002027> slk</obo:OMRSE_00002027>
+        <obo:OMRSE_00002026>slo</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>slk</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Slovak</rdfs:label>
     </owl:NamedIndividual>
     
