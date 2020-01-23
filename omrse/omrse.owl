@@ -1,31 +1,31 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/omrse.owl/"
      xml:base="http://purl.obolibrary.org/obo/omrse.owl/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2014-05-03/classes-only.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/pno/bfo2/pno.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/2015-02-23/iao.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/pno/2019-02-21/pno.owl"/>
-        <dc:contributor>Daniel Welch</dc:contributor>
-        <dc:creator>Amanda Hicks</dc:creator>
-        <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
-        <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
-        <dc:creator xml:lang="en">William Hogan</dc:creator>
+        <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
         <dc:license>CC-BY 4.0</dc:license>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
+        <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
+        <dc:contributor>Daniel Welch</dc:contributor>
+        <dc:creator>Amanda Hicks</dc:creator>
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
+        <dc:creator xml:lang="en">William Hogan</dc:creator>
         <owl:versionInfo>2019-21-02</owl:versionInfo>
     </owl:Ontology>
     
@@ -63,6 +63,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -82,6 +83,7 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label>definition editor</rdfs:label>
         <rdfs:label xml:lang="en">definition editor</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition editor</rdfs:label>
         <rdfs:label xml:lang="en">term editor</rdfs:label>
     </rdf:Description>
     
@@ -100,6 +102,7 @@
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label>definition source</rdfs:label>
         <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition source</rdfs:label>
     </rdf:Description>
     
 
@@ -1746,10 +1749,10 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
-        <obo:IAO_0000115 xml:lang="en">An object aggregate of objectual organisms.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">An object aggregate of organisms.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  </rdfs:comment>
-        <rdfs:label xml:lang="en">aggregate of objectual organisms</rdfs:label>
+        <rdfs:label xml:lang="en">collection of organisms</rdfs:label>
     </owl:Class>
     
 
@@ -4364,8 +4367,6 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Note that not all responses to a question asking process are answers. For example, a refusal to answer is not an answer. A refusal to answer is also not a specified output of the question asking process since it does not acheive the objective of asking the question, which is to get an answer.</rdfs:comment>
         <rdfs:label xml:lang="en">response to a question asking process</rdfs:label>
     </owl:Class>
-    
-
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000164 -->
 
@@ -4442,8 +4443,6 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">questions asking process</rdfs:label>
     </owl:Class>
-    
-
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000169 -->
 
@@ -4577,6 +4576,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <rdfs:label xml:lang="en">answer to identity question</rdfs:label>
     </owl:Class>
     
+
 
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000180 -->
@@ -4782,5 +4782,5 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
