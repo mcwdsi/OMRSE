@@ -12,13 +12,14 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/dev/language.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/language.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omrse.owl"/>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:creator xml:lang="en">Matthew Diller</dc:creator>
         <dc:creator xml:lang="en">S. Clint Dowland</dc:creator>
         <dc:creator xml:lang="en">William R. Hogan</dc:creator>
         <dc:title xml:lang="en">OMRSE Language</dc:title>
+	<owl:versionInfo>2020-01-30<owl:versionInfo>
     </owl:Ontology>
     
 
