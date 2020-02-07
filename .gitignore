@@ -1,2 +1,4 @@
 catalog-*.xml
 .DS_Store
+omrse/catalog*.xml
+omrse/language/catalog*.xml
