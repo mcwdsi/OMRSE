@@ -13,7 +13,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/language.owl">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omrse-core.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/dev/omrse-core.owl"/>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:creator xml:lang="en">Matthew Diller</dc:creator>
         <dc:creator xml:lang="en">S. Clint Dowland</dc:creator>
