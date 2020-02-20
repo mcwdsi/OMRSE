@@ -147,6 +147,7 @@
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">The term &apos;participant&apos; in the definition need not refer to a human agent.</rdfs:comment>
         <rdfs:label xml:lang="en">communication</rdfs:label>
     </owl:Class>
     
@@ -218,6 +219,41 @@
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <rdfs:label xml:lang="en">preferred language information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000198 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000198">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000192"/>
+        <obo:IAO_0000115 xml:lang="en">a communication in which some participant requests of some other participant an information content entity about some portion of reality</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">As with the parent class, &apos;participant&apos; in the definition need not refer to a human agent.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The medium and grammatical form are irrelevant. For example, the request may be written or spoken, and while it may be in the form of a question, it need not be.</rdfs:comment>
+        <rdfs:label xml:lang="en">information content entity-request process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000199 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000199">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000198"/>
+        <obo:IAO_0000115 xml:lang="en">an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the ethnic identity of that other participant</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">information content entity request about ethnic identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000200 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000200">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000198"/>
+        <obo:IAO_0000115 xml:lang="en">an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the racial identity of that other participant</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">information content entity request about racial identity</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
