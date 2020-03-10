@@ -4017,7 +4017,6 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000134">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <dc:creator>Amanda Hicks</dc:creator>
         <rdfs:label xml:lang="en">identification process</rdfs:label>
     </owl:Class>
