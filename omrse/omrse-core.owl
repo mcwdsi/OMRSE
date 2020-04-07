@@ -3580,11 +3580,10 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000111 xml:lang="en">residential healthcare facility</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">A community living health care facility that provides healthcare services in a home-like setting</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A community living health care facility that provides health care services in a home-like setting</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">residential facility</rdfs:label>
+        <rdfs:label xml:lang="en">residential health care facility</rdfs:label>
     </owl:Class>
     
 
