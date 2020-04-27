@@ -39,13 +39,40 @@ Initial version created by William R. Hogan</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <obo:IAO_0000111 xml:lang="en">educating</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the participant&apos;s brain, and through repeated use of these ICEs becomes the bearer of an instance of a new type of capability, and the participant was not previously the bearer of any other instance of the type of capability.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000600 xml:lang="en">An act of acquiring new information and repeatedly applying that information to develop a new skill.</obo:IAO_0000600>
-        <rdfs:comment xml:lang="en">An interesting question about whether there must be another participant who is the &quot;educator&quot;.  Some might object that many people are &quot;self taught&quot;.  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the top of a finger.  There was no previous information about that.  The ICEs acquired are via one&apos;s sensory systems (vision, proprioception, auditory, etc.).
+        <rdfs:comment xml:lang="en">An interesting question is whether there must be another participant who is the &quot;educator&quot;.  Some might object that many people are &quot;self taught&quot;.  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the top of a finger.  There was no previous information about that.  The ICEs acquired are via one&apos;s sensory systems (vision, proprioception, auditory, etc.).
 
 On the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow &quot;plays a role&quot; in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).</rdfs:comment>
         <rdfs:label xml:lang="en">education process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002030">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
+        <obo:IAO_0000111 xml:lang="en">educational objective specification</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">An objective specification that describes the type of capability or capabilities to be imparted by its realization, which is an educating (education process).</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">An objective specification that describes the new knowledge &amp; skill(s) to be obtained via an education process.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">educational objective</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000111 xml:lang="en">educational plan specification</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A plan specification with an educational objective specification as part.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A plan specification with one or more educational objectives.</obo:IAO_0000600>
+        <rdfs:comment xml:lang="en">Very broad.  Covers everything from grade school to high school to college to graduate education, a MOOC, an individual course, a tutorial at a conference, a continuing education course or program, an informed consent video, etc, etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">educational program</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
