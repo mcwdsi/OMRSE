@@ -1747,6 +1747,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">hospital</obo:IAO_0000118>
         <rdfs:label xml:lang="en">obsolete_hospital role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1897,7 +1898,9 @@ Ditto for its current descendants.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii).</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">geopolitical organization</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">geopolitical organization</obo:IAO_0000118>
+        <rdfs:label>obsolete geopolitical organization</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1906,7 +1909,9 @@ Ditto for its current descendants.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000029">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <rdfs:label xml:lang="en">geopoli organization</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">geopoli organization</obo:IAO_0000118>
+        <rdfs:label>obsolete geopoli organization</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1936,8 +1941,10 @@ Ditto for its current descendants.</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000031">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A subnational entity that is the primary organizational member of a nation, is subject to the full set of laws of the nation, enjoys all the privileges established under the laws of the nation, is not a member of any other geopolitical entity, and itself governs a part of the geographical region governed by the nation.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">major administrative subdivision</obo:IAO_0000118>
         <rdfs:comment>example: Northern Ireland</rdfs:comment>
-        <rdfs:label xml:lang="en">major administrative subdivision</rdfs:label>
+        <rdfs:label>obsolete major administrative subdivision</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1947,8 +1954,10 @@ Ditto for its current descendants.</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000032">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A subnational entity that does not possess full political independence or sovereignty as a sovereign state, but remains politically outside of the controlling state and controls a geographical region that is outside the controlling state&apos;s integral region.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">geopolitical dependency</obo:IAO_0000118>
         <rdfs:comment xml:lang="en">Typically, the common feature is that the dependency does not conduct foreign affairs, and relegates this authority to the sovereign state.  BUt otherwise, it is largely or completely autonomous relative to the administrative subdivisions.  Examples include Puerto Rico (U.S.), Guam (U.S.), Greenland (Denmark), French Polynesia (France), and Falkland Islands (United Kingdom). </rdfs:comment>
-        <rdfs:label xml:lang="en">geopolitical dependency</rdfs:label>
+        <rdfs:label>obsolete geopolitical dependency</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1991,7 +2000,9 @@ Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">An aggregate of sovereign states that share some feature in common, but is not an organization nor necessarily the outcome of some treaty among them.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">An aggregate of geopoli organizations that is not itself a sovereign state and whose members are only sovereign states that have some feature in common</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">aggregate of sovereign states</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">aggregate of sovereign states</obo:IAO_0000118>
+        <rdfs:label>obsolete aggregate of sovereign states</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2004,7 +2015,9 @@ Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan
 </obo:IAO_0000117>
-        <rdfs:label xml:lang="en">aggregate of geopoli organizations</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">aggregate of geopoli organizations</obo:IAO_0000118>
+        <rdfs:label>obsolete aggregate of geopoli organizations</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2015,7 +2028,9 @@ Amanda Hicks</obo:IAO_0000117>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An aggregate of geopoli organizations that is not itself a geopolitical dependency and whose members are only geopolitical dependencies that have some feature in common.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">aggregate of dependencies</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">aggregate of dependencies</obo:IAO_0000118>
+        <rdfs:label>obsolete aggregate of dependencies</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2026,7 +2041,9 @@ Amanda Hicks</obo:IAO_0000117>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An aggregate of geopoli organizations that is not itself a major administrative subdivision and whose members are only major administrative subdivisions that have some feature in common</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">aggregate of major administrative subdivisions</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">aggregate of major administrative subdivisions</obo:IAO_0000118>
+        <rdfs:label>obsolete aggregate of major administrative subdivisions</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2111,11 +2128,13 @@ However, Shaw explicates:
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115>an intergovernmental organization that has at least three member states, that has activies in at least three states, and that is unified by some formal intergovernmental agreement</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">intergovernmental organization</obo:IAO_0000118>
         <obo:IAO_0000119>&quot;IGOs are organizations whose memebers include at lesat three states, that have activities in several states, and whose members are held together by a formal intergovernmental agreement ... These organizations range in size from three members (North American Free Trade Argreement [NAFTA]) to more than 190 memembers (Universal Postal Union (UPU)].  Memebers may come from primarily one georgraphic regioni (Oragnaization of American States [OAS]) or from all geographic regions (World Bank).  although soem IGOs are designed to achieve a single purpose (Organization of Petroleum exporting countries [OPEC]), others have been developed for multiple tasks (United Nations [UN}).  ... IGOs are recognized subjects of international law with separate standing fromt heir member states.&quot; Karns and Mingst I(2004) p. 7</obo:IAO_0000119>
         <dc:contributor xml:lang="en">Katrina Donovan</dc:contributor>
         <rdfs:comment xml:lang="en">examples:
 North American Free Trade Argreement [NAFTA] , Universal Postal Union [UPU], Oragnaization of American States [OAS], World Bank), Organization of Petroleum exporting countries [OPEC] United Nations [UN[, The World Trade Organization [WTO], The World Health Organization [WHO], UNICEF</rdfs:comment>
-        <rdfs:label xml:lang="en">intergovernmental organization</rdfs:label>
+        <rdfs:label>obsolete intergovernmental organization</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2125,13 +2144,15 @@ North American Free Trade Argreement [NAFTA] , Universal Postal Union [UPU], Ora
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000042">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">a geopolitical organization that is voluntary and private, whose members are individual persons or organizations that come together to acheive a common purpose.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">nongovernmental organizations</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">NGOs are private voluntary organizations whose members are individuals or associations that come together to acheive a common purpose.  Some organizations are formed to advocate a particular cause such as human rights, peace, or envirnomental projetion.  Others are established to provide services such as disaster relief, humantarian aid in war-torn socieities, or development assistance.  ... National level groups are often called interest or pressure groups, and many of them are now linked to counterpart groups in other countries through transnational networks or federations.  International NGOs, like IGOs, may draw their members from one region or several regions, and they may have very specific functions or be multi-functional.
 
 Karns and Mingst (2004) p. 10f.</obo:IAO_0000119>
         <dc:contributor xml:lang="en">Katrina Donovan</dc:contributor>
         <rdfs:comment xml:lang="en">Examples:
 Internaltion Federation of Red Cross and Red Crescent Societies, Oxfam, CARE, Doctors Without Borders, World Wildlife Fund, Transparency International, Human Rights Watch, Amnesty International, and Save the Children.</rdfs:comment>
-        <rdfs:label xml:lang="en">nongovernmental organizations</rdfs:label>
+        <rdfs:label>obsolete nongovernmental organization</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2141,12 +2162,14 @@ Internaltion Federation of Red Cross and Red Crescent Societies, Oxfam, CARE, Do
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000043">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">private governance organizations</obo:IAO_0000118>
         <obo:IAO_0000119>&quot;Although the very meaning of the term is controversial, it involves authoritative decsionmaking in areas that once were part of national legal frameworks, the government, the sovereign state, or the public sector.&quot;
 
 Karns and Mingst (2004) p. 14.</obo:IAO_0000119>
         <dc:contributor xml:lang="en">Katrina Donovan</dc:contributor>
         <rdfs:comment xml:lang="en">Examples: private bond-rating agencies such as Moody&apos;s Investors Service, International Chamber of Commerce, Worldwide Responsible Apparel Manufacturing Principles, Forest Stewardship</rdfs:comment>
-        <rdfs:label xml:lang="en">private governance organizations</rdfs:label>
+        <rdfs:label>obsolete private governance organizations</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2159,8 +2182,10 @@ Karns and Mingst (2004) p. 14.</obo:IAO_0000119>
 
 Note: this definition was taken over from &quot;geopolitical organization&quot;.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">governmental organization</obo:IAO_0000118>
         <rdfs:comment xml:lang="en">IMPORTANT: The label &quot;geopolitical organization&quot; was previously used for OMRSE_00000044 (governmental organization).  &quot;geopoli organization&quot; is a label for a new and different class.</rdfs:comment>
-        <rdfs:label xml:lang="en">governmental organization</rdfs:label>
+        <rdfs:label>obsolete governmental organization</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2173,10 +2198,12 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">nation</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">nation state</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">sovereign state</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Sovereign_state</obo:IAO_0000119>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="en">Per Wikipedia, the word &apos;nation&apos; does not always refer to soverign states.  For example, the &quot;nation of Islam&quot;.</rdfs:comment>
-        <rdfs:label xml:lang="en">sovereign state</rdfs:label>
+        <rdfs:label>obsolete sovereign state</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2188,7 +2215,9 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
         <obo:IAO_0000115 xml:lang="en">a governmental organization that has a local, regional, or territorial government that recognizes a sovereign state as its higher political authority</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">subnational entity</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">subnational entity</obo:IAO_0000118>
+        <rdfs:label>obsolete subnational entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2198,8 +2227,10 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000047">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">supranational entity</obo:IAO_0000118>
         <rdfs:comment>e.g., the EU</rdfs:comment>
-        <rdfs:label xml:lang="en">supranational entity</rdfs:label>
+        <rdfs:label>obsolete supranational entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 

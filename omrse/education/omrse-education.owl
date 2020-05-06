@@ -53,6 +53,22 @@ On the other hand, in the case of those who are self-taught by reading books or 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00002030 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002030">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000005"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002029"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
         <obo:IAO_0000111 xml:lang="en">educational objective specification</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">An objective specification that describes the type of capability or capabilities to be imparted by its realization, which is an educating (education process).</obo:IAO_0000115>
@@ -66,6 +82,17 @@ On the other hand, in the case of those who are self-taught by reading books or 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00002031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002031">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000104"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002030"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
         <obo:IAO_0000111 xml:lang="en">educational plan specification</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A plan specification with an educational objective specification as part.</obo:IAO_0000115>
