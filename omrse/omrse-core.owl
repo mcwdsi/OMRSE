@@ -4806,6 +4806,45 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000202 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000202">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000111 xml:lang="en">cancer summary staging</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">The cancer summary staging performed on patient John Doe&apos;s clinical picture.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A planned process of determining the extent to which a cancer disease has developed by growing and spreading throughout an organism.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">tumor summary staging</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">cancer summary staging</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000203">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000202"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">cancer summary staging code</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">The cancer summary staging code that is the outcome of the cancer summary staging performed on patient John Doe&apos;s clinical picture.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is the specified output of cancer summary staging.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">tumor summary staging code</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">cancer summary staging code</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000500 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000500">
