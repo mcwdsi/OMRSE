@@ -1747,6 +1747,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">hospital</obo:IAO_0000118>
         <rdfs:label xml:lang="en">obsolete_hospital role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1897,7 +1898,9 @@ Ditto for its current descendants.</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii).</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">geopolitical organization</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">geopolitical organization</obo:IAO_0000118>
+        <rdfs:label>obsolete geopolitical organization</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1906,7 +1909,9 @@ Ditto for its current descendants.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000029">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <rdfs:label xml:lang="en">geopoli organization</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">geopoli organization</obo:IAO_0000118>
+        <rdfs:label>obsolete geopoli organization</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1936,8 +1941,10 @@ Ditto for its current descendants.</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000031">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A subnational entity that is the primary organizational member of a nation, is subject to the full set of laws of the nation, enjoys all the privileges established under the laws of the nation, is not a member of any other geopolitical entity, and itself governs a part of the geographical region governed by the nation.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">major administrative subdivision</obo:IAO_0000118>
         <rdfs:comment>example: Northern Ireland</rdfs:comment>
-        <rdfs:label xml:lang="en">major administrative subdivision</rdfs:label>
+        <rdfs:label>obsolete major administrative subdivision</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1947,8 +1954,10 @@ Ditto for its current descendants.</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000032">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A subnational entity that does not possess full political independence or sovereignty as a sovereign state, but remains politically outside of the controlling state and controls a geographical region that is outside the controlling state&apos;s integral region.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">geopolitical dependency</obo:IAO_0000118>
         <rdfs:comment xml:lang="en">Typically, the common feature is that the dependency does not conduct foreign affairs, and relegates this authority to the sovereign state.  BUt otherwise, it is largely or completely autonomous relative to the administrative subdivisions.  Examples include Puerto Rico (U.S.), Guam (U.S.), Greenland (Denmark), French Polynesia (France), and Falkland Islands (United Kingdom). </rdfs:comment>
-        <rdfs:label xml:lang="en">geopolitical dependency</rdfs:label>
+        <rdfs:label>obsolete geopolitical dependency</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -1991,7 +2000,9 @@ Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">An aggregate of sovereign states that share some feature in common, but is not an organization nor necessarily the outcome of some treaty among them.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">An aggregate of geopoli organizations that is not itself a sovereign state and whose members are only sovereign states that have some feature in common</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">aggregate of sovereign states</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">aggregate of sovereign states</obo:IAO_0000118>
+        <rdfs:label>obsolete aggregate of sovereign states</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2004,7 +2015,9 @@ Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan
 </obo:IAO_0000117>
-        <rdfs:label xml:lang="en">aggregate of geopoli organizations</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">aggregate of geopoli organizations</obo:IAO_0000118>
+        <rdfs:label>obsolete aggregate of geopoli organizations</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2015,7 +2028,9 @@ Amanda Hicks</obo:IAO_0000117>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An aggregate of geopoli organizations that is not itself a geopolitical dependency and whose members are only geopolitical dependencies that have some feature in common.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">aggregate of dependencies</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">aggregate of dependencies</obo:IAO_0000118>
+        <rdfs:label>obsolete aggregate of dependencies</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2026,7 +2041,9 @@ Amanda Hicks</obo:IAO_0000117>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An aggregate of geopoli organizations that is not itself a major administrative subdivision and whose members are only major administrative subdivisions that have some feature in common</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">aggregate of major administrative subdivisions</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">aggregate of major administrative subdivisions</obo:IAO_0000118>
+        <rdfs:label>obsolete aggregate of major administrative subdivisions</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2111,11 +2128,13 @@ However, Shaw explicates:
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115>an intergovernmental organization that has at least three member states, that has activies in at least three states, and that is unified by some formal intergovernmental agreement</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">intergovernmental organization</obo:IAO_0000118>
         <obo:IAO_0000119>&quot;IGOs are organizations whose memebers include at lesat three states, that have activities in several states, and whose members are held together by a formal intergovernmental agreement ... These organizations range in size from three members (North American Free Trade Argreement [NAFTA]) to more than 190 memembers (Universal Postal Union (UPU)].  Memebers may come from primarily one georgraphic regioni (Oragnaization of American States [OAS]) or from all geographic regions (World Bank).  although soem IGOs are designed to achieve a single purpose (Organization of Petroleum exporting countries [OPEC]), others have been developed for multiple tasks (United Nations [UN}).  ... IGOs are recognized subjects of international law with separate standing fromt heir member states.&quot; Karns and Mingst I(2004) p. 7</obo:IAO_0000119>
         <dc:contributor xml:lang="en">Katrina Donovan</dc:contributor>
         <rdfs:comment xml:lang="en">examples:
 North American Free Trade Argreement [NAFTA] , Universal Postal Union [UPU], Oragnaization of American States [OAS], World Bank), Organization of Petroleum exporting countries [OPEC] United Nations [UN[, The World Trade Organization [WTO], The World Health Organization [WHO], UNICEF</rdfs:comment>
-        <rdfs:label xml:lang="en">intergovernmental organization</rdfs:label>
+        <rdfs:label>obsolete intergovernmental organization</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2125,13 +2144,15 @@ North American Free Trade Argreement [NAFTA] , Universal Postal Union [UPU], Ora
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000042">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">a geopolitical organization that is voluntary and private, whose members are individual persons or organizations that come together to acheive a common purpose.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">nongovernmental organizations</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">NGOs are private voluntary organizations whose members are individuals or associations that come together to acheive a common purpose.  Some organizations are formed to advocate a particular cause such as human rights, peace, or envirnomental projetion.  Others are established to provide services such as disaster relief, humantarian aid in war-torn socieities, or development assistance.  ... National level groups are often called interest or pressure groups, and many of them are now linked to counterpart groups in other countries through transnational networks or federations.  International NGOs, like IGOs, may draw their members from one region or several regions, and they may have very specific functions or be multi-functional.
 
 Karns and Mingst (2004) p. 10f.</obo:IAO_0000119>
         <dc:contributor xml:lang="en">Katrina Donovan</dc:contributor>
         <rdfs:comment xml:lang="en">Examples:
 Internaltion Federation of Red Cross and Red Crescent Societies, Oxfam, CARE, Doctors Without Borders, World Wildlife Fund, Transparency International, Human Rights Watch, Amnesty International, and Save the Children.</rdfs:comment>
-        <rdfs:label xml:lang="en">nongovernmental organizations</rdfs:label>
+        <rdfs:label>obsolete nongovernmental organization</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2141,12 +2162,14 @@ Internaltion Federation of Red Cross and Red Crescent Societies, Oxfam, CARE, Do
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000043">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">private governance organizations</obo:IAO_0000118>
         <obo:IAO_0000119>&quot;Although the very meaning of the term is controversial, it involves authoritative decsionmaking in areas that once were part of national legal frameworks, the government, the sovereign state, or the public sector.&quot;
 
 Karns and Mingst (2004) p. 14.</obo:IAO_0000119>
         <dc:contributor xml:lang="en">Katrina Donovan</dc:contributor>
         <rdfs:comment xml:lang="en">Examples: private bond-rating agencies such as Moody&apos;s Investors Service, International Chamber of Commerce, Worldwide Responsible Apparel Manufacturing Principles, Forest Stewardship</rdfs:comment>
-        <rdfs:label xml:lang="en">private governance organizations</rdfs:label>
+        <rdfs:label>obsolete private governance organizations</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2159,8 +2182,10 @@ Karns and Mingst (2004) p. 14.</obo:IAO_0000119>
 
 Note: this definition was taken over from &quot;geopolitical organization&quot;.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">governmental organization</obo:IAO_0000118>
         <rdfs:comment xml:lang="en">IMPORTANT: The label &quot;geopolitical organization&quot; was previously used for OMRSE_00000044 (governmental organization).  &quot;geopoli organization&quot; is a label for a new and different class.</rdfs:comment>
-        <rdfs:label xml:lang="en">governmental organization</rdfs:label>
+        <rdfs:label>obsolete governmental organization</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2173,10 +2198,12 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">nation</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">nation state</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">sovereign state</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">http://en.wikipedia.org/wiki/Sovereign_state</obo:IAO_0000119>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="en">Per Wikipedia, the word &apos;nation&apos; does not always refer to soverign states.  For example, the &quot;nation of Islam&quot;.</rdfs:comment>
-        <rdfs:label xml:lang="en">sovereign state</rdfs:label>
+        <rdfs:label>obsolete sovereign state</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2188,7 +2215,9 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
         <obo:IAO_0000115 xml:lang="en">a governmental organization that has a local, regional, or territorial government that recognizes a sovereign state as its higher political authority</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">subnational entity</rdfs:label>
+        <obo:IAO_0000118 xml:lang="en">subnational entity</obo:IAO_0000118>
+        <rdfs:label>obsolete subnational entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2198,8 +2227,10 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000047">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">supranational entity</obo:IAO_0000118>
         <rdfs:comment>e.g., the EU</rdfs:comment>
-        <rdfs:label xml:lang="en">supranational entity</rdfs:label>
+        <rdfs:label>obsolete supranational entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -2933,7 +2964,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000100"/>
         <obo:IAO_0000115 xml:lang="en">An ethnic identity datum that is the output of an ethnic identification process that uses OMB terminology for ethnicity or terminology that is mapped the OMB ethnicity terms.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">OMB ethnic identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">OMB ethnic identity information content entity</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete OMB ethnic identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3329,7 +3362,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <obo:IAO_0000115 xml:lang="en">A racial identity is an information content entity that is the output of some racial identitification process and is intended to be a truthful statement about the genetic or cultural race of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">racial identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">racial identity information content entity</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete racial identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3387,7 +3422,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
         </owl:equivalentClass>
         <obo:IAO_0000115 xml:lang="en">An ethnic identity datum is an information content entity that is the output of some ethnic identitification process and is intended to be a truthful statement about the cultural or national heritage of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">ethnic identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">ethnic identity information content entity</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete ethnic identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3580,11 +3617,10 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000111 xml:lang="en">residential healthcare facility</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">A community living health care facility that provides healthcare services in a home-like setting</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A community living health care facility that provides health care services in a home-like setting</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">residential facility</rdfs:label>
+        <rdfs:label xml:lang="en">residential health care facility</rdfs:label>
     </owl:Class>
     
 
@@ -3887,7 +3923,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000083"/>
         <obo:IAO_0000115 xml:lang="en">An OMB ethnic identity datum that indicates the person identified is of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">hispanic or latino identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">OMB Hispanic or Latino identity information content entity</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete hispanic or latino identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3898,7 +3936,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000083"/>
         <obo:IAO_0000115 xml:lang="en">An OMB ethnic identity datum that indicates the person identified is not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">not hispanic or latino identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">OMB not Hispanic or Latino identity information content entity</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete not hispanic or latino identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3973,8 +4013,10 @@ last accessed June 30, 2015</obo:IAO_0000119>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000179"/>
         <obo:IAO_0000115 xml:lang="en">An identity datum is an information content entity that is the output of some identitification process and is intended to be a truthful statement about a person&apos;s social identity.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
+        <obo:IAO_0100001 xml:lang="en">social identity information content entity</obo:IAO_0100001>
         <dc:creator>Amanda Hicks</dc:creator>
-        <rdfs:label xml:lang="en">identity datum</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4007,8 +4049,10 @@ last accessed June 30, 2015</obo:IAO_0000119>
             </owl:Class>
         </owl:equivalentClass>
         <obo:IAO_0000115>A gender identity is an information content entity that is the output of some gender identitification process and is intended to be a truthful statement about a person&apos;s subjective sense of their gender.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
+        <obo:IAO_0100001 xml:lang="en">gender identity information content entity</obo:IAO_0100001>
         <dc:creator>Amanda Hicks</dc:creator>
-        <rdfs:label xml:lang="en">gender identity datum</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete gender identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4017,7 +4061,6 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000134">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <dc:creator>Amanda Hicks</dc:creator>
         <rdfs:label xml:lang="en">identification process</rdfs:label>
     </owl:Class>
@@ -4054,7 +4097,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000133"/>
         <obo:IAO_0000115 xml:lang="en">a gender identity datum resulting from a gender identification process in which ‘female’ is selected based on the participant&apos;s subjective sense of gender</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">female gender identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">female gender identity information content entity</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete female gender identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4091,7 +4136,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">a gender identity datum resulting from a gender identification process in which ‘male’ is selected based on the participant&apos;s subjective sense of gender</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en"></obo:IAO_0000119>
-        <rdfs:label xml:lang="en">male gender identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">male gender identity information content entity</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete male gender identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4169,7 +4216,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
         <obo:IAO_0000115 xml:lang="en">an identity datum that has been asserted by the person whom it is about</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">self-identity data item</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete self-identity data item</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4650,7 +4698,9 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">American Indian or Alaska Native identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">OMB American Indian or Alaska Native identity information content entity</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete American Indian or Alaska Native identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4661,7 +4711,9 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">Asian identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">OMB Asian identity information content entity</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete Asian identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4672,7 +4724,9 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the black racial groups of Africa.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">black or African American identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">OMB black or African American identity information content entity</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete black or African American identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4683,7 +4737,9 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">Native Hawaiian or other Pacific Islander identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">OMB Native Hawaiian or other Pacific Islander identity information content entity</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete Native Hawaiian or other Pacific Islander identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4694,7 +4750,9 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Europe, the Middle East, or North Africa.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">white identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">OMB white identity information content entity</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete white identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4705,7 +4763,9 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000098"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">OMB racial identity datum</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">OMB racial identity information content entity</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete OMB racial identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -4773,6 +4833,321 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">Modified version of definition provided by Human Behaviour Change Project</obo:IAO_0000119>
         <rdfs:label xml:lang="en">residential facility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000202 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000202">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000111 xml:lang="en">cancer summary staging</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">The cancer summary staging performed on patient John Doe&apos;s clinical picture.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A planned process of determining the extent to which a cancer disease has developed by growing and spreading throughout an organism.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">tumor summary staging</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">cancer summary staging</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000203 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000203">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000202"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000111 xml:lang="en">cancer summary staging code</obo:IAO_0000111>
+        <obo:IAO_0000112 xml:lang="en">The cancer summary staging code that is the outcome of the cancer summary staging performed on patient John Doe&apos;s clinical picture.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is the specified output of cancer summary staging.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">tumor summary staging code</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">cancer summary staging code</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000204 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000204">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about some person and whether that person identifies as some particular aspect of social identity—such as a gender, an ethnicity, a race, or a sexual orientation—where the sense of identifying may correspond to either (i) an aspect of one’s cognitive representation of oneself, (ii) how one prefers to be regarded by others within some social context, or (iii) how one chooses to present oneself to others within some social context.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">We include (i)-(iii) to acknowledge that there are different senses of &quot;identify&quot; that are relevant here, and that we may not always be sure which sense the person concretizing the social identity information content entity intended. While (i) concerns how one thinks of oneself, (ii) and (iii) are more focused on one&apos;s interactions with others. Importantly, some choose not to share with others how they identify in the sense of (i). For example, one can consider oneself to be some certain gender without either wanting others to know or choosing to present oneself in a corresponding way. We distinguish (ii) and (iii) because one can prefer to be regarded some certain way without attempting to present oneself in any corresponding way.</rdfs:comment>
+        <rdfs:label xml:lang="en">social identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000205 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000205">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000204"/>
+        <obo:IAO_0000115 xml:lang="en">A social identity information content entity that is about whether some person identifies as some ethnicity.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">Ethnicity is separate from but related to racial identity. It refers more to identifying with a particular culture than with individuals similar in physical appearance. It includes things like Hispanic ethnicity (which spans many nations) and national cultural identities like Irish and ethnic groups within nations such as Catalan and Armenian.</rdfs:comment>
+        <rdfs:label xml:lang="en">ethnic identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000206 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000206">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000205"/>
+        <obo:IAO_0000115 xml:lang="en">An ethnic identity information content entity that uses OMB terminology for ethnicity or terminology that is strictly mapped onto the OMB ethnicity terms.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">OMB dichotomizes ethnicity into Hispanic or Latino and Not Hispanic or Latino, and ignores all other forms of ethnicity.</rdfs:comment>
+        <rdfs:label xml:lang="en">OMB ethnic identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000207 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000207">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000206"/>
+        <obo:IAO_0000115 xml:lang="en">An OMB ethnic identity information content entity that is about some person&apos;s identifying as Hispanic or Latino, which are intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">It comprehends people of Portuguese culture or origin in Brazil.</rdfs:comment>
+        <rdfs:label xml:lang="en">OMB Hispanic or Latino identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000208 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000208">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000206"/>
+        <obo:IAO_0000115 xml:lang="en">An OMB ethnic identity information content entity that is about some person&apos;s identifying as neither Hispanic nor Latino, which are intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">OMB not Hispanic or Latino identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000209 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000209">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000204"/>
+        <obo:IAO_0000115 xml:lang="en">A social identity information content entity that is about whether some person identifies as some gender.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">gender identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000210 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000210">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000209"/>
+        <obo:IAO_0000115 xml:lang="en">A gender identity information content entity that is about some person&apos;s identifying as female in gender.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">female gender identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000211 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000211">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000209"/>
+        <obo:IAO_0000115 xml:lang="en">A gender identity information content entity that is about some person&apos;s identifying as male in gender.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">male gender identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000212 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000212">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000209"/>
+        <obo:IAO_0000115 xml:lang="en">A gender identity information content entity that is about some person&apos;s identifying as non-binary in gender.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">non-binary identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000213 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000213">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000204"/>
+        <obo:IAO_0000115 xml:lang="en">A social identity information content entity that is about whether some person identifies as some race.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">racial identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000214 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000214">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000213"/>
+        <obo:IAO_0000115 xml:lang="en">A racial identity information content entity that uses OMB terminology and definitions for race or terminology that is strictly mapped onto the OMB race terms.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">OMB racial identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000215 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000215">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000214"/>
+        <obo:IAO_0000115 xml:lang="en">An OMB racial identity information content entity that is about some person&apos;s identifying as American Indian or Alaska Native, which is intended to mean having origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">This definition corresponds to that used by OMB. It is worth noting that the OMB definition from which this one is derived is problematic, in that it implies that one&apos;s race cannot be Native American or Alaskan Native unless one maintains tribal affiliations or community attachment.</rdfs:comment>
+        <rdfs:label xml:lang="en">OMB American Indian or Alaska Native identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000216 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000216">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000214"/>
+        <obo:IAO_0000115 xml:lang="en">An OMB racial identity information content entity that is about some person&apos;s identifying as Asian, which is intended to mean having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">OMB Asian identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000217 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000217">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000214"/>
+        <obo:IAO_0000115 xml:lang="en">An OMB racial identity information content entity that is about some person&apos;s identifying as black or African American which is intended to mean having origins in any of the black racial groups of Africa.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">OMB black or African American identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000218 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000218">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000214"/>
+        <obo:IAO_0000115 xml:lang="en">An OMB racial identity information content entity that is about some person&apos;s identifying as Native Hawaiian or other Pacific Islander, which is intended to mean having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">OMB Native Hawaiian or other Pacific Islander identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000219">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000214"/>
+        <obo:IAO_0000115 xml:lang="en">An OMB racial identity information content entity that is about some person&apos;s identifying as white which is intended to mean having origins in any of the original peoples of Europe, the Middle East, or North Africa.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">OMB white identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000220 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000220">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000204"/>
+        <obo:IAO_0000115 xml:lang="en">A social identity information content entity that is about whether some person identifies as having some sexual orientation.</obo:IAO_0000115>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">sexual orientation identity information content entity</rdfs:label>
     </owl:Class>
     
 
@@ -4848,10 +5223,12 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant&apos;s subjective sense of gender.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Paul Fabry</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
+        <obo:IAO_0100001 xml:lang="en">non-binary gender identity information content entity</obo:IAO_0100001>
         <rdfs:comment xml:lang="en">Alternatively: A gender identity datum stating that a person&apos;s subjective sense of gender is non-binary.)
 
 Examples of usage: ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)</rdfs:comment>
-        <rdfs:label xml:lang="en">non-binary gender identity datum</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete non-binary gender identity datum</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
