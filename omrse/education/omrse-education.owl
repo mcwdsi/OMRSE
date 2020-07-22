@@ -14,7 +14,6 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-education.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/dev/omrse-education.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2019-04-04/d-acts.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omrse/dev/omrse-core.owl"/>
         <dc:creator xml:lang="en">William R. Hogan</dc:creator>
         <terms:license xml:lang="en">https://creativecommons.org/licenses/by/4.0/legalcode</terms:license>
