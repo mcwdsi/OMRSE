@@ -2700,7 +2700,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000001"/>
         <obo:IAO_0000117 xml:lang="en">A role that concretizes a socio-lega generically dependent continuant</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">socio-legal human social role</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete socio-legal human social role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3985,7 +3986,9 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000162 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000162">
-        <rdfs:label xml:lang="en">medical advice</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
+        <rdfs:label xml:lang="en">obsolete medical advice</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
