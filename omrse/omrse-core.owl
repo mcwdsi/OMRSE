@@ -2626,11 +2626,11 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000001"/>
+        <obo:IAO_0000115 xml:lang="en">A US Census householder role is a human social role that, if realized, is realized by that person being a member of a household and either owning or renting the housing unit in which that household resides and being designated as the householder. If there is only one member of the household who owns or rents the housing unit, that person is designated the householder by default.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">http://www.census.gov/cps/about/cpsdef.html
 
 last accessed on June 30, 2015</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">A US Census householder role is a human social role  that is realized by that person being a member of a household and either owning or renting the housing unit in which that household resides and being designated as the householder. If there is only one member of the household who owns or rents the housing unit, that person is designated the householder by default.</rdfs:comment>
         <rdfs:label xml:lang="en">US census householder role</rdfs:label>
     </owl:Class>
     
