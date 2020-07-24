@@ -3753,6 +3753,22 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002229"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002083"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000201"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A deontic document act that concludes an inpatient encounter.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">discharge process</obo:IAO_0000118>
@@ -4680,6 +4696,22 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000193 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000193">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about some geographical region, in which a postal delivery route denoted by a particular ZIP code is realized, and that is the specified output of a disclosure of residence.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Hansi Zhang</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">residence ZIP code information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000201 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000201">
@@ -4699,22 +4731,6 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A deontic document act in which a patient is registered with a health care provider for the purpose of receiving care in an inpatient encounter.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">admission process</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000193 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000193">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that is about some geographical region, in which a postal delivery route denoted by a particular ZIP code is realized, and that is the specified output of a disclosure of residence.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
-        <dc:contributor xml:lang="en">Hansi Zhang</dc:contributor>
-        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
-        <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
-        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
-        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
-        <rdfs:label xml:lang="en">residence ZIP code information content entity</rdfs:label>
     </owl:Class>
     
 
