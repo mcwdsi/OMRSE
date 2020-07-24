@@ -4680,9 +4680,9 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000192 -->
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000201 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000192">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000201">
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002083"/>
