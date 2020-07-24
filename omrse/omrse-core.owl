@@ -4680,6 +4680,29 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000192 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000192">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000126"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002223"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000100"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021001"/>
+        <obo:IAO_0000115 xml:lang="en">A deontic document act in which a patient is registered with a health care provider for the purpose of receiving care in an inpatient encounter.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">admission process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000202 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000202">
