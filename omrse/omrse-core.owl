@@ -4697,22 +4697,6 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000221 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000221">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that is about some geographical region, in which a postal delivery route denoted by a particular ZIP code is realized, and that is the specified output of a disclosure of residence.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
-        <dc:contributor xml:lang="en">Hansi Zhang</dc:contributor>
-        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
-        <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
-        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
-        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
-        <rdfs:label xml:lang="en">residence ZIP code information content entity</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000201 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000201">
@@ -5047,6 +5031,38 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:label xml:lang="en">sexual orientation identity information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000221 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000221">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about some geographical region, in which a postal delivery route denoted by a particular ZIP code is realized, and that is the specified output of a disclosure of residence.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Hansi Zhang</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">residence ZIP code information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000223 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000223">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
+        <obo:IAO_0000115>A social act that creates an information content entity that is about some geographical region in which a human being dwells.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Hansi Zhang</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">disclosure of residence</rdfs:label>
     </owl:Class>
     
 
