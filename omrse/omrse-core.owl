@@ -1772,7 +1772,7 @@ Ditto for its current descendants.</rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000025"/>
-        <obo:IAO_0000115 xml:lang="en">An organization social role that is realized by a health care process.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An organization social role that, if realized, is realized by either a health care process or an ancillary health care process</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Previous definition: An organization social role played by an organization in health care processes.</rdfs:comment>
         <rdfs:label xml:lang="en">organization health care role</rdfs:label>
     </owl:Class>
