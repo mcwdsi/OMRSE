@@ -5140,6 +5140,43 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000227 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000227">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000112 xml:lang="en">Recording data in an EHR. Financial tasks for a healthcare organization. Scheduling shifts for health care workers.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
+        <rdfs:label xml:lang="en">health care administrative process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000228 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000228">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000227"/>
+        <obo:IAO_0000115 xml:lang="en">A health care administrative process that has as input a diagnosis, and has as output a value indicating that diagnosis is about the condition that prompts the admission process that starts the encounter during which the diagnostic process that outputs that diagnosis begins.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <rdfs:label xml:lang="en">principal diagnosis-assignment process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000229 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000229">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000227"/>
+        <obo:IAO_0000115 xml:lang="en">A health care administrative process that has as input a diagnosis, and has as output a value indicating that diagnosis is about an underlying condition that is distinct from the condition that prompts the admission process that starts the encounter during which the diagnostic process that outputs that diagnosis begins.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <rdfs:label xml:lang="en">secondary diagnosis-assignment process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000500 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000500">
