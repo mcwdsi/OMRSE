@@ -1094,6 +1094,24 @@ Is part_of the appropriate relation to use for data items and documented identit
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0021001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021001"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021003 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021003"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021009"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
@@ -1262,6 +1280,43 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000232>creation date: 2011-09-20T09:57:44Z</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ogms.owl</obo:IAO_0000412>
         <rdfs:label>injury</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIABIS_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115 xml:lang="en">A data set that contains the outcome of a survey.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alice Nzinga</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/omiabis.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">survey data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIABIS_0001025 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0001025">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+        <obo:IAO_0000115 xml:lang="en">A plan specification that is realized by  process of gathering information (e.g. by asking questions).</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Alice Nzinga</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/omiabis.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">survey plan specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIABIS_0001035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0001035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process that realizes the concretization of a survey to generate an output(survey data.)</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/omiabis.owl</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">survey execution</rdfs:label>
     </owl:Class>
     
 
@@ -5173,6 +5228,77 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
         <rdfs:label xml:lang="en">secondary diagnosis-assignment process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000230">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_0001025"/>
+        <obo:IAO_0000112 xml:lang="en">The Alachua county smoking survey plan specification.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A survey plan specification that aims to collect information about the smoking behavior or lack thereof of a population on a county level. Concretization of a smoking survey plan that is stratified by county.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Hansi Zhang</dc:contributor>
+        <dc:contributor xml:lang="en">Jiang Bian</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">county smoking survey plan specification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000231 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000231">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000230"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_0001035"/>
+        <obo:IAO_0000112 xml:lang="en">The Alachua county smoking survey execution.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A survey execution that realizes the concretization of a smoking survey plan specification that is stratified by county.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Hansi Zhang</dc:contributor>
+        <dc:contributor xml:lang="en">Jiang Bian</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">county smoking survey execution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000232 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000232">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000231"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_0000060"/>
+        <obo:IAO_0000112 xml:lang="en">The Alachua county smoking survey data.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Survey data that is the specified output of a county smoking survey execution.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Hansi Zhang</dc:contributor>
+        <dc:contributor xml:lang="en">Jiang Bian</dc:contributor>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">county smoking survey data</rdfs:label>
     </owl:Class>
     
 
