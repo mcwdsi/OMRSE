@@ -242,6 +242,9 @@ On the other hand, in the case of those who are self-taught by reading books or 
         <obo:IAO_0000111 xml:lang="en">early childhood education program</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">An educational program whose intended active participant, when a concretization of it is realized, is a human child of age birth to 8 years or a human fetus prior to birth.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">pre-K education program</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">prekindergarten education program</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">preschool education program</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://apps.who.int/iris/bitstream/handle/10665/69729/a91213.pdf?sequence</obo:IAO_0000119>
         <rdfs:label xml:lang="en">early childhood education plan specification</rdfs:label>
     </owl:Class>
@@ -278,6 +281,8 @@ On the other hand, in the case of those who are self-taught by reading books or 
         <obo:IAO_0000111 xml:lang="en">primary education plan specification</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">An education plan specification with one or more primary education objective specifications as parts, and these are the only objective specifications it has as parts.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">elementary education</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">In the united states, also called &quot;elementary education&quot;</rdfs:comment>
         <rdfs:comment xml:lang="en">It can still have action specifications as parts, and possibly other ICEs as parts.  That&apos;s why we cannot say it has only primary education objectives as parts, and we have to introduce the double negative in the class axiom.</rdfs:comment>
         <rdfs:comment xml:lang="en">Primary education provides learning and educational activities typically designed to provide students with fundamental skills in reading, writing and mathematics (i.e. literacy and numeracy), and to establish a sound foundation for learning and solid understanding of core areas of knowledge and personal development, preparing for lower secondary education. It aims at learning at a basic level of complexity with little if any specialisation.</rdfs:comment>
         <rdfs:label xml:lang="en">primary education program</rdfs:label>
@@ -601,6 +606,179 @@ On the other hand, in the case of those who are self-taught by reading books or 
         <obo:IAO_0000119 xml:lang="en">http://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-isced-2011-en.pdf</obo:IAO_0000119>
         <rdfs:comment xml:lang="en">Vocational education programs are designed for learners to acquire the knowledge, skills and competencies specific to a particular occupation, trade, or class of occupations or trades. Such programs may have work-based components (e.g. apprenticeships, dual-system education programmes). Successful completion of such programs leads to labor market-relevant, vocational qualifications acknowledged as occupationally-oriented by the relevant national authorities and/or the labor market.</rdfs:comment>
         <rdfs:comment xml:lang="en">vocational education program</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002047 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002047">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002034"/>
+        <obo:IAO_0000111 xml:lang="en">kindergarten education plan specification</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A primary education plan specification that specifies the competencies and information content entities that should be acquired by students in the first year of primary education in the United States.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">kindergarten education program</obo:IAO_0000117>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T12:38:43Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002042"/>
+        <obo:IAO_0000111 xml:lang="en">undergraduate higher education plan specification</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A higher education plan specification that specifies the awarding of an associates or bachelors degree in the United States or equivalent degrees in other nations, and specifies as a pre-requisite the completion of some secondary education program.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">undergraduate education program</obo:IAO_0000118>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T12:52:46Z</dc:date>
+        <rdfs:label xml:lang="en">undergraduate higher education program</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002042"/>
+        <obo:IAO_0000111 xml:lang="en">graduate higher education plan specification</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A higher education plan specification that specifies the awarding of a graduate certificate or degree, and specifies as a pre-requisite the awarding of an undergraduate degree.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">graduate education program</obo:IAO_0000118>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:01:34Z</dc:date>
+        <rdfs:comment xml:lang="en">Graduate degrees include masters, PhD, MD, PharmD, and other post-graduate professional degrees.  To distinguish MS/PhD from the professional ones, subclass this class.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The prerequisite degree is at the bachelors level or equivalent.  An associates degree is almost never sufficient for entry into graduate education programs.</rdfs:comment>
+        <rdfs:label xml:lang="en">graduate higher education program</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002050">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002045"/>
+        <obo:IAO_0000111 xml:lang="en">highest level of education is completion of grades one through six socio-economic data item</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of first through sixth grade.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:23:46Z</dc:date>
+        <rdfs:comment xml:lang="en">Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
+
+It indicates completion of some to all of primary education in the United States.</rdfs:comment>
+        <rdfs:label xml:lang="en">highest level of education is grades 1 through 6 data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002051 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002045"/>
+        <obo:IAO_0000111 xml:lang="en">highest level of education is completion of grades seven through nine socio-economic data item</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of seventh (7th) through ninth (9th) grade.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:27:15Z</dc:date>
+        <rdfs:comment xml:lang="en">Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
+
+It indicates completion of some to all of lower secondary education in the United States.</rdfs:comment>
+        <rdfs:label xml:lang="en">highest level of education is grades 7 through 9 data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002052 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002045"/>
+        <obo:IAO_0000111 xml:lang="en">highest level of education is completion of grades ten through twelve socio-economic data item</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of tenth (10th) through twelfth (12th) grade.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:27:50Z</dc:date>
+        <rdfs:comment xml:lang="en">Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
+
+It indicates completion of some to all of upper secondary education in the United States.</rdfs:comment>
+        <rdfs:label xml:lang="en">highest level of education is grades 10 through 12 data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002045"/>
+        <obo:IAO_0000111 xml:lang="en">highest level of education is completion of some undergraduate degree socio-economic data item</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some undergraduate degree.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:28:27Z</dc:date>
+        <rdfs:comment xml:lang="en">Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.</rdfs:comment>
+        <rdfs:label xml:lang="en">highest level of education is completion of undergraduate degree data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002045"/>
+        <obo:IAO_0000111 xml:lang="en">highest level of education is completion of some graduate degree socio-economic data item</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some graduate certificate or degree.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:28:49Z</dc:date>
+        <rdfs:comment xml:lang="en">Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.</rdfs:comment>
+        <rdfs:label xml:lang="en">highest level of education is completion of graduate certificate or degree data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002045"/>
+        <obo:IAO_0000111 xml:lang="en">highest level of education is completion of some vocational education program socio-economic data item</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some vocational education program.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:29:28Z</dc:date>
+        <rdfs:comment xml:lang="en">Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.</rdfs:comment>
+        <rdfs:label xml:lang="en">highest level of education is completion of vocaational education program data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002045"/>
+        <obo:IAO_0000111 xml:lang="en">highest level of education is completion of kindergarten socio-economic data item</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is pre-kindergarten.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:47:38Z</dc:date>
+        <rdfs:comment xml:lang="en">Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
+
+It indicates that a person has completed only early childhood education and nothing more.</rdfs:comment>
+        <rdfs:label xml:lang="en">highest level of education is completion of kindergarten data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002045"/>
+        <obo:IAO_0000111 xml:lang="en">highest level of education is completion of pre-kindergarten socio-economic data item</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is kindergarten.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:48:10Z</dc:date>
+        <rdfs:comment xml:lang="en">Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.</rdfs:comment>
+        <rdfs:label xml:lang="en">highest level of education is completion of pre-kindergarten data item</rdfs:label>
     </owl:Class>
     
 
