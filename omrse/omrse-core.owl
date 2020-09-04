@@ -1755,7 +1755,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">An object aggregate all of whose components are human beings.</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">An object aggregate all of whose components are human beings.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">collection of humans</rdfs:label>
     </owl:Class>
     
@@ -3412,8 +3412,8 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000103">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000001"/>
+        <obo:IAO_0000115 xml:lang="en">A human social role that inheres in a human who is legally eligible to work, is conferred by the U.S. Census Bureau, and is realized by the bearer not working and either making active efforts to find employment in the four weeks prior to the reference week or waiting to be recalled from temporary layoff.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
-        <rdfs:comment xml:lang="en">A US Census unemployed role is a human social role that inheres in a human who is legally eligible to work, is conferred by the U.S. Census Bureau, and is realized by the bearer not working and either making active efforts to find employment in the four weeks prior to the reference week or waiting to be recalled from temporary layoff.</rdfs:comment>
         <rdfs:label xml:lang="en">US Census unemployed role</rdfs:label>
     </owl:Class>
     
@@ -4245,7 +4245,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">a health care facility that also bears a residence function and thus one in which the patients are also residents of the facility</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">a health care facility that also bears a residence function and thus one in which the patients are also residents of the facility</obo:IAO_0000115>
         <rdfs:label xml:lang="en">community living health care facility</rdfs:label>
     </owl:Class>
     
