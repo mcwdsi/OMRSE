@@ -5336,6 +5336,30 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000233 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000233">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <obo:IAO_0000112 xml:lang="en">Calculating the Alachua County smoking rate from Alachua County smoking data.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A data transformation that has data about the smoking status of a population as its specified input and a percentage or ratio of smokers in that population as a specified output.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">smoking rate calculation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000234 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000234">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000112 xml:lang="en">The Alachua County smoking rate.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A data item that is the specified output of a smoking rate calculation that has data about smoking behavior or lack there of on a county level.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">county smoking rate data</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000500 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000500">
