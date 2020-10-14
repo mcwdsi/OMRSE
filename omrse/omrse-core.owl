@@ -5455,6 +5455,21 @@ Examples of usage: ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfl
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/RO_0002577">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>A material entity consisting of multiple components that are causally integrated.</obo:IAO_0000115>
+        <obo:IAO_0000116>May be replaced by a BFO class, as discussed in http://www.jbiomedsem.com/content/4/1/43</obo:IAO_0000116>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000119>http://www.jbiomedsem.com/content/4/1/43</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.obolibrary.org/obo/ro/releases/2020-02-26/ro.owl</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">The system as a whole is a configuration of particulars, at least one of which is material entity that is the bearer of a function.  Realization of functions of the particulars in the system contribute to the realization of one or more functions of the system a a whole.</rdfs:comment>
+        <rdfs:label>system</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
 
     <owl:Class rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
