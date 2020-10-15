@@ -16,7 +16,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo/2014-05-03/classes-only.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/pno.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2020-07-10/d-acts.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2020-10-14/d-acts.owl"/>
         <dc:contributor>Daniel Welch</dc:contributor>
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
