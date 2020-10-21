@@ -15,3 +15,18 @@ There is an [OMRSE Google Group](http://groups.google.com/group/omrse-discuss) f
 [Oral Health and Disease Ontology](https://github.com/wdduncan/ohd-ontology)
 
 [OOSTT](https://github.com/OOSTT/): Ontology of Organizational Structures of Trauma centers and Trauma systems
+
+## Preparing a new OMRSE release
+
+1. Make sure that all of your changes in the devel branch are committed and pushed to origin/devel.
+
+2. In terminal, on the devel branch:  
+`git merge master`
+
+3. If there are conflicts, resolve them (see Github docs for more information: https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line).
+
+4. Then, checkout the master branch:  
+`git checkout master`
+
+5. Finally, merge master with devel:  
+`git merge devel`
