@@ -21,7 +21,7 @@
         <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
         <dc:creator xml:lang="en">William Hogan</dc:creator>
-        <dc:license>CC-BY 4.0</dc:license>
+        <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <owl:versionInfo>2020-01-30</owl:versionInfo>
