@@ -23,10 +23,15 @@ There is an [OMRSE Google Group](http://groups.google.com/group/omrse-discuss) f
 2. In terminal, on the devel branch:  
 `git merge master`
 
-3. If there are conflicts, resolve them (see Github docs for more information: https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line).
+3. When you are prompted to enter a commit message, press “i” to enable insertions, then type the commit message. Then, hit “escape” to exit insert mode and type “:wq” and press enter to save the file and quit Vim.
 
-4. Then, checkout the master branch:  
+4. If there are conflicts, resolve them (see Github docs for more information: https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line).
+
+5. Then, checkout the master branch:  
 `git checkout master`
 
-5. Finally, merge master with devel:  
+6. Next, merge master with devel:  
 `git merge devel`
+
+7. Finally, push the changes:
+`git push`
