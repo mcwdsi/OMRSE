@@ -3000,6 +3000,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A human social role that is created by a deontic declaration performed by an organization.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">human organizational role</obo:IAO_0000118>
         <rdfs:label xml:lang="en">human role within an organization</rdfs:label>
     </owl:Class>
     
