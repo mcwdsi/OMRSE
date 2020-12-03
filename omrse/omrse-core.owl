@@ -4084,7 +4084,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000140">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000139"/>
         <obo:IAO_0000115 xml:lang="en">A surgeon role realized by its bearer using performing neurosurgery.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">neurosurgereon role</rdfs:label>
+        <rdfs:label xml:lang="en">neurosurgeon role</rdfs:label>
     </owl:Class>
     
 
