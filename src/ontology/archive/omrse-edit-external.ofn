@@ -1,0 +1,704 @@
+Prefix(:=<http://purl.obolibrary.org/obo/omrse.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/omrse.owl>
+
+Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000480>))
+Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000532>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000310>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000416>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000572>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000578>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0020024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0021001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0021003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0021009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OAE_0000002>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OAE_0000067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OAE_0002807>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000245>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0200000>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0600052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000097>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000100>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OGMS_0000102>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMIABIS_0000060>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMIABIS_0001025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMIABIS_0001035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OOSTT_00000074>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OOSTT_00000081>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OOSTT_00000082>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OOSTT_00000083>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OOSTT_00000084>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OOSTT_00000086>))
+Declaration(Class(<http://purl.obolibrary.org/obo/PCO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/RO_0002577>))
+Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000075>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0021011>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0021012>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000299>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000312>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0000846>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBI_0001688>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OMIABIS_0000008>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OMIABIS_0000009>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OMIABIS_0000048>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000053>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000056>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000057>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000058>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0000059>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002081>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002083>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002217>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002218>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002222>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002223>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002229>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002350>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000111>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000112>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000232>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000412>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000600>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OAE_0004334>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OOSTT_00000030>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/license>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#inSubset>))
+Declaration(AnnotationProperty(rdfs:comment))
+Declaration(AnnotationProperty(rdfs:label))
+Declaration(AnnotationProperty(owl:deprecated))
+Declaration(AnnotationProperty(<http://xmlns.com/foaf/0.1/mbox>))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000111> (editor preferred term)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000111> "editor preferred term"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000112> (example of usage)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000112> "example of usage"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000115> (definition)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "definition"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000115> "textual definition"^^xsd:string)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000116> (editor note)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000116> "editor note")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000116> "editor note"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000117> (definition editor)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000117> "definition editor")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000117> "definition editor"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000117> "term editor"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000118> (alternative term)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000118> "alternative term"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000119> (definition source)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000119> "definition source")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000119> "definition source"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000232> (curator note)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000232> "curator note")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000232> "curator note"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000412> (imported from)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000412> "imported from"@en)
+
+# Annotation Property: <http://purl.obolibrary.org/obo/OOSTT_00000030> (OOSTT user-centered description)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OOSTT_00000030> "OOSTT user-centered description"@en)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#inSubset> (in_subset)
+
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#inSubset> "in_subset"^^xsd:string)
+
+# Annotation Property: rdfs:label (label)
+
+AnnotationAssertion(rdfs:label rdfs:label "label")
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.obolibrary.org/obo/BFO_0000075> (is aggregate of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/BFO_0000075> "aggregate of"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/BFO_0000075> "aggregate_of"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000075> "is aggregate of"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/BFO_0000075> owl:topObjectProperty)
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000846> (is member of organization)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000846> "is member of organization"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000846> "Relating a legal person to an organization in the case where the legal person has a role as member of the organization"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000846> "2009/10/01 Alan Ruttenberg. Barry prefers generic is-member-of. Question of what the range should be. For now organization. Is organization a population? Would the same relation be used to record members of a population"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000846> "Person:Alan Ruttenberg"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000846> "Person:Helen Parkinson"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000846> "Person:Alan Ruttenberg"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000846> "Person:Helen Parkinson"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000846> "is member of organization"^^xsd:string)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000846> <http://purl.obolibrary.org/obo/OBI_0001688>)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000846> ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0000245>))
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000846> <http://purl.obolibrary.org/obo/OBI_0000245>)
+
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0001688> (has organization member)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0001688> "has organization member"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0001688> <http://purl.obolibrary.org/obo/OBI_0000245>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0001688> ObjectUnionOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/OBI_0000245>))
+
+# Object Property: <http://purl.obolibrary.org/obo/OMIABIS_0000008> (owns)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OMIABIS_0000008> "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/OMIABIS_0000008> "This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. "@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMIABIS_0000008> "owns"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/OMIABIS_0000008> <http://purl.obolibrary.org/obo/OMIABIS_0000048>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/OMIABIS_0000008> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/IAO_0000030>))
+
+# Object Property: <http://purl.obolibrary.org/obo/OMIABIS_0000009> (administrates)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMIABIS_0000009> "a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a."@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMIABIS_0000009> "A definition of \"tranfers\" object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMIABIS_0000009> "administrates"@en)
+AsymmetricObjectProperty(<http://purl.obolibrary.org/obo/OMIABIS_0000009>)
+ObjectPropertyRange(<http://purl.obolibrary.org/obo/OMIABIS_0000009> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/IAO_0000030>))
+
+# Object Property: <http://purl.obolibrary.org/obo/OMIABIS_0000048> (is owned by)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMIABIS_0000048> "a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OMIABIS_0000048> "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMIABIS_0000048> "is owned by"@en)
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OMIABIS_0000048> ObjectUnionOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/IAO_0000030>))
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000052> (inheres in)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000052> "'inheres in at all times'"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000052> "inheres_in"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000052> "inheres in"@en)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0000052> <http://purl.obolibrary.org/obo/RO_0000053>)
+FunctionalObjectProperty(<http://purl.obolibrary.org/obo/RO_0000052>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000053> (is bearer of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000053> "bearer of"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000053> "bearer_of"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0000053> "is bearer of"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000058> (<http://purl.obolibrary.org/obo/RO_0000058>)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0000058> "concretized by at some time"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0000059> (<http://purl.obolibrary.org/obo/RO_0000059>)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0000059> "It is recommended to not use this if possible in OMRSE.  According to OntoBee this relation has been obsoleted and replaced with 'concretization of at all times'.  As of Dec. 2, 2013 iao-main still uses this relation.  "@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002081> (before or simultaneous with)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002081> "David Osumi-Sutherland")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002081> "<="@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/RO_0002081> "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002081> "Primitive instance level timing relation between events")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002081> "before or simultaneous with"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002081> <http://purl.obolibrary.org/obo/RO_0002222>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002083> (before)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002083> "David Osumi-Sutherland")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/RO_0002083> "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002083> "t1 before t2 iff:=  t1 before_or_simulataneous_with t2  and not (t1 simultaeous_with t2)"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002083> "before"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002083> <http://purl.obolibrary.org/obo/RO_0002081>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002217> (actively participates in)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002217> "x actively participates in y if and only if x participates in y and x realizes some active role")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002217> "Chris Mungall")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002217> "agent in")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002217> "actively participates in"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002217> <http://purl.obolibrary.org/obo/RO_0000056>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002217> <http://purl.obolibrary.org/obo/RO_0002218>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002218> (has active participant)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0002218> "'heart development' has active participant some Shh protein")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002218> "x has participant y if and only if x realizes some active role that inheres in y")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0002218> "This may be obsoleted and replaced by the original 'has agent' relation")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002218> "Chris Mungall")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002218> "has agent")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002218> "has active participant"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002218> <http://purl.obolibrary.org/obo/RO_0000057>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002222> (temporally related to)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002222> "Chris Mungall")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/RO_0002222> "Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/RO_0002222> "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"^^xsd:string)
+AnnotationAssertion(<http://purl.org/dc/terms/source> <http://purl.obolibrary.org/obo/RO_0002222> "https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1"^^xsd:anyURI)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/RO_0002222> "A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002222> "temporally related to"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002222> owl:topObjectProperty)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002223> (starts)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002223> "inverse of starts with")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002223> "Chris Mungall")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002223> "Allen")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/RO_0002223> "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002223> "starts"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002223> <http://purl.obolibrary.org/obo/BFO_0000050>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002229> (ends)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002229> "inverse of ends with")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002229> "Chris Mungall")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/RO_0002229> "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002229> "ends"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002229> <http://purl.obolibrary.org/obo/BFO_0000050>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002350> (member of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0002350> "An organism that is a member of a population of organisms")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002350> "is member of is a mereological relation between a item and a collection.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002350> "is member of")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002350> "member part of")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002350> "SIO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002350> "member of"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002350> <http://purl.obolibrary.org/obo/BFO_0000050>)
+InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002350> <http://purl.obolibrary.org/obo/RO_0002351>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0002351> (has member)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002351> "has member is a mereological relation between a collection and an item.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002351> "SIO")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002351> "has member"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002351> <http://purl.obolibrary.org/obo/BFO_0000051>)
+IrreflexiveObjectProperty(<http://purl.obolibrary.org/obo/RO_0002351>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> (geographical migration of organism)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "A behavior of one or more organisms that is characterized by the displacement from one geographic region to some target geographic region, and is the realization of either a biological function or (a concretization of) an objective specification."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "Matthew Diller")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "William R. Hogan")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "A behavior of one or more organisms that is characterized by the displacement from one geographic region to some target geographic region, and is the realization of either a biological function or (a concretization of) an objective specification."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "geographical migration of organism"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/APOLLO_SV_00000480> <http://purl.obolibrary.org/obo/GO_0007610>)
+
+# Class: <http://purl.obolibrary.org/obo/APOLLO_SV_00000532> (human travel)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/APOLLO_SV_00000532> "A geographical migration of an organism belonging to the species Homo sapiens."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/APOLLO_SV_00000532> "Matthew Diller")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/APOLLO_SV_00000532> "William R. Hogan")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/APOLLO_SV_00000532> "human travel"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/APOLLO_SV_00000532> <http://purl.obolibrary.org/obo/APOLLO_SV_00000480>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0007610> (behavior)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0007610> "The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/GO_0007610> "janelomax"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/GO_0007610> "2012-09-20T14:06:08Z"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0007610> "GO:0044708"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0007610> "Wikipedia:Behavior"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0007610> "behavioral response to stimulus"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0007610> "behaviour"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0007610> "behavioural response to stimulus"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0007610> "biological_process"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0007610> "single-organism behavior"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0007610> "GO:0007610"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0007610> "1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.
+2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis)."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0007610> "behavior"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0007610> <http://purl.obolibrary.org/obo/GO_0008150>)
+
+# Class: <http://purl.obolibrary.org/obo/GO_0008150> (biological_process)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0008150> "Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end."^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#created_by> <http://purl.obolibrary.org/obo/GO_0008150> "janelomax"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#creation_date> <http://purl.obolibrary.org/obo/GO_0008150> "2012-09-19T15:05:24Z"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0008150> "GO:0000004"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0008150> "GO:0007582"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasAlternativeId> <http://purl.obolibrary.org/obo/GO_0008150> "GO:0044699"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0008150> "Wikipedia:Biological_process"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "biological process"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "physiological process"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasOBONamespace> <http://purl.obolibrary.org/obo/GO_0008150> "biological_process"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "single organism process"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "single-organism process"^^xsd:string)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/GO_0008150> "GO:0008150"^^xsd:string)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0008150> "Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. Note that when this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this."^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological_process"^^xsd:string)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0000578> (CRID)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000578> "Entries in a Column of which the header is \"Pubmed ID\" "@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000578> "PMID:12345"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000578> "The following URL: \"http://www.ncbi.nlm.nih.gov/pubmed/19918065\""@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000578> "The following sentence contains a CRID: \"The article with Pubmed ID: 19918065\". "@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000578> "An information content entity that consists of a CRID symbol and additional information about which CRID registry it belongs. "@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000578> "Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation. 
+"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/IAO_0000578> "Note, IAO call 20101124: URIs are not always CRID, as not centrally registered. We acknowledge that CRID is a subset of a larger identifier class, but this subset fulfills our current needs. OBI PURLs are CRID as they are registered with OCLC. UPCs (Universal Product Codes from AC Nielsen)are not CRID as they are not centrally registered."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000578> "PERSON: Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000578> "PERSON: Bill Hogan"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000578> "PERSON: Bjoern Peters"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000578> "PERSON: Melanie Courtot"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/IAO_0000578> "Centrally Registered IDentifier")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000578> "Original proposal from Bjoern, discussions at IAO calls"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/IAO_0000578> "http://purl.obolibrary.org/obo/iao.owl"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000578> "CRID"@en)
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0020021> (identity document)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0020021> "a document that denotes some identity and is concretized by the bearer of some credential role"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0020021> "Amanda Hicks")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0020021> "identity document"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020021> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/IAO_0000310> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/IAO_0000136> <http://purl.obolibrary.org/obo/IAO_0020022>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000058> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/IAO_0020024>)))) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/RO_0000058> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000020> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> <http://purl.obolibrary.org/obo/IAO_0020024>))))))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0020022> (documented identity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0020022> "a documented identity is the aggregate of all data items about an entity.  Notice that a documented identity is not itself a document since a document is intended to be understood as a whole and data items about an individual are usually scattered across different documents."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0020022> "Amanda Hicks")
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0020022> "is an aggregate of ICEs also an ICE? yes
+Is part_of the appropriate relation to use for data items and documented identities?"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0020022> "documented identity"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020022> <http://purl.obolibrary.org/obo/IAO_0000030>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020022> ObjectIntersectionOf(ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000030>) ObjectSomeValuesFrom(ObjectInverseOf(<http://purl.obolibrary.org/obo/IAO_0000136>) <http://purl.obolibrary.org/obo/IAO_0020021>) ObjectAllValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000051> <http://purl.obolibrary.org/obo/IAO_0000030>)))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0020023> (authentication)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0020023> " I order a beer and the bartender authenticates my age by looking at my DOB on my driver's license.  I sign into my email account, and the system authenticates my permission to read the email by checking the password I enter against my password listed in the database.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0020023> "Authentication is the act of checking or verifying an identity claim (that is either tacit or explicit). 
+"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0020023> "Amanda Hicks")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0020023> "authentication"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020023> <http://purl.obolibrary.org/obo/BFO_0000015>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020023> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000015> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000055> <http://purl.obolibrary.org/obo/IAO_0020024>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> <http://purl.obolibrary.org/obo/IAO_0000027>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000057> ObjectSomeValuesFrom(ObjectInverseOf(<http://purl.obolibrary.org/obo/IAO_0000136>) <http://purl.obolibrary.org/obo/IAO_0000027>))))
+
+# Class: <http://purl.obolibrary.org/obo/IAO_0020024> (credential role)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0020024> " a role that inheres in a concretization of an identity document and is realized by an authentication process"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0020024> "Amanda Hicks"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0020024> "credential role"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0020024> ObjectIntersectionOf(<http://purl.obolibrary.org/obo/BFO_0000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/BFO_0000054> <http://purl.obolibrary.org/obo/IAO_0020023>) ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000052> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000053> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/RO_0000059> <http://purl.obolibrary.org/obo/IAO_0020021>)))))
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020024> <http://purl.obolibrary.org/obo/BFO_0000023>)
+
+# Class: <http://purl.obolibrary.org/obo/OAE_0000002> (medical intervention)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OAE_0000002> "medical intervention is a planned process that has the goal of diagnosing, preventing or relieving illness or injury. ")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OAE_0000002> "The act of intervening, interfering or interceding with the intent of modifying the outcome. In medicine, an intervention is usually undertaken to help treat or cure a condition. For example, \"Acupuncture as a therapeutic intervention is widely practiced in the United States,\" 
+Reference:
+http://www.medterms.com/script/main/art.asp?articlekey=34214 . Some interventions can be used for diagnosis. ")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OAE_0000002> "YH")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OAE_0000002> "WEB: http://wiki.answers.com/Q/What_is_medical_intervention")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OAE_0000002> "medical intervention")
+SubClassOf(<http://purl.obolibrary.org/obo/OAE_0000002> <http://purl.obolibrary.org/obo/OBI_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/OAE_0000067> (surgery)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OAE_0000067> "Surgery is a medical procedure that uses operative manual and instrumental techniques on a patient to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance. The key difference between a surgery and a general procedure is the need for an incision. Making an incision, or cutting into the skin to gain access to the body’s deeper tissues or organs, is a defining characteristic of surgery.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OAE_0000067> "YH, SS")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OAE_0000067> "surgical procedure")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OAE_0000067> "WEB: http://en.wikipedia.org/wiki/Surgery")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OAE_0000067> "WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OAE_0004334> <http://purl.obolibrary.org/obo/OAE_0000067> "10042609"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OAE_0000067> "surgery")
+SubClassOf(<http://purl.obolibrary.org/obo/OAE_0000067> <http://purl.obolibrary.org/obo/OAE_0002807>)
+
+# Class: <http://purl.obolibrary.org/obo/OAE_0002807> (medical procedure)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OAE_0002807> "a medical intervention that refers to any series of pre-defined steps that should be followed to achieve a desired result.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OAE_0002807> "YH, SS")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OAE_0002807> "WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OAE_0002807> "medical procedure"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OAE_0002807> <http://purl.obolibrary.org/obo/OAE_0000002>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0000245> (organization)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000245> "organization"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000245> "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000245> "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000245> "BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that.  The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based:
+
+1) there are organization_member_roles (president, treasurer, branch
+editor), with individual persons as bearers
+
+2) there are organization_roles (employer, owner, vendor, patent holder)
+
+3) an organization has a charter / rules / bylaws, which specify what roles
+there are, how they should be realized, and how to modify the
+charter/rules/bylaws themselves.
+
+It is debatable what the organization itself is (some kind of dependent
+continuant or an aggregate of people). This also determines who/what the
+bearer of organization_roles' are. My personal favorite is still to define
+organization as a kind of 'legal entity', but thinking it through leads to
+all kinds of questions that are clearly outside the scope of OBI.
+
+Interestingly enough, it does not seem to matter much where we place
+organization itself, as long as we can subclass it (University, Corporation,
+Government Agency, Hospital), instantiate it (Affymetrix, NCBI, NIH, ISO,
+W3C, University of Oklahoma), and have it play roles.
+
+This leads to my proposal: We define organization through the statements 1 -
+3 above, but without an 'is a' statement for now. We can leave it in its
+current place in the is_a hierarchy (material entity) or move it up to
+'continuant'. We leave further clarifications to BFO, and close this issue
+for now."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000245> "PERSON: Alan Ruttenberg"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000245> "PERSON: Bjoern Peters"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000245> "PERSON: Philippe Rocca-Serra"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000245> "PERSON: Susanna Sansone"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000245> "GROUP: OBI"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000245> "organization"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000245> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0100026> (organism)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0100026> "organism"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0100026> "animal"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0100026> "fungus"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0100026> "plant"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0100026> "virus"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0100026> "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0100026> "10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and 'other organisms')"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0100026> "13-02-2009:
+OBI doesn't take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
+This issue is outside the scope of OBI."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0100026> "GROUP: OBI Biomaterial Branch"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0100026> "WEB: http://en.wikipedia.org/wiki/Organism"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0100026> "organism"@en)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0200000> (data transformation)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0200000> "data transformation"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0200000> "The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value."^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0200000> "A planned process that produces output data from input data."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0200000> "Elisabetta Manduchi"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0200000> "Helen Parkinson"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0200000> "James Malone"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0200000> "Melanie Courtot"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0200000> "Philippe Rocca-Serra"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0200000> "Richard Scheuermann"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0200000> "Ryan Brinkman"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0200000> "Tina Hernandez-Boussard"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0200000> "data analysis"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OBI_0200000> "data processing"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0200000> "Branch editors"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OBI_0200000> "http://purl.obolibrary.org/obo/obi/2020-08-24/obi.owl"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0200000> "data transformation"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0200000> <http://purl.obolibrary.org/obo/OBI_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/OBI_0600052> (dialysis)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0600052> "A protocol application that uses diffusion through a semi-permeable membrane to separate an input material into two fractions of different composition"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0600052> "dialysis"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OBI_0600052> <http://purl.obolibrary.org/obo/OBI_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000097> (health care encounter)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000097> "A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OGMS_0000097> "Albert Goldfain")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OGMS_0000097> "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OGMS_0000097> "creation date: 2011-02-21T09:57:44Z")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000097> "health care encounter")
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000097> <http://purl.obolibrary.org/obo/OBI_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000100> (inpatient encounter)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000100> "TODO"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OGMS_0000100> "Albert Goldfain")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OGMS_0000100> "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OGMS_0000100> "creation date: 2011-02-21T09:57:44Z")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OGMS_0000100> "https://github.com/OGMS/ogms/releases/tag/v2019-04-30"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000100> "inpatient encounter")
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000100> <http://purl.obolibrary.org/obo/OGMS_0000097>)
+
+# Class: <http://purl.obolibrary.org/obo/OGMS_0000102> (injury)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OGMS_0000102> "A part of an organism that has undergone a change in structural integrity and has a higher chance of dysfunction or causing dysfunction in another structure."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OGMS_0000102> "At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making 'injury' a subtype of 'disorder'.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OGMS_0000102> "Albert Goldfain")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OGMS_0000102> "http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OGMS_0000102> "creation date: 2011-09-20T09:57:44Z")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OGMS_0000102> "http://purl.obolibrary.org/obo/ogms.owl"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OGMS_0000102> "injury")
+SubClassOf(<http://purl.obolibrary.org/obo/OGMS_0000102> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/OMIABIS_0000060> (survey data)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMIABIS_0000060> "A data set that contains the outcome of a survey."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMIABIS_0000060> "Alice Nzinga"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMIABIS_0000060> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OMIABIS_0000060> "http://purl.obolibrary.org/obo/omiabis.owl"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMIABIS_0000060> "survey data"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMIABIS_0000060> <http://purl.obolibrary.org/obo/IAO_0000027>)
+
+# Class: <http://purl.obolibrary.org/obo/OMIABIS_0001025> (survey plan specification)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMIABIS_0001025> "A plan specification that is realized by  process of gathering information (e.g. by asking questions)."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMIABIS_0001025> "Alice Nzinga"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMIABIS_0001025> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OMIABIS_0001025> "http://purl.obolibrary.org/obo/omiabis.owl"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMIABIS_0001025> "survey plan specification"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMIABIS_0001025> <http://purl.obolibrary.org/obo/IAO_0000104>)
+
+# Class: <http://purl.obolibrary.org/obo/OMIABIS_0001035> (survey execution)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMIABIS_0001035> "A planned process that realizes the concretization of a survey to generate an output(survey data.)"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OMIABIS_0001035> "http://purl.obolibrary.org/obo/omiabis.owl"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMIABIS_0001035> "survey execution"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMIABIS_0001035> <http://purl.obolibrary.org/obo/OBI_0000011>)
+
+# Class: <http://purl.obolibrary.org/obo/OOSTT_00000074> (academic degree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OOSTT_00000074> "An information content entity that is the specified outcome of and documents the sucessful completion of a tertiary education program."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000074> "John Judkins"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000074> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OOSTT_00000074> "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OOSTT_00000030> <http://purl.obolibrary.org/obo/OOSTT_00000074> "Recognized degree awarded after successful completion of a college or post-graduate porgram."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OOSTT_00000074> "academic degree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OOSTT_00000074> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/OOSTT_00000081> (associate degree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OOSTT_00000081> "An academic degree awarded by colleges and universities upon completion of a program of study lasting two years."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000081> "John Judkins"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000081> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OOSTT_00000081> "https://en.wikipedia.org/w/index.php?title=Associate_degree&oldid=723897149"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OOSTT_00000081> "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OOSTT_00000030> <http://purl.obolibrary.org/obo/OOSTT_00000081> "Recognition awarded after completion of a specific curriculum from an accredited tertiary education provider that falls between high school and bachelor's degree program."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OOSTT_00000081> "associate degree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OOSTT_00000081> <http://purl.obolibrary.org/obo/OOSTT_00000074>)
+
+# Class: <http://purl.obolibrary.org/obo/OOSTT_00000082> (master's degree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OOSTT_00000082> "An academic degree awarded by universities upon completion of a course of study demonstrating a mastery or high-order overview of a specific field of study or area of professional practice.[1] Within the area studied, graduates are posited to possess advanced knowledge of a specialized body of theoretical and applied topics; high order skills in analysis, critical evaluation, or professional application; and the ability to solve complex problems and think rigorously and independently."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000082> "John Judkins"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000082> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OOSTT_00000082> "https://en.wikipedia.org/w/index.php?title=Master%27s_degree&oldid=726036185"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OOSTT_00000082> "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OOSTT_00000082> "master's degree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OOSTT_00000082> <http://purl.obolibrary.org/obo/OOSTT_00000074>)
+
+# Class: <http://purl.obolibrary.org/obo/OOSTT_00000083> (bachelor's degree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OOSTT_00000083> "An academic degree awarded by colleges and universities upon completion of a course of study lasting three to seven years."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000083> "John Judkins"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000083> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OOSTT_00000083> "https://en.wikipedia.org/w/index.php?title=Bachelor%27s_degree&oldid=725713923"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OOSTT_00000083> "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OOSTT_00000083> "bachelor's degree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OOSTT_00000083> <http://purl.obolibrary.org/obo/OOSTT_00000074>)
+
+# Class: <http://purl.obolibrary.org/obo/OOSTT_00000084> (bachelor's of nursing degree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OOSTT_00000084> "An academic degree in the science and principles of nursing, granted by an accredited tertiary education provider after the successful completion of a bachelor's of nursing program."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000084> "John Judkins"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000084> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OOSTT_00000084> "https://en.wikipedia.org/w/index.php?title=Bachelor_of_Science_in_Nursing&oldid=725962822"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OOSTT_00000084> "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OOSTT_00000084> "bachelor's of nursing degree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OOSTT_00000084> <http://purl.obolibrary.org/obo/OOSTT_00000083>)
+
+# Class: <http://purl.obolibrary.org/obo/OOSTT_00000086> (master's in the science of nursing degree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OOSTT_00000086> "An academic degree in the science and principles of nursing, granted by an accredited tertiary education provider after the successful completion of a master's of nursing program."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000086> "John Judkins"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000086> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OOSTT_00000086> "http://purl.obolibrary.org/obo/oostt//2020-01-23/oostt.owl"^^xsd:string)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OOSTT_00000030> <http://purl.obolibrary.org/obo/OOSTT_00000086> "An advanced academic degree in the principles and practices of nursing, with a focus on administration, education, or advanced nursing practice, granted by an accredited college or university after the successful completion of a master's of nursing program."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OOSTT_00000086> "master's in the science of nursing degree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OOSTT_00000086> <http://purl.obolibrary.org/obo/OOSTT_00000082>)
+
+# Class: <http://purl.obolibrary.org/obo/PCO_0000020> (family)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCO_0000020> "A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/PCO_0000020> "Needs axioms for family relationships."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/PCO_0000020> "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25173"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PCO_0000020> "Family membership through marriage or adoption apply primarily to human families. In most species, family membership is defined by common anscestry.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCO_0000020> "family"@en)
+
+# Class: <http://purl.obolibrary.org/obo/RO_0002577> (system)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002577> "A material entity consisting of multiple components that are causally integrated.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0002577> "May be replaced by a BFO class, as discussed in http://www.jbiomedsem.com/content/4/1/43")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002577> "Chris Mungall")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0002577> "http://www.jbiomedsem.com/content/4/1/43")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/RO_0002577> "http://purl.obolibrary.org/obo/ro/releases/2020-07-21/ro.owl"^^xsd:string)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002577> "system")
+SubClassOf(<http://purl.obolibrary.org/obo/RO_0002577> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000114> "has curation status"@en)
+)
