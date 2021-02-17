@@ -21,20 +21,4 @@ Agenda: https://docs.google.com/document/d/1UUD-53SaioJO7btrs8ie3yjFYJIF6HV3RUU3
 
 ## Preparing a new OMRSE release
 
-1. Make sure that all of your changes in the devel branch are committed and pushed to origin/devel.
-
-2. In terminal, on the devel branch:  
-`git merge master`
-
-3. When you are prompted to enter a commit message, press “i” to enable insertions, then type the commit message. Then, hit “escape” to exit insert mode and type “:wq” and press enter to save the file and quit Vim.
-
-4. If there are conflicts, resolve them (see Github docs for more information: https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line).
-
-5. Then, checkout the master branch:  
-`git checkout master`
-
-6. Next, merge master with devel:  
-`git merge devel`
-
-7. Finally, push the changes:
-`git push`
+See [documentation](docs/ReleaseWorkflow.md).
