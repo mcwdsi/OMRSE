@@ -24,9 +24,11 @@ import_group:
     - id: ogms
     - id: obi
     - id: apollo_sv
+    - id: obib
       module_type: filter
-    - id: omiabis
-      module_type: custom
+      base_iris:
+        -  http://purl.obolibrary.org/obo/OBIB_
+        -  http://purl.obolibrary.org/obo/OMIABIS_
     - id: go
     - id: oae
     - id: pco
@@ -60,4 +62,4 @@ custom_makefile_header: |
   # 1. [Prepare release](prepare_release)
   # 2. [Refresh imports](all_imports)
   # 3. [Update repo to latest ODK](update_repo)
-
+create_obo_metadata: FALSE

@@ -99,15 +99,6 @@ components/import_terms.owl: ../templates/import_terms.tsv
   --ontology-iri "$(ONTBASE)/import_terms.owl" \
   --output $@
 
-# Needs custom solution due to https://github.com/ontodev/robot/issues/820
-imports/omiabis_import.owl: mirror/omiabis.owl imports/omiabis_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
-		extract -T imports/omiabis_terms_combined.txt --force true --copy-ontology-annotations true --method BOT \
-		remove --base-iri $(URIBASE)"/OMIABIS_" --axioms external --preserve-structure false --trim false \
-		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		remove --term rdfs:label -T imports/omiabis_terms_combined.txt --select complement --select "classes individuals annotation-properties" \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
 refresh-all: components/import_terms.owl
 	make IMP=true MIR=false all_imports -B
 	

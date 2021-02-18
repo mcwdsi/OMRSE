@@ -88,7 +88,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS =  ro ogms obi apollo_sv omiabis go oae pco bfo oostt omo pno d-acts
+IMPORTS =  ro ogms obi apollo_sv obib go oae pco bfo oostt omo pno d-acts
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -129,7 +129,6 @@ ASSETS = \
 
 RELEASE_ASSETS = \
   $(MAIN_FILES) \
-  $(REPORT_FILES) \
   $(SUBSET_FILES)
 
 .PHONY: all_assets
@@ -217,20 +216,16 @@ imports/ro_import.owl: mirror/ro.owl imports/ro_terms_combined.txt
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-## Module for ontology: apollo_sv
+## Module for ontology: obib
 
-imports/apollo_sv_import.owl: mirror/apollo_sv.owl imports/apollo_sv_terms_combined.txt
+imports/obib_import.owl: mirror/obib.owl imports/obib_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
 		query --update ../sparql/preprocess-module.ru \
-		remove --base-iri $(URIBASE)/APOLLO_SV --axioms external --preserve-structure false --trim false \
-		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T imports/apollo_sv_terms_combined.txt --select complement \
+		remove --base-iri http://purl.obolibrary.org/obo/OBIB_ --base-iri http://purl.obolibrary.org/obo/OMIABIS_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T imports/obib_terms_combined.txt --select complement \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-## Module for ontology: omiabis
-
-imports/omiabis_import.owl: mirror/omiabis.owl
-	echo "ERROR: You have configured your default module type to be custom; this behavior needs to be overwritten in omrse.Makefile!" && false
 ## Module for ontology: bfo
 
 imports/bfo_import.owl: mirror/bfo.owl imports/bfo_terms_combined.txt
@@ -322,12 +317,12 @@ mirror/apollo_sv.owl: mirror/apollo_sv.trigger
 .PRECIOUS: mirror/%.owl
 
 
-## ONTOLOGY: omiabis
-## Copy of omiabis is re-downloaded whenever source changes
-mirror/omiabis.trigger: $(SRC)
+## ONTOLOGY: obib
+## Copy of obib is re-downloaded whenever source changes
+mirror/obib.trigger: $(SRC)
 
-mirror/omiabis.owl: mirror/omiabis.trigger
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/omiabis.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+mirror/obib.owl: mirror/obib.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/obib.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: mirror/%.owl
 
 
