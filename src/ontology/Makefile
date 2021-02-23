@@ -274,6 +274,13 @@ imports/d-acts_import.owl: mirror/d-acts.owl imports/d-acts_terms_combined.txt
 		query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
+.PHONY: refresh-all
+refresh-imports:
+	make IMP=true MIR=true PAT=false all_imports -B
+
+.PHONY: refresh-%
+refresh-%:
+	make IMP=true MIR=true PAT=false imports/$*_import.owl -B
 
 
 
