@@ -1,5 +1,7 @@
 # Update Imports Workflow
 
+This page discusses how to update the contents of your imports, like adding or removing terms. If you are looking to customise imports, like changing the module type, see [here](RepoManagement.md).
+
 ## Importing a new term
 
 Importing a new term is split into to sub-phases:
@@ -13,7 +15,7 @@ There are three ways to declare terms that are to be imported from an external o
 2. Using term files
 3. Using the custom import template
 
-### Protege-based declaration
+#### Protege-based declaration
 
 This workflow is to be avoided, but may be appropriate if the editor _does not have access to the ODK docker container_.
 
@@ -28,7 +30,7 @@ This workflow is to be avoided, but may be appropriate if the editor _does not h
 Now you can use this term for example to construct logical definitions. The next time the imports are refreshed (see how to refresh [here](#Refresh-imports)), the metadata (labels, definitions, etc) for this term are imported from the respective external source ontology and becomes visible in your ontology.
 
 
-### Using term files
+#### Using term files
 
 Every import has, by default a term file associated with it, which can be found in the imports directory. For example, if you have a GO import in `src/ontology/go_import.owl`, you will also have an associated term file `src/ontology/go_terms.txt`. You can add terms in there simply as a list:
 
@@ -39,7 +41,7 @@ GO:0008151
 
 Now you can run the [refresh imports workflow](#Refresh-imports)) and the two terms will be imported.
 
-### Using the custom import template 
+#### Using the custom import template 
 
 This workflow is appropriate if:
 1. You prefer to manage all your imported terms in a single file (rather than multiple files like in the "Using term files" workflow above).
@@ -68,7 +70,7 @@ Now, if you wish to extent the Makefile (which is beyond these instructions) and
 
 _WARNING_. Note that doing this is a _widespread antipattern_ (see related [issue](https://github.com/OBOFoundry/OBOFoundry.github.io/issues/1443)). You should not change the axioms of terms that do not belong into your ontology unless necessary - such changes should always be pushed into the ontology where they belong. However, since people are doing it, whether the OBO Foundry likes it or not, at least using the _custom imports module_ as described here localises the changes to a single simple template and ensures that none of the annotations added this way are merged into the [base file](https://github.com/INCATools/ontology-development-kit/blob/master/docs/ReleaseArtefacts.md#release-artefact-1-base-required).  
 
-## Refresh imports
+### Refresh imports
 
 If you want to refresh the import yourself (this may be necessary to pass the travis tests), and you have the ODK installed, you can do the following (using go as an example):
 
