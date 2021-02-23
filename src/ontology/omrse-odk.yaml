@@ -44,13 +44,14 @@ import_group:
     - id: d-acts
       mirror_from: http://purl.obolibrary.org/obo/iao/d-acts/release/2020-10-14/d-acts.owl
       module_type: mirror
-components:
-  products:
+#components:
+#  products:
     #- filename: education/omrse-education.owl
     #- filename: language/language-individuals.owl
     #- filename: language/omrse-language.owl
     #- filename: omrse-core.owl
-    - filename: import_terms.owl
+#    - filename: import_terms.owl
+use_custom_import_module: TRUE
 robot_java_args: '-Xmx8G'
 custom_makefile_header: |
   ### Workflow

@@ -94,18 +94,6 @@ OMRSE_BASE_IRI=http://purl.obolibrary.org/obo/OMRSE_
 # 		--base-iri $(OMRSE_BASE_IRI) --axioms internal --preserve-structure false --trim false \
 # 		remove --select ontology remove --select imports --output $@
 
-components/import_terms.owl: ../templates/import_terms.tsv
-	$(ROBOT) template --template $< \
-  --ontology-iri "$(ONTBASE)/import_terms.owl" \
-  --output $@
-
-refresh-all: components/import_terms.owl
-	make IMP=true MIR=false all_imports -B
-	
-refresh-%: components/import_terms.owl
-	make IMP=true MIR=true imports/$*_import.owl -B
-	
-	
 # omrse-edit.ofn: $(SRC)
 # 	$(ROBOT) merge -i $< \
 # 		-i components/omrse-core.owl \

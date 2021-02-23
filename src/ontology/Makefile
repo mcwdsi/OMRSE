@@ -30,8 +30,11 @@ CATALOG=                    catalog-v001.xml
 ROBOT=                      robot --catalog $(CATALOG)
 RELEASEDIR=                 ../..
 REPORTDIR=                  reports
+TEMPLATEDIR=                ../templates
 TMPDIR=                     tmp
+SCRIPTSDIR=                 ../scripts
 SPARQLDIR =                 ../sparql
+COMPONENTSDIR =             components
 REPORT_FAIL_ON =            None
 REPORT_LABEL =              -l true
 REPORT_PROFILE_OPTS =       
@@ -44,8 +47,8 @@ TODAY ?=                    $(shell date +%Y-%m-%d)
 OBODATE ?=                  $(shell date +'%d:%m:%Y %H:%M')
 VERSION=                    $(TODAY)
 ANNOTATE_ONTOLOGY_VERSION = annotate -V $(ONTBASE)/releases/$(VERSION)/$@ --annotation owl:versionInfo $(VERSION)
-OTHER_SRC =                 components/import_terms.owl 
-ONTOLOGYTERMS =             tmp/ontologyterms.txt
+OTHER_SRC =                 
+ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 
 FORMATS = $(sort  owl obo json owl)
 FORMATS_INCL_TSV = $(sort $(FORMAT) tsv)
@@ -170,9 +173,9 @@ prepare_initial_release: prepare_release
 # ------------------------
 
 # seed.txt contains all referenced entities
-IMPORTSEED=tmp/seed.txt
-SRCMERGED=tmp/merged-$(SRC)
-PRESEED=tmp/pre_seed.txt
+IMPORTSEED=$(TMPDIR)/seed.txt
+SRCMERGED=$(TMPDIR)/merged-$(SRC)
+PRESEED=$(TMPDIR)/pre_seed.txt
 
 $(SRCMERGED): $(SRC)
 	$(ROBOT) remove --input $< --select imports --trim false \
@@ -182,9 +185,25 @@ $(PRESEED): $(SRCMERGED)
 	$(ROBOT) query -f csv -i $< --query ../sparql/terms.sparql $@.tmp &&\
 	cat $@.tmp | sort | uniq >  $@
 
+ 
+IMPORT_MODULE_TEMPLATE=$(TEMPLATEDIR)/external_import.tsv
+IMPORT_MODULE_SIGNATURE=$(TMPDIR)/external_import_terms.txt
+IMPORT_MODULE=imports/external_import.owl
+$(IMPORT_MODULE): $(IMPORT_MODULE_TEMPLATE)
+	$(ROBOT) template --template $< \
+  --ontology-iri "$(ONTBASE)/external_import.owl" \
+  --output $@
 
-$(IMPORTSEED): $(PRESEED)
-	if [ $(IMP) = true ]; then cat $(PRESEED) | sort | uniq > $@; fi
+$(IMPORT_MODULE_SIGNATURE): $(IMPORT_MODULE)
+	$(ROBOT) query -f csv -i $< --query ../sparql/terms.sparql $@.tmp &&\
+	cat $@.tmp | sort | uniq >  $@
+
+
+ALLSEED = $(PRESEED) \
+ $(IMPORT_MODULE_SIGNATURE) 
+
+$(IMPORTSEED):  $(ALLSEED) 
+	if [ $(IMP) = true ]; then cat $(ALLSEED) | sort | uniq > $@; fi
 
 
 ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 IAO:0000116 IAO:0000111 
@@ -254,20 +273,6 @@ imports/d-acts_import.owl: mirror/d-acts.owl imports/d-acts_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
 		query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-
-
-
-# ----------------------------------------
-# Components
-# ----------------------------------------
-# Some ontologies contain external and internal components. A component is included in the ontology in its entirety.
-
-components/%: .FORCE
-	touch $@
-.PRECIOUS: components/%
-
-
-
 
 
 
@@ -522,10 +527,10 @@ $(ONT)-full.owl: $(SRC) $(OTHER_SRC)
 
 .PHONY: validate_idranges
 validate_idranges:
-	amm ../scripts/validate_id_ranges.sc omrse-idranges.owl
+	amm $(SCRIPTSDIR)/validate_id_ranges.sc omrse-idranges.owl
 
 .PHONY: update_repo
 update_repo:
-	sh ../scripts/update_repo.sh
+	sh $(SCRIPTSDIR)/update_repo.sh
 
 include omrse.Makefile
