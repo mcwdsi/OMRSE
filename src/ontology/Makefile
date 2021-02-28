@@ -206,7 +206,7 @@ $(IMPORTSEED):  $(ALLSEED)
 	if [ $(IMP) = true ]; then cat $(ALLSEED) | sort | uniq > $@; fi
 
 
-ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 IAO:0000116 IAO:0000111 
+ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 IAO:0000116 IAO:0000111 oboInOwl:hasDbXref 
 
 # -- Generate Import Modules --
 #
@@ -274,13 +274,17 @@ imports/d-acts_import.owl: mirror/d-acts.owl imports/d-acts_terms_combined.txt
 		query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
-.PHONY: refresh-all
+.PHONY: refresh-imports
 refresh-imports:
-	make IMP=true MIR=true PAT=false all_imports -B
+	make IMP=true MIR=true PAT=false IMP_LARGE=true all_imports -B
+
+.PHONY: refresh-imports-excluding-large
+refresh-imports-excluding-large:
+	make IMP=true MIR=true PAT=false IMP_LARGE=false all_imports -B
 
 .PHONY: refresh-%
 refresh-%:
-	make IMP=true MIR=true PAT=false imports/$*_import.owl -B
+	make IMP=true IMP_LARGE=true MIR=true PAT=false imports/$*_import.owl -B
 
 
 
@@ -291,6 +295,7 @@ refresh-%:
 
 IMP=true # Global parameter to bypass import generation
 MIR=true # Global parameter to bypass mirror generation
+IMP_LARGE=true # Global parameter to bypass handling of large imports
 
 
 ## ONTOLOGY: ro

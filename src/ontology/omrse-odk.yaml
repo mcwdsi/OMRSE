@@ -17,6 +17,7 @@ import_group:
     - IAO:0000115
     - IAO:0000116
     - IAO:0000111
+    - oboInOwl:hasDbXref
   products:
     - id: ro
       module_type: slme
