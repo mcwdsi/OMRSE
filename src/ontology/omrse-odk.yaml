@@ -18,6 +18,7 @@ import_group:
     - IAO:0000116
     - IAO:0000111
     - oboInOwl:hasDbXref
+    - rdfs:comment
   products:
     - id: ro
       module_type: slme
