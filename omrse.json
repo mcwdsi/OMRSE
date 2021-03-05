@@ -73,6 +73,19 @@
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002351"
         },
         {
+          "allValuesFromEdges": [
+            {
+              "obj": "http://purl.obolibrary.org/obo/IAO_0000444",
+              "pred": "http://purl.obolibrary.org/obo/OBI_0000312",
+              "sub": "http://purl.obolibrary.org/obo/IAO_0000013"
+            }
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/OBI_0000312",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/OBI_0000011"
+          ]
+        },
+        {
           "domainClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000015"
           ],
@@ -107,6 +120,15 @@
             "http://purl.obolibrary.org/obo/OBI_0000011"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/OBI_0000299"
+        },
+        {
+          "domainClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000001"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/IAO_0000235",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/IAO_0000030"
+          ]
         },
         {
           "domainClassIds": [
@@ -223,6 +245,15 @@
           "predicateId": "http://purl.obolibrary.org/obo/RO_0000091",
           "rangeClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000016"
+          ]
+        },
+        {
+          "domainClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000004"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0001025",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000004"
           ]
         },
         {
@@ -416,6 +447,15 @@
         },
         {
           "domainClassIds": [
+            "http://purl.obolibrary.org/obo/IAO_0000030"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/IAO_0000219",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000001"
+          ]
+        },
+        {
+          "domainClassIds": [
             "http://purl.obolibrary.org/obo/IAO_0000109"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/IAO_0000221",
@@ -475,12 +515,6 @@
           ]
         },
         {
-          "predicateId": "http://purl.obolibrary.org/obo/OBI_0000312",
-          "rangeClassIds": [
-            "http://purl.obolibrary.org/obo/OBI_0000011"
-          ]
-        },
-        {
           "predicateId": "http://purl.obolibrary.org/obo/OMRSE_00000070",
           "rangeClassIds": [
             "http://purl.obolibrary.org/obo/OMRSE_00000057"
@@ -506,6 +540,21 @@
         }
       ],
       "edges": [
+        {
+          "obj": "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/APOLLO_SV_00000524"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/APOLLO_SV_00000032",
+          "pred": "http://purl.obolibrary.org/obo/OBI_0000299",
+          "sub": "http://purl.obolibrary.org/obo/APOLLO_SV_00000033"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/APOLLO_SV_00000033",
+          "pred": "http://purl.obolibrary.org/obo/OBI_0000312",
+          "sub": "http://purl.obolibrary.org/obo/APOLLO_SV_00000032"
+        },
         {
           "obj": "http://purl.obolibrary.org/obo/APOLLO_SV_00000480",
           "pred": "is_a",
@@ -739,12 +788,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000019",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0000122"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000019",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/PATO_0000125"
+          "sub": "http://purl.obolibrary.org/obo/PATO_0001241"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000019",
@@ -1449,11 +1493,6 @@
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/IAO_0000578"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
-          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/IAO_0020000"
         },
         {
@@ -1662,6 +1701,16 @@
           "sub": "http://purl.obolibrary.org/obo/IAO_0000013"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000096",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
+          "sub": "http://purl.obolibrary.org/obo/APOLLO_SV_00000522"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000100",
+          "pred": "http://purl.obolibrary.org/obo/OBI_0000299",
+          "sub": "http://purl.obolibrary.org/obo/APOLLO_SV_00000796"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000100",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000579"
@@ -1712,31 +1761,6 @@
           "sub": "http://purl.obolibrary.org/obo/IAO_8000000"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000102",
-          "pred": "is_a",
-          "sub": "http://www.geneontology.org/formats/oboInOwl#DbXref"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000102",
-          "pred": "is_a",
-          "sub": "http://www.geneontology.org/formats/oboInOwl#Definition"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000102",
-          "pred": "is_a",
-          "sub": "http://www.geneontology.org/formats/oboInOwl#Subset"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000102",
-          "pred": "is_a",
-          "sub": "http://www.geneontology.org/formats/oboInOwl#Synonym"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000102",
-          "pred": "is_a",
-          "sub": "http://www.geneontology.org/formats/oboInOwl#SynonymType"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000104",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000010"
@@ -1754,6 +1778,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000104",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000647"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000104",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OBI_0500000"
         },
         {
@@ -1765,6 +1794,11 @@
           "obj": "http://purl.obolibrary.org/obo/IAO_0000104",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00002031"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000109",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/APOLLO_SV_00000032"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000109",
@@ -1842,9 +1876,9 @@
           "sub": "http://purl.obolibrary.org/obo/IAO_0000229"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000225",
-          "pred": "type",
-          "sub": "http://purl.obolibrary.org/obo/IAO_0000230"
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000235",
+          "pred": "inverseOf",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000219"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000300",
@@ -2074,6 +2108,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000310",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/APOLLO_SV_00000522"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000310",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000088"
         },
         {
@@ -2085,6 +2124,11 @@
           "obj": "http://purl.obolibrary.org/obo/IAO_0000310",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000313"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000310",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000445"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000310",
@@ -2105,6 +2149,11 @@
           "obj": "http://purl.obolibrary.org/obo/IAO_0000310",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000089"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000311",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000013"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000311",
@@ -2297,6 +2346,36 @@
           "sub": "http://purl.obolibrary.org/obo/IAO_0000645"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000314",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000701"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000314",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000703"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000314",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000705"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000315",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000707"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000317",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000704"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000318",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000702"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000400",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000401"
@@ -2340,6 +2419,11 @@
           "obj": "http://purl.obolibrary.org/obo/IAO_0000419",
           "pred": "inverseOf",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000418"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000444",
+          "pred": "http://purl.obolibrary.org/obo/OBI_0000312",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000013"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000572",
@@ -2462,6 +2546,11 @@
           "sub": "http://purl.obolibrary.org/obo/IAO_0000630"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000631",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000706"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000632",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000631"
@@ -2492,6 +2581,11 @@
           "sub": "http://purl.obolibrary.org/obo/IAO_0000644"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000646",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000648"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/IAO_0020000",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
           "sub": "http://purl.obolibrary.org/obo/IAO_0020020"
@@ -2500,6 +2594,16 @@
           "obj": "http://purl.obolibrary.org/obo/IAO_0020000",
           "pred": "http://purl.obolibrary.org/obo/OBI_0000299",
           "sub": "http://purl.obolibrary.org/obo/IAO_0020010"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0020000",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000578"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0020000",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000646"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0020000",
@@ -2764,7 +2868,27 @@
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/APOLLO_SV_00000008"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/APOLLO_SV_00000033"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/APOLLO_SV_00000796"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000443"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0000444"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
@@ -4222,9 +4346,29 @@
           "sub": "http://purl.obolibrary.org/obo/OOSTT_00000084"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/PATO_0000051",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PATO_0000122"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/PATO_0000122",
           "pred": "http://purl.obolibrary.org/obo/IAO_0000221",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000408"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/PATO_0001018",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PATO_0000125"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/PATO_0001241",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PATO_0000051"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/PATO_0001241",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PATO_0001018"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/PCO_0000020",
@@ -5287,29 +5431,14 @@
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000020"
         },
         {
-          "obj": "http://www.geneontology.org/formats/oboInOwl#Subset",
-          "pred": "type",
-          "sub": "http://purl.obolibrary.org/obo/IAO_0000224"
-        },
-        {
           "obj": "http://www.w3.org/2002/07/owl#Thing",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/BFO_0000001"
         },
         {
           "obj": "http://www.w3.org/2002/07/owl#Thing",
-          "pred": "is_a",
-          "sub": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-        },
-        {
-          "obj": "http://www.w3.org/2002/07/owl#Thing",
           "pred": "type",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000103"
-        },
-        {
-          "obj": "http://www.w3.org/2002/07/owl#Thing",
-          "pred": "type",
-          "sub": "http://purl.obolibrary.org/obo/IAO_0000120"
         },
         {
           "obj": "http://www.w3.org/2002/07/owl#Thing",
@@ -5360,6 +5489,51 @@
       "equivalentNodesSets": [],
       "id": "http://purl.obolibrary.org/obo/omrse.json",
       "logicalDefinitionAxioms": [
+        {
+          "definedClassId": "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/OBI_0000011"
+          ],
+          "restrictions": [
+            null
+          ]
+        },
+        {
+          "definedClassId": "http://purl.obolibrary.org/obo/APOLLO_SV_00000032",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/IAO_0000027"
+          ],
+          "restrictions": [
+            {
+              "fillerId": "http://purl.obolibrary.org/obo/APOLLO_SV_00000033",
+              "propertyId": "http://purl.obolibrary.org/obo/OBI_0000312"
+            }
+          ]
+        },
+        {
+          "definedClassId": "http://purl.obolibrary.org/obo/APOLLO_SV_00000033",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/OBI_0000011"
+          ],
+          "restrictions": [
+            {
+              "fillerId": "http://purl.obolibrary.org/obo/APOLLO_SV_00000032",
+              "propertyId": "http://purl.obolibrary.org/obo/OBI_0000299"
+            }
+          ]
+        },
+        {
+          "definedClassId": "http://purl.obolibrary.org/obo/APOLLO_SV_00000796",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/OBI_0000011"
+          ],
+          "restrictions": [
+            {
+              "fillerId": "http://purl.obolibrary.org/obo/IAO_0000100",
+              "propertyId": "http://purl.obolibrary.org/obo/OBI_0000299"
+            }
+          ]
+        },
         {
           "definedClassId": "http://purl.obolibrary.org/obo/IAO_0000015",
           "genusIds": [
@@ -5790,11 +5964,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-02-16"
+            "val": "2021-03-05"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-02-16/omrse.json",
+        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-03-05/omrse.json",
         "xrefs": []
       },
       "nodes": [
@@ -5828,6 +6002,81 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
+          "lbl": "software development",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Mathias Brochhausen"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "William R. Hogan"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://en.wikipedia.org/wiki/Software_development"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
+                "val": "A planned process resulting in a software product involving the creation of source code."
+              }
+            ],
+            "definition": {
+              "val": "A planned process that has specified output a software product and that involves the creation of source code.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/APOLLO_SV_00000032",
+          "lbl": "count",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Mathias Brochhausen"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
+                "val": "A measurement datum that is the output of counting."
+              }
+            ],
+            "definition": {
+              "val": "A measurement datum that is the output of counting.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/APOLLO_SV_00000033",
+          "lbl": "counting",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Mathias Brochhausen"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://en.wikipedia.org/wiki/Counting"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
+                "val": "The planned process of finding the number of elements in a finite set of objects."
+              }
+            ],
+            "definition": {
+              "val": "The planned process of finding the number of elements in a finite set of objects.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/APOLLO_SV_00000480",
           "lbl": "geographical migration of organism",
           "meta": {
@@ -5853,6 +6102,55 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/APOLLO_SV_00000522",
+          "lbl": "source code repository",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "software source code version control repository"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "William R. Hogan"
+              }
+            ],
+            "comments": [
+              "Refers to the stuff that lives on GitHub, not to GitHub or the git software on which it is based"
+            ],
+            "definition": {
+              "val": "A document that comprises at least one source code module and provenance data about who contributed the set of files making up the module(s), and optionally comprises also multiple versions of files with detailed change history about who committed files and when, a license for the software, readme files, documentation, executables, etc.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/APOLLO_SV_00000524",
+          "lbl": "compiling software",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "process of compiling software"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "William R. Hogan"
+              }
+            ],
+            "comments": [
+              "It's compiling \"software\" (scare quotes) and not \"source code\" because you can compile Java bytecode to machine code, and Java bytecode is not technically \"source code\".  Compiling source code would be a subclass of this class (as would compiling Java bytecode, etc.).",
+              "Source code can be automatically generated to some extent, but we're assuming humans still curate it minimally. Also, in the case of Java and its JVM, it's machine interpretable instructions, not directly executable. Ditto for other languages with intermediate form like Java byte code."
+            ],
+            "definition": {
+              "val": "A planned process that converts human-written or curated software into a machine-executable or interpretable set of instructions.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/APOLLO_SV_00000532",
           "lbl": "human travel",
           "meta": {
@@ -5868,6 +6166,35 @@
             ],
             "definition": {
               "val": "A geographical migration of an organism belonging to the species Homo sapiens.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/APOLLO_SV_00000796",
+          "lbl": "dataset creating",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "creating a data set"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "William R. Hogan"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "data set creation"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "dataset creation"
+              }
+            ],
+            "definition": {
+              "val": "A planned process that has a data set as its specified output.",
               "xrefs": []
             }
           },
@@ -7984,7 +8311,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "a marriage bond, an instance of love, an obligation between one person and another."
+                "val": "a marriage bond, an instance of requited love, an obligation between one person and another."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
@@ -8198,10 +8525,6 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "geographic location"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
                 "val": "http://purl.obolibrary.org/obo/gaz.owl"
               }
@@ -8221,6 +8544,51 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000589",
                 "val": "molecular process"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/GO_0007610",
+          "lbl": "behavior",
+          "meta": {
+            "comments": [
+              "1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.\n2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis)."
+            ],
+            "definition": {
+              "val": "The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.",
+              "xrefs": [
+                "GOC:ems",
+                "GOC:jl",
+                "ISBN:0395448956",
+                "PMID:20160973"
+              ]
+            },
+            "xrefs": [
+              {
+                "val": "Wikipedia:Behavior"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/GO_0008150",
+          "lbl": "biological_process",
+          "meta": {
+            "comments": [
+              "Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this."
+            ],
+            "definition": {
+              "val": "A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.",
+              "xrefs": [
+                "GOC:pdt"
+              ]
+            },
+            "xrefs": [
+              {
+                "val": "Wikipedia:Biological_process"
               }
             ]
           },
@@ -8253,7 +8621,7 @@
               }
             ],
             "definition": {
-              "val": "a directive information entity that specifies what should happen if the trigger condition is fulfilled",
+              "val": "A directive information entity that specifies what should happen if the trigger condition is fulfilled.",
               "xrefs": []
             }
           },
@@ -8372,7 +8740,7 @@
               }
             ],
             "definition": {
-              "val": "a directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.",
+              "val": "A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.",
               "xrefs": []
             }
           },
@@ -8446,7 +8814,7 @@
               }
             ],
             "definition": {
-              "val": "a directive information entity that describes an action the bearer will take",
+              "val": "A directive information entity that describes an action the bearer will take.",
               "xrefs": []
             }
           },
@@ -8601,11 +8969,11 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "person:Alan Ruttenberg"
+                "val": "PERSON: Alan Ruttenberg"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "person:Chris Stoeckert"
+                "val": "PERSON: Chris Stoeckert"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
@@ -8617,7 +8985,7 @@
               }
             ],
             "definition": {
-              "val": "a report that is published in a journal",
+              "val": "A report that is published in a journal.",
               "xrefs": []
             }
           },
@@ -8879,7 +9247,7 @@
               }
             ],
             "definition": {
-              "val": "a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.",
+              "val": "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.",
               "xrefs": []
             }
           },
@@ -9023,7 +9391,7 @@
               }
             ],
             "definition": {
-              "val": "a numeral that denotes an integer",
+              "val": "A numeral that denotes an integer",
               "xrefs": []
             }
           },
@@ -9060,7 +9428,7 @@
               }
             ],
             "definition": {
-              "val": "a scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.",
+              "val": "A scalar measurement datum is a measurement datum that is composed of two parts, numerals and a unit label.",
               "xrefs": []
             }
           },
@@ -9123,20 +9491,8 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "PlanAndPlannedProcess Branch"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "OBI branch derived"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "OBI_0000331"
               }
-            ],
-            "definition": {
-              "val": "revisit?",
-              "xrefs": []
-            }
+            ]
           },
           "type": "CLASS"
         },
@@ -9365,7 +9721,7 @@
               }
             ],
             "definition": {
-              "val": "a rule is an executable which guides, defines, restricts actions",
+              "val": "A rule is an executable which guides, defines, restricts actions.",
               "xrefs": []
             }
           },
@@ -9542,7 +9898,7 @@
               }
             ],
             "definition": {
-              "val": "A software interpreter is a software application that executes some specified input software. ",
+              "val": "A software interpreter is a software application that executes some specified input software.",
               "xrefs": []
             }
           },
@@ -9669,11 +10025,11 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "PERSON: Melanie Courtot"
+                "val": "PERSON: Chris Stoeckert"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "PERSON:Chris Stoeckert"
+                "val": "PERSON: Melanie Courtot"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
@@ -9685,7 +10041,7 @@
               }
             ],
             "definition": {
-              "val": "a document assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record)",
+              "val": "A document assembled by an author for the purpose of providing information for the audience. A report is the output of a documenting process and has the objective to be consumed by a specific audience. Topic of the report is on something that has completed. A report is not a single figure. Examples of reports are journal article, patent application, grant progress report, case report (not patient record).",
               "xrefs": []
             }
           },
@@ -10029,14 +10385,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Person:Alan Ruttenberg"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Person:Alan Ruttenberg"
               }
             ],
             "definition": {
-              "val": "data about an ontology part is a data item about a part of an ontology, for example a term",
+              "val": "Data about an ontology part is a data item about a part of an ontology, for example a term",
               "xrefs": []
             }
           },
@@ -10050,10 +10402,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
                 "val": "failed exploratory term"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Person:Alan Ruttenberg"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -10238,10 +10586,6 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "example"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
                 "val": "example of usage"
               },
               {
@@ -10313,10 +10657,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "PERSON:Melanie Courtot"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "OBI_0000281"
               }
             ]
           },
@@ -10375,10 +10715,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "PERSON:Daniel Schober"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "GROUP:OBI:<http://purl.obfoundry.org/obo/obi>"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
@@ -10489,10 +10825,6 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
               },
               {
@@ -10535,7 +10867,7 @@
               }
             ],
             "definition": {
-              "val": "term created to ease viewing/sort terms for development purpose, and will not be included in a release",
+              "val": "Term created to ease viewing/sort terms for development purpose, and will not be included in a release",
               "xrefs": []
             }
           },
@@ -10787,7 +11119,7 @@
               }
             ],
             "definition": {
-              "val": "is_about is a (currently) primitive relation that relates an information artifact to an entity.",
+              "val": "A (currently) primitive relation that relates an information artifact to an entity.",
               "xrefs": []
             }
           },
@@ -11274,7 +11606,7 @@
               ""
             ],
             "definition": {
-              "val": "denotes is a primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically",
+              "val": "A primitive, instance-level, relation obtaining between an information content entity and some portion of reality. Denotation is what happens when someone creates an information content entity E in order to specifically refer to something. The only relation between E and the thing is that E can be used to 'pick out' the thing. This relation connects those two together. Freedictionary.com sense 3: To signify directly; refer to specifically",
               "xrefs": []
             }
           },
@@ -11329,7 +11661,7 @@
               }
             ],
             "definition": {
-              "val": "m is a quality measurement of q at t when\nq is a quality \nthere is a measurement process p that has specified output m, a measurement datum, that is about q",
+              "val": "m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q",
               "xrefs": []
             }
           },
@@ -11488,7 +11820,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/IAO_0000230",
-          "lbl": "other",
+          "lbl": "obsolete_other",
           "meta": {
             "basicPropertyValues": [
               {
@@ -11568,14 +11900,6 @@
                 "val": "term tracker item"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "term tracker item"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
                 "val": "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"
               },
@@ -11588,20 +11912,11 @@
                 "val": "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"
               }
             ],
             "comments": [
-              "The 'tracker item' can associate a tracker with a specific ontology term.",
               "The 'tracker item' can associate a tracker with a specific ontology term."
             ],
             "definition": {
@@ -11629,14 +11944,6 @@
                 "val": "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"
               }
@@ -11646,6 +11953,27 @@
             ],
             "definition": {
               "val": "The name of the person, project, or organization that motivated inclusion of an ontology term by requesting its addition.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000235",
+          "lbl": "denoted by",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Person: Jie Zheng, Chris Stoeckert, Mike Conlon"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/206"
+              }
+            ],
+            "definition": {
+              "val": "inverse of the relation 'denotes'",
               "xrefs": []
             }
           },
@@ -11715,7 +12043,7 @@
               }
             ],
             "definition": {
-              "val": "a textual entity intended to identify a particular publication",
+              "val": "A textual entity intended to identify a particular publication.",
               "xrefs": []
             }
           },
@@ -11993,7 +12321,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "A journal article or book"
+                "val": "journal article, newspaper story, book, etc."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
@@ -12001,11 +12329,30 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Chris Stoeckert"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Jie Zheng"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "PERSON: Lawrence Hunter"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "published document"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/232"
               }
             ],
+            "comments": [
+              "Revisit the term in Octorber 2020. Improve the defintion."
+            ],
             "definition": {
-              "val": "A document that has been accepted by a publisher",
+              "val": "A document that is the output of a publishing process.",
               "xrefs": []
             }
           },
@@ -12096,7 +12443,7 @@
               }
             ],
             "definition": {
-              "val": "an information content entity that is part of a document",
+              "val": "An information content entity that is part of a document.",
               "xrefs": []
             }
           },
@@ -12122,6 +12469,14 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "PERSON: Lawrence Hunter"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "precis"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -12159,6 +12514,14 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "introduction"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "overview"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -12195,6 +12558,10 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "experimental methods"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "experimental procedures"
               },
               {
@@ -12203,7 +12570,19 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "method"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "methodology"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "methods"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -12270,6 +12649,14 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "discussion section"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "discussions"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -12299,6 +12686,26 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "PERSON: Lawrence Hunter"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "literature cited"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "reference"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "reference list"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "references"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -12331,7 +12738,7 @@
               }
             ],
             "definition": {
-              "val": "part of a document that enumerates the authors of the document",
+              "val": "A part of a document that enumerates the authors of the document",
               "xrefs": []
             }
           },
@@ -12360,7 +12767,7 @@
               }
             ],
             "definition": {
-              "val": "part of a document that has parts that are institution identifications associated with the authors of the document",
+              "val": "A part of a document that has parts that are institution identifications associated with the authors of the document",
               "xrefs": []
             }
           },
@@ -12393,7 +12800,27 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "authors' contribution"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "authors' contributions"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "authors' roles"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "contributions by the authors"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "contributorship"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -12426,11 +12853,23 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "acknowledgement"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "acknowledgements"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "acknowledgment"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "acknowledgments"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -12464,6 +12903,14 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "endnote"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "footnotes"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -12492,6 +12939,14 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "additional file"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "additional files"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "additional information"
               },
               {
@@ -12500,7 +12955,35 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "electronic supplementary material"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "electronic supplementary materials"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "supplemental data"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "supplemental information"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "supplemental material"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "supplementary data"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "supplementary files"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "supplementary information"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
@@ -12508,11 +12991,19 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "supplementary materials"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "supporting information"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
-              "val": "part of a document that is segregated from the rest of the document due to its size",
+              "val": "A part of a document that is segregated from the rest of the document due to its size",
               "xrefs": []
             }
           },
@@ -12763,20 +13254,8 @@
                 "val": "The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are \"natural kinds\" and the latter arbitrary collections of entities."
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "The Basic Formal Ontology ontology makes a distinction between Universals and defined classes, where the formal are \"natural kinds\" and the latter arbitrary collections of entities."
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Alan Ruttenberg"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Alan Ruttenberg"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "Barry Smith, Werner Ceusters"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
@@ -12804,20 +13283,8 @@
                 "val": "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Hard to give a definition for. Intuitively a \"natural kind\" rather than a collection of any old things, which a class is able to be, formally. At the meta level, universals are defined as positives, are disjoint with their siblings, have single asserted parents."
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Alan Ruttenberg"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Alan Ruttenberg"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "A Formal Theory of Substances, Qualities, and Universals, http://ontology.buffalo.edu/bfo/SQU.pdf"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
@@ -12839,14 +13306,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "In OWL 2 add AnnotationPropertyRange('is denotator type' 'denotator type')"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "In OWL 2 add AnnotationPropertyRange('is denotator type' 'denotator type')"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Alan Ruttenberg"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -13045,7 +13504,7 @@
               }
             ],
             "definition": {
-              "val": "a relation between a data item and a quality of a material entity where the material entity is the specified output of a material transformation which achieves an objective specification that indicates the intended value of the specified quality.",
+              "val": "A relation between a data item and a quality of a material entity where the material entity is the specified output of a material transformation which achieves an objective specification that indicates the intended value of the specified quality.",
               "xrefs": []
             }
           },
@@ -13094,14 +13553,6 @@
                 "val": "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "\"definitions\", in some readings, always are given by necessary and sufficient conditions. So one must be careful (and this is difficult sometimes) to distinguish between defined classes and universal."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Alan Ruttenberg"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Alan Ruttenberg"
               }
@@ -13125,14 +13576,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "named class expressions are used in order to have more concise logical definition but their extensions may not be interesting classes on their own. In languages such as OWL, with no provisions for macros, these show up as actuall classes. Tools may with to not show them as such, and to replace uses of the macros with their expansions"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Alan Ruttenberg"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -13208,10 +13651,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Chris Mungall"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Chris Mungall"
               }
             ],
             "definition": {
@@ -13282,7 +13721,7 @@
               }
             ],
             "definition": {
-              "val": "use boolean value xsd:true to indicate that the property is an antisymmetric property",
+              "val": "Use boolean value xsd:true to indicate that the property is an antisymmetric property",
               "xrefs": []
             }
           },
@@ -13386,7 +13825,73 @@
               }
             ],
             "definition": {
-              "val": "a planned process in which journal articles are read or processed and data items are extracted, typically for further analysis or indexing",
+              "val": "A planned process in which journal articles are read or processed and data items are extracted, typically for further analysis or indexing",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000444",
+          "lbl": "publishing process",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Person: Jie Zheng"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://en.wikipedia.org/wiki/Publishing"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/232"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000234",
+                "val": "VEuPathDB"
+              }
+            ],
+            "definition": {
+              "val": "A planned process of making information, such as literature, music, and software etc., available to the public for sale or for free.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000445",
+          "lbl": "document in preparation for publication",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Jie Zheng"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "EFO_0001795 in preparation"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/232"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000234",
+                "val": "VEuPathDB"
+              }
+            ],
+            "definition": {
+              "val": "A document that is in preparation for submission to be published.",
               "xrefs": []
             }
           },
@@ -13419,7 +13924,7 @@
               }
             ],
             "definition": {
-              "val": "a planned process in which a document is created or added to by including the specified input in it.",
+              "val": "A planned process in which a document is created or added to by including the specified input in it.",
               "xrefs": []
             }
           },
@@ -13501,7 +14006,7 @@
               }
             ],
             "definition": {
-              "val": "a planned process in which a new CRID is created, associated with an entity, and stored in the CRID registry thereby registering it as being associated with some entity",
+              "val": "A planned process in which a new CRID is created, associated with an entity, and stored in the CRID registry thereby registering it as being associated with some entity",
               "xrefs": []
             }
           },
@@ -13622,7 +14127,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation. \n"
+                "val": "Alan, IAO call 20101124: potentially the CRID denotes the instance it was associated with during creation."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
@@ -13848,10 +14353,6 @@
                 "val": "The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = 'sequence ' + [label], etc. , MA could specify 'mouse + [label]' etc. Upon importing terms, ontology developers can choose to use the 'OBO foundry unique label' for an imported term or not. The same applies to tools ."
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "The intended usage of that property is as follow: OBO foundry unique labels are automatically generated based on regular expressions provided by each ontology, so that SO could specify unique label = 'sequence ' + [label], etc. , MA could specify 'mouse + [label]' etc. Upon importing terms, ontology developers can choose to use the 'OBO foundry unique label' for an imported term or not. The same applies to tools ."
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "PERSON:Alan Ruttenberg"
               },
@@ -13976,7 +14477,7 @@
               }
             ],
             "definition": {
-              "val": " A software module is software composed of a collection of software methods.",
+              "val": "A software module is software composed of a collection of software methods.",
               "xrefs": []
             }
           },
@@ -14063,7 +14564,7 @@
               }
             ],
             "definition": {
-              "val": " A software script is software whose instructions can be executed using a software \ninterpreter.",
+              "val": "A software script is software whose instructions can be executed using a software interpreter.",
               "xrefs": []
             }
           },
@@ -14081,14 +14582,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
                 "val": "Ontology: <http://purl.obolibrary.org/obo/ro/idrange/>\n  Annotations: \n     'has ID prefix': \"http://purl.obolibrary.org/obo/RO_\"\n     'has ID digit count' : 7,\n     rdfs:label \"RO id policy\"\n     'has ID policy for': \"RO\""
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "Ontology: <http://purl.obolibrary.org/obo/ro/idrange/>\n  Annotations: \n     'has ID prefix': \"http://purl.obolibrary.org/obo/RO_\"\n     'has ID digit count' : 7,\n     rdfs:label \"RO id policy\"\n     'has ID policy for': \"RO\""
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Person:Alan Ruttenberg"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14116,14 +14609,6 @@
                 "val": "Datatype: idrange:1\nAnnotations: 'has ID range allocated to': \"Chris Mungall\"\nEquivalentTo: xsd:integer[> 2151 , <= 2300]\n"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "Datatype: idrange:1\nAnnotations: 'has ID range allocated to': \"Chris Mungall\"\nEquivalentTo: xsd:integer[> 2151 , <= 2300]\n"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Person:Alan Ruttenberg"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Person:Alan Ruttenberg"
               }
@@ -14149,14 +14634,6 @@
                 "val": "Ontology: <http://purl.obolibrary.org/obo/ro/idrange/>\n  Annotations: \n     'has ID prefix': \"http://purl.obolibrary.org/obo/RO_\"\n     'has ID digit count' : 7,\n     rdfs:label \"RO id policy\"\n     'has ID policy for': \"RO\""
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "Ontology: <http://purl.obolibrary.org/obo/ro/idrange/>\n  Annotations: \n     'has ID prefix': \"http://purl.obolibrary.org/obo/RO_\"\n     'has ID digit count' : 7,\n     rdfs:label \"RO id policy\"\n     'has ID policy for': \"RO\""
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Person:Alan Ruttenberg"
-              },
-              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Person:Alan Ruttenberg"
               }
@@ -14180,14 +14657,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
                 "val": "Ontology: <http://purl.obolibrary.org/obo/ro/idrange/>\n  Annotations: \n     'has ID prefix': \"http://purl.obolibrary.org/obo/RO_\"\n     'has ID digit count' : 7,\n     rdfs:label \"RO id policy\"\n     'has ID policy for': \"RO\""
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "Ontology: <http://purl.obolibrary.org/obo/ro/idrange/>\n  Annotations: \n     'has ID prefix': \"http://purl.obolibrary.org/obo/RO_\"\n     'has ID digit count' : 7,\n     rdfs:label \"RO id policy\"\n     'has ID policy for': \"RO\""
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Person:Alan Ruttenberg"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -14385,7 +14854,19 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "abbreviation and acronyms"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "abbreviation list"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "abbreviations"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "abbreviations and acronyms"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
@@ -14397,6 +14878,10 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "definitions for abbreviations"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "list of abbreviations"
               },
               {
@@ -14404,8 +14889,24 @@
                 "val": "list of abbreviations used"
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "non-standard abbreviations"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "nonstandard abbreviations"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "nonstandard abbreviations and acronyms"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
                 "val": "https://github.com/information-artifact-ontology/IAO/issues/183"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -14441,8 +14942,20 @@
                 "val": "authors’ information"
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "biographies"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "contributor information"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
                 "val": "https://github.com/information-artifact-ontology/IAO/issues/183"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -14581,8 +15094,32 @@
                 "val": "availability"
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "availability of data"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "data archiving"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "data availability"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "data availability statement"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "data sharing statement"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
                 "val": "https://github.com/information-artifact-ontology/IAO/issues/183"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -14730,7 +15267,7 @@
               }
             ],
             "definition": {
-              "val": "A part of a document used to summarize the findings discussed in the document. The conclusion section is typically found near the end of a document. ",
+              "val": "A part of a document used to summarize the findings discussed in the document. The conclusion section is typically found near the end of a document.",
               "xrefs": []
             }
           },
@@ -14755,6 +15292,14 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "authors' disclosures of potential conflicts of interest"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "competing financial interests"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "competing interests"
               },
               {
@@ -14767,15 +15312,51 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "conflict of interests"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "conflicts of interest"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "declaration of competing interest"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "declaration of competing interests"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "declaration of interest"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "declaration of interests"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "disclosure of conflict of interest"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "disclosure of potential conflicts of interest"
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "duality of interest"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "statement of interest"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
                 "val": "https://github.com/information-artifact-ontology/IAO/issues/183"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -14898,8 +15479,24 @@
                 "val": "ethical approval"
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "ethical requirements"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "ethics"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "ethics statement"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
                 "val": "https://github.com/information-artifact-ontology/IAO/issues/183"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -14990,6 +15587,10 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "financial support"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "funding"
               },
               {
@@ -15010,6 +15611,14 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "grants"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "role of the funding source"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "source of funding"
               },
               {
@@ -15017,8 +15626,16 @@
                 "val": "sources of funding"
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "study funding"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
                 "val": "https://github.com/information-artifact-ontology/IAO/issues/183"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -15123,8 +15740,16 @@
                 "val": "future work"
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "outlook"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
                 "val": "https://github.com/information-artifact-ontology/IAO/issues/183"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
               }
             ],
             "definition": {
@@ -15410,10 +16035,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "PERSON: Bill Baumgartner"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "footnotes"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
@@ -15779,6 +16400,61 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000646",
+          "lbl": "postal code",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Mathias Brochhausen"
+              }
+            ],
+            "definition": {
+              "val": "An identifier that denotes some postal delivery route, some aggregate of postal delivery routes or a geographical region and was created for the purpose of sorting and delivering mail.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000647",
+          "lbl": "Postal delivery route",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Mathias Brochhausen"
+              }
+            ],
+            "definition": {
+              "val": "A plan specification that if realized, is realized by the delivery of mail to some facility or mailbox within some geographical region.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000648",
+          "lbl": "zone improvement plan code",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Mathias Brochhausen"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "ZIP code"
+              }
+            ],
+            "definition": {
+              "val": "A postal code that is used in the United States for the purpose of sorting and delivering mail, and that denotes some postal delivery route or some aggregate of postal delivery routes.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/IAO_0000650",
           "lbl": "database extract, transform, and load process",
           "meta": {
@@ -15847,6 +16523,313 @@
             }
           },
           "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000701",
+          "lbl": "descriptive data section",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "descriptive data section"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Chen Yang"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Jie Zheng"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://www.equator-network.org/reporting-guidelines/prisma/"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/235"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000234",
+                "val": "ONE ontology"
+              }
+            ],
+            "definition": {
+              "val": "A document part that lists and defines data variables, describes data characteristics (e.g. missing data information) and any assumptions and simplifications made.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000702",
+          "lbl": "additional results section",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "additional results section"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Chen Yang"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Jie Zheng"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://www.equator-network.org/reporting-guidelines/consort/"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://www.equator-network.org/reporting-guidelines/prisma/"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://www.equator-network.org/reporting-guidelines/strobe/"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/235"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000234",
+                "val": "ONE ontology"
+              }
+            ],
+            "definition": {
+              "val": "A results section that reports analyses other than main results of the study (e.g. subgroups analyses, adjusted analyses, sensitivity analyses, etc.)",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000703",
+          "lbl": "research participants section",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "research participants section"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Chen Yang"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Jie Zheng"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://www.equator-network.org/reporting-guidelines/consort/"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://www.equator-network.org/reporting-guidelines/prisma/"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://www.equator-network.org/reporting-guidelines/strobe-nut/"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/235"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000234",
+                "val": "ONE ontology"
+              }
+            ],
+            "definition": {
+              "val": "A document part that describes human subject(s) that participated in a study (e.g. inclusion & exclusion criteria, recruitment methods, reasons for non-participation, grouping and randomisation, methods of follow-up, etc.).",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000704",
+          "lbl": "measurement methods section",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "measurement methods section"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Chen Yang"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Jie Zheng"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://www.equator-network.org/reporting-guidelines/strobe/"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/235"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000234",
+                "val": "ONE ontology"
+              }
+            ],
+            "definition": {
+              "val": "A methods section that describes details of data assessment methods (data measurement).",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000705",
+          "lbl": "research settings section",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "research settings section"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Chen Yang"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Jie Zheng"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://www.ncbi.nlm.nih.gov/books/NBK262175/"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/235"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000234",
+                "val": "ONE ontology"
+              }
+            ],
+            "definition": {
+              "val": "A document part that describes the physical/social/cultural conditions around a research trial.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000706",
+          "lbl": "study bias section",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "study bias section"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Chen Yang"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Jie Zheng"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "DOI: 10.1097/PRS.0b013e3181de24bc"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/235"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000234",
+                "val": "ONE ontology"
+              }
+            ],
+            "definition": {
+              "val": "A study limitations section that describes systematic error introduced into sampling or testing by selecting or encouraging one outcome or answer over others.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000707",
+          "lbl": "graphical abstract",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "graphical abstract"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
+                "val": "http://purl.obolibrary.org/obo/IAO_0000120"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Jie Zheng"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON: Tim Beck"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "visual abstract"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://www.elsevier.com/authors/journal-authors/graphical-abstract"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000233",
+                "val": "https://github.com/information-artifact-ontology/IAO/issues/234"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000234",
+                "val": "Biomedical literature NLP project"
+              }
+            ],
+            "definition": {
+              "val": "An abstract that is pictorial summary of the main findings described in the document.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
         },
         {
           "id": "http://purl.obolibrary.org/obo/IAO_0006011",
@@ -15948,12 +16931,20 @@
           "meta": {
             "basicPropertyValues": [
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "identifier"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Mathias Brochhausen"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "proper name"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/iao/pno.owl"
               },
               {
                 "pred": "http://purl.org/dc/elements/1.1/creator",
@@ -17148,7 +18139,7 @@
               "Add as annotation triples in the granting ontology"
             ],
             "definition": {
-              "val": "Add as annotation triples in the granting ontology",
+              "val": "Use on obsolete terms, relating the term to another term that can be used as a substitute",
               "xrefs": []
             }
           },
@@ -17742,7 +18733,7 @@
               }
             ],
             "definition": {
-              "val": "A processual entity that realizes a plan which is the concretization of a plan specification.",
+              "val": "A process that realizes a plan which is the concretization of a plan specification.",
               "xrefs": []
             }
           },
@@ -17823,6 +18814,10 @@
           "lbl": "has_specified_input",
           "meta": {
             "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "has_specified_input"
+              },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
                 "val": "has_specified_input"
@@ -23384,6 +24379,27 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/PATO_0000051",
+          "lbl": "morphology",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "morphology"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/pato.owl"
+              }
+            ],
+            "definition": {
+              "val": "A quality of a single physical entity inhering in the bearer by virtue of the bearer's size or shape or structure.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/PATO_0000122",
           "lbl": "length",
           "meta": {
@@ -23426,6 +24442,48 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/PATO_0001018",
+          "lbl": "physical quality",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "physical quality"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/pato.owl"
+              }
+            ],
+            "definition": {
+              "val": "A quality of a physical entity that exists through action of continuants at the physical level of organisation in relation to other entities.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/PATO_0001241",
+          "lbl": "physical object quality",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "physical object quality"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/pato.owl"
+              }
+            ],
+            "definition": {
+              "val": "A quality which inheres in a continuant.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/PCO_0000020",
           "lbl": "family",
           "meta": {
@@ -23442,6 +24500,9 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25173"
               }
+            ],
+            "comments": [
+              "Family membership through marriage or adoption apply primarily to human families. In most species, family membership is defined by common anscestry."
             ],
             "definition": {
               "val": "A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption.",
@@ -23985,36 +25046,12 @@
           "id": "http://purl.obolibrary.org/obo/RO_0001900",
           "lbl": "temporal interpretation",
           "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://xmlns.com/foaf/0.1/page",
-                "val": "https://github.com/oborel/obo-relations/wiki/ROAndTime"
-              }
-            ]
+            "definition": {
+              "val": "An assertion that holds between an OWL Object Property and a temporal interpretation that elucidates how OWL Class Axioms that use this property are to be interpreted in a temporal context.",
+              "xrefs": []
+            }
           },
           "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/RO_0001901",
-          "lbl": "axiom holds for all times",
-          "meta": {
-            "definition": {
-              "val": "\n\n## Elucidation\n\nThis is used when the statement/axiom is assumed to hold true 'eternally'\n\n## How to interpret (informal)\n\nFirst the \"atemporal\" FOL is derived from the OWL using the standard\ninterpretation. This axiom is temporalized by embedding the axiom\nwithin a for-all-times quantified sentence. The t argument is added to\nall instantiation predicates and predicates that use this relation.\n\n## Example\n\n    Class: nucleus\n    SubClassOf: part_of some cell\n\n    forall t :\n      forall n :\n        instance_of(n,Nucleus,t)\n         implies\n        exists c :\n          instance_of(c,Cell,t)\n          part_of(n,c,t)\n\n## Notes\n\nThis interpretation is *not* the same as an at-all-times relation\n\n",
-              "xrefs": []
-            }
-          },
-          "type": "INDIVIDUAL"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/RO_0001902",
-          "lbl": "relation has no temporal argument",
-          "meta": {
-            "definition": {
-              "val": "\n\n## Elucidation\n\nThis is used when the first-order logic form of the relation is\nbinary, and takes no temporal argument.\n\n## Example:\n\n    Class: limb\n    SubClassOf: develops_from some lateral-plate-mesoderm\n\n     forall t, t2:\n      forall x :\n        instance_of(x,Limb,t)\n         implies\n        exists y :\n          instance_of(y,LPM,t2)\n          develops_from(x,y)\n\n\n",
-              "xrefs": []
-            }
-          },
-          "type": "INDIVIDUAL"
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002000",
@@ -26830,11 +27867,11 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485071"
+                "val": "_:genid2147485092"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485072"
+                "val": "_:genid2147485093"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -26880,16 +27917,6 @@
         {
           "id": "http://purl.obolibrary.org/obo/GO_0003824",
           "lbl": "catalytic activity",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/GO_0007610",
-          "lbl": "behavior",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/GO_0008150",
-          "lbl": "biological_process",
           "type": "CLASS"
         },
         {
@@ -27298,62 +28325,9 @@
           "type": "CLASS"
         },
         {
-          "id": "http://www.geneontology.org/formats/oboInOwl#shorthand",
-          "lbl": "shorthand",
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://www.w3.org/2000/01/rdf-schema#label",
           "lbl": "label",
           "type": "PROPERTY"
-        },
-        {
-          "id": "http://example.com/bfo-spec-label",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "Person:Alan Ruttenberg"
-              }
-            ]
-          }
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/BFO_0000134",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
-                "val": "To say that each spatiotemporal region s temporally_projects_onto some temporal region t is to say that t is the temporal extension of s. (axiom label in BFO2 Reference: [080-003])"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
-                "val": "To say that spatiotemporal region s spatially_projects_onto spatial region r at t is to say that r is the spatial extent of s at t. (axiom label in BFO2 Reference: [081-003])"
-              }
-            ]
-          }
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/iao/d-acts.owl",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000603",
-                "val": "IAO_0021000-IAO_0021999"
-              }
-            ]
-          }
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/iao/pno.owl",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000603",
-                "val": "IAO_0020000-IAO_0020999"
-              }
-            ]
-          }
         },
         {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00002028",
@@ -27425,10 +28399,6 @@
               "xrefs": []
             }
           },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://www.geneontology.org/formats/oboInOwl#Subset",
           "type": "CLASS"
         }
       ],

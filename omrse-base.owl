@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-02-16/omrse-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-03-05/omrse-base.owl"/>
         <dc:contributor>Daniel Welch</dc:contributor>
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
@@ -22,7 +22,7 @@
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <owl:versionInfo>2020-10-27</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-02-16</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -47,12 +47,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
     
 
 
@@ -92,18 +86,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
@@ -113,12 +95,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0004334 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OAE_0004334"/>
     
 
 
@@ -160,12 +136,6 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002028">
         <obo:IAO_0000111 xml:lang="en">ISO 639-3 code</obo:IAO_0000111>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OOSTT_00000030 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000030"/>
     
 
 
@@ -269,12 +239,6 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000846 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000846"/>
     
 
 
@@ -447,33 +411,15 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0002081 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002081"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0002083 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002083"/>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0002217 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002217"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0002218 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002218"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002222 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002222"/>
     
 
 
@@ -498,12 +444,6 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0002577 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002577"/>
     
 
 
@@ -555,12 +495,6 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000480 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000480"/>
     
 
 
@@ -642,18 +576,6 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     
 
 
-    <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007610"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000001"/>
@@ -726,27 +648,9 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0020021 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020021"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0020022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020022"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0020023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020023"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0020024 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020024"/>
     
 
 
@@ -774,21 +678,9 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OAE_0000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000002"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OAE_0000067 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000067"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OAE_0002807 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002807"/>
     
 
 
@@ -5874,36 +5766,6 @@ It indicates that a person has completed only early childhood education and noth
     <!-- http://purl.obolibrary.org/obo/OOSTT_00000074 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000074"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OOSTT_00000081 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000081"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OOSTT_00000082 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000082"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OOSTT_00000083 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000083"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OOSTT_00000084 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000084"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OOSTT_00000086 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000086"/>
     
 
 
