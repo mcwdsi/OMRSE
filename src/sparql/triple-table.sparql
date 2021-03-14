@@ -1,0 +1,6 @@
+SELECT DISTINCT ?s ?p ?o
+WHERE {
+  ?s ?p ?o .
+  FILTER(isIRI(?s))
+  FILTER(?p!=<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>)
+}

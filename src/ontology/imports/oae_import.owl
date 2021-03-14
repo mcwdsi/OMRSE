@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/omrse/imports/oae_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/omrse/imports/oae_import.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/imports/oae_import.owl">
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-03-02/imports/oae_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-02</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0004334 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OAE_0004334">
+        <rdfs:label xml:lang="en">has_MedDRA_id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115>medical intervention is a planned process that has the goal of diagnosing, preventing or relieving illness or injury. </obo:IAO_0000115>
+        <obo:IAO_0000116>The act of intervening, interfering or interceding with the intent of modifying the outcome. In medicine, an intervention is usually undertaken to help treat or cure a condition. For example, &quot;Acupuncture as a therapeutic intervention is widely practiced in the United States,&quot; 
+Reference:
+http://www.medterms.com/script/main/art.asp?articlekey=34214 . Some interventions can be used for diagnosis. </obo:IAO_0000116>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://wiki.answers.com/Q/What_is_medical_intervention</obo:IAO_0000119>
+        <rdfs:label>medical intervention</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000067">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0002807"/>
+        <obo:IAO_0000115>Surgery is a medical procedure that uses operative manual and instrumental techniques on a patient to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance. The key difference between a surgery and a general procedure is the need for an incision. Making an incision, or cutting into the skin to gain access to the body’s deeper tissues or organs, is a defining characteristic of surgery.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, SS</obo:IAO_0000117>
+        <obo:IAO_0000118>surgical procedure</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Surgery</obo:IAO_0000119>
+        <obo:IAO_0000119>WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm</obo:IAO_0000119>
+        <obo:OAE_0004334>10042609</obo:OAE_0004334>
+        <rdfs:label>surgery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0002807 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0002807">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OAE_0000002"/>
+        <obo:IAO_0000115>a medical intervention that refers to any series of pre-defined steps that should be followed to achieve a desired result.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, SS</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">medical procedure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+

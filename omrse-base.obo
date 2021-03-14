@@ -1,0 +1,2277 @@
+format-version: 1.2
+data-version: omrse/releases/2021-03-05/omrse-base.owl
+remark: This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt
+ontology: omrse/omrse-base
+property_value: http://purl.org/dc/elements/1.1/contributor "Daniel Welch" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Shariq Tariq" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
+property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
+property_value: owl:versionInfo "2020-10-27" xsd:string
+property_value: owl:versionInfo "2021-03-05" xsd:string
+name: The Ontology of Medically Related Social Entities
+
+[Term]
+id: OMRSE:00000000
+name: social security number
+def: "Social Security Number(SSN) is a Centrally Registered IDentifier that is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents under section 205(c) of the Social Security Act, codified as 42 U.S.C. § 405(c). The number is issued to an individual by the Social Security Administration, an independent agency of the United States government. Its primary purpose is to track individuals for Social Security purposes." []
+is_a: IAO:0000578
+property_value: http://purl.org/dc/elements/1.1/creator "Cheng Chen(cxchen1@ualr.edu)" xsd:string
+property_value: IAO:0000118 "SSN" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Social_Security_number xsd:string
+
+[Term]
+id: OMRSE:00000001
+name: human social role
+def: "A social role inhering in a human being." []
+is_a: OMRSE:00000026 ! organism social role
+relationship: RO:0000052 NCBITaxon:9606
+property_value: IAO:0000117 "Mathias Brochhausen\n" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00000002
+name: party to a legal entity
+is_a: OMRSE:00000024 ! role in human social processes
+
+[Term]
+id: OMRSE:00000003
+name: party to a legal proceeding
+is_a: OMRSE:00000002 ! party to a legal entity
+
+[Term]
+id: OMRSE:00000004
+name: party to a legal agreement
+is_a: OMRSE:00000002 ! party to a legal entity
+
+[Term]
+id: OMRSE:00000005
+name: party to a marriage contract
+is_a: OMRSE:00000004 ! party to a legal agreement
+relationship: RO:0000052 NCBITaxon:9606
+
+[Term]
+id: OMRSE:00000006
+name: party to a power of attorney
+is_a: OMRSE:00000002 ! party to a legal entity
+
+[Term]
+id: OMRSE:00000007
+name: gender role
+def: "A human social role borne by a human being being realized in behaviour which is considered socially appropriate for individuals of a specific sex in the context of a specific culture." []
+is_a: BFO:0000023
+relationship: RO:0000052 OBI:0100026
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Gender_role xsd:string
+
+[Term]
+id: OMRSE:00000008
+name: male gender role
+def: "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the male sex in the context of the culture in question." []
+is_a: OMRSE:00000007 ! gender role
+relationship: RO:0000052 OBI:0100026
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000118 "male gender" xsd:string
+
+[Term]
+id: OMRSE:00000009
+name: female gender role
+def: "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the female sex in the context of the culture in question." []
+is_a: OMRSE:00000007 ! gender role
+relationship: RO:0000052 OBI:0100026
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000118 "female gender" xsd:string
+
+[Term]
+id: OMRSE:00000010
+name: human health care role
+def: "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. " []
+comment: Mathias Brochhausen
+is_a: OMRSE:00000024 ! role in human social processes
+relationship: BFO:0000054 OGMS:0000097
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000118 "health care role" xsd:string
+
+[Term]
+id: OMRSE:00000011
+name: patient role
+def: "A role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter." []
+comment: In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov't entities, with a person endowed by the gov't with certain certifications.
+is_a: OMRSE:00000010 ! human health care role
+relationship: RO:0000052 OBI:0100026
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000118 "patient" xsd:string
+property_value: IAO:0000119 "CAFE domain expert working group." xsd:string
+
+[Term]
+id: OMRSE:00000012
+name: health care provider role
+def: "A human health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism." []
+comment: William R. Hogan
+is_a: OMRSE:00000010 ! human health care role
+property_value: IAO:0000117 "Mathias Brochhausen\n" xsd:string
+
+[Term]
+id: OMRSE:00000013
+name: physician role
+def: "A health care role borne by a human being and realized by promoting, maintaining or restoring human health through the study, diagnosis, and treatment of disease, injury and other physical and mental impairments." []
+is_a: OMRSE:00000012 ! health care provider role
+relationship: RO:0000052 NCBITaxon:9606
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000118 "physician" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Physician xsd:string
+
+[Term]
+id: OMRSE:00000014
+name: nurse role
+def: "A health care role borne by a human being and realized by the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life." []
+is_a: OMRSE:00000012 ! health care provider role
+relationship: RO:0000052 NCBITaxon:9606
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000118 "nurse" xsd:string
+property_value: IAO:0000119 "based on: http://en.wikipedia.org/wiki/Nursing" xsd:string
+
+[Term]
+id: OMRSE:00000015
+name: health care provider organization role
+def: "A role that inheres in an organization and that is realized by the providing of services in a health care encounter." []
+is_a: OMRSE:00000027 ! organization health care role
+relationship: BFO:0000054 OGMS:0000097
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000016
+name: person health care provider role
+is_a: OMRSE:00000001 ! human social role
+
+[Term]
+id: OMRSE:00000017
+name: physician practice
+def: "A health care provider organization role that inheres in an organization consisting of two or more physicians." []
+is_a: OMRSE:00000015 ! health care provider organization role
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000018
+name: obsolete_hospital role
+def: "A role borne by an organization and realized by providing healthcare services by healthcare professionals of multiple different disciplines of medicine and enabling stationary treatment." []
+is_a: ObsoleteClass
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000118 "hospital" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000019
+name: integrated delivery network
+def: "A health care provider organization role that inheres in an organization that is comprised of other organizations." []
+is_a: OMRSE:00000015 ! health care provider organization role
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000022
+name: aggregate of objectual organisms
+def: "An object aggregate of objectual organisms." []
+comment: Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  
+is_a: BFO:0000027
+
+[Term]
+id: OMRSE:00000023
+name: collection of humans
+def: "An object aggregate all of whose components are human beings." []
+is_a: OMRSE:00000022 ! aggregate of objectual organisms
+relationship: RO:0002351 NCBITaxon:9606
+
+[Term]
+id: OMRSE:00000024
+name: role in human social processes
+def: "A role inhering in an entity realized by social interactions in human society." []
+comment: Previous definition: A role played by an entity in human social processes.
+is_a: BFO:0000023
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000025
+name: organization social role
+def: "A role in human social processes that inheres in an organization." []
+comment: Defined class that we will ultimately move to an application ontology.  We are leaving here for now until we determine which application ontology: it is likely going to be an ontology that does not currently (2012-06-05) exist.\n\nDitto for its current descendants.
+is_a: OMRSE:00000024 ! role in human social processes
+relationship: RO:0000052 OBI:0000245
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00000026
+name: organism social role
+def: "A role in human social processes that inheres in an organism." []
+comment: Defined class that we will ultimately move to an application ontology.  We are leaving here for now until we determine which application ontology: it is likely going to be an ontology that does not currently (2012-06-05) exist.\n\nDitto for its current descendants.
+comment: Includes animals as well as humans.  For example, pet, assistance animal, animal grown for food, work animal, domesticated animal, K-9, etc.  Human roles include gender role, party to legal entities, health care provider roles like doctor, nurse, etc.
+comment: Previous definition: A role in human social processes played by an organism.
+is_a: OMRSE:00000024 ! role in human social processes
+relationship: RO:0000052 OBI:0100026
+property_value: IAO:0000117 "William R. Hogan\nMathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000027
+name: organization health care role
+def: "An organization social role that, if realized, is realized by either a health care process or an ancillary health care process" []
+comment: Previous definition: An organization social role played by an organization in health care processes.
+is_a: OMRSE:00000025 ! organization social role
+
+[Term]
+id: OMRSE:00000028
+name: obsolete geopolitical organization
+def: "An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii)." []
+is_a: ObsoleteClass
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000118 "geopolitical organization" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000029
+name: obsolete geopoli organization
+is_a: ObsoleteClass
+property_value: IAO:0000118 "geopoli organization" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000030
+name: human patient role
+def: "A patient role that inheres in a human being." []
+intersection_of: OMRSE:00000011 ! patient role
+intersection_of: RO:0000052 NCBITaxon:9606
+
+[Term]
+id: OMRSE:00000031
+name: obsolete major administrative subdivision
+def: "A subnational entity that is the primary organizational member of a nation, is subject to the full set of laws of the nation, enjoys all the privileges established under the laws of the nation, is not a member of any other geopolitical entity, and itself governs a part of the geographical region governed by the nation." []
+comment: example: Northern Ireland
+is_a: ObsoleteClass
+property_value: IAO:0000118 "major administrative subdivision" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000032
+name: obsolete geopolitical dependency
+def: "A subnational entity that does not possess full political independence or sovereignty as a sovereign state, but remains politically outside of the controlling state and controls a geographical region that is outside the controlling state's integral region." []
+comment: Typically, the common feature is that the dependency does not conduct foreign affairs, and relegates this authority to the sovereign state.  BUt otherwise, it is largely or completely autonomous relative to the administrative subdivisions.  Examples include Puerto Rico (U.S.), Guam (U.S.), Greenland (Denmark), French Polynesia (France), and Falkland Islands (United Kingdom). 
+is_a: ObsoleteClass
+property_value: IAO:0000118 "geopolitical dependency" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000033
+name: aggregate of organizations
+def: "An object aggregate that is not itself an organization and whose members are only organizations that have some feature in common" []
+comment: It is often convenient to group organizations together that otherwise might not even interact with one another. 
+is_a: BFO:0000040
+property_value: IAO:0000117 "William R. Hogan\nAmanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000034
+name: obsolete aggregate of sovereign states
+def: "An aggregate of sovereign states that share some feature in common, but is not an organization nor necessarily the outcome of some treaty among them." []
+is_a: ObsoleteClass
+property_value: IAO:0000117 "An aggregate of geopoli organizations that is not itself a sovereign state and whose members are only sovereign states that have some feature in common" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000118 "aggregate of sovereign states" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000035
+name: obsolete aggregate of geopoli organizations
+def: "An object aggregate that is not itself a geopolitical organization and whose members are only geopolitical organizations that have some feature in common" []
+is_a: ObsoleteClass
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000117 "William R. Hogan\n" xsd:string
+property_value: IAO:0000118 "aggregate of geopoli organizations" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000036
+name: obsolete aggregate of dependencies
+def: "An aggregate of geopoli organizations that is not itself a geopolitical dependency and whose members are only geopolitical dependencies that have some feature in common." []
+is_a: ObsoleteClass
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000118 "aggregate of dependencies" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000037
+name: obsolete aggregate of major administrative subdivisions
+def: "An aggregate of geopoli organizations that is not itself a major administrative subdivision and whose members are only major administrative subdivisions that have some feature in common" []
+is_a: ObsoleteClass
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000118 "aggregate of major administrative subdivisions" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000038
+name: legal person role
+def: "A role borne by a human individual or by a collection of humans regarded as possessing rights and duties enforeable at law." []
+comment: We are aware of the fact that Wikipedia's definition differs from ours by saying that "Legal personality (...) is the characteristic of a non-living entity regarded by law to have the status of personhood" (http://en.wikipedia.org/wiki/Legal_personality) \nHowever, Shaw explicates:\n"In any legal system, certain entities, whether they be individuals or companies, will be regarded as possessing rights and duties enforceable at law. Thus an individual may prosecute or be prosecuted for assault and a company can sue for breach of contract. They are able to do this because the law recognises them as 'legal persons' possessing the capacity to have and to maintain certain rights, and being subject to perform specific duties. (...) In municipal law individuals, limited companies and public corporations are recognized as each possessing a distinct legal personality, the terms of which are circumscribed by the relevant legislation" (Shaw MN: International Law. Sixth Edition. Cambridge University Press, Cambridge, 2008).                We hold that Shaw's position is ontological more prolific since it not only allows to explain how groups of individuals become recognized as unities at law, but also how different individuals can hold different legal personality roles (always against the context of one legal system). The latter will proof useful when dealing with the representing comatous patients or minorsat law in ontologies.
+is_a: OMRSE:00000024 ! role in human social processes
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000119 "Malcolm N. Shaw: International Law. Cambridge University Press, Cambridge, 2008." xsd:string
+
+[Term]
+id: OMRSE:00000039
+name: smoker role
+def: "A role that inheres in an organism and is realized by habitually smoking tobacco products." []
+is_a: BFO:0000023
+relationship: RO:0000052 NCBITaxon:9606
+
+[Term]
+id: OMRSE:00000040
+name: intravenous drug user
+is_a: BFO:0000023
+relationship: RO:0000052 NCBITaxon:9606
+
+[Term]
+id: OMRSE:00000041
+name: obsolete intergovernmental organization
+def: "an intergovernmental organization that has at least three member states, that has activies in at least three states, and that is unified by some formal intergovernmental agreement" []
+comment: examples:\nNorth American Free Trade Argreement [NAFTA] , Universal Postal Union [UPU], Oragnaization of American States [OAS], World Bank), Organization of Petroleum exporting countries [OPEC] United Nations [UN[, The World Trade Organization [WTO], The World Health Organization [WHO], UNICEF
+is_a: ObsoleteClass
+property_value: http://purl.org/dc/elements/1.1/contributor "Katrina Donovan" xsd:string
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000118 "intergovernmental organization" xsd:string
+property_value: IAO:0000119 "\"IGOs are organizations whose memebers include at lesat three states, that have activities in several states, and whose members are held together by a formal intergovernmental agreement ... These organizations range in size from three members (North American Free Trade Argreement [NAFTA]) to more than 190 memembers (Universal Postal Union (UPU)].  Memebers may come from primarily one georgraphic regioni (Oragnaization of American States [OAS]) or from all geographic regions (World Bank).  although soem IGOs are designed to achieve a single purpose (Organization of Petroleum exporting countries [OPEC]), others have been developed for multiple tasks (United Nations [UN}).  ... IGOs are recognized subjects of international law with separate standing fromt heir member states.\" Karns and Mingst I(2004) p. 7" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000042
+name: obsolete nongovernmental organization
+def: "a geopolitical organization that is voluntary and private, whose members are individual persons or organizations that come together to acheive a common purpose." []
+comment: Examples:\nInternaltion Federation of Red Cross and Red Crescent Societies, Oxfam, CARE, Doctors Without Borders, World Wildlife Fund, Transparency International, Human Rights Watch, Amnesty International, and Save the Children.
+is_a: ObsoleteClass
+property_value: http://purl.org/dc/elements/1.1/contributor "Katrina Donovan" xsd:string
+property_value: IAO:0000118 "nongovernmental organizations" xsd:string
+property_value: IAO:0000119 "NGOs are private voluntary organizations whose members are individuals or associations that come together to acheive a common purpose.  Some organizations are formed to advocate a particular cause such as human rights, peace, or envirnomental projetion.  Others are established to provide services such as disaster relief, humantarian aid in war-torn socieities, or development assistance.  ... National level groups are often called interest or pressure groups, and many of them are now linked to counterpart groups in other countries through transnational networks or federations.  International NGOs, like IGOs, may draw their members from one region or several regions, and they may have very specific functions or be multi-functional.\n\nKarns and Mingst (2004) p. 10f." xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000043
+name: obsolete private governance organizations
+comment: Examples: private bond-rating agencies such as Moody's Investors Service, International Chamber of Commerce, Worldwide Responsible Apparel Manufacturing Principles, Forest Stewardship
+is_a: ObsoleteClass
+property_value: http://purl.org/dc/elements/1.1/contributor "Katrina Donovan" xsd:string
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000118 "private governance organizations" xsd:string
+property_value: IAO:0000119 "\"Although the very meaning of the term is controversial, it involves authoritative decsionmaking in areas that once were part of national legal frameworks, the government, the sovereign state, or the public sector.\"\n\nKarns and Mingst (2004) p. 14." xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000044
+name: obsolete governmental organization
+def: "An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii). \n\nNote: this definition was taken over from \"geopolitical organization\"." []
+comment: IMPORTANT: The label "geopolitical organization" was previously used for OMRSE_00000044 (governmental organization).  "geopoli organization" is a label for a new and different class.
+is_a: ObsoleteClass
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000118 "governmental organization" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000045
+name: obsolete sovereign state
+def: "A governmental organization with a defined territory on which it exercises internal and external sovereignty, a permanent population, a government, and the capacity to enter into relations with other sovereign states." []
+comment: Per Wikipedia, the word 'nation' does not always refer to soverign states.  For example, the "nation of Islam".
+is_a: ObsoleteClass
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000118 "nation" xsd:string
+property_value: IAO:0000118 "nation state" xsd:string
+property_value: IAO:0000118 "sovereign state" xsd:string
+property_value: IAO:0000119 http://en.wikipedia.org/wiki/Sovereign_state xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000046
+name: obsolete subnational entity
+def: "a governmental organization that has a local, regional, or territorial government that recognizes a sovereign state as its higher political authority" []
+is_a: ObsoleteClass
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000118 "subnational entity" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000047
+name: obsolete supranational entity
+comment: e.g., the EU
+is_a: ObsoleteClass
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000118 "supranational entity" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000048
+name: material entity role
+intersection_of: BFO:0000023
+intersection_of: RO:0000052 BFO:0000040
+relationship: RO:0000052 BFO:0000040
+
+[Term]
+id: OMRSE:00000049
+name: organism role
+intersection_of: OMRSE:00000048 ! material entity role
+intersection_of: RO:0000052 OBI:0100026
+relationship: RO:0000052 OBI:0100026
+
+[Term]
+id: OMRSE:00000050
+name: Homo sapiens role
+intersection_of: OMRSE:00000049 ! organism role
+intersection_of: RO:0000052 NCBITaxon:9606
+relationship: RO:0000052 NCBITaxon:9606
+
+[Term]
+id: OMRSE:00000051
+name: organization role
+is_a: OMRSE:00000048 ! material entity role
+intersection_of: BFO:0000023
+intersection_of: RO:0000052 OBI:0000245
+relationship: RO:0000052 OBI:0000245
+
+[Term]
+id: OMRSE:00000052
+name: hospital function
+def: "A function inhering in a material entity that, if realized, is realized by the material entity being the site at which inpatient and outpatient healthcare is provided to a patient population." []
+is_a: BFO:0000034
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000053
+name: school function
+def: "A function inhering in a material entity that, if realized, is realized by that material entity being the site at which formal education is provided to a student population." []
+is_a: BFO:0000034
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000054
+name: hospital role
+def: "A healthcare provider role that inheres in an organization and is realized by providing inpatient and outpatient care." []
+is_a: OMRSE:00000015 ! health care provider organization role
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000055
+name: school role
+is_a: OMRSE:00000025 ! organization social role
+property_value: IAO:0000117 "An organization social role that inheres in an organization and is realized by providing formal education to students." xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000056
+name: hospital organization
+def: "An organization that is the bearer of a hospital role." []
+is_a: OBI:0000245
+intersection_of: OBI:0000245
+intersection_of: RO:0000053 OMRSE:00000054 ! hospital role
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000057
+name: school organization
+def: "An organization that is the bearer of a school role." []
+is_a: OBI:0000245
+intersection_of: OBI:0000245
+intersection_of: RO:0000053 OMRSE:00000055 ! school role
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000058
+name: student role
+def: "A human social role that, if realized, is realized by the process of formal education that the bearer undergoes." []
+is_a: OMRSE:00000086 ! human role within an organization
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000059
+name: nursery school role
+is_a: OMRSE:00000055 ! school role
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000060
+name: primary school role
+is_a: OMRSE:00000055 ! school role
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000061
+name: architectural structure
+def: "A material entity that is a human made strcuture with firm connection between its foundation and the ground." []
+comment: "Building" is a subclass of this. 
+comment: This type of entity is referred to as "Bauwerk" or "Bauliche Anlage".
+is_a: BFO:0000040
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000119 http://de.wikipedia.org/wiki/Bauwerk xsd:string
+
+[Term]
+id: OMRSE:00000062
+name: facility
+def: "An architectural structure that bears some function." []
+is_a: OMRSE:00000061 ! architectural structure
+intersection_of: OMRSE:00000061 ! architectural structure
+intersection_of: RO:0000053 BFO:0000034
+relationship: OMRSE:00000068 OBI:0000245 {http://www.w3.org/2002/07/owl#versionInfo="09/09/2017"} ! is administered by
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000063
+name: hospital facility
+def: "A health care facility that bears the function to provide acute and intensive healthcare services and that is run by a hospital organization and is the bearer of a hospital function." []
+is_a: OMRSE:00000102 ! health care facility
+relationship: BFO:0000067 OMRSE:00000160 ! acute care encounter
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000117 "William Hogan" xsd:string
+
+[Term]
+id: OMRSE:00000064
+name: school facility
+def: "A facility that is run by a school organization and is the bearer of a school function." []
+is_a: OMRSE:00000062 ! facility
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000065
+name: secondary school role
+is_a: OMRSE:00000055 ! school role
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000066
+name: pediatric trauma patient role
+def: "A trauma patient role that inheres in a homo sapiens who is under the age of 15 years." []
+is_a: OMRSE:00000030 ! human patient role
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000118 "pediatric trauma patient" xsd:string
+property_value: IAO:0000119 "The following definition for 'pediatric trauma patient' was approved by the CAFE team of domain experts (experts in trauma care) May 29, 2015.\n\n\"A trauma patient who is under the age of 15 years.\"" xsd:string
+
+[Term]
+id: OMRSE:00000067
+name: injured patient role
+def: "A patient role that inheres an organism suffering one or more injuries." []
+is_a: OMRSE:00000011 ! patient role
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000118 "injured patient" xsd:string
+property_value: IAO:0000119 "The following definition for 'injured patient' was approved by the CAFE team of domain experts (experts in trauma care) May 29, 2015.\n\nA patient suffering one or more injuries." xsd:string
+
+[Term]
+id: OMRSE:00000069
+name: burn patient role
+def: "A patient role that inheres in an organism suffering a thermal, electrical, chemical or radiation burn." []
+is_a: OMRSE:00000067 ! injured patient role
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000117 "burn patient" xsd:string
+property_value: IAO:0000117 "The following definition for 'burn  patient' was approved by the CAFE team of domain experts (experts in trauma care) May 29, 2015.\n\nA patient suffering a thermal, electrical, chemical or radiation burn." xsd:string
+
+[Term]
+id: OMRSE:00000072
+name: physiatrist role
+def: "A physician role that is created by training and certification in rehabilitation/physical medicine and that is realized by the provision of or supervising of the provision of rehabilitation or physical therapy to a patient." []
+comment: Definition updated May 5, 2016. Original definitions was, a health care role borne by a human being and realized by training and certification in rehabilitation medicine.
+is_a: OMRSE:00000013 ! physician role
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000118 "physiatrist" xsd:string
+property_value: IAO:0000119 "The following definition for 'physiatrist' was approved by the CAFE team of domain experts (experts in trauma care) May 29, 2015.\n\nA physician with training and certification in rehabilitation/physical medicine." xsd:string
+
+[Term]
+id: OMRSE:00000073
+name: trauma patient role
+def: "A patient role that inheres in an organism with some non-superficial traumatic injury.  The role is realized by admision to a hospital, transfer from one hospital to another for the purpose of trauma care, or has death as a result of the traumatic injury." []
+is_a: OMRSE:00000011 ! patient role
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000118 "trauma patient" xsd:string
+property_value: IAO:0000119 "The following definition for 'trauma  patient' was approved by the CAFE team of domain experts (experts in trauma care) May 29, 2015.\n\nA patient sustaining an injury who has been admitted to the hospital, transferred from one hospital to another for the purpose of trauma care, or has died as a result of the traumatic injury." xsd:string
+
+[Term]
+id: OMRSE:00000074
+name: housing unit
+def: "A material entity that has as parts one or more sites large enough to contain humans, has as part one or more material entities that separates it from other sites, and bears a residence function." []
+comment: Housing units are individuated by their residence functions.
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000119 https://github.com/ufbmi/OMRSE/wiki/Housing-unit-and-Household xsd:string
+
+[Term]
+id: OMRSE:00000075
+name: residence function
+def: "A function that inheres in a material entity and, if realized, is realized by protecting persons and their possessions from weather and by some person or group of persons habitually sleeping in at least one site that is contained by that material entity." []
+is_a: BFO:0000034
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000076
+name: household
+def: "A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of its residence function." []
+is_a: BFO:0000040
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000077
+name: employee role
+def: "A role in human social processes that, if realized, is realized when the bearer provides labor or services in exchange for a wage or salary as specified by some deontic declaration." []
+is_a: OMRSE:00000024 ! role in human social processes
+relationship: BFO:0000054 OMRSE:00000146 ! employment process
+property_value: IAO:0000117 "Amanda hicks" xsd:string
+property_value: IAO:0000118 "employee" xsd:string
+
+[Term]
+id: OMRSE:00000078
+name: workplace facility
+is_a: OMRSE:00000062 ! facility
+relationship: RO:0000053 OMRSE:00000079 ! workplace function
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000079
+name: workplace function
+def: "a function inhering in a material entity that, if realized, is realized by that material entity being the site where the work of some organization is carried out" []
+is_a: BFO:0000034
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000081
+name: US census householder role
+def: "A US Census householder role is a human social role that, if realized, is realized by that person being a member of a household and either owning or renting the housing unit in which that household resides and being designated as the householder. If there is only one member of the household who owns or rents the housing unit, that person is designated the householder by default." []
+is_a: OMRSE:00000001 ! human social role
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000119 "http://www.census.gov/cps/about/cpsdef.html\n\nlast accessed on June 30, 2015" xsd:string
+
+[Term]
+id: OMRSE:00000082
+name: US Census reference person role
+def: "A US cenus reference person role is a human social role that inheres in a Homo sapiens who is a member of a household and is realized by other persons in the household being recorded in the US census in relation to that person." []
+is_a: OMRSE:00000001 ! human social role
+relationship: BFO:0000054 IAO:0000572
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000119 "http://www.census.gov/cps/about/cpsdef.html\n\nlast accessed June 30, 2015" xsd:string
+
+[Term]
+id: OMRSE:00000083
+name: obsolete OMB ethnic identity datum
+def: "An ethnic identity datum that is the output of an ethnic identification process that uses OMB terminology for ethnicity or terminology that is mapped the OMB ethnicity terms." []
+is_a: OMRSE:00000100 ! obsolete ethnic identity datum
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+is_obsolete: true
+replaced_by: OMB ethnic identity information content entity
+
+[Term]
+id: OMRSE:00000084
+name: enrollment end date
+is_a: BFO:0000038
+
+[Term]
+id: OMRSE:00000085
+name: obsolete socio-legal human social role
+is_a: ObsoleteClass
+is_a: OMRSE:00000001 ! human social role
+property_value: IAO:0000117 "A role that concretizes a socio-lega generically dependent continuant" xsd:string
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000086
+name: human role within an organization
+def: "A human social role that is created by a deontic declaration performed by an organization." []
+is_a: OMRSE:00000001 ! human social role
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000118 "human organizational role" xsd:string
+
+[Term]
+id: OMRSE:00000087
+name: employer role
+def: "a role in human social processes that is realized when the bearer provides a wage or salary in exchange for some labour or services as specified by some declaration" []
+is_a: OMRSE:00000024 ! role in human social processes
+relationship: BFO:0000054 OMRSE:00000146 ! employment process
+
+[Term]
+id: OMRSE:00000088
+name: age measurement datum
+is_a: IAO:0000416
+
+[Term]
+id: OMRSE:00000089
+name: contract
+def: "A document that records a legally binding agreement between two or more parties." []
+is_a: IAO:0000310
+property_value: IAO:0000116 "A contract is a document that is the specified output of a legally binding document act and records a legally binding agreement between two or more parties." xsd:string
+
+[Term]
+id: OMRSE:00000090
+name: indemnity contract
+def: "A contract by which one party secures the other against pecuniary loss by payment of a sum of money if a specified event occurs." []
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000091
+name: insurance policy
+def: "An indemnity contract that distributes risk among a group of people" []
+is_a: OMRSE:00000090 ! indemnity contract
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000092
+name: insured party role
+def: "A role that inheres in an organism that is able to receive benefits from an insurance policy. The role, if realized, is realized by receiving benefits that are covered by the insurance policy." []
+is_a: OMRSE:00000024 ! role in human social processes
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000093
+name: insurance company
+def: "An organization that secures a group of people against pecuniary loss by payment of a sum of money if a a specified event occurs." []
+is_a: OBI:0000245
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000094
+name: policy holder role
+def: "An insured party role that inheres in a person who participates in the creation of the insurance contract and is eligible to receive benefits as specified by the insurance contract." []
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000095
+name: payer role
+is_a: OMRSE:00000024 ! role in human social processes
+
+[Term]
+id: OMRSE:00000096
+name: party to an insurance policy
+is_a: OMRSE:00000004 ! party to a legal agreement
+
+[Term]
+id: OMRSE:00000097
+name: enrollment start date
+is_a: BFO:0000038
+
+[Term]
+id: OMRSE:00000098
+name: obsolete racial identity datum
+def: "A racial identity is an information content entity that is the output of some racial identitification process and is intended to be a truthful statement about the genetic or cultural race of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
+is_obsolete: true
+replaced_by: racial identity information content entity
+
+[Term]
+id: OMRSE:00000099
+name: racial identification process
+
+[Term]
+id: OMRSE:00000100
+name: obsolete ethnic identity datum
+def: "An ethnic identity datum is an information content entity that is the output of some ethnic identitification process and is intended to be a truthful statement about the cultural or national heritage of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+is_obsolete: true
+replaced_by: ethnic identity information content entity
+
+[Term]
+id: OMRSE:00000101
+name: ethnic identification process
+
+[Term]
+id: OMRSE:00000102
+name: health care facility
+is_a: OMRSE:00000062 ! facility
+property_value: IAO:0000117 "A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population." xsd:string
+property_value: IAO:0000117 "William Hogan" xsd:string
+
+[Term]
+id: OMRSE:00000103
+name: US Census unemployed role
+def: "A human social role that inheres in a human who is legally eligible to work, is conferred by the U.S. Census Bureau, and is realized by the bearer not working and either making active efforts to find employment in the four weeks prior to the reference week or waiting to be recalled from temporary layoff." []
+is_a: OMRSE:00000001 ! human social role
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000104
+name: hospice facility
+def: "A health care facility that bears a function to provide healthcare to the sick or terminally ill" []
+is_a: OMRSE:00000102 ! health care facility
+relationship: BFO:0000067 OMRSE:00000152 ! skilled nursing encounter
+relationship: RO:0000053 OMRSE:00000117 ! hospice function
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000117 "Emma Norris" xsd:string
+property_value: IAO:0000117 "William Hogan" xsd:string
+property_value: IAO:0000119 "Human Behaviour Change Project" xsd:string
+
+[Term]
+id: OMRSE:00000105
+name: skilled nursing facility
+is_a: OMRSE:00000150 ! community living health care facility
+relationship: BFO:0000067 OMRSE:00000152 ! skilled nursing encounter
+relationship: RO:0000053 OMRSE:00000123 ! skilled nursing function
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000106
+name: rehabilitation facility
+def: "A facility to assist in physical or addiction recovery" []
+is_a: OMRSE:00000150 ! community living health care facility
+relationship: BFO:0000067 OMRSE:00000152 ! skilled nursing encounter
+relationship: RO:0000053 OMRSE:00000122 ! rehabilitation function
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000117 "Emma Norris" xsd:string
+property_value: IAO:0000117 "William Hogan" xsd:string
+property_value: IAO:0000119 "Human Behaviour Change Project" xsd:string
+
+[Term]
+id: OMRSE:00000107
+name: nursing home facility
+def: "A facility that is run by a nursing home organization and is the bearer of a nursing home function." []
+is_a: OMRSE:00000150 ! community living health care facility
+relationship: BFO:0000067 OMRSE:00000152 ! skilled nursing encounter
+relationship: RO:0000053 OMRSE:00000125 ! nursing home function
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000108
+name: residential health care facility
+def: "A community living health care facility that provides health care services in a home-like setting" []
+is_a: OMRSE:00000150 ! community living health care facility
+relationship: BFO:0000067 OMRSE:00000153 ! assistive care encounter
+relationship: RO:0000053 OMRSE:00000124 ! residential function
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000117 "William Hogan" xsd:string
+
+[Term]
+id: OMRSE:00000109
+name: overnight dialysis facility
+is_a: OMRSE:00000102 ! health care facility
+relationship: BFO:0000067 OBI:0600052
+relationship: BFO:0000067 OMRSE:00000152 ! skilled nursing encounter
+relationship: RO:0000053 OMRSE:00000121 ! overnight dialysis function
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000110
+name: outpatient clinic facility
+def: "A health care facility that bears a function to provide low intensity healthcare services to patients on a short-term basis, with patients leaving on the same date as arriving (i.e., without them staying overnight)" []
+comment: Broadened from treatment to healthcare services generally.  "Low intensity" is not defined at the moment, but is needed to differentiate from same-day surgery centers or observation stays in hospitals that last <24 hours.  The idea is that few invasive procedures are performed, and the ones that are invasive are not typically much worse than a blood draw.  Maybe bone marrow biopsy is as aggressive as it gets.  I wonder if hematologists do that on an outpatient basis.
+is_a: OMRSE:00000102 ! health care facility
+relationship: RO:0000053 OMRSE:00000120 ! outpatient clinic function
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000117 "Emma Norris" xsd:string
+property_value: IAO:0000117 "William Hogan" xsd:string
+property_value: IAO:0000119 "Human Behaviour Change Project" xsd:string
+
+[Term]
+id: OMRSE:00000111
+name: physician office facility
+is_a: OMRSE:00000102 ! health care facility
+relationship: RO:0000053 OMRSE:00000119 ! physician office function
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000112
+name: ambulatory surgery facility
+is_a: OMRSE:00000102 ! health care facility
+relationship: BFO:0000067 OAE:0000067
+relationship: RO:0000053 OMRSE:00000116 ! ambulatory surgery function
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000113
+name: urgent care facility
+is_a: OMRSE:00000102 ! health care facility
+relationship: RO:0000053 OMRSE:00000115 ! urgent care function
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000114
+name: emergency department facility
+def: "A health care facility that bears a function to provide emergency healthcare services and the acute care of patients who present without prior appointment, having arrived either by their own means or by ambulance" []
+is_a: OMRSE:00000102 ! health care facility
+relationship: BFO:0000067 OMRSE:00000160 ! acute care encounter
+relationship: RO:0000053 OMRSE:00000118 ! emergency department function
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000117 "Emma Norris" xsd:string
+property_value: IAO:0000117 "William Hogan" xsd:string
+property_value: IAO:0000119 "Adapted from Human Behaviour Change Project" xsd:string
+
+[Term]
+id: OMRSE:00000115
+name: urgent care function
+is_a: BFO:0000034
+
+[Term]
+id: OMRSE:00000116
+name: ambulatory surgery function
+is_a: BFO:0000034
+relationship: BFO:0000054 OAE:0000067
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000117
+name: hospice function
+is_a: OMRSE:00000169 ! palliative function
+
+[Term]
+id: OMRSE:00000118
+name: emergency department function
+is_a: BFO:0000034
+
+[Term]
+id: OMRSE:00000119
+name: physician office function
+is_a: BFO:0000034
+
+[Term]
+id: OMRSE:00000120
+name: outpatient clinic function
+is_a: BFO:0000034
+
+[Term]
+id: OMRSE:00000121
+name: overnight dialysis function
+is_a: BFO:0000034
+relationship: BFO:0000054 OBI:0600052
+
+[Term]
+id: OMRSE:00000122
+name: rehabilitation function
+is_a: BFO:0000034
+
+[Term]
+id: OMRSE:00000123
+name: skilled nursing function
+is_a: BFO:0000034
+
+[Term]
+id: OMRSE:00000124
+name: residential function
+is_a: BFO:0000034
+
+[Term]
+id: OMRSE:00000125
+name: nursing home function
+is_a: BFO:0000034
+
+[Term]
+id: OMRSE:00000126
+name: patient discharge
+def: "A deontic document act that concludes an inpatient encounter." []
+is_a: IAO:0021001
+relationship: RO:0002229 OGMS:0000100
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000118 "discharge process" xsd:string
+
+[Term]
+id: OMRSE:00000127
+name: obsolete hispanic or latino identity datum
+def: "An OMB ethnic identity datum that indicates the person identified is of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race." []
+is_a: OMRSE:00000083 ! obsolete OMB ethnic identity datum
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+is_obsolete: true
+replaced_by: OMB Hispanic or Latino identity information content entity
+
+[Term]
+id: OMRSE:00000128
+name: obsolete not hispanic or latino identity datum
+def: "An OMB ethnic identity datum that indicates the person identified is not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race." []
+is_a: OMRSE:00000083 ! obsolete OMB ethnic identity datum
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+is_obsolete: true
+replaced_by: OMB not Hispanic or Latino identity information content entity
+
+[Term]
+id: OMRSE:00000129
+name: US physician assistant role
+def: "A human health care provider role that inheres in a human being that is created by state licensing and that is realized by taking patient histories, performing physical exams, diagnosing illnesses, developing treatment plans, ordering lab tests, prescribing medications, counselling and educating patients, suturing wounds, and assisting in surgery under the supervision of a physician or a surgeon." []
+is_a: OMRSE:00000012 ! health care provider role
+relationship: RO:0000052 NCBITaxon:9606
+
+[Term]
+id: OMRSE:00000130
+name: anesthesiologist role
+def: "A physician role that inheres a human being and, if it is realized, is realized either by administering medication for the temporary general or local suppression of sensory or motor nerve function during some health care encounter or by making decisions independently of a supervising physician regarding the adminstration of such medication." []
+is_a: OMRSE:00000013 ! physician role
+
+[Term]
+id: OMRSE:00000131
+name: OMB racial identification process
+is_a: OMRSE:00000099 ! racial identification process
+relationship: OBI:0000299 OMRSE:00000185 ! obsolete OMB racial identity datum
+
+[Term]
+id: OMRSE:00000132
+name: obsolete identity datum
+def: "An identity datum is an information content entity that is the output of some identitification process and is intended to be a truthful statement about a person's social identity.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
+is_a: OMRSE:00000179 ! answer to identity question
+property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+is_obsolete: true
+replaced_by: social identity information content entity
+
+[Term]
+id: OMRSE:00000133
+name: obsolete gender identity datum
+def: "A gender identity is an information content entity that is the output of some gender identitification process and is intended to be a truthful statement about a person's subjective sense of their gender.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
+property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+is_obsolete: true
+replaced_by: gender identity information content entity
+
+[Term]
+id: OMRSE:00000134
+name: identification process
+is_a: IAO:0021003
+property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000135
+name: gender identification process
+
+[Term]
+id: OMRSE:00000138
+name: obsolete female gender identity datum
+def: "a gender identity datum resulting from a gender identification process in which ‘female’ is selected based on the participant's subjective sense of gender" []
+is_a: OMRSE:00000133 ! obsolete gender identity datum
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+is_obsolete: true
+replaced_by: female gender identity information content entity
+
+[Term]
+id: OMRSE:00000139
+name: surgeon role
+is_a: OMRSE:00000013 ! physician role
+relationship: BFO:0000054 OAE:0000067
+
+[Term]
+id: OMRSE:00000140
+name: neurosurgeon role
+def: "A surgeon role realized by its bearer using performing neurosurgery." []
+is_a: OMRSE:00000139 ! surgeon role
+
+[Term]
+id: OMRSE:00000141
+name: obsolete male gender identity datum
+def: "a gender identity datum resulting from a gender identification process in which ‘male’ is selected based on the participant's subjective sense of gender" []
+is_a: OMRSE:00000133 ! obsolete gender identity datum
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: IAO:0000119 "" xsd:string
+is_obsolete: true
+replaced_by: male gender identity information content entity
+
+[Term]
+id: OMRSE:00000142
+name: human traveling information
+def: "An information content entity that is about human travel." []
+intersection_of: IAO:0000030
+intersection_of: IAO:0000136 APOLLO_SV:00000532
+property_value: http://purl.org/dc/elements/1.1/contributor "Jie Zheng" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+property_value: IAO:0000119 https://github.com/ufbmi/OMRSE/issues/79 xsd:anyURI
+
+[Term]
+id: OMRSE:00000143
+name: household identifier
+intersection_of: IAO:0000028
+intersection_of: IAO:0000219 OMRSE:00000076 ! household
+property_value: http://purl.org/dc/elements/1.1/contributor "A symbol that denotes a specific household" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Jie Zheng" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000144
+name: family identifier
+def: "A symbol that denotes a family." []
+intersection_of: IAO:0000028
+intersection_of: IAO:0000219 PCO:0000020
+property_value: http://purl.org/dc/elements/1.1/contributor "Jie Zheng" xsd:string
+property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000145
+name: obsolete self-identity data item
+def: "an identity datum that has been asserted by the person whom it is about" []
+is_a: OMRSE:00000132 ! obsolete identity datum
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000146
+name: employment process
+def: "A planned process in which the bearer of an employer role provides wages or salary to the bearer of an employee roll in fullfillment of the arrangements specified in some declaration" []
+is_a: OBI:0000011
+relationship: BFO:0000055 OMRSE:00000077 ! employee role
+relationship: BFO:0000055 OMRSE:00000087 ! employer role
+
+[Term]
+id: OMRSE:00000147
+name: pediatric surgeon role
+def: "A surgeon role borne by a human being and that, if realized, is realized by its bearer using operative manual and instrumental techniques on preadult patients to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas." []
+is_a: OMRSE:00000139 ! surgeon role
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000148
+name: adult foster home facility
+def: "a facility that is run by an adult foster home organization and is the bearer of an adult foster home organization" []
+is_a: OMRSE:00000150 ! community living health care facility
+relationship: BFO:0000067 OMRSE:00000153 ! assistive care encounter
+relationship: RO:0000053 OMRSE:00000149 ! adult foster home function
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000149
+name: adult foster home function
+is_a: BFO:0000034
+
+[Term]
+id: OMRSE:00000150
+name: community living health care facility
+def: "a health care facility that also bears a residence function and thus one in which the patients are also residents of the facility" []
+is_a: OMRSE:00000102 ! health care facility
+relationship: BFO:0000067 OMRSE:00000154 ! assistance with activities of daily living care encounter
+relationship: BFO:0000067 OMRSE:00000155 ! assistance with instrumental activities of daily living encounter
+relationship: RO:0000053 OMRSE:00000075 ! residence function
+
+[Term]
+id: OMRSE:00000151
+name: registered nurse role
+is_a: OMRSE:00000014 ! nurse role
+
+[Term]
+id: OMRSE:00000152
+name: skilled nursing encounter
+is_a: OGMS:0000097
+relationship: BFO:0000055 OMRSE:00000151 ! registered nurse role
+
+[Term]
+id: OMRSE:00000153
+name: assistive care encounter
+def: "They include assistance with activities of daily living, assistance with instrumental activities of daily living, medication assistance, and health support\n\nhttp://ahca.myflorida.com/Medicaid/acs/index.shtml" []
+is_a: OBI:0000011
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000154
+name: assistance with activities of daily living care encounter
+is_a: OMRSE:00000153 ! assistive care encounter
+
+[Term]
+id: OMRSE:00000155
+name: assistance with instrumental activities of daily living encounter
+is_a: OMRSE:00000153 ! assistive care encounter
+
+[Term]
+id: OMRSE:00000156
+name: medication assistance care encounter
+is_a: OMRSE:00000153 ! assistive care encounter
+
+[Term]
+id: OMRSE:00000157
+name: assisted living facility
+def: "A facility that is run by an assisted living facility organization and is the bearer of an assisted living facility function." []
+is_a: OMRSE:00000150 ! community living health care facility
+
+[Term]
+id: OMRSE:00000158
+name: assisted living function
+is_a: BFO:0000034
+
+[Term]
+id: OMRSE:00000159
+name: post-acute health care encounter
+def: "temporally located after some acute care encounter\nSomehow involves skilled nursing encounters" []
+is_a: OGMS:0000097
+disjoint_from: OMRSE:00000160 ! acute care encounter
+relationship: BFO:0000066 OMRSE:00000150 ! community living health care facility
+
+[Term]
+id: OMRSE:00000160
+name: acute care encounter
+is_a: OGMS:0000097
+
+[Term]
+id: OMRSE:00000161
+name: leaving a health care facility after receiving care
+is_a: BFO:0000015
+
+[Term]
+id: OMRSE:00000162
+name: obsolete medical advice
+is_a: IAO:0021003
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000163
+name: response to a question asking process
+comment: Note that not all responses to a question asking process are answers. For example, a refusal to answer is not an answer. A refusal to answer is also not a specified output of the question asking process since it does not acheive the objective of asking the question, which is to get an answer.
+is_a: IAO:0000030
+relationship: RO:0000056 OMRSE:00000168 ! questions asking process
+
+[Term]
+id: OMRSE:00000164
+name: home health care organization
+is_a: OBI:0000245
+relationship: RO:0000053 BFO:0000034
+
+[Term]
+id: OMRSE:00000165
+name: home health care function
+is_a: OMRSE:00000172 ! health care function
+relationship: BFO:0000054 OMRSE:00000154 ! assistance with activities of daily living care encounter
+relationship: BFO:0000054 OMRSE:00000155 ! assistance with instrumental activities of daily living encounter
+relationship: BFO:0000054 OMRSE:00000166 ! home health care encounter
+
+[Term]
+id: OMRSE:00000166
+name: home health care encounter
+is_a: OGMS:0000097
+relationship: BFO:0000066 OMRSE:00000074 ! housing unit
+
+[Term]
+id: OMRSE:00000168
+name: questions asking process
+relationship: RO:0000057 NCBITaxon:9606
+relationship: RO:0000057 OMRSE:00000173 ! material information bearer of question text plus answer set
+is_obsolete: true
+replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000198
+
+[Term]
+id: OMRSE:00000169
+name: palliative function
+is_a: OMRSE:00000172 ! health care function
+relationship: BFO:0000054 OMRSE:00000154 ! assistance with activities of daily living care encounter
+relationship: BFO:0000054 OMRSE:00000155 ! assistance with instrumental activities of daily living encounter
+relationship: BFO:0000054 OMRSE:00000170 ! palliative care encounter
+
+[Term]
+id: OMRSE:00000170
+name: palliative care encounter
+is_a: OGMS:0000097
+
+[Term]
+id: OMRSE:00000171
+name: hospice organization
+is_a: OBI:0000245
+relationship: RO:0000053 OMRSE:00000117 ! hospice function
+
+[Term]
+id: OMRSE:00000172
+name: health care function
+is_a: BFO:0000034
+intersection_of: BFO:0000034
+intersection_of: BFO:0000054 OGMS:0000097
+
+[Term]
+id: OMRSE:00000173
+name: material information bearer of question text plus answer set
+is_a: BFO:0000040
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000174
+name: refusal to answer datum
+is_a: OMRSE:00000163 ! response to a question asking process
+
+[Term]
+id: OMRSE:00000175
+name: response to an identity question asking process
+is_a: OMRSE:00000163 ! response to a question asking process
+
+[Term]
+id: OMRSE:00000176
+name: identity question asking process
+is_a: OMRSE:00000168 ! questions asking process
+is_obsolete: true
+
+[Term]
+id: OMRSE:00000177
+name: ethnic identity question asking process
+is_a: OMRSE:00000176 ! identity question asking process
+is_obsolete: true
+replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000199
+
+[Term]
+id: OMRSE:00000178
+name: race identity question asking process
+is_a: OMRSE:00000176 ! identity question asking process
+is_obsolete: true
+replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000200
+
+[Term]
+id: OMRSE:00000179
+name: answer to identity question
+is_a: OMRSE:00000175 ! response to an identity question asking process
+
+[Term]
+id: OMRSE:00000180
+name: obsolete American Indian or Alaska Native identity datum
+def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment." []
+is_a: OMRSE:00000185 ! obsolete OMB racial identity datum
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+is_obsolete: true
+replaced_by: OMB American Indian or Alaska Native identity information content entity
+
+[Term]
+id: OMRSE:00000181
+name: obsolete Asian identity datum
+def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent." []
+is_a: OMRSE:00000185 ! obsolete OMB racial identity datum
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+is_obsolete: true
+replaced_by: OMB Asian identity information content entity
+
+[Term]
+id: OMRSE:00000182
+name: obsolete black or African American identity datum
+def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the black racial groups of Africa." []
+is_a: OMRSE:00000185 ! obsolete OMB racial identity datum
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+is_obsolete: true
+replaced_by: OMB black or African American identity information content entity
+
+[Term]
+id: OMRSE:00000183
+name: obsolete Native Hawaiian or other Pacific Islander identity datum
+def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands." []
+is_a: OMRSE:00000185 ! obsolete OMB racial identity datum
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+is_obsolete: true
+replaced_by: OMB Native Hawaiian or other Pacific Islander identity information content entity
+
+[Term]
+id: OMRSE:00000184
+name: obsolete white identity datum
+def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Europe, the Middle East, or North Africa." []
+is_a: OMRSE:00000185 ! obsolete OMB racial identity datum
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+is_obsolete: true
+replaced_by: OMB white identity information content entity
+
+[Term]
+id: OMRSE:00000185
+name: obsolete OMB racial identity datum
+def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms." []
+is_a: OMRSE:00000098 ! obsolete racial identity datum
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+is_obsolete: true
+replaced_by: OMB racial identity information content entity
+
+[Term]
+id: OMRSE:00000186
+name: heavy smoker role
+def: "A role that inheres in an organism and is realized by habitually smoking 10 or more tobacco cigerettes a day or the equivalent in other tobacco products." []
+is_a: OMRSE:00000039 ! smoker role
+
+[Term]
+id: OMRSE:00000187
+name: light smoker role
+def: "A role that inheres in an organism and is realized by habitually smoking 1>10 tobacco cigerettes a day or the equivalent in other tobacco products." []
+is_a: OMRSE:00000039 ! smoker role
+
+[Term]
+id: OMRSE:00000188
+name: answer set
+is_a: IAO:0000030
+
+[Term]
+id: OMRSE:00000189
+name: question text
+is_a: IAO:0000030
+
+[Term]
+id: OMRSE:00000190
+name: option as member of some answer set
+is_a: IAO:0000030
+relationship: RO:0002350 OMRSE:00000188 ! answer set
+
+[Term]
+id: OMRSE:00000191
+name: residential facility
+def: "A facility that has at least one housing unit as part in which a person or persons live" []
+is_a: OMRSE:00000062 ! facility
+property_value: IAO:0000111 "residential facility" xsd:string
+property_value: IAO:0000117 "Emma Norris" xsd:string
+property_value: IAO:0000117 "William Hogan" xsd:string
+property_value: IAO:0000119 "Modified version of definition provided by Human Behaviour Change Project" xsd:string
+
+[Term]
+id: OMRSE:00000192
+name: communication
+def: "A process in which some participant shares some information content entity about some state of that participant with some other participant." []
+comment: The term 'participant' in the definition need not refer to a human agent.
+is_a: BFO:0000015
+relationship: RO:0000057 BFO:0000040
+relationship: RO:0000057 IAO:0000030
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000193
+name: linguistic competence
+def: "A disposition inhering in a material entity that, if realized, is realized by that material entity’s communicating via some linguistic concretization." []
+is_a: BFO:0000016
+relationship: BFO:0000054 OMRSE:00000192 ! communication
+relationship: RO:0000052 BFO:0000040
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000194
+name: language
+def: "A disposition inhering in a linguistic community that (i) is a maximal aggregate of communicatively compatible linguistic competences, and (ii) if realized, is realized by any and all realizations of those linguistic competences." []
+is_a: BFO:0000016
+relationship: BFO:0000054 OMRSE:00000192 ! communication
+relationship: RO:0002351 OMRSE:00000193 ! linguistic competence
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00000195
+name: linguistic community
+def: "A maximal aggregate of material entities such that each member bears a linguistic competence for the same language." []
+is_a: BFO:0000040
+relationship: RO:0000053 OMRSE:00000194 ! language
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000196
+name: expression of preferred language
+def: "A communication in which some participant states a preference for some communicative process to be in a certain language, and that has a concretization of a preferred language information content entity as its specified output." []
+is_a: OMRSE:00000192 ! communication
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000197
+name: preferred language information content entity
+def: "An information content entity that (i) is about some person, some language, and some linguistic competence; and (ii) conveys the language with which that person prefers to communicate within some given context." []
+is_a: IAO:0000030
+relationship: IAO:0000136 OMRSE:00000193 ! linguistic competence
+relationship: IAO:0000136 OMRSE:00000194 ! language
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000198
+name: information content entity-request process
+def: "a communication in which some participant requests of some other participant an information content entity about some portion of reality" []
+comment: As with the parent class, 'participant' in the definition need not refer to a human agent.
+comment: The medium and grammatical form are irrelevant. For example, the request may be written or spoken, and while it may be in the form of a question, it need not be.
+is_a: OMRSE:00000192 ! communication
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000199
+name: information content entity request about ethnic identity
+def: "an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the ethnic identity of that other participant" []
+is_a: OMRSE:00000198 ! information content entity-request process
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000200
+name: information content entity request about racial identity
+def: "an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the racial identity of that other participant" []
+is_a: OMRSE:00000198 ! information content entity-request process
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000201
+name: admission process
+def: "A deontic document act in which a patient is registered with a health care provider for the purpose of receiving care in an inpatient encounter." []
+is_a: IAO:0021001
+property_value: IAO:0000117 "Amanda Hicks" xsd:string
+
+[Term]
+id: OMRSE:00000202
+name: cancer summary staging
+def: "A planned process of determining the extent to which a cancer disease has developed by growing and spreading throughout an organism." []
+is_a: OBI:0000011
+property_value: IAO:0000111 "cancer summary staging" xsd:string
+property_value: IAO:0000112 "The cancer summary staging performed on patient John Doe's clinical picture." xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000118 "tumor summary staging" xsd:string
+
+[Term]
+id: OMRSE:00000203
+name: cancer summary staging code
+def: "An information content entity that is the specified output of cancer summary staging." []
+is_a: IAO:0000030
+property_value: IAO:0000111 "cancer summary staging code" xsd:string
+property_value: IAO:0000112 "The cancer summary staging code that is the outcome of the cancer summary staging performed on patient John Doe's clinical picture." xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000118 "tumor summary staging code" xsd:string
+
+[Term]
+id: OMRSE:00000204
+name: social identity information content entity
+def: "An information content entity that is intended to be a truthful statement about some person and whether that person identifies as some particular aspect of social identity—such as a gender, an ethnicity, a race, or a sexual orientation—where the sense of identifying may correspond to either (i) an aspect of one’s cognitive representation of oneself, (ii) how one prefers to be regarded by others within some social context, or (iii) how one chooses to present oneself to others within some social context." []
+comment: We include (i)-(iii) to acknowledge that there are different senses of "identify" that are relevant here, and that we may not always be sure which sense the person concretizing the social identity information content entity intended. While (i) concerns how one thinks of oneself, (ii) and (iii) are more focused on one's interactions with others. Importantly, some choose not to share with others how they identify in the sense of (i). For example, one can consider oneself to be some certain gender without either wanting others to know or choosing to present oneself in a corresponding way. We distinguish (ii) and (iii) because one can prefer to be regarded some certain way without attempting to present oneself in any corresponding way.
+is_a: IAO:0000030
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000205
+name: ethnic identity information content entity
+def: "A social identity information content entity that is about whether some person identifies as some ethnicity." []
+comment: Ethnicity is separate from but related to racial identity. It refers more to identifying with a particular culture than with individuals similar in physical appearance. It includes things like Hispanic ethnicity (which spans many nations) and national cultural identities like Irish and ethnic groups within nations such as Catalan and Armenian.
+is_a: OMRSE:00000204 ! social identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000206
+name: OMB ethnic identity information content entity
+def: "An ethnic identity information content entity that uses OMB terminology for ethnicity or terminology that is strictly mapped onto the OMB ethnicity terms." []
+comment: OMB dichotomizes ethnicity into Hispanic or Latino and Not Hispanic or Latino, and ignores all other forms of ethnicity.
+is_a: OMRSE:00000205 ! ethnic identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000207
+name: OMB Hispanic or Latino identity information content entity
+def: "An OMB ethnic identity information content entity that is about some person's identifying as Hispanic or Latino, which are intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race." []
+comment: It comprehends people of Portuguese culture or origin in Brazil.
+is_a: OMRSE:00000206 ! OMB ethnic identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000208
+name: OMB not Hispanic or Latino identity information content entity
+def: "An OMB ethnic identity information content entity that is about some person's identifying as neither Hispanic nor Latino, which are intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race." []
+is_a: OMRSE:00000206 ! OMB ethnic identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000209
+name: gender identity information content entity
+def: "A social identity information content entity that is about whether some person identifies as some gender." []
+is_a: OMRSE:00000204 ! social identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000210
+name: female gender identity information content entity
+def: "A gender identity information content entity that is about some person's identifying as female in gender." []
+is_a: OMRSE:00000209 ! gender identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000211
+name: male gender identity information content entity
+def: "A gender identity information content entity that is about some person's identifying as male in gender." []
+is_a: OMRSE:00000209 ! gender identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000212
+name: non-binary identity information content entity
+def: "A gender identity information content entity that is about some person's identifying as non-binary in gender." []
+is_a: OMRSE:00000209 ! gender identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000213
+name: racial identity information content entity
+def: "A social identity information content entity that is about whether some person identifies as some race." []
+is_a: OMRSE:00000204 ! social identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000214
+name: OMB racial identity information content entity
+def: "A racial identity information content entity that uses OMB terminology and definitions for race or terminology that is strictly mapped onto the OMB race terms." []
+is_a: OMRSE:00000213 ! racial identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000215
+name: OMB American Indian or Alaska Native identity information content entity
+def: "An OMB racial identity information content entity that is about some person's identifying as American Indian or Alaska Native, which is intended to mean having origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment." []
+comment: This definition corresponds to that used by OMB. It is worth noting that the OMB definition from which this one is derived is problematic, in that it implies that one's race cannot be Native American or Alaskan Native unless one maintains tribal affiliations or community attachment.
+is_a: OMRSE:00000214 ! OMB racial identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000216
+name: OMB Asian identity information content entity
+def: "An OMB racial identity information content entity that is about some person's identifying as Asian, which is intended to mean having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent." []
+is_a: OMRSE:00000214 ! OMB racial identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000217
+name: OMB black or African American identity information content entity
+def: "An OMB racial identity information content entity that is about some person's identifying as black or African American which is intended to mean having origins in any of the black racial groups of Africa." []
+is_a: OMRSE:00000214 ! OMB racial identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000218
+name: OMB Native Hawaiian or other Pacific Islander identity information content entity
+def: "An OMB racial identity information content entity that is about some person's identifying as Native Hawaiian or other Pacific Islander, which is intended to mean having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands." []
+is_a: OMRSE:00000214 ! OMB racial identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000219
+name: OMB white identity information content entity
+def: "An OMB racial identity information content entity that is about some person's identifying as white which is intended to mean having origins in any of the original peoples of Europe, the Middle East, or North Africa." []
+is_a: OMRSE:00000214 ! OMB racial identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000220
+name: sexual orientation identity information content entity
+def: "A social identity information content entity that is about whether some person identifies as having some sexual orientation." []
+is_a: OMRSE:00000204 ! social identity information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00000221
+name: residence ZIP code information content entity
+def: "An information content entity that is about some geographical region, in which a postal delivery route denoted by a particular ZIP code is realized, and that is the specified output of a disclosure of residence." []
+is_a: IAO:0000030
+property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000223
+name: disclosure of residence
+def: "A social act that creates an information content entity that is about some geographical region in which a human being dwells." []
+is_a: IAO:0021003
+property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000224
+name: electronic health record data set
+def: "A data set whose members are obtained from one or more electronic health records." []
+is_a: IAO:0000100
+property_value: http://purl.org/dc/elements/1.1/contributor "Alan Ruttenberg" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brocchausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "EHR data set" xsd:string
+
+[Term]
+id: OMRSE:00000225
+name: health care claim data set
+def: "A data set whose members are the specified output of some process of adjudicating health care insurance claims (and whose inputs are at least partly some members of a health care billing data set)." []
+comment: It covers prescription claims because pharmacies bill insurance companies for patients’ prescriptions via submitting insurance claims.
+comment: The insurance claim is submitted to the insurance company by either the patient or the provider. It is not necessarily always the provider, although in the United States, it typically is.
+comment: The outcome of the adjudication of a claim in the claims dataset could be favorable or unfavorable for the healthcare provider, the patient, or both. The idea is just that they’ve been adjudicated, one way or the other (or anything in between if that’s a possibility).
+comment: The reason we say billing data are only part of the input is because we are not conflating the insurance claim with the bill. It is our understanding that the provider’s bill of services is either part of the claim or “attached” to it in some manner, but doesn’t constitute the entire claim itself.
+comment: The sources of these data are held by insurers or other health plan providers.
+is_a: IAO:0000100
+property_value: http://purl.org/dc/elements/1.1/contributor "Alan Ruttenberg" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brocchausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00000226
+name: health care billing data set
+def: "A data set whose members are obtained from billing-related data sources that (i) are generated by a health care organization as a result of internal administrative processes, and (ii) are about services rendered or materials used during some health care encounter." []
+is_a: IAO:0000100
+property_value: http://purl.org/dc/elements/1.1/contributor "Alan Ruttenberg" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000227
+name: health care administrative process
+def: "A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization." []
+is_a: OBI:0000011
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: IAO:0000112 "Recording data in an EHR. Financial tasks for a healthcare organization. Scheduling shifts for health care workers." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000228
+name: principal diagnosis-assignment process
+def: "A health care administrative process that has as input a diagnosis, and has as output a value indicating that diagnosis is about the condition that prompts the admission process that starts the encounter during which the diagnostic process that outputs that diagnosis begins." []
+is_a: OMRSE:00000227 ! health care administrative process
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000229
+name: secondary diagnosis-assignment process
+def: "A health care administrative process that has as input a diagnosis, and has as output a value indicating that diagnosis is about an underlying condition that is distinct from the condition that prompts the admission process that starts the encounter during which the diagnostic process that outputs that diagnosis begins." []
+is_a: OMRSE:00000227 ! health care administrative process
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00000230
+name: county smoking survey plan specification
+def: "A survey plan specification that aims to collect information about the smoking behavior or lack thereof of a population on a county level. Concretization of a smoking survey plan that is stratified by county." []
+is_a: OMIABIS:0001025
+property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Jiang Bian" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000112 "The Alachua county smoking survey plan specification." xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000231
+name: county smoking survey execution
+def: "A survey execution that realizes the concretization of a smoking survey plan specification that is stratified by county." []
+is_a: OMIABIS:0001035
+property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Jiang Bian" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000112 "The Alachua county smoking survey execution." xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000232
+name: county smoking survey data
+def: "Survey data that is the specified output of a county smoking survey execution." []
+is_a: OMIABIS:0000060
+property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Jiang Bian" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000112 "The Alachua county smoking survey data." xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000233
+name: smoking rate calculation
+def: "A data transformation that has data about the smoking status of a population as its specified input and a percentage or ratio of smokers in that population as a specified output." []
+is_a: OBI:0200000
+property_value: IAO:0000112 "Calculating the Alachua County smoking rate from Alachua County smoking data." xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000234
+name: county smoking rate data
+def: "A data item that is the specified output of a smoking rate calculation that has data about smoking behavior or lack there of on a county level." []
+is_a: IAO:0000027
+property_value: IAO:0000112 "The Alachua County smoking rate." xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00000500
+name: employment data item
+is_a: OMRSE:00000506 ! socio-economic data item
+
+[Term]
+id: OMRSE:00000501
+name: income data item
+is_a: OMRSE:00000506 ! socio-economic data item
+
+[Term]
+id: OMRSE:00000502
+name: government assistance health care plan data item
+is_a: OMRSE:00000506 ! socio-economic data item
+
+[Term]
+id: OMRSE:00000503
+name: health care plan data item
+is_a: OMRSE:00000506 ! socio-economic data item
+
+[Term]
+id: OMRSE:00000504
+name: government assistance income data item
+is_a: OMRSE:00000506 ! socio-economic data item
+
+[Term]
+id: OMRSE:00000505
+name: WIC data item
+is_a: OMRSE:00000506 ! socio-economic data item
+
+[Term]
+id: OMRSE:00000506
+name: socio-economic data item
+is_a: IAO:0000027
+
+[Term]
+id: OMRSE:00000507
+name: obsolete non-binary gender identity datum
+def: "A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant's subjective sense of gender." []
+comment: Alternatively: A gender identity datum stating that a person's subjective sense of gender is non-binary.)\n\nExamples of usage: ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)
+is_a: OMRSE:00000133 ! obsolete gender identity datum
+property_value: IAO:0000111 "non-binary gender identity datum" xsd:string
+property_value: IAO:0000117 "Paul Fabry" xsd:string
+property_value: IAO:0000117 "William Hogan" xsd:string
+is_obsolete: true
+replaced_by: non-binary gender identity information content entity
+
+[Term]
+id: OMRSE:00002029
+name: education process
+def: "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability." []
+comment: An interesting question is whether there must be another participant who is the "educator".  Some might object that many people are "self taught".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the top of a finger.  There was no previous information about that.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow "plays a role" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).
+is_a: OBI:0000011
+property_value: IAO:0000111 "educating" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000600 "An act of acquiring new information and repeatedly applying that information to develop a new skill." xsd:string
+
+[Term]
+id: OMRSE:00002030
+name: educational objective
+def: "An objective specification that describes the type of capability or capabilities to be imparted by its realization, which is an educating (education process)." []
+is_a: IAO:0000005
+property_value: IAO:0000111 "educational objective specification" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000600 "An objective specification that describes the new knowledge & skill(s) to be obtained via an education process." xsd:string
+
+[Term]
+id: OMRSE:00002031
+name: educational program
+def: "A plan specification with an educational objective specification as part." []
+comment: Very broad.  Covers everything from grade school to high school to college to graduate education, a MOOC, an individual course, a tutorial at a conference, a continuing education course or program, an informed consent video, etc, etc.
+is_a: IAO:0000104
+intersection_of: IAO:0000104
+intersection_of: BFO:0000051 OMRSE:00002030 ! educational objective
+property_value: IAO:0000111 "educational plan specification" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000600 "A plan specification with one or more educational objectives." xsd:string
+
+[Term]
+id: OMRSE:00002032
+name: completing a program of education
+def: "An educating that realizes a concretization of some program of education." []
+comment: Note that parent class 'educating' and referenced class 'program of education' are defined elsewhere in this education module of OMRSE.
+comment: This class refers extremely broadly to the successful realization of any program of education: a single course, first grade, MD, PhD, high school, the ninth grade, getting a black belt in karate, getting a master mechanic certification, a bachelor's degree, a masters degree, a graduate certificate, early childhood education program, and even getting a certificate at the end of some week-long workshop, summer camp, a certifcate from a cooking class, an actuarial certification.
+is_a: OMRSE:00002029 ! education process
+property_value: IAO:0000111 "completing a program of eduction" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00002033
+name: early childhood education plan specification
+def: "An educational program whose intended active participant, when a concretization of it is realized, is a human child of age birth to 8 years or a human fetus prior to birth." []
+is_a: OMRSE:00002031 ! educational program
+property_value: IAO:0000111 "early childhood education program" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000118 "pre-K education program" xsd:string
+property_value: IAO:0000118 "prekindergarten education program" xsd:string
+property_value: IAO:0000118 "preschool education program" xsd:string
+property_value: IAO:0000119 https://apps.who.int/iris/bitstream/handle/10665/69729/a91213.pdf?sequence xsd:string
+
+[Term]
+id: OMRSE:00002034
+name: primary education program
+def: "An education plan specification with one or more primary education objective specifications as parts, and these are the only objective specifications it has as parts." []
+comment: In the united states, also called "elementary education"
+comment: It can still have action specifications as parts, and possibly other ICEs as parts.  That's why we cannot say it has only primary education objectives as parts, and we have to introduce the double negative in the class axiom.
+comment: Primary education provides learning and educational activities typically designed to provide students with fundamental skills in reading, writing and mathematics (i.e. literacy and numeracy), and to establish a sound foundation for learning and solid understanding of core areas of knowledge and personal development, preparing for lower secondary education. It aims at learning at a basic level of complexity with little if any specialisation.
+is_a: OMRSE:00002031 ! educational program
+property_value: IAO:0000111 "primary education plan specification" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000118 "elementary education" xsd:string
+
+[Term]
+id: OMRSE:00002035
+name: primary education objective
+def: "An education objective specification that has a concretization that, when realized, results in the active participant's acquisition and development of fundamental skills in reading, writing and mathematics (i.e. literacy and numeracy)." []
+comment: By the end of primary education, the student has established a sound foundation for learning and solid understanding of core areas of knowledge and personal development, preparing for lower secondary education. It aims at learning at a basic level of complexity with little if any specialisation.
+is_a: OMRSE:00002030 ! educational objective
+property_value: IAO:0000111 "primary education objective specification" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000119 http://uis.unesco.org/en/glossary-term/primary-education-isced-1 xsd:string
+
+[Term]
+id: OMRSE:00002036
+name: lower secondary education objective
+def: "An education objective specification that has a concretization that, when realized, confers to the active participant skills and knowledge in subject areas more specialized than basic reading, writing, and mathematics, with the overall goal of laying the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities." []
+comment: Examples of specific subjects could--but are not necessarily required to--include biology, history, science, literature, music, art.  Programs at this level are usually organized around a more subject-oriented curriculum, introducing theoretical concepts across a broad range of subjects.
+comment: Programmes at ISCED level 2, or ‘lower secondary’ education, are typically designed to build upon the fundamental teaching and learning processes which begin at ISCED level 1. Usually, the educational aim is to lay the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities. Programmes at this level are usually organized around a more subject-oriented curriculum, introducing theoretical concepts across a broad range of subjects.
+is_a: OMRSE:00002030 ! educational objective
+property_value: IAO:0000111 "lower secondary education objective specification" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000119 http://uis.unesco.org/en/glossary-term/lower-secondary-education-isced-2 xsd:string
+
+[Term]
+id: OMRSE:00002037
+name: awarding an academic degree
+def: "A deontic document act that has as specified output an academic degree and that confers on recipient of the academic degree the recognition and the claims and obligations that accompany the degree." []
+comment: Different degrees have different claims and obligations associated with them.  For example, having a medical degree (either M.D. or D.O.) entitles a person to sit for stage 3 of the US Medical Licensing Exam (otherwise one may not take the exam).
+is_a: IAO:0021001
+intersection_of: IAO:0021001
+intersection_of: OBI:0000299 OOSTT:00000074
+property_value: IAO:0000111 "awarding of an academic degree" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00002038
+name: basic education program
+def: "An education plan specification that has as part both a primary educational objective specification and a lower secondary educational objective specification." []
+comment: Most nations in the world mandate that children complete at least a basic education program.  Some nations go further and include upper secondary education after basic education.
+comment: Whole range of educational activities, taking place in various settings, that aim to meet basic learning needs as defined in the World Declaration on Education for All (Jomtien, Thailand, 1990). According to ISCED standard, basic education comprises primary education (first stage of basic education) and lower secondary education (second stage). It also covers a wide variety of non-formal and informal public and private activities intended to meet the basic learning needs of people of all ages.
+is_a: OMRSE:00002031 ! educational program
+intersection_of: OMRSE:00002031 ! educational program
+intersection_of: BFO:0000051 OMRSE:00002035 ! primary education objective
+intersection_of: BFO:0000051 OMRSE:00002036 ! lower secondary education objective
+property_value: IAO:0000111 "basic education plan specification" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000119 http://uis.unesco.org/en/glossary-term/basic-education xsd:string
+
+[Term]
+id: OMRSE:00002039
+name: lower secondary education program
+def: "An education plan specification with one or more lower secondary education objective specifications as parts, and these are the only objective specifications it has as parts." []
+comment: It can still have action specifications as parts, and possibly other ICEs as parts.  That's why we cannot say it has only lower secondary education objectives as parts, and we have to introduce the double negative in the class axiom.
+comment: Programmes at ISCED level 2, or ‘lower secondary’ education, are typically designed to build upon the fundamental teaching and learning processes which begin at ISCED level 1. Usually, the educational aim is to lay the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities. Programmes at this level are usually organized around a more subject-oriented curriculum, introducing theoretical concepts across a broad range of subjects.
+comment: Requires successful completion of a primary education program as a pre-requisite.
+is_a: OMRSE:00002031 ! educational program
+property_value: IAO:0000111 "lower secondary education plan specification" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00002040
+name: upper secondary education objective
+def: "An educational objective specification that has a concretization that, when realized, confers on the active participant skills and knowledge that prepare them for tertiary education, or employment, or both." []
+comment: Programmes at ISCED level 3, or ‘upper secondary’ education, are typically designed to complete secondary education in preparation for tertiary education, or to provide skills relevant to employment, or both. Programmes at this level offer students more varied, specialised and in-depth instruction than programmes at lower secondary education (ISCED level 2). They are more differentiated, with an increased range of options and streams available.
+is_a: OMRSE:00002030 ! educational objective
+property_value: IAO:0000111 "upper secondary education objective specification" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000119 http://uis.unesco.org/en/glossary-term/upper-secondary-education-isced-3 xsd:string
+
+[Term]
+id: OMRSE:00002041
+name: upper secondary education program
+def: "An education plan specification with one or more upper secondary education objective specifications as parts, and these are the only objective specifications it has as parts." []
+comment: It can still have action specifications as parts, and possibly other ICEs as parts.  That's why we cannot say it has only lower secondary education objectives as parts, and we have to introduce the double negative in the class axiom.
+comment: Programmes at ISCED level 3, or ‘upper secondary’ education, are typically designed to complete secondary education in preparation for tertiary education, or to provide skills relevant to employment, or both. Programmes at this level offer students more varied, specialised and in-depth instruction than programmes at lower secondary education (ISCED level 2). They are more differentiated, with an increased range of options and streams available.
+comment: Requires successful completion of a lower secondary education program as a pre-requisite.
+is_a: OMRSE:00002031 ! educational program
+property_value: IAO:0000111 "upper secondary education plan specification" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00002042
+name: higher education program
+comment: Includes college, university, community college, professional schools (MD, RN, PharmD, PT, OT, DDS, dental hygienist, etc.), and so on.
+comment: Refers to all higher education beyond secondary education, and thus encompasses ISCED levels 5 and above, which will eventually be subclasses of this one.
+comment: Requires successful completion of a secondary education program as a pre-requisite.
+is_a: OMRSE:00002031 ! educational program
+property_value: IAO:0000111 "higher education plan specification" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000118 "post-secondary education plan specification" xsd:string
+property_value: IAO:0000118 "post-secondary education program" xsd:string
+
+[Term]
+id: OMRSE:00002043
+name: higher education objective
+def: "An educational objective specification that has a concretization that, when realized, confers on the active participant skills and knowledge in a specialized discipline, and culminates in the awarding of an academic degree." []
+comment: Refers to all education beyond secondary education that leads to the awarding of an academic degree.
+is_a: OMRSE:00002030 ! educational objective
+property_value: IAO:0000111 "higher education objective specification" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000118 "post-secondary education objective" xsd:string
+
+[Term]
+id: OMRSE:00002044
+name: vocational education objective
+def: "An educational objective specification that has a concretization that, when realized, is realized by a process that confers on the active participant knowledge and skills required to realize a particular type of employee role for a given occupation or trade." []
+comment: Usually the skills are a major focus moreso than in other types of education.  For example, auto mechanics, plumbers, and electricians.
+is_a: OMRSE:00002030 ! educational objective
+property_value: IAO:0000111 "vocational education objective specification" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000119 http://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-isced-2011-en.pdf xsd:string
+
+[Term]
+id: OMRSE:00002045
+name: highest level of education data item
+def: "A socio-economic data item that is about a person and their completion of an education program (and its type), where that education progam is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it." []
+comment: This data item in a typical attribute-value system such as table, XML, JSON takes values like "secondary education", "Associate Degree", "Bachelor Degree", "High School", and so on.
+is_a: OMRSE:00000506 ! socio-economic data item
+property_value: IAO:0000111 "highest level of education socio-economic data item" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00002046
+def: "An educational plan specification that has a vocational objective specification as part." []
+comment: vocational education program
+comment: Vocational education programs are designed for learners to acquire the knowledge, skills and competencies specific to a particular occupation, trade, or class of occupations or trades. Such programs may have work-based components (e.g. apprenticeships, dual-system education programmes). Successful completion of such programs leads to labor market-relevant, vocational qualifications acknowledged as occupationally-oriented by the relevant national authorities and/or the labor market.
+is_a: OMRSE:00002031 ! educational program
+intersection_of: OMRSE:00002031 ! educational program
+intersection_of: BFO:0000051 OMRSE:00002044 ! vocational education objective
+property_value: IAO:0000111 "vocational education plan specification" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000119 http://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-isced-2011-en.pdf xsd:string
+
+[Term]
+id: OMRSE:00002047
+def: "A primary education plan specification that specifies the competencies and information content entities that should be acquired by students in the first year of primary education in the United States." []
+is_a: OMRSE:00002034 ! primary education program
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
+property_value: http://purl.org/dc/elements/1.1/date 2020-09-02T12:38:43Z xsd:dateTime
+property_value: IAO:0000111 "kindergarten education plan specification" xsd:string
+property_value: IAO:0000117 "kindergarten education program" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00002048
+name: undergraduate higher education program
+def: "A higher education plan specification that specifies the awarding of an associates or bachelors degree in the United States or equivalent degrees in other nations, and specifies as a pre-requisite the completion of some secondary education program." []
+is_a: OMRSE:00002042 ! higher education program
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
+property_value: http://purl.org/dc/elements/1.1/date 2020-09-02T12:52:46Z xsd:dateTime
+property_value: IAO:0000111 "undergraduate higher education plan specification" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000118 "undergraduate education program" xsd:string
+
+[Term]
+id: OMRSE:00002049
+name: graduate higher education program
+def: "A higher education plan specification that specifies the awarding of a graduate certificate or degree, and specifies as a pre-requisite the awarding of an undergraduate degree." []
+comment: Graduate degrees include masters, PhD, MD, PharmD, and other post-graduate professional degrees.  To distinguish MS/PhD from the professional ones, subclass this class.
+comment: The prerequisite degree is at the bachelors level or equivalent.  An associates degree is almost never sufficient for entry into graduate education programs.
+is_a: OMRSE:00002042 ! higher education program
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
+property_value: http://purl.org/dc/elements/1.1/date 2020-09-02T13:01:34Z xsd:dateTime
+property_value: IAO:0000111 "graduate higher education plan specification" xsd:string
+property_value: IAO:0000118 "graduate education program" xsd:string
+
+[Term]
+id: OMRSE:00002050
+name: highest level of education is grades 1 through 6 data item
+def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of first through sixth grade." []
+comment: Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates completion of some to all of primary education in the United States.
+is_a: OMRSE:00002045 ! highest level of education data item
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
+property_value: http://purl.org/dc/elements/1.1/date 2020-09-02T13:23:46Z xsd:dateTime
+property_value: IAO:0000111 "highest level of education is completion of grades one through six socio-economic data item" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00002051
+name: highest level of education is grades 7 through 9 data item
+def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of seventh (7th) through ninth (9th) grade." []
+comment: Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates completion of some to all of lower secondary education in the United States.
+is_a: OMRSE:00002045 ! highest level of education data item
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
+property_value: http://purl.org/dc/elements/1.1/date 2020-09-02T13:27:15Z xsd:dateTime
+property_value: IAO:0000111 "highest level of education is completion of grades seven through nine socio-economic data item" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00002052
+name: highest level of education is grades 10 through 12 data item
+def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of tenth (10th) through twelfth (12th) grade." []
+comment: Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates completion of some to all of upper secondary education in the United States.
+is_a: OMRSE:00002045 ! highest level of education data item
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
+property_value: http://purl.org/dc/elements/1.1/date 2020-09-02T13:27:50Z xsd:dateTime
+property_value: IAO:0000111 "highest level of education is completion of grades ten through twelve socio-economic data item" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00002053
+name: highest level of education is completion of undergraduate degree data item
+def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some undergraduate degree." []
+comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
+is_a: OMRSE:00002045 ! highest level of education data item
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
+property_value: http://purl.org/dc/elements/1.1/date 2020-09-02T13:28:27Z xsd:dateTime
+property_value: IAO:0000111 "highest level of education is completion of some undergraduate degree socio-economic data item" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00002054
+name: highest level of education is completion of graduate certificate or degree data item
+def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some graduate certificate or degree." []
+comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
+is_a: OMRSE:00002045 ! highest level of education data item
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
+property_value: http://purl.org/dc/elements/1.1/date 2020-09-02T13:28:49Z xsd:dateTime
+property_value: IAO:0000111 "highest level of education is completion of some graduate degree socio-economic data item" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00002055
+name: highest level of education is completion of vocaational education program data item
+def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some vocational education program." []
+comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
+is_a: OMRSE:00002045 ! highest level of education data item
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
+property_value: http://purl.org/dc/elements/1.1/date 2020-09-02T13:29:28Z xsd:dateTime
+property_value: IAO:0000111 "highest level of education is completion of some vocational education program socio-economic data item" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00002056
+name: highest level of education is completion of kindergarten data item
+def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is pre-kindergarten." []
+comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates that a person has completed only early childhood education and nothing more.
+is_a: OMRSE:00002045 ! highest level of education data item
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
+property_value: http://purl.org/dc/elements/1.1/date 2020-09-02T13:47:38Z xsd:dateTime
+property_value: IAO:0000111 "highest level of education is completion of kindergarten socio-economic data item" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00002057
+name: highest level of education is completion of pre-kindergarten data item
+def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is kindergarten." []
+comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
+is_a: OMRSE:00002045 ! highest level of education data item
+property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
+property_value: http://purl.org/dc/elements/1.1/date 2020-09-02T13:48:10Z xsd:dateTime
+property_value: IAO:0000111 "highest level of education is completion of pre-kindergarten socio-economic data item" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: PCO:0000020
+is_a: OMRSE:00000022 ! aggregate of objectual organisms
+
+[Typedef]
+id: BFO:0000075
+equivalent_to: OMRSE:00000020 ! is-aggregate-of
+
+[Typedef]
+id: OMIABIS:0000009
+inverse_of: OMRSE:00000068 ! is administered by
+
+[Typedef]
+id: OMRSE:00000020
+name: is-aggregate-of
+comment: We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.\n
+property_value: IAO:0000231 "BFO relation takes precedence." xsd:string
+is_obsolete: true
+
+[Typedef]
+id: OMRSE:00000021
+name: is-component-of-aggregate
+comment: At the instance level, this relation is the named inverse of is-aggregate-of.\n\nAt the type level, however, not so.\n\nWe expect BFO 2.0 to have this relation as well, and we will obsolete this property and declare it equivalent to BFO's version when BFO 2.0 comes out.
+is_obsolete: true
+
+[Typedef]
+id: OMRSE:00000068
+name: is administered by
+is_asymmetric: true
+
+[Typedef]
+id: OMRSE:00000070
+name: is enrolled in school
+range: OMRSE:00000057 ! school organization
+is_asymmetric: true
+
+[Typedef]
+id: OMRSE:00000071
+name: is admitted to hospital
+range: OMRSE:00000056 ! hospital organization
+
+[Typedef]
+id: OMRSE:00000167
+name: provides service
+
