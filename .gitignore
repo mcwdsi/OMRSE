@@ -43,3 +43,5 @@ src/_patterns
 src/_sparql
 .cogs
 pull-request.md
+omrse/catalog-v001.xml
+omrse/language/catalog-v001.xml
