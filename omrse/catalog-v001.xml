@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1607724018363" name="http://purl.obolibrary.org/obo/omrse.owl/" uri="omrse.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1607724018363" name="http://purl.obolibrary.org/obo/omrse/dev/language.owl/" uri="language/omrse-language.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1607724018363" name="http://purl.obolibrary.org/obo/omrse/dev/omrse-core.owl" uri="omrse-core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1607724018363" name="http://purl.obolibrary.org/obo/omrse/language-individuals/" uri="language/language-individuals.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1607724018363" name="http://purl.obolibrary.org/obo/omrse/omrse-education.owl/" uri="education/omrse-education.owl"/>
+    </group>
+</catalog>

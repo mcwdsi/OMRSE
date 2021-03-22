@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2021-03-05/omrse-full.owl
+data-version: omrse/releases/2021-03-22/omrse-full.owl
 subsetdef: attribute_slim ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -17,7 +17,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:s
 property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
 property_value: owl:versionInfo "2020-10-27" xsd:string
-property_value: owl:versionInfo "2021-03-05" xsd:string
+property_value: owl:versionInfo "2021-03-22" xsd:string
 name: The Ontology of Medically Related Social Entities
 
 [Term]
