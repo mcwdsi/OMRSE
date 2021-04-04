@@ -42,6 +42,7 @@ src/scripts/pull_changes_from_master.sh
 src/_patterns
 src/_sparql
 .cogs
+site
 pull-request.md
 omrse/catalog-v001.xml
 omrse/language/catalog-v001.xml

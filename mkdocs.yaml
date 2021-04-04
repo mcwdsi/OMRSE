@@ -1,0 +1,22 @@
+site_name: The Ontology of Medically Related Social Entities
+theme: readthedocs
+nav:
+  - Basics:
+      - Overview: index.md
+      - Cite: cite.md
+      - History: history.md
+  - Editors Guide:
+      - Standard ODK workflows:
+          - Editors Workflow: odk-workflows/EditorsWorkflow.md
+          - Release Workflow: odk-workflows/ReleaseWorkflow.md
+          - Manage your ODK Repository: odk-workflows/RepoManagement.md
+          - Setting up Docker for ODK: odk-workflows/SettingUpDockerForODK.md
+          - Imports management: odk-workflows/UpdateImports.md
+      - Contributing: contributing.md
+#  - Components
+#  - Imports
+#    - Modules Overview: modules.md
+#  - Mappings:
+#  - Contributing:
+#    - Editors guide: editing-ro.md
+

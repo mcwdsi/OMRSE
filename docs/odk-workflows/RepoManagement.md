@@ -2,7 +2,7 @@
 
 ## Updating your ODK repository
 
-Your ODK repositories configuration is managed in `src/ontology/myont-odk.yaml` (where `myont` is the id of your ontology, say `go` or `obi`). Once you have made your changes, you can run the following to apply your changes to the repository:
+Your ODK repositories configuration is managed in `src/ontology/omrse-odk.yaml`. Once you have made your changes, you can run the following to apply your changes to the repository:
 
 
 ```
@@ -35,20 +35,20 @@ import_group:
 
 Note: our ODK file should only have one `import_group` which can contain multiple imports (in the `products` section). Next, you run the [update repo workflow](#Updating-your-ODK-repository) to apply these changes. Note that by default, this module is going to be a SLME Bottom module, see [here](http://robot.obolibrary.org/extract). To change that or customise your module, see section "Customise an import". To finalise the addition of your import, perform the following steps:
 
-1. Add an imports statement to your `src/ontology/myont-edit.owl` file. We suggest to do this using a text editor, by simply copying an existing imports declaration and renaming it to the new ontology import, for example as follows:
+1. Add an imports statement to your `src/ontology/omrse-edit.owl` file. We suggest to do this using a text editor, by simply copying an existing imports declaration and renaming it to the new ontology import, for example as follows:
 
 ```
 ...
-Ontology(<http://purl.obolibrary.org/obo/myont.owl>
-Import(<http://purl.obolibrary.org/obo/myont/imports/ro_import.owl>)
-Import(<http://purl.obolibrary.org/obo/myont/imports/go_import.owl>)
+Ontology(<http://purl.obolibrary.org/obo/omrse.owl>
+Import(<http://purl.obolibrary.org/obo/omrse/imports/ro_import.owl>)
+Import(<http://purl.obolibrary.org/obo/omrse/imports/go_import.owl>)
 ...
 ```
 
 2. Add your imports redirect to your catalog file `src/ontology/catalog-v001.xml`, for example:
 
 ```
-<uri name="http://purl.obolibrary.org/obo/myont/imports/go_import.owl" uri="imports/go_import.owl"/>
+<uri name="http://purl.obolibrary.org/obo/omrse/imports/go_import.owl" uri="imports/go_import.owl"/>
 ```
 
 3. Test whether everything is in order:
@@ -62,8 +62,8 @@ If you simply wish to refresh your import in light of new terms, see [here](Upda
 ### Remove an existing import
 
 To remove an existing import, perform the following steps:
-1. remove the import declaration from your `src/ontology/myont-edit.owl`.
-2. remove the id from your `src/ontology/myont-odk.yaml`, eg. `- id: go` from the list of `products` in the `import_group`.
+1. remove the import declaration from your `src/ontology/omrse-edit.owl`.
+2. remove the id from your `src/ontology/omrse-odk.yaml`, eg. `- id: go` from the list of `products` in the `import_group`.
 3. run [update repo workflow](#Updating-your-ODK-repository)
 4. delete the associated files manually:
    - `src/imports/go_import.owl`
@@ -74,7 +74,7 @@ To remove an existing import, perform the following steps:
 
 By default, an import module extracted from a source ontology will be a SLME module, see [here](http://robot.obolibrary.org/extract). There are various options to change the default.
 
-The following change to your repo config (`src/ontology/myont-odk.yaml`) will switch the go import from an SLME module to a simple ROBOT filter module:
+The following change to your repo config (`src/ontology/omrse-odk.yaml`) will switch the go import from an SLME module to a simple ROBOT filter module:
 
 ```
 import_group:
@@ -87,7 +87,7 @@ import_group:
 A ROBOT filter module is, essentially, importing all external terms declared by the your ontology (see [here](UpdateImports.md)] on how to declare external terms to be imported).
 
 
-If you wish to customise your import entirely, you can specify your own ROBOT command to do so. To do that, add the following to your repo config (`src/ontology/myont-odk.yaml`):
+If you wish to customise your import entirely, you can specify your own ROBOT command to do so. To do that, add the following to your repo config (`src/ontology/omrse-odk.yaml`):
 
 ```
 import_group:
@@ -97,7 +97,7 @@ import_group:
       module_type: custom
 ```
 
-Now add a new goal in your custom.Makefile (`src/ontology/myont.Makefile`, _not_ `src/ontology/Makefile`).
+Now add a new goal in your custom Makefile (`src/ontology/omrse.Makefile`, _not_ `src/ontology/Makefile`).
 
 ```
 imports/go_import.owl: mirror/ro.owl imports/ro_terms_combined.txt

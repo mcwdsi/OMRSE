@@ -25,7 +25,7 @@ This workflow is to be avoided, but may be appropriate if the editor _does not h
 1. Paste the _full iri_ in the 'Name:' field, for example, http://purl.obolibrary.org/obo/CHEBI_50906.
 1. Click 'OK'
 
-[[img/AddingClasses.png]]
+<img src="https://raw.githubusercontent.com/INCATools/ontology-development-kit/master/docs/img/AddingClasses.png" alt="Adding Classes" />
 
 Now you can use this term for example to construct logical definitions. The next time the imports are refreshed (see how to refresh [here](#Refresh-imports)), the metadata (labels, definitions, etc) for this term are imported from the respective external source ontology and becomes visible in your ontology.
 
@@ -47,7 +47,7 @@ This workflow is appropriate if:
 1. You prefer to manage all your imported terms in a single file (rather than multiple files like in the "Using term files" workflow above).
 2. You wish to augment your imported ontologies with additional information. This requires a cautionary discussion.
 
-To enable this workflow, you add the following to your ODK config file (`src/ontology/myont-odk.yaml`), and [update the repository](RepoManagement.md):
+To enable this workflow, you add the following to your ODK config file (`src/ontology/omrse-odk.yaml`), and [update the repository](RepoManagement.md):
 
 ```
 use_custom_import_module: TRUE

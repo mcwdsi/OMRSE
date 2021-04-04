@@ -51,8 +51,8 @@ OTHER_SRC =
 ONTOLOGYTERMS =             $(TMPDIR)/ontologyterms.txt
 
 FORMATS = $(sort  owl obo json owl)
-FORMATS_INCL_TSV = $(sort $(FORMAT) tsv)
-RELEASE_ARTEFACTS = $(sort  base full base full)
+FORMATS_INCL_TSV = $(sort $(FORMATS) tsv)
+RELEASE_ARTEFACTS = $(sort $(ONT)-base $(ONT)-full $(ONT)-base $(ONT)-full)
 
 # ----------------------------------------
 # Top-level targets
@@ -64,7 +64,7 @@ RELEASE_ARTEFACTS = $(sort  base full base full)
 all: odkversion all_imports all_main all_subsets sparql_test all_reports all_assets
 
 .PHONY: test
-test: odkversion sparql_test all_reports
+test: odkversion sparql_test all_reports 
 	$(ROBOT) reason --input $(SRC) --reasoner ELK  --equivalent-classes-allowed all --exclude-tautologies structural --output test.owl && rm test.owl && echo "Success"
 
 .PHONY: odkversion
@@ -79,7 +79,7 @@ $(TMPDIR) $(REPORTDIR) :
 ##
 ## By default this is the cross-product of {ont, ont-base} x FORMATS
 
-MAIN_PRODUCTS = $(sort $(foreach r,$(RELEASE_ARTEFACTS), $(ONT)-$(r)) $(ONT))
+MAIN_PRODUCTS = $(sort $(foreach r,$(RELEASE_ARTEFACTS), $(r)) $(ONT))
 MAIN_GZIPPED = 
 MAIN_FILES = $(foreach n,$(MAIN_PRODUCTS), $(foreach f,$(FORMATS), $(n).$(f))) $(MAIN_GZIPPED)
 
@@ -110,17 +110,28 @@ all_imports: $(IMPORT_FILES)
 SUBSETS = 
 
 SUBSET_ROOTS = $(patsubst %, subsets/%, $(SUBSETS))
-SUBSET_FILES = $(foreach n,$(SUBSET_ROOTS), $(foreach f,$(FORMATS_INCL_TSV), $(n).$(f)))
+SUBSET_FORMATS = $(sort tsv owl)
+SUBSET_FILES = $(foreach n,$(SUBSET_ROOTS), $(foreach f,$(SUBSET_FORMATS), $(n).$(f)))
 
 .PHONY: all_subsets
 all_subsets: $(SUBSET_FILES)
 
-OBO_REPORT =  $(SRC)-obo-report $(ONT).owl-obo-report
+OBO_REPORT =  $(SRC)-obo-report
 REPORTS = $(OBO_REPORT)
 REPORT_FILES = $(patsubst %, $(REPORTDIR)/%.tsv, $(REPORTS))
 
+.PHONY: robot_reports
+robot_reports: $(REPORT_FILES)
+
 .PHONY: all_reports
 all_reports: all_reports_onestep $(REPORT_FILES)
+
+$(REPORTDIR)/validate_profile_owl2dl_%.txt: % | $(REPORTDIR)
+	$(ROBOT) validate-profile --profile DL -i $< -o $@
+.PRECIOUS: $(REPORTDIR)/validate_profile_owl2dl_%.txt
+
+.PHONY: validate_profile_%
+validate_profile_%: $(REPORTDIR)/validate_profile_owl2dl_%.txt
 
 ## -- all files/assets --
 
@@ -421,8 +432,11 @@ mirror/d-acts.owl: mirror/d-acts.trigger
 # ----------------------------------------
 subsets/%.tsv: subsets/%.owl
 	$(ROBOT) query -f tsv -i $< -s ../sparql/labels.sparql $@
+.PRECIOUS: subsets/%.tsv
+
 subsets/%.owl: $(ONT).owl
 	owltools --use-catalog $< --extract-ontology-subset --fill-gaps --subset $* -o $@.tmp.owl && mv $@.tmp.owl $@
+.PRECIOUS: subsets/%.owl
 
 
 # ----------------------------------------
@@ -544,5 +558,9 @@ validate_idranges:
 .PHONY: update_repo
 update_repo:
 	sh $(SCRIPTSDIR)/update_repo.sh
+	
+
+update_docs:
+	mkdocs gh-deploy --config-file ../../mkdocs.yaml
 
 include omrse.Makefile
