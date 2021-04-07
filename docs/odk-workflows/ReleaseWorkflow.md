@@ -28,21 +28,24 @@ To actually run the release, you:
 This will create all the specified release targets (OBO, OWL, JSON, and the variants, ont-full and ont-base) and copy them into your release directory (the top level of your repo).
 
 ## Review the release
+
 1. (Optional) Rough check. This step is frequently skipped, but for the more paranoid among us (like the author of this doc), this is a 3 minute additional effort for some peace of mind. Open the main release (ont.owl) in you favourite development environment (i.e. Protege) and eyeball the hierarchy. We recommend two simple checks: 
-   1. Does the very top level of the hierarchy look ok? This means that all new terms have been imported/updated correctly.
-   2. Does at least one change that you know should be in this release appear? For example, a new class. This means that the release was actually based on the recent edit file. 
+    1. Does the very top level of the hierarchy look ok? This means that all new terms have been imported/updated correctly.
+    2. Does at least one change that you know should be in this release appear? For example, a new class. This means that the release was actually based on the recent edit file. 
 2. Commit your changes to the branch and make a pull request
 3. In your GitHub pull request, review the following three files in detail (based on our experience):
-   1. `omrse.obo` - this reflects a useful subset of the whole ontology (everything that can be covered by OBO format). OBO format has that speaking for it: it is very easy to review!
-   2. `omrse-base.owl` - this reflects the asserted axioms in your ontology that you have actually edited.
-   3. Ideally also take a look at `omrse-full.owl`, which may reveal interesting new inferences you did not know about. Note that the diff of this file is sometimes quite large.
+    1. `omrse.obo` - this reflects a useful subset of the whole ontology (everything that can be covered by OBO format). OBO format has that speaking for it: it is very easy to review!
+    2. `omrse-base.owl` - this reflects the asserted axioms in your ontology that you have actually edited.
+    3. Ideally also take a look at `omrse-full.owl`, which may reveal interesting new inferences you did not know about. Note that the diff of this file is sometimes quite large.
 4. Like with every pull request, we recommend to always employ a second set of eyes when reviewing a PR!
 
 ## Merge the main branch
 Once your [CI checks](ContinuousIntegration.md) have passed, and your reviews are completed, you can now merge the branch into your main branch (don't forget to delete the branch afterwards - a big button will appear after the merge is finished).
 
 ## Create a GitHub release
+
 1. Go to your releases page on GitHub by navigating to your repository, and then clicking on releases (usually on the right, for example: https://github.com/ufbmi/OMRSE/releases. Then click "Draft new release"
 1. As the tag version you **need to choose the date on which your ontologies were build.** You can find this, for example, by looking at the `omrse.obo` file and check the `data-version:` property. The date needs to be prefixed with a `v`, so, for example `v2020-02-06`.
 1. You can write whatever you want in the release title, but we typically write the date again. The description underneath should contain a concise list of changes or term additions.
 1. Click "Publish release". Done.
+

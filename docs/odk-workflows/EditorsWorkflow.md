@@ -1,6 +1,6 @@
 # Editors Workflow
 
-The editors workflow is one of the formal [workflows](Workflow.md) to ensure that the ontology is developed correctly according to ontology engineering principles. There are a few different editors workflows:
+The editors workflow is one of the formal [workflows](index.md) to ensure that the ontology is developed correctly according to ontology engineering principles. There are a few different editors workflows:
 
 1. Local editing workflow: Editing the ontology in your local environment by hand, using tools such as Protégé, ROBOT templates or DOSDP patterns.
 2. Completely automated data pipeline (GitHub Actions)
@@ -43,11 +43,13 @@ git checkout -b issue23removeprocess
 Using your editor of choice, perform the intended edit. For example:
 
 _Protege_
+
 1. Open `src/ontology/omrse-edit.owl` in Protege
 2. Make the change
 3. Save the file
 
 _TextEdit_
+
 1. Open `src/ontology/omrse-edit.owl` in TextEdit (or Sublime, Atom, Vim, Nano)
 2. Make the change
 3. Save the file
@@ -55,10 +57,10 @@ _TextEdit_
 Consider the following when making the edit.
 
 1. According to our development philosophy, the only places that should be manually edited are:
-   - `src/ontology/omrse-edit.owl`
-   - Any ROBOT templates you chose to use (the TSV files only)
-   - Any DOSDP data tables you chose to use (the TSV files, and potentially the associated patterns)
-   - components (anything in `src/ontology/components`), see [here](RepositoryFileStructure.md).
+    - `src/ontology/omrse-edit.owl`
+    - Any ROBOT templates you chose to use (the TSV files only)
+    - Any DOSDP data tables you chose to use (the TSV files, and potentially the associated patterns)
+    - components (anything in `src/ontology/components`), see [here](RepositoryFileStructure.md).
 2. Imports should not be edited (any edits will be flushed out with the next update). However, refreshing imports is a potentially breaking change - and is discussed [elsewhere](UpdateImports.md).
 3. Changes should usually be small. Adding or changing 1 term is great. Adding or changing 10 related terms is ok. Adding or changing 100 or more terms at once should be considered very carefully.
 

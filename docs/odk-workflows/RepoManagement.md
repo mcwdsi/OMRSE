@@ -14,6 +14,7 @@ There are a large number of options that can be set to configure your ODK, but w
 ## Managing imports
 
 You can use the update repository worflow described on this page to perform the following operations to your imports:
+
 1. Add a new import
 2. Modify an existing import
 3. Remove an import you no longer want
@@ -52,8 +53,8 @@ Import(<http://purl.obolibrary.org/obo/omrse/imports/go_import.owl>)
 ```
 
 3. Test whether everything is in order:
-   1. [Refresh your import](UpdateImports.md)
-   2. Open in your Ontology Editor of choice (Protege) and ensure that the expected terms are imported.
+    1. [Refresh your import](UpdateImports.md)
+    2. Open in your Ontology Editor of choice (Protege) and ensure that the expected terms are imported.
 
 ### Modify an existing import
 
@@ -62,12 +63,13 @@ If you simply wish to refresh your import in light of new terms, see [here](Upda
 ### Remove an existing import
 
 To remove an existing import, perform the following steps:
+
 1. remove the import declaration from your `src/ontology/omrse-edit.owl`.
 2. remove the id from your `src/ontology/omrse-odk.yaml`, eg. `- id: go` from the list of `products` in the `import_group`.
 3. run [update repo workflow](#Updating-your-ODK-repository)
 4. delete the associated files manually:
-   - `src/imports/go_import.owl`
-   - `src/imports/go_terms.txt`
+    - `src/imports/go_import.owl`
+    - `src/imports/go_terms.txt`
 5. Remove the respective entry from the `src/ontology/catalog-v001.xml` file.
 
 ### Customise an import

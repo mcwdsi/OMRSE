@@ -5,6 +5,7 @@ This page discusses how to update the contents of your imports, like adding or r
 ## Importing a new term
 
 Importing a new term is split into to sub-phases:
+
 1. Declaring the terms to be imported
 2. Refreshing imports dynamically
 
@@ -44,6 +45,7 @@ Now you can run the [refresh imports workflow](#Refresh-imports)) and the two te
 #### Using the custom import template 
 
 This workflow is appropriate if:
+
 1. You prefer to manage all your imported terms in a single file (rather than multiple files like in the "Using term files" workflow above).
 2. You wish to augment your imported ontologies with additional information. This requires a cautionary discussion.
 
@@ -102,4 +104,3 @@ If you wish to skip refreshing the mirror, i.e. skip downloading the latest vers
 ```
 sh run.sh make IMP=true MIR=false PAT=false imports/go_import.owl -B
 ```
-
