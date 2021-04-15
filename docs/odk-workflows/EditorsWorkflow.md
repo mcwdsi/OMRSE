@@ -1,10 +1,12 @@
 # Editors Workflow
 
-The editors workflow is one of the formal [workflows](Workflow.md) to ensure that the ontology is developed correctly according to ontology engineering principles. There are many different workflows:
+The editors workflow is one of the formal [workflows](index.md) to ensure that the ontology is developed correctly according to ontology engineering principles. There are a few different editors workflows:
 
-1. Local editing workflow
-2. DROID workflow
-3. Completely automated data pipeline
+1. Local editing workflow: Editing the ontology in your local environment by hand, using tools such as Protégé, ROBOT templates or DOSDP patterns.
+2. Completely automated data pipeline (GitHub Actions)
+3. DROID workflow
+
+This document only covers the first editing workflow, but more will be added in the future
 
 ### Local editing workflow
 
@@ -12,7 +14,7 @@ Workflow requirements:
 - git
 - github
 - docker
-- editing tool of choice, e.g. Protege, your favourite text editor, etc
+- editing tool of choice, e.g. Protégé, your favourite text editor, etc
 
 #### 1. _Create issue_
 Ensure that there is a ticket on your issue tracker that describes the change you are about to make. While this seems optional, this is a very important part of the social contract of building an ontology - no change to the ontology should be performed without a good ticket, describing the motivation and nature of the intended change.
@@ -41,22 +43,24 @@ git checkout -b issue23removeprocess
 Using your editor of choice, perform the intended edit. For example:
 
 _Protege_
-1. Open `src/ontology/myont-edit.owl` in Protege
+
+1. Open `src/ontology/omrse-edit.owl` in Protege
 2. Make the change
 3. Save the file
 
 _TextEdit_
-1. Open `src/ontology/myont-edit.owl` in TextEdit (or Sublime, Atom, Vim, Nano)
+
+1. Open `src/ontology/omrse-edit.owl` in TextEdit (or Sublime, Atom, Vim, Nano)
 2. Make the change
 3. Save the file
 
 Consider the following when making the edit.
 
 1. According to our development philosophy, the only places that should be manually edited are:
-   - `src/ontology/myont-edit.owl`
-   - Any ROBOT templates you chose to use (the TSV files only)
-   - Any DOSDP data tables you chose to use (the TSV files, and potentially the associated patterns)
-   - components (anything in `src/ontology/components`), see [here](RepositoryFileStructure.md).
+    - `src/ontology/omrse-edit.owl`
+    - Any ROBOT templates you chose to use (the TSV files only)
+    - Any DOSDP data tables you chose to use (the TSV files, and potentially the associated patterns)
+    - components (anything in `src/ontology/components`), see [here](RepositoryFileStructure.md).
 2. Imports should not be edited (any edits will be flushed out with the next update). However, refreshing imports is a potentially breaking change - and is discussed [elsewhere](UpdateImports.md).
 3. Changes should usually be small. Adding or changing 1 term is great. Adding or changing 10 related terms is ok. Adding or changing 100 or more terms at once should be considered very carefully.
 

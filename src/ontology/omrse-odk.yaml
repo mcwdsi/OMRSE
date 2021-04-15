@@ -1,7 +1,7 @@
 id: omrse
 title: "The Ontology of Medically Related Social Entities"
-github_org: matentzn
-repo: omrse-odk-test
+github_org: ufbmi
+repo: OMRSE
 report_fail_on: None
 export_formats:
   - owl
@@ -66,3 +66,5 @@ custom_makefile_header: |
   # 2. [Refresh imports](all_imports)
   # 3. [Update repo to latest ODK](update_repo)
 create_obo_metadata: FALSE
+documentation:
+  documentation_system: mkdocs
