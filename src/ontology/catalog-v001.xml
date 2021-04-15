@@ -19,6 +19,10 @@
   <uri name="http://purl.obolibrary.org/obo/omrse/imports/iao_import.owl" uri="imports/iao_import.owl"/>
   <uri name="http://purl.obolibrary.org/obo/omrse/imports/iao_import.obo" uri="imports/iao_import.obo"/>
   
+  <uri name="http://purl.obolibrary.org/obo/omrse/imports/obib_import.owl" uri="imports/obib_import.owl"/>
+  <uri name="http://purl.obolibrary.org/obo/omrse/imports/obib_import.obo" uri="imports/obib_import.obo"/>
+  
+  
   <uri name="http://purl.obolibrary.org/obo/omrse/imports/omiabis_import.owl" uri="imports/omiabis_import.owl"/>
   <uri name="http://purl.obolibrary.org/obo/omrse/imports/omiabis_import.obo" uri="imports/omiabis_import.obo"/>
   
