@@ -18,7 +18,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-03-22/omrse-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-04-15/omrse-full.owl"/>
         <dc:contributor>Daniel Welch</dc:contributor>
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
@@ -29,7 +29,7 @@
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <owl:versionInfo>2020-10-27</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-22</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-15</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1088,12 +1088,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000059 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000059"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000062">
@@ -1710,7 +1704,7 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
             </owl:Class>
         </rdfs:domain>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000600 xml:lang="en">This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. </obo:IAO_0000600>
+        <obo:IAO_0000600 xml:lang="en">This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal.</obo:IAO_0000600>
         <rdfs:label xml:lang="en">owns</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1733,6 +1727,7 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
         <obo:IAO_0000115 xml:lang="en">a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">A definition of &quot;tranfers&quot; object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl</rdfs:comment>
         <rdfs:label xml:lang="en">administrates</rdfs:label>
     </owl:ObjectProperty>
     
@@ -10980,6 +10975,27 @@ http://www.medterms.com/script/main/art.asp?articlekey=34214 . Some intervention
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBIB_0000000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000000">
+        <obo:IAO_0000115 xml:lang="en">A textual entity providing information about a biobank and that is written in English.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">biobank description</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">biobank description in english</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBIB_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000001">
+        <obo:IAO_0000115 xml:lang="en">A proper name that refers to a sample collection.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">sample collection identifier</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
@@ -11201,14 +11217,8 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OMIABIS_0000060 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0000060">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_0001035"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000115 xml:lang="en">A data set that contains the outcome of a survey.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data item that contains the outcome of a survey.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alice Nzinga</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">survey data</rdfs:label>
@@ -11231,44 +11241,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OMIABIS_0001035 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0001035">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000059"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_0001025"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_0000060"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_0001025"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_0000060"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A planned process that realizes the concretization of a survey to generate an output(survey data.)</obo:IAO_0000115>
         <rdfs:label xml:lang="en">survey execution</rdfs:label>
     </owl:Class>

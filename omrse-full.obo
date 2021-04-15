@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2021-03-22/omrse-full.owl
+data-version: omrse/releases/2021-04-15/omrse-full.owl
 subsetdef: attribute_slim ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -17,7 +17,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:s
 property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
 property_value: owl:versionInfo "2020-10-27" xsd:string
-property_value: owl:versionInfo "2021-03-22" xsd:string
+property_value: owl:versionInfo "2021-04-15" xsd:string
 name: The Ontology of Medically Related Social Entities
 
 [Term]
@@ -3775,6 +3775,19 @@ property_value: IAO:0000117 "PERSON:Kevin Clancy" xsd:string
 property_value: IAO:0000119 "OBI branch derived" xsd:string
 
 [Term]
+id: OBIB:0000000
+name: biobank description in english
+def: "A textual entity providing information about a biobank and that is written in English." []
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000118 "biobank description" xsd:string
+
+[Term]
+id: OBIB:0000001
+name: sample collection identifier
+def: "A proper name that refers to a sample collection." []
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
 id: OGMS:0000097
 name: health care encounter
 def: "A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter" []
@@ -3803,7 +3816,7 @@ property_value: IAO:0000232 "creation date: 2011-09-20T09:57:44Z\nedited date: 3
 [Term]
 id: OMIABIS:0000060
 name: survey data
-def: "A data set that contains the outcome of a survey." []
+def: "A data item that contains the outcome of a survey." []
 is_a: IAO:0000027 ! data item
 property_value: IAO:0000117 "Alice Nzinga" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
@@ -3821,7 +3834,6 @@ id: OMIABIS:0001035
 name: survey execution
 def: "A planned process that realizes the concretization of a survey to generate an output(survey data.)" []
 is_a: OBI:0000011 ! planned process
-relationship: OBI:0000299 OMIABIS:0000060 ! has_specified_output survey data
 
 [Term]
 id: OMRSE:00000000
@@ -6686,12 +6698,13 @@ property_value: IAO:0000117 "Person: Jie Zheng" xsd:string
 id: OMIABIS:0000008
 name: owns
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000600 "This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. " xsd:string
+property_value: IAO:0000600 "This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal." xsd:string
 
 [Typedef]
 id: OMIABIS:0000009
 name: administrates
 def: "a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a." []
+comment: A definition of "tranfers" object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 inverse_of: OMRSE:00000068 ! is administered by

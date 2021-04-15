@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2021-03-22/omrse-base.owl
+data-version: omrse/releases/2021-04-15/omrse-base.owl
 remark: This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt
 ontology: omrse/omrse-base
 property_value: http://purl.org/dc/elements/1.1/contributor "Daniel Welch" xsd:string
@@ -11,7 +11,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:stri
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
 property_value: owl:versionInfo "2020-10-27" xsd:string
-property_value: owl:versionInfo "2021-03-22" xsd:string
+property_value: owl:versionInfo "2021-04-15" xsd:string
 name: The Ontology of Medically Related Social Entities
 
 [Term]

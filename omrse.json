@@ -3147,11 +3147,6 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OMIABIS_0000060",
-          "pred": "http://purl.obolibrary.org/obo/OBI_0000299",
-          "sub": "http://purl.obolibrary.org/obo/OMIABIS_0001035"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMIABIS_0000060",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000232"
         },
@@ -5616,19 +5611,6 @@
           ]
         },
         {
-          "definedClassId": "http://purl.obolibrary.org/obo/OMIABIS_0001035",
-          "genusIds": [
-            "http://purl.obolibrary.org/obo/OBI_0000011"
-          ],
-          "restrictions": [
-            null,
-            {
-              "fillerId": "http://purl.obolibrary.org/obo/OMIABIS_0000060",
-              "propertyId": "http://purl.obolibrary.org/obo/OBI_0000299"
-            }
-          ]
-        },
-        {
           "definedClassId": "http://purl.obolibrary.org/obo/OMRSE_00000030",
           "genusIds": [
             "http://purl.obolibrary.org/obo/OMRSE_00000011"
@@ -5964,11 +5946,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-03-22"
+            "val": "2021-04-15"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-03-22/omrse.json",
+        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-04-15/omrse.json",
         "xrefs": []
       },
       "nodes": [
@@ -18683,6 +18665,44 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/OBIB_0000000",
+          "lbl": "biobank description in english",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Mathias Brochhausen"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "biobank description"
+              }
+            ],
+            "definition": {
+              "val": "A textual entity providing information about a biobank and that is written in English.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OBIB_0000001",
+          "lbl": "sample collection identifier",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Mathias Brochhausen"
+              }
+            ],
+            "definition": {
+              "val": "A proper name that refers to a sample collection.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/OBI_0000011",
           "lbl": "planned process",
           "meta": {
@@ -19317,7 +19337,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
-                "val": "This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal. "
+                "val": "This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal."
               }
             ]
           },
@@ -19336,6 +19356,9 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Mathias Brochhausen"
               }
+            ],
+            "comments": [
+              "A definition of \"tranfers\" object property can be found in d-acts: http:purl.obolibrary.org/iao/d-acts.owl"
             ],
             "definition": {
               "val": "a administrates b if c owns b and some rights and obligations grounded in the owning relation regarding b are transferred  from c to a.",
@@ -19376,7 +19399,7 @@
               }
             ],
             "definition": {
-              "val": "A data set that contains the outcome of a survey.",
+              "val": "A data item that contains the outcome of a survey.",
               "xrefs": []
             }
           },
@@ -27867,11 +27890,11 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485092"
+                "val": "_:genid2147485081"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485093"
+                "val": "_:genid2147485082"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
