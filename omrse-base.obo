@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2021-04-15/omrse-base.owl
+data-version: omrse/releases/2021-04-21/omrse-base.owl
 remark: This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt
 ontology: omrse/omrse-base
 property_value: http://purl.org/dc/elements/1.1/contributor "Daniel Welch" xsd:string
@@ -11,7 +11,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:stri
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
 property_value: owl:versionInfo "2020-10-27" xsd:string
-property_value: owl:versionInfo "2021-04-15" xsd:string
+property_value: owl:versionInfo "2021-04-21" xsd:string
 name: The Ontology of Medically Related Social Entities
 
 [Term]
@@ -1487,6 +1487,8 @@ id: OMRSE:00000201
 name: admission process
 def: "A deontic document act in which a patient is registered with a health care provider for the purpose of receiving care in an inpatient encounter." []
 is_a: IAO:0021001
+relationship: RO:0002083 OMRSE:00000126 ! patient discharge
+relationship: RO:0002223 OGMS:0000100
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]

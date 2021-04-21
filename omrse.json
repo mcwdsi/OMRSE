@@ -623,16 +623,6 @@
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000003",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000159"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000003",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000166"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000003",
-          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000168"
         },
         {
@@ -714,11 +704,6 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OBI_0000011"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000152"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
@@ -1019,6 +1004,11 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OBI_0100026"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OGMS_0000102"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
@@ -2954,6 +2944,11 @@
           "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OBI_0600052"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OGMS_0000097"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
@@ -5443,6 +5438,11 @@
         {
           "obj": "http://www.w3.org/2002/07/owl#topObjectProperty",
           "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/BFO_0000051"
+        },
+        {
+          "obj": "http://www.w3.org/2002/07/owl#topObjectProperty",
+          "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/BFO_0000054"
         },
         {
@@ -5946,11 +5946,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-04-15"
+            "val": "2021-04-21"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-04-15/omrse.json",
+        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-04-21/omrse.json",
         "xrefs": []
       },
       "nodes": [
@@ -6708,6 +6708,14 @@
                 "val": "BFO 2 Reference: The realm of occurrents is less pervasively marked by the presence of natural units than is the case in the realm of independent continuants. Thus there is here no counterpart of ‘object’. In BFO 1.0 ‘process’ served as such a counterpart. In BFO 2.0 ‘process’ is, rather, the occurrent counterpart of ‘material entity’. Those natural – as contrasted with engineered, which here means: deliberately executed – units which do exist in the realm of occurrents are typically either parasitic on the existence of natural units on the continuant side, or they are fiat in nature. Thus we can count lives; we can count football games; we can count chemical reactions performed in experiments or in chemical manufacturing. We cannot count the processes taking place, for instance, in an episode of insect mating behavior.Even where natural units are identifiable, for example cycles in a cyclical process such as the beating of a heart or an organism’s sleep/wake cycle, the processes in question form a sequence with no discontinuities (temporal gaps) of the sort that we find for instance where billiard balls or zebrafish or planets are separated by clear spatial gaps. Lives of organisms are process units, but they too unfold in a continuous series from other, prior processes such as fertilization, and they unfold in turn in continuous series of post-life processes such as post-mortem decay. Clear examples of boundaries of processes are almost always of the fiat sort (midnight, a time of death as declared in an operating theater or on a death certificate, the initiation of a state of war)"
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/ido.owl"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/omrse.owl"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
                 "val": "(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] "
               },
@@ -6755,6 +6763,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "BFO 2 Reference: Dispositions exist along a strength continuum. Weaker forms of disposition are realized in only a fraction of triggering cases. These forms occur in a significant number of cases of a similar type."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/ido.owl"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
@@ -6945,6 +6957,10 @@
                 "val": "SpecificallyDependentContinuant"
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "specifically dependent continuant"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
                 "val": "Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key"
               },
@@ -6993,6 +7009,18 @@
                 "val": "Specifically dependent continuant doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. We're not sure what else will develop here, but for example there are questions such as what are promises, obligation, etc."
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/ido.owl"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/omrse.owl"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/pato.owl"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
                 "val": "(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] "
               },
@@ -7002,7 +7030,7 @@
               }
             ],
             "definition": {
-              "val": "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])",
+              "val": "b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])",
               "xrefs": []
             }
           },
@@ -7052,6 +7080,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "BFO 2 Reference: One major family of examples of non-rigid universals involves roles, and ontologies developed for corresponding administrative purposes may consist entirely of representatives of entities of this sort. Thus ‘professor’, defined as follows,b instance_of professor at t =Def. there is some c, c instance_of professor role & c inheres_in b at t.denotes a non-rigid universal and so also do ‘nurse’, ‘student’, ‘colonel’, ‘taxpayer’, and so forth. (These terms are all, in the jargon of philosophy, phase sortals.) By using role terms in definitions, we can create a BFO conformant treatment of such entities drawing on the fact that, while an instance of professor may be simultaneously an instance of trade union member, no instance of the type professor role is also (at any time) an instance of the type trade union member role (any more than any instance of the type color is at any time an instance of the type length).If an ontology of employment positions should be defined in terms of roles following the above pattern, this enables the ontology to do justice to the fact that individuals instantiate the corresponding universals –  professor, sergeant, nurse – only during certain phases in their lives."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/omrse.owl"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
@@ -7717,6 +7749,14 @@
                 "val": "BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here."
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/ido.owl"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/omrse.owl"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
                 "val": "A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])"
               },
@@ -7788,6 +7828,14 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "part_of"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/ido.owl"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/omrse.owl"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/RO_0001900",
@@ -7885,6 +7933,14 @@
                 "val": "has_part"
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/ido.owl"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/omrse.owl"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/RO_0001900",
                 "val": "http://purl.obolibrary.org/obo/RO_0001901"
               }
@@ -7932,6 +7988,14 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/ido.owl"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/omrse.owl"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
                 "val": "http://purl.obolibrary.org/obo/ro.owl"
               },
               {
@@ -7969,6 +8033,14 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
                 "val": "this shattering realizes this fragility"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/ido.owl"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
+                "val": "http://purl.obolibrary.org/obo/omrse.owl"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
@@ -18665,44 +18737,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/OBIB_0000000",
-          "lbl": "biobank description in english",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Mathias Brochhausen"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
-                "val": "biobank description"
-              }
-            ],
-            "definition": {
-              "val": "A textual entity providing information about a biobank and that is written in English.",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OBIB_0000001",
-          "lbl": "sample collection identifier",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Mathias Brochhausen"
-              }
-            ],
-            "definition": {
-              "val": "A proper name that refers to a sample collection.",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/OBI_0000011",
           "lbl": "planned process",
           "meta": {
@@ -18753,7 +18787,7 @@
               }
             ],
             "definition": {
-              "val": "A process that realizes a plan which is the concretization of a plan specification.",
+              "val": "A processual entity that realizes a plan which is the concretization of a plan specification.",
               "xrefs": []
             }
           },
@@ -27890,11 +27924,11 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485081"
+                "val": "_:genid2147485083"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485082"
+                "val": "_:genid2147485084"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",

@@ -543,6 +543,11 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OGMS_0000100",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002223",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000201"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OGMS_0000100",
           "pred": "http://purl.obolibrary.org/obo/RO_0002229",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000126"
         },
@@ -995,6 +1000,11 @@
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000125",
           "pred": "http://purl.obolibrary.org/obo/RO_0000053",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000107"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000126",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002083",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000201"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000132",
@@ -2000,11 +2010,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-04-15"
+            "val": "2021-04-21"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-04-15/omrse-base.json",
+        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-04-21/omrse-base.json",
         "xrefs": []
       },
       "nodes": [
