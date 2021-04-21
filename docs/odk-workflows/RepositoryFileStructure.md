@@ -17,7 +17,7 @@ These are the current imports in OMRSE
 | Import | URL | Type |
 | ------ | --- | ---- |
 | ro | http://purl.obolibrary.org/obo/ro.owl | slme |
-| ogms | http://purl.obolibrary.org/obo/ogms.owl | None |
+| ogms | http://purl.obolibrary.org/obo/ogms.owl | filter |
 | obi | http://purl.obolibrary.org/obo/obi.owl | None |
 | apollo_sv | http://purl.obolibrary.org/obo/apollo_sv.owl | None |
 | obib | http://purl.obolibrary.org/obo/obib.owl | filter |

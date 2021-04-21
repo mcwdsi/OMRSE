@@ -246,12 +246,22 @@ imports/ro_import.owl: mirror/ro.owl imports/ro_terms_combined.txt
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
+## Module for ontology: ogms
+
+imports/ogms_import.owl: mirror/ogms.owl imports/ogms_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
+		query --update ../sparql/preprocess-module.ru \
+		remove --base-iri http://purl.obolibrary.org/obo/OGMS_ --base-iri http://purl.obolibrary.org/obo/BFO_ --base-iri http://purl.obolibrary.org/obo/OBI_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T imports/ogms_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
 ## Module for ontology: obib
 
 imports/obib_import.owl: mirror/obib.owl imports/obib_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
 		query --update ../sparql/preprocess-module.ru \
-		remove --base-iri http://purl.obolibrary.org/obo/OBIB_ --base-iri http://purl.obolibrary.org/obo/OMIABIS_ --axioms external --preserve-structure false --trim false \
+		remove --base-iri http://purl.obolibrary.org/obo/OBIB_ --base-iri http://purl.obolibrary.org/obo/OMIABIS_ --base-iri http://purl.obolibrary.org/obo/BFO_ --axioms external --preserve-structure false --trim false \
 		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T imports/obib_terms_combined.txt --select complement \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi

@@ -24,13 +24,19 @@ import_group:
       module_type: slme
       slme_individuals: exclude
     - id: ogms
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/OGMS_
+        - http://purl.obolibrary.org/obo/BFO_
+        - http://purl.obolibrary.org/obo/OBI_
     - id: obi
     - id: apollo_sv
     - id: obib
       module_type: filter
       base_iris:
-        -  http://purl.obolibrary.org/obo/OBIB_
-        -  http://purl.obolibrary.org/obo/OMIABIS_
+        - http://purl.obolibrary.org/obo/OBIB_
+        - http://purl.obolibrary.org/obo/OMIABIS_
+        - http://purl.obolibrary.org/obo/BFO_
     - id: go
     - id: oae
     - id: pco
