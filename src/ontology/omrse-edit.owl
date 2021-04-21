@@ -15,17 +15,17 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 Ontology(<http://purl.obolibrary.org/obo/omrse.owl>
 Import(<http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/bfo_import.owl>)
+Import(<http://purl.obolibrary.org/obo/omrse/imports/d-acts_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/go_import.owl>)
-Import(<http://purl.obolibrary.org/obo/omrse/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/oae_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/obi_import.owl>)
-Import(<http://purl.obolibrary.org/obo/omrse/imports/ogms_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/obib_import.owl>)
+Import(<http://purl.obolibrary.org/obo/omrse/imports/ogms_import.owl>)
+Import(<http://purl.obolibrary.org/obo/omrse/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/oostt_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/pco_import.owl>)
-Import(<http://purl.obolibrary.org/obo/omrse/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/pno_import.owl>)
-Import(<http://purl.obolibrary.org/obo/omrse/imports/d-acts_import.owl>)
+Import(<http://purl.obolibrary.org/obo/omrse/imports/ro_import.owl>)
 Annotation(dc:contributor "Daniel Welch")
 Annotation(dc:creator "Amanda Hicks")
 Annotation(dc:creator "Mathias Brochhausen"@en)
@@ -402,7 +402,7 @@ ObjectPropertyDomain(obo:OMIABIS_0000009 ObjectUnionOf(obo:NCBITaxon_9606 obo:OB
 
 ObjectPropertyRange(obo:OMIABIS_0000048 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245 obo:OMRSE_00000023 obo:OMRSE_00000033))
 
-# Object Property: obo:OMRSE_00000020 (is-aggregate-of)
+# Object Property: obo:OMRSE_00000020 (obsolete is-aggregate-of)
 
 AnnotationAssertion(obo:IAO_0000231 obo:OMRSE_00000020 "BFO relation takes precedence."@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000020 "We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.
@@ -1975,7 +1975,6 @@ SubClassOf(obo:OMRSE_00000197 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_000
 SubClassOf(obo:OMRSE_00000197 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000194))
 SubClassOf(obo:OMRSE_00000197 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000193))))
 
-
 # Class: obo:OMRSE_00000198 (information content entity-request process)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000198 "a communication in which some participant requests of some other participant an information content entity about some portion of reality"@en)
@@ -2004,9 +2003,9 @@ SubClassOf(obo:OMRSE_00000200 obo:OMRSE_00000198)
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000201 "A deontic document act in which a patient is registered with a health care provider for the purpose of receiving care in an inpatient encounter."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000201 "Amanda Hicks"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000201 "admission process"@en)
-EquivalentClasses(obo:OMRSE_00000201 ObjectSomeValuesFrom(obo:RO_0002083 obo:OMRSE_00000126))
-EquivalentClasses(obo:OMRSE_00000201 ObjectSomeValuesFrom(obo:RO_0002223 obo:OGMS_0000100))
 SubClassOf(obo:OMRSE_00000201 obo:IAO_0021001)
+SubClassOf(obo:OMRSE_00000201 ObjectSomeValuesFrom(obo:RO_0002083 obo:OMRSE_00000126))
+SubClassOf(obo:OMRSE_00000201 ObjectSomeValuesFrom(obo:RO_0002223 obo:OGMS_0000100))
 
 # Class: obo:OMRSE_00000202 (cancer summary staging)
 
