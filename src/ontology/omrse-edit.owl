@@ -366,19 +366,31 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000080 "U.S. Census PUMS serial numbe
 
 # Annotation Property: obo:OMRSE_00002025 (ISO 639-1 code)
 
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00002025 "ISO 639-1 code")
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00002025 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00002025 "ISO 639-1 assigns two-character identifiers to individual human languages.  This annotation property is for use in annotating OWL2 individuals in OMRSE that represent languages with their appropriate ISO 639-1 code that designates them in that standard system."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00002025 "ISO 639-1 code"@en)
 
 # Annotation Property: obo:OMRSE_00002026 (ISO 639-2/B code)
 
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00002026 "ISO 639-2/B code"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00002026 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00002026 "ISO 639-2/B assigns three-character identifiers to individual human languages.  This annotation property is for use in annotating OWL2 individuals in OMRSE that represent languages with their appropriate ISO 639-2/B ('B' is for \"bibliographic applications\") code that designates them in that standard system."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00002026 "ISO 639-2/B code"@en)
 
 # Annotation Property: obo:OMRSE_00002027 (ISO 639-2/T code)
 
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00002027 "ISO 639-2/T code"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00002027 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00002027 "ISO 639-2/T assigns three-character identifiers to individual human languages.  This annotation property is for use in annotating OWL2 individuals in OMRSE that represent languages with their appropriate ISO 639-2/T ('T' is for \"terminology applications\") code that designates them in that standard system."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00002027 "ISO 639-2/T code"@en)
 
-# Annotation Property: obo:OMRSE_00002028 (obo:OMRSE_00002028)
+# Annotation Property: obo:OMRSE_00002028 (ISO 639-3 code)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00002028 "ISO 639-3 code"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00002028 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00002028 "ISO 639-3 assigns three-character identifiers to individual human languages.  This annotation property is for use in annotating OWL2 individuals in OMRSE that represent languages with their appropriate ISO 639-3 code that designates them in that standard system."@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00002028 "ISO 639-3 code"@en)
 
 
 ############################
