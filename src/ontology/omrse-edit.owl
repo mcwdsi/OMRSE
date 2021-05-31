@@ -1108,10 +1108,12 @@ SubClassOf(obo:OMRSE_00000075 ObjectSomeValuesFrom(obo:RO_0000052 ObjectIntersec
 
 # Class: obo:OMRSE_00000076 (household)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000076 "A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of its residence function."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000076 "A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of that housing unit's residence function."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000076 "Amanda Hicks"@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000076 "Note in OMRSE it is the housing unit, not the people living there, that are the bearers of a \"residence function\".  Note the distinction between being a residence and a resident.")
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000076 "Note that it is not possible in OWL 2, at least that we have yet found, to say that the housing unit in which the process occurs is the same one that is the bearer of the residence function (that the process realizes).")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000076 "household"@en)
-EquivalentClasses(obo:OMRSE_00000076 ObjectIntersectionOf(ObjectUnionOf(obo:NCBITaxon_9606 obo:OMRSE_00000023) ObjectSomeValuesFrom(obo:RO_0000056 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000075)))))
+EquivalentClasses(obo:OMRSE_00000076 ObjectIntersectionOf(ObjectUnionOf(obo:NCBITaxon_9606 obo:OMRSE_00000023) ObjectSomeValuesFrom(obo:RO_0000056 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000075) ObjectSomeValuesFrom(obo:BFO_0000066 obo:OMRSE_00000074)))))
 SubClassOf(obo:OMRSE_00000076 obo:BFO_0000040)
 
 # Class: obo:OMRSE_00000077 (employee role)
