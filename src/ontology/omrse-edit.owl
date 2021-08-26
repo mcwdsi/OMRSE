@@ -311,7 +311,6 @@ Declaration(ObjectProperty(obo:BFO_0000054))
 Declaration(ObjectProperty(obo:BFO_0000055))
 Declaration(ObjectProperty(obo:BFO_0000066))
 Declaration(ObjectProperty(obo:BFO_0000067))
-Declaration(ObjectProperty(obo:BFO_0000075))
 Declaration(ObjectProperty(obo:IAO_0000136))
 Declaration(ObjectProperty(obo:IAO_0000219))
 Declaration(ObjectProperty(obo:OBI_0000299))
@@ -399,10 +398,6 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00002028 "ISO 639-3 code"@en)
 ############################
 #   Object Properties
 ############################
-
-# Object Property: obo:BFO_0000075 (obo:BFO_0000075)
-
-EquivalentObjectProperties(obo:BFO_0000075 obo:OMRSE_00000020)
 
 # Object Property: obo:OMIABIS_0000008 (owns)
 
@@ -2413,6 +2408,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000500 "Chris Stoeckert"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000500 "S. Clint. Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000500 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000500 "employment data item"@en)
+EquivalentClasses(obo:OMRSE_00000500 ObjectIntersectionOf(obo:IAO_0000027 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectUnionOf(obo:OMRSE_00000077 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000077))))))
 SubClassOf(obo:OMRSE_00000500 obo:IAO_0000027)
 
 # Class: obo:OMRSE_00000501 (income data item)
