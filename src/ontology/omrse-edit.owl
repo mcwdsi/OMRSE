@@ -420,15 +420,16 @@ AnnotationAssertion(rdfs:comment obo:OMRSE_00000020 "We anticipate BFO 2.0 inclu
 AnnotationAssertion(rdfs:label obo:OMRSE_00000020 "is-aggregate-of")
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000020 "true"@en)
 
-# Object Property: obo:OMRSE_00000021 (is-component-of-aggregate)
+# Object Property: obo:OMRSE_00000021 (obsolete is-component-of-aggregate)
 
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000021 "At the instance level, this relation is the named inverse of is-aggregate-of.
 
 At the type level, however, not so.
 
 We expect BFO 2.0 to have this relation as well, and we will obsolete this property and declare it equivalent to BFO's version when BFO 2.0 comes out.")
-AnnotationAssertion(rdfs:label obo:OMRSE_00000021 "is-component-of-aggregate")
+AnnotationAssertion(rdfs:label obo:OMRSE_00000021 "obsolete is-component-of-aggregate")
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000021 "true"^^xsd:boolean)
+SubObjectPropertyOf(obo:OMRSE_00000021 oboInOwl:ObsoleteProperty)
 
 # Object Property: obo:OMRSE_00000068 (is administered by)
 
@@ -452,6 +453,10 @@ ObjectPropertyRange(obo:OMRSE_00000071 obo:OMRSE_00000056)
 # Object Property: obo:OMRSE_00000167 (provides service)
 
 AnnotationAssertion(rdfs:label obo:OMRSE_00000167 "provides service"@en)
+
+# Object Property: obo:RO_0002217 (obsolete actively participates in)
+
+SubObjectPropertyOf(obo:RO_0002217 oboInOwl:ObsoleteProperty)
 
 
 ############################
@@ -1753,6 +1758,7 @@ SubClassOf(obo:OMRSE_00000166 ObjectSomeValuesFrom(obo:BFO_0000066 obo:OMRSE_000
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000168 "http://purl.obolibrary.org/obo/OMRSE_00000198")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000168 "questions asking process"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000168 "true"^^xsd:boolean)
+SubClassOf(obo:OMRSE_00000168 oboInOwl:ObsoleteClass)
 SubClassOf(obo:OMRSE_00000168 ObjectSomeValuesFrom(obo:RO_0000057 obo:NCBITaxon_9606))
 SubClassOf(obo:OMRSE_00000168 ObjectSomeValuesFrom(obo:RO_0000057 obo:OMRSE_00000173))
 
@@ -2399,15 +2405,16 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000234 "Mathias Brochhausen"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000234 "county smoking rate data"@en)
 SubClassOf(obo:OMRSE_00000234 obo:IAO_0000027)
 
-# Class: obo:OMRSE_00000500 (employment data item)
+# Class: obo:OMRSE_00000500 (job role data item)
 
 AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000500 "Can be about any aspect of employment, such as salary, work location, or employer."@en)
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000500 "A data item that is about a person's employee role and/or its realization."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000500 "A data item that is about a person's job role and/or its realization."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000500 "Matthew Diller"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000500 "employment data item"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000500 "Chris Stoeckert"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000500 "S. Clint. Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000500 "William R. Hogan"@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_00000500 "employment data item"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000500 "job role data item"@en)
 EquivalentClasses(obo:OMRSE_00000500 ObjectIntersectionOf(obo:IAO_0000027 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectUnionOf(obo:OMRSE_00000077 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000077))))))
 SubClassOf(obo:OMRSE_00000500 obo:IAO_0000027)
 
