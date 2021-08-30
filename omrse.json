@@ -731,6 +731,11 @@
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000194"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000016",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002058"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000017",
           "pred": "http://purl.obolibrary.org/obo/IAO_0000136",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000033"
@@ -1166,6 +1171,11 @@
           "sub": "http://purl.obolibrary.org/obo/BFO_0000140"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000145",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002060"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/FMA_49443",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/FMA_64989"
@@ -1349,6 +1359,11 @@
           "obj": "http://purl.obolibrary.org/obo/IAO_0000027",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000234"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000027",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000500"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000027",
@@ -3181,6 +3196,11 @@
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000103"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000001",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002059"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000002",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000003"
@@ -4109,11 +4129,6 @@
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000231",
           "pred": "http://purl.obolibrary.org/obo/OBI_0000312",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000232"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000506",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000500"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000506",
@@ -5378,6 +5393,11 @@
         {
           "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000168"
+        },
+        {
+          "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role"
         },
         {
@@ -5419,6 +5439,16 @@
           "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000020"
+        },
+        {
+          "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000021"
+        },
+        {
+          "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0002217"
         },
         {
           "obj": "http://www.w3.org/2002/07/owl#Thing",
@@ -5832,6 +5862,15 @@
           ]
         },
         {
+          "definedClassId": "http://purl.obolibrary.org/obo/OMRSE_00000500",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/IAO_0000027"
+          ],
+          "restrictions": [
+            null
+          ]
+        },
+        {
           "definedClassId": "http://purl.obolibrary.org/obo/OMRSE_00002030",
           "genusIds": [
             "http://purl.obolibrary.org/obo/IAO_0000005"
@@ -5946,11 +5985,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-04-21"
+            "val": "2021-08-30"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-04-21/omrse.json",
+        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-08-30/omrse.json",
         "xrefs": []
       },
       "nodes": [
@@ -19802,7 +19841,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000021",
-          "lbl": "is-component-of-aggregate",
+          "lbl": "obsolete is-component-of-aggregate",
           "meta": {
             "comments": [
               "At the instance level, this relation is the named inverse of is-aggregate-of.\n\nAt the type level, however, not so.\n\nWe expect BFO 2.0 to have this relation as well, and we will obsolete this property and declare it equivalent to BFO's version when BFO 2.0 comes out."
@@ -20794,8 +20833,12 @@
                 "val": "Amanda Hicks"
               }
             ],
+            "comments": [
+              "Note in OMRSE it is the housing unit, not the people living there, that are the bearers of a \"residence function\".  Note the distinction between being a residence and a resident.",
+              "Note that it is not possible in OWL 2, at least that we have yet found, to say that the housing unit in which the process occurs is the same one that is the bearer of the residence function (that the process realizes)."
+            ],
             "definition": {
-              "val": "A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of its residence function.",
+              "val": "A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of that housing unit's residence function.",
               "xrefs": []
             }
           },
@@ -20803,7 +20846,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000077",
-          "lbl": "employee role",
+          "lbl": "job role",
           "meta": {
             "basicPropertyValues": [
               {
@@ -23441,6 +23484,43 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000500",
+          "lbl": "job role data item",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "Can be about any aspect of employment, such as salary, work location, or employer."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "employment data item"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Chris Stoeckert"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint. Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A data item that is about a person's job role and/or its realization.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000507",
           "lbl": "obsolete non-binary gender identity datum",
           "meta": {
@@ -23472,6 +23552,86 @@
             "deprecated": true
           },
           "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002025",
+          "lbl": "ISO 639-1 code",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "ISO 639-1 code"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "William R. Hogan"
+              }
+            ],
+            "comments": [
+              "ISO 639-1 assigns two-character identifiers to individual human languages.  This annotation property is for use in annotating OWL2 individuals in OMRSE that represent languages with their appropriate ISO 639-1 code that designates them in that standard system."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002026",
+          "lbl": "ISO 639-2/B code",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "ISO 639-2/B code"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "William R. Hogan"
+              }
+            ],
+            "comments": [
+              "ISO 639-2/B assigns three-character identifiers to individual human languages.  This annotation property is for use in annotating OWL2 individuals in OMRSE that represent languages with their appropriate ISO 639-2/B ('B' is for \"bibliographic applications\") code that designates them in that standard system."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002027",
+          "lbl": "ISO 639-2/T code",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "ISO 639-2/T code"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "William R. Hogan"
+              }
+            ],
+            "comments": [
+              "ISO 639-2/T assigns three-character identifiers to individual human languages.  This annotation property is for use in annotating OWL2 individuals in OMRSE that represent languages with their appropriate ISO 639-2/T ('T' is for \"terminology applications\") code that designates them in that standard system."
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002028",
+          "lbl": "ISO 639-3 code",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "ISO 639-3 code"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "William R. Hogan"
+              }
+            ],
+            "comments": [
+              "ISO 639-3 assigns three-character identifiers to individual human languages.  This annotation property is for use in annotating OWL2 individuals in OMRSE that represent languages with their appropriate ISO 639-3 code that designates them in that standard system."
+            ]
+          },
+          "type": "PROPERTY"
         },
         {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00002029",
@@ -24263,6 +24423,113 @@
             ],
             "definition": {
               "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is kindergarten.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002058",
+          "lbl": "linguistic literacy competence",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "language literacy competence"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "William R. Hogan"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "human literacy"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "linguistic literacy"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Jiang Bian"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Xi Yang"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Yonghui Wu"
+              }
+            ],
+            "comments": [
+              "Other dispositions that it can and likely does have as dispositional parts include cultural competencies, interpersonal competencies, competencies for navigating a society's systems of laws, claims, obligations, deontic declarations, and norms of financial and other economic exchange.",
+              "The realization of this disposition by definition realizes the bearer's linguistic competence that is a dispositional part of this disposition.  The realization of the linguistic competence would be an occurrent part of the realization of this disposition (and not a temporal part).",
+              "Whereas linguistic competence may be afforded to non-human agents, literacy is nearly always considered in the context of human beings."
+            ],
+            "definition": {
+              "val": "A disposition borne by a human being that (1) has a linguistic competence as a dispositional part and (2) if realized, is realized by the bearer's achievement of some personal goal.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002059",
+          "lbl": "caregiver role",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "John Judkins"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A human social role that, if realized, is realized in providing assistance in the activities of daily living of another human being who possesses reduced capability to complete some of these activities alone.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002060",
+          "lbl": "family relationship",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://purl.obolibrary.org/obo/ERO_0002033"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "John Judkins"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "comments": [
+              "We are also intending on including other family arrangements. This is something we are working on."
+            ],
+            "definition": {
+              "val": "A relational quality that inheres within two or more persons related as members of a domestic group, or a number of domestic groups linked through descent from a common ancestor, marriage, or adoption.",
               "xrefs": []
             }
           },
@@ -27924,11 +28191,11 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485083"
+                "val": "_:genid2147485106"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485084"
+                "val": "_:genid2147485107"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -28322,11 +28589,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/OMRSE_00000500",
-          "lbl": "employment data item",
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000501",
           "lbl": "income data item",
           "type": "CLASS"
@@ -28357,21 +28619,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/OMRSE_00002025",
-          "lbl": "ISO 639-1 code",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OMRSE_00002026",
-          "lbl": "ISO 639-2/B code",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OMRSE_00002027",
-          "lbl": "ISO 639-2/T code",
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/RO_0000092",
           "lbl": "disposition of",
           "type": "PROPERTY"
@@ -28384,18 +28631,6 @@
         {
           "id": "http://www.w3.org/2000/01/rdf-schema#label",
           "lbl": "label",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OMRSE_00002028",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "ISO 639-3 code"
-              }
-            ]
-          },
           "type": "PROPERTY"
         },
         {

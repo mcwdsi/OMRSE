@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2021-04-21/omrse-base.owl
+data-version: omrse/releases/2021-08-30/omrse-base.owl
 remark: This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt
 ontology: omrse/omrse-base
 property_value: http://purl.org/dc/elements/1.1/contributor "Daniel Welch" xsd:string
@@ -11,7 +11,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:stri
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
 property_value: owl:versionInfo "2020-10-27" xsd:string
-property_value: owl:versionInfo "2021-04-21" xsd:string
+property_value: owl:versionInfo "2021-08-30" xsd:string
 name: The Ontology of Medically Related Social Entities
 
 [Term]
@@ -606,13 +606,15 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 [Term]
 id: OMRSE:00000076
 name: household
-def: "A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of its residence function." []
+def: "A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of that housing unit's residence function." []
+comment: Note in OMRSE it is the housing unit, not the people living there, that are the bearers of a "residence function".  Note the distinction between being a residence and a resident.
+comment: Note that it is not possible in OWL 2, at least that we have yet found, to say that the housing unit in which the process occurs is the same one that is the bearer of the residence function (that the process realizes).
 is_a: BFO:0000040
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
 id: OMRSE:00000077
-name: employee role
+name: job role
 def: "A role in human social processes that, if realized, is realized when the bearer provides labor or services in exchange for a wage or salary as specified by some deontic declaration." []
 is_a: OMRSE:00000024 ! role in human social processes
 relationship: BFO:0000054 OMRSE:00000146 ! employment process
@@ -1094,7 +1096,7 @@ id: OMRSE:00000146
 name: employment process
 def: "A planned process in which the bearer of an employer role provides wages or salary to the bearer of an employee roll in fullfillment of the arrangements specified in some declaration" []
 is_a: OBI:0000011
-relationship: BFO:0000055 OMRSE:00000077 ! employee role
+relationship: BFO:0000055 OMRSE:00000077 ! job role
 relationship: BFO:0000055 OMRSE:00000087 ! employer role
 
 [Term]
@@ -1225,6 +1227,7 @@ relationship: BFO:0000066 OMRSE:00000074 ! housing unit
 [Term]
 id: OMRSE:00000168
 name: questions asking process
+is_a: ObsoleteClass
 relationship: RO:0000057 NCBITaxon:9606
 relationship: RO:0000057 OMRSE:00000173 ! material information bearer of question text plus answer set
 is_obsolete: true
@@ -1870,8 +1873,15 @@ property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
 id: OMRSE:00000500
-name: employment data item
-is_a: OMRSE:00000506 ! socio-economic data item
+name: job role data item
+def: "A data item that is about a person's job role and/or its realization." []
+is_a: IAO:0000027
+property_value: http://purl.org/dc/elements/1.1/contributor "Chris Stoeckert" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint. Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000112 "Can be about any aspect of employment, such as salary, work location, or employer." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "employment data item" xsd:string
 
 [Term]
 id: OMRSE:00000501
@@ -2233,12 +2243,45 @@ property_value: IAO:0000111 "highest level of education is completion of pre-kin
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
 [Term]
+id: OMRSE:00002058
+name: linguistic literacy competence
+def: "A disposition borne by a human being that (1) has a linguistic competence as a dispositional part and (2) if realized, is realized by the bearer's achievement of some personal goal." []
+comment: Other dispositions that it can and likely does have as dispositional parts include cultural competencies, interpersonal competencies, competencies for navigating a society's systems of laws, claims, obligations, deontic declarations, and norms of financial and other economic exchange.
+comment: The realization of this disposition by definition realizes the bearer's linguistic competence that is a dispositional part of this disposition.  The realization of the linguistic competence would be an occurrent part of the realization of this disposition (and not a temporal part).
+comment: Whereas linguistic competence may be afforded to non-human agents, literacy is nearly always considered in the context of human beings.
+is_a: BFO:0000016
+property_value: http://purl.org/dc/elements/1.1/contributor "Jiang Bian" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Xi Yang" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Yonghui Wu" xsd:string
+property_value: IAO:0000111 "language literacy competence" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000118 "human literacy" xsd:string
+property_value: IAO:0000118 "linguistic literacy" xsd:string
+
+[Term]
+id: OMRSE:00002059
+name: caregiver role
+def: "A human social role that, if realized, is realized in providing assistance in the activities of daily living of another human being who possesses reduced capability to complete some of these activities alone." []
+is_a: OMRSE:00000001 ! human social role
+property_value: http://purl.org/dc/elements/1.1/contributor "John Judkins" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00002060
+name: family relationship
+def: "A relational quality that inheres within two or more persons related as members of a domestic group, or a number of domestic groups linked through descent from a common ancestor, marriage, or adoption." []
+comment: We are also intending on including other family arrangements. This is something we are working on.
+is_a: BFO:0000145
+property_value: http://purl.org/dc/elements/1.1/contributor "John Judkins" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000119 http://purl.obolibrary.org/obo/ERO_0002033 xsd:string
+
+[Term]
 id: PCO:0000020
 is_a: OMRSE:00000022 ! aggregate of objectual organisms
-
-[Typedef]
-id: BFO:0000075
-equivalent_to: OMRSE:00000020 ! is-aggregate-of
 
 [Typedef]
 id: OMIABIS:0000009
@@ -2253,8 +2296,9 @@ is_obsolete: true
 
 [Typedef]
 id: OMRSE:00000021
-name: is-component-of-aggregate
+name: obsolete is-component-of-aggregate
 comment: At the instance level, this relation is the named inverse of is-aggregate-of.\n\nAt the type level, however, not so.\n\nWe expect BFO 2.0 to have this relation as well, and we will obsolete this property and declare it equivalent to BFO's version when BFO 2.0 comes out.
+is_a: ObsoleteProperty
 is_obsolete: true
 
 [Typedef]
@@ -2276,4 +2320,8 @@ range: OMRSE:00000056 ! hospital organization
 [Typedef]
 id: OMRSE:00000167
 name: provides service
+
+[Typedef]
+id: RO:0002217
+is_a: ObsoleteProperty
 

@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-04-21/omrse-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-08-30/omrse-base.owl"/>
         <dc:contributor>Daniel Welch</dc:contributor>
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
@@ -22,7 +22,7 @@
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
         <owl:versionInfo>2020-10-27</owl:versionInfo>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-21</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-08-30</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -110,6 +110,9 @@
     <!-- http://purl.obolibrary.org/obo/OMRSE_00002025 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002025">
+        <obo:IAO_0000111>ISO 639-1 code</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">ISO 639-1 assigns two-character identifiers to individual human languages.  This annotation property is for use in annotating OWL2 individuals in OMRSE that represent languages with their appropriate ISO 639-1 code that designates them in that standard system.</rdfs:comment>
         <rdfs:label xml:lang="en">ISO 639-1 code</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -118,6 +121,9 @@
     <!-- http://purl.obolibrary.org/obo/OMRSE_00002026 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002026">
+        <obo:IAO_0000111 xml:lang="en">ISO 639-2/B code</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">ISO 639-2/B assigns three-character identifiers to individual human languages.  This annotation property is for use in annotating OWL2 individuals in OMRSE that represent languages with their appropriate ISO 639-2/B (&apos;B&apos; is for &quot;bibliographic applications&quot;) code that designates them in that standard system.</rdfs:comment>
         <rdfs:label xml:lang="en">ISO 639-2/B code</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -126,6 +132,9 @@
     <!-- http://purl.obolibrary.org/obo/OMRSE_00002027 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002027">
+        <obo:IAO_0000111 xml:lang="en">ISO 639-2/T code</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">ISO 639-2/T assigns three-character identifiers to individual human languages.  This annotation property is for use in annotating OWL2 individuals in OMRSE that represent languages with their appropriate ISO 639-2/T (&apos;T&apos; is for &quot;terminology applications&quot;) code that designates them in that standard system.</rdfs:comment>
         <rdfs:label xml:lang="en">ISO 639-2/T code</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -135,6 +144,9 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002028">
         <obo:IAO_0000111 xml:lang="en">ISO 639-3 code</obo:IAO_0000111>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">ISO 639-3 assigns three-character identifiers to individual human languages.  This annotation property is for use in annotating OWL2 individuals in OMRSE that represent languages with their appropriate ISO 639-3 code that designates them in that standard system.</rdfs:comment>
+        <rdfs:label xml:lang="en">ISO 639-3 code</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -207,14 +219,6 @@
     <!-- http://purl.obolibrary.org/obo/BFO_0000067 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000067"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000075 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000075">
-        <owl:equivalentProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-    </owl:ObjectProperty>
     
 
 
@@ -315,12 +319,13 @@
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000021 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000021">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
         <rdfs:comment>At the instance level, this relation is the named inverse of is-aggregate-of.
 
 At the type level, however, not so.
 
 We expect BFO 2.0 to have this relation as well, and we will obsolete this property and declare it equivalent to BFO&apos;s version when BFO 2.0 comes out.</rdfs:comment>
-        <rdfs:label>is-component-of-aggregate</rdfs:label>
+        <rdfs:label>obsolete is-component-of-aggregate</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
@@ -417,6 +422,14 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002217 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002217">
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002218 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002218"/>
@@ -444,6 +457,12 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002351"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
     
 
 
@@ -561,6 +580,12 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000145"/>
     
 
 
@@ -2181,6 +2206,10 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000075"/>
                                     </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000074"/>
+                                    </owl:Restriction>
                                 </owl:intersectionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
@@ -2189,8 +2218,10 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115 xml:lang="en">A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of its residence function.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of that housing unit&apos;s residence function.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
+        <rdfs:comment>Note in OMRSE it is the housing unit, not the people living there, that are the bearers of a &quot;residence function&quot;.  Note the distinction between being a residence and a resident.</rdfs:comment>
+        <rdfs:comment>Note that it is not possible in OWL 2, at least that we have yet found, to say that the housing unit in which the process occurs is the same one that is the bearer of the residence function (that the process realizes).</rdfs:comment>
         <rdfs:label xml:lang="en">household</rdfs:label>
     </owl:Class>
     
@@ -2246,7 +2277,7 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
         <obo:IAO_0000115 xml:lang="en">A role in human social processes that, if realized, is realized when the bearer provides labor or services in exchange for a wage or salary as specified by some deontic declaration.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda hicks</obo:IAO_0000117>
         <obo:IAO_0000118>employee</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">employee role</rdfs:label>
+        <rdfs:label xml:lang="en">job role</rdfs:label>
     </owl:Class>
     
 
@@ -3890,6 +3921,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000168 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000168">
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
@@ -5001,8 +5033,41 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000500 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000500">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000506"/>
-        <rdfs:label xml:lang="en">employment data item</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000077"/>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000077"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000112 xml:lang="en">Can be about any aspect of employment, such as salary, work location, or employer.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A data item that is about a person&apos;s job role and/or its realization.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">employment data item</obo:IAO_0000118>
+        <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
+        <dc:contributor xml:lang="en">S. Clint. Dowland</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">job role data item</rdfs:label>
     </owl:Class>
     
 
@@ -5759,6 +5824,55 @@ It indicates that a person has completed only early childhood education and noth
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:48:10Z</dc:date>
         <rdfs:comment xml:lang="en">Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.</rdfs:comment>
         <rdfs:label xml:lang="en">highest level of education is completion of pre-kindergarten data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000111 xml:lang="en">language literacy competence</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">A disposition borne by a human being that (1) has a linguistic competence as a dispositional part and (2) if realized, is realized by the bearer&apos;s achievement of some personal goal.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">human literacy</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">linguistic literacy</obo:IAO_0000118>
+        <dc:contributor xml:lang="en">Jiang Bian</dc:contributor>
+        <dc:contributor xml:lang="en">Xi Yang</dc:contributor>
+        <dc:contributor xml:lang="en">Yonghui Wu</dc:contributor>
+        <rdfs:comment xml:lang="en">Other dispositions that it can and likely does have as dispositional parts include cultural competencies, interpersonal competencies, competencies for navigating a society&apos;s systems of laws, claims, obligations, deontic declarations, and norms of financial and other economic exchange.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The realization of this disposition by definition realizes the bearer&apos;s linguistic competence that is a dispositional part of this disposition.  The realization of the linguistic competence would be an occurrent part of the realization of this disposition (and not a temporal part).</rdfs:comment>
+        <rdfs:comment xml:lang="en">Whereas linguistic competence may be afforded to non-human agents, literacy is nearly always considered in the context of human beings.</rdfs:comment>
+        <rdfs:label xml:lang="en">linguistic literacy competence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000001"/>
+        <obo:IAO_0000115 xml:lang="en">A human social role that, if realized, is realized in providing assistance in the activities of daily living of another human being who possesses reduced capability to complete some of these activities alone.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">John Judkins</dc:contributor>
+        <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">caregiver role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <obo:IAO_0000115 xml:lang="en">A relational quality that inheres within two or more persons related as members of a domestic group, or a number of domestic groups linked through descent from a common ancestor, marriage, or adoption.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://purl.obolibrary.org/obo/ERO_0002033</obo:IAO_0000119>
+        <dc:contributor xml:lang="en">John Judkins</dc:contributor>
+        <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">We are also intending on including other family arrangements. This is something we are working on.</rdfs:comment>
+        <rdfs:label xml:lang="en">family relationship</rdfs:label>
     </owl:Class>
     
 
