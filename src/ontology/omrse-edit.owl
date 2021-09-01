@@ -1716,9 +1716,12 @@ SubClassOf(obo:OMRSE_00000160 obo:OGMS_0000097)
 
 # Class: obo:OMRSE_00000161 (leaving a health care facility after receiving care)
 
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000161 "A process (1) where the active participant, who at the beginning of the process is located in a healthcare facility, exits the facility and no longer stands in a \"located in\" relationship to the facility and (2) is immediately preceded by a healthcare encounter in which the active participant also participated."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000161 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000161 "leaving a health care facility after receiving care"@en)
 SubClassOf(obo:OMRSE_00000161 obo:BFO_0000015)
 SubClassOf(obo:OMRSE_00000161 ObjectSomeValuesFrom(obo:RO_0000057 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000011)))
+SubClassOf(obo:OMRSE_00000161 ObjectSomeValuesFrom(obo:RO_0002087 obo:OGMS_0000097))
 
 # Class: obo:OMRSE_00000162 (obsolete medical advice)
 
