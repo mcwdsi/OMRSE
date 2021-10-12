@@ -945,7 +945,7 @@ SubClassOf(obo:OMRSE_00000053 obo:BFO_0000034)
 
 # Class: obo:OMRSE_00000054 (hospital role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000054 "A healthcare provider role that inheres in an organization and is realized by providing inpatient and outpatient care."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000054 "A healthcare provider role that inheres in an organization and is realized by providing inpatient care."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000054 "Mathias Brochhausen"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000054 "hospital role"@en)
 SubClassOf(obo:OMRSE_00000054 obo:OMRSE_00000015)
