@@ -2501,7 +2501,7 @@ SubClassOf(obo:OMRSE_00002031 obo:IAO_0000104)
 
 # Class: obo:OMRSE_00002032 (completing a program of education)
 
-AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00002032 "completing a program of eduction"@en)
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00002032 "completing a program of education"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002032 "An educating that realizes a concretization of some program of education."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00002032 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00002032 "Note that parent class 'educating' and referenced class 'program of education' are defined elsewhere in this education module of OMRSE."@en)
