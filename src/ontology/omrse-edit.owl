@@ -2649,7 +2649,7 @@ SubClassOf(obo:OMRSE_00002044 obo:OMRSE_00002030)
 # Class: obo:OMRSE_00002045 (highest level of education data item)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00002045 "highest level of education socio-economic data item"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002045 "A socio-economic data item that is about a person and their completion of an education program (and its type), where that education progam is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it.")
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002045 "A socio-economic data item that is about a person and their completion of an education program (and its type), where that education program is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it.")
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00002045 "William R. Hogan")
 AnnotationAssertion(rdfs:comment obo:OMRSE_00002045 "This data item in a typical attribute-value system such as table, XML, JSON takes values like \"secondary education\", \"Associate Degree\", \"Bachelor Degree\", \"High School\", and so on.")
 AnnotationAssertion(rdfs:label obo:OMRSE_00002045 "highest level of education data item")
