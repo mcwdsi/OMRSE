@@ -1,53 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-<group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
-
-  
-  
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/ro_import.obo" uri="imports/ro_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/ogms_import.owl" uri="imports/ogms_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/ogms_import.obo" uri="imports/ogms_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/obi_import.owl" uri="imports/obi_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/obi_import.obo" uri="imports/obi_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl" uri="imports/apollo_sv_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.obo" uri="imports/apollo_sv_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/iao_import.owl" uri="imports/iao_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/iao_import.obo" uri="imports/iao_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/obib_import.owl" uri="imports/obib_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/obib_import.obo" uri="imports/obib_import.obo"/>
-  
-  
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/omiabis_import.owl" uri="imports/omiabis_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/omiabis_import.obo" uri="imports/omiabis_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/go_import.owl" uri="imports/go_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/go_import.obo" uri="imports/go_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/oae_import.owl" uri="imports/oae_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/oae_import.obo" uri="imports/oae_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/pco_import.owl" uri="imports/pco_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/pco_import.obo" uri="imports/pco_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/oostt_import.owl" uri="imports/oostt_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/oostt_import.obo" uri="imports/oostt_import.obo"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/omo_import.owl" uri="imports/omo_import.owl"/>
-
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/pno_import.owl" uri="imports/pno_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/imports/d-acts_import.owl" uri="imports/d-acts_import.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/components/pno.owl" uri="components/pno.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/components/d-acts.owl" uri="components/d-acts.owl"/>
-  <uri name="http://purl.obolibrary.org/obo/omrse/components/import_terms.owl" uri="components/import_terms.owl"/>
-  
-  
-</group>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/omrse/external_import.owl" uri="imports/external_import.owl"/>
+    <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/ro_import.owl" uri="imports/ro_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/ro_import.obo" uri="imports/ro_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/ogms_import.owl" uri="imports/ogms_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/ogms_import.obo" uri="imports/ogms_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/obi_import.owl" uri="imports/obi_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/obi_import.obo" uri="imports/obi_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl" uri="imports/apollo_sv_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.obo" uri="imports/apollo_sv_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/iao_import.owl" uri="imports/iao_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/iao_import.obo" uri="imports/iao_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/obib_import.owl" uri="imports/obib_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/obib_import.obo" uri="imports/obib_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/omiabis_import.owl" uri="imports/omiabis_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/omiabis_import.obo" uri="imports/omiabis_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/go_import.owl" uri="imports/go_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/go_import.obo" uri="imports/go_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/oae_import.owl" uri="imports/oae_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/oae_import.obo" uri="imports/oae_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/pco_import.owl" uri="imports/pco_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/pco_import.obo" uri="imports/pco_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/bfo_import.obo" uri="imports/bfo_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/oostt_import.owl" uri="imports/oostt_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/oostt_import.obo" uri="imports/oostt_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/omo_import.owl" uri="imports/omo_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/pno_import.owl" uri="imports/pno_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/d-acts_import.owl" uri="imports/d-acts_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/components/pno.owl" uri="components/pno.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/components/d-acts.owl" uri="components/d-acts.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/components/import_terms.owl" uri="components/import_terms.owl"/>
+    </group>
 </catalog>
