@@ -2494,24 +2494,6 @@ It is important to note that this going out of existence of s is complete and un
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">Each spatiotemporal region at any time t projects_onto some spatial region at t. (axiom label in BFO2 Reference: [099-001])</owl:annotatedTarget>
-        <obo1:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/099-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">Each spatiotemporal region projects_onto some temporal region. (axiom label in BFO2 Reference: [098-001])</owl:annotatedTarget>
-        <obo1:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/098-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">Every spatiotemporal region s is such that s occupies_spatiotemporal_region s. (axiom label in BFO2 Reference: [107-002])</owl:annotatedTarget>
-        <obo1:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/107-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] </owl:annotatedTarget>
         <obo1:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/107-002"/>
@@ -2551,6 +2533,24 @@ It is important to note that this going out of existence of s is complete and un
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])</owl:annotatedTarget>
         <obo1:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/096-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">Each spatiotemporal region at any time t projects_onto some spatial region at t. (axiom label in BFO2 Reference: [099-001])</owl:annotatedTarget>
+        <obo1:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/099-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">Each spatiotemporal region projects_onto some temporal region. (axiom label in BFO2 Reference: [098-001])</owl:annotatedTarget>
+        <obo1:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/098-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">Every spatiotemporal region s is such that s occupies_spatiotemporal_region s. (axiom label in BFO2 Reference: [107-002])</owl:annotatedTarget>
+        <obo1:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/107-002"/>
     </owl:Axiom>
     
 
@@ -7724,7 +7724,7 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0020027 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000024"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002072"/>
         <obo1:IAO_0000112 xml:lang="en">Tammy&apos;s owner role with regards to the house on 234 Evergreen Terrace; Walter&apos;s owner role with regards to the intellectual property on his movie script</obo1:IAO_0000112>
         <obo1:IAO_0000115 xml:lang="en">A role in a human social process that is based on a social act and whose bearer exercises exclusive control over a property, where this control is permitted by one or more deontic roles, which are parts of the owner role.</obo1:IAO_0000115>
         <obo1:IAO_0000117>Mathias Brochhausen</obo1:IAO_0000117>
@@ -8568,12 +8568,10 @@ This issue is outside the scope of OBI.</obo1:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000024">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <obo1:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo1:IAO_0000115>
         <obo1:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo1:IAO_0000117>
         <obo1:IAO_0000412>http://purl.obolibrary.org/obo/omrse.owl</obo1:IAO_0000412>
         <rdfs:comment xml:lang="en">Previous definition: A role played by an entity in human social processes.</rdfs:comment>
-        <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
     </owl:Class>
     
 
@@ -8591,6 +8589,12 @@ Amanda Hicks</obo1:IAO_0000117>
         <rdfs:comment xml:lang="en">It is often convenient to group organizations together that otherwise might not even interact with one another. </rdfs:comment>
         <rdfs:label xml:lang="en">aggregate of organizations</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00002072 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002072"/>
     
 
 
@@ -9037,5 +9041,5 @@ Amanda Hicks</obo1:IAO_0000117>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 

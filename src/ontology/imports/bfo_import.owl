@@ -10,8 +10,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/imports/bfo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-03-02/imports/bfo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-02</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-03-13/imports/bfo_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-03-13</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -348,6 +348,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <obo:BFO_0000179>ic</obo:BFO_0000179>
         <obo:BFO_0000180>IndependentContinuant</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">a chair</obo:IAO_0000112>
@@ -555,6 +556,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
         <obo:BFO_0000179>realizable</obo:BFO_0000179>
         <obo:BFO_0000180>RealizableEntity</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">the disposition of this piece of metal to conduct electricity.</obo:IAO_0000112>
@@ -596,10 +598,57 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000019">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
+        <obo:BFO_0000179>quality</obo:BFO_0000179>
+        <obo:BFO_0000180>Quality</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">the ambient temperature of this portion of air</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the color of a tomato</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the length of the circumference of your waist</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the mass of this piece of gold.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the shape of your nose</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the shape of your nostril</obo:IAO_0000112>
+        <obo:IAO_0000600 xml:lang="en">a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</obo:IAO_0000600>
+        <obo:IAO_0000601 xml:lang="en">If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])</obo:IAO_0000601>
+        <obo:IAO_0000602>(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] </obo:IAO_0000602>
+        <obo:IAO_0000602>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">quality</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000600"/>
+        <owl:annotatedTarget xml:lang="en">a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/055-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">If an entity is a quality at any time that it exists, then it is a quality at every time that it exists. (axiom label in BFO2 Reference: [105-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/105-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/055-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/105-001"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000020 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000020">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
         <obo:BFO_0000179>sdc</obo:BFO_0000179>
         <obo:BFO_0000180>SpecificallyDependentContinuant</obo:BFO_0000180>
         <obo:IAO_0000112 xml:lang="en">Reciprocal specifically dependent continuants: the function of this key to open this lock and the mutually dependent disposition of this lock: to be opened by this key</obo:IAO_0000112>
@@ -811,6 +860,35 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <obo:BFO_0000179>gdc</obo:BFO_0000179>
+        <obo:BFO_0000180>GenericallyDependentContinuant</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the pdf file on your laptop, the pdf file that is a copy thereof on my laptop</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</obo:IAO_0000115>
+        <obo:IAO_0000602>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">generically dependent continuant</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/074-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/074-001"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000034">
@@ -950,6 +1028,34 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000145">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
+        <obo:BFO_0000179>r-quality</obo:BFO_0000179>
+        <obo:BFO_0000180>RelationalQuality</obo:BFO_0000180>
+        <obo:IAO_0000112 xml:lang="en">John’s role of husband to Mary is dependent on Mary’s role of wife to John, and both are dependent on the object aggregate comprising John and Mary as member parts joined together through the relational quality of being married.</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">a marriage bond, an instance of requited love, an obligation between one person and another.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">b is a relational quality = Def. for some independent continuants c, d and for some time t: b quality_of c at t &amp; b quality_of d at t. (axiom label in BFO2 Reference: [057-001])</obo:IAO_0000115>
+        <obo:IAO_0000602>(iff (RelationalQuality a) (exists (b c t) (and (IndependentContinuant b) (IndependentContinuant c) (qualityOfAt a b t) (qualityOfAt a c t)))) // axiom label in BFO2 CLIF: [057-001] </obo:IAO_0000602>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
+        <rdfs:label xml:lang="en">relational quality</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget xml:lang="en">b is a relational quality = Def. for some independent continuants c, d and for some time t: b quality_of c at t &amp; b quality_of d at t. (axiom label in BFO2 Reference: [057-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/057-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000145"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(iff (RelationalQuality a) (exists (b c t) (and (IndependentContinuant b) (IndependentContinuant c) (qualityOfAt a b t) (qualityOfAt a c t)))) // axiom label in BFO2 CLIF: [057-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/057-001"/>
+    </owl:Axiom>
     
 
 

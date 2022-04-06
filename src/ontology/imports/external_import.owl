@@ -165,6 +165,54 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000118 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000121 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000121"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000132 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000132"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000138 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000138"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000139 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000139"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000181 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000181"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -252,6 +300,12 @@
     <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000059"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002012 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002012"/>
     
 
 
