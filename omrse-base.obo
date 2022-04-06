@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2021-08-30/omrse-base.owl
+data-version: omrse/releases/2022-04-06/omrse-base.owl
 remark: This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt
 ontology: omrse/omrse-base
 property_value: http://purl.org/dc/elements/1.1/contributor "Daniel Welch" xsd:string
@@ -11,7 +11,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:stri
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
 property_value: owl:versionInfo "2020-10-27" xsd:string
-property_value: owl:versionInfo "2021-08-30" xsd:string
+property_value: owl:versionInfo "2022-04-06" xsd:string
 name: The Ontology of Medically Related Social Entities
 
 [Term]
@@ -35,7 +35,7 @@ property_value: IAO:0000117 "William R. Hogan" xsd:string
 [Term]
 id: OMRSE:00000002
 name: party to a legal entity
-is_a: OMRSE:00000024 ! role in human social processes
+is_a: OMRSE:00002072 ! role in human social processes
 
 [Term]
 id: OMRSE:00000003
@@ -90,7 +90,7 @@ id: OMRSE:00000010
 name: human health care role
 def: "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. " []
 comment: Mathias Brochhausen
-is_a: OMRSE:00000024 ! role in human social processes
+is_a: OMRSE:00002072 ! role in human social processes
 relationship: BFO:0000054 OGMS:0000097
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "health care role" xsd:string
@@ -188,18 +188,19 @@ relationship: RO:0002351 NCBITaxon:9606
 
 [Term]
 id: OMRSE:00000024
-name: role in human social processes
+name: obsolete role in human social processes
 def: "A role inhering in an entity realized by social interactions in human society." []
 comment: Previous definition: A role played by an entity in human social processes.
-is_a: BFO:0000023
+is_a: ObsoleteClass
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000025
 name: organization social role
 def: "A role in human social processes that inheres in an organization." []
 comment: Defined class that we will ultimately move to an application ontology.  We are leaving here for now until we determine which application ontology: it is likely going to be an ontology that does not currently (2012-06-05) exist.\n\nDitto for its current descendants.
-is_a: OMRSE:00000024 ! role in human social processes
+is_a: OMRSE:00002072 ! role in human social processes
 relationship: RO:0000052 OBI:0000245
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -210,7 +211,7 @@ def: "A role in human social processes that inheres in an organism." []
 comment: Defined class that we will ultimately move to an application ontology.  We are leaving here for now until we determine which application ontology: it is likely going to be an ontology that does not currently (2012-06-05) exist.\n\nDitto for its current descendants.
 comment: Includes animals as well as humans.  For example, pet, assistance animal, animal grown for food, work animal, domesticated animal, K-9, etc.  Human roles include gender role, party to legal entities, health care provider roles like doctor, nurse, etc.
 comment: Previous definition: A role in human social processes played by an organism.
-is_a: OMRSE:00000024 ! role in human social processes
+is_a: OMRSE:00002072 ! role in human social processes
 relationship: RO:0000052 OBI:0100026
 property_value: IAO:0000117 "William R. Hogan\nMathias Brochhausen" xsd:string
 
@@ -313,7 +314,7 @@ id: OMRSE:00000038
 name: legal person role
 def: "A role borne by a human individual or by a collection of humans regarded as possessing rights and duties enforeable at law." []
 comment: We are aware of the fact that Wikipedia's definition differs from ours by saying that "Legal personality (...) is the characteristic of a non-living entity regarded by law to have the status of personhood" (http://en.wikipedia.org/wiki/Legal_personality) \nHowever, Shaw explicates:\n"In any legal system, certain entities, whether they be individuals or companies, will be regarded as possessing rights and duties enforceable at law. Thus an individual may prosecute or be prosecuted for assault and a company can sue for breach of contract. They are able to do this because the law recognises them as 'legal persons' possessing the capacity to have and to maintain certain rights, and being subject to perform specific duties. (...) In municipal law individuals, limited companies and public corporations are recognized as each possessing a distinct legal personality, the terms of which are circumscribed by the relevant legislation" (Shaw MN: International Law. Sixth Edition. Cambridge University Press, Cambridge, 2008).                We hold that Shaw's position is ontological more prolific since it not only allows to explain how groups of individuals become recognized as unities at law, but also how different individuals can hold different legal personality roles (always against the context of one legal system). The latter will proof useful when dealing with the representing comatous patients or minorsat law in ontologies.
-is_a: OMRSE:00000024 ! role in human social processes
+is_a: OMRSE:00002072 ! role in human social processes
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 "Malcolm N. Shaw: International Law. Cambridge University Press, Cambridge, 2008." xsd:string
 
@@ -452,7 +453,7 @@ property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 [Term]
 id: OMRSE:00000054
 name: hospital role
-def: "A healthcare provider role that inheres in an organization and is realized by providing inpatient and outpatient care." []
+def: "A healthcare provider role that inheres in an organization and is realized by providing inpatient care." []
 is_a: OMRSE:00000015 ! health care provider organization role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
@@ -616,7 +617,7 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 id: OMRSE:00000077
 name: job role
 def: "A role in human social processes that, if realized, is realized when the bearer provides labor or services in exchange for a wage or salary as specified by some deontic declaration." []
-is_a: OMRSE:00000024 ! role in human social processes
+is_a: OMRSE:00002072 ! role in human social processes
 relationship: BFO:0000054 OMRSE:00000146 ! employment process
 property_value: IAO:0000117 "Amanda hicks" xsd:string
 property_value: IAO:0000118 "employee" xsd:string
@@ -687,7 +688,7 @@ property_value: IAO:0000118 "human organizational role" xsd:string
 id: OMRSE:00000087
 name: employer role
 def: "a role in human social processes that is realized when the bearer provides a wage or salary in exchange for some labour or services as specified by some declaration" []
-is_a: OMRSE:00000024 ! role in human social processes
+is_a: OMRSE:00002072 ! role in human social processes
 relationship: BFO:0000054 OMRSE:00000146 ! employment process
 
 [Term]
@@ -719,7 +720,7 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 id: OMRSE:00000092
 name: insured party role
 def: "A role that inheres in an organism that is able to receive benefits from an insurance policy. The role, if realized, is realized by receiving benefits that are covered by the insurance policy." []
-is_a: OMRSE:00000024 ! role in human social processes
+is_a: OMRSE:00002072 ! role in human social processes
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -738,7 +739,7 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 [Term]
 id: OMRSE:00000095
 name: payer role
-is_a: OMRSE:00000024 ! role in human social processes
+is_a: OMRSE:00002072 ! role in human social processes
 
 [Term]
 id: OMRSE:00000096
@@ -1189,7 +1190,10 @@ is_a: OGMS:0000097
 [Term]
 id: OMRSE:00000161
 name: leaving a health care facility after receiving care
+def: "A process (1) where the active participant, who at the beginning of the process is located in a healthcare facility, exits the facility and no longer stands in a \"located in\" relationship to the facility and (2) is immediately preceded by a healthcare encounter in which the active participant also participated." []
 is_a: BFO:0000015
+relationship: RO:0002087 OGMS:0000097
+property_value: IAO:0000117 "William R. Hogan" xsd:string
 
 [Term]
 id: OMRSE:00000162
@@ -1394,47 +1398,44 @@ property_value: IAO:0000119 "Modified version of definition provided by Human Be
 
 [Term]
 id: OMRSE:00000192
-name: communication
+name: obsolete communication
 def: "A process in which some participant shares some information content entity about some state of that participant with some other participant." []
 comment: The term 'participant' in the definition need not refer to a human agent.
-is_a: BFO:0000015
-relationship: RO:0000057 BFO:0000040
-relationship: RO:0000057 IAO:0000030
+is_a: ObsoleteClass
 property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000193
-name: linguistic competence
+name: obsolete linguistic competence
 def: "A disposition inhering in a material entity that, if realized, is realized by that material entity’s communicating via some linguistic concretization." []
-is_a: BFO:0000016
-relationship: BFO:0000054 OMRSE:00000192 ! communication
-relationship: RO:0000052 BFO:0000040
+is_a: ObsoleteClass
 property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000194
-name: language
+name: obsolete language
 def: "A disposition inhering in a linguistic community that (i) is a maximal aggregate of communicatively compatible linguistic competences, and (ii) if realized, is realized by any and all realizations of those linguistic competences." []
-is_a: BFO:0000016
-relationship: BFO:0000054 OMRSE:00000192 ! communication
-relationship: RO:0002351 OMRSE:00000193 ! linguistic competence
+is_a: ObsoleteClass
 property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000195
 name: linguistic community
 def: "A maximal aggregate of material entities such that each member bears a linguistic competence for the same language." []
 is_a: BFO:0000040
-relationship: RO:0000053 OMRSE:00000194 ! language
+relationship: RO:0000053 OMRSE:00002069 ! language
 property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
@@ -1442,25 +1443,25 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
 id: OMRSE:00000196
-name: expression of preferred language
+name: obsolete expression of preferred language
 def: "A communication in which some participant states a preference for some communicative process to be in a certain language, and that has a concretization of a preferred language information content entity as its specified output." []
-is_a: OMRSE:00000192 ! communication
+is_a: OMRSE:00000192 ! obsolete communication
 property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000197
-name: preferred language information content entity
+name: obsolete preferred language information content entity
 def: "An information content entity that (i) is about some person, some language, and some linguistic competence; and (ii) conveys the language with which that person prefers to communicate within some given context." []
-is_a: IAO:0000030
-relationship: IAO:0000136 OMRSE:00000193 ! linguistic competence
-relationship: IAO:0000136 OMRSE:00000194 ! language
+is_a: ObsoleteClass
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000198
@@ -1468,7 +1469,7 @@ name: information content entity-request process
 def: "a communication in which some participant requests of some other participant an information content entity about some portion of reality" []
 comment: As with the parent class, 'participant' in the definition need not refer to a human agent.
 comment: The medium and grammatical form are irrelevant. For example, the request may be written or spoken, and while it may be in the form of a question, it need not be.
-is_a: OMRSE:00000192 ! communication
+is_a: OMRSE:00002068 ! communication
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1963,7 +1964,7 @@ def: "An educating that realizes a concretization of some program of education."
 comment: Note that parent class 'educating' and referenced class 'program of education' are defined elsewhere in this education module of OMRSE.
 comment: This class refers extremely broadly to the successful realization of any program of education: a single course, first grade, MD, PhD, high school, the ninth grade, getting a black belt in karate, getting a master mechanic certification, a bachelor's degree, a masters degree, a graduate certificate, early childhood education program, and even getting a certificate at the end of some week-long workshop, summer camp, a certifcate from a cooking class, an actuarial certification.
 is_a: OMRSE:00002029 ! education process
-property_value: IAO:0000111 "completing a program of eduction" xsd:string
+property_value: IAO:0000111 "completing a program of education" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
 [Term]
@@ -2103,7 +2104,7 @@ property_value: IAO:0000119 http://uis.unesco.org/sites/default/files/documents/
 [Term]
 id: OMRSE:00002045
 name: highest level of education data item
-def: "A socio-economic data item that is about a person and their completion of an education program (and its type), where that education progam is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it." []
+def: "A socio-economic data item that is about a person and their completion of an education program (and its type), where that education program is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it." []
 comment: This data item in a typical attribute-value system such as table, XML, JSON takes values like "secondary education", "Associate Degree", "Bachelor Degree", "High School", and so on.
 is_a: OMRSE:00000506 ! socio-economic data item
 property_value: IAO:0000111 "highest level of education socio-economic data item" xsd:string
@@ -2111,8 +2112,8 @@ property_value: IAO:0000117 "William R. Hogan" xsd:string
 
 [Term]
 id: OMRSE:00002046
+name: vocational education program
 def: "An educational plan specification that has a vocational objective specification as part." []
-comment: vocational education program
 comment: Vocational education programs are designed for learners to acquire the knowledge, skills and competencies specific to a particular occupation, trade, or class of occupations or trades. Such programs may have work-based components (e.g. apprenticeships, dual-system education programmes). Successful completion of such programs leads to labor market-relevant, vocational qualifications acknowledged as occupationally-oriented by the relevant national authorities and/or the labor market.
 is_a: OMRSE:00002031 ! educational program
 intersection_of: OMRSE:00002031 ! educational program
@@ -2123,12 +2124,12 @@ property_value: IAO:0000119 http://uis.unesco.org/sites/default/files/documents/
 
 [Term]
 id: OMRSE:00002047
+name: kindergarten education program
 def: "A primary education plan specification that specifies the competencies and information content entities that should be acquired by students in the first year of primary education in the United States." []
 is_a: OMRSE:00002034 ! primary education program
 property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
 property_value: http://purl.org/dc/elements/1.1/date 2020-09-02T12:38:43Z xsd:dateTime
 property_value: IAO:0000111 "kindergarten education plan specification" xsd:string
-property_value: IAO:0000117 "kindergarten education program" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
 [Term]
@@ -2278,6 +2279,134 @@ property_value: http://purl.org/dc/elements/1.1/contributor "John Judkins" xsd:s
 property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ERO_0002033 xsd:string
+
+[Term]
+id: OMRSE:00002061
+name: monetary personal income data item
+def: "A data item that is about the sum of earnings for some person(s) from various forms of payment or profits." []
+comment: We use the phrase ‘some person’ in the definition because this class can be about an individual's or a household's earnings. Similarly, we use 'personal income' in the label because the term is typically restricted to individuals and households. This class is also restricted to being about monetary forms of income.
+is_a: IAO:0000027
+property_value: http://purl.org/dc/elements/1.1/contributor "Chris Stoeckert" xsd:string
+property_value: IAO:0000112 "Examples of monetary forms of payment include: wages, salary, or tips; interest generated by capital; dividends earned; lottery, game, or contest monetary winnings; alimony; royalties; trusts; pensions; receipt of rental payments; unemployment payments; social security payments; worker's compensation; social security payments; or profit from entrepreneurial activities." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00002062
+name: concretization-utilization process
+def: "Process in which some participant utilizes some specifically dependent continuant as a concretization of some generically dependent continuant." []
+comment: Instances include any process that brings it about that some specifically dependent continuant begins to stand in a concretization relation to some generically dependent continuant, as well as any process in which someone makes use of a pre-established concretization relation. To be clear, instances do not include using concretizations of words or letters for purposes that do not make use of the concretization relations in which they stand (for example, hanging up a sign in a foreign language as a decoration because one likes the colors, despite having no idea what the sign says).
+comment: Instances include, but are not limited to, processes that bring about cognitive concretizations.
+is_a: BFO:0000015
+relationship: RO:0000057 BFO:0000040
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000112 "Taking notes on a meeting is an example in which the concretization relation is newly established, since the SDCs that concretize the GDCs come into existence as the notes are written. In contrast, using slides prepared by someone else in order to convey information during a presentation is a case of using a concretization in which the performer neither brings the concretizing SDCs into existence nor is responsible for their standing in the concretization relation to the relevant GDCs. A nonlinguistic example is drawing the logo of one’s favorite brand, in which one creates a pattern that concretizes a GDC that is also concretized by patterns on products of the brand." xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00002063
+name: linguistic concretization-utilization process
+def: "A concretization-utilization process in which the utilized specifically dependent continuant concretizes the generically dependent through use of some language." []
+is_a: OMRSE:00002062 ! concretization-utilization process
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00002064
+name: concretization-interpretation process
+def: "Process in which some participant infers that some particular specifically dependent continuant stands in the concretization relation to some particular generically dependent continuant." []
+comment: The interpretation need not be accurate. It may even be the case that the specifically dependent continuant has not previously concretized anything.
+is_a: BFO:0000015
+relationship: RO:0000057 BFO:0000020
+relationship: RO:0000057 BFO:0000040
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000112 "For example, reading a text message that says, “It is raining outside,” and inferring that the words on the screen are meant to convey information about the weather. The pattern on the screen that corresponds to the words is the SDC, and the ICE about the rain is the GDC. Or, hearing your spouse say, “Can you come to the kitchen?” and then knowing that your spouse wants you to come to the kitchen. You have interpreted the patterns of the sound as concretizing a GDC about what your spouse wants. Or, seeing a drawing of a basketball player and inferring—perhaps incorrectly—that it is of Michael Jordan." xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00002065
+name: linguistic concretization-interpretation process
+def: "A concretization-interpretation process in which the specifically dependent continuant is inferred to concretize the generically dependent continuant  in a way that makes use of some language." []
+is_a: OMRSE:00002064 ! concretization-interpretation process
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00002066
+name: linguistic competence
+def: "A disposition that inheres in some material entity and is such that that, if realized, it is realized by either some linguistic concretization-utilization process or some linguistic concretization-interpretation process." []
+comment: When realized in a concretization-utilization process, the only relevant concretization may in some cases be a cognitive one, but that suffices to realize a linguistic competence. For example, suppose one begins to write a letter, planning out the words ahead of time, but is interrupted before beginning to write and never resumes. During the process of planning out the words and what one intends to communicate, one is already concretizing words cognitively, as well as considering which combinations of words one can use to concretize additional generically dependent continuants. In doing so, one performs processes that realize one's linguistic competence, without producing any concretizations other than those cognitive ones.
+is_a: BFO:0000016
+relationship: RO:0000052 BFO:0000040
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00002068
+name: communication
+def: "A process in which some participant shares some generically dependent continuant with some other participant. The former utilizes some specifically dependent continuant that concretizes the generically dependent continuant intended to be shared, while the latter interprets that specifically dependent continuant to concretize some particular generically dependent continuant, aiming to accurately infer the other participant’s intent." []
+comment: For example, if you tell someone, “It is raining,” you produce sounds that have patterns that concretize information about the weather. Your utilization of that concretization is part of the communication. When the other person hears you, they interpret those patterns to concretize something, which may or may not be the same as what you intended to convey. In other words, they interpret the sounds you produce to have meanings associated with them, and that interpretation process is another part of the communication. If a process does not have a part of each type, it is not a communication.
+comment: The interpretation need not correspond exactly to what was intended by the other participant.
+comment: The term 'participant' in the definition need not refer to a human agent.
+is_a: BFO:0000015
+relationship: RO:0000057 BFO:0000040
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00002069
+name: language
+def: "A disposition that (i) is an aggregate of linguistic competences, considered as forming a distinct group on the basis of perceived common characteristics, such as mutual intelligibility among their bearers, in addition to historical or cultural factors; (ii) if realized, is realized in any and all realizations of those linguistic competences; and (iii) inheres in a linguistic community." []
+is_a: BFO:0000016
+relationship: RO:0002351 OMRSE:00002066 ! linguistic competence
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00002070
+name: disclosure of preferred language
+def: "A communication in which some participant states a preference for some communicative process to be in a certain language, via some concretization of some preferred language information content entity." []
+is_a: OMRSE:00002068 ! communication
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+
+[Term]
+id: OMRSE:00002071
+name: preferred language information content entity
+def: "An information content entity that is about some person and some language, and that conveys the language with which that person prefers to communicate within some given context." []
+is_a: IAO:0000030
+relationship: IAO:0000136 BFO:0000040
+relationship: IAO:0000136 OMRSE:00002069 ! language
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OMRSE:00002072
+name: role in human social processes
+def: "A role inhering in an entity realized by social interactions in human society." []
+comment: Previous definition: A role played by an entity in human social processes.
+is_a: BFO:0000023
+relationship: RO:0000052 BFO:0000040
+relationship: RO:0000052 BFO:0000040
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
 id: PCO:0000020
