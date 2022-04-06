@@ -25,6 +25,11 @@
               "sub": "http://purl.obolibrary.org/obo/BFO_0000017"
             },
             {
+              "obj": "http://purl.obolibrary.org/obo/BFO_0000019",
+              "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
+              "sub": "http://purl.obolibrary.org/obo/BFO_0000019"
+            },
+            {
               "obj": "http://purl.obolibrary.org/obo/BFO_0000020",
               "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
               "sub": "http://purl.obolibrary.org/obo/BFO_0000020"
@@ -43,6 +48,11 @@
               "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
               "pred": "http://purl.obolibrary.org/obo/RO_0000052",
               "sub": "http://purl.obolibrary.org/obo/OMRSE_00000048"
+            },
+            {
+              "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
+              "pred": "http://purl.obolibrary.org/obo/RO_0000052",
+              "sub": "http://purl.obolibrary.org/obo/OMRSE_00002072"
             },
             {
               "obj": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
@@ -197,6 +207,15 @@
           "domainClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000003"
           ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0002012",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000003"
+          ]
+        },
+        {
+          "domainClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000003"
+          ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002222",
           "rangeClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000003"
@@ -326,6 +345,15 @@
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002334",
           "rangeClassIds": [
             "http://purl.obolibrary.org/obo/BFO_0000015"
+          ]
+        },
+        {
+          "domainClassIds": [
+            "http://purl.obolibrary.org/obo/BFO_0000015"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019000",
+          "rangeClassIds": [
+            "http://purl.obolibrary.org/obo/PATO_0000001"
           ]
         },
         {
@@ -713,7 +741,17 @@
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000192"
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002062"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002064"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002068"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000016",
@@ -723,17 +761,17 @@
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000016",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000193"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000016",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000194"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000016",
-          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00002058"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000016",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002066"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000016",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002069"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000017",
@@ -787,6 +825,11 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000020",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000057",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002064"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000020",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/BFO_0000017"
         },
@@ -794,6 +837,11 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000020",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/BFO_0000019"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000020",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/PATO_0000001"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
@@ -824,11 +872,6 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/IAO_0021031"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000024"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
@@ -957,6 +1000,11 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
+          "pred": "http://purl.obolibrary.org/obo/IAO_0000136",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002071"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
           "pred": "http://purl.obolibrary.org/obo/OBI_0000299",
           "sub": "http://purl.obolibrary.org/obo/OBI_0600052"
         },
@@ -968,12 +1016,22 @@
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
           "pred": "http://purl.obolibrary.org/obo/RO_0000052",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000193"
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002066"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
           "pred": "http://purl.obolibrary.org/obo/RO_0000057",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000192"
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002062"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000057",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002064"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000057",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002068"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
@@ -1044,6 +1102,11 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/RO_0002577"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000050",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0002012"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000050",
@@ -1223,7 +1286,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/GO_0008150",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/GO_0050896"
+          "sub": "http://purl.obolibrary.org/obo/GO_0007610"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/GO_0016740",
@@ -1234,11 +1297,6 @@
           "obj": "http://purl.obolibrary.org/obo/GO_0016772",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/GO_0016301"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/GO_0050896",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/GO_0007610"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000001",
@@ -1371,6 +1429,11 @@
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000506"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000027",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002061"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000028",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000017"
@@ -1434,11 +1497,6 @@
           "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
           "pred": "http://purl.obolibrary.org/obo/OBI_0000299",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000650"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
-          "pred": "http://purl.obolibrary.org/obo/RO_0000057",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000192"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
@@ -1543,17 +1601,17 @@
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000197"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
-          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000204"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000221"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002071"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
@@ -3117,6 +3175,11 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OGMS_0000097",
+          "pred": "http://purl.obolibrary.org/obo/RO_0002087",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000161"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OGMS_0000097",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OGMS_0000100"
         },
@@ -3321,51 +3384,6 @@
           "sub": "http://purl.obolibrary.org/obo/PCO_0000020"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000024",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/IAO_0020027"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000024",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000002"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000024",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000010"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000024",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000025"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000024",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000026"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000024",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000038"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000024",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000087"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000024",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000092"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000024",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000095"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000025",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000027"
@@ -3409,6 +3427,11 @@
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000048",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000051"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000048",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002072"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000049",
@@ -3992,38 +4015,8 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000192",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000054",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000193"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000192",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000054",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000194"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000192",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000196"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000192",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000198"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000193",
-          "pred": "http://purl.obolibrary.org/obo/IAO_0000136",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000197"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000194",
-          "pred": "http://purl.obolibrary.org/obo/IAO_0000136",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000197"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000194",
-          "pred": "http://purl.obolibrary.org/obo/RO_0000053",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000195"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000198",
@@ -4319,6 +4312,86 @@
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00002045",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00002057"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002062",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002063"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002064",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002065"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002068",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000198"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002068",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002070"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002069",
+          "pred": "http://purl.obolibrary.org/obo/IAO_0000136",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002071"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002069",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000053",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000195"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002072",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/IAO_0020027"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002072",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000002"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002072",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000010"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002072",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000025"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002072",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000026"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002072",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000038"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002072",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000077"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002072",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000087"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002072",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000092"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002072",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000095"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OOSTT_00000074",
@@ -4866,6 +4939,11 @@
           "sub": "http://purl.obolibrary.org/obo/RO_0009501"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002410",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0019000"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/RO_0002411",
           "pred": "inverseOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002404"
@@ -4899,6 +4977,11 @@
           "obj": "http://purl.obolibrary.org/obo/RO_0002412",
           "pred": "subPropertyOf",
           "sub": "http://purl.obolibrary.org/obo/RO_0002578"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0002418",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0002012"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/RO_0002418",
@@ -5136,6 +5219,16 @@
           "sub": "http://purl.obolibrary.org/obo/RO_0002448"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/RO_0019000",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0019001"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/RO_0019000",
+          "pred": "subPropertyOf",
+          "sub": "http://purl.obolibrary.org/obo/RO_0019002"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/UO_0000001",
           "pred": "http://purl.obolibrary.org/obo/IAO_0000039",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000408"
@@ -5313,6 +5406,11 @@
         {
           "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000024"
+        },
+        {
+          "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000028"
         },
         {
@@ -5394,6 +5492,26 @@
           "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000168"
+        },
+        {
+          "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000192"
+        },
+        {
+          "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000193"
+        },
+        {
+          "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000194"
+        },
+        {
+          "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000197"
         },
         {
           "obj": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
@@ -5985,11 +6103,11 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2021-08-30"
+            "val": "2022-04-06"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/omrse/releases/2021-08-30/omrse-full.json",
+        "version": "http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse-full.json",
         "xrefs": []
       },
       "nodes": [
@@ -7858,6 +7976,10 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime"
               },
               {
@@ -7958,6 +8080,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
                 "val": "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
@@ -19889,7 +20015,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000024",
-          "lbl": "role in human social processes",
+          "lbl": "obsolete role in human social processes",
           "meta": {
             "basicPropertyValues": [
               {
@@ -19907,7 +20033,8 @@
             "definition": {
               "val": "A role inhering in an entity realized by social interactions in human society.",
               "xrefs": []
-            }
+            },
+            "deprecated": true
           },
           "type": "CLASS"
         },
@@ -20461,7 +20588,7 @@
               }
             ],
             "definition": {
-              "val": "A healthcare provider role that inheres in an organization and is realized by providing inpatient and outpatient care.",
+              "val": "A healthcare provider role that inheres in an organization and is realized by providing inpatient care.",
               "xrefs": []
             }
           },
@@ -21838,6 +21965,23 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000161",
+          "lbl": "leaving a health care facility after receiving care",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A process (1) where the active participant, who at the beginning of the process is located in a healthcare facility, exits the facility and no longer stands in a \"located in\" relationship to the facility and (2) is immediately preceded by a healthcare encounter in which the active participant also participated.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000162",
           "lbl": "obsolete medical advice",
           "meta": {
@@ -22098,7 +22242,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000192",
-          "lbl": "communication",
+          "lbl": "obsolete communication",
           "meta": {
             "basicPropertyValues": [
               {
@@ -22124,13 +22268,14 @@
             "definition": {
               "val": "A process in which some participant shares some information content entity about some state of that participant with some other participant.",
               "xrefs": []
-            }
+            },
+            "deprecated": true
           },
           "type": "CLASS"
         },
         {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000193",
-          "lbl": "linguistic competence",
+          "lbl": "obsolete linguistic competence",
           "meta": {
             "basicPropertyValues": [
               {
@@ -22153,13 +22298,14 @@
             "definition": {
               "val": "A disposition inhering in a material entity that, if realized, is realized by that material entity’s communicating via some linguistic concretization.",
               "xrefs": []
-            }
+            },
+            "deprecated": true
           },
           "type": "CLASS"
         },
         {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000194",
-          "lbl": "language",
+          "lbl": "obsolete language",
           "meta": {
             "basicPropertyValues": [
               {
@@ -22182,7 +22328,8 @@
             "definition": {
               "val": "A disposition inhering in a linguistic community that (i) is a maximal aggregate of communicatively compatible linguistic competences, and (ii) if realized, is realized by any and all realizations of those linguistic competences.",
               "xrefs": []
-            }
+            },
+            "deprecated": true
           },
           "type": "CLASS"
         },
@@ -22217,7 +22364,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000196",
-          "lbl": "expression of preferred language",
+          "lbl": "obsolete expression of preferred language",
           "meta": {
             "basicPropertyValues": [
               {
@@ -22240,13 +22387,14 @@
             "definition": {
               "val": "A communication in which some participant states a preference for some communicative process to be in a certain language, and that has a concretization of a preferred language information content entity as its specified output.",
               "xrefs": []
-            }
+            },
+            "deprecated": true
           },
           "type": "CLASS"
         },
         {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000197",
-          "lbl": "preferred language information content entity",
+          "lbl": "obsolete preferred language information content entity",
           "meta": {
             "basicPropertyValues": [
               {
@@ -22269,7 +22417,8 @@
             "definition": {
               "val": "An information content entity that (i) is about some person, some language, and some linguistic competence; and (ii) conveys the language with which that person prefers to communicate within some given context.",
               "xrefs": []
-            }
+            },
+            "deprecated": true
           },
           "type": "CLASS"
         },
@@ -23721,7 +23870,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "completing a program of eduction"
+                "val": "completing a program of education"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -24100,7 +24249,64 @@
               "This data item in a typical attribute-value system such as table, XML, JSON takes values like \"secondary education\", \"Associate Degree\", \"Bachelor Degree\", \"High School\", and so on."
             ],
             "definition": {
-              "val": "A socio-economic data item that is about a person and their completion of an education program (and its type), where that education progam is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it.",
+              "val": "A socio-economic data item that is about a person and their completion of an education program (and its type), where that education program is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002046",
+          "lbl": "vocational education program",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "vocational education plan specification"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "William R. Hogan"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-isced-2011-en.pdf"
+              }
+            ],
+            "comments": [
+              "Vocational education programs are designed for learners to acquire the knowledge, skills and competencies specific to a particular occupation, trade, or class of occupations or trades. Such programs may have work-based components (e.g. apprenticeships, dual-system education programmes). Successful completion of such programs leads to labor market-relevant, vocational qualifications acknowledged as occupationally-oriented by the relevant national authorities and/or the labor market."
+            ],
+            "definition": {
+              "val": "An educational plan specification that has a vocational objective specification as part.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002047",
+          "lbl": "kindergarten education program",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "kindergarten education plan specification"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "William R. Hogan"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/creator",
+                "val": "http://orcid.org/0000-0002-9881-1017"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/date",
+                "val": "2020-09-02T12:38:43Z"
+              }
+            ],
+            "definition": {
+              "val": "A primary education plan specification that specifies the competencies and information content entities that should be acquired by students in the first year of primary education in the United States.",
               "xrefs": []
             }
           },
@@ -24536,6 +24742,342 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002061",
+          "lbl": "monetary personal income data item",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "Examples of monetary forms of payment include: wages, salary, or tips; interest generated by capital; dividends earned; lottery, game, or contest monetary winnings; alimony; royalties; trusts; pensions; receipt of rental payments; unemployment payments; social security payments; worker's compensation; social security payments; or profit from entrepreneurial activities."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Chris Stoeckert"
+              }
+            ],
+            "comments": [
+              "We use the phrase ‘some person’ in the definition because this class can be about an individual's or a household's earnings. Similarly, we use 'personal income' in the label because the term is typically restricted to individuals and households. This class is also restricted to being about monetary forms of income."
+            ],
+            "definition": {
+              "val": "A data item that is about the sum of earnings for some person(s) from various forms of payment or profits.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002062",
+          "lbl": "concretization-utilization process",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "Taking notes on a meeting is an example in which the concretization relation is newly established, since the SDCs that concretize the GDCs come into existence as the notes are written. In contrast, using slides prepared by someone else in order to convey information during a presentation is a case of using a concretization in which the performer neither brings the concretizing SDCs into existence nor is responsible for their standing in the concretization relation to the relevant GDCs. A nonlinguistic example is drawing the logo of one’s favorite brand, in which one creates a pattern that concretizes a GDC that is also concretized by patterns on products of the brand."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "S. Clint Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Sarah Bost"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "comments": [
+              "Instances include any process that brings it about that some specifically dependent continuant begins to stand in a concretization relation to some generically dependent continuant, as well as any process in which someone makes use of a pre-established concretization relation. To be clear, instances do not include using concretizations of words or letters for purposes that do not make use of the concretization relations in which they stand (for example, hanging up a sign in a foreign language as a decoration because one likes the colors, despite having no idea what the sign says).",
+              "Instances include, but are not limited to, processes that bring about cognitive concretizations."
+            ],
+            "definition": {
+              "val": "Process in which some participant utilizes some specifically dependent continuant as a concretization of some generically dependent continuant.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002063",
+          "lbl": "linguistic concretization-utilization process",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "S. Clint Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Sarah Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A concretization-utilization process in which the utilized specifically dependent continuant concretizes the generically dependent through use of some language.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002064",
+          "lbl": "concretization-interpretation process",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "For example, reading a text message that says, “It is raining outside,” and inferring that the words on the screen are meant to convey information about the weather. The pattern on the screen that corresponds to the words is the SDC, and the ICE about the rain is the GDC. Or, hearing your spouse say, “Can you come to the kitchen?” and then knowing that your spouse wants you to come to the kitchen. You have interpreted the patterns of the sound as concretizing a GDC about what your spouse wants. Or, seeing a drawing of a basketball player and inferring—perhaps incorrectly—that it is of Michael Jordan."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "S. Clint Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Sarah Bost"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "comments": [
+              "The interpretation need not be accurate. It may even be the case that the specifically dependent continuant has not previously concretized anything."
+            ],
+            "definition": {
+              "val": "Process in which some participant infers that some particular specifically dependent continuant stands in the concretization relation to some particular generically dependent continuant.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002065",
+          "lbl": "linguistic concretization-interpretation process",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "S. Clint Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Sarah Bost"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A concretization-interpretation process in which the specifically dependent continuant is inferred to concretize the generically dependent continuant  in a way that makes use of some language.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002066",
+          "lbl": "linguistic competence",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "S. Clint Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Mathias Brochhausen"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "comments": [
+              "When realized in a concretization-utilization process, the only relevant concretization may in some cases be a cognitive one, but that suffices to realize a linguistic competence. For example, suppose one begins to write a letter, planning out the words ahead of time, but is interrupted before beginning to write and never resumes. During the process of planning out the words and what one intends to communicate, one is already concretizing words cognitively, as well as considering which combinations of words one can use to concretize additional generically dependent continuants. In doing so, one performs processes that realize one's linguistic competence, without producing any concretizations other than those cognitive ones."
+            ],
+            "definition": {
+              "val": "A disposition that inheres in some material entity and is such that that, if realized, it is realized by either some linguistic concretization-utilization process or some linguistic concretization-interpretation process.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002068",
+          "lbl": "communication",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "S. Clint Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Mathias Brochhausen"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "comments": [
+              "For example, if you tell someone, “It is raining,” you produce sounds that have patterns that concretize information about the weather. Your utilization of that concretization is part of the communication. When the other person hears you, they interpret those patterns to concretize something, which may or may not be the same as what you intended to convey. In other words, they interpret the sounds you produce to have meanings associated with them, and that interpretation process is another part of the communication. If a process does not have a part of each type, it is not a communication.",
+              "The interpretation need not correspond exactly to what was intended by the other participant.",
+              "The term 'participant' in the definition need not refer to a human agent."
+            ],
+            "definition": {
+              "val": "A process in which some participant shares some generically dependent continuant with some other participant. The former utilizes some specifically dependent continuant that concretizes the generically dependent continuant intended to be shared, while the latter interprets that specifically dependent continuant to concretize some particular generically dependent continuant, aiming to accurately infer the other participant’s intent.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002069",
+          "lbl": "language",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "William R. Hogan"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Mathias Brochhausen"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint Dowland"
+              }
+            ],
+            "definition": {
+              "val": "A disposition that (i) is an aggregate of linguistic competences, considered as forming a distinct group on the basis of perceived common characteristics, such as mutual intelligibility among their bearers, in addition to historical or cultural factors; (ii) if realized, is realized in any and all realizations of those linguistic competences; and (iii) inheres in a linguistic community.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002070",
+          "lbl": "disclosure of preferred language",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "S. Clint Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Mathias Brochhausen"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A communication in which some participant states a preference for some communicative process to be in a certain language, via some concretization of some preferred language information content entity.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002071",
+          "lbl": "preferred language information content entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Mathias Brochhausen"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "An information content entity that is about some person and some language, and that conveys the language with which that person prefers to communicate within some given context.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00002072",
+          "lbl": "role in human social processes",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Mathias Brochhausen"
+              }
+            ],
+            "comments": [
+              "Previous definition: A role played by an entity in human social processes."
+            ],
+            "definition": {
+              "val": "A role inhering in an entity realized by social interactions in human society.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/OOSTT_00000030",
           "lbl": "OOSTT user-centered description",
           "meta": {
@@ -24703,6 +25245,19 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/PATO_0000001",
+          "lbl": "quality",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000589",
+                "val": "quality (PATO)"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/PATO_0000051",
           "lbl": "morphology",
           "meta": {
@@ -24837,7 +25392,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0000052",
-          "lbl": "inheres in",
+          "lbl": "characteristic of",
           "meta": {
             "basicPropertyValues": [
               {
@@ -24850,7 +25405,15 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this fragility is a characteristic of this vase"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
                 "val": "this red color inheres in this apple"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "this red color is a characteristic of this apple"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
@@ -24864,6 +25427,9 @@
                 "pred": "http://purl.obolibrary.org/obo/RO_0001900",
                 "val": "http://purl.obolibrary.org/obo/RO_0001901"
               }
+            ],
+            "comments": [
+              "Note that this relation was previously called \"inheres in\", but was changed to be called \"characteristic of\" because BFO2 uses \"inheres in\" in a more restricted fashion. This relation differs from BFO2:inheres_in in two respects: (1) it does not impose a range constraint, and thus it allows qualities of processes, as well as of information entities, whereas BFO2 restricts inheres_in to only apply to independent continuants (2) it is declared functional, i.e. something can only be a characteristic of one thing."
             ],
             "definition": {
               "val": "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence",
@@ -24907,7 +25473,7 @@
               }
             ],
             "definition": {
-              "val": "a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence",
+              "val": "Inverse of characteristic_of",
               "xrefs": []
             }
           },
@@ -25067,6 +25633,9 @@
                 "val": "is function of"
               }
             ],
+            "comments": [
+              "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020."
+            ],
             "definition": {
               "val": "a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence",
               "xrefs": []
@@ -25096,6 +25665,9 @@
                 "val": "quality_of"
               }
             ],
+            "comments": [
+              "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020."
+            ],
             "definition": {
               "val": "a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence",
               "xrefs": []
@@ -25124,6 +25696,9 @@
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "role_of"
               }
+            ],
+            "comments": [
+              "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020."
             ],
             "definition": {
               "val": "a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence",
@@ -25215,6 +25790,23 @@
               "val": "a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence",
               "xrefs": []
             }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0000092",
+          "lbl": "disposition of",
+          "meta": {
+            "comments": [
+              "This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020."
+            ],
+            "definition": {
+              "val": "inverse of has disposition",
+              "xrefs": []
+            },
+            "subsets": [
+              "http://purl.obolibrary.org/obo/RO_0002259"
+            ]
           },
           "type": "PROPERTY"
         },
@@ -25454,6 +26046,17 @@
             ],
             "definition": {
               "val": "a relation between a material entity and a 2D immaterial entity (the boundary), in which the boundary delimits the material entity",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0002012",
+          "lbl": "occurrent part of",
+          "meta": {
+            "definition": {
+              "val": "A part of relation that applies only between occurrents.",
               "xrefs": []
             }
           },
@@ -25891,7 +26494,6 @@
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
-              "http://purl.obolibrary.org/obo/valid_for_go_gp2term",
               "http://purl.obolibrary.org/obo/valid_for_go_ontology",
               "http://purl.obolibrary.org/obo/valid_for_gocam"
             ]
@@ -25926,7 +26528,6 @@
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
-              "http://purl.obolibrary.org/obo/valid_for_go_gp2term",
               "http://purl.obolibrary.org/obo/valid_for_go_ontology",
               "http://purl.obolibrary.org/obo/valid_for_gocam"
             ]
@@ -25961,7 +26562,6 @@
             },
             "subsets": [
               "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension",
-              "http://purl.obolibrary.org/obo/valid_for_go_gp2term",
               "http://purl.obolibrary.org/obo/valid_for_go_ontology",
               "http://purl.obolibrary.org/obo/valid_for_gocam"
             ]
@@ -26027,7 +26627,7 @@
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-                "val": "https://github.com/oborel/obo-relations/wiki/ROGuide#defining-property-chains-involving-reflexivity"
+                "val": "http://purl.obolibrary.org/obo/ro/docs/reflexivity/"
               }
             ],
             "definition": {
@@ -26049,6 +26649,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
                 "val": "agent in"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0100001",
+                "val": "http://purl.obolibrary.org/obo/RO_0002608"
               }
             ],
             "comments": [
@@ -26090,6 +26694,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
                 "val": "http://purl.obolibrary.org/obo/ro.owl"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0100001",
+                "val": "http://purl.obolibrary.org/obo/RO_0002500"
               }
             ],
             "definition": {
@@ -26438,16 +27046,20 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/RO_0002314",
-          "lbl": "inheres in part of",
+          "lbl": "characteristic of part of",
           "meta": {
             "basicPropertyValues": [
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Because part_of is transitive, inheres in is a sub-relation of inheres in part of"
+                "val": "Because part_of is transitive, inheres in is a sub-relation of characteristic of part of"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "Chris Mungall"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "inheres in part of"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
@@ -26459,11 +27071,11 @@
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-                "val": "https://github.com/oborel/obo-relations/wiki/ROGuide#defining-property-chains-involving-reflexivity"
+                "val": "http://purl.obolibrary.org/obo/ro/docs/reflexivity/"
               }
             ],
             "definition": {
-              "val": "q inheres in part of w if and only if there exists some p such that q inheres in p and p part of w.",
+              "val": "q characteristic of part of w if and only if there exists some p such that q inheres in p and p part of w.",
               "xrefs": []
             }
           },
@@ -26530,10 +27142,6 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
                 "val": "This relation differs from the parent relation 'capable of' in that the parent is weaker and only expresses a capability that may not be actually realized, whereas this relation is always realized."
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
-                "val": "This relation is currently used experimentally by the Gene Ontology Consortium. It may not be stable and may be obsoleted at some future time."
               }
             ],
             "subsets": [
@@ -27090,11 +27698,11 @@
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
-                "val": "http://purl.obolibrary.org/obo/MI_0914"
+                "val": "http://purl.obolibrary.org/obo/ro/docs/interaction-relations/"
               },
               {
-                "pred": "http://xmlns.com/foaf/0.1/page",
-                "val": "https://github.com/oborel/obo-relations/wiki/InteractionRelations"
+                "pred": "http://www.w3.org/2004/02/skos/core#closeMatch",
+                "val": "http://purl.obolibrary.org/obo/MI_0914"
               }
             ],
             "definition": {
@@ -27136,7 +27744,7 @@
                 "val": "http://purl.obolibrary.org/obo/ECO_0000353"
               },
               {
-                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "pred": "http://www.w3.org/2004/02/skos/core#closeMatch",
                 "val": "http://purl.obolibrary.org/obo/MI_0915"
               }
             ],
@@ -27429,8 +28037,8 @@
                 "val": "http://ontologydesignpatterns.org/wiki/Submissions:N-Ary_Relation_Pattern_%28OWL_2%29"
               },
               {
-                "pred": "http://xmlns.com/foaf/0.1/page",
-                "val": "https://github.com/oborel/obo-relations/wiki/InteractionRelations"
+                "pred": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+                "val": "http://purl.obolibrary.org/obo/ro/docs/interaction-relations/"
               }
             ]
           },
@@ -28086,6 +28694,94 @@
           "type": "PROPERTY"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/RO_0017001",
+          "lbl": "utilizes",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "A diagnostic testing device utilizes a specimen."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Asiyah Lin"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "https://orcid.org/0000-0001-9625-1899 Bill Duncan"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
+                "val": "See github ticket https://github.com/oborel/obo-relations/issues/497"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-11-08"
+              }
+            ],
+            "definition": {
+              "val": "X utilizes Y means X and Y are material entities, and X is capable of some process P that has input Y.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0019000",
+          "lbl": "regulates characteristic",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "https://orcid.org/0000-0002-8688-6599"
+              }
+            ],
+            "definition": {
+              "val": "A relationship that holds between a process and a characteristic in which process (P) regulates characteristic (C) iff: P results in the existence of C OR affects the intensity or magnitude of C.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0019001",
+          "lbl": "positively regulates characteristic",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "https://orcid.org/0000-0002-8688-6599"
+              }
+            ],
+            "definition": {
+              "val": "A relationship that holds between a process and a characteristic in which process (P) positively regulates characteristic (C) iff: P results in an increase in the intensity or magnitude of C.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/RO_0019002",
+          "lbl": "negatively regulates characteristic",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.org/dc/terms/contributor",
+                "val": "https://orcid.org/0000-0002-8688-6599"
+              }
+            ],
+            "definition": {
+              "val": "A relationship that holds between a process and a characteristic in which process (P) negatively regulates characteristic (C) iff: P results in a decrease in the intensity or magnitude of C.",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/UO_0000001",
           "lbl": "length unit",
           "meta": {
@@ -28191,11 +28887,11 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485106"
+                "val": "_:genid2147485172"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485107"
+                "val": "_:genid2147485173"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -28256,11 +28952,6 @@
         {
           "id": "http://purl.obolibrary.org/obo/GO_0016772",
           "lbl": "transferase activity, transferring phosphorus-containing groups",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/GO_0050896",
-          "lbl": "response to stimulus",
           "type": "CLASS"
         },
         {
@@ -28514,11 +29205,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/OMRSE_00000161",
-          "lbl": "leaving a health care facility after receiving care",
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000164",
           "lbl": "home health care organization",
           "type": "CLASS"
@@ -28619,11 +29305,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/RO_0000092",
-          "lbl": "disposition of",
-          "type": "PROPERTY"
-        },
-        {
           "id": "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
           "lbl": "Obsolete Class",
           "type": "CLASS"
@@ -28632,66 +29313,6 @@
           "id": "http://www.w3.org/2000/01/rdf-schema#label",
           "lbl": "label",
           "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OMRSE_00002046",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "vocational education plan specification"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "William R. Hogan"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": "http://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-isced-2011-en.pdf"
-              }
-            ],
-            "comments": [
-              "Vocational education programs are designed for learners to acquire the knowledge, skills and competencies specific to a particular occupation, trade, or class of occupations or trades. Such programs may have work-based components (e.g. apprenticeships, dual-system education programmes). Successful completion of such programs leads to labor market-relevant, vocational qualifications acknowledged as occupationally-oriented by the relevant national authorities and/or the labor market.",
-              "vocational education program"
-            ],
-            "definition": {
-              "val": "An educational plan specification that has a vocational objective specification as part.",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OMRSE_00002047",
-          "meta": {
-            "basicPropertyValues": [
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
-                "val": "kindergarten education plan specification"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "William R. Hogan"
-              },
-              {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "kindergarten education program"
-              },
-              {
-                "pred": "http://purl.org/dc/elements/1.1/creator",
-                "val": "http://orcid.org/0000-0002-9881-1017"
-              },
-              {
-                "pred": "http://purl.org/dc/elements/1.1/date",
-                "val": "2020-09-02T12:38:43Z"
-              }
-            ],
-            "definition": {
-              "val": "A primary education plan specification that specifies the competencies and information content entities that should be acquired by students in the first year of primary education in the United States.",
-              "xrefs": []
-            }
-          },
-          "type": "CLASS"
         }
       ],
       "propertyChainAxioms": [
@@ -28930,6 +29551,13 @@
         },
         {
           "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002211",
+            "http://purl.obolibrary.org/obo/RO_0019000"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019000"
+        },
+        {
+          "chainPredicateIds": [
             "http://purl.obolibrary.org/obo/RO_0002212",
             "http://purl.obolibrary.org/obo/RO_0002212"
           ],
@@ -28965,6 +29593,13 @@
         },
         {
           "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002212",
+            "http://purl.obolibrary.org/obo/RO_0019001"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019002"
+        },
+        {
+          "chainPredicateIds": [
             "http://purl.obolibrary.org/obo/RO_0002213",
             "http://purl.obolibrary.org/obo/RO_0002215"
           ],
@@ -28990,6 +29625,27 @@
             "http://purl.obolibrary.org/obo/RO_0002331"
           ],
           "predicateId": "http://purl.obolibrary.org/obo/RO_0002429"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002213",
+            "http://purl.obolibrary.org/obo/RO_0019001"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019001"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002213",
+            "http://purl.obolibrary.org/obo/RO_0019002"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0019002"
+        },
+        {
+          "chainPredicateIds": [
+            "http://purl.obolibrary.org/obo/RO_0002215",
+            "http://purl.obolibrary.org/obo/RO_0002233"
+          ],
+          "predicateId": "http://purl.obolibrary.org/obo/RO_0017001"
         },
         {
           "chainPredicateIds": [
