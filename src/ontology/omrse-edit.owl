@@ -35,7 +35,6 @@ Annotation(dc:creator "William Hogan"@en)
 Annotation(terms:license "https://creativecommons.org/licenses/by/4.0/")
 Annotation(rdfs:comment "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"@en)
 Annotation(rdfs:label "The Ontology of Medically Related Social Entities"@en)
-Annotation(owl:versionInfo "2020-10-27")
 
 Declaration(Class(obo:IAO_0020022))
 Declaration(Class(obo:IAO_0021003))
