@@ -2473,19 +2473,22 @@ SubClassOf(obo:OMRSE_00000507 obo:OMRSE_00000133)
 # Class: obo:OMRSE_00002029 (education process)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00002029 "educating"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002029 "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002029 "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00002029 "William R. Hogan"@en)
 AnnotationAssertion(obo:IAO_0000600 obo:OMRSE_00002029 "An act of acquiring new information and repeatedly applying that information to develop a new skill."@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00002029 "An interesting question is whether there must be another participant who is the \"educator\".  Some might object that many people are \"self taught\".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the top of a finger.  There was no previous information about that.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).
 
 On the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow \"plays a role\" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way)."@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00002029 "The loss of a \"bad\" capability is something like losing a bad golf swing and replacing it with a good one.  Also a capability to disrupt the classroom might be something an educating process diminishes possibly to the point of \"removal\" in a student.
+
+This addition to the definition notwithstanding, we do not intend to incorporate the receipt of punishment into the definition of educating."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00002029 "education process"@en)
 SubClassOf(obo:OMRSE_00002029 obo:OBI_0000011)
 
 # Class: obo:OMRSE_00002030 (educational objective)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00002030 "educational objective specification"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002030 "An objective specification that describes the type of capability or capabilities to be imparted by its realization, which is an educating (education process)."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002030 "An objective specification that describes the type of capability or capabilities to be imparted or improved by its realization, which is an educating (education process)."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00002030 "William R. Hogan"@en)
 AnnotationAssertion(obo:IAO_0000600 obo:OMRSE_00002030 "An objective specification that describes the new knowledge & skill(s) to be obtained via an education process."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00002030 "educational objective"@en)
