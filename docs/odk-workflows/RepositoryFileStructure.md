@@ -28,7 +28,7 @@ These are the current imports in OMRSE
 | oostt | http://purl.obolibrary.org/obo/oostt.owl | None |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
 | pno | http://purl.obolibrary.org/obo/iao/pno.owl | mirror |
-| d-acts | http://purl.obolibrary.org/obo/iao/d-acts/release/2020-10-14/d-acts.owl | mirror |
+| d-acts | http://purl.obolibrary.org/obo/iao/d-acts.owl | mirror |
 
 ## Components
 Components, in contrast to imports, are considered full members of the ontology. This means that any axiom in a component is also included in the ontology base - which means it is considered _native_ to the ontology. While this sounds complicated, consider this: conceptually, no component should be part of more than one ontology. If that seems to be the case, we are most likely talking about an import. Components are often not needed for ontologies, but there are some use cases:
