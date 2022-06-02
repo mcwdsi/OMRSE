@@ -50,7 +50,7 @@ import_group:
       mirror_from: http://purl.obolibrary.org/obo/iao/pno.owl
       module_type: mirror
     - id: d-acts
-      mirror_from: http://purl.obolibrary.org/obo/iao/d-acts/release/2020-10-14/d-acts.owl
+      mirror_from: http://purl.obolibrary.org/obo/iao/d-acts.owl
       module_type: mirror
 #components:
 #  products:
