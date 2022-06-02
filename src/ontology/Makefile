@@ -451,7 +451,7 @@ mirror-pno: | $(TMPDIR)
 .PHONY: mirror-d-acts
 .PRECIOUS: $(MIRRORDIR)/d-acts.owl
 mirror-d-acts: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/iao/d-acts.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/iao/d-acts/release/2020-10-14/d-acts.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
