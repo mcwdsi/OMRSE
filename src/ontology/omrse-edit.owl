@@ -2290,7 +2290,11 @@ SubClassOf(obo:OMRSE_00000221 obo:IAO_0000030)
 
 # Class: obo:OMRSE_00000222 (debt obligation)
 
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000222 "debt obligation"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000222 "Three Arrows Capital declared bankruptcy on July 1, 2022 after defaulting on a $665 million debt obligation owed to Voyager Digital."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000222 "A directive information entity that prescribes that something will be transferred from some human or organization that is the bearer of a duty holder role to another human or organization that is the bearer of a claimant role."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000222 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000222 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000222 "debt obligation"@en)
 SubClassOf(obo:OMRSE_00000222 obo:IAO_0000033)
 
@@ -2435,45 +2439,73 @@ SubClassOf(obo:OMRSE_00000234 obo:IAO_0000027)
 
 # Class: obo:OMRSE_00000235 (money)
 
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000235 "money"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000235 "Todd does not have enough money to buy more plants at the horticultural club's poinsettia sale."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000235 "A debt obligation between two parties that has part a scalar value specification and whose concretizations indicate that their bearers can be used in a financial transaction or payment of debt, or as a measure of the value of some entity in a financial valuation process or prospective financial valuation process."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000235 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000235 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000235 "money"@en)
 SubClassOf(obo:OMRSE_00000235 obo:OMRSE_00000222)
 
 # Class: obo:OMRSE_00000236 (currency)
 
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000236 "currency"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000236 "US currency is an accepted form of legal tender, not just in the United States, but in many countries around the world, such as El Salvador."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000236 "A material entity that is the bearer of a concretization of money and is created by some governmental organization or on behalf of some governmental organization that has authorized its creation."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000236 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000236 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000236 "currency"@en)
 SubClassOf(obo:OMRSE_00000236 obo:BFO_0000040)
 
 # Class: obo:OMRSE_00000237 (exchange of ownership)
 
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000237 "exchange of ownership"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000237 "Tom exchanged ownership of his computer for Tina's scooter."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000237 "A planned process whereby one agent (or active participant) or a group of agents transfer ownership of some property to another agent (or active participant) or group of agents in the process, who in return transfer ownership of some their property to the first agent (or active participant)."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000237 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000237 "barter"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000237 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000237 "exchange of ownership"@en)
 SubClassOf(obo:OMRSE_00000237 obo:OBI_0000011)
 
 # Class: obo:OMRSE_00000238 (financial transaction)
 
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000238 "financial transaction"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000238 "Apple acquired semiconductors from Samsung in a financial transaction yesterday."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000238 "A planned process whereby one participant partly or completely fulfills an obligation to another participant by transferring ownership of some other debt obligation, which is typically money."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000238 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000238 "monetary transaction"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000238 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000238 "financial transaction"@en)
 SubClassOf(obo:OMRSE_00000238 obo:OBI_0000011)
 
 # Class: obo:OMRSE_00000239 (payment of debt)
 
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000239 "payment of debt"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000239 "I made a debt payment with my credit card company yesterday and no longer owe them money."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000239 "A planned process whereby ownership of some entity of value is transferred by one participant to another to fulfill some obligation, on their behalf, after some service is performed or the ownership of some entity is exchanged."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000239 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000239 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000239 "payment of debt"@en)
 SubClassOf(obo:OMRSE_00000239 obo:OBI_0000011)
 
 # Class: obo:OMRSE_00000240 (financial valuation process)
 
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000240 "financial valuation process"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000240 "The financial valuation of Ravi's car today determined that the car is worth $2000."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000240 "A planned process that has as specified output some scalar measurement datum that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some other material entity."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000240 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000240 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000240 "financial valuation process"@en)
 SubClassOf(obo:OMRSE_00000240 obo:OBI_0000011)
 
 # Class: obo:OMRSE_00000241 (prospective financial valuation process)
 
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000241 "prospective financial valuation process"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000241 "The prospective valuation of my company's stock indicates strong optimism for our financial growth over the next few years."@en)
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000241 "A planned process that has as specified output some predicted value that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some material entity at some point in the future."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000241 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000241 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000241 "prospective financial valuation process"@en)
 SubClassOf(obo:OMRSE_00000241 obo:OBI_0000011)
 
