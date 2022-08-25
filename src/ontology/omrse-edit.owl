@@ -252,6 +252,7 @@ Declaration(Class(obo:OMRSE_00000218))
 Declaration(Class(obo:OMRSE_00000219))
 Declaration(Class(obo:OMRSE_00000220))
 Declaration(Class(obo:OMRSE_00000221))
+Declaration(Class(obo:OMRSE_00000222))
 Declaration(Class(obo:OMRSE_00000223))
 Declaration(Class(obo:OMRSE_00000224))
 Declaration(Class(obo:OMRSE_00000225))
@@ -264,6 +265,13 @@ Declaration(Class(obo:OMRSE_00000231))
 Declaration(Class(obo:OMRSE_00000232))
 Declaration(Class(obo:OMRSE_00000233))
 Declaration(Class(obo:OMRSE_00000234))
+Declaration(Class(obo:OMRSE_00000235))
+Declaration(Class(obo:OMRSE_00000236))
+Declaration(Class(obo:OMRSE_00000237))
+Declaration(Class(obo:OMRSE_00000238))
+Declaration(Class(obo:OMRSE_00000239))
+Declaration(Class(obo:OMRSE_00000240))
+Declaration(Class(obo:OMRSE_00000241))
 Declaration(Class(obo:OMRSE_00000500))
 Declaration(Class(obo:OMRSE_00000501))
 Declaration(Class(obo:OMRSE_00000502))
@@ -315,6 +323,12 @@ Declaration(Class(obo:OMRSE_00002069))
 Declaration(Class(obo:OMRSE_00002070))
 Declaration(Class(obo:OMRSE_00002071))
 Declaration(Class(obo:OMRSE_00002072))
+Declaration(Class(obo:OMRSE_00002073))
+Declaration(Class(obo:OMRSE_00002074))
+Declaration(Class(obo:OMRSE_00002075))
+Declaration(Class(obo:OMRSE_00002076))
+Declaration(Class(obo:OMRSE_00002077))
+Declaration(Class(obo:OMRSE_00002078))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:BFO_0000051))
 Declaration(ObjectProperty(obo:BFO_0000054))
@@ -422,7 +436,7 @@ ObjectPropertyDomain(obo:OMIABIS_0000009 ObjectUnionOf(obo:NCBITaxon_9606 obo:OB
 
 ObjectPropertyRange(obo:OMIABIS_0000048 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245 obo:OMRSE_00000023 obo:OMRSE_00000033))
 
-# Object Property: obo:OMRSE_00000020 (obsolete is-aggregate-of)
+# Object Property: obo:OMRSE_00000020 (is-aggregate-of)
 
 AnnotationAssertion(obo:IAO_0000231 obo:OMRSE_00000020 "BFO relation takes precedence."@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000020 "We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.
@@ -657,7 +671,7 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000019 "integrated delivery network"@
 SubClassOf(obo:OMRSE_00000019 obo:OMRSE_00000015)
 SubClassOf(obo:OMRSE_00000019 ObjectSomeValuesFrom(obo:RO_0000052 ObjectIntersectionOf(obo:OBI_0000245 ObjectAllValuesFrom(obo:OBI_0001688 obo:OBI_0000245))))
 
-# Class: obo:OMRSE_00000022 (aggregate of objectual organisms)
+# Class: obo:OMRSE_00000022 (collection of organisms)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000022 "An object aggregate of objectual organisms."@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000022 "Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  "@en)
@@ -672,7 +686,7 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000023 "collection of humans"@en)
 SubClassOf(obo:OMRSE_00000023 obo:OMRSE_00000022)
 SubClassOf(obo:OMRSE_00000023 ObjectAllValuesFrom(obo:RO_0002351 obo:NCBITaxon_9606))
 
-# Class: obo:OMRSE_00000024 (obsolete role in human social processes)
+# Class: obo:OMRSE_00000024 (role in human social processes)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000024 "A role inhering in an entity realized by social interactions in human society."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000024 "Mathias Brochhausen"@en)
@@ -2274,6 +2288,16 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000221 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000221 "residence ZIP code information content entity"@en)
 SubClassOf(obo:OMRSE_00000221 obo:IAO_0000030)
 
+# Class: obo:OMRSE_00000222 (debt obligation)
+
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000222 "debt obligation"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000222 "Three Arrows Capital declared bankruptcy on July 1, 2022 after defaulting on a $665 million debt obligation owed to Voyager Digital."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000222 "A directive information entity that prescribes that something will be transferred from some human or organization that is the bearer of a duty holder role to another human or organization that is the bearer of a claimant role."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000222 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000222 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000222 "debt obligation"@en)
+SubClassOf(obo:OMRSE_00000222 obo:IAO_0000033)
+
 # Class: obo:OMRSE_00000223 (disclosure of residence)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000223 "A social act that creates an information content entity that is about some geographical region in which a human being dwells.")
@@ -2412,6 +2436,78 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000234 "A data item that is the 
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000234 "Mathias Brochhausen"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000234 "county smoking rate data"@en)
 SubClassOf(obo:OMRSE_00000234 obo:IAO_0000027)
+
+# Class: obo:OMRSE_00000235 (money)
+
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000235 "money"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000235 "Todd does not have enough money to buy more plants at the horticultural club's poinsettia sale."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000235 "A debt obligation between two parties that has part a scalar value specification and whose concretizations indicate that their bearers can be used in a financial transaction or payment of debt, or as a measure of the value of some entity in a financial valuation process or prospective financial valuation process."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000235 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000235 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000235 "money"@en)
+SubClassOf(obo:OMRSE_00000235 obo:OMRSE_00000222)
+
+# Class: obo:OMRSE_00000236 (currency)
+
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000236 "currency"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000236 "US currency is an accepted form of legal tender, not just in the United States, but in many countries around the world, such as El Salvador."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000236 "A material entity that is the bearer of a concretization of money and is created by some governmental organization or on behalf of some governmental organization that has authorized its creation."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000236 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000236 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000236 "currency"@en)
+SubClassOf(obo:OMRSE_00000236 obo:BFO_0000040)
+
+# Class: obo:OMRSE_00000237 (exchange of ownership)
+
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000237 "exchange of ownership"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000237 "Tom exchanged ownership of his computer for Tina's scooter."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000237 "A planned process whereby one agent (or active participant) or a group of agents transfer ownership of some property to another agent (or active participant) or group of agents in the process, who in return transfer ownership of some their property to the first agent (or active participant)."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000237 "Matthew Diller"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000237 "barter"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000237 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000237 "exchange of ownership"@en)
+SubClassOf(obo:OMRSE_00000237 obo:OBI_0000011)
+
+# Class: obo:OMRSE_00000238 (financial transaction)
+
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000238 "financial transaction"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000238 "Apple acquired semiconductors from Samsung in a financial transaction yesterday."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000238 "A planned process whereby one participant partly or completely fulfills an obligation to another participant by transferring ownership of some other debt obligation, which is typically money."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000238 "Matthew Diller"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000238 "monetary transaction"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000238 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000238 "financial transaction"@en)
+SubClassOf(obo:OMRSE_00000238 obo:OBI_0000011)
+
+# Class: obo:OMRSE_00000239 (payment of debt)
+
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000239 "payment of debt"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000239 "I made a debt payment with my credit card company yesterday and no longer owe them money."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000239 "A planned process whereby ownership of some entity of value is transferred by one participant to another to fulfill some obligation, on their behalf, after some service is performed or the ownership of some entity is exchanged."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000239 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000239 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000239 "payment of debt"@en)
+SubClassOf(obo:OMRSE_00000239 obo:OBI_0000011)
+
+# Class: obo:OMRSE_00000240 (financial valuation process)
+
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000240 "financial valuation process"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000240 "The financial valuation of Ravi's car today determined that the car is worth $2000."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000240 "A planned process that has as specified output some scalar measurement datum that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some other material entity."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000240 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000240 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000240 "financial valuation process"@en)
+SubClassOf(obo:OMRSE_00000240 obo:OBI_0000011)
+
+# Class: obo:OMRSE_00000241 (prospective financial valuation process)
+
+AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000241 "prospective financial valuation process"@en)
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000241 "The prospective valuation of my company's stock indicates strong optimism for our financial growth over the next few years."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000241 "A planned process that has as specified output some predicted value that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some material entity at some point in the future."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000241 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000241 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000241 "prospective financial valuation process"@en)
+SubClassOf(obo:OMRSE_00000241 obo:OBI_0000011)
 
 # Class: obo:OMRSE_00000500 (job role data item)
 
@@ -2976,6 +3072,50 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00002072 "role in human social processe
 SubClassOf(obo:OMRSE_00002072 obo:BFO_0000023)
 SubClassOf(obo:OMRSE_00002072 ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040))
 SubClassOf(obo:OMRSE_00002072 ObjectAllValuesFrom(obo:RO_0000052 obo:BFO_0000040))
+
+# Class: obo:OMRSE_00002073 (work action specification)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002073 "An action specification that describes some activities to be performed by some material entity within a specified time period."@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00002073 "work action specification"@en)
+SubClassOf(obo:OMRSE_00002073 obo:IAO_0000007)
+SubClassOf(obo:OMRSE_00002073 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
+
+# Class: obo:OMRSE_00002074 (work objective specification)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002074 "An objective specification that describes the end point of some activities to be performed by some material entity within a specified time period. These activities may not necessarily be identical to those described in the work action specification and in some cases may even take priority over them."@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00002074 "work objective specification"@en)
+SubClassOf(obo:OMRSE_00002074 obo:IAO_0000005)
+SubClassOf(obo:OMRSE_00002074 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000002 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0000011))))
+SubClassOf(obo:OMRSE_00002074 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
+
+# Class: obo:OMRSE_00002075 (work plan specification)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002075 "A plan specification with a work objective specification and a work action specification as parts"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00002075 "work plan specification"@en)
+SubClassOf(obo:OMRSE_00002075 obo:IAO_0000104)
+SubClassOf(obo:OMRSE_00002075 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OMRSE_00002073))
+SubClassOf(obo:OMRSE_00002075 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OMRSE_00002074))
+
+# Class: obo:OMRSE_00002076 (employed work plan specification)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002076 "A work plan specification that is the output of some hiring process that has as participant some human or organization that is the bearer of an employer role and some human who comes to bear the plan that concretizes the work plan specification."@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00002076 "employed work plan specification"@en)
+SubClassOf(obo:OMRSE_00002076 obo:OMRSE_00002075)
+SubClassOf(obo:OMRSE_00002076 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0021001 ObjectSomeValuesFrom(obo:RO_0000057 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000077))) ObjectSomeValuesFrom(obo:RO_0000057 ObjectIntersectionOf(ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245) ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000087))))))
+
+# Class: obo:OMRSE_00002077 (self-employed work plan specification)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002077 "A work plan specification that is the output of some deontic document act, p,  that creates an employer role in the sole participant in p."@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00002077 "self-employed work plan specification"@en)
+SubClassOf(obo:OMRSE_00002077 obo:OMRSE_00002075)
+SubClassOf(obo:OMRSE_00002077 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0021001 ObjectAllValuesFrom(obo:RO_0000057 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000087))))))
+
+# Class: obo:OMRSE_00002078 (self-employed business owner work plan specification)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002078 "A work plan specification that is the output of some deontic document act, p,  that also creates a business organization and is concretized as a plan in the sole participant in p."@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00002078 "self-employed business owner work plan specification"@en)
+SubClassOf(obo:OMRSE_00002078 obo:OMRSE_00002075)
+SubClassOf(obo:OMRSE_00002078 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0021001 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000087))) ObjectAllValuesFrom(obo:RO_0000057 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000077))))))
 
 # Class: obo:PCO_0000020 (family)
 

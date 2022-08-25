@@ -52,6 +52,7 @@ import_group:
     - id: d-acts
       mirror_from: http://purl.obolibrary.org/obo/iao/d-acts.owl
       module_type: mirror
+      
 #components:
 #  products:
     #- filename: education/omrse-education.owl

@@ -14,9 +14,9 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/imports/d-acts_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-06-01/imports/d-acts_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2021-01-08/d-acts.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-06-01</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-08-03/imports/d-acts_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/iao/d-acts/release/2022-07-05/d-acts.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-08-03</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2484,24 +2484,6 @@ It is important to note that this going out of existence of s is complete and un
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">Each spatiotemporal region at any time t projects_onto some spatial region at t. (axiom label in BFO2 Reference: [099-001])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/099-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">Each spatiotemporal region projects_onto some temporal region. (axiom label in BFO2 Reference: [098-001])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/098-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">Every spatiotemporal region s is such that s occupies_spatiotemporal_region s. (axiom label in BFO2 Reference: [107-002])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/107-002"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/107-002"/>
@@ -2541,6 +2523,24 @@ It is important to note that this going out of existence of s is complete and un
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/096-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">Each spatiotemporal region at any time t projects_onto some spatial region at t. (axiom label in BFO2 Reference: [099-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/099-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">Each spatiotemporal region projects_onto some temporal region. (axiom label in BFO2 Reference: [098-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/098-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">Every spatiotemporal region s is such that s occupies_spatiotemporal_region s. (axiom label in BFO2 Reference: [107-002])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/107-002"/>
     </owl:Axiom>
     
 
@@ -7390,9 +7390,10 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115 xml:lang="en">A dubbing process is a planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An identifier creating process is a planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">dubbing process</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">naming</obo:IAO_0000118>
         <dc:creator>Mathias Brochhausen</dc:creator>
         <rdfs:label xml:lang="en">identifier creating process</rdfs:label>
     </owl:Class>
@@ -7486,11 +7487,12 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020000"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that is a collection of identifiers that has been created to identify and annotate core ideas of a specified domain, and where the intention of its creators is that the identifiers have a one-to-one correspondence with entities in reality outside the aggregate.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is a collection of other information content entities that has been created to identify or annotate core ideas of a specified domain, and where the intention of its creators is that the aggregated entities have a one-to-one correspondence with entities in reality outside the aggregate.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">code map</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">code system</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">codeset</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">coding system</obo:IAO_0000118>
@@ -7500,14 +7502,14 @@ Data were captured into EPI-DATA (version 3.1), cleaned and then exported to Sta
         <dc:contributor>Sarah Bost</dc:contributor>
         <dc:contributor>William R. Hogan</dc:contributor>
         <rdfs:comment xml:lang="en">Does not imply absence vs. presence of any taxonomy.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Does not imply that identifiers denote particulars, universals, or defined classes (a.k.a. attributive collections) or even that they denote only one of these three types of entities (e.g., SNOMED and even various OBO ontologies have identifiers that identify entities in all three categories).</rdfs:comment>
-        <rdfs:comment xml:lang="en">Each identifier is often (but not necessarily) associated with a text string—variously called a “description,” “name,” “title,” or “label”—that helps humans reach the target of denotation.
+        <rdfs:comment xml:lang="en">Does not imply that aggregated entities denote particulars, universals, or defined classes (a.k.a. attributive collections) or even that they denote only one of these three types of entities.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Each aggregated entity is often (but not necessarily) associated with a text string—variously called a “description,” “name,” “title,” or “label”—that helps humans reach the target of denotation.
 
-When there is no such string, it is almost always because the identifiers take the form of human language words. For example, a “sex” or “gender” code set could have identifiers “MALE” and “FEMALE,” or even “M” and “F” (by convention, we understand what these mean).</rdfs:comment>
+When there is no such string, it is almost always because the entities take the form of human language words. For example, a “sex” or “gender” code set could contain “MALE” and “FEMALE,” or even “M” and “F” (by convention, we understand what these mean).</rdfs:comment>
         <rdfs:comment xml:lang="en">For National Drug Codes (NDCs) and similar code sets, there doesn’t even have to be a single, fully-concretized copy somewhere (for example, for NDCs there is no centralized database or repository where they all live as one instance of concretization of code set). The code set can be “distributively” concretized. This seems like an unusual exception, but it also likely applies to Universal Product Codes (UPCs) and their follow on Global Trade Item Numbers (GTINs).</rdfs:comment>
         <rdfs:comment xml:lang="en">For each given domain, there can potentially exist multiple code sets. The multiplicity of code sets is partially due to the different specific purposes of those code sets.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Many code sets are created for a specific purpose in addition to merely identifying and annotating core ideas of a specified domain.</rdfs:comment>
-        <rdfs:comment xml:lang="en">The identifiers do not denote each other.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Many code sets are created for a specific purpose in addition to merely identifying or annotating core ideas of a specified domain.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The information content entities do not denote each other.</rdfs:comment>
         <rdfs:label xml:lang="en">code set</rdfs:label>
     </owl:Class>
     
@@ -7687,13 +7689,15 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0020025 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020025">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000111 xml:lang="en">obligor role</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Sam&apos;s obligor role realized by him taking Nigel to lunch after promising to do so; Sarah&apos;s obligor role realized by paying the purchase price to Layla after signing the contract specifying that she is buying a piece of land from Layla.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A role that is the specified output of an obligation generating social act and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117>Sarah Bost</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">obligor role</rdfs:label>
+        <obo:IAO_0100001>duty holder role (IAO:210016)</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete obligor role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -7701,13 +7705,15 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0020026 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020026">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000111 xml:lang="en">obligee role</obo:IAO_0000111>
         <obo:IAO_0000112>Nigel&apos;s obligee role realized by Sam taking him out for lunch after Sam so promised; Layla&apos;s obligee role realized by receiving the money after signing a contract in which Sarah obtained a piece of land in exchange for a specified sum of money.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A role that is the specified output of an obligation generating social act and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117>Sarah Bost</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">obligee role</rdfs:label>
+        <obo:IAO_0100001>claimant role (IAO:0021013)</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete obligee role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -8011,49 +8017,6 @@ https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the clai
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021021">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                                <owl:allValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                                                <owl:someValuesFrom>
-                                                    <owl:Class>
-                                                        <owl:intersectionOf rdf:parseType="Collection">
-                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
-                                                            <owl:Restriction>
-                                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021001"/>
-                                                            </owl:Restriction>
-                                                        </owl:intersectionOf>
-                                                    </owl:Class>
-                                                </owl:someValuesFrom>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:allValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">The role of the U.S. Citizenship and Immigration Service realized by the creation of an immigration form that is being filled in, the role of a national professional association realized by the creation of a clinical guideline that is to be certified</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A role that inheres in a human being or organization or aggregate of any of the aforementioned that prepares a document that is the specified input to a document act and is the input document of a document act.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
@@ -8104,29 +8067,6 @@ https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the clai
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021001"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">a judge&apos;s role of signing a court order</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a document act.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
@@ -8637,24 +8577,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OMRSE_00000033 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115 xml:lang="en">An aggregate of organizations that have some feature in common, but is not itself an organization.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <rdfs:comment xml:lang="en">It is often convenient to group organizations together that otherwise might not even interact with one another. </rdfs:comment>
-        <rdfs:label xml:lang="en">aggregate of organizations</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000051">
@@ -9098,5 +9020,5 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 

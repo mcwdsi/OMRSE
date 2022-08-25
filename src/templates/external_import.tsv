@@ -84,7 +84,9 @@ RO:0002218	owl:ObjectProperty
 RO:0002222	owl:ObjectProperty
 RO:0002223	owl:ObjectProperty
 RO:0002229	owl:ObjectProperty
+RO:0002234	owl:ObjectProperty
 RO:0002350	owl:ObjectProperty
 RO:0002351	owl:ObjectProperty
+RO:0002353	owl:ObjectProperty
 RO:0002577	owl:ObjectProperty
 RO:0002012	owl:ObjectProperty
