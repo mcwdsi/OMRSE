@@ -323,12 +323,6 @@ Declaration(Class(obo:OMRSE_00002069))
 Declaration(Class(obo:OMRSE_00002070))
 Declaration(Class(obo:OMRSE_00002071))
 Declaration(Class(obo:OMRSE_00002072))
-Declaration(Class(obo:OMRSE_00002073))
-Declaration(Class(obo:OMRSE_00002074))
-Declaration(Class(obo:OMRSE_00002075))
-Declaration(Class(obo:OMRSE_00002076))
-Declaration(Class(obo:OMRSE_00002077))
-Declaration(Class(obo:OMRSE_00002078))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:BFO_0000051))
 Declaration(ObjectProperty(obo:BFO_0000054))
@@ -3072,50 +3066,6 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00002072 "role in human social processe
 SubClassOf(obo:OMRSE_00002072 obo:BFO_0000023)
 SubClassOf(obo:OMRSE_00002072 ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040))
 SubClassOf(obo:OMRSE_00002072 ObjectAllValuesFrom(obo:RO_0000052 obo:BFO_0000040))
-
-# Class: obo:OMRSE_00002073 (work action specification)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002073 "An action specification that describes some activities to be performed by some material entity within a specified time period."@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_00002073 "work action specification"@en)
-SubClassOf(obo:OMRSE_00002073 obo:IAO_0000007)
-SubClassOf(obo:OMRSE_00002073 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
-
-# Class: obo:OMRSE_00002074 (work objective specification)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002074 "An objective specification that describes the end point of some activities to be performed by some material entity within a specified time period. These activities may not necessarily be identical to those described in the work action specification and in some cases may even take priority over them."@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_00002074 "work objective specification"@en)
-SubClassOf(obo:OMRSE_00002074 obo:IAO_0000005)
-SubClassOf(obo:OMRSE_00002074 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000002 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0000011))))
-SubClassOf(obo:OMRSE_00002074 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:RO_0000056 obo:OBI_0000011))))
-
-# Class: obo:OMRSE_00002075 (work plan specification)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002075 "A plan specification with a work objective specification and a work action specification as parts"@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_00002075 "work plan specification"@en)
-SubClassOf(obo:OMRSE_00002075 obo:IAO_0000104)
-SubClassOf(obo:OMRSE_00002075 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OMRSE_00002073))
-SubClassOf(obo:OMRSE_00002075 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OMRSE_00002074))
-
-# Class: obo:OMRSE_00002076 (employed work plan specification)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002076 "A work plan specification that is the output of some hiring process that has as participant some human or organization that is the bearer of an employer role and some human who comes to bear the plan that concretizes the work plan specification."@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_00002076 "employed work plan specification"@en)
-SubClassOf(obo:OMRSE_00002076 obo:OMRSE_00002075)
-SubClassOf(obo:OMRSE_00002076 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0021001 ObjectSomeValuesFrom(obo:RO_0000057 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000077))) ObjectSomeValuesFrom(obo:RO_0000057 ObjectIntersectionOf(ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245) ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000087))))))
-
-# Class: obo:OMRSE_00002077 (self-employed work plan specification)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002077 "A work plan specification that is the output of some deontic document act, p,  that creates an employer role in the sole participant in p."@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_00002077 "self-employed work plan specification"@en)
-SubClassOf(obo:OMRSE_00002077 obo:OMRSE_00002075)
-SubClassOf(obo:OMRSE_00002077 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0021001 ObjectAllValuesFrom(obo:RO_0000057 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000087))))))
-
-# Class: obo:OMRSE_00002078 (self-employed business owner work plan specification)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002078 "A work plan specification that is the output of some deontic document act, p,  that also creates a business organization and is concretized as a plan in the sole participant in p."@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_00002078 "self-employed business owner work plan specification"@en)
-SubClassOf(obo:OMRSE_00002078 obo:OMRSE_00002075)
-SubClassOf(obo:OMRSE_00002078 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0021001 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000087))) ObjectAllValuesFrom(obo:RO_0000057 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000077))))))
 
 # Class: obo:PCO_0000020 (family)
 
