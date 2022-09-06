@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2022-04-06/omrse-full.owl
+data-version: omrse/releases/2022-09-06/omrse-full.owl
 subsetdef: attribute_slim ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
@@ -16,8 +16,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "Shariq Tariq" xsd:strin
 property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
-property_value: owl:versionInfo "2020-10-27" xsd:string
-property_value: owl:versionInfo "2022-04-06" xsd:string
+property_value: owl:versionInfo "2022-09-06" xsd:string
 name: The Ontology of Medically Related Social Entities
 
 [Term]
@@ -3120,11 +3119,15 @@ property_value: IAO:0000119 http://en.wikipedia.org/wiki/Oscillation xsd:string
 [Term]
 id: IAO:0020010
 name: dubbing process
+name: identifier creating process
 def: "A dubbing process is a planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity." []
+def: "An identifier creating process is a planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity." []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000299 IAO:0020000 ! has_specified_output identifier
 property_value: http://purl.org/dc/elements/1.1/creator "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000118 "dubbing process" xsd:string
+property_value: IAO:0000118 "naming" xsd:string
 
 [Term]
 id: IAO:0020011
@@ -3170,13 +3173,18 @@ property_value: IAO:0000119 http://en.wikipedia.org/wiki/Family_name xsd:string
 id: IAO:0020020
 name: code set
 def: "A document that is a collection of identifiers that has been created to identify and annotate core ideas of a specified domain, and where the intention of its creators is that the identifiers have a one-to-one correspondence with entities in reality outside the aggregate." []
+def: "An information content entity that is a collection of other information content entities that has been created to identify or annotate core ideas of a specified domain, and where the intention of its creators is that the aggregated entities have a one-to-one correspondence with entities in reality outside the aggregate." []
 comment: Does not imply absence vs. presence of any taxonomy.
+comment: Does not imply that aggregated entities denote particulars, universals, or defined classes (a.k.a. attributive collections) or even that they denote only one of these three types of entities.
 comment: Does not imply that identifiers denote particulars, universals, or defined classes (a.k.a. attributive collections) or even that they denote only one of these three types of entities (e.g., SNOMED and even various OBO ontologies have identifiers that identify entities in all three categories).
+comment: Each aggregated entity is often (but not necessarily) associated with a text string—variously called a “description,” “name,” “title,” or “label”—that helps humans reach the target of denotation.\n\nWhen there is no such string, it is almost always because the entities take the form of human language words. For example, a “sex” or “gender” code set could contain “MALE” and “FEMALE,” or even “M” and “F” (by convention, we understand what these mean).
 comment: Each identifier is often (but not necessarily) associated with a text string—variously called a “description,” “name,” “title,” or “label”—that helps humans reach the target of denotation.\n\nWhen there is no such string, it is almost always because the identifiers take the form of human language words. For example, a “sex” or “gender” code set could have identifiers “MALE” and “FEMALE,” or even “M” and “F” (by convention, we understand what these mean).
 comment: For each given domain, there can potentially exist multiple code sets. The multiplicity of code sets is partially due to the different specific purposes of those code sets.
 comment: For National Drug Codes (NDCs) and similar code sets, there doesn’t even have to be a single, fully-concretized copy somewhere (for example, for NDCs there is no centralized database or repository where they all live as one instance of concretization of code set). The code set can be “distributively” concretized. This seems like an unusual exception, but it also likely applies to Universal Product Codes (UPCs) and their follow on Global Trade Item Numbers (GTINs).
 comment: Many code sets are created for a specific purpose in addition to merely identifying and annotating core ideas of a specified domain.
+comment: Many code sets are created for a specific purpose in addition to merely identifying or annotating core ideas of a specified domain.
 comment: The identifiers do not denote each other.
+comment: The information content entities do not denote each other.
 is_a: IAO:0000310 ! document
 relationship: BFO:0000051 IAO:0020000 ! has part identifier
 property_value: http://purl.org/dc/elements/1.1/contributor "Clint Dowland" xsd:string
@@ -3184,6 +3192,7 @@ property_value: http://purl.org/dc/elements/1.1/contributor "Matt Diller" xsd:st
 property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000118 "code map" xsd:string
 property_value: IAO:0000118 "code system" xsd:string
 property_value: IAO:0000118 "codeset" xsd:string
 property_value: IAO:0000118 "coding system" xsd:string
@@ -3223,29 +3232,33 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
 id: IAO:0020025
-name: obligor role
+name: obsolete obligor role
 def: "A role that is the specified output of an obligation generating social act and that is realized by it's bearer being the providing part of a process that fulfills the previously agreed upon requirements." []
-is_a: IAO:0021008 ! deontic role
+is_a: ObsoleteClass ! Obsolete Class
 property_value: IAO:0000111 "obligor role" xsd:string
 property_value: IAO:0000112 "Sam's obligor role realized by him taking Nigel to lunch after promising to do so; Sarah's obligor role realized by paying the purchase price to Layla after signing the contract specifying that she is buying a piece of land from Layla." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Sarah Bost" xsd:string
+is_obsolete: true
+replaced_by: duty holder role (IAO:210016)
 
 [Term]
 id: IAO:0020026
-name: obligee role
+name: obsolete obligee role
 def: "A role that is the specified output of an obligation generating social act and that is realized by it's bearer being the receiving part of a process that fulfills the previously agreed upon requirements." []
-is_a: IAO:0021008 ! deontic role
+is_a: ObsoleteClass ! Obsolete Class
 property_value: IAO:0000111 "obligee role" xsd:string
 property_value: IAO:0000112 "Nigel's obligee role realized by Sam taking him out for lunch after Sam so promised; Layla's obligee role realized by receiving the money after signing a contract in which Sarah obtained a piece of land in exchange for a specified sum of money." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Sarah Bost" xsd:string
+is_obsolete: true
+replaced_by: claimant role (IAO:0021013)
 
 [Term]
 id: IAO:0020027
 name: owner role
 def: "A role in a human social process that is based on a social act and whose bearer exercises exclusive control over a property, where this control is permitted by one or more deontic roles, which are parts of the owner role." []
-is_a: OMRSE:00002072 ! role in human social processes
+is_a: OMRSE:00000024 ! obsolete role in human social processes
 property_value: IAO:0000112 "Tammy's owner role with regards to the house on 234 Evergreen Terrace; Walter's owner role with regards to the intellectual property on his movie script" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 https://github.com/d-acts/d-acts/issues/29 xsd:string
@@ -3357,6 +3370,17 @@ property_value: IAO:0000231 IAO:0000226
 is_obsolete: true
 
 [Term]
+id: IAO:0021013
+name: claimant role
+def: "A deontic role that inheres in an agent A, that mutually depends on the existence of a duty holder role borne by agent B, and that specifies B doing or abstaining from C, or providing or surrendering C to A." []
+comment: Claimant roles can either be discharged by one act of fulfilling a duty (e.g. when I pay back $5 owed to a friend) or they can remain intact and require ongoing adhering to a duty. \nhttps://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the claim of a child to freedom from abuse. That claim remains in existence and the duty to not abuse the child needs to be continuously be acted upon, by a multitude of agents (which all have a duty holder role). This claim is mutually dependent on the duty to abstain from abusing the child.
+is_a: IAO:0021008 ! deontic role
+property_value: IAO:0000117 "J. Neil Otte" xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000119 "Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919." xsd:string
+property_value: IAO:0000119 https://plato.stanford.edu/entries/rights/ xsd:string
+
+[Term]
 id: IAO:0021014
 name: obsolete_declaration executive role
 def: "The role borne by a human being, an organization or an aggregate of either of both that is realized by being the active participant in a declaration." []
@@ -3377,6 +3401,16 @@ property_value: IAO:0000231 IAO:0000226
 is_obsolete: true
 
 [Term]
+id: IAO:0021016
+name: duty holder role
+def: "A deontic role that inheres in an agent A, that mutually depends on the existence of a claimant role borne by agent B, and that specifies A doing or abstaining from some acition C, or providing or surrendering C to B." []
+is_a: IAO:0021008 ! deontic role
+property_value: IAO:0000117 "J. Neil Otte" xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000119 "Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919." xsd:string
+property_value: IAO:0000119 https://plato.stanford.edu/entries/rights/ xsd:string
+
+[Term]
 id: IAO:0021017
 name: obsolete_claimant role
 def: "The role of a human being or an aggregate of human beings concretizing a claim." []
@@ -3393,6 +3427,16 @@ is_a: ObsoleteClass ! Obsolete Class
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000231 IAO:0000226
 is_obsolete: true
+
+[Term]
+id: IAO:0021019
+name: privilege holder role
+def: "A deontic role that inheres in an agent A, that specifies that no agent B bears a claimant role against A doing C." []
+is_a: IAO:0021008 ! deontic role
+property_value: IAO:0000117 "J. Neil Otte" xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000119 "Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919." xsd:string
+property_value: IAO:0000119 https://plato.stanford.edu/entries/rights/ xsd:string
 
 [Term]
 id: IAO:0021020
@@ -3419,6 +3463,16 @@ def: "A role inhering in a human being or an organization or an aggregate of any
 is_a: BFO:0000023 ! role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "declaration performer role" xsd:string
+
+[Term]
+id: IAO:0021023
+name: power role
+def: "A deontic role that, if realized, is realized by its bearer’s creating, altering, or annulling some deontic role." []
+is_a: IAO:0021008 ! deontic role
+property_value: IAO:0000117 "J. Neil Otte" xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+property_value: IAO:0000119 "Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919." xsd:string
+property_value: IAO:0000119 https://plato.stanford.edu/entries/rights/ xsd:string
 
 [Term]
 id: IAO:0021030
@@ -3992,24 +4046,29 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 [Term]
 id: OMRSE:00000022
 name: aggregate of objectual organisms
+name: collection of organisms
 def: "An object aggregate of objectual organisms." []
+def: "An object aggregate of organisms." []
 comment: Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  
 is_a: BFO:0000027 ! object aggregate
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/omrse.owl xsd:string
+relationship: OMRSE:00000020 OBI:0100026 ! is-aggregate-of organism
 
 [Term]
 id: OMRSE:00000023
 name: collection of humans
 def: "An object aggregate all of whose components are human beings." []
-is_a: OMRSE:00000022 ! aggregate of objectual organisms
+comment: An object aggregate all of whose components are human beings.
+is_a: OMRSE:00000022 ! collection of organisms
+relationship: OMRSE:00000020 NCBITaxon:9606 ! is-aggregate-of Homo sapiens
 relationship: RO:0002351 NCBITaxon:9606 ! has member Homo sapiens
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/omrse.owl xsd:string
 
 [Term]
 id: OMRSE:00000024
 name: obsolete role in human social processes
+name: role in human social processes
 def: "A role inhering in an entity realized by social interactions in human society." []
 comment: Previous definition: A role played by an entity in human social processes.
+is_a: BFO:0000023 ! role
 is_a: ObsoleteClass ! Obsolete Class
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/omrse.owl xsd:string
@@ -4088,14 +4147,11 @@ is_obsolete: true
 [Term]
 id: OMRSE:00000033
 name: aggregate of organizations
-def: "An aggregate of organizations that have some feature in common, but is not itself an organization." []
 def: "An object aggregate that is not itself an organization and whose members are only organizations that have some feature in common" []
 comment: It is often convenient to group organizations together that otherwise might not even interact with one another. 
 is_a: BFO:0000040 ! material entity
 relationship: RO:0002351 OBI:0000245 ! has member organization
-property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000117 "William R. Hogan\nAmanda Hicks" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/omrse.owl xsd:string
 
 [Term]
 id: OMRSE:00000034
@@ -5581,6 +5637,16 @@ property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" x
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
+id: OMRSE:00000222
+name: debt obligation
+def: "A directive information entity that prescribes that something will be transferred from some human or organization that is the bearer of a duty holder role to another human or organization that is the bearer of a claimant role." []
+is_a: IAO:0000033 ! directive information entity
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "debt obligation" xsd:string
+property_value: IAO:0000112 "Three Arrows Capital declared bankruptcy on July 1, 2022 after defaulting on a $665 million debt obligation owed to Voyager Digital." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
 id: OMRSE:00000223
 name: disclosure of residence
 def: "A social act that creates an information content entity that is about some geographical region in which a human being dwells." []
@@ -5719,6 +5785,78 @@ property_value: IAO:0000112 "The Alachua County smoking rate." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
+id: OMRSE:00000235
+name: money
+def: "A debt obligation between two parties that has part a scalar value specification and whose concretizations indicate that their bearers can be used in a financial transaction or payment of debt, or as a measure of the value of some entity in a financial valuation process or prospective financial valuation process." []
+is_a: OMRSE:00000222 ! debt obligation
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "money" xsd:string
+property_value: IAO:0000112 "Todd does not have enough money to buy more plants at the horticultural club's poinsettia sale." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000236
+name: currency
+def: "A material entity that is the bearer of a concretization of money and is created by some governmental organization or on behalf of some governmental organization that has authorized its creation." []
+is_a: BFO:0000040 ! material entity
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "currency" xsd:string
+property_value: IAO:0000112 "US currency is an accepted form of legal tender, not just in the United States, but in many countries around the world, such as El Salvador." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000237
+name: exchange of ownership
+def: "A planned process whereby one agent (or active participant) or a group of agents transfer ownership of some property to another agent (or active participant) or group of agents in the process, who in return transfer ownership of some their property to the first agent (or active participant)." []
+is_a: OBI:0000011 ! planned process
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "exchange of ownership" xsd:string
+property_value: IAO:0000112 "Tom exchanged ownership of his computer for Tina's scooter." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "barter" xsd:string
+
+[Term]
+id: OMRSE:00000238
+name: financial transaction
+def: "A planned process whereby one participant partly or completely fulfills an obligation to another participant by transferring ownership of some other debt obligation, which is typically money." []
+is_a: OBI:0000011 ! planned process
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "financial transaction" xsd:string
+property_value: IAO:0000112 "Apple acquired semiconductors from Samsung in a financial transaction yesterday." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "monetary transaction" xsd:string
+
+[Term]
+id: OMRSE:00000239
+name: payment of debt
+def: "A planned process whereby ownership of some entity of value is transferred by one participant to another to fulfill some obligation, on their behalf, after some service is performed or the ownership of some entity is exchanged." []
+is_a: OBI:0000011 ! planned process
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "payment of debt" xsd:string
+property_value: IAO:0000112 "I made a debt payment with my credit card company yesterday and no longer owe them money." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000240
+name: financial valuation process
+def: "A planned process that has as specified output some scalar measurement datum that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some other material entity." []
+is_a: OBI:0000011 ! planned process
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "financial valuation process" xsd:string
+property_value: IAO:0000112 "The financial valuation of Ravi's car today determined that the car is worth $2000." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000241
+name: prospective financial valuation process
+def: "A planned process that has as specified output some predicted value that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some material entity at some point in the future." []
+is_a: OBI:0000011 ! planned process
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "prospective financial valuation process" xsd:string
+property_value: IAO:0000112 "The prospective valuation of my company's stock indicates strong optimism for our financial growth over the next few years." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
 id: OMRSE:00000500
 name: job role data item
 def: "A data item that is about a person's job role and/or its realization." []
@@ -5775,17 +5913,19 @@ replaced_by: non-binary gender identity information content entity
 [Term]
 id: OMRSE:00002029
 name: education process
-def: "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability." []
-comment: An interesting question is whether there must be another participant who is the "educator".  Some might object that many people are "self taught".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the top of a finger.  There was no previous information about that.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow "plays a role" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).
+def: "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative." []
+comment: An interesting question is whether there must be another participant who is the "educator".  Some might object that many people are "self taught".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the tip of a finger.  There was no previous information about that type of skill.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow "plays a role" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).
+comment: The loss of a "bad" capability is something like losing a bad golf swing and replacing it with a good one.  Also a capability to disrupt the classroom might be something an educating process diminishes possibly to the point of "removal" in a student.\n\nThis addition to the definition notwithstanding, we do not intend to incorporate the receipt of punishment into the definition of educating.
 is_a: OBI:0000011 ! planned process
 property_value: IAO:0000111 "educating" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
-property_value: IAO:0000600 "An act of acquiring new information and repeatedly applying that information to develop a new skill." xsd:string
+property_value: IAO:0000118 "learning process" xsd:string
+property_value: IAO:0000600 "An act of acquiring new information and repeatedly applying that information to develop a new skill, improve an existing skill, and/or losing a skill at doing something \"bad\"." xsd:string
 
 [Term]
 id: OMRSE:00002030
 name: educational objective
-def: "An objective specification that describes the type of capability or capabilities to be imparted by its realization, which is an educating (education process)." []
+def: "An objective specification that describes the type of capability or capabilities to be imparted or improved by its realization, which is an educating (education process)." []
 is_a: IAO:0000005 ! objective specification
 property_value: IAO:0000111 "educational objective specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
@@ -6263,6 +6403,44 @@ property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
+id: OMRSE:00002073
+name: work action specification
+def: "An action specification that describes some activities to be performed by some material entity within a specified time period." []
+is_a: IAO:0000007 ! action specification
+
+[Term]
+id: OMRSE:00002074
+name: work objective specification
+def: "An objective specification that describes the end point of some activities to be performed by some material entity within a specified time period. These activities may not necessarily be identical to those described in the work action specification and in some cases may even take priority over them." []
+is_a: IAO:0000005 ! objective specification
+
+[Term]
+id: OMRSE:00002075
+name: work plan specification
+def: "A plan specification with a work objective specification and a work action specification as parts" []
+is_a: IAO:0000104 ! plan specification
+relationship: BFO:0000051 OMRSE:00002073 ! has part work action specification
+relationship: BFO:0000051 OMRSE:00002074 ! has part work objective specification
+
+[Term]
+id: OMRSE:00002076
+name: employed work plan specification
+def: "A work plan specification that is the output of some hiring process that has as participant some human or organization that is the bearer of an employer role and some human who comes to bear the plan that concretizes the work plan specification." []
+is_a: OMRSE:00002075 ! work plan specification
+
+[Term]
+id: OMRSE:00002077
+name: self-employed work plan specification
+def: "A work plan specification that is the output of some deontic document act, p,  that creates an employer role in the sole participant in p." []
+is_a: OMRSE:00002075 ! work plan specification
+
+[Term]
+id: OMRSE:00002078
+name: self-employed business owner work plan specification
+def: "A work plan specification that is the output of some deontic document act, p,  that also creates a business organization and is concretized as a plan in the sole participant in p." []
+is_a: OMRSE:00002075 ! work plan specification
+
+[Term]
 id: OOSTT:00000074
 name: academic degree
 def: "An information content entity that is the specified outcome of and documents the sucessful completion of a tertiary education program." []
@@ -6360,6 +6538,13 @@ property_value: IAO:0000111 "physical quality" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
+id: PATO:0001025
+name: pressure
+namespace: quality
+subset: attribute_slim
+is_a: BFO:0000019 ! quality
+
+[Term]
 id: PATO:0001241
 name: physical object quality
 def: "A quality which inheres in a continuant." []
@@ -6379,7 +6564,7 @@ id: PCO:0000020
 name: family
 def: "A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption." []
 comment: Family membership through marriage or adoption apply primarily to human families. In most species, family membership is defined by common anscestry.
-is_a: OMRSE:00000022 ! aggregate of objectual organisms
+is_a: OMRSE:00000022 ! collection of organisms
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000116 "Needs axioms for family relationships." xsd:string
 property_value: IAO:0000119 http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25173 xsd:string
@@ -6900,10 +7085,8 @@ property_value: IAO:0000119 "Reinach, A. Sämtliche Werke. Texkritische Ausgabe,
 [Typedef]
 id: OMRSE:00000020
 name: is-aggregate-of
-name: obsolete is-aggregate-of
 comment: We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.\n
 property_value: IAO:0000231 "BFO relation takes precedence." xsd:string
-is_a: ObsoleteProperty
 is_obsolete: true
 
 [Typedef]
