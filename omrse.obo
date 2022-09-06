@@ -4046,19 +4046,16 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 [Term]
 id: OMRSE:00000022
 name: aggregate of objectual organisms
-name: collection of organisms
 def: "An object aggregate of objectual organisms." []
-def: "An object aggregate of organisms." []
 comment: Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  
 is_a: BFO:0000027 ! object aggregate
-relationship: OMRSE:00000020 OBI:0100026 ! is-aggregate-of organism
 
 [Term]
 id: OMRSE:00000023
 name: collection of humans
 def: "An object aggregate all of whose components are human beings." []
 comment: An object aggregate all of whose components are human beings.
-is_a: OMRSE:00000022 ! collection of organisms
+is_a: OMRSE:00000022 ! aggregate of objectual organisms
 relationship: OMRSE:00000020 NCBITaxon:9606 ! is-aggregate-of Homo sapiens
 relationship: RO:0002351 NCBITaxon:9606 ! has member Homo sapiens
 
@@ -6403,44 +6400,6 @@ property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
-id: OMRSE:00002073
-name: work action specification
-def: "An action specification that describes some activities to be performed by some material entity within a specified time period." []
-is_a: IAO:0000007 ! action specification
-
-[Term]
-id: OMRSE:00002074
-name: work objective specification
-def: "An objective specification that describes the end point of some activities to be performed by some material entity within a specified time period. These activities may not necessarily be identical to those described in the work action specification and in some cases may even take priority over them." []
-is_a: IAO:0000005 ! objective specification
-
-[Term]
-id: OMRSE:00002075
-name: work plan specification
-def: "A plan specification with a work objective specification and a work action specification as parts" []
-is_a: IAO:0000104 ! plan specification
-relationship: BFO:0000051 OMRSE:00002073 ! has part work action specification
-relationship: BFO:0000051 OMRSE:00002074 ! has part work objective specification
-
-[Term]
-id: OMRSE:00002076
-name: employed work plan specification
-def: "A work plan specification that is the output of some hiring process that has as participant some human or organization that is the bearer of an employer role and some human who comes to bear the plan that concretizes the work plan specification." []
-is_a: OMRSE:00002075 ! work plan specification
-
-[Term]
-id: OMRSE:00002077
-name: self-employed work plan specification
-def: "A work plan specification that is the output of some deontic document act, p,  that creates an employer role in the sole participant in p." []
-is_a: OMRSE:00002075 ! work plan specification
-
-[Term]
-id: OMRSE:00002078
-name: self-employed business owner work plan specification
-def: "A work plan specification that is the output of some deontic document act, p,  that also creates a business organization and is concretized as a plan in the sole participant in p." []
-is_a: OMRSE:00002075 ! work plan specification
-
-[Term]
 id: OOSTT:00000074
 name: academic degree
 def: "An information content entity that is the specified outcome of and documents the sucessful completion of a tertiary education program." []
@@ -6564,7 +6523,7 @@ id: PCO:0000020
 name: family
 def: "A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption." []
 comment: Family membership through marriage or adoption apply primarily to human families. In most species, family membership is defined by common anscestry.
-is_a: OMRSE:00000022 ! collection of organisms
+is_a: OMRSE:00000022 ! aggregate of objectual organisms
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000116 "Needs axioms for family relationships." xsd:string
 property_value: IAO:0000119 http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25173 xsd:string

@@ -1367,19 +1367,9 @@
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00002030"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000005",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002074"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000007",
           "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000104"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000007",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002073"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000009",
@@ -1900,11 +1890,6 @@
           "obj": "http://purl.obolibrary.org/obo/IAO_0000104",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00002031"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/IAO_0000104",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002075"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000109",
@@ -3203,11 +3188,6 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0100026",
-          "pred": "http://purl.obolibrary.org/obo/OMRSE_00000020",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000022"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OBI_0100026",
           "pred": "http://purl.obolibrary.org/obo/RO_0000052",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000049"
         },
@@ -4485,31 +4465,6 @@
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00002072",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000095"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002073",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002075"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002074",
-          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002075"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002075",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002076"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002075",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002077"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/OMRSE_00002075",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002078"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OOSTT_00000074",
@@ -19862,13 +19817,13 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000022",
-          "lbl": "collection of organisms",
+          "lbl": "aggregate of objectual organisms",
           "meta": {
             "comments": [
               "Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  "
             ],
             "definition": {
-              "val": "An object aggregate of organisms."
+              "val": "An object aggregate of objectual organisms."
             }
           },
           "type": "CLASS"
@@ -25002,66 +24957,6 @@
           "type": "CLASS"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/OMRSE_00002073",
-          "lbl": "work action specification",
-          "meta": {
-            "definition": {
-              "val": "An action specification that describes some activities to be performed by some material entity within a specified time period."
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OMRSE_00002074",
-          "lbl": "work objective specification",
-          "meta": {
-            "definition": {
-              "val": "An objective specification that describes the end point of some activities to be performed by some material entity within a specified time period. These activities may not necessarily be identical to those described in the work action specification and in some cases may even take priority over them."
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OMRSE_00002075",
-          "lbl": "work plan specification",
-          "meta": {
-            "definition": {
-              "val": "A plan specification with a work objective specification and a work action specification as parts"
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OMRSE_00002076",
-          "lbl": "employed work plan specification",
-          "meta": {
-            "definition": {
-              "val": "A work plan specification that is the output of some hiring process that has as participant some human or organization that is the bearer of an employer role and some human who comes to bear the plan that concretizes the work plan specification."
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OMRSE_00002077",
-          "lbl": "self-employed work plan specification",
-          "meta": {
-            "definition": {
-              "val": "A work plan specification that is the output of some deontic document act, p,  that creates an employer role in the sole participant in p."
-            }
-          },
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/OMRSE_00002078",
-          "lbl": "self-employed business owner work plan specification",
-          "meta": {
-            "definition": {
-              "val": "A work plan specification that is the output of some deontic document act, p,  that also creates a business organization and is concretized as a plan in the sole participant in p."
-            }
-          },
-          "type": "CLASS"
-        },
-        {
           "id": "http://purl.obolibrary.org/obo/OOSTT_00000030",
           "lbl": "OOSTT user-centered description",
           "meta": {
@@ -25322,7 +25217,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485231"
+                "val": "_:genid2147485170"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -28767,7 +28662,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485230"
+                "val": "_:genid2147485169"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",

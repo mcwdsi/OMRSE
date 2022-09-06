@@ -2492,44 +2492,6 @@ property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
-id: OMRSE:00002073
-name: work action specification
-def: "An action specification that describes some activities to be performed by some material entity within a specified time period." []
-is_a: IAO:0000007
-
-[Term]
-id: OMRSE:00002074
-name: work objective specification
-def: "An objective specification that describes the end point of some activities to be performed by some material entity within a specified time period. These activities may not necessarily be identical to those described in the work action specification and in some cases may even take priority over them." []
-is_a: IAO:0000005
-
-[Term]
-id: OMRSE:00002075
-name: work plan specification
-def: "A plan specification with a work objective specification and a work action specification as parts" []
-is_a: IAO:0000104
-relationship: BFO:0000051 OMRSE:00002073 ! work action specification
-relationship: BFO:0000051 OMRSE:00002074 ! work objective specification
-
-[Term]
-id: OMRSE:00002076
-name: employed work plan specification
-def: "A work plan specification that is the output of some hiring process that has as participant some human or organization that is the bearer of an employer role and some human who comes to bear the plan that concretizes the work plan specification." []
-is_a: OMRSE:00002075 ! work plan specification
-
-[Term]
-id: OMRSE:00002077
-name: self-employed work plan specification
-def: "A work plan specification that is the output of some deontic document act, p,  that creates an employer role in the sole participant in p." []
-is_a: OMRSE:00002075 ! work plan specification
-
-[Term]
-id: OMRSE:00002078
-name: self-employed business owner work plan specification
-def: "A work plan specification that is the output of some deontic document act, p,  that also creates a business organization and is concretized as a plan in the sole participant in p." []
-is_a: OMRSE:00002075 ! work plan specification
-
-[Term]
 id: PCO:0000020
 is_a: OMRSE:00000022 ! aggregate of objectual organisms
 
