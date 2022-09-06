@@ -1001,7 +1001,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000058 "A human social role that
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000058 "Mathias Brochhausen"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000058 "student role"@en)
 SubClassOf(obo:OMRSE_00000058 obo:OMRSE_00000086)
-SubClassOf(obo:OMRSE_00000058 ObjectIntersectionOf(obo:OMRSE_00000086 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0021009 ObjectSomeValuesFrom(obo:RO_0002218 obo:OMRSE_00000057)))))
+SubClassOf(obo:OMRSE_00000058 ObjectIntersectionOf(obo:OMRSE_00000086 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0021009 ObjectSomeValuesFrom(obo:RO_0002608 obo:OMRSE_00000057)))))
 
 # Class: obo:OMRSE_00000059 (nursery school role)
 
@@ -1150,7 +1150,7 @@ AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000077 "employee")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000077 "job role"@en)
 SubClassOf(obo:OMRSE_00000077 obo:OMRSE_00002072)
 SubClassOf(obo:OMRSE_00000077 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OMRSE_00000146))
-SubClassOf(obo:OMRSE_00000077 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0021009 ObjectSomeValuesFrom(obo:RO_0002218 ObjectIntersectionOf(ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245 obo:OMRSE_00000023) ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000087))))))
+SubClassOf(obo:OMRSE_00000077 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0021009 ObjectSomeValuesFrom(obo:RO_0002608 ObjectIntersectionOf(ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245 obo:OMRSE_00000023) ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000087))))))
 
 # Class: obo:OMRSE_00000078 (workplace facility)
 
@@ -1218,7 +1218,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000086 "Amanda Hicks"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000086 "human organizational role"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000086 "human role within an organization"@en)
 SubClassOf(obo:OMRSE_00000086 obo:OMRSE_00000001)
-SubClassOf(obo:OMRSE_00000086 ObjectIntersectionOf(obo:OMRSE_00000001 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0021009 ObjectSomeValuesFrom(obo:RO_0002218 ObjectUnionOf(obo:OBI_0000245 obo:OMRSE_00000033))))))
+SubClassOf(obo:OMRSE_00000086 ObjectIntersectionOf(obo:OMRSE_00000001 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0021009 ObjectSomeValuesFrom(obo:RO_0002608 ObjectUnionOf(obo:OBI_0000245 obo:OMRSE_00000033))))))
 
 # Class: obo:OMRSE_00000087 (employer role)
 
@@ -1252,7 +1252,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000091 "An indemnity contract th
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000091 "Amanda Hicks"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000091 "insurance policy"@en)
 SubClassOf(obo:OMRSE_00000091 obo:OMRSE_00000090)
-SubClassOf(obo:OMRSE_00000091 ObjectIntersectionOf(obo:OMRSE_00000090 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0021001 ObjectSomeValuesFrom(obo:RO_0002218 obo:OMRSE_00000093) ObjectSomeValuesFrom(obo:RO_0002218 ObjectIntersectionOf(obo:OMRSE_00000023 ObjectAllValuesFrom(obo:RO_0002351 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000094))))))))
+SubClassOf(obo:OMRSE_00000091 ObjectIntersectionOf(obo:OMRSE_00000090 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectIntersectionOf(obo:IAO_0021001 ObjectSomeValuesFrom(obo:RO_0002608 obo:OMRSE_00000093) ObjectSomeValuesFrom(obo:RO_0002608 ObjectIntersectionOf(obo:OMRSE_00000023 ObjectAllValuesFrom(obo:RO_0002351 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000094))))))))
 
 # Class: obo:OMRSE_00000092 (insured party role)
 
@@ -1505,7 +1505,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000126 "Amanda Hicks"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000126 "discharge process"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000126 "patient discharge"@en)
 SubClassOf(obo:OMRSE_00000126 obo:IAO_0021001)
-SubClassOf(obo:OMRSE_00000126 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:IAO_0000310 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000104))) ObjectSomeValuesFrom(obo:RO_0002218 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000012)))))
+SubClassOf(obo:OMRSE_00000126 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:IAO_0000310 ObjectSomeValuesFrom(obo:BFO_0000051 obo:IAO_0000104))) ObjectSomeValuesFrom(obo:RO_0002608 ObjectIntersectionOf(obo:NCBITaxon_9606 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000012)))))
 SubClassOf(obo:OMRSE_00000126 ObjectSomeValuesFrom(obo:RO_0002229 obo:OGMS_0000100))
 SubClassOf(obo:OMRSE_00000126 ObjectSomeValuesFrom(ObjectInverseOf(obo:RO_0002083) obo:OMRSE_00000201))
 
@@ -2625,7 +2625,7 @@ AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00002033 "preschool education prog
 AnnotationAssertion(obo:IAO_0000119 obo:OMRSE_00002033 "https://apps.who.int/iris/bitstream/handle/10665/69729/a91213.pdf?sequence"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00002033 "early childhood education plan specification"@en)
 SubClassOf(obo:OMRSE_00002033 obo:OMRSE_00002031)
-SubClassOf(obo:OMRSE_00002033 ObjectIntersectionOf(obo:OMRSE_00002031 ObjectSomeValuesFrom(obo:RO_0000058 ObjectAllValuesFrom(obo:BFO_0000054 ObjectIntersectionOf(obo:OMRSE_00002029 ObjectSomeValuesFrom(obo:BFO_0000050 ObjectIntersectionOf(obo:BFO_0000182 ObjectSomeValuesFrom(obo:RO_0002218 obo:NCBITaxon_9606))))))))
+SubClassOf(obo:OMRSE_00002033 ObjectIntersectionOf(obo:OMRSE_00002031 ObjectSomeValuesFrom(obo:RO_0000058 ObjectAllValuesFrom(obo:BFO_0000054 ObjectIntersectionOf(obo:OMRSE_00002029 ObjectSomeValuesFrom(obo:BFO_0000050 ObjectIntersectionOf(obo:BFO_0000182 ObjectSomeValuesFrom(obo:RO_0002608 obo:NCBITaxon_9606))))))))
 
 # Class: obo:OMRSE_00002034 (primary education program)
 
