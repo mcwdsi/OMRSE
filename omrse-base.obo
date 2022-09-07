@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2022-04-06/omrse-base.owl
+data-version: omrse/releases/2022-09-06/omrse-base.owl
 remark: This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt
 ontology: omrse/omrse-base
 property_value: http://purl.org/dc/elements/1.1/contributor "Daniel Welch" xsd:string
@@ -10,8 +10,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:s
 property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
-property_value: owl:versionInfo "2020-10-27" xsd:string
-property_value: owl:versionInfo "2022-04-06" xsd:string
+property_value: owl:versionInfo "2022-09-06" xsd:string
 name: The Ontology of Medically Related Social Entities
 
 [Term]
@@ -1736,6 +1735,16 @@ property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" x
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
+id: OMRSE:00000222
+name: debt obligation
+def: "A directive information entity that prescribes that something will be transferred from some human or organization that is the bearer of a duty holder role to another human or organization that is the bearer of a claimant role." []
+is_a: IAO:0000033
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "debt obligation" xsd:string
+property_value: IAO:0000112 "Three Arrows Capital declared bankruptcy on July 1, 2022 after defaulting on a $665 million debt obligation owed to Voyager Digital." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
 id: OMRSE:00000223
 name: disclosure of residence
 def: "A social act that creates an information content entity that is about some geographical region in which a human being dwells." []
@@ -1873,6 +1882,78 @@ property_value: IAO:0000112 "The Alachua County smoking rate." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
+id: OMRSE:00000235
+name: money
+def: "A debt obligation between two parties that has part a scalar value specification and whose concretizations indicate that their bearers can be used in a financial transaction or payment of debt, or as a measure of the value of some entity in a financial valuation process or prospective financial valuation process." []
+is_a: OMRSE:00000222 ! debt obligation
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "money" xsd:string
+property_value: IAO:0000112 "Todd does not have enough money to buy more plants at the horticultural club's poinsettia sale." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000236
+name: currency
+def: "A material entity that is the bearer of a concretization of money and is created by some governmental organization or on behalf of some governmental organization that has authorized its creation." []
+is_a: BFO:0000040
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "currency" xsd:string
+property_value: IAO:0000112 "US currency is an accepted form of legal tender, not just in the United States, but in many countries around the world, such as El Salvador." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000237
+name: exchange of ownership
+def: "A planned process whereby one agent (or active participant) or a group of agents transfer ownership of some property to another agent (or active participant) or group of agents in the process, who in return transfer ownership of some their property to the first agent (or active participant)." []
+is_a: OBI:0000011
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "exchange of ownership" xsd:string
+property_value: IAO:0000112 "Tom exchanged ownership of his computer for Tina's scooter." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "barter" xsd:string
+
+[Term]
+id: OMRSE:00000238
+name: financial transaction
+def: "A planned process whereby one participant partly or completely fulfills an obligation to another participant by transferring ownership of some other debt obligation, which is typically money." []
+is_a: OBI:0000011
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "financial transaction" xsd:string
+property_value: IAO:0000112 "Apple acquired semiconductors from Samsung in a financial transaction yesterday." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "monetary transaction" xsd:string
+
+[Term]
+id: OMRSE:00000239
+name: payment of debt
+def: "A planned process whereby ownership of some entity of value is transferred by one participant to another to fulfill some obligation, on their behalf, after some service is performed or the ownership of some entity is exchanged." []
+is_a: OBI:0000011
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "payment of debt" xsd:string
+property_value: IAO:0000112 "I made a debt payment with my credit card company yesterday and no longer owe them money." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000240
+name: financial valuation process
+def: "A planned process that has as specified output some scalar measurement datum that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some other material entity." []
+is_a: OBI:0000011
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "financial valuation process" xsd:string
+property_value: IAO:0000112 "The financial valuation of Ravi's car today determined that the car is worth $2000." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000241
+name: prospective financial valuation process
+def: "A planned process that has as specified output some predicted value that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some material entity at some point in the future." []
+is_a: OBI:0000011
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000111 "prospective financial valuation process" xsd:string
+property_value: IAO:0000112 "The prospective valuation of my company's stock indicates strong optimism for our financial growth over the next few years." xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
 id: OMRSE:00000500
 name: job role data item
 def: "A data item that is about a person's job role and/or its realization." []
@@ -1929,17 +2010,19 @@ replaced_by: non-binary gender identity information content entity
 [Term]
 id: OMRSE:00002029
 name: education process
-def: "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability." []
-comment: An interesting question is whether there must be another participant who is the "educator".  Some might object that many people are "self taught".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the top of a finger.  There was no previous information about that.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow "plays a role" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).
+def: "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative." []
+comment: An interesting question is whether there must be another participant who is the "educator".  Some might object that many people are "self taught".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the tip of a finger.  There was no previous information about that type of skill.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow "plays a role" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).
+comment: The loss of a "bad" capability is something like losing a bad golf swing and replacing it with a good one.  Also a capability to disrupt the classroom might be something an educating process diminishes possibly to the point of "removal" in a student.\n\nThis addition to the definition notwithstanding, we do not intend to incorporate the receipt of punishment into the definition of educating.
 is_a: OBI:0000011
 property_value: IAO:0000111 "educating" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
-property_value: IAO:0000600 "An act of acquiring new information and repeatedly applying that information to develop a new skill." xsd:string
+property_value: IAO:0000118 "learning process" xsd:string
+property_value: IAO:0000600 "An act of acquiring new information and repeatedly applying that information to develop a new skill, improve an existing skill, and/or losing a skill at doing something \"bad\"." xsd:string
 
 [Term]
 id: OMRSE:00002030
 name: educational objective
-def: "An objective specification that describes the type of capability or capabilities to be imparted by its realization, which is an educating (education process)." []
+def: "An objective specification that describes the type of capability or capabilities to be imparted or improved by its realization, which is an educating (education process)." []
 is_a: IAO:0000005
 property_value: IAO:0000111 "educational objective specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string

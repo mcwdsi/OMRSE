@@ -60,6 +60,19 @@
       ],
       "edges": [
         {
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.w3.org/2002/07/owl#versionInfo",
+                "val": "09/09/2017"
+              }
+            ]
+          },
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
+          "pred": "http://purl.obolibrary.org/obo/OMRSE_00000068",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000062"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000161"
@@ -280,6 +293,11 @@
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000195"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000236"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000145",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00002060"
@@ -348,6 +366,11 @@
           "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00002071"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000033",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000222"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000100",
@@ -497,12 +520,32 @@
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002029"
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000237"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
-          "pred": "http://purl.obolibrary.org/obo/OMRSE_00000068",
-          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000062"
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000238"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000239"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000240"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000241"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00002029"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000245",
@@ -1405,6 +1448,11 @@
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000219"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000222",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000235"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000227",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000228"
@@ -1770,9 +1818,32 @@
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000071"
         }
       ],
-      "equivalentNodesSets": [],
       "id": "http://purl.obolibrary.org/obo/omrse/omrse-base.json",
       "logicalDefinitionAxioms": [
+        {
+          "definedClassId": "http://purl.obolibrary.org/obo/OMRSE_00000067",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/OMRSE_00000011"
+          ]
+        },
+        {
+          "definedClassId": "http://purl.obolibrary.org/obo/OMRSE_00000500",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/IAO_0000027"
+          ]
+        },
+        {
+          "definedClassId": "http://purl.obolibrary.org/obo/OMRSE_00002030",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/IAO_0000005"
+          ]
+        },
+        {
+          "definedClassId": "http://purl.obolibrary.org/obo/OMRSE_00002032",
+          "genusIds": [
+            "http://purl.obolibrary.org/obo/OMRSE_00002029"
+          ]
+        },
         {
           "definedClassId": "http://purl.obolibrary.org/obo/OMRSE_00000030",
           "genusIds": [
@@ -1870,21 +1941,11 @@
           ]
         },
         {
-          "definedClassId": "http://purl.obolibrary.org/obo/OMRSE_00000067",
-          "genusIds": [
-            "http://purl.obolibrary.org/obo/OMRSE_00000011"
-          ],
-          "restrictions": [
-            null
-          ]
-        },
-        {
           "definedClassId": "http://purl.obolibrary.org/obo/OMRSE_00000098",
           "genusIds": [
             "http://purl.obolibrary.org/obo/OMRSE_00000132"
           ],
           "restrictions": [
-            null,
             {
               "fillerId": "http://purl.obolibrary.org/obo/IAO_0020022",
               "propertyId": "http://purl.obolibrary.org/obo/BFO_0000050"
@@ -1901,7 +1962,6 @@
             "http://purl.obolibrary.org/obo/OMRSE_00000132"
           ],
           "restrictions": [
-            null,
             {
               "fillerId": "http://purl.obolibrary.org/obo/IAO_0020022",
               "propertyId": "http://purl.obolibrary.org/obo/BFO_0000050"
@@ -1918,7 +1978,6 @@
             "http://purl.obolibrary.org/obo/IAO_0000030"
           ],
           "restrictions": [
-            null,
             {
               "fillerId": "http://purl.obolibrary.org/obo/IAO_0020022",
               "propertyId": "http://purl.obolibrary.org/obo/BFO_0000050"
@@ -1935,7 +1994,6 @@
             "http://purl.obolibrary.org/obo/OMRSE_00000132"
           ],
           "restrictions": [
-            null,
             {
               "fillerId": "http://purl.obolibrary.org/obo/IAO_0020022",
               "propertyId": "http://purl.obolibrary.org/obo/BFO_0000050"
@@ -1995,24 +2053,6 @@
           ]
         },
         {
-          "definedClassId": "http://purl.obolibrary.org/obo/OMRSE_00000500",
-          "genusIds": [
-            "http://purl.obolibrary.org/obo/IAO_0000027"
-          ],
-          "restrictions": [
-            null
-          ]
-        },
-        {
-          "definedClassId": "http://purl.obolibrary.org/obo/OMRSE_00002030",
-          "genusIds": [
-            "http://purl.obolibrary.org/obo/IAO_0000005"
-          ],
-          "restrictions": [
-            null
-          ]
-        },
-        {
           "definedClassId": "http://purl.obolibrary.org/obo/OMRSE_00002031",
           "genusIds": [
             "http://purl.obolibrary.org/obo/IAO_0000104"
@@ -2022,15 +2062,6 @@
               "fillerId": "http://purl.obolibrary.org/obo/OMRSE_00002030",
               "propertyId": "http://purl.obolibrary.org/obo/BFO_0000051"
             }
-          ]
-        },
-        {
-          "definedClassId": "http://purl.obolibrary.org/obo/OMRSE_00002032",
-          "genusIds": [
-            "http://purl.obolibrary.org/obo/OMRSE_00002029"
-          ],
-          "restrictions": [
-            null
           ]
         },
         {
@@ -2118,16 +2149,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2020-10-27"
-          },
-          {
-            "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-04-06"
+            "val": "2022-09-06"
           }
         ],
-        "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse-base.json",
-        "xrefs": []
+        "version": "http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse-base.json"
       },
       "nodes": [
         {
@@ -2149,8 +2174,7 @@
               }
             ],
             "definition": {
-              "val": "Social Security Number(SSN) is a Centrally Registered IDentifier that is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents under section 205(c) of the Social Security Act, codified as 42 U.S.C. § 405(c). The number is issued to an individual by the Social Security Administration, an independent agency of the United States government. Its primary purpose is to track individuals for Social Security purposes.",
-              "xrefs": []
+              "val": "Social Security Number(SSN) is a Centrally Registered IDentifier that is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents under section 205(c) of the Social Security Act, codified as 42 U.S.C. § 405(c). The number is issued to an individual by the Social Security Administration, an independent agency of the United States government. Its primary purpose is to track individuals for Social Security purposes."
             }
           },
           "type": "CLASS"
@@ -2170,8 +2194,7 @@
               }
             ],
             "definition": {
-              "val": "A social role inhering in a human being.",
-              "xrefs": []
+              "val": "A social role inhering in a human being."
             }
           },
           "type": "CLASS"
@@ -2191,8 +2214,7 @@
               }
             ],
             "definition": {
-              "val": "A human social role borne by a human being being realized in behaviour which is considered socially appropriate for individuals of a specific sex in the context of a specific culture.",
-              "xrefs": []
+              "val": "A human social role borne by a human being being realized in behaviour which is considered socially appropriate for individuals of a specific sex in the context of a specific culture."
             }
           },
           "type": "CLASS"
@@ -2212,8 +2234,7 @@
               }
             ],
             "definition": {
-              "val": "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the male sex in the context of the culture in question.",
-              "xrefs": []
+              "val": "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the male sex in the context of the culture in question."
             }
           },
           "type": "CLASS"
@@ -2233,8 +2254,7 @@
               }
             ],
             "definition": {
-              "val": "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the female sex in the context of the culture in question.",
-              "xrefs": []
+              "val": "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the female sex in the context of the culture in question."
             }
           },
           "type": "CLASS"
@@ -2257,8 +2277,7 @@
               "Mathias Brochhausen"
             ],
             "definition": {
-              "val": "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. ",
-              "xrefs": []
+              "val": "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. "
             }
           },
           "type": "CLASS"
@@ -2289,8 +2308,7 @@
               "In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov't entities, with a person endowed by the gov't with certain certifications."
             ],
             "definition": {
-              "val": "A role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter.",
-              "xrefs": []
+              "val": "A role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter."
             }
           },
           "type": "CLASS"
@@ -2309,8 +2327,7 @@
               "William R. Hogan"
             ],
             "definition": {
-              "val": "A human health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism.",
-              "xrefs": []
+              "val": "A human health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism."
             }
           },
           "type": "CLASS"
@@ -2334,8 +2351,7 @@
               }
             ],
             "definition": {
-              "val": "A health care role borne by a human being and realized by promoting, maintaining or restoring human health through the study, diagnosis, and treatment of disease, injury and other physical and mental impairments.",
-              "xrefs": []
+              "val": "A health care role borne by a human being and realized by promoting, maintaining or restoring human health through the study, diagnosis, and treatment of disease, injury and other physical and mental impairments."
             }
           },
           "type": "CLASS"
@@ -2359,8 +2375,7 @@
               }
             ],
             "definition": {
-              "val": "A health care role borne by a human being and realized by the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life.",
-              "xrefs": []
+              "val": "A health care role borne by a human being and realized by the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life."
             }
           },
           "type": "CLASS"
@@ -2380,8 +2395,7 @@
               }
             ],
             "definition": {
-              "val": "A role that inheres in an organization and that is realized by the providing of services in a health care encounter.",
-              "xrefs": []
+              "val": "A role that inheres in an organization and that is realized by the providing of services in a health care encounter."
             }
           },
           "type": "CLASS"
@@ -2397,8 +2411,7 @@
               }
             ],
             "definition": {
-              "val": "A health care provider organization role that inheres in an organization consisting of two or more physicians.",
-              "xrefs": []
+              "val": "A health care provider organization role that inheres in an organization consisting of two or more physicians."
             }
           },
           "type": "CLASS"
@@ -2418,8 +2431,7 @@
               }
             ],
             "definition": {
-              "val": "A role borne by an organization and realized by providing healthcare services by healthcare professionals of multiple different disciplines of medicine and enabling stationary treatment.",
-              "xrefs": []
+              "val": "A role borne by an organization and realized by providing healthcare services by healthcare professionals of multiple different disciplines of medicine and enabling stationary treatment."
             },
             "deprecated": true
           },
@@ -2436,8 +2448,7 @@
               }
             ],
             "definition": {
-              "val": "A health care provider organization role that inheres in an organization that is comprised of other organizations.",
-              "xrefs": []
+              "val": "A health care provider organization role that inheres in an organization that is comprised of other organizations."
             }
           },
           "type": "CLASS"
@@ -2477,8 +2488,7 @@
               "Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  "
             ],
             "definition": {
-              "val": "An object aggregate of objectual organisms.",
-              "xrefs": []
+              "val": "An object aggregate of objectual organisms."
             }
           },
           "type": "CLASS"
@@ -2488,8 +2498,7 @@
           "lbl": "collection of humans",
           "meta": {
             "definition": {
-              "val": "An object aggregate all of whose components are human beings.",
-              "xrefs": []
+              "val": "An object aggregate all of whose components are human beings."
             }
           },
           "type": "CLASS"
@@ -2508,8 +2517,7 @@
               "Previous definition: A role played by an entity in human social processes."
             ],
             "definition": {
-              "val": "A role inhering in an entity realized by social interactions in human society.",
-              "xrefs": []
+              "val": "A role inhering in an entity realized by social interactions in human society."
             },
             "deprecated": true
           },
@@ -2529,8 +2537,7 @@
               "Defined class that we will ultimately move to an application ontology.  We are leaving here for now until we determine which application ontology: it is likely going to be an ontology that does not currently (2012-06-05) exist.\n\nDitto for its current descendants."
             ],
             "definition": {
-              "val": "A role in human social processes that inheres in an organization.",
-              "xrefs": []
+              "val": "A role in human social processes that inheres in an organization."
             }
           },
           "type": "CLASS"
@@ -2551,8 +2558,7 @@
               "Previous definition: A role in human social processes played by an organism."
             ],
             "definition": {
-              "val": "A role in human social processes that inheres in an organism.",
-              "xrefs": []
+              "val": "A role in human social processes that inheres in an organism."
             }
           },
           "type": "CLASS"
@@ -2565,8 +2571,7 @@
               "Previous definition: An organization social role played by an organization in health care processes."
             ],
             "definition": {
-              "val": "An organization social role that, if realized, is realized by either a health care process or an ancillary health care process",
-              "xrefs": []
+              "val": "An organization social role that, if realized, is realized by either a health care process or an ancillary health care process"
             }
           },
           "type": "CLASS"
@@ -2586,8 +2591,7 @@
               }
             ],
             "definition": {
-              "val": "An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii).",
-              "xrefs": []
+              "val": "An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii)."
             },
             "deprecated": true
           },
@@ -2612,8 +2616,7 @@
           "lbl": "human patient role",
           "meta": {
             "definition": {
-              "val": "A patient role that inheres in a human being.",
-              "xrefs": []
+              "val": "A patient role that inheres in a human being."
             }
           },
           "type": "CLASS"
@@ -2632,8 +2635,7 @@
               "example: Northern Ireland"
             ],
             "definition": {
-              "val": "A subnational entity that is the primary organizational member of a nation, is subject to the full set of laws of the nation, enjoys all the privileges established under the laws of the nation, is not a member of any other geopolitical entity, and itself governs a part of the geographical region governed by the nation.",
-              "xrefs": []
+              "val": "A subnational entity that is the primary organizational member of a nation, is subject to the full set of laws of the nation, enjoys all the privileges established under the laws of the nation, is not a member of any other geopolitical entity, and itself governs a part of the geographical region governed by the nation."
             },
             "deprecated": true
           },
@@ -2653,8 +2655,7 @@
               "Typically, the common feature is that the dependency does not conduct foreign affairs, and relegates this authority to the sovereign state.  BUt otherwise, it is largely or completely autonomous relative to the administrative subdivisions.  Examples include Puerto Rico (U.S.), Guam (U.S.), Greenland (Denmark), French Polynesia (France), and Falkland Islands (United Kingdom). "
             ],
             "definition": {
-              "val": "A subnational entity that does not possess full political independence or sovereignty as a sovereign state, but remains politically outside of the controlling state and controls a geographical region that is outside the controlling state's integral region.",
-              "xrefs": []
+              "val": "A subnational entity that does not possess full political independence or sovereignty as a sovereign state, but remains politically outside of the controlling state and controls a geographical region that is outside the controlling state's integral region."
             },
             "deprecated": true
           },
@@ -2674,8 +2675,7 @@
               "It is often convenient to group organizations together that otherwise might not even interact with one another. "
             ],
             "definition": {
-              "val": "An object aggregate that is not itself an organization and whose members are only organizations that have some feature in common",
-              "xrefs": []
+              "val": "An object aggregate that is not itself an organization and whose members are only organizations that have some feature in common"
             }
           },
           "type": "CLASS"
@@ -2699,8 +2699,7 @@
               }
             ],
             "definition": {
-              "val": "An aggregate of sovereign states that share some feature in common, but is not an organization nor necessarily the outcome of some treaty among them.",
-              "xrefs": []
+              "val": "An aggregate of sovereign states that share some feature in common, but is not an organization nor necessarily the outcome of some treaty among them."
             },
             "deprecated": true
           },
@@ -2725,8 +2724,7 @@
               }
             ],
             "definition": {
-              "val": "An object aggregate that is not itself a geopolitical organization and whose members are only geopolitical organizations that have some feature in common",
-              "xrefs": []
+              "val": "An object aggregate that is not itself a geopolitical organization and whose members are only geopolitical organizations that have some feature in common"
             },
             "deprecated": true
           },
@@ -2747,8 +2745,7 @@
               }
             ],
             "definition": {
-              "val": "An aggregate of geopoli organizations that is not itself a geopolitical dependency and whose members are only geopolitical dependencies that have some feature in common.",
-              "xrefs": []
+              "val": "An aggregate of geopoli organizations that is not itself a geopolitical dependency and whose members are only geopolitical dependencies that have some feature in common."
             },
             "deprecated": true
           },
@@ -2769,8 +2766,7 @@
               }
             ],
             "definition": {
-              "val": "An aggregate of geopoli organizations that is not itself a major administrative subdivision and whose members are only major administrative subdivisions that have some feature in common",
-              "xrefs": []
+              "val": "An aggregate of geopoli organizations that is not itself a major administrative subdivision and whose members are only major administrative subdivisions that have some feature in common"
             },
             "deprecated": true
           },
@@ -2794,8 +2790,7 @@
               "We are aware of the fact that Wikipedia's definition differs from ours by saying that \"Legal personality (...) is the characteristic of a non-living entity regarded by law to have the status of personhood\" (http://en.wikipedia.org/wiki/Legal_personality) \nHowever, Shaw explicates:\n\"In any legal system, certain entities, whether they be individuals or companies, will be regarded as possessing rights and duties enforceable at law. Thus an individual may prosecute or be prosecuted for assault and a company can sue for breach of contract. They are able to do this because the law recognises them as 'legal persons' possessing the capacity to have and to maintain certain rights, and being subject to perform specific duties. (...) In municipal law individuals, limited companies and public corporations are recognized as each possessing a distinct legal personality, the terms of which are circumscribed by the relevant legislation\" (Shaw MN: International Law. Sixth Edition. Cambridge University Press, Cambridge, 2008).                We hold that Shaw's position is ontological more prolific since it not only allows to explain how groups of individuals become recognized as unities at law, but also how different individuals can hold different legal personality roles (always against the context of one legal system). The latter will proof useful when dealing with the representing comatous patients or minorsat law in ontologies."
             ],
             "definition": {
-              "val": "A role borne by a human individual or by a collection of humans regarded as possessing rights and duties enforeable at law.",
-              "xrefs": []
+              "val": "A role borne by a human individual or by a collection of humans regarded as possessing rights and duties enforeable at law."
             }
           },
           "type": "CLASS"
@@ -2805,8 +2800,7 @@
           "lbl": "smoker role",
           "meta": {
             "definition": {
-              "val": "A role that inheres in an organism and is realized by habitually smoking tobacco products.",
-              "xrefs": []
+              "val": "A role that inheres in an organism and is realized by habitually smoking tobacco products."
             }
           },
           "type": "CLASS"
@@ -2837,8 +2831,7 @@
               "examples:\nNorth American Free Trade Argreement [NAFTA] , Universal Postal Union [UPU], Oragnaization of American States [OAS], World Bank), Organization of Petroleum exporting countries [OPEC] United Nations [UN[, The World Trade Organization [WTO], The World Health Organization [WHO], UNICEF"
             ],
             "definition": {
-              "val": "an intergovernmental organization that has at least three member states, that has activies in at least three states, and that is unified by some formal intergovernmental agreement",
-              "xrefs": []
+              "val": "an intergovernmental organization that has at least three member states, that has activies in at least three states, and that is unified by some formal intergovernmental agreement"
             },
             "deprecated": true
           },
@@ -2866,8 +2859,7 @@
               "Examples:\nInternaltion Federation of Red Cross and Red Crescent Societies, Oxfam, CARE, Doctors Without Borders, World Wildlife Fund, Transparency International, Human Rights Watch, Amnesty International, and Save the Children."
             ],
             "definition": {
-              "val": "a geopolitical organization that is voluntary and private, whose members are individual persons or organizations that come together to acheive a common purpose.",
-              "xrefs": []
+              "val": "a geopolitical organization that is voluntary and private, whose members are individual persons or organizations that come together to acheive a common purpose."
             },
             "deprecated": true
           },
@@ -2920,8 +2912,7 @@
               "IMPORTANT: The label \"geopolitical organization\" was previously used for OMRSE_00000044 (governmental organization).  \"geopoli organization\" is a label for a new and different class."
             ],
             "definition": {
-              "val": "An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii). \n\nNote: this definition was taken over from \"geopolitical organization\".",
-              "xrefs": []
+              "val": "An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii). \n\nNote: this definition was taken over from \"geopolitical organization\"."
             },
             "deprecated": true
           },
@@ -2958,8 +2949,7 @@
               "Per Wikipedia, the word 'nation' does not always refer to soverign states.  For example, the \"nation of Islam\"."
             ],
             "definition": {
-              "val": "A governmental organization with a defined territory on which it exercises internal and external sovereignty, a permanent population, a government, and the capacity to enter into relations with other sovereign states.",
-              "xrefs": []
+              "val": "A governmental organization with a defined territory on which it exercises internal and external sovereignty, a permanent population, a government, and the capacity to enter into relations with other sovereign states."
             },
             "deprecated": true
           },
@@ -2984,8 +2974,7 @@
               }
             ],
             "definition": {
-              "val": "a governmental organization that has a local, regional, or territorial government that recognizes a sovereign state as its higher political authority",
-              "xrefs": []
+              "val": "a governmental organization that has a local, regional, or territorial government that recognizes a sovereign state as its higher political authority"
             },
             "deprecated": true
           },
@@ -3023,8 +3012,7 @@
               }
             ],
             "definition": {
-              "val": "A function inhering in a material entity that, if realized, is realized by the material entity being the site at which inpatient and outpatient healthcare is provided to a patient population.",
-              "xrefs": []
+              "val": "A function inhering in a material entity that, if realized, is realized by the material entity being the site at which inpatient and outpatient healthcare is provided to a patient population."
             }
           },
           "type": "CLASS"
@@ -3040,8 +3028,7 @@
               }
             ],
             "definition": {
-              "val": "A function inhering in a material entity that, if realized, is realized by that material entity being the site at which formal education is provided to a student population.",
-              "xrefs": []
+              "val": "A function inhering in a material entity that, if realized, is realized by that material entity being the site at which formal education is provided to a student population."
             }
           },
           "type": "CLASS"
@@ -3057,8 +3044,7 @@
               }
             ],
             "definition": {
-              "val": "A healthcare provider role that inheres in an organization and is realized by providing inpatient care.",
-              "xrefs": []
+              "val": "A healthcare provider role that inheres in an organization and is realized by providing inpatient care."
             }
           },
           "type": "CLASS"
@@ -3091,8 +3077,7 @@
               }
             ],
             "definition": {
-              "val": "An organization that is the bearer of a hospital role.",
-              "xrefs": []
+              "val": "An organization that is the bearer of a hospital role."
             }
           },
           "type": "CLASS"
@@ -3108,8 +3093,7 @@
               }
             ],
             "definition": {
-              "val": "An organization that is the bearer of a school role.",
-              "xrefs": []
+              "val": "An organization that is the bearer of a school role."
             }
           },
           "type": "CLASS"
@@ -3125,8 +3109,7 @@
               }
             ],
             "definition": {
-              "val": "A human social role that, if realized, is realized by the process of formal education that the bearer undergoes.",
-              "xrefs": []
+              "val": "A human social role that, if realized, is realized by the process of formal education that the bearer undergoes."
             }
           },
           "type": "CLASS"
@@ -3176,8 +3159,7 @@
               "This type of entity is referred to as \"Bauwerk\" or \"Bauliche Anlage\"."
             ],
             "definition": {
-              "val": "A material entity that is a human made strcuture with firm connection between its foundation and the ground.",
-              "xrefs": []
+              "val": "A material entity that is a human made strcuture with firm connection between its foundation and the ground."
             }
           },
           "type": "CLASS"
@@ -3193,8 +3175,7 @@
               }
             ],
             "definition": {
-              "val": "An architectural structure that bears some function.",
-              "xrefs": []
+              "val": "An architectural structure that bears some function."
             }
           },
           "type": "CLASS"
@@ -3214,8 +3195,7 @@
               }
             ],
             "definition": {
-              "val": "A health care facility that bears the function to provide acute and intensive healthcare services and that is run by a hospital organization and is the bearer of a hospital function.",
-              "xrefs": []
+              "val": "A health care facility that bears the function to provide acute and intensive healthcare services and that is run by a hospital organization and is the bearer of a hospital function."
             }
           },
           "type": "CLASS"
@@ -3231,8 +3211,7 @@
               }
             ],
             "definition": {
-              "val": "A facility that is run by a school organization and is the bearer of a school function.",
-              "xrefs": []
+              "val": "A facility that is run by a school organization and is the bearer of a school function."
             }
           },
           "type": "CLASS"
@@ -3269,8 +3248,7 @@
               }
             ],
             "definition": {
-              "val": "A trauma patient role that inheres in a homo sapiens who is under the age of 15 years.",
-              "xrefs": []
+              "val": "A trauma patient role that inheres in a homo sapiens who is under the age of 15 years."
             }
           },
           "type": "CLASS"
@@ -3294,8 +3272,7 @@
               }
             ],
             "definition": {
-              "val": "A patient role that inheres an organism suffering one or more injuries.",
-              "xrefs": []
+              "val": "A patient role that inheres an organism suffering one or more injuries."
             }
           },
           "type": "CLASS"
@@ -3319,8 +3296,7 @@
               }
             ],
             "definition": {
-              "val": "A patient role that inheres in an organism suffering a thermal, electrical, chemical or radiation burn.",
-              "xrefs": []
+              "val": "A patient role that inheres in an organism suffering a thermal, electrical, chemical or radiation burn."
             }
           },
           "type": "CLASS"
@@ -3347,8 +3323,7 @@
               "Definition updated May 5, 2016. Original definitions was, a health care role borne by a human being and realized by training and certification in rehabilitation medicine."
             ],
             "definition": {
-              "val": "A physician role that is created by training and certification in rehabilitation/physical medicine and that is realized by the provision of or supervising of the provision of rehabilitation or physical therapy to a patient.",
-              "xrefs": []
+              "val": "A physician role that is created by training and certification in rehabilitation/physical medicine and that is realized by the provision of or supervising of the provision of rehabilitation or physical therapy to a patient."
             }
           },
           "type": "CLASS"
@@ -3372,8 +3347,7 @@
               }
             ],
             "definition": {
-              "val": "A patient role that inheres in an organism with some non-superficial traumatic injury.  The role is realized by admision to a hospital, transfer from one hospital to another for the purpose of trauma care, or has death as a result of the traumatic injury.",
-              "xrefs": []
+              "val": "A patient role that inheres in an organism with some non-superficial traumatic injury.  The role is realized by admision to a hospital, transfer from one hospital to another for the purpose of trauma care, or has death as a result of the traumatic injury."
             }
           },
           "type": "CLASS"
@@ -3396,8 +3370,7 @@
               "Housing units are individuated by their residence functions."
             ],
             "definition": {
-              "val": "A material entity that has as parts one or more sites large enough to contain humans, has as part one or more material entities that separates it from other sites, and bears a residence function.",
-              "xrefs": []
+              "val": "A material entity that has as parts one or more sites large enough to contain humans, has as part one or more material entities that separates it from other sites, and bears a residence function."
             }
           },
           "type": "CLASS"
@@ -3413,8 +3386,7 @@
               }
             ],
             "definition": {
-              "val": "A function that inheres in a material entity and, if realized, is realized by protecting persons and their possessions from weather and by some person or group of persons habitually sleeping in at least one site that is contained by that material entity.",
-              "xrefs": []
+              "val": "A function that inheres in a material entity and, if realized, is realized by protecting persons and their possessions from weather and by some person or group of persons habitually sleeping in at least one site that is contained by that material entity."
             }
           },
           "type": "CLASS"
@@ -3434,8 +3406,7 @@
               "Note that it is not possible in OWL 2, at least that we have yet found, to say that the housing unit in which the process occurs is the same one that is the bearer of the residence function (that the process realizes)."
             ],
             "definition": {
-              "val": "A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of that housing unit's residence function.",
-              "xrefs": []
+              "val": "A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of that housing unit's residence function."
             }
           },
           "type": "CLASS"
@@ -3455,8 +3426,7 @@
               }
             ],
             "definition": {
-              "val": "A role in human social processes that, if realized, is realized when the bearer provides labor or services in exchange for a wage or salary as specified by some deontic declaration.",
-              "xrefs": []
+              "val": "A role in human social processes that, if realized, is realized when the bearer provides labor or services in exchange for a wage or salary as specified by some deontic declaration."
             }
           },
           "type": "CLASS"
@@ -3485,8 +3455,7 @@
               }
             ],
             "definition": {
-              "val": "a function inhering in a material entity that, if realized, is realized by that material entity being the site where the work of some organization is carried out",
-              "xrefs": []
+              "val": "a function inhering in a material entity that, if realized, is realized by that material entity being the site where the work of some organization is carried out"
             }
           },
           "type": "CLASS"
@@ -3496,8 +3465,7 @@
           "lbl": "U.S. Census PUMS serial number",
           "meta": {
             "definition": {
-              "val": "The PUMS serial number assigned to a housing unit, which is only unique within each state, and which explicitly links the housing unit record with person records in PUMS data.",
-              "xrefs": []
+              "val": "The PUMS serial number assigned to a housing unit, which is only unique within each state, and which explicitly links the housing unit record with person records in PUMS data."
             }
           },
           "type": "PROPERTY"
@@ -3517,8 +3485,7 @@
               }
             ],
             "definition": {
-              "val": "A US Census householder role is a human social role that, if realized, is realized by that person being a member of a household and either owning or renting the housing unit in which that household resides and being designated as the householder. If there is only one member of the household who owns or rents the housing unit, that person is designated the householder by default.",
-              "xrefs": []
+              "val": "A US Census householder role is a human social role that, if realized, is realized by that person being a member of a household and either owning or renting the housing unit in which that household resides and being designated as the householder. If there is only one member of the household who owns or rents the housing unit, that person is designated the householder by default."
             }
           },
           "type": "CLASS"
@@ -3538,8 +3505,7 @@
               }
             ],
             "definition": {
-              "val": "A US cenus reference person role is a human social role that inheres in a Homo sapiens who is a member of a household and is realized by other persons in the household being recorded in the US census in relation to that person.",
-              "xrefs": []
+              "val": "A US cenus reference person role is a human social role that inheres in a Homo sapiens who is a member of a household and is realized by other persons in the household being recorded in the US census in relation to that person."
             }
           },
           "type": "CLASS"
@@ -3559,8 +3525,7 @@
               }
             ],
             "definition": {
-              "val": "An ethnic identity datum that is the output of an ethnic identification process that uses OMB terminology for ethnicity or terminology that is mapped the OMB ethnicity terms.",
-              "xrefs": []
+              "val": "An ethnic identity datum that is the output of an ethnic identification process that uses OMB terminology for ethnicity or terminology that is mapped the OMB ethnicity terms."
             },
             "deprecated": true
           },
@@ -3599,8 +3564,7 @@
               }
             ],
             "definition": {
-              "val": "A human social role that is created by a deontic declaration performed by an organization.",
-              "xrefs": []
+              "val": "A human social role that is created by a deontic declaration performed by an organization."
             }
           },
           "type": "CLASS"
@@ -3610,8 +3574,7 @@
           "lbl": "employer role",
           "meta": {
             "definition": {
-              "val": "a role in human social processes that is realized when the bearer provides a wage or salary in exchange for some labour or services as specified by some declaration",
-              "xrefs": []
+              "val": "a role in human social processes that is realized when the bearer provides a wage or salary in exchange for some labour or services as specified by some declaration"
             }
           },
           "type": "CLASS"
@@ -3627,8 +3590,7 @@
               }
             ],
             "definition": {
-              "val": "A document that records a legally binding agreement between two or more parties.",
-              "xrefs": []
+              "val": "A document that records a legally binding agreement between two or more parties."
             }
           },
           "type": "CLASS"
@@ -3644,8 +3606,7 @@
               }
             ],
             "definition": {
-              "val": "A contract by which one party secures the other against pecuniary loss by payment of a sum of money if a specified event occurs.",
-              "xrefs": []
+              "val": "A contract by which one party secures the other against pecuniary loss by payment of a sum of money if a specified event occurs."
             }
           },
           "type": "CLASS"
@@ -3661,8 +3622,7 @@
               }
             ],
             "definition": {
-              "val": "An indemnity contract that distributes risk among a group of people",
-              "xrefs": []
+              "val": "An indemnity contract that distributes risk among a group of people"
             }
           },
           "type": "CLASS"
@@ -3678,8 +3638,7 @@
               }
             ],
             "definition": {
-              "val": "A role that inheres in an organism that is able to receive benefits from an insurance policy. The role, if realized, is realized by receiving benefits that are covered by the insurance policy.",
-              "xrefs": []
+              "val": "A role that inheres in an organism that is able to receive benefits from an insurance policy. The role, if realized, is realized by receiving benefits that are covered by the insurance policy."
             }
           },
           "type": "CLASS"
@@ -3695,8 +3654,7 @@
               }
             ],
             "definition": {
-              "val": "An organization that secures a group of people against pecuniary loss by payment of a sum of money if a a specified event occurs.",
-              "xrefs": []
+              "val": "An organization that secures a group of people against pecuniary loss by payment of a sum of money if a a specified event occurs."
             }
           },
           "type": "CLASS"
@@ -3712,8 +3670,7 @@
               }
             ],
             "definition": {
-              "val": "An insured party role that inheres in a person who participates in the creation of the insurance contract and is eligible to receive benefits as specified by the insurance contract.",
-              "xrefs": []
+              "val": "An insured party role that inheres in a person who participates in the creation of the insurance contract and is eligible to receive benefits as specified by the insurance contract."
             }
           },
           "type": "CLASS"
@@ -3729,8 +3686,7 @@
               }
             ],
             "definition": {
-              "val": "A racial identity is an information content entity that is the output of some racial identitification process and is intended to be a truthful statement about the genetic or cultural race of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method.",
-              "xrefs": []
+              "val": "A racial identity is an information content entity that is the output of some racial identitification process and is intended to be a truthful statement about the genetic or cultural race of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method."
             },
             "deprecated": true
           },
@@ -3751,8 +3707,7 @@
               }
             ],
             "definition": {
-              "val": "An ethnic identity datum is an information content entity that is the output of some ethnic identitification process and is intended to be a truthful statement about the cultural or national heritage of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method.",
-              "xrefs": []
+              "val": "An ethnic identity datum is an information content entity that is the output of some ethnic identitification process and is intended to be a truthful statement about the cultural or national heritage of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method."
             },
             "deprecated": true
           },
@@ -3786,8 +3741,7 @@
               }
             ],
             "definition": {
-              "val": "A human social role that inheres in a human who is legally eligible to work, is conferred by the U.S. Census Bureau, and is realized by the bearer not working and either making active efforts to find employment in the four weeks prior to the reference week or waiting to be recalled from temporary layoff.",
-              "xrefs": []
+              "val": "A human social role that inheres in a human who is legally eligible to work, is conferred by the U.S. Census Bureau, and is realized by the bearer not working and either making active efforts to find employment in the four weeks prior to the reference week or waiting to be recalled from temporary layoff."
             }
           },
           "type": "CLASS"
@@ -3815,8 +3769,7 @@
               }
             ],
             "definition": {
-              "val": "A health care facility that bears a function to provide healthcare to the sick or terminally ill",
-              "xrefs": []
+              "val": "A health care facility that bears a function to provide healthcare to the sick or terminally ill"
             }
           },
           "type": "CLASS"
@@ -3857,8 +3810,7 @@
               }
             ],
             "definition": {
-              "val": "A facility to assist in physical or addiction recovery",
-              "xrefs": []
+              "val": "A facility to assist in physical or addiction recovery"
             }
           },
           "type": "CLASS"
@@ -3874,8 +3826,7 @@
               }
             ],
             "definition": {
-              "val": "A facility that is run by a nursing home organization and is the bearer of a nursing home function.",
-              "xrefs": []
+              "val": "A facility that is run by a nursing home organization and is the bearer of a nursing home function."
             }
           },
           "type": "CLASS"
@@ -3895,8 +3846,7 @@
               }
             ],
             "definition": {
-              "val": "A community living health care facility that provides health care services in a home-like setting",
-              "xrefs": []
+              "val": "A community living health care facility that provides health care services in a home-like setting"
             }
           },
           "type": "CLASS"
@@ -3940,8 +3890,7 @@
               "Broadened from treatment to healthcare services generally.  \"Low intensity\" is not defined at the moment, but is needed to differentiate from same-day surgery centers or observation stays in hospitals that last <24 hours.  The idea is that few invasive procedures are performed, and the ones that are invasive are not typically much worse than a blood draw.  Maybe bone marrow biopsy is as aggressive as it gets.  I wonder if hematologists do that on an outpatient basis."
             ],
             "definition": {
-              "val": "A health care facility that bears a function to provide low intensity healthcare services to patients on a short-term basis, with patients leaving on the same date as arriving (i.e., without them staying overnight)",
-              "xrefs": []
+              "val": "A health care facility that bears a function to provide low intensity healthcare services to patients on a short-term basis, with patients leaving on the same date as arriving (i.e., without them staying overnight)"
             }
           },
           "type": "CLASS"
@@ -4008,8 +3957,7 @@
               }
             ],
             "definition": {
-              "val": "A health care facility that bears a function to provide emergency healthcare services and the acute care of patients who present without prior appointment, having arrived either by their own means or by ambulance",
-              "xrefs": []
+              "val": "A health care facility that bears a function to provide emergency healthcare services and the acute care of patients who present without prior appointment, having arrived either by their own means or by ambulance"
             }
           },
           "type": "CLASS"
@@ -4042,8 +3990,7 @@
               }
             ],
             "definition": {
-              "val": "A deontic document act that concludes an inpatient encounter.",
-              "xrefs": []
+              "val": "A deontic document act that concludes an inpatient encounter."
             }
           },
           "type": "CLASS"
@@ -4063,8 +4010,7 @@
               }
             ],
             "definition": {
-              "val": "An OMB ethnic identity datum that indicates the person identified is of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race.",
-              "xrefs": []
+              "val": "An OMB ethnic identity datum that indicates the person identified is of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race."
             },
             "deprecated": true
           },
@@ -4085,8 +4031,7 @@
               }
             ],
             "definition": {
-              "val": "An OMB ethnic identity datum that indicates the person identified is not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race.",
-              "xrefs": []
+              "val": "An OMB ethnic identity datum that indicates the person identified is not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race."
             },
             "deprecated": true
           },
@@ -4097,8 +4042,7 @@
           "lbl": "US physician assistant role",
           "meta": {
             "definition": {
-              "val": "A human health care provider role that inheres in a human being that is created by state licensing and that is realized by taking patient histories, performing physical exams, diagnosing illnesses, developing treatment plans, ordering lab tests, prescribing medications, counselling and educating patients, suturing wounds, and assisting in surgery under the supervision of a physician or a surgeon.",
-              "xrefs": []
+              "val": "A human health care provider role that inheres in a human being that is created by state licensing and that is realized by taking patient histories, performing physical exams, diagnosing illnesses, developing treatment plans, ordering lab tests, prescribing medications, counselling and educating patients, suturing wounds, and assisting in surgery under the supervision of a physician or a surgeon."
             }
           },
           "type": "CLASS"
@@ -4108,8 +4052,7 @@
           "lbl": "anesthesiologist role",
           "meta": {
             "definition": {
-              "val": "A physician role that inheres a human being and, if it is realized, is realized either by administering medication for the temporary general or local suppression of sensory or motor nerve function during some health care encounter or by making decisions independently of a supervising physician regarding the adminstration of such medication.",
-              "xrefs": []
+              "val": "A physician role that inheres a human being and, if it is realized, is realized either by administering medication for the temporary general or local suppression of sensory or motor nerve function during some health care encounter or by making decisions independently of a supervising physician regarding the adminstration of such medication."
             }
           },
           "type": "CLASS"
@@ -4129,8 +4072,7 @@
               }
             ],
             "definition": {
-              "val": "An identity datum is an information content entity that is the output of some identitification process and is intended to be a truthful statement about a person's social identity.  Unlike data items they are not necessilary contributed or acquired by a reliable method.",
-              "xrefs": []
+              "val": "An identity datum is an information content entity that is the output of some identitification process and is intended to be a truthful statement about a person's social identity.  Unlike data items they are not necessilary contributed or acquired by a reliable method."
             },
             "deprecated": true
           },
@@ -4151,8 +4093,7 @@
               }
             ],
             "definition": {
-              "val": "A gender identity is an information content entity that is the output of some gender identitification process and is intended to be a truthful statement about a person's subjective sense of their gender.  Unlike data items they are not necessilary contributed or acquired by a reliable method.",
-              "xrefs": []
+              "val": "A gender identity is an information content entity that is the output of some gender identitification process and is intended to be a truthful statement about a person's subjective sense of their gender.  Unlike data items they are not necessilary contributed or acquired by a reliable method."
             },
             "deprecated": true
           },
@@ -4209,8 +4150,7 @@
               }
             ],
             "definition": {
-              "val": "a gender identity datum resulting from a gender identification process in which ‘female’ is selected based on the participant's subjective sense of gender",
-              "xrefs": []
+              "val": "a gender identity datum resulting from a gender identification process in which ‘female’ is selected based on the participant's subjective sense of gender"
             },
             "deprecated": true
           },
@@ -4221,8 +4161,7 @@
           "lbl": "neurosurgeon role",
           "meta": {
             "definition": {
-              "val": "A surgeon role realized by its bearer using performing neurosurgery.",
-              "xrefs": []
+              "val": "A surgeon role realized by its bearer using performing neurosurgery."
             }
           },
           "type": "CLASS"
@@ -4233,12 +4172,11 @@
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
-                "val": "Amanda Hicks"
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119"
               },
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
-                "val": ""
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Amanda Hicks"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0100001",
@@ -4246,8 +4184,7 @@
               }
             ],
             "definition": {
-              "val": "a gender identity datum resulting from a gender identification process in which ‘male’ is selected based on the participant's subjective sense of gender",
-              "xrefs": []
+              "val": "a gender identity datum resulting from a gender identification process in which ‘male’ is selected based on the participant's subjective sense of gender"
             },
             "deprecated": true
           },
@@ -4272,8 +4209,7 @@
               }
             ],
             "definition": {
-              "val": "An information content entity that is about human travel.",
-              "xrefs": []
+              "val": "An information content entity that is about human travel."
             }
           },
           "type": "CLASS"
@@ -4314,8 +4250,7 @@
               }
             ],
             "definition": {
-              "val": "A symbol that denotes a family.",
-              "xrefs": []
+              "val": "A symbol that denotes a family."
             }
           },
           "type": "CLASS"
@@ -4331,8 +4266,7 @@
               }
             ],
             "definition": {
-              "val": "an identity datum that has been asserted by the person whom it is about",
-              "xrefs": []
+              "val": "an identity datum that has been asserted by the person whom it is about"
             },
             "deprecated": true
           },
@@ -4343,8 +4277,7 @@
           "lbl": "employment process",
           "meta": {
             "definition": {
-              "val": "A planned process in which the bearer of an employer role provides wages or salary to the bearer of an employee roll in fullfillment of the arrangements specified in some declaration",
-              "xrefs": []
+              "val": "A planned process in which the bearer of an employer role provides wages or salary to the bearer of an employee roll in fullfillment of the arrangements specified in some declaration"
             }
           },
           "type": "CLASS"
@@ -4360,8 +4293,7 @@
               }
             ],
             "definition": {
-              "val": "A surgeon role borne by a human being and that, if realized, is realized by its bearer using operative manual and instrumental techniques on preadult patients to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas.",
-              "xrefs": []
+              "val": "A surgeon role borne by a human being and that, if realized, is realized by its bearer using operative manual and instrumental techniques on preadult patients to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas."
             }
           },
           "type": "CLASS"
@@ -4377,8 +4309,7 @@
               }
             ],
             "definition": {
-              "val": "a facility that is run by an adult foster home organization and is the bearer of an adult foster home organization",
-              "xrefs": []
+              "val": "a facility that is run by an adult foster home organization and is the bearer of an adult foster home organization"
             }
           },
           "type": "CLASS"
@@ -4388,8 +4319,7 @@
           "lbl": "community living health care facility",
           "meta": {
             "definition": {
-              "val": "a health care facility that also bears a residence function and thus one in which the patients are also residents of the facility",
-              "xrefs": []
+              "val": "a health care facility that also bears a residence function and thus one in which the patients are also residents of the facility"
             }
           },
           "type": "CLASS"
@@ -4405,8 +4335,7 @@
               }
             ],
             "definition": {
-              "val": "They include assistance with activities of daily living, assistance with instrumental activities of daily living, medication assistance, and health support\n\nhttp://ahca.myflorida.com/Medicaid/acs/index.shtml",
-              "xrefs": []
+              "val": "They include assistance with activities of daily living, assistance with instrumental activities of daily living, medication assistance, and health support\n\nhttp://ahca.myflorida.com/Medicaid/acs/index.shtml"
             }
           },
           "type": "CLASS"
@@ -4416,8 +4345,7 @@
           "lbl": "assisted living facility",
           "meta": {
             "definition": {
-              "val": "A facility that is run by an assisted living facility organization and is the bearer of an assisted living facility function.",
-              "xrefs": []
+              "val": "A facility that is run by an assisted living facility organization and is the bearer of an assisted living facility function."
             }
           },
           "type": "CLASS"
@@ -4427,8 +4355,7 @@
           "lbl": "post-acute health care encounter",
           "meta": {
             "definition": {
-              "val": "temporally located after some acute care encounter\nSomehow involves skilled nursing encounters",
-              "xrefs": []
+              "val": "temporally located after some acute care encounter\nSomehow involves skilled nursing encounters"
             }
           },
           "type": "CLASS"
@@ -4444,8 +4371,7 @@
               }
             ],
             "definition": {
-              "val": "A process (1) where the active participant, who at the beginning of the process is located in a healthcare facility, exits the facility and no longer stands in a \"located in\" relationship to the facility and (2) is immediately preceded by a healthcare encounter in which the active participant also participated.",
-              "xrefs": []
+              "val": "A process (1) where the active participant, who at the beginning of the process is located in a healthcare facility, exits the facility and no longer stands in a \"located in\" relationship to the facility and (2) is immediately preceded by a healthcare encounter in which the active participant also participated."
             }
           },
           "type": "CLASS"
@@ -4541,8 +4467,7 @@
               }
             ],
             "definition": {
-              "val": "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment.",
-              "xrefs": []
+              "val": "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment."
             },
             "deprecated": true
           },
@@ -4563,8 +4488,7 @@
               }
             ],
             "definition": {
-              "val": "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent.",
-              "xrefs": []
+              "val": "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent."
             },
             "deprecated": true
           },
@@ -4585,8 +4509,7 @@
               }
             ],
             "definition": {
-              "val": "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the black racial groups of Africa.",
-              "xrefs": []
+              "val": "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the black racial groups of Africa."
             },
             "deprecated": true
           },
@@ -4607,8 +4530,7 @@
               }
             ],
             "definition": {
-              "val": "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands.",
-              "xrefs": []
+              "val": "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands."
             },
             "deprecated": true
           },
@@ -4629,8 +4551,7 @@
               }
             ],
             "definition": {
-              "val": "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Europe, the Middle East, or North Africa.",
-              "xrefs": []
+              "val": "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Europe, the Middle East, or North Africa."
             },
             "deprecated": true
           },
@@ -4651,8 +4572,7 @@
               }
             ],
             "definition": {
-              "val": "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms.",
-              "xrefs": []
+              "val": "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms."
             },
             "deprecated": true
           },
@@ -4663,8 +4583,7 @@
           "lbl": "heavy smoker role",
           "meta": {
             "definition": {
-              "val": "A role that inheres in an organism and is realized by habitually smoking 10 or more tobacco cigerettes a day or the equivalent in other tobacco products.",
-              "xrefs": []
+              "val": "A role that inheres in an organism and is realized by habitually smoking 10 or more tobacco cigerettes a day or the equivalent in other tobacco products."
             }
           },
           "type": "CLASS"
@@ -4674,8 +4593,7 @@
           "lbl": "light smoker role",
           "meta": {
             "definition": {
-              "val": "A role that inheres in an organism and is realized by habitually smoking 1>10 tobacco cigerettes a day or the equivalent in other tobacco products.",
-              "xrefs": []
+              "val": "A role that inheres in an organism and is realized by habitually smoking 1>10 tobacco cigerettes a day or the equivalent in other tobacco products."
             }
           },
           "type": "CLASS"
@@ -4703,8 +4621,7 @@
               }
             ],
             "definition": {
-              "val": "A facility that has at least one housing unit as part in which a person or persons live",
-              "xrefs": []
+              "val": "A facility that has at least one housing unit as part in which a person or persons live"
             }
           },
           "type": "CLASS"
@@ -4735,8 +4652,7 @@
               "The term 'participant' in the definition need not refer to a human agent."
             ],
             "definition": {
-              "val": "A process in which some participant shares some information content entity about some state of that participant with some other participant.",
-              "xrefs": []
+              "val": "A process in which some participant shares some information content entity about some state of that participant with some other participant."
             },
             "deprecated": true
           },
@@ -4765,8 +4681,7 @@
               }
             ],
             "definition": {
-              "val": "A disposition inhering in a material entity that, if realized, is realized by that material entity’s communicating via some linguistic concretization.",
-              "xrefs": []
+              "val": "A disposition inhering in a material entity that, if realized, is realized by that material entity’s communicating via some linguistic concretization."
             },
             "deprecated": true
           },
@@ -4795,8 +4710,7 @@
               }
             ],
             "definition": {
-              "val": "A disposition inhering in a linguistic community that (i) is a maximal aggregate of communicatively compatible linguistic competences, and (ii) if realized, is realized by any and all realizations of those linguistic competences.",
-              "xrefs": []
+              "val": "A disposition inhering in a linguistic community that (i) is a maximal aggregate of communicatively compatible linguistic competences, and (ii) if realized, is realized by any and all realizations of those linguistic competences."
             },
             "deprecated": true
           },
@@ -4825,8 +4739,7 @@
               }
             ],
             "definition": {
-              "val": "A maximal aggregate of material entities such that each member bears a linguistic competence for the same language.",
-              "xrefs": []
+              "val": "A maximal aggregate of material entities such that each member bears a linguistic competence for the same language."
             }
           },
           "type": "CLASS"
@@ -4854,8 +4767,7 @@
               }
             ],
             "definition": {
-              "val": "A communication in which some participant states a preference for some communicative process to be in a certain language, and that has a concretization of a preferred language information content entity as its specified output.",
-              "xrefs": []
+              "val": "A communication in which some participant states a preference for some communicative process to be in a certain language, and that has a concretization of a preferred language information content entity as its specified output."
             },
             "deprecated": true
           },
@@ -4884,8 +4796,7 @@
               }
             ],
             "definition": {
-              "val": "An information content entity that (i) is about some person, some language, and some linguistic competence; and (ii) conveys the language with which that person prefers to communicate within some given context.",
-              "xrefs": []
+              "val": "An information content entity that (i) is about some person, some language, and some linguistic competence; and (ii) conveys the language with which that person prefers to communicate within some given context."
             },
             "deprecated": true
           },
@@ -4906,8 +4817,7 @@
               "The medium and grammatical form are irrelevant. For example, the request may be written or spoken, and while it may be in the form of a question, it need not be."
             ],
             "definition": {
-              "val": "a communication in which some participant requests of some other participant an information content entity about some portion of reality",
-              "xrefs": []
+              "val": "a communication in which some participant requests of some other participant an information content entity about some portion of reality"
             }
           },
           "type": "CLASS"
@@ -4923,8 +4833,7 @@
               }
             ],
             "definition": {
-              "val": "an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the ethnic identity of that other participant",
-              "xrefs": []
+              "val": "an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the ethnic identity of that other participant"
             }
           },
           "type": "CLASS"
@@ -4940,8 +4849,7 @@
               }
             ],
             "definition": {
-              "val": "an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the racial identity of that other participant",
-              "xrefs": []
+              "val": "an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the racial identity of that other participant"
             }
           },
           "type": "CLASS"
@@ -4957,8 +4865,7 @@
               }
             ],
             "definition": {
-              "val": "A deontic document act in which a patient is registered with a health care provider for the purpose of receiving care in an inpatient encounter.",
-              "xrefs": []
+              "val": "A deontic document act in which a patient is registered with a health care provider for the purpose of receiving care in an inpatient encounter."
             }
           },
           "type": "CLASS"
@@ -4986,8 +4893,7 @@
               }
             ],
             "definition": {
-              "val": "A planned process of determining the extent to which a cancer disease has developed by growing and spreading throughout an organism.",
-              "xrefs": []
+              "val": "A planned process of determining the extent to which a cancer disease has developed by growing and spreading throughout an organism."
             }
           },
           "type": "CLASS"
@@ -5015,8 +4921,7 @@
               }
             ],
             "definition": {
-              "val": "An information content entity that is the specified output of cancer summary staging.",
-              "xrefs": []
+              "val": "An information content entity that is the specified output of cancer summary staging."
             }
           },
           "type": "CLASS"
@@ -5055,8 +4960,7 @@
               "We include (i)-(iii) to acknowledge that there are different senses of \"identify\" that are relevant here, and that we may not always be sure which sense the person concretizing the social identity information content entity intended. While (i) concerns how one thinks of oneself, (ii) and (iii) are more focused on one's interactions with others. Importantly, some choose not to share with others how they identify in the sense of (i). For example, one can consider oneself to be some certain gender without either wanting others to know or choosing to present oneself in a corresponding way. We distinguish (ii) and (iii) because one can prefer to be regarded some certain way without attempting to present oneself in any corresponding way."
             ],
             "definition": {
-              "val": "An information content entity that is intended to be a truthful statement about some person and whether that person identifies as some particular aspect of social identity—such as a gender, an ethnicity, a race, or a sexual orientation—where the sense of identifying may correspond to either (i) an aspect of one’s cognitive representation of oneself, (ii) how one prefers to be regarded by others within some social context, or (iii) how one chooses to present oneself to others within some social context.",
-              "xrefs": []
+              "val": "An information content entity that is intended to be a truthful statement about some person and whether that person identifies as some particular aspect of social identity—such as a gender, an ethnicity, a race, or a sexual orientation—where the sense of identifying may correspond to either (i) an aspect of one’s cognitive representation of oneself, (ii) how one prefers to be regarded by others within some social context, or (iii) how one chooses to present oneself to others within some social context."
             }
           },
           "type": "CLASS"
@@ -5095,8 +4999,7 @@
               "Ethnicity is separate from but related to racial identity. It refers more to identifying with a particular culture than with individuals similar in physical appearance. It includes things like Hispanic ethnicity (which spans many nations) and national cultural identities like Irish and ethnic groups within nations such as Catalan and Armenian."
             ],
             "definition": {
-              "val": "A social identity information content entity that is about whether some person identifies as some ethnicity.",
-              "xrefs": []
+              "val": "A social identity information content entity that is about whether some person identifies as some ethnicity."
             }
           },
           "type": "CLASS"
@@ -5135,8 +5038,7 @@
               "OMB dichotomizes ethnicity into Hispanic or Latino and Not Hispanic or Latino, and ignores all other forms of ethnicity."
             ],
             "definition": {
-              "val": "An ethnic identity information content entity that uses OMB terminology for ethnicity or terminology that is strictly mapped onto the OMB ethnicity terms.",
-              "xrefs": []
+              "val": "An ethnic identity information content entity that uses OMB terminology for ethnicity or terminology that is strictly mapped onto the OMB ethnicity terms."
             }
           },
           "type": "CLASS"
@@ -5175,8 +5077,7 @@
               "It comprehends people of Portuguese culture or origin in Brazil."
             ],
             "definition": {
-              "val": "An OMB ethnic identity information content entity that is about some person's identifying as Hispanic or Latino, which are intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.",
-              "xrefs": []
+              "val": "An OMB ethnic identity information content entity that is about some person's identifying as Hispanic or Latino, which are intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race."
             }
           },
           "type": "CLASS"
@@ -5212,8 +5113,7 @@
               }
             ],
             "definition": {
-              "val": "An OMB ethnic identity information content entity that is about some person's identifying as neither Hispanic nor Latino, which are intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.",
-              "xrefs": []
+              "val": "An OMB ethnic identity information content entity that is about some person's identifying as neither Hispanic nor Latino, which are intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race."
             }
           },
           "type": "CLASS"
@@ -5249,8 +5149,7 @@
               }
             ],
             "definition": {
-              "val": "A social identity information content entity that is about whether some person identifies as some gender.",
-              "xrefs": []
+              "val": "A social identity information content entity that is about whether some person identifies as some gender."
             }
           },
           "type": "CLASS"
@@ -5286,8 +5185,7 @@
               }
             ],
             "definition": {
-              "val": "A gender identity information content entity that is about some person's identifying as female in gender.",
-              "xrefs": []
+              "val": "A gender identity information content entity that is about some person's identifying as female in gender."
             }
           },
           "type": "CLASS"
@@ -5323,8 +5221,7 @@
               }
             ],
             "definition": {
-              "val": "A gender identity information content entity that is about some person's identifying as male in gender.",
-              "xrefs": []
+              "val": "A gender identity information content entity that is about some person's identifying as male in gender."
             }
           },
           "type": "CLASS"
@@ -5360,8 +5257,7 @@
               }
             ],
             "definition": {
-              "val": "A gender identity information content entity that is about some person's identifying as non-binary in gender.",
-              "xrefs": []
+              "val": "A gender identity information content entity that is about some person's identifying as non-binary in gender."
             }
           },
           "type": "CLASS"
@@ -5397,8 +5293,7 @@
               }
             ],
             "definition": {
-              "val": "A social identity information content entity that is about whether some person identifies as some race.",
-              "xrefs": []
+              "val": "A social identity information content entity that is about whether some person identifies as some race."
             }
           },
           "type": "CLASS"
@@ -5434,8 +5329,7 @@
               }
             ],
             "definition": {
-              "val": "A racial identity information content entity that uses OMB terminology and definitions for race or terminology that is strictly mapped onto the OMB race terms.",
-              "xrefs": []
+              "val": "A racial identity information content entity that uses OMB terminology and definitions for race or terminology that is strictly mapped onto the OMB race terms."
             }
           },
           "type": "CLASS"
@@ -5474,8 +5368,7 @@
               "This definition corresponds to that used by OMB. It is worth noting that the OMB definition from which this one is derived is problematic, in that it implies that one's race cannot be Native American or Alaskan Native unless one maintains tribal affiliations or community attachment."
             ],
             "definition": {
-              "val": "An OMB racial identity information content entity that is about some person's identifying as American Indian or Alaska Native, which is intended to mean having origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment.",
-              "xrefs": []
+              "val": "An OMB racial identity information content entity that is about some person's identifying as American Indian or Alaska Native, which is intended to mean having origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment."
             }
           },
           "type": "CLASS"
@@ -5511,8 +5404,7 @@
               }
             ],
             "definition": {
-              "val": "An OMB racial identity information content entity that is about some person's identifying as Asian, which is intended to mean having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent.",
-              "xrefs": []
+              "val": "An OMB racial identity information content entity that is about some person's identifying as Asian, which is intended to mean having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent."
             }
           },
           "type": "CLASS"
@@ -5548,8 +5440,7 @@
               }
             ],
             "definition": {
-              "val": "An OMB racial identity information content entity that is about some person's identifying as black or African American which is intended to mean having origins in any of the black racial groups of Africa.",
-              "xrefs": []
+              "val": "An OMB racial identity information content entity that is about some person's identifying as black or African American which is intended to mean having origins in any of the black racial groups of Africa."
             }
           },
           "type": "CLASS"
@@ -5585,8 +5476,7 @@
               }
             ],
             "definition": {
-              "val": "An OMB racial identity information content entity that is about some person's identifying as Native Hawaiian or other Pacific Islander, which is intended to mean having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands.",
-              "xrefs": []
+              "val": "An OMB racial identity information content entity that is about some person's identifying as Native Hawaiian or other Pacific Islander, which is intended to mean having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands."
             }
           },
           "type": "CLASS"
@@ -5622,8 +5512,7 @@
               }
             ],
             "definition": {
-              "val": "An OMB racial identity information content entity that is about some person's identifying as white which is intended to mean having origins in any of the original peoples of Europe, the Middle East, or North Africa.",
-              "xrefs": []
+              "val": "An OMB racial identity information content entity that is about some person's identifying as white which is intended to mean having origins in any of the original peoples of Europe, the Middle East, or North Africa."
             }
           },
           "type": "CLASS"
@@ -5655,8 +5544,7 @@
               }
             ],
             "definition": {
-              "val": "A social identity information content entity that is about whether some person identifies as having some sexual orientation.",
-              "xrefs": []
+              "val": "A social identity information content entity that is about whether some person identifies as having some sexual orientation."
             }
           },
           "type": "CLASS"
@@ -5692,8 +5580,35 @@
               }
             ],
             "definition": {
-              "val": "An information content entity that is about some geographical region, in which a postal delivery route denoted by a particular ZIP code is realized, and that is the specified output of a disclosure of residence.",
-              "xrefs": []
+              "val": "An information content entity that is about some geographical region, in which a postal delivery route denoted by a particular ZIP code is realized, and that is the specified output of a disclosure of residence."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000222",
+          "lbl": "debt obligation",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "debt obligation"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "Three Arrows Capital declared bankruptcy on July 1, 2022 after defaulting on a $665 million debt obligation owed to Voyager Digital."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A directive information entity that prescribes that something will be transferred from some human or organization that is the bearer of a duty holder role to another human or organization that is the bearer of a claimant role."
             }
           },
           "type": "CLASS"
@@ -5729,8 +5644,7 @@
               }
             ],
             "definition": {
-              "val": "A social act that creates an information content entity that is about some geographical region in which a human being dwells.",
-              "xrefs": []
+              "val": "A social act that creates an information content entity that is about some geographical region in which a human being dwells."
             }
           },
           "type": "CLASS"
@@ -5770,8 +5684,7 @@
               }
             ],
             "definition": {
-              "val": "A data set whose members are obtained from one or more electronic health records.",
-              "xrefs": []
+              "val": "A data set whose members are obtained from one or more electronic health records."
             }
           },
           "type": "CLASS"
@@ -5814,8 +5727,7 @@
               "The sources of these data are held by insurers or other health plan providers."
             ],
             "definition": {
-              "val": "A data set whose members are the specified output of some process of adjudicating health care insurance claims (and whose inputs are at least partly some members of a health care billing data set).",
-              "xrefs": []
+              "val": "A data set whose members are the specified output of some process of adjudicating health care insurance claims (and whose inputs are at least partly some members of a health care billing data set)."
             }
           },
           "type": "CLASS"
@@ -5851,8 +5763,7 @@
               }
             ],
             "definition": {
-              "val": "A data set whose members are obtained from billing-related data sources that (i) are generated by a health care organization as a result of internal administrative processes, and (ii) are about services rendered or materials used during some health care encounter.",
-              "xrefs": []
+              "val": "A data set whose members are obtained from billing-related data sources that (i) are generated by a health care organization as a result of internal administrative processes, and (ii) are about services rendered or materials used during some health care encounter."
             }
           },
           "type": "CLASS"
@@ -5876,8 +5787,7 @@
               }
             ],
             "definition": {
-              "val": "A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization.",
-              "xrefs": []
+              "val": "A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization."
             }
           },
           "type": "CLASS"
@@ -5897,8 +5807,7 @@
               }
             ],
             "definition": {
-              "val": "A health care administrative process that has as input a diagnosis, and has as output a value indicating that diagnosis is about the condition that prompts the admission process that starts the encounter during which the diagnostic process that outputs that diagnosis begins.",
-              "xrefs": []
+              "val": "A health care administrative process that has as input a diagnosis, and has as output a value indicating that diagnosis is about the condition that prompts the admission process that starts the encounter during which the diagnostic process that outputs that diagnosis begins."
             }
           },
           "type": "CLASS"
@@ -5918,8 +5827,7 @@
               }
             ],
             "definition": {
-              "val": "A health care administrative process that has as input a diagnosis, and has as output a value indicating that diagnosis is about an underlying condition that is distinct from the condition that prompts the admission process that starts the encounter during which the diagnostic process that outputs that diagnosis begins.",
-              "xrefs": []
+              "val": "A health care administrative process that has as input a diagnosis, and has as output a value indicating that diagnosis is about an underlying condition that is distinct from the condition that prompts the admission process that starts the encounter during which the diagnostic process that outputs that diagnosis begins."
             }
           },
           "type": "CLASS"
@@ -5963,8 +5871,7 @@
               }
             ],
             "definition": {
-              "val": "A survey plan specification that aims to collect information about the smoking behavior or lack thereof of a population on a county level. Concretization of a smoking survey plan that is stratified by county.",
-              "xrefs": []
+              "val": "A survey plan specification that aims to collect information about the smoking behavior or lack thereof of a population on a county level. Concretization of a smoking survey plan that is stratified by county."
             }
           },
           "type": "CLASS"
@@ -6008,8 +5915,7 @@
               }
             ],
             "definition": {
-              "val": "A survey execution that realizes the concretization of a smoking survey plan specification that is stratified by county.",
-              "xrefs": []
+              "val": "A survey execution that realizes the concretization of a smoking survey plan specification that is stratified by county."
             }
           },
           "type": "CLASS"
@@ -6053,8 +5959,7 @@
               }
             ],
             "definition": {
-              "val": "Survey data that is the specified output of a county smoking survey execution.",
-              "xrefs": []
+              "val": "Survey data that is the specified output of a county smoking survey execution."
             }
           },
           "type": "CLASS"
@@ -6074,8 +5979,7 @@
               }
             ],
             "definition": {
-              "val": "A data transformation that has data about the smoking status of a population as its specified input and a percentage or ratio of smokers in that population as a specified output.",
-              "xrefs": []
+              "val": "A data transformation that has data about the smoking status of a population as its specified input and a percentage or ratio of smokers in that population as a specified output."
             }
           },
           "type": "CLASS"
@@ -6095,8 +5999,211 @@
               }
             ],
             "definition": {
-              "val": "A data item that is the specified output of a smoking rate calculation that has data about smoking behavior or lack there of on a county level.",
-              "xrefs": []
+              "val": "A data item that is the specified output of a smoking rate calculation that has data about smoking behavior or lack there of on a county level."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000235",
+          "lbl": "money",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "money"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "Todd does not have enough money to buy more plants at the horticultural club's poinsettia sale."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A debt obligation between two parties that has part a scalar value specification and whose concretizations indicate that their bearers can be used in a financial transaction or payment of debt, or as a measure of the value of some entity in a financial valuation process or prospective financial valuation process."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000236",
+          "lbl": "currency",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "currency"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "US currency is an accepted form of legal tender, not just in the United States, but in many countries around the world, such as El Salvador."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A material entity that is the bearer of a concretization of money and is created by some governmental organization or on behalf of some governmental organization that has authorized its creation."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000237",
+          "lbl": "exchange of ownership",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "exchange of ownership"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "Tom exchanged ownership of his computer for Tina's scooter."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "barter"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A planned process whereby one agent (or active participant) or a group of agents transfer ownership of some property to another agent (or active participant) or group of agents in the process, who in return transfer ownership of some their property to the first agent (or active participant)."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000238",
+          "lbl": "financial transaction",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "financial transaction"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "Apple acquired semiconductors from Samsung in a financial transaction yesterday."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "monetary transaction"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A planned process whereby one participant partly or completely fulfills an obligation to another participant by transferring ownership of some other debt obligation, which is typically money."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000239",
+          "lbl": "payment of debt",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "payment of debt"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "I made a debt payment with my credit card company yesterday and no longer owe them money."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A planned process whereby ownership of some entity of value is transferred by one participant to another to fulfill some obligation, on their behalf, after some service is performed or the ownership of some entity is exchanged."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000240",
+          "lbl": "financial valuation process",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "financial valuation process"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "The financial valuation of Ravi's car today determined that the car is worth $2000."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A planned process that has as specified output some scalar measurement datum that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some other material entity."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000241",
+          "lbl": "prospective financial valuation process",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "prospective financial valuation process"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "The prospective valuation of my company's stock indicates strong optimism for our financial growth over the next few years."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A planned process that has as specified output some predicted value that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some material entity at some point in the future."
             }
           },
           "type": "CLASS"
@@ -6132,8 +6239,7 @@
               }
             ],
             "definition": {
-              "val": "A data item that is about a person's job role and/or its realization.",
-              "xrefs": []
+              "val": "A data item that is about a person's job role and/or its realization."
             }
           },
           "type": "CLASS"
@@ -6164,8 +6270,7 @@
               "Alternatively: A gender identity datum stating that a person's subjective sense of gender is non-binary.)\n\nExamples of usage: ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)"
             ],
             "definition": {
-              "val": "A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant's subjective sense of gender.",
-              "xrefs": []
+              "val": "A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant's subjective sense of gender."
             },
             "deprecated": true
           },
@@ -6265,16 +6370,20 @@
                 "val": "William R. Hogan"
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "learning process"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000600",
-                "val": "An act of acquiring new information and repeatedly applying that information to develop a new skill."
+                "val": "An act of acquiring new information and repeatedly applying that information to develop a new skill, improve an existing skill, and/or losing a skill at doing something \"bad\"."
               }
             ],
             "comments": [
-              "An interesting question is whether there must be another participant who is the \"educator\".  Some might object that many people are \"self taught\".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the top of a finger.  There was no previous information about that.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow \"plays a role\" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way)."
+              "An interesting question is whether there must be another participant who is the \"educator\".  Some might object that many people are \"self taught\".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the tip of a finger.  There was no previous information about that type of skill.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow \"plays a role\" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).",
+              "The loss of a \"bad\" capability is something like losing a bad golf swing and replacing it with a good one.  Also a capability to disrupt the classroom might be something an educating process diminishes possibly to the point of \"removal\" in a student.\n\nThis addition to the definition notwithstanding, we do not intend to incorporate the receipt of punishment into the definition of educating."
             ],
             "definition": {
-              "val": "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability.",
-              "xrefs": []
+              "val": "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative."
             }
           },
           "type": "CLASS"
@@ -6298,8 +6407,7 @@
               }
             ],
             "definition": {
-              "val": "An objective specification that describes the type of capability or capabilities to be imparted by its realization, which is an educating (education process).",
-              "xrefs": []
+              "val": "An objective specification that describes the type of capability or capabilities to be imparted or improved by its realization, which is an educating (education process)."
             }
           },
           "type": "CLASS"
@@ -6326,8 +6434,7 @@
               "Very broad.  Covers everything from grade school to high school to college to graduate education, a MOOC, an individual course, a tutorial at a conference, a continuing education course or program, an informed consent video, etc, etc."
             ],
             "definition": {
-              "val": "A plan specification with an educational objective specification as part.",
-              "xrefs": []
+              "val": "A plan specification with an educational objective specification as part."
             }
           },
           "type": "CLASS"
@@ -6351,8 +6458,7 @@
               "This class refers extremely broadly to the successful realization of any program of education: a single course, first grade, MD, PhD, high school, the ninth grade, getting a black belt in karate, getting a master mechanic certification, a bachelor's degree, a masters degree, a graduate certificate, early childhood education program, and even getting a certificate at the end of some week-long workshop, summer camp, a certifcate from a cooking class, an actuarial certification."
             ],
             "definition": {
-              "val": "An educating that realizes a concretization of some program of education.",
-              "xrefs": []
+              "val": "An educating that realizes a concretization of some program of education."
             }
           },
           "type": "CLASS"
@@ -6388,8 +6494,7 @@
               }
             ],
             "definition": {
-              "val": "An educational program whose intended active participant, when a concretization of it is realized, is a human child of age birth to 8 years or a human fetus prior to birth.",
-              "xrefs": []
+              "val": "An educational program whose intended active participant, when a concretization of it is realized, is a human child of age birth to 8 years or a human fetus prior to birth."
             }
           },
           "type": "CLASS"
@@ -6418,8 +6523,7 @@
               "Primary education provides learning and educational activities typically designed to provide students with fundamental skills in reading, writing and mathematics (i.e. literacy and numeracy), and to establish a sound foundation for learning and solid understanding of core areas of knowledge and personal development, preparing for lower secondary education. It aims at learning at a basic level of complexity with little if any specialisation."
             ],
             "definition": {
-              "val": "An education plan specification with one or more primary education objective specifications as parts, and these are the only objective specifications it has as parts.",
-              "xrefs": []
+              "val": "An education plan specification with one or more primary education objective specifications as parts, and these are the only objective specifications it has as parts."
             }
           },
           "type": "CLASS"
@@ -6446,8 +6550,7 @@
               "By the end of primary education, the student has established a sound foundation for learning and solid understanding of core areas of knowledge and personal development, preparing for lower secondary education. It aims at learning at a basic level of complexity with little if any specialisation."
             ],
             "definition": {
-              "val": "An education objective specification that has a concretization that, when realized, results in the active participant's acquisition and development of fundamental skills in reading, writing and mathematics (i.e. literacy and numeracy).",
-              "xrefs": []
+              "val": "An education objective specification that has a concretization that, when realized, results in the active participant's acquisition and development of fundamental skills in reading, writing and mathematics (i.e. literacy and numeracy)."
             }
           },
           "type": "CLASS"
@@ -6475,8 +6578,7 @@
               "Programmes at ISCED level 2, or ‘lower secondary’ education, are typically designed to build upon the fundamental teaching and learning processes which begin at ISCED level 1. Usually, the educational aim is to lay the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities. Programmes at this level are usually organized around a more subject-oriented curriculum, introducing theoretical concepts across a broad range of subjects."
             ],
             "definition": {
-              "val": "An education objective specification that has a concretization that, when realized, confers to the active participant skills and knowledge in subject areas more specialized than basic reading, writing, and mathematics, with the overall goal of laying the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities.",
-              "xrefs": []
+              "val": "An education objective specification that has a concretization that, when realized, confers to the active participant skills and knowledge in subject areas more specialized than basic reading, writing, and mathematics, with the overall goal of laying the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities."
             }
           },
           "type": "CLASS"
@@ -6499,8 +6601,7 @@
               "Different degrees have different claims and obligations associated with them.  For example, having a medical degree (either M.D. or D.O.) entitles a person to sit for stage 3 of the US Medical Licensing Exam (otherwise one may not take the exam)."
             ],
             "definition": {
-              "val": "A deontic document act that has as specified output an academic degree and that confers on recipient of the academic degree the recognition and the claims and obligations that accompany the degree.",
-              "xrefs": []
+              "val": "A deontic document act that has as specified output an academic degree and that confers on recipient of the academic degree the recognition and the claims and obligations that accompany the degree."
             }
           },
           "type": "CLASS"
@@ -6528,8 +6629,7 @@
               "Whole range of educational activities, taking place in various settings, that aim to meet basic learning needs as defined in the World Declaration on Education for All (Jomtien, Thailand, 1990). According to ISCED standard, basic education comprises primary education (first stage of basic education) and lower secondary education (second stage). It also covers a wide variety of non-formal and informal public and private activities intended to meet the basic learning needs of people of all ages."
             ],
             "definition": {
-              "val": "An education plan specification that has as part both a primary educational objective specification and a lower secondary educational objective specification.",
-              "xrefs": []
+              "val": "An education plan specification that has as part both a primary educational objective specification and a lower secondary educational objective specification."
             }
           },
           "type": "CLASS"
@@ -6554,8 +6654,7 @@
               "Requires successful completion of a primary education program as a pre-requisite."
             ],
             "definition": {
-              "val": "An education plan specification with one or more lower secondary education objective specifications as parts, and these are the only objective specifications it has as parts.",
-              "xrefs": []
+              "val": "An education plan specification with one or more lower secondary education objective specifications as parts, and these are the only objective specifications it has as parts."
             }
           },
           "type": "CLASS"
@@ -6582,8 +6681,7 @@
               "Programmes at ISCED level 3, or ‘upper secondary’ education, are typically designed to complete secondary education in preparation for tertiary education, or to provide skills relevant to employment, or both. Programmes at this level offer students more varied, specialised and in-depth instruction than programmes at lower secondary education (ISCED level 2). They are more differentiated, with an increased range of options and streams available."
             ],
             "definition": {
-              "val": "An educational objective specification that has a concretization that, when realized, confers on the active participant skills and knowledge that prepare them for tertiary education, or employment, or both.",
-              "xrefs": []
+              "val": "An educational objective specification that has a concretization that, when realized, confers on the active participant skills and knowledge that prepare them for tertiary education, or employment, or both."
             }
           },
           "type": "CLASS"
@@ -6608,8 +6706,7 @@
               "Requires successful completion of a lower secondary education program as a pre-requisite."
             ],
             "definition": {
-              "val": "An education plan specification with one or more upper secondary education objective specifications as parts, and these are the only objective specifications it has as parts.",
-              "xrefs": []
+              "val": "An education plan specification with one or more upper secondary education objective specifications as parts, and these are the only objective specifications it has as parts."
             }
           },
           "type": "CLASS"
@@ -6666,8 +6763,7 @@
               "Refers to all education beyond secondary education that leads to the awarding of an academic degree."
             ],
             "definition": {
-              "val": "An educational objective specification that has a concretization that, when realized, confers on the active participant skills and knowledge in a specialized discipline, and culminates in the awarding of an academic degree.",
-              "xrefs": []
+              "val": "An educational objective specification that has a concretization that, when realized, confers on the active participant skills and knowledge in a specialized discipline, and culminates in the awarding of an academic degree."
             }
           },
           "type": "CLASS"
@@ -6694,8 +6790,7 @@
               "Usually the skills are a major focus moreso than in other types of education.  For example, auto mechanics, plumbers, and electricians."
             ],
             "definition": {
-              "val": "An educational objective specification that has a concretization that, when realized, is realized by a process that confers on the active participant knowledge and skills required to realize a particular type of employee role for a given occupation or trade.",
-              "xrefs": []
+              "val": "An educational objective specification that has a concretization that, when realized, is realized by a process that confers on the active participant knowledge and skills required to realize a particular type of employee role for a given occupation or trade."
             }
           },
           "type": "CLASS"
@@ -6718,8 +6813,7 @@
               "This data item in a typical attribute-value system such as table, XML, JSON takes values like \"secondary education\", \"Associate Degree\", \"Bachelor Degree\", \"High School\", and so on."
             ],
             "definition": {
-              "val": "A socio-economic data item that is about a person and their completion of an education program (and its type), where that education program is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it.",
-              "xrefs": []
+              "val": "A socio-economic data item that is about a person and their completion of an education program (and its type), where that education program is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it."
             }
           },
           "type": "CLASS"
@@ -6746,8 +6840,7 @@
               "Vocational education programs are designed for learners to acquire the knowledge, skills and competencies specific to a particular occupation, trade, or class of occupations or trades. Such programs may have work-based components (e.g. apprenticeships, dual-system education programmes). Successful completion of such programs leads to labor market-relevant, vocational qualifications acknowledged as occupationally-oriented by the relevant national authorities and/or the labor market."
             ],
             "definition": {
-              "val": "An educational plan specification that has a vocational objective specification as part.",
-              "xrefs": []
+              "val": "An educational plan specification that has a vocational objective specification as part."
             }
           },
           "type": "CLASS"
@@ -6775,8 +6868,7 @@
               }
             ],
             "definition": {
-              "val": "A primary education plan specification that specifies the competencies and information content entities that should be acquired by students in the first year of primary education in the United States.",
-              "xrefs": []
+              "val": "A primary education plan specification that specifies the competencies and information content entities that should be acquired by students in the first year of primary education in the United States."
             }
           },
           "type": "CLASS"
@@ -6808,8 +6900,7 @@
               }
             ],
             "definition": {
-              "val": "A higher education plan specification that specifies the awarding of an associates or bachelors degree in the United States or equivalent degrees in other nations, and specifies as a pre-requisite the completion of some secondary education program.",
-              "xrefs": []
+              "val": "A higher education plan specification that specifies the awarding of an associates or bachelors degree in the United States or equivalent degrees in other nations, and specifies as a pre-requisite the completion of some secondary education program."
             }
           },
           "type": "CLASS"
@@ -6841,8 +6932,7 @@
               "The prerequisite degree is at the bachelors level or equivalent.  An associates degree is almost never sufficient for entry into graduate education programs."
             ],
             "definition": {
-              "val": "A higher education plan specification that specifies the awarding of a graduate certificate or degree, and specifies as a pre-requisite the awarding of an undergraduate degree.",
-              "xrefs": []
+              "val": "A higher education plan specification that specifies the awarding of a graduate certificate or degree, and specifies as a pre-requisite the awarding of an undergraduate degree."
             }
           },
           "type": "CLASS"
@@ -6873,8 +6963,7 @@
               "Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates completion of some to all of primary education in the United States."
             ],
             "definition": {
-              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of first through sixth grade.",
-              "xrefs": []
+              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of first through sixth grade."
             }
           },
           "type": "CLASS"
@@ -6905,8 +6994,7 @@
               "Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates completion of some to all of lower secondary education in the United States."
             ],
             "definition": {
-              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of seventh (7th) through ninth (9th) grade.",
-              "xrefs": []
+              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of seventh (7th) through ninth (9th) grade."
             }
           },
           "type": "CLASS"
@@ -6937,8 +7025,7 @@
               "Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates completion of some to all of upper secondary education in the United States."
             ],
             "definition": {
-              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of tenth (10th) through twelfth (12th) grade.",
-              "xrefs": []
+              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of tenth (10th) through twelfth (12th) grade."
             }
           },
           "type": "CLASS"
@@ -6969,8 +7056,7 @@
               "Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI."
             ],
             "definition": {
-              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some undergraduate degree.",
-              "xrefs": []
+              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some undergraduate degree."
             }
           },
           "type": "CLASS"
@@ -7001,8 +7087,7 @@
               "Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI."
             ],
             "definition": {
-              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some graduate certificate or degree.",
-              "xrefs": []
+              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some graduate certificate or degree."
             }
           },
           "type": "CLASS"
@@ -7033,8 +7118,7 @@
               "Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI."
             ],
             "definition": {
-              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some vocational education program.",
-              "xrefs": []
+              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some vocational education program."
             }
           },
           "type": "CLASS"
@@ -7065,8 +7149,7 @@
               "Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates that a person has completed only early childhood education and nothing more."
             ],
             "definition": {
-              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is pre-kindergarten.",
-              "xrefs": []
+              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is pre-kindergarten."
             }
           },
           "type": "CLASS"
@@ -7097,8 +7180,7 @@
               "Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI."
             ],
             "definition": {
-              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is kindergarten.",
-              "xrefs": []
+              "val": "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is kindergarten."
             }
           },
           "type": "CLASS"
@@ -7143,8 +7225,7 @@
               "Whereas linguistic competence may be afforded to non-human agents, literacy is nearly always considered in the context of human beings."
             ],
             "definition": {
-              "val": "A disposition borne by a human being that (1) has a linguistic competence as a dispositional part and (2) if realized, is realized by the bearer's achievement of some personal goal.",
-              "xrefs": []
+              "val": "A disposition borne by a human being that (1) has a linguistic competence as a dispositional part and (2) if realized, is realized by the bearer's achievement of some personal goal."
             }
           },
           "type": "CLASS"
@@ -7172,8 +7253,7 @@
               }
             ],
             "definition": {
-              "val": "A human social role that, if realized, is realized in providing assistance in the activities of daily living of another human being who possesses reduced capability to complete some of these activities alone.",
-              "xrefs": []
+              "val": "A human social role that, if realized, is realized in providing assistance in the activities of daily living of another human being who possesses reduced capability to complete some of these activities alone."
             }
           },
           "type": "CLASS"
@@ -7204,8 +7284,7 @@
               "We are also intending on including other family arrangements. This is something we are working on."
             ],
             "definition": {
-              "val": "A relational quality that inheres within two or more persons related as members of a domestic group, or a number of domestic groups linked through descent from a common ancestor, marriage, or adoption.",
-              "xrefs": []
+              "val": "A relational quality that inheres within two or more persons related as members of a domestic group, or a number of domestic groups linked through descent from a common ancestor, marriage, or adoption."
             }
           },
           "type": "CLASS"
@@ -7232,8 +7311,7 @@
               "We use the phrase ‘some person’ in the definition because this class can be about an individual's or a household's earnings. Similarly, we use 'personal income' in the label because the term is typically restricted to individuals and households. This class is also restricted to being about monetary forms of income."
             ],
             "definition": {
-              "val": "A data item that is about the sum of earnings for some person(s) from various forms of payment or profits.",
-              "xrefs": []
+              "val": "A data item that is about the sum of earnings for some person(s) from various forms of payment or profits."
             }
           },
           "type": "CLASS"
@@ -7269,8 +7347,7 @@
               "Instances include, but are not limited to, processes that bring about cognitive concretizations."
             ],
             "definition": {
-              "val": "Process in which some participant utilizes some specifically dependent continuant as a concretization of some generically dependent continuant.",
-              "xrefs": []
+              "val": "Process in which some participant utilizes some specifically dependent continuant as a concretization of some generically dependent continuant."
             }
           },
           "type": "CLASS"
@@ -7298,8 +7375,7 @@
               }
             ],
             "definition": {
-              "val": "A concretization-utilization process in which the utilized specifically dependent continuant concretizes the generically dependent through use of some language.",
-              "xrefs": []
+              "val": "A concretization-utilization process in which the utilized specifically dependent continuant concretizes the generically dependent through use of some language."
             }
           },
           "type": "CLASS"
@@ -7334,8 +7410,7 @@
               "The interpretation need not be accurate. It may even be the case that the specifically dependent continuant has not previously concretized anything."
             ],
             "definition": {
-              "val": "Process in which some participant infers that some particular specifically dependent continuant stands in the concretization relation to some particular generically dependent continuant.",
-              "xrefs": []
+              "val": "Process in which some participant infers that some particular specifically dependent continuant stands in the concretization relation to some particular generically dependent continuant."
             }
           },
           "type": "CLASS"
@@ -7363,8 +7438,7 @@
               }
             ],
             "definition": {
-              "val": "A concretization-interpretation process in which the specifically dependent continuant is inferred to concretize the generically dependent continuant  in a way that makes use of some language.",
-              "xrefs": []
+              "val": "A concretization-interpretation process in which the specifically dependent continuant is inferred to concretize the generically dependent continuant  in a way that makes use of some language."
             }
           },
           "type": "CLASS"
@@ -7395,8 +7469,7 @@
               "When realized in a concretization-utilization process, the only relevant concretization may in some cases be a cognitive one, but that suffices to realize a linguistic competence. For example, suppose one begins to write a letter, planning out the words ahead of time, but is interrupted before beginning to write and never resumes. During the process of planning out the words and what one intends to communicate, one is already concretizing words cognitively, as well as considering which combinations of words one can use to concretize additional generically dependent continuants. In doing so, one performs processes that realize one's linguistic competence, without producing any concretizations other than those cognitive ones."
             ],
             "definition": {
-              "val": "A disposition that inheres in some material entity and is such that that, if realized, it is realized by either some linguistic concretization-utilization process or some linguistic concretization-interpretation process.",
-              "xrefs": []
+              "val": "A disposition that inheres in some material entity and is such that that, if realized, it is realized by either some linguistic concretization-utilization process or some linguistic concretization-interpretation process."
             }
           },
           "type": "CLASS"
@@ -7429,8 +7502,7 @@
               "The term 'participant' in the definition need not refer to a human agent."
             ],
             "definition": {
-              "val": "A process in which some participant shares some generically dependent continuant with some other participant. The former utilizes some specifically dependent continuant that concretizes the generically dependent continuant intended to be shared, while the latter interprets that specifically dependent continuant to concretize some particular generically dependent continuant, aiming to accurately infer the other participant’s intent.",
-              "xrefs": []
+              "val": "A process in which some participant shares some generically dependent continuant with some other participant. The former utilizes some specifically dependent continuant that concretizes the generically dependent continuant intended to be shared, while the latter interprets that specifically dependent continuant to concretize some particular generically dependent continuant, aiming to accurately infer the other participant’s intent."
             }
           },
           "type": "CLASS"
@@ -7458,8 +7530,7 @@
               }
             ],
             "definition": {
-              "val": "A disposition that (i) is an aggregate of linguistic competences, considered as forming a distinct group on the basis of perceived common characteristics, such as mutual intelligibility among their bearers, in addition to historical or cultural factors; (ii) if realized, is realized in any and all realizations of those linguistic competences; and (iii) inheres in a linguistic community.",
-              "xrefs": []
+              "val": "A disposition that (i) is an aggregate of linguistic competences, considered as forming a distinct group on the basis of perceived common characteristics, such as mutual intelligibility among their bearers, in addition to historical or cultural factors; (ii) if realized, is realized in any and all realizations of those linguistic competences; and (iii) inheres in a linguistic community."
             }
           },
           "type": "CLASS"
@@ -7487,8 +7558,7 @@
               }
             ],
             "definition": {
-              "val": "A communication in which some participant states a preference for some communicative process to be in a certain language, via some concretization of some preferred language information content entity.",
-              "xrefs": []
+              "val": "A communication in which some participant states a preference for some communicative process to be in a certain language, via some concretization of some preferred language information content entity."
             }
           },
           "type": "CLASS"
@@ -7516,8 +7586,7 @@
               }
             ],
             "definition": {
-              "val": "An information content entity that is about some person and some language, and that conveys the language with which that person prefers to communicate within some given context.",
-              "xrefs": []
+              "val": "An information content entity that is about some person and some language, and that conveys the language with which that person prefers to communicate within some given context."
             }
           },
           "type": "CLASS"
@@ -7540,8 +7609,7 @@
               "Previous definition: A role played by an entity in human social processes."
             ],
             "definition": {
-              "val": "A role inhering in an entity realized by social interactions in human society.",
-              "xrefs": []
+              "val": "A role inhering in an entity realized by social interactions in human society."
             }
           },
           "type": "CLASS"
@@ -7856,8 +7924,7 @@
           "lbl": "socio-economic data item",
           "type": "CLASS"
         }
-      ],
-      "propertyChainAxioms": []
+      ]
     }
   ]
 }
