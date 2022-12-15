@@ -272,6 +272,11 @@ Declaration(Class(obo:OMRSE_00000238))
 Declaration(Class(obo:OMRSE_00000239))
 Declaration(Class(obo:OMRSE_00000240))
 Declaration(Class(obo:OMRSE_00000241))
+Declaration(Class(obo:OMRSE_00000242))
+Declaration(Class(obo:OMRSE_00000243))
+Declaration(Class(obo:OMRSE_00000244))
+Declaration(Class(obo:OMRSE_00000245))
+Declaration(Class(obo:OMRSE_00000246))
 Declaration(Class(obo:OMRSE_00000500))
 Declaration(Class(obo:OMRSE_00000501))
 Declaration(Class(obo:OMRSE_00000502))
@@ -343,6 +348,8 @@ Declaration(ObjectProperty(obo:OMRSE_00000068))
 Declaration(ObjectProperty(obo:OMRSE_00000070))
 Declaration(ObjectProperty(obo:OMRSE_00000071))
 Declaration(ObjectProperty(obo:OMRSE_00000167))
+Declaration(ObjectProperty(obo:OMRSE_00000247))
+Declaration(ObjectProperty(obo:OMRSE_00000248))
 Declaration(ObjectProperty(obo:RO_0000052))
 Declaration(ObjectProperty(obo:RO_0000053))
 Declaration(ObjectProperty(obo:RO_0000056))
@@ -471,6 +478,20 @@ ObjectPropertyRange(obo:OMRSE_00000071 obo:OMRSE_00000056)
 # Object Property: obo:OMRSE_00000167 (provides service)
 
 AnnotationAssertion(rdfs:label obo:OMRSE_00000167 "provides service"@en)
+
+# Object Property: obo:OMRSE_00000247 (is abuse of)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000247 "Relation between an abusive behavior and one upon whom it is inflicted."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000247 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000247 "S. Clint Dowland"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000247 "is abuse of"@en)
+
+# Object Property: obo:OMRSE_00000248 (has aggressor)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000248 "Relation between an abusive behavior and one who inflicts it upon someone or something else."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000248 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000248 "S. Clint Dowland"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000248 "has aggressor"@en)
 
 # Object Property: obo:RO_0002217 (obsolete actively participates in)
 
@@ -665,7 +686,7 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000019 "integrated delivery network"@
 SubClassOf(obo:OMRSE_00000019 obo:OMRSE_00000015)
 SubClassOf(obo:OMRSE_00000019 ObjectSomeValuesFrom(obo:RO_0000052 ObjectIntersectionOf(obo:OBI_0000245 ObjectAllValuesFrom(obo:OBI_0001688 obo:OBI_0000245))))
 
-# Class: obo:OMRSE_00000022 (collection of organisms)
+# Class: obo:OMRSE_00000022 (aggregate of objectual organisms)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000022 "An object aggregate of objectual organisms."@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000022 "Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  "@en)
@@ -2502,6 +2523,46 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000241 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000241 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000241 "prospective financial valuation process"@en)
 SubClassOf(obo:OMRSE_00000241 obo:OBI_0000011)
+
+# Class: obo:OMRSE_00000242 (intimate partnership)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000242 "Relational quality inhering in persons by virtue of being each other’s spouse, boyfriend/girlfriend, dating partner, or ongoing sexual partner."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000242 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000242 "S. Clint Dowland"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000242 "intimate partnership"@en)
+SubClassOf(obo:OMRSE_00000242 obo:BFO_0000145)
+
+# Class: obo:OMRSE_00000243 (abusive behavior)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000243 "Behavior that is cruel, violent, demeaning, or invasive."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000243 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000243 "S. Clint Dowland"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000243 "abusive behavior"@en)
+SubClassOf(obo:OMRSE_00000243 obo:GO_0007610)
+
+# Class: obo:OMRSE_00000244 (psychologically abusive behavior)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000244 "Abusive behavior in which the aggressor does or attempts to do the following: mentally or emotionally harm or exert control over another."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000244 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000244 "S. Clint Dowland"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000244 "psychologically abusive behavior"@en)
+SubClassOf(obo:OMRSE_00000244 obo:OMRSE_00000243)
+
+# Class: obo:OMRSE_00000245 (physically abusive behavior)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000245 "Abusive behavior in which the aggressor does or attempts to do the following: harm, restrain, or coerce another through physical force."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000245 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000245 "S. Clint Dowland"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000245 "physically abusive behavior"@en)
+SubClassOf(obo:OMRSE_00000245 obo:OMRSE_00000243)
+
+# Class: obo:OMRSE_00000246 (sexually abusive behavior)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000246 "Abusive behavior in which the aggressor does or attempts to do the following: force or coerce another to participate in a sexual act to which the latter has not freely given consent."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000246 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000246 "S. Clint Dowland"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000246 "sexually abusive behavior"@en)
+SubClassOf(obo:OMRSE_00000246 obo:OMRSE_00000243)
 
 # Class: obo:OMRSE_00000500 (job role data item)
 
