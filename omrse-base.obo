@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2022-09-06/omrse-base.owl
+data-version: omrse/releases/2022-12-21/omrse-base.owl
 remark: This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt
 ontology: omrse/omrse-base
 property_value: http://purl.org/dc/elements/1.1/contributor "Daniel Welch" xsd:string
@@ -10,7 +10,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:s
 property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/by/4.0/ xsd:string
-property_value: owl:versionInfo "2022-09-06" xsd:string
+property_value: owl:versionInfo "2022-12-21" xsd:string
 name: The Ontology of Medically Related Social Entities
 
 [Term]
@@ -1954,6 +1954,79 @@ property_value: IAO:0000112 "The prospective valuation of my company's stock ind
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
+id: OMRSE:00000242
+name: intimate partnership
+def: "Relational quality inhering in persons by virtue of being each other’s spouse, boyfriend/girlfriend, dating partner, or ongoing sexual partner." []
+is_a: BFO:0000145
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000243
+name: abusive behavior
+def: "Behavior that is cruel, violent, demeaning, or invasive." []
+is_a: GO:0007610
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000244
+name: psychologically abusive behavior
+def: "Abusive behavior in which the aggressor does or attempts to do the following: mentally or emotionally harm or exert control over another." []
+is_a: OMRSE:00000243 ! abusive behavior
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000245
+name: physically abusive behavior
+def: "Abusive behavior in which the aggressor does or attempts to do the following: harm, restrain, or coerce another through physical force." []
+is_a: OMRSE:00000243 ! abusive behavior
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000246
+name: sexually abusive behavior
+def: "Abusive behavior in which the aggressor does or attempts to do the following: force or coerce another to participate in a sexual act to which the latter has not freely given consent." []
+is_a: OMRSE:00000243 ! abusive behavior
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000250
+name: linguistic competence information content entity
+def: "An information content entity that conveys that a particular person has a linguistic competence for a particular language" []
+is_a: IAO:0000030
+property_value: http://purl.org/dc/elements/1.1/contributor "Barry Smith" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Jobst Landgrebe" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000251
+name: primary language information content entity
+def: "A linguistic competence information content entity that conveys the language is the one for which the person has their most proficient linguistic competence." []
+is_a: OMRSE:00000250 ! linguistic competence information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Barry Smith" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Jobst Landgrebe" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000252
+name: language-at-home information content entity
+def: "A linguistic competence information content entity that conveys the person uses the language at home." []
+is_a: OMRSE:00000250 ! linguistic competence information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "Barry Smith" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Jobst Landgrebe" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
 id: OMRSE:00000500
 name: job role data item
 def: "A data item that is about a person's job role and/or its realization." []
@@ -2532,6 +2605,20 @@ range: OMRSE:00000056 ! hospital organization
 [Typedef]
 id: OMRSE:00000167
 name: provides service
+
+[Typedef]
+id: OMRSE:00000247
+name: is abuse of
+def: "Relation between an abusive behavior and one upon whom it is inflicted." []
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Typedef]
+id: OMRSE:00000248
+name: has aggressor
+def: "Relation between an abusive behavior and one who inflicts it upon someone or something else." []
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Typedef]
 id: RO:0002217

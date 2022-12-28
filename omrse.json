@@ -1264,6 +1264,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000145",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000242"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000145",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00002060"
         },
         {
@@ -1310,6 +1315,11 @@
           "obj": "http://purl.obolibrary.org/obo/GO_0007610",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/APOLLO_SV_00000480"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/GO_0007610",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000243"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/GO_0008150",
@@ -1635,6 +1645,11 @@
           "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000221"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000250"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
@@ -4202,6 +4217,31 @@
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000232"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000243",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000244"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000243",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000245"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000243",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000246"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000250",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000251"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OMRSE_00000250",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/OMRSE_00000252"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/OMRSE_00000506",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OMRSE_00000501"
@@ -6163,10 +6203,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-09-06"
+            "val": "2022-12-21"
           }
         ],
-        "version": "http://purl.obolibrary.org/obo/omrse/releases/2022-09-06/omrse.json"
+        "version": "http://purl.obolibrary.org/obo/omrse/releases/2022-12-21/omrse.json"
       },
       "nodes": [
         {
@@ -23551,6 +23591,242 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000242",
+          "lbl": "intimate partnership",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint Dowland"
+              }
+            ],
+            "definition": {
+              "val": "Relational quality inhering in persons by virtue of being each other’s spouse, boyfriend/girlfriend, dating partner, or ongoing sexual partner."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000243",
+          "lbl": "abusive behavior",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint Dowland"
+              }
+            ],
+            "definition": {
+              "val": "Behavior that is cruel, violent, demeaning, or invasive."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000244",
+          "lbl": "psychologically abusive behavior",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint Dowland"
+              }
+            ],
+            "definition": {
+              "val": "Abusive behavior in which the aggressor does or attempts to do the following: mentally or emotionally harm or exert control over another."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000245",
+          "lbl": "physically abusive behavior",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint Dowland"
+              }
+            ],
+            "definition": {
+              "val": "Abusive behavior in which the aggressor does or attempts to do the following: harm, restrain, or coerce another through physical force."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000246",
+          "lbl": "sexually abusive behavior",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint Dowland"
+              }
+            ],
+            "definition": {
+              "val": "Abusive behavior in which the aggressor does or attempts to do the following: force or coerce another to participate in a sexual act to which the latter has not freely given consent."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000247",
+          "lbl": "is abuse of",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint Dowland"
+              }
+            ],
+            "definition": {
+              "val": "Relation between an abusive behavior and one upon whom it is inflicted."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000248",
+          "lbl": "has aggressor",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint Dowland"
+              }
+            ],
+            "definition": {
+              "val": "Relation between an abusive behavior and one who inflicts it upon someone or something else."
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000250",
+          "lbl": "linguistic competence information content entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Barry Smith"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Jobst Landgrebe"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "An information content entity that conveys that a particular person has a linguistic competence for a particular language"
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000251",
+          "lbl": "primary language information content entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Barry Smith"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Jobst Landgrebe"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A linguistic competence information content entity that conveys the language is the one for which the person has their most proficient linguistic competence."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/OMRSE_00000252",
+          "lbl": "language-at-home information content entity",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "Matthew Diller"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Barry Smith"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "Jobst Landgrebe"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "S. Clint Dowland"
+              },
+              {
+                "pred": "http://purl.org/dc/elements/1.1/contributor",
+                "val": "William R. Hogan"
+              }
+            ],
+            "definition": {
+              "val": "A linguistic competence information content entity that conveys the person uses the language at home."
+            }
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/OMRSE_00000500",
           "lbl": "job role data item",
           "meta": {
@@ -25217,7 +25493,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485170"
+                "val": "_:genid2147485183"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
@@ -28662,7 +28938,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-                "val": "_:genid2147485169"
+                "val": "_:genid2147485182"
               },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
