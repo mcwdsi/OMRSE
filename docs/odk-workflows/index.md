@@ -6,5 +6,4 @@
 - [Setting up Docker for ODK](SettingUpDockerForODK.md)
 - [Imports management](UpdateImports.md)
 - [Managing the documentation](ManageDocumentation.md)
-- [Managing your Automated Testing](ManageAutomatedTest.md)
 

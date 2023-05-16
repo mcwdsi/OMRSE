@@ -16,6 +16,7 @@ Ontology(<http://purl.obolibrary.org/obo/omrse.owl>
 Import(<http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/d-acts_import.owl>)
+Import(<http://purl.obolibrary.org/obo/omrse/imports/geo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/go_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/oae_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/obi_import.owl>)
@@ -277,9 +278,17 @@ Declaration(Class(obo:OMRSE_00000243))
 Declaration(Class(obo:OMRSE_00000244))
 Declaration(Class(obo:OMRSE_00000245))
 Declaration(Class(obo:OMRSE_00000246))
+Declaration(Class(obo:OMRSE_00000249))
 Declaration(Class(obo:OMRSE_00000250))
 Declaration(Class(obo:OMRSE_00000251))
 Declaration(Class(obo:OMRSE_00000252))
+Declaration(Class(obo:OMRSE_00000253))
+Declaration(Class(obo:OMRSE_00000254))
+Declaration(Class(obo:OMRSE_00000255))
+Declaration(Class(obo:OMRSE_00000256))
+Declaration(Class(obo:OMRSE_00000257))
+Declaration(Class(obo:OMRSE_00000258))
+Declaration(Class(obo:OMRSE_00000259))
 Declaration(Class(obo:OMRSE_00000500))
 Declaration(Class(obo:OMRSE_00000501))
 Declaration(Class(obo:OMRSE_00000502))
@@ -427,16 +436,16 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00002028 "ISO 639-3 code"@en)
 #   Object Properties
 ############################
 
-# Object Property: obo:OMIABIS_0000008 (owns)
+# Object Property: obo:OMIABIS_0000008 (obsolete owns)
 
 ObjectPropertyDomain(obo:OMIABIS_0000008 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245 obo:OMRSE_00000023 obo:OMRSE_00000033))
 
-# Object Property: obo:OMIABIS_0000009 (administrates)
+# Object Property: obo:OMIABIS_0000009 (obsolete administrates)
 
 InverseObjectProperties(obo:OMIABIS_0000009 obo:OMRSE_00000068)
 ObjectPropertyDomain(obo:OMIABIS_0000009 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245 obo:OMRSE_00000023 obo:OMRSE_00000033))
 
-# Object Property: obo:OMIABIS_0000048 (is owned by)
+# Object Property: obo:OMIABIS_0000048 (obsolete is owned by)
 
 ObjectPropertyRange(obo:OMIABIS_0000048 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245 obo:OMRSE_00000023 obo:OMRSE_00000033))
 
@@ -524,6 +533,14 @@ DataPropertyRange(obo:OMRSE_00000137 xsd:string)
 ############################
 #   Classes
 ############################
+
+# Class: obo:GO_0003674 (molecular_function)
+
+SubClassOf(obo:GO_0003674 obo:BFO_0000034)
+
+# Class: obo:GO_0008150 (biological_process)
+
+SubClassOf(obo:GO_0008150 obo:BFO_0000015)
 
 # Class: obo:OMRSE_00000000 (social security number)
 
@@ -689,7 +706,7 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000019 "integrated delivery network"@
 SubClassOf(obo:OMRSE_00000019 obo:OMRSE_00000015)
 SubClassOf(obo:OMRSE_00000019 ObjectSomeValuesFrom(obo:RO_0000052 ObjectIntersectionOf(obo:OBI_0000245 ObjectAllValuesFrom(obo:OBI_0001688 obo:OBI_0000245))))
 
-# Class: obo:OMRSE_00000022 (aggregate of objectual organisms)
+# Class: obo:OMRSE_00000022 (collection of organisms)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000022 "An object aggregate of objectual organisms."@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000022 "Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  "@en)
@@ -1280,11 +1297,11 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000092 "insured party role"@en)
 SubClassOf(obo:OMRSE_00000092 obo:OMRSE_00002072)
 SubClassOf(obo:OMRSE_00000092 ObjectIntersectionOf(obo:OMRSE_00002072 ObjectSomeValuesFrom(obo:RO_0000056 ObjectIntersectionOf(obo:IAO_0021001 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OMRSE_00000091))) ObjectSomeValuesFrom(ObjectInverseOf(obo:IAO_0000136) ObjectIntersectionOf(obo:IAO_0000001 ObjectSomeValuesFrom(obo:BFO_0000050 obo:OMRSE_00000091)))))
 
-# Class: obo:OMRSE_00000093 (insurance company)
+# Class: obo:OMRSE_00000093 (insurance organization)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000093 "An organization that secures a group of people against pecuniary loss by payment of a sum of money if a a specified event occurs."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000093 "Amanda Hicks"@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_00000093 "insurance company"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000093 "insurance organization"@en)
 SubClassOf(obo:OMRSE_00000093 obo:OBI_0000245)
 SubClassOf(obo:OMRSE_00000093 ObjectIntersectionOf(obo:OBI_0000245 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000096) ObjectSomeValuesFrom(obo:RO_0000053 ObjectIntersectionOf(obo:OMRSE_00000095 ObjectSomeValuesFrom(obo:OBI_0000312 obo:IAO_0021001))) ObjectSomeValuesFrom(ObjectInverseOf(obo:IAO_0000136) ObjectIntersectionOf(obo:IAO_0000007 ObjectSomeValuesFrom(obo:BFO_0000050 obo:OMRSE_00000091)))))
 
@@ -1401,7 +1418,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000108 "William Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000108 "residential health care facility"@en)
 SubClassOf(obo:OMRSE_00000108 obo:OMRSE_00000150)
 SubClassOf(obo:OMRSE_00000108 ObjectSomeValuesFrom(obo:BFO_0000067 obo:OMRSE_00000153))
-SubClassOf(obo:OMRSE_00000108 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000124))
+SubClassOf(obo:OMRSE_00000108 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000075))
 
 # Class: obo:OMRSE_00000109 (overnight dialysis facility)
 
@@ -1506,9 +1523,11 @@ SubClassOf(obo:OMRSE_00000122 obo:BFO_0000034)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000123 "skilled nursing function"@en)
 SubClassOf(obo:OMRSE_00000123 obo:BFO_0000034)
 
-# Class: obo:OMRSE_00000124 (residential function)
+# Class: obo:OMRSE_00000124 (obsolete residential function)
 
-AnnotationAssertion(rdfs:label obo:OMRSE_00000124 "residential function"@en)
+AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000124 "residence function (OMRSE:00000075)"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000124 "obsolete residential function"@en)
+AnnotationAssertion(owl:deprecated obo:OMRSE_00000124 "true"^^xsd:boolean)
 SubClassOf(obo:OMRSE_00000124 obo:BFO_0000034)
 
 # Class: obo:OMRSE_00000125 (nursing home function)
@@ -2567,6 +2586,15 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000246 "S. Clint Dowland"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000246 "sexually abusive behavior"@en)
 SubClassOf(obo:OMRSE_00000246 obo:OMRSE_00000243)
 
+# Class: obo:OMRSE_00000249 (birth attendant role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000249 "A health care provider role that is realized in maintaining the health of a human being during their pregnancy and both them and the neonate during labor, delivery, and postpartum."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000249 "Matthew Diller"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000249 "skilled birth attendant role"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000249 "https://orcid.org/0000-0001-6595-0902")
+AnnotationAssertion(rdfs:label obo:OMRSE_00000249 "birth attendant role"@en)
+SubClassOf(obo:OMRSE_00000249 obo:OMRSE_00000012)
+
 # Class: obo:OMRSE_00000250 (linguistic competence information content entity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000250 "An information content entity that conveys that a particular person has a linguistic competence for a particular language"@en)
@@ -2601,6 +2629,63 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000252 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000252 "language-at-home information content entity"@en)
 SubClassOf(obo:OMRSE_00000252 obo:OMRSE_00000250)
 SubClassOf(obo:OMRSE_00000252 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectIntersectionOf(obo:OMRSE_00002066 ObjectSomeValuesFrom(obo:BFO_0000054 ObjectSomeValuesFrom(obo:BFO_0000066 ObjectSomeValuesFrom(obo:RO_0000085 obo:OMRSE_00000075))))))
+
+# Class: obo:OMRSE_00000253 (religious gathering)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000253 "A social act or aggregate of social acts that include some worship, prayer, or prosylitizing."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000253 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000253 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000253 "religious gathering"@en)
+SubClassOf(obo:OMRSE_00000253 obo:IAO_0021003)
+
+# Class: obo:OMRSE_00000254 (hospital bed capacity data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000254 "A count of the number of patients that some hospital facility has the capacity for."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000254 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000254 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000254 "hospital bed capacity data item"@en)
+SubClassOf(obo:OMRSE_00000254 obo:APOLLO_SV_00000032)
+
+# Class: obo:OMRSE_00000255 (proportion of population in an elementary occupation)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000255 "A data item that is the output of some data transformation that takes as input the number of individuals in a population who are occupation holders and has as output the proportion of those individuals who are classified by the European Skills, Competences, Qualifications and Occupations as door-to-door sales worker, news or street vendors; building cleaning workers; pressers, textile, garment, or related materials; septic tank servicers or sewer pipe cleaners; farmworkers or laborers, crop, nursery, or greenhouse; farmworkers, farm, ranch, or aquacultural animal; agricultural workers, all other; landscaping or groundskeeping workers; grounds maintenance workers, all other; forest or conservation workers; logging workers, all other; fishing or hunting workers; helpers--extraction workers; extraction workers, all other; helpers, construction trades; rail-track laying or maintenance equipment operators; construction laborers; helpers--production workers; production workers, all other; laborers or material movers; refuse or recyclable material collectors; couriers or messengers; material moving workers, all other; aircraft cargo handling supervisors; first-line supervisors of helpers, laborer, or material mover, hand; first-line supervisors of transportation worker, all other; tank car, truck, or ship loaders; cooks, fast food; cooks, short order; food preparation workers; dining room or cafeteria attendants or bartender helpers; dishwashers; food preparation or serving related workers, all other; personal care or service workers, all other; baggage porters or bellhops; maintenance or repair workers, general; installation, maintenance, or repair workers, all other; meter readers, utilities; coin, vending, or amusement machine servicers or repairers; motion picture projectionists; ushers, lobby attendants, or ticket takers; amusement or recreation attendants; locker room, coatroom, or dressing room attendants; and parking attendants."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:OMRSE_00000255 "Currently, the Occupation Ontology (OccO ) only represents occupations as they are defined by O*NET. We define this class extentionally according to the O*NET-defined occupations that map to occupations in ESCO that are classified as elementary occupations."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000255 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000255 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000255 "proportion of population in an elementary occupation"@en)
+SubClassOf(obo:OMRSE_00000255 obo:IAO_0000027)
+
+# Class: obo:OMRSE_00000256 (Medicaid policy holder role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000256 "A policy holder role that inheres in a person who participates in the creation of an insurance policy with a US state Medicaid agency."@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000256 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000256 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000256 "Medicaid policy holder role"@en)
+SubClassOf(obo:OMRSE_00000256 obo:OMRSE_00000094)
+
+# Class: obo:OMRSE_00000257 (insurance company)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000257 "An insurance organization that is privately owned and that participates in the creation of insurance policies in return for some money from the policy holder."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000257 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000257 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000257 "insurance company"@en)
+SubClassOf(obo:OMRSE_00000257 obo:OMRSE_00000093)
+
+# Class: obo:OMRSE_00000258 (private insurance policy holder role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000258 "A policy holder role that inheres in a person who participates in the creation of an insurance policy with an insurance company."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000258 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000258 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000258 "private insurance policy holder role"@en)
+SubClassOf(obo:OMRSE_00000258 obo:OMRSE_00000094)
+
+# Class: obo:OMRSE_00000259 (US state Medicaid agency)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000259 "A government organization that administers a given US state's Medicaid program by participating in the creation of insurance policies with eligible people and by participating in some payment of debt for a specified aggregate of health care encounters, specified processes (e.g, treatments, diagnostic tests) that are part of those encounters, and material entities used or prescribed during the encounters (e.g., medicine, prosthetics, glasses)."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000259 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000259 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000259 "US state Medicaid agency"@en)
+SubClassOf(obo:OMRSE_00000259 obo:GEO_000000400)
 
 # Class: obo:OMRSE_00000500 (job role data item)
 
@@ -3157,7 +3242,7 @@ SubClassOf(obo:OMRSE_00002071 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_000
 
 # Class: obo:OMRSE_00002072 (role in human social processes)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002072 "A role inhering in an entity realized by social interactions in human society."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002072 "A role that inheres in some entity that is realized in a social act."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00002072 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00002072 "Mathias Brochhausen"@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00002072 "Previous definition: A role played by an entity in human social processes."@en)

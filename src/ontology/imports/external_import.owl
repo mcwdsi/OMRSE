@@ -416,6 +416,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GEO_000000400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000400"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007610"/>

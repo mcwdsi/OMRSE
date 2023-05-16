@@ -8,8 +8,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/imports/oae_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-03-02/imports/oae_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-02</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2023-05-02/imports/oae_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-05-02</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -58,6 +58,7 @@
     <!-- http://purl.obolibrary.org/obo/OAE_0004334 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OAE_0004334">
+        <rdfs:label>has_MedDRA_id</rdfs:label>
         <rdfs:label xml:lang="en">has_MedDRA_id</rdfs:label>
     </owl:AnnotationProperty>
     
@@ -78,7 +79,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>medical intervention is a planned process that has the goal of diagnosing, preventing or relieving illness or injury. </obo:IAO_0000115>
+        <obo:IAO_0000115>medical intervention is a planned process that has the goal of diagnosing, preventing or relieving illness or injury.</obo:IAO_0000115>
         <obo:IAO_0000116>The act of intervening, interfering or interceding with the intent of modifying the outcome. In medicine, an intervention is usually undertaken to help treat or cure a condition. For example, &quot;Acupuncture as a therapeutic intervention is widely practiced in the United States,&quot; 
 Reference:
 http://www.medterms.com/script/main/art.asp?articlekey=34214 . Some interventions can be used for diagnosis. </obo:IAO_0000116>
