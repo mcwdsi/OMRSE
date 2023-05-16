@@ -438,24 +438,21 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00002028 "ISO 639-3 code"@en)
 
 # Object Property: obo:OMIABIS_0000008 (obsolete owns)
 
-ObjectPropertyDomain(obo:OMIABIS_0000008 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245 obo:OMRSE_00000023 obo:OMRSE_00000033))
+AnnotationAssertion(owl:deprecated obo:OMIABIS_0000008 "true"^^xsd:boolean)
+SubObjectPropertyOf(obo:OMIABIS_0000008 oboInOwl:ObsoleteProperty)
 
 # Object Property: obo:OMIABIS_0000009 (obsolete administrates)
 
-InverseObjectProperties(obo:OMIABIS_0000009 obo:OMRSE_00000068)
-ObjectPropertyDomain(obo:OMIABIS_0000009 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245 obo:OMRSE_00000023 obo:OMRSE_00000033))
+AnnotationAssertion(owl:deprecated obo:OMIABIS_0000009 "true"^^xsd:boolean)
+SubObjectPropertyOf(obo:OMIABIS_0000009 oboInOwl:ObsoleteProperty)
 
-# Object Property: obo:OMIABIS_0000048 (obsolete is owned by)
-
-ObjectPropertyRange(obo:OMIABIS_0000048 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245 obo:OMRSE_00000023 obo:OMRSE_00000033))
-
-# Object Property: obo:OMRSE_00000020 (is-aggregate-of)
+# Object Property: obo:OMRSE_00000020 (obsolete is-aggregate-of)
 
 AnnotationAssertion(obo:IAO_0000231 obo:OMRSE_00000020 "BFO relation takes precedence."@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000020 "We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.
 "@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_00000020 "is-aggregate-of")
-AnnotationAssertion(owl:deprecated obo:OMRSE_00000020 "true"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000020 "obsolete is-aggregate-of")
+AnnotationAssertion(owl:deprecated obo:OMRSE_00000020 "true"^^xsd:boolean)
 
 # Object Property: obo:OMRSE_00000021 (obsolete is-component-of-aggregate)
 
@@ -554,8 +551,7 @@ SubClassOf(obo:OMRSE_00000000 obo:IAO_0000578)
 # Class: obo:OMRSE_00000001 (human social role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000001 "A social role inhering in a human being."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000001 "Mathias Brochhausen
-"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000001 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000001 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000001 "human social role"@en)
 SubClassOf(obo:OMRSE_00000001 obo:OMRSE_00000026)
@@ -619,8 +615,8 @@ SubClassOf(obo:OMRSE_00000009 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000010 "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. "@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000010 "William R. Hogan"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000010 "Mathias Brochhausen")
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000010 "health care role"@en)
-AnnotationAssertion(rdfs:comment obo:OMRSE_00000010 "Mathias Brochhausen")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000010 "human health care role"@en)
 SubClassOf(obo:OMRSE_00000010 obo:OMRSE_00002072)
 SubClassOf(obo:OMRSE_00000010 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OGMS_0000097))
@@ -640,9 +636,8 @@ SubClassOf(obo:OMRSE_00000011 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_010002
 # Class: obo:OMRSE_00000012 (health care provider role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000012 "A human health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000012 "Mathias Brochhausen
-"@en)
-AnnotationAssertion(rdfs:comment obo:OMRSE_00000012 "William R. Hogan"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000012 "Mathias Brochhausen"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000012 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000012 "health care provider role"@en)
 SubClassOf(obo:OMRSE_00000012 obo:OMRSE_00000010)
 SubClassOf(obo:OMRSE_00000012 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0000052 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245)) ObjectAllValuesFrom(obo:RO_0000052 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245))))
@@ -826,8 +821,7 @@ SubClassOf(obo:OMRSE_00000034 oboInOwl:ObsoleteClass)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000035 "An object aggregate that is not itself a geopolitical organization and whose members are only geopolitical organizations that have some feature in common"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000035 "Amanda Hicks"@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000035 "William R. Hogan
-"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000035 "William R. Hogan"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000035 "aggregate of geopoli organizations"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000035 "obsolete aggregate of geopoli organizations")
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000035 "true"^^xsd:boolean)

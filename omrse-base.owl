@@ -10,7 +10,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2022-12-21/omrse-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2023-05-16/omrse-base.owl"/>
         <dc:contributor>Daniel Welch</dc:contributor>
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
@@ -21,7 +21,7 @@
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-12-21</owl:versionInfo>
+        <owl:versionInfo>2023-05-16</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -168,6 +168,12 @@
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
@@ -254,16 +260,8 @@
     <!-- http://purl.obolibrary.org/obo/OMIABIS_0000008 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0000008">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -271,35 +269,15 @@
     <!-- http://purl.obolibrary.org/obo/OMIABIS_0000009 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0000009">
-        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000068"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMIABIS_0000048 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0000048">
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0000048"/>
     
 
 
@@ -309,8 +287,8 @@
         <obo:IAO_0000231 xml:lang="en">BFO relation takes precedence.</obo:IAO_0000231>
         <rdfs:comment xml:lang="en">We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.
 </rdfs:comment>
-        <rdfs:label>is-aggregate-of</rdfs:label>
-        <owl:deprecated xml:lang="en">true</owl:deprecated>
+        <rdfs:label>obsolete is-aggregate-of</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
     
 
@@ -562,6 +540,12 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     
 
 
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000532 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000532"/>
@@ -652,9 +636,31 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GEO_000000400 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000400"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003674 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0003674">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007610"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0008150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    </owl:Class>
     
 
 
@@ -862,8 +868,7 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A social role inhering in a human being.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen
-</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <rdfs:label xml:lang="en">human social role</rdfs:label>
     </owl:Class>
@@ -1030,9 +1035,9 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. </obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">health care role</obo:IAO_0000118>
-        <rdfs:comment>Mathias Brochhausen</rdfs:comment>
         <rdfs:label xml:lang="en">human health care role</rdfs:label>
     </owl:Class>
     
@@ -1092,9 +1097,8 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
             </owl:Class>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A human health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen
-</obo:IAO_0000117>
-        <rdfs:comment xml:lang="en">William R. Hogan</rdfs:comment>
+        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <rdfs:label xml:lang="en">health care provider role</rdfs:label>
     </owl:Class>
     
@@ -1466,8 +1470,7 @@ Amanda Hicks</obo:IAO_0000117>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An object aggregate that is not itself a geopolitical organization and whose members are only geopolitical organizations that have some feature in common</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">William R. Hogan
-</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">aggregate of geopoli organizations</obo:IAO_0000118>
         <rdfs:label>obsolete aggregate of geopoli organizations</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -1958,25 +1961,19 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000068"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:nodeID="genid128"/>
         <obo:IAO_0000115 xml:lang="en">An architectural structure that bears some function.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">facility</rdfs:label>
     </owl:Class>
+    <owl:Restriction rdf:nodeID="genid128">
+        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000068"/>
+        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+    </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000068"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-            </owl:Restriction>
-        </owl:annotatedTarget>
+        <owl:annotatedTarget rdf:nodeID="genid128"/>
         <owl:versionInfo>09/09/2017</owl:versionInfo>
     </owl:Axiom>
     
@@ -2686,7 +2683,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An organization that secures a group of people against pecuniary loss by payment of a sum of money if a a specified event occurs.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">insurance company</rdfs:label>
+        <rdfs:label xml:lang="en">insurance organization</rdfs:label>
     </owl:Class>
     
 
@@ -3024,7 +3021,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000124"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A community living health care facility that provides health care services in a home-like setting</obo:IAO_0000115>
@@ -3262,7 +3259,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000124">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <rdfs:label xml:lang="en">residential function</rdfs:label>
+        <obo:IAO_0100001 xml:lang="en">residence function (OMRSE:00000075)</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete residential function</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -5160,6 +5159,19 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000249 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000249">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000012"/>
+        <obo:IAO_0000115 xml:lang="en">A health care provider role that is realized in maintaining the health of a human being during their pregnancy and both them and the neonate during labor, delivery, and postpartum.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">skilled birth attendant role</obo:IAO_0000118>
+        <dc:contributor>https://orcid.org/0000-0001-6595-0902</dc:contributor>
+        <rdfs:label xml:lang="en">birth attendant role</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000250 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000250">
@@ -5248,6 +5260,91 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:label xml:lang="en">language-at-home information content entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000253">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
+        <obo:IAO_0000115 xml:lang="en">A social act or aggregate of social acts that include some worship, prayer, or prosylitizing.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">religious gathering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000032"/>
+        <obo:IAO_0000115 xml:lang="en">A count of the number of patients that some hospital facility has the capacity for.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">hospital bed capacity data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115 xml:lang="en">A data item that is the output of some data transformation that takes as input the number of individuals in a population who are occupation holders and has as output the proportion of those individuals who are classified by the European Skills, Competences, Qualifications and Occupations as door-to-door sales worker, news or street vendors; building cleaning workers; pressers, textile, garment, or related materials; septic tank servicers or sewer pipe cleaners; farmworkers or laborers, crop, nursery, or greenhouse; farmworkers, farm, ranch, or aquacultural animal; agricultural workers, all other; landscaping or groundskeeping workers; grounds maintenance workers, all other; forest or conservation workers; logging workers, all other; fishing or hunting workers; helpers--extraction workers; extraction workers, all other; helpers, construction trades; rail-track laying or maintenance equipment operators; construction laborers; helpers--production workers; production workers, all other; laborers or material movers; refuse or recyclable material collectors; couriers or messengers; material moving workers, all other; aircraft cargo handling supervisors; first-line supervisors of helpers, laborer, or material mover, hand; first-line supervisors of transportation worker, all other; tank car, truck, or ship loaders; cooks, fast food; cooks, short order; food preparation workers; dining room or cafeteria attendants or bartender helpers; dishwashers; food preparation or serving related workers, all other; personal care or service workers, all other; baggage porters or bellhops; maintenance or repair workers, general; installation, maintenance, or repair workers, all other; meter readers, utilities; coin, vending, or amusement machine servicers or repairers; motion picture projectionists; ushers, lobby attendants, or ticket takers; amusement or recreation attendants; locker room, coatroom, or dressing room attendants; and parking attendants.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Currently, the Occupation Ontology (OccO ) only represents occupations as they are defined by O*NET. We define this class extentionally according to the O*NET-defined occupations that map to occupations in ESCO that are classified as elementary occupations.</obo:IAO_0000116>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">proportion of population in an elementary occupation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000094"/>
+        <obo:IAO_0000115 xml:lang="en">A policy holder role that inheres in a person who participates in the creation of an insurance policy with a US state Medicaid agency.</obo:IAO_0000115>
+        <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">Medicaid policy holder role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000257 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000257">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000093"/>
+        <obo:IAO_0000115 xml:lang="en">An insurance organization that is privately owned and that participates in the creation of insurance policies in return for some money from the policy holder.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">insurance company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000258 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000094"/>
+        <obo:IAO_0000115 xml:lang="en">A policy holder role that inheres in a person who participates in the creation of an insurance policy with an insurance company.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">private insurance policy holder role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000259 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000259">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GEO_000000400"/>
+        <obo:IAO_0000115 xml:lang="en">A government organization that administers a given US state&apos;s Medicaid program by participating in the creation of insurance policies with eligible people and by participating in some payment of debt for a specified aggregate of health care encounters, specified processes (e.g, treatments, diagnostic tests) that are part of those encounters, and material entities used or prescribed during the encounters (e.g., medicine, prosthetics, glasses).</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">US state Medicaid agency</rdfs:label>
     </owl:Class>
     
 
@@ -6464,7 +6561,7 @@ It indicates that a person has completed only early childhood education and noth
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A role inhering in an entity realized by social interactions in human society.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in some entity that is realized in a social act.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
         <rdfs:comment xml:lang="en">Previous definition: A role played by an entity in human social processes.</rdfs:comment>
@@ -6494,5 +6591,5 @@ It indicates that a person has completed only early childhood education and noth
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
 
