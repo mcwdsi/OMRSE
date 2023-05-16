@@ -1522,7 +1522,7 @@ SubClassOf(obo:OMRSE_00000123 obo:BFO_0000034)
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000124 "residence function (OMRSE:00000075)"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000124 "obsolete residential function"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000124 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000124 obo:BFO_0000034)
+SubClassOf(obo:OMRSE_00000124 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000125 (nursing home function)
 
@@ -2626,7 +2626,7 @@ SubClassOf(obo:OMRSE_00000252 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectInterse
 
 # Class: obo:OMRSE_00000253 (religious gathering)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000253 "A social act or aggregate of social acts that include some worship, prayer, or prosylitizing."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000253 "A social act or aggregate of social acts that include some worship, prayer, or proselytizing."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000253 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000253 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000253 "religious gathering"@en)
