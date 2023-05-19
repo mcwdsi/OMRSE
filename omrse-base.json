@@ -34,9 +34,9 @@
         "val" : "The Ontology of Medically Related Social Entities"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-05-16"
+        "val" : "2023-05-19"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2023-05-16/omrse-base.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2023-05-19/omrse-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000000",
@@ -3661,7 +3661,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A social act or aggregate of social acts that include some worship, prayer, or prosylitizing."
+          "val" : "A social act or aggregate of social acts that include some worship, prayer, or proselytizing."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -5443,7 +5443,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000124",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000034"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000125",
       "pred" : "is_a",

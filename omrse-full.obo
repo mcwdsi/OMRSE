@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2023-05-16/omrse-full.owl
+data-version: omrse/releases/2023-05-19/omrse-full.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -15,7 +15,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "Shariq Tariq" xsd:strin
 property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
 property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/" xsd:string
-property_value: owl:versionInfo "2023-05-16" xsd:string
+property_value: owl:versionInfo "2023-05-19" xsd:string
 name: The Ontology of Medically Related Social Entities
 
 [Term]
@@ -4870,7 +4870,7 @@ is_a: BFO:0000034 ! function
 [Term]
 id: OMRSE:00000124
 name: obsolete residential function
-is_a: BFO:0000034 ! function
+is_a: ObsoleteClass
 is_obsolete: true
 replaced_by: residence function (OMRSE:00000075)
 
@@ -5979,7 +5979,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000253
 name: religious gathering
-def: "A social act or aggregate of social acts that include some worship, prayer, or prosylitizing." []
+def: "A social act or aggregate of social acts that include some worship, prayer, or proselytizing." []
 is_a: IAO:0021003 ! social act
 property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
