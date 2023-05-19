@@ -114,7 +114,7 @@ all_main: $(MAIN_FILES)
 # ----------------------------------------
 
 
-IMPORTS =  ro ogms obi apollo_sv obib go oae pco bfo oostt omo pno d-acts
+IMPORTS =  ro ogms obi apollo_sv obib go oae pco bfo oostt omo pno d-acts geo
 
 IMPORT_ROOTS = $(patsubst %, $(IMPORTDIR)/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -527,6 +527,15 @@ mirror-pno: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/d-acts.owl
 mirror-d-acts: | $(TMPDIR)
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/iao/d-acts.owl -o $@.tmp.owl &&\
+		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+
+
+## ONTOLOGY: geo
+.PHONY: mirror-geo
+.PRECIOUS: $(MIRRORDIR)/geo.owl
+mirror-geo: | $(TMPDIR)
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(OBOBASE)/geo.owl --create-dirs -o $(MIRRORDIR)/geo.owl --retry 4 --max-time 200 &&\
+		$(ROBOT) convert -i $(MIRRORDIR)/geo.owl -o $@.tmp.owl &&\
 		mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 

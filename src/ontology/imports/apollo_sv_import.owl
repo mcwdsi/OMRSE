@@ -9,9 +9,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-03-02/imports/apollo_sv_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/apollo_sv/v4.1.1./apollo_sv.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-03-02</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2023-05-02/imports/apollo_sv_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/apollo_sv/releases/v2023-01-10/apollo_sv.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-05-02</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -53,6 +53,17 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000032 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032">
+        <obo:IAO_0000115 xml:lang="en">A measurement datum that is the output of counting.</obo:IAO_0000115>
+        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
+        <obo:IAO_0000600 xml:lang="en">A measurement datum that is the output of counting.</obo:IAO_0000600>
+        <rdfs:label xml:lang="en">count</rdfs:label>
+    </owl:Class>
     
 
 

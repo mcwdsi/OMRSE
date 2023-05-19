@@ -19,6 +19,7 @@ BFO:0000132	owl:ObjectProperty
 BFO:0000138	owl:ObjectProperty
 BFO:0000139	owl:ObjectProperty
 BFO:0000136	owl:ObjectProperty
+GEO:000000400	owl:Class
 GO:0007610	owl:Class
 GO:0008150	owl:Class
 IAO:0000111	owl:AnnotationProperty

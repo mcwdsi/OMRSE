@@ -9,9 +9,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/imports/oostt_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2021-04-21/imports/oostt_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/oostt//2021-01-08/oostt.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-04-21</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2023-05-02/imports/oostt_import.owl"/>
+        <dc:source rdf:resource="http://purl.obolibrary.org/obo/oostt/release/2023-03-30/oostt.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-05-02</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -48,6 +48,7 @@
     <!-- http://purl.obolibrary.org/obo/OOSTT_00000030 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000030">
+        <obo:IAO_0000115 xml:lang="en">A description of an OOSTT class that is aimed at the OOSTT user community and not meant to be definition for use in ontology development, curation or maintenance.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">OOSTT user-centered description</rdfs:label>
     </owl:AnnotationProperty>
