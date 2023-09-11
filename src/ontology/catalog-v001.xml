@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/omrse/releases/2023-09-08/imports/mf_import.owl" uri="imports/mf_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/omrse/external_import.owl" uri="imports/external_import.owl"/>
     <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
         <uri name="http://purl.obolibrary.org/obo/omrse/imports/ro_import.owl" uri="imports/ro_import.owl"/>
@@ -31,6 +32,8 @@
         <uri name="http://purl.obolibrary.org/obo/omrse/imports/d-acts_import.owl" uri="imports/d-acts_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/omrse/imports/geo_import.owl" uri="imports/geo_import.owl"/>
         <uri name="http://purl.obolibrary.org/obo/omrse/imports/geo_import.obo" uri="imports/geo_import.obo"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/mf_import.owl" uri="imports/mf_import.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/imports/mf_import.obo" uri="imports/mf_import.obo"/>
         <uri name="http://purl.obolibrary.org/obo/omrse/components/pno.owl" uri="components/pno.owl"/>
         <uri name="http://purl.obolibrary.org/obo/omrse/components/d-acts.owl" uri="components/d-acts.owl"/>
         <uri name="http://purl.obolibrary.org/obo/omrse/components/import_terms.owl" uri="components/import_terms.owl"/>
