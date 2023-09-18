@@ -31,9 +31,9 @@
         "val" : "The Ontology of Medically Related Social Entities"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-05-19"
+        "val" : "2023-09-18"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2023-05-19/omrse.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2023-09-18/omrse.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000002",
@@ -9912,6 +9912,32 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/MF_0000030",
+      "lbl" : "representation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A dependent continuant which is about a portion of reality."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "http://www.jbiomedsem.com/content/1/1/10"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/MF_0000031",
+      "lbl" : "cognitive representation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A representation which specifically depends on an anatomical structure in the cognitive system of an organism."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "http://www.jbiomedsem.com/content/1/1/10"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/NCBITaxon_9606",
       "lbl" : "Homo sapiens",
       "type" : "CLASS",
@@ -14310,6 +14336,484 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000260",
+      "lbl" : "lives in",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "A relation between a household and a material entity that the household stores their possessions in and sleeps in habitually."
+        }
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000262",
+      "lbl" : "categorization scheme",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000263",
+      "lbl" : "demarcates",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "Relation in which a categorization scheme stands to each category into which it partitions things."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000264",
+      "lbl" : "demarcated by",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "Relation in which a category stands to the categorization scheme that demarcates it as a category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000265",
+      "lbl" : "social categorization scheme",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000267",
+      "lbl" : "social category",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Collection of humans demarcated by some social categorization scheme."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000268",
+      "lbl" : "racial categorization scheme",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000269",
+      "lbl" : "racial category",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Social category demarcated by some racial categorization scheme."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000270",
+      "lbl" : "ethnic categorization scheme",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000271",
+      "lbl" : "ethnic category",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Social category demarcated by some ethnic categorization scheme."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000272",
+      "lbl" : "has primary data subject",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "Relation in which a data item stands to the person it is both about and primarily associated with."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000273",
+      "lbl" : "primary data subject of",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "The inverse of has primary data subject."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000274",
+      "lbl" : "personal data disclosure",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Communication in which a person reports some data items about either that person or another person."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000275",
+      "lbl" : "has reporter",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "Relation in which a personal data disclosure stands to the person who performs it by disclosing data items about someone."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000276",
+      "lbl" : "reporter of",
+      "type" : "PROPERTY",
+      "meta" : {
+        "definition" : {
+          "val" : "The inverse of has reporter."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000277",
+      "lbl" : "subjective representation",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Cognitive representation in which the representation’s bearer is represented as being its bearer."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000278",
+      "lbl" : "social identity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Subjective representation of its bearer as being a member of some social category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000279",
+      "lbl" : "racial identity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Social identity for which the category is a racial category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000281",
+      "lbl" : "ethnic identity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Social identity for which the category is an ethnic category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000282",
+      "lbl" : "behavioral identity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000284",
+      "lbl" : "occupation disposition",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A disposition that, if realized, is realized when the bearer intends to, and does, exercise abilities and skills in pursuit of obtaining or maintaining an job role."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Damion Dooley"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Jie Zheng"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "John Beverley"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "John W. Judkins"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Sam Smith"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William D. Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Yongqun He"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000285",
+      "lbl" : "occupation activity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A process in which an occupation holder participates that realizes either an occupation disposition or job role."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "occupation process"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Damion Dooley"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Eric Merrell"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Jie Zheng"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "John Beverley"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "John W. Judkins"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Sam Smith"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William D. Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Yongqun He"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000286",
+      "lbl" : "U.S. veteran role",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A human role within an organization that inheres in a person who has served in a branch of the U.S. military, is not currently serving in the U.S. military, and the person's service ended in accordance to conditions defined by the U.S. government."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "38 U.S.C. §101(2), as well as “Determining Veteran Status” by the U.S. Department of Veterans Affairs (VA) Office of Small and Disadvantaged Business Utilization (OSDBU): https://www.va.gov/OSDBU/docs/Determining-Veteran-Status.pdf."
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Mathias Brochhausen"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "S. Clint Dowland"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William D. Duncan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000500",
       "lbl" : "job role data item",
       "type" : "CLASS",
@@ -15584,10 +16088,10 @@
         "subsets" : [ "http://purl.org/obo/owl/obo#attribute_slim" ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-          "val" : "_:genid2147485220"
+          "val" : "_:genid2147485260"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-          "val" : "_:genid2147485221"
+          "val" : "_:genid2147485261"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "quality"
@@ -19950,6 +20454,14 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_8000019"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/MF_0000030",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000020"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/MF_0000031",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000030"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_9606",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
@@ -21348,6 +21860,82 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/GEO_000000400"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000262",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000265",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000262"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000267",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000023"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000267",
+      "pred" : "http://purl.obolibrary.org/obo/OMRSE_00000264",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000265"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000268",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000265"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000269",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000267"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000269",
+      "pred" : "http://purl.obolibrary.org/obo/OMRSE_00000264",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000268"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000270",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000265"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000271",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000267"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000271",
+      "pred" : "http://purl.obolibrary.org/obo/OMRSE_00000264",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000270"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000274",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002068"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000277",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/MF_0000031"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000278",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000277"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000279",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000278"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000281",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000278"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000282",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000278"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000284",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000016"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000285",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000015"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000286",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000086"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000500",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000027"
@@ -21903,6 +22491,22 @@
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000071",
       "pred" : "subPropertyOf",
       "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000263",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000136"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000272",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000136"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000275",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000276",
+      "pred" : "subPropertyOf",
+      "obj" : "http://purl.obolibrary.org/obo/RO_0000056"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0000052",
       "pred" : "subPropertyOf",
@@ -22512,6 +23116,18 @@
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000419"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000263",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000264"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000272",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000273"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000275",
+      "pred" : "inverseOf",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000276"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0000052",
       "pred" : "inverseOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000053"
@@ -22951,6 +23567,14 @@
         "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
       } ]
     }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/OMRSE_00000263",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/OMRSE_00000262" ],
+      "allValuesFromEdges" : [ {
+        "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000265",
+        "pred" : "http://purl.obolibrary.org/obo/OMRSE_00000263",
+        "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000023"
+      } ]
+    }, {
       "predicateId" : "http://purl.obolibrary.org/obo/BFO_0000054",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000017" ],
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000015" ]
@@ -23014,6 +23638,26 @@
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/OBI_0000299",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/OMRSE_00000260",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/OMRSE_00000076" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000040" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/OMRSE_00000272",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0000030" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/NCBITaxon_9606" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/OMRSE_00000273",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/NCBITaxon_9606" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0000030" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/OMRSE_00000275",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/OMRSE_00000274" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/NCBITaxon_9606" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/OMRSE_00000276",
+      "domainClassIds" : [ "http://purl.obolibrary.org/obo/NCBITaxon_9606" ],
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/OMRSE_00000274" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0000056",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000002" ],
@@ -23165,6 +23809,9 @@
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/OMRSE_00000071",
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/OMRSE_00000056" ]
+    }, {
+      "predicateId" : "http://purl.obolibrary.org/obo/OMRSE_00000264",
+      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/OMRSE_00000262" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0000053",
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000020" ]
