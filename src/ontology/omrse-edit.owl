@@ -425,7 +425,7 @@ Declaration(AnnotationProperty(terms:license))
 # Annotation Property: obo:IAO_0000115 (definition)
 
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"^^xsd:string)
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 
 # Annotation Property: obo:IAO_0000119 (definition source)
 
@@ -2913,7 +2913,7 @@ SubClassOf(obo:OMRSE_00000282 obo:OMRSE_00000278)
 
 # Class: obo:OMRSE_00000284 (occupation disposition)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000284 "A disposition that, if realized, is realized when the bearer intends to, and does, exercise abilities and skills in pursuit of obtaining or maintaining an occupation role."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000284 "A disposition that, if realized, is realized when the bearer intends to, and does, exercise abilities and skills in pursuit of obtaining or maintaining an job role."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000284 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000284 "Damion Dooley"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000284 "Jie Zheng"@en)
@@ -2928,7 +2928,7 @@ SubClassOf(obo:OMRSE_00000284 obo:BFO_0000016)
 
 # Class: obo:OMRSE_00000285 (occupation activity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000285 "A process in which an occupation holder participates that realizes either an occupation disposition or occupation role."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000285 "A process in which an occupation holder participates that realizes either an occupation disposition or job role."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000285 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000285 "occupation process"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000285 "Damion Dooley"@en)
