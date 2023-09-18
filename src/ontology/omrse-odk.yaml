@@ -53,6 +53,7 @@ import_group:
       mirror_from: http://purl.obolibrary.org/obo/iao/d-acts.owl
       module_type: mirror
     - id: geo
+    - id: mf
       
 #components:
 #  products:
