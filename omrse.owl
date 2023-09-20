@@ -18,7 +18,7 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2023-09-18/omrse.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2023-09-20/omrse.owl"/>
         <dc:contributor>Daniel Welch</dc:contributor>
         <dc:creator>Amanda Hicks</dc:creator>
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
@@ -28,7 +28,7 @@
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
         <rdfs:label xml:lang="en">The Ontology of Medically Related Social Entities</rdfs:label>
-        <owl:versionInfo>2023-09-18</owl:versionInfo>
+        <owl:versionInfo>2023-09-20</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -17967,7 +17967,7 @@ It indicates that a person has completed only early childhood education and noth
         <obo:IAO_0000115 xml:lang="en">A concretization-utilization process in which the utilized specifically dependent continuant concretizes the generically dependent through use of some language.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
-        <dc:contributor xml:lang="en">Sarah Dowland</dc:contributor>
+        <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:label xml:lang="en">linguistic concretization-utilization process</rdfs:label>
     </owl:Class>

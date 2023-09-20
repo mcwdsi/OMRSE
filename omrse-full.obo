@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2023-09-18/omrse-full.owl
+data-version: omrse/releases/2023-09-20/omrse-full.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -15,7 +15,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "Shariq Tariq" xsd:strin
 property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
 property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/" xsd:string
-property_value: owl:versionInfo "2023-09-18" xsd:string
+property_value: owl:versionInfo "2023-09-20" xsd:string
 name: The Ontology of Medically Related Social Entities
 
 [Term]
@@ -6661,7 +6661,7 @@ name: linguistic concretization-utilization process
 def: "A concretization-utilization process in which the utilized specifically dependent continuant concretizes the generically dependent through use of some language." []
 is_a: OMRSE:00002062 ! concretization-utilization process
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
