@@ -424,8 +424,8 @@ Declaration(AnnotationProperty(terms:license))
 
 # Annotation Property: obo:IAO_0000115 (definition)
 
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
 
 # Annotation Property: obo:IAO_0000119 (definition source)
 
@@ -3412,7 +3412,7 @@ SubClassOf(obo:OMRSE_00002062 ObjectSomeValuesFrom(obo:RO_0000057 ObjectIntersec
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002063 "A concretization-utilization process in which the utilized specifically dependent continuant concretizes the generically dependent through use of some language."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00002063 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00002063 "Matthew Diller"@en)
-AnnotationAssertion(dc:contributor obo:OMRSE_00002063 "Sarah Dowland"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00002063 "Sarah Bost"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00002063 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00002063 "linguistic concretization-utilization process"@en)
 SubClassOf(obo:OMRSE_00002063 obo:OMRSE_00002062)

@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2023-05-19/omrse-full.owl
+data-version: omrse/releases/2023-09-20/omrse-full.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -15,7 +15,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "Shariq Tariq" xsd:strin
 property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
 property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/" xsd:string
-property_value: owl:versionInfo "2023-05-19" xsd:string
+property_value: owl:versionInfo "2023-09-20" xsd:string
 name: The Ontology of Medically Related Social Entities
 
 [Term]
@@ -3728,6 +3728,20 @@ is_a: IAO:8000019 ! ontology module subsetted by OWL profile
 property_value: IAO:0000111 "EL++ ontology module" xsd:string
 
 [Term]
+id: MF:0000030
+name: representation
+def: "A dependent continuant which is about a portion of reality." []
+is_a: BFO:0000020 ! specifically dependent continuant
+property_value: IAO:0000119 "http://www.jbiomedsem.com/content/1/1/10" xsd:string
+
+[Term]
+id: MF:0000031
+name: cognitive representation
+def: "A representation which specifically depends on an anatomical structure in the cognitive system of an organism." []
+is_a: MF:0000030 ! representation
+property_value: IAO:0000119 "http://www.jbiomedsem.com/content/1/1/10" xsd:string
+
+[Term]
 id: NCBITaxon:9606
 name: Homo sapiens
 is_a: OBI:0100026 ! organism
@@ -6034,6 +6048,171 @@ property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" x
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
+id: OMRSE:00000262
+name: categorization scheme
+def: "Information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories." []
+is_a: IAO:0000030 ! information content entity
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000265
+name: social categorization scheme
+def: "Categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics." []
+is_a: OMRSE:00000262 ! categorization scheme
+relationship: OMRSE:00000263 OMRSE:00000023 {all_only="true"} ! demarcates collection of humans
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000267
+name: social category
+def: "Collection of humans demarcated by some social categorization scheme." []
+is_a: OMRSE:00000023 ! collection of humans
+relationship: OMRSE:00000264 OMRSE:00000265 ! demarcated by social categorization scheme
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000268
+name: racial categorization scheme
+def: "Social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors." []
+is_a: OMRSE:00000265 ! social categorization scheme
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000269
+name: racial category
+def: "Social category demarcated by some racial categorization scheme." []
+is_a: OMRSE:00000267 ! social category
+relationship: OMRSE:00000264 OMRSE:00000268 ! demarcated by racial categorization scheme
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000270
+name: ethnic categorization scheme
+def: "Social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship." []
+is_a: OMRSE:00000265 ! social categorization scheme
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000271
+name: ethnic category
+def: "Social category demarcated by some ethnic categorization scheme." []
+is_a: OMRSE:00000267 ! social category
+relationship: OMRSE:00000264 OMRSE:00000270 ! demarcated by ethnic categorization scheme
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000274
+name: personal data disclosure
+def: "Communication in which a person reports some data items about either that person or another person." []
+is_a: OMRSE:00002068 ! communication
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000277
+name: subjective representation
+def: "Cognitive representation in which the representation’s bearer is represented as being its bearer." []
+is_a: MF:0000031 ! cognitive representation
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000278
+name: social identity
+def: "Subjective representation of its bearer as being a member of some social category." []
+is_a: OMRSE:00000277 ! subjective representation
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000279
+name: racial identity
+def: "Social identity for which the category is a racial category." []
+is_a: OMRSE:00000278 ! social identity
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000281
+name: ethnic identity
+def: "Social identity for which the category is an ethnic category." []
+is_a: OMRSE:00000278 ! social identity
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000282
+name: behavioral identity
+def: "Social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior." []
+is_a: OMRSE:00000278 ! social identity
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000284
+name: occupation disposition
+def: "A disposition that, if realized, is realized when the bearer intends to, and does, exercise abilities and skills in pursuit of obtaining or maintaining an job role." []
+is_a: BFO:0000016 ! disposition
+property_value: http://purl.org/dc/elements/1.1/contributor "Damion Dooley" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Jie Zheng" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "John Beverley" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "John W. Judkins" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sam Smith" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William D. Duncan" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Yongqun He" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000285
+name: occupation activity
+def: "A process in which an occupation holder participates that realizes either an occupation disposition or job role." []
+is_a: BFO:0000015 ! process
+property_value: http://purl.org/dc/elements/1.1/contributor "Damion Dooley" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Eric Merrell" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Jie Zheng" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "John Beverley" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "John W. Judkins" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sam Smith" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William D. Duncan" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Yongqun He" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "occupation process" xsd:string
+
+[Term]
+id: OMRSE:00000286
+name: U.S. veteran role
+def: "A human role within an organization that inheres in a person who has served in a branch of the U.S. military, is not currently serving in the U.S. military, and the person's service ended in accordance to conditions defined by the U.S. government." []
+is_a: OMRSE:00000086 ! human role within an organization
+property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William D. Duncan" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000119 "38 U.S.C. §101(2), as well as “Determining Veteran Status” by the U.S. Department of Veterans Affairs (VA) Office of Small and Disadvantaged Business Utilization (OSDBU): https://www.va.gov/OSDBU/docs/Determining-Veteran-Status.pdf." xsd:string
+
+[Term]
 id: OMRSE:00000500
 name: job role data item
 def: "A data item that is about a person's job role and/or its realization." []
@@ -6482,7 +6661,7 @@ name: linguistic concretization-utilization process
 def: "A concretization-utilization process in which the utilized specifically dependent continuant concretizes the generically dependent through use of some language." []
 is_a: OMRSE:00002062 ! concretization-utilization process
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
@@ -7250,6 +7429,78 @@ name: has aggressor
 def: "Relation between an abusive behavior and one who inflicts it upon someone or something else." []
 property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Typedef]
+id: OMRSE:00000260
+name: lives in
+def: "A relation between a household and a material entity that the household stores their possessions in and sleeps in habitually." []
+domain: OMRSE:00000076 ! household
+range: BFO:0000040 ! material entity
+
+[Typedef]
+id: OMRSE:00000263
+name: demarcates
+def: "Relation in which a categorization scheme stands to each category into which it partitions things." []
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+domain: OMRSE:00000262 ! categorization scheme
+is_a: IAO:0000136 ! is about
+inverse_of: OMRSE:00000264 ! demarcated by
+
+[Typedef]
+id: OMRSE:00000264
+name: demarcated by
+def: "Relation in which a category stands to the categorization scheme that demarcates it as a category." []
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+range: OMRSE:00000262 ! categorization scheme
+
+[Typedef]
+id: OMRSE:00000272
+name: has primary data subject
+def: "Relation in which a data item stands to the person it is both about and primarily associated with." []
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+domain: IAO:0000030 ! information content entity
+range: NCBITaxon:9606 ! Homo sapiens
+is_a: IAO:0000136 ! is about
+inverse_of: OMRSE:00000273 ! primary data subject of
+
+[Typedef]
+id: OMRSE:00000273
+name: primary data subject of
+def: "The inverse of has primary data subject." []
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+domain: NCBITaxon:9606 ! Homo sapiens
+range: IAO:0000030 ! information content entity
+
+[Typedef]
+id: OMRSE:00000275
+name: has reporter
+def: "Relation in which a personal data disclosure stands to the person who performs it by disclosing data items about someone." []
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+domain: OMRSE:00000274 ! personal data disclosure
+range: NCBITaxon:9606 ! Homo sapiens
+is_a: RO:0000057 ! has_participant
+inverse_of: OMRSE:00000276 ! reporter of
+
+[Typedef]
+id: OMRSE:00000276
+name: reporter of
+def: "The inverse of has reporter." []
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+domain: NCBITaxon:9606 ! Homo sapiens
+range: OMRSE:00000274 ! personal data disclosure
+is_a: RO:0000056 ! participates in
 
 [Typedef]
 id: RO:0000052
