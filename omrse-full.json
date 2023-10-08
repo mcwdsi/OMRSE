@@ -4,7 +4,40 @@
     "meta" : {
       "basicPropertyValues" : [ {
         "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "Barry Smith"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "Chris Stoeckert"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
         "val" : "Daniel Welch"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "Jie Zheng"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "John W. Judkins"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "Matthew Diller"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "S. Clint Dowland"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "Sam Smith"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "Sarah Bost"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "Selja Seppälä"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "William D. Duncan"
+      }, {
+        "pred" : "http://purl.org/dc/elements/1.1/contributor",
+        "val" : "Yongqun He"
       }, {
         "pred" : "http://purl.org/dc/elements/1.1/creator",
         "val" : "Amanda Hicks"
@@ -21,6 +54,9 @@
         "pred" : "http://purl.org/dc/elements/1.1/creator",
         "val" : "William Hogan"
       }, {
+        "pred" : "http://purl.org/dc/elements/1.1/description",
+        "val" : "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations."
+      }, {
         "pred" : "http://purl.org/dc/terms/license",
         "val" : "https://creativecommons.org/licenses/by/4.0/"
       }, {
@@ -28,12 +64,12 @@
         "val" : "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"
       }, {
         "pred" : "http://www.w3.org/2000/01/rdf-schema#label",
-        "val" : "The Ontology of Medically Related Social Entities"
+        "val" : "Ontology for Modeling and Representation of Social Entities"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-09-20"
+        "val" : "2023-10-08"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2023-09-20/omrse-full.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2023-10-08/omrse-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000002",
