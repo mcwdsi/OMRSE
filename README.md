@@ -11,7 +11,7 @@ This work is licensed under a
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
-The Ontology of Medically Related Social Entities represents social entities relevant to health care, such as health-care related roles, gender roles, marriage contracts. It grew out of efforts to represent the reality underlying the demographic information required by the federal government's "meaningful use" criteria for electronic medical records.
+The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations. For more information on the social entities represented in OMRSE, please visit our [wiki page](https://github.com/mcwdsi/OMRSE/wiki) or list of publications. OMRSE is designed to be a mid-level ontology that bridges the gap between BFO, which it reuses for its top-level hierarchy, and more specific domain or application ontologies. For this reason, we are always open to working with ontology developers who want to build interoperability between their projects and OMRSE. A list of projects we currently collaborate with or that reuse OMRSE classes is listed below.
 
 OMRSE Google Group: http://groups.google.com/group/omrse-discuss Click the "Apply for Membership" link to join. 
 
@@ -24,6 +24,8 @@ Agenda: https://docs.google.com/document/d/1UUD-53SaioJO7btrs8ie3yjFYJIF6HV3RUU3
 
 [OBIB](https://github.com/biobanking/biobanking): Ontology for Biobanking
 
+[OccO](https://github.com/Occupation-Ontology/OccO): Occupation Ontology
+
 [OntoNeo](https://ontoneo.com/): Obstetric and Neonatal Ontology
 
 [Oral Health and Disease Ontology](https://github.com/wdduncan/ohd-ontology)
@@ -33,3 +35,16 @@ Agenda: https://docs.google.com/document/d/1UUD-53SaioJO7btrs8ie3yjFYJIF6HV3RUU3
 ## Preparing a new OMRSE release
 
 See [documentation](docs/ReleaseWorkflow.md).
+
+## List of Publications
+
+Diller M, Hogan WR. An Ontological Representation of Money with a View Toward Economic Determinants of Health. Proceedings http://ceur-ws. org ISSN. 2022;1613:0073. Link: https://icbo-conference.github.io/icbo2022/papers/ICBO-2022_paper_8682.pdf
+
+Hogan WR, Dowland SC. Using Ontologies to Enhance Data on Intimate Partner Violence. Link: https://icbo-conference.github.io/icbo2022/papers/ICBO-2022_paper_6874.pdf
+
+Hicks A, Hanna J, Welch D, Brochhausen M, Hogan WR. The ontology of medically related social entities: recent developments. Journal of Biomedical Semantics. 2016 Dec;7(1):1-4. Link: https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-016-0087-8
+
+Ceusters W, Hogan WR. An ontological analysis of diagnostic assertions in electronic healthcare records. Homo. 2015;1:2. Link: http://icbo2015.fc.ul.pt/regular2.pdf
+
+Hogan WR, Garimalla S, Tariq SA. Representing the Reality Underlying Demographic Data. InICBO 2011 Jul 26. Link: http://ceur-ws.org/Vol-833/paper20.pdf
+
