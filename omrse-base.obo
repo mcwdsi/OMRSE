@@ -1,17 +1,29 @@
 format-version: 1.2
-data-version: omrse/releases/2023-09-20/omrse-base.owl
+data-version: omrse/releases/2023-10-08/omrse-base.owl
 remark: This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt
 ontology: omrse/omrse-base
+property_value: http://purl.org/dc/elements/1.1/contributor "Barry Smith" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Chris Stoeckert" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Daniel Welch" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Jie Zheng" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "John W. Judkins" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sam Smith" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Selja Seppälä" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "William D. Duncan" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Yongqun He" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "Mathias Brochhausen" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "Shariq Tariq" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/" xsd:string
-property_value: owl:versionInfo "2023-09-20" xsd:string
-name: The Ontology of Medically Related Social Entities
+property_value: owl:versionInfo "2023-10-08" xsd:string
+name: Ontology for Modeling and Representation of Social Entities
 
 [Term]
 id: GO:0003674
@@ -525,7 +537,7 @@ def: "An architectural structure that bears some function." []
 is_a: OMRSE:00000061 ! architectural structure
 intersection_of: OMRSE:00000061 ! architectural structure
 intersection_of: RO:0000053 BFO:0000034
-relationship: OMRSE:00000068 OBI:0000245 {http://www.w3.org/2002/07/owl#versionInfo="09/09/2017"} ! is administered by
+relationship: OMRSE:00000068 OBI:0000245 {owl:versionInfo="09/09/2017"} ! is administered by
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
