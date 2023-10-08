@@ -1,4 +1,4 @@
-# OMRSE -- The Ontology of Medically Related Social Entities
+# OMRSE -- The Ontology for Modeling and Representation of Social Entities
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
 
