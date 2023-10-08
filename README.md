@@ -40,7 +40,7 @@ See [documentation](docs/ReleaseWorkflow.md).
 
 Diller M, Hogan WR. An Ontological Representation of Money with a View Toward Economic Determinants of Health. Proceedings http://ceur-ws. org ISSN. 2022;1613:0073. Link: https://icbo-conference.github.io/icbo2022/papers/ICBO-2022_paper_8682.pdf
 
-Hogan WR, Dowland SC. Using Ontologies to Enhance Data on Intimate Partner Violence. Link: https://icbo-conference.github.io/icbo2022/papers/ICBO-2022_paper_6874.pdf
+Dowland SC, Hogan WR. Using Ontologies to Enhance Data on Intimate Partner Violence. Link: https://icbo-conference.github.io/icbo2022/papers/ICBO-2022_paper_6874.pdf
 
 Hicks A, Hanna J, Welch D, Brochhausen M, Hogan WR. The ontology of medically related social entities: recent developments. Journal of Biomedical Semantics. 2016 Dec;7(1):1-4. Link: https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-016-0087-8
 
