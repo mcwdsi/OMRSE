@@ -1,103 +1,60 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2023-05-02/imports/apollo_sv_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/apollo_sv/releases/v2023-01-10/apollo_sv.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-05-02</owl:versionInfo>
-    </owl:Ontology>
-    
+Prefix(:=<http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+Ontology(<http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2023-11-01/imports/apollo_sv_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/apollo_sv/releases/2023-06-02/apollo_sv.owl>)
+Annotation(owl:versionInfo "2023-11-01")
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000600"/>
-    
+Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000032>))
+Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000480>))
+Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000532>))
+Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000600>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+Declaration(AnnotationProperty(<http://www.referent-tracking.com/RTS_00000001>))
+Declaration(AnnotationProperty(<http://www.referent-tracking.com/RTS_00000002>))
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+############################
+#   Classes
+############################
 
-    
+# Class: <http://purl.obolibrary.org/obo/APOLLO_SV_00000032> (count)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/APOLLO_SV_00000032> "A measurement datum that is the output of counting."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/APOLLO_SV_00000032> "Mathias Brochhausen")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/APOLLO_SV_00000032> "A measurement datum that is the output of counting."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/APOLLO_SV_00000032> "count"@en)
 
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000032 -->
+# Class: <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> (geographical migration of organism)
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000032">
-        <obo:IAO_0000115 xml:lang="en">A measurement datum that is the output of counting.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000600 xml:lang="en">A measurement datum that is the output of counting.</obo:IAO_0000600>
-        <rdfs:label xml:lang="en">count</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "A behavior of one or more organisms that is characterized by the displacement from one geographic region to some target geographic region, and is the realization of either a biological function or (a concretization of) an objective specification."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "Matthew Diller")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "William R. Hogan")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "A behavior of one or more organisms that is characterized by the displacement from one geographic region to some target geographic region, and is the realization of either a biological function or (a concretization of) an objective specification."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "geographical migration of organism"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/APOLLO_SV_00000480> <http://purl.obolibrary.org/obo/GO_0007610>)
 
+# Class: <http://purl.obolibrary.org/obo/APOLLO_SV_00000532> (human travel)
 
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000480 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000480">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0007610"/>
-        <obo:IAO_0000115 xml:lang="en">A behavior of one or more organisms that is characterized by the displacement from one geographic region to some target geographic region, and is the realization of either a biological function or (a concretization of) an objective specification.</obo:IAO_0000115>
-        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
-        <obo:IAO_0000117>William R. Hogan</obo:IAO_0000117>
-        <obo:IAO_0000600 xml:lang="en">A behavior of one or more organisms that is characterized by the displacement from one geographic region to some target geographic region, and is the realization of either a biological function or (a concretization of) an objective specification.</obo:IAO_0000600>
-        <rdfs:label xml:lang="en">geographical migration of organism</rdfs:label>
-    </owl:Class>
-    
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/APOLLO_SV_00000532> "A geographical migration of an organism belonging to the species Homo sapiens."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/APOLLO_SV_00000532> "Matthew Diller")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/APOLLO_SV_00000532> "William R. Hogan")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/APOLLO_SV_00000532> "human travel"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/APOLLO_SV_00000532> <http://purl.obolibrary.org/obo/APOLLO_SV_00000480>)
 
 
-    <!-- http://purl.obolibrary.org/obo/APOLLO_SV_00000532 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/APOLLO_SV_00000532">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000480"/>
-        <obo:IAO_0000115 xml:lang="en">A geographical migration of an organism belonging to the species Homo sapiens.</obo:IAO_0000115>
-        <obo:IAO_0000117>Matthew Diller</obo:IAO_0000117>
-        <obo:IAO_0000117>William R. Hogan</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">human travel</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0007610"/>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
-
+)

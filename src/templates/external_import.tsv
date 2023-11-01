@@ -61,12 +61,9 @@ OBI:0600052	owl:Class
 OGMS:0000097	owl:Class
 OGMS:0000100	owl:Class
 OGMS:0000102	owl:Class
-OMIABIS:0000008	owl:ObjectProperty
-OMIABIS:0000009	owl:ObjectProperty
-OMIABIS:0000048	owl:ObjectProperty
-OMIABIS:0000060	owl:Class
-OMIABIS:0001025	owl:Class
-OMIABIS:0001035	owl:Class
+OBIB:0000710	owl:Class
+OBIB:0000667	owl:Class
+OBIB:0000701	owl:Class
 OOSTT:00000030	owl:AnnotationProperty
 OOSTT:00000081	owl:Class
 OOSTT:00000082	owl:Class
