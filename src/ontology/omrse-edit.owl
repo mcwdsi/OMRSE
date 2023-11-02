@@ -53,6 +53,7 @@ Annotation(rdfs:label "Ontology for Modeling and Representation of Social Entiti
 Declaration(Class(obo:IAO_0020022))
 Declaration(Class(obo:IAO_0021003))
 Declaration(Class(obo:IAO_0021009))
+Declaration(Class(obo:MF_0000031))
 Declaration(Class(obo:OMRSE_00000000))
 Declaration(Class(obo:OMRSE_00000001))
 Declaration(Class(obo:OMRSE_00000002))
@@ -491,7 +492,7 @@ SubObjectPropertyOf(obo:OMIABIS_0000008 oboInOwl:ObsoleteProperty)
 AnnotationAssertion(owl:deprecated obo:OMIABIS_0000009 "true"^^xsd:boolean)
 SubObjectPropertyOf(obo:OMIABIS_0000009 oboInOwl:ObsoleteProperty)
 
-# Object Property: obo:OMRSE_00000020 (obsolete is-aggregate-of)
+# Object Property: obo:OMRSE_00000020 (is-aggregate-of)
 
 AnnotationAssertion(obo:IAO_0000231 obo:OMRSE_00000020 "BFO relation takes precedence."@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000020 "We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.
@@ -2537,7 +2538,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000230 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000230 "Sarah Bost"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000230 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000230 "county smoking survey plan specification"@en)
-SubClassOf(obo:OMRSE_00000230 obo:OMIABIS_0001025)
+SubClassOf(obo:OMRSE_00000230 obo:OBIB_0000701)
 
 # Class: obo:OMRSE_00000231 (county smoking survey execution)
 
@@ -2552,7 +2553,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000231 "Sarah Bost"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000231 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000231 "county smoking survey execution"@en)
 EquivalentClasses(obo:OMRSE_00000231 ObjectSomeValuesFrom(obo:BFO_0000055 ObjectSomeValuesFrom(obo:RO_0000059 obo:OMRSE_00000230)))
-SubClassOf(obo:OMRSE_00000231 obo:OMIABIS_0001035)
+SubClassOf(obo:OMRSE_00000231 obo:OBIB_0000710)
 
 # Class: obo:OMRSE_00000232 (county smoking survey data)
 
@@ -2567,7 +2568,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000232 "Sarah Bost"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000232 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000232 "county smoking survey data"@en)
 EquivalentClasses(obo:OMRSE_00000232 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OMRSE_00000231))
-SubClassOf(obo:OMRSE_00000232 obo:OMIABIS_0000060)
+SubClassOf(obo:OMRSE_00000232 obo:OBIB_0000667)
 
 # Class: obo:OMRSE_00000233 (smoking rate calculation)
 

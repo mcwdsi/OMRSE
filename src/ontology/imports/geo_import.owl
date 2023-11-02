@@ -1,73 +1,39 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/omrse/imports/geo_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/omrse/imports/geo_import.owl"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/imports/geo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2023-05-02/imports/geo_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-05-02</owl:versionInfo>
-    </owl:Ontology>
-    
+Prefix(:=<http://purl.obolibrary.org/obo/omrse/imports/geo_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+Ontology(<http://purl.obolibrary.org/obo/omrse/imports/geo_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2023-11-01/imports/geo_import.owl>
+Annotation(owl:versionInfo "2023-11-01")
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
+Declaration(Class(<http://purl.obolibrary.org/obo/GEO_000000400>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000245>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+############################
+#   Classes
+############################
 
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
-    
+# Class: <http://purl.obolibrary.org/obo/GEO_000000400> (governmental organization)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GEO_000000400> "An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii). 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
+Note: this definition was taken over from \"geopolitical organization\"."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/GEO_000000400> "Amanda Hicks"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GEO_000000400> "IMPORTANT: The label \"geopolitical organization\" was previously used for OMRSE_00000044 (governmental organization).  \"geopoli organization\" is a label for a new and different class."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GEO_000000400> "governmental organization"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/GEO_000000400> <http://purl.obolibrary.org/obo/OBI_0000245>)
 
 
-    <!-- http://purl.obolibrary.org/obo/GEO_000000400 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000400">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-        <obo:IAO_0000115 xml:lang="en">An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii). 
-
-Note: this definition was taken over from &quot;geopolitical organization&quot;.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
-        <rdfs:comment xml:lang="en">IMPORTANT: The label &quot;geopolitical organization&quot; was previously used for OMRSE_00000044 (governmental organization).  &quot;geopoli organization&quot; is a label for a new and different class.</rdfs:comment>
-        <rdfs:label xml:lang="en">governmental organization</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
-
+)

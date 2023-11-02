@@ -1,156 +1,103 @@
-<?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/omrse/imports/oostt_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/omrse/imports/oostt_import.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/imports/oostt_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2023-05-02/imports/oostt_import.owl"/>
-        <dc:source rdf:resource="http://purl.obolibrary.org/obo/oostt/release/2023-03-30/oostt.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-05-02</owl:versionInfo>
-    </owl:Ontology>
-    
+Prefix(:=<http://purl.obolibrary.org/obo/omrse/imports/oostt_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+Ontology(<http://purl.obolibrary.org/obo/omrse/imports/oostt_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2023-11-01/imports/oostt_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/oostt/release/2023-03-30/oostt.owl>)
+Annotation(owl:versionInfo "2023-11-01")
 
-    
+Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OOSTT_00000074>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OOSTT_00000081>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OOSTT_00000082>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OOSTT_00000083>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OOSTT_00000084>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OOSTT_00000086>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OOSTT_00000030>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
+############################
+#   Annotation Properties
+############################
 
+# Annotation Property: <http://purl.obolibrary.org/obo/OOSTT_00000030> (OOSTT user-centered description)
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OOSTT_00000030 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000030">
-        <obo:IAO_0000115 xml:lang="en">A description of an OOSTT class that is aimed at the OOSTT user community and not meant to be definition for use in ontology development, curation or maintenance.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">OOSTT user-centered description</rdfs:label>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OOSTT_00000074 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000074">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that is the specified outcome of and documents the sucessful completion of a tertiary education program.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:OOSTT_00000030 xml:lang="en">Recognized degree awarded after successful completion of a college or post-graduate porgram.</obo:OOSTT_00000030>
-        <rdfs:label xml:lang="en">academic degree</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OOSTT_00000081 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000081">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OOSTT_00000074"/>
-        <obo:IAO_0000115 xml:lang="en">An academic degree awarded by colleges and universities upon completion of a program of study lasting two years.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/w/index.php?title=Associate_degree&amp;oldid=723897149</obo:IAO_0000119>
-        <obo:OOSTT_00000030 xml:lang="en">Recognition awarded after completion of a specific curriculum from an accredited tertiary education provider that falls between high school and bachelor&apos;s degree program.</obo:OOSTT_00000030>
-        <rdfs:label xml:lang="en">associate degree</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OOSTT_00000082 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000082">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OOSTT_00000074"/>
-        <obo:IAO_0000115 xml:lang="en">An academic degree awarded by universities upon completion of a course of study demonstrating a mastery or high-order overview of a specific field of study or area of professional practice.[1] Within the area studied, graduates are posited to possess advanced knowledge of a specialized body of theoretical and applied topics; high order skills in analysis, critical evaluation, or professional application; and the ability to solve complex problems and think rigorously and independently.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/w/index.php?title=Master%27s_degree&amp;oldid=726036185</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">master&apos;s degree</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OOSTT_00000083 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000083">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OOSTT_00000074"/>
-        <obo:IAO_0000115 xml:lang="en">An academic degree awarded by colleges and universities upon completion of a course of study lasting three to seven years.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/w/index.php?title=Bachelor%27s_degree&amp;oldid=725713923</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">bachelor&apos;s degree</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OOSTT_00000084 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000084">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OOSTT_00000083"/>
-        <obo:IAO_0000115 xml:lang="en">An academic degree in the science and principles of nursing, granted by an accredited tertiary education provider after the successful completion of a bachelor&apos;s of nursing program.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/w/index.php?title=Bachelor_of_Science_in_Nursing&amp;oldid=725962822</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">bachelor&apos;s of nursing degree</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OOSTT_00000086 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OOSTT_00000086">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OOSTT_00000082"/>
-        <obo:IAO_0000115 xml:lang="en">An academic degree in the science and principles of nursing, granted by an accredited tertiary education provider after the successful completion of a master&apos;s of nursing program.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:OOSTT_00000030 xml:lang="en">An advanced academic degree in the principles and practices of nursing, with a focus on administration, education, or advanced nursing practice, granted by an accredited college or university after the successful completion of a master&apos;s of nursing program.</obo:OOSTT_00000030>
-        <rdfs:label xml:lang="en">master&apos;s in the science of nursing degree</rdfs:label>
-    </owl:Class>
-</rdf:RDF>
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OOSTT_00000030> "A description of an OOSTT class that is aimed at the OOSTT user community and not meant to be definition for use in ontology development, curation or maintenance."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000030> "Mathias Brochhausen"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OOSTT_00000030> "OOSTT user-centered description"@en)
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+############################
+#   Classes
+############################
 
+# Class: <http://purl.obolibrary.org/obo/OOSTT_00000074> (academic degree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OOSTT_00000074> "An information content entity that is the specified outcome of and documents the sucessful completion of a tertiary education program."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000074> "John Judkins"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000074> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OOSTT_00000030> <http://purl.obolibrary.org/obo/OOSTT_00000074> "Recognized degree awarded after successful completion of a college or post-graduate porgram."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OOSTT_00000074> "academic degree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OOSTT_00000074> <http://purl.obolibrary.org/obo/IAO_0000030>)
+
+# Class: <http://purl.obolibrary.org/obo/OOSTT_00000081> (associate degree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OOSTT_00000081> "An academic degree awarded by colleges and universities upon completion of a program of study lasting two years."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000081> "John Judkins"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000081> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OOSTT_00000081> "https://en.wikipedia.org/w/index.php?title=Associate_degree&oldid=723897149"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OOSTT_00000030> <http://purl.obolibrary.org/obo/OOSTT_00000081> "Recognition awarded after completion of a specific curriculum from an accredited tertiary education provider that falls between high school and bachelor's degree program."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OOSTT_00000081> "associate degree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OOSTT_00000081> <http://purl.obolibrary.org/obo/OOSTT_00000074>)
+
+# Class: <http://purl.obolibrary.org/obo/OOSTT_00000082> (master's degree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OOSTT_00000082> "An academic degree awarded by universities upon completion of a course of study demonstrating a mastery or high-order overview of a specific field of study or area of professional practice.[1] Within the area studied, graduates are posited to possess advanced knowledge of a specialized body of theoretical and applied topics; high order skills in analysis, critical evaluation, or professional application; and the ability to solve complex problems and think rigorously and independently."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000082> "John Judkins"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000082> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OOSTT_00000082> "https://en.wikipedia.org/w/index.php?title=Master%27s_degree&oldid=726036185"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OOSTT_00000082> "master's degree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OOSTT_00000082> <http://purl.obolibrary.org/obo/OOSTT_00000074>)
+
+# Class: <http://purl.obolibrary.org/obo/OOSTT_00000083> (bachelor's degree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OOSTT_00000083> "An academic degree awarded by colleges and universities upon completion of a course of study lasting three to seven years."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000083> "John Judkins"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000083> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OOSTT_00000083> "https://en.wikipedia.org/w/index.php?title=Bachelor%27s_degree&oldid=725713923"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OOSTT_00000083> "bachelor's degree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OOSTT_00000083> <http://purl.obolibrary.org/obo/OOSTT_00000074>)
+
+# Class: <http://purl.obolibrary.org/obo/OOSTT_00000084> (bachelor's of nursing degree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OOSTT_00000084> "An academic degree in the science and principles of nursing, granted by an accredited tertiary education provider after the successful completion of a bachelor's of nursing program."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000084> "John Judkins"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000084> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OOSTT_00000084> "https://en.wikipedia.org/w/index.php?title=Bachelor_of_Science_in_Nursing&oldid=725962822"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OOSTT_00000084> "bachelor's of nursing degree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OOSTT_00000084> <http://purl.obolibrary.org/obo/OOSTT_00000083>)
+
+# Class: <http://purl.obolibrary.org/obo/OOSTT_00000086> (master's in the science of nursing degree)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OOSTT_00000086> "An academic degree in the science and principles of nursing, granted by an accredited tertiary education provider after the successful completion of a master's of nursing program."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000086> "John Judkins"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OOSTT_00000086> "Mathias Brochhausen"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/OOSTT_00000030> <http://purl.obolibrary.org/obo/OOSTT_00000086> "An advanced academic degree in the principles and practices of nursing, with a focus on administration, education, or advanced nursing practice, granted by an accredited college or university after the successful completion of a master's of nursing program."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OOSTT_00000086> "master's in the science of nursing degree"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OOSTT_00000086> <http://purl.obolibrary.org/obo/OOSTT_00000082>)
+
+
+)
