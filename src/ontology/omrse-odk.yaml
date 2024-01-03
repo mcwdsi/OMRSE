@@ -77,3 +77,17 @@ custom_makefile_header: |
 create_obo_metadata: FALSE
 documentation:
   documentation_system: mkdocs
+robot_report:
+  use_base_iris: True
+  fail_on : ERROR
+  use_labels : False
+  custom_profile : True
+  report_on :
+    - omrse-base.owl
+    - edit
+  sparql_test_on:
+    - omrse-base.owl
+  custom_sparql_checks :
+    - equivalent-classes
+    - owldef-self-reference
+    - iri-range
