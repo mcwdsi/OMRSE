@@ -62,6 +62,7 @@ import_group:
     #- filename: language/omrse-language.owl
     #- filename: omrse-core.owl
 #    - filename: import_terms.owl
+
 use_custom_import_module: TRUE
 robot_java_args: '-Xmx8G'
 custom_makefile_header: |
