@@ -12341,7 +12341,6 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
         <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse.owl</obo:IAO_0000412>
         <rdfs:comment xml:lang="en">Previous definition: A role played by an entity in human social processes.</rdfs:comment>
         <rdfs:label xml:lang="en">obsolete role in human social processes</rdfs:label>
-        <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
