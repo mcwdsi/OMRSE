@@ -7,9 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/d-acts_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2023-11-01/imports/d-acts_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/iao/d-acts/release/2023-09-08/d-acts.owl>)
-Annotation(owl:versionInfo "2023-11-01")
+<http://purl.obolibrary.org/obo/omrse/releases/2024-01-08/imports/d-acts_import.owl>
+Annotation(owl:versionInfo "2024-01-08")
 
 Declaration(Class(<http://purl.obolibary.org/obo/IAO_0021001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000008>))
@@ -321,8 +320,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0200000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0500000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000022>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000023>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000024>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00000033>))
+Declaration(Class(<http://purl.obolibrary.org/obo/OMRSE_00002072>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000051>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000122>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000125>))
@@ -332,8 +331,8 @@ Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0001241>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/UO_0000003>))
-Declaration(Class(<http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role>))
-Declaration(Class(<http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role>))
+Declaration(Class(<http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role>))
+Declaration(Class(<http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role>))
 Declaration(Class(<http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
@@ -5078,7 +5077,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0020027> "OBIB/ICO community"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0020027> "https://github.com/d-acts/d-acts/issues/29")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0020027> "owner role"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020027> <http://purl.obolibrary.org/obo/OMRSE_00000024>)
+SubClassOf(<http://purl.obolibrary.org/obo/IAO_0020027> <http://purl.obolibrary.org/obo/OMRSE_00002072>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0021000> (obsolete_claim)
 
@@ -5641,15 +5640,6 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000023> "
 EquivalentClasses(<http://purl.obolibrary.org/obo/OMRSE_00000023> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OMRSE_00000020> <http://purl.obolibrary.org/obo/NCBITaxon_9606>))
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000023> <http://purl.obolibrary.org/obo/OMRSE_00000022>)
 
-# Class: <http://purl.obolibrary.org/obo/OMRSE_00000024> (role in human social processes)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000024> "A role inhering in an entity realized by social interactions in human society."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00000024> "Mathias Brochhausen"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OMRSE_00000024> "http://purl.obolibrary.org/obo/omrse.owl")
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000024> "Previous definition: A role played by an entity in human social processes."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000024> "role in human social processes"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000024> <http://purl.obolibrary.org/obo/BFO_0000023>)
-
 # Class: <http://purl.obolibrary.org/obo/OMRSE_00000033> (aggregate of organizations)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00000033> "An aggregate of organizations that have some feature in common, but is not itself an organization."@en)
@@ -5662,6 +5652,16 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00000033>
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00000033> "aggregate of organizations"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/OMRSE_00000033> ObjectSomeValuesFrom(<http://purl.obolibrary.org/obo/OMRSE_00000020> <http://purl.obolibrary.org/obo/OBI_0000245>))
 SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00000033> <http://purl.obolibrary.org/obo/BFO_0000040>)
+
+# Class: <http://purl.obolibrary.org/obo/OMRSE_00002072> (role in human social processes)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMRSE_00002072> "A role that inheres in some entity that is realized in a social act."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OMRSE_00002072> "Matthew Diller"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.obolibrary.org/obo/OMRSE_00002072> "http://purl.obolibrary.org/obo/omrse/releases/2023-10-08/omrse.owl")
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/contributor> <http://purl.obolibrary.org/obo/OMRSE_00002072> "Mathias Brochhausen"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/OMRSE_00002072> "Previous definition: A role played by an entity in human social processes."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMRSE_00002072> "role in human social processes"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/OMRSE_00002072> <http://purl.obolibrary.org/obo/BFO_0000023>)
 
 # Class: <http://purl.obolibrary.org/obo/PATO_0000051> (morphology)
 
@@ -5732,21 +5732,21 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000412> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UO_0000003> "time unit")
 SubClassOf(<http://purl.obolibrary.org/obo/UO_0000003> <http://purl.obolibrary.org/obo/IAO_0000003>)
 
-# Class: <http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role> (obsolete obligee role)
+# Class: <http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role> (obsolete obligee role)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role> "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the receiving part of a process that fulfills the previously agreed upon requirements."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role> "Sarah Bost"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role> "obsolete obligee role"@en)
-AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role> "true"^^xsd:boolean)
-SubClassOf(<http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligee_role> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role> "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the receiving part of a process that fulfills the previously agreed upon requirements."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role> "Sarah Bost"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role> "obsolete obligee role"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role> "true"^^xsd:boolean)
+SubClassOf(<http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
-# Class: <http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role> (obsolete obligor role)
+# Class: <http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role> (obsolete obligor role)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role> "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the providing part of a process that fulfills the previously agreed upon requirements."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role> "Sarah Bost"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role> "obsolete obligor role"@en)
-AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role> "true"^^xsd:boolean)
-SubClassOf(<http://purl.obolibrary.org/obo/iao/d-acts/dev/d-acts.owl#obligor_role> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role> "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the providing part of a process that fulfills the previously agreed upon requirements."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role> "Sarah Bost"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role> "obsolete obligor role"@en)
+AnnotationAssertion(owl:deprecated <http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role> "true"^^xsd:boolean)
+SubClassOf(<http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role> <http://www.geneontology.org/formats/oboInOwl#ObsoleteClass>)
 
 
 ############################
