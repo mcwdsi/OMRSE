@@ -834,7 +834,7 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000023 "collection of humans"@en)
 SubClassOf(obo:OMRSE_00000023 obo:OMRSE_00000022)
 SubClassOf(obo:OMRSE_00000023 ObjectAllValuesFrom(obo:RO_0002351 obo:NCBITaxon_9606))
 
-# Class: obo:OMRSE_00000024 (role in human social processes)
+# Class: obo:OMRSE_00000024 (obsolete role in human social processes)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000024 "A role inhering in an entity realized by social interactions in human society."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000024 "Mathias Brochhausen"@en)
@@ -3534,4 +3534,7 @@ SubClassOf(obo:PCO_0000020 obo:OMRSE_00000022)
 
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
+AnnotationAssertion(owl:deprecated obo:OMIABIS_0000060 "true"^^xsd:boolean)
+AnnotationAssertion(owl:deprecated obo:OMIABIS_0001025 "true"^^xsd:boolean)
+AnnotationAssertion(owl:deprecated obo:OMIABIS_0001035 "true"^^xsd:boolean)
 )
