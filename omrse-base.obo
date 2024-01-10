@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2023-10-08/omrse-base.owl
+data-version: omrse/releases/2024-01-10/omrse-base.owl
 remark: This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt
 ontology: omrse/omrse-base
 property_value: http://purl.org/dc/elements/1.1/contributor "Barry Smith" xsd:string
@@ -20,10 +20,10 @@ property_value: http://purl.org/dc/elements/1.1/creator "Shariq Tariq" xsd:strin
 property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
 property_value: http://purl.org/dc/elements/1.1/description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Ontology for Modeling and Representation of Social Entities" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/" xsd:string
-property_value: owl:versionInfo "2023-10-08" xsd:string
-name: Ontology for Modeling and Representation of Social Entities
+property_value: owl:versionInfo "2024-01-10" xsd:string
 
 [Term]
 id: GO:0003674
@@ -107,7 +107,7 @@ property_value: IAO:0000118 "female gender" xsd:string
 [Term]
 id: OMRSE:00000010
 name: human health care role
-def: "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. " []
+def: "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis." []
 is_a: OMRSE:00002072 ! role in human social processes
 relationship: BFO:0000054 OGMS:0000097
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
@@ -774,6 +774,7 @@ is_a: BFO:0000038
 id: OMRSE:00000098
 name: obsolete racial identity datum
 def: "A racial identity is an information content entity that is the output of some racial identitification process and is intended to be a truthful statement about the genetic or cultural race of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
+is_a: OMRSE:00000132 ! obsolete identity datum
 is_obsolete: true
 replaced_by: racial identity information content entity
 
@@ -785,6 +786,7 @@ name: racial identification process
 id: OMRSE:00000100
 name: obsolete ethnic identity datum
 def: "An ethnic identity datum is an information content entity that is the output of some ethnic identitification process and is intended to be a truthful statement about the cultural or national heritage of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
+is_a: OMRSE:00000132 ! obsolete identity datum
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: ethnic identity information content entity
@@ -1032,6 +1034,7 @@ replaced_by: social identity information content entity
 id: OMRSE:00000133
 name: obsolete gender identity datum
 def: "A gender identity is an information content entity that is the output of some gender identitification process and is intended to be a truthful statement about a person's subjective sense of their gender.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
+is_a: OMRSE:00000132 ! obsolete identity datum
 property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: gender identity information content entity
@@ -1227,7 +1230,7 @@ id: OMRSE:00000163
 name: response to a question asking process
 comment: Note that not all responses to a question asking process are answers. For example, a refusal to answer is not an answer. A refusal to answer is also not a specified output of the question asking process since it does not acheive the objective of asking the question, which is to get an answer.
 is_a: IAO:0000030
-relationship: RO:0000056 OMRSE:00000168 ! questions asking process
+relationship: RO:0000056 OMRSE:00000168 ! obsolete questions asking process
 
 [Term]
 id: OMRSE:00000164
@@ -1251,10 +1254,8 @@ relationship: BFO:0000066 OMRSE:00000074 ! housing unit
 
 [Term]
 id: OMRSE:00000168
-name: questions asking process
+name: obsolete questions asking process
 is_a: ObsoleteClass
-relationship: RO:0000057 NCBITaxon:9606
-relationship: RO:0000057 OMRSE:00000173 ! material information bearer of question text plus answer set
 is_obsolete: true
 replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000198
 
@@ -1286,7 +1287,7 @@ intersection_of: BFO:0000054 OGMS:0000097
 
 [Term]
 id: OMRSE:00000173
-name: material information bearer of question text plus answer set
+name: obsolete material information bearer of question text plus answer set
 is_a: BFO:0000040
 is_obsolete: true
 
@@ -1302,21 +1303,21 @@ is_a: OMRSE:00000163 ! response to a question asking process
 
 [Term]
 id: OMRSE:00000176
-name: identity question asking process
-is_a: OMRSE:00000168 ! questions asking process
+name: obsolete identity question asking process
+is_a: OMRSE:00000168 ! obsolete questions asking process
 is_obsolete: true
 
 [Term]
 id: OMRSE:00000177
-name: ethnic identity question asking process
-is_a: OMRSE:00000176 ! identity question asking process
+name: obsolete ethnic identity question asking process
+is_a: OMRSE:00000176 ! obsolete identity question asking process
 is_obsolete: true
 replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000199
 
 [Term]
 id: OMRSE:00000178
-name: race identity question asking process
-is_a: OMRSE:00000176 ! identity question asking process
+name: obsolete race identity question asking process
+is_a: OMRSE:00000176 ! obsolete identity question asking process
 is_obsolete: true
 replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000200
 
@@ -1849,7 +1850,7 @@ property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 id: OMRSE:00000230
 name: county smoking survey plan specification
 def: "A survey plan specification that aims to collect information about the smoking behavior or lack thereof of a population on a county level. Concretization of a smoking survey plan that is stratified by county." []
-is_a: OMIABIS:0001025
+is_a: OBIB:0000701
 property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Jiang Bian" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
@@ -1863,7 +1864,7 @@ property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 id: OMRSE:00000231
 name: county smoking survey execution
 def: "A survey execution that realizes the concretization of a smoking survey plan specification that is stratified by county." []
-is_a: OMIABIS:0001035
+is_a: OBIB:0000710
 property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Jiang Bian" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
@@ -1877,7 +1878,7 @@ property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 id: OMRSE:00000232
 name: county smoking survey data
 def: "Survey data that is the specified output of a county smoking survey execution." []
-is_a: OMIABIS:0000060
+is_a: OBIB:0000667
 property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Jiang Bian" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string

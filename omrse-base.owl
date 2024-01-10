@@ -13,7 +13,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2023-10-08/omrse-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2024-01-10/omrse-base.owl"/>
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
         <dc:contributor xml:lang="en">Daniel Welch</dc:contributor>
@@ -32,11 +32,11 @@
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
         <dc:creator xml:lang="en">William Hogan</dc:creator>
         <dc:description xml:lang="en">The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations.</dc:description>
+        <dc:title xml:lang="en">Ontology for Modeling and Representation of Social Entities</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
-        <rdfs:label xml:lang="en">Ontology for Modeling and Representation of Social Entities</rdfs:label>
-        <owl:versionInfo>2023-10-08</owl:versionInfo>
+        <owl:versionInfo>2024-01-10</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -191,6 +191,12 @@
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
@@ -910,6 +916,24 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBIB_0000667 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000667"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBIB_0000701 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000701"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBIB_0000710 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000710"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
@@ -955,24 +979,6 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/OGMS_0000102 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000102"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMIABIS_0000060 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0000060"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMIABIS_0001025 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0001025"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OMIABIS_0001035 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0001035"/>
     
 
 
@@ -1166,7 +1172,7 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. </obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">health care role</obo:IAO_0000118>
@@ -2876,30 +2882,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000098 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000098">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020022"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000099"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity is an information content entity that is the output of some racial identitification process and is intended to be a truthful statement about the genetic or cultural race of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
         <obo:IAO_0100001 xml:lang="en">racial identity information content entity</obo:IAO_0100001>
         <rdfs:label xml:lang="en">obsolete racial identity datum</rdfs:label>
@@ -2935,30 +2918,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000100">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020022"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000101"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
         <obo:IAO_0000115 xml:lang="en">An ethnic identity datum is an information content entity that is the output of some ethnic identitification process and is intended to be a truthful statement about the cultural or national heritage of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0100001 xml:lang="en">ethnic identity information content entity</obo:IAO_0100001>
@@ -3539,30 +3499,6 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000132 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000132">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020022"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000134"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000179"/>
         <obo:IAO_0000115 xml:lang="en">An identity datum is an information content entity that is the output of some identitification process and is intended to be a truthful statement about a person&apos;s social identity.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
         <obo:IAO_0100001 xml:lang="en">social identity information content entity</obo:IAO_0100001>
@@ -3576,30 +3512,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000133 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000133">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020022"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000135"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
         <obo:IAO_0000115>A gender identity is an information content entity that is the output of some gender identitification process and is intended to be a truthful statement about a person&apos;s subjective sense of their gender.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
         <obo:IAO_0100001 xml:lang="en">gender identity information content entity</obo:IAO_0100001>
         <dc:creator>Amanda Hicks</dc:creator>
@@ -4094,20 +4007,8 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000168">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000173"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/OMRSE_00000198</obo:IAO_0100001>
-        <rdfs:label xml:lang="en">questions asking process</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete questions asking process</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -4188,7 +4089,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000173">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:label xml:lang="en">material information bearer of question text plus answer set</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete material information bearer of question text plus answer set</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -4216,7 +4117,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000176">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000168"/>
-        <rdfs:label xml:lang="en">identity question asking process</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete identity question asking process</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -4227,7 +4128,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000177">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000176"/>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/OMRSE_00000199</obo:IAO_0100001>
-        <rdfs:label xml:lang="en">ethnic identity question asking process</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete ethnic identity question asking process</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -4238,7 +4139,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000178">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000176"/>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/OMRSE_00000200</obo:IAO_0100001>
-        <rdfs:label xml:lang="en">race identity question asking process</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete race identity question asking process</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
@@ -4484,22 +4385,6 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000196">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000192"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000197"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A communication in which some participant states a preference for some communicative process to be in a certain language, and that has a concretization of a preferred language information content entity as its specified output.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
@@ -5039,7 +4924,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000230 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000230">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_0001025"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIB_0000701"/>
         <obo:IAO_0000112 xml:lang="en">The Alachua county smoking survey plan specification.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A survey plan specification that aims to collect information about the smoking behavior or lack thereof of a population on a county level. Concretization of a smoking survey plan that is stratified by county.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
@@ -5068,7 +4953,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_0001035"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIB_0000710"/>
         <obo:IAO_0000112 xml:lang="en">The Alachua county smoking survey execution.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A survey execution that realizes the concretization of a smoking survey plan specification that is stratified by county.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
@@ -5092,7 +4977,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000231"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMIABIS_0000060"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBIB_0000667"/>
         <obo:IAO_0000112 xml:lang="en">The Alachua county smoking survey data.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Survey data that is the specified output of a county smoking survey execution.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
@@ -7079,6 +6964,15 @@ It indicates that a person has completed only early childhood education and noth
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0000060">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0001025">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIABIS_0001035">
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </rdf:Description>
 </rdf:RDF>
 

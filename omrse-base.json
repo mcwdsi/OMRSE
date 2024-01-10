@@ -57,6 +57,9 @@
         "pred" : "http://purl.org/dc/elements/1.1/description",
         "val" : "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations."
       }, {
+        "pred" : "http://purl.org/dc/elements/1.1/title",
+        "val" : "Ontology for Modeling and Representation of Social Entities"
+      }, {
         "pred" : "http://purl.org/dc/elements/1.1/type",
         "val" : "http://purl.obolibrary.org/obo/IAO_8000001"
       }, {
@@ -66,13 +69,10 @@
         "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
         "val" : "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"
       }, {
-        "pred" : "http://www.w3.org/2000/01/rdf-schema#label",
-        "val" : "Ontology for Modeling and Representation of Social Entities"
-      }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2023-10-08"
+        "val" : "2024-01-10"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2023-10-08/omrse-base.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2024-01-10/omrse-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000115",
@@ -194,7 +194,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. "
+          "val" : "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2045,7 +2045,7 @@
       "type" : "PROPERTY"
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000168",
-      "lbl" : "questions asking process",
+      "lbl" : "obsolete questions asking process",
       "type" : "CLASS",
       "meta" : {
         "basicPropertyValues" : [ {
@@ -2072,7 +2072,7 @@
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000173",
-      "lbl" : "material information bearer of question text plus answer set",
+      "lbl" : "obsolete material information bearer of question text plus answer set",
       "type" : "CLASS",
       "meta" : {
         "deprecated" : true
@@ -2087,14 +2087,14 @@
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000176",
-      "lbl" : "identity question asking process",
+      "lbl" : "obsolete identity question asking process",
       "type" : "CLASS",
       "meta" : {
         "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000177",
-      "lbl" : "ethnic identity question asking process",
+      "lbl" : "obsolete ethnic identity question asking process",
       "type" : "CLASS",
       "meta" : {
         "basicPropertyValues" : [ {
@@ -2105,7 +2105,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000178",
-      "lbl" : "race identity question asking process",
+      "lbl" : "obsolete race identity question asking process",
       "type" : "CLASS",
       "meta" : {
         "basicPropertyValues" : [ {
@@ -5790,6 +5790,14 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000038"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000098",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000132"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000100",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000132"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000102",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000062"
@@ -6014,6 +6022,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000179"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000133",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000132"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000134",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0021003"
@@ -6185,14 +6197,6 @@
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000168",
       "pred" : "is_a",
       "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000168",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000057",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000168",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000057",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000173"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000169",
       "pred" : "is_a",
@@ -6472,15 +6476,15 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000230",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMIABIS_0001025"
+      "obj" : "http://purl.obolibrary.org/obo/OBIB_0000701"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000231",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMIABIS_0001035"
+      "obj" : "http://purl.obolibrary.org/obo/OBIB_0000710"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000232",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMIABIS_0000060"
+      "obj" : "http://purl.obolibrary.org/obo/OBIB_0000667"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000233",
       "pred" : "is_a",
@@ -7005,46 +7009,6 @@
     }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000067",
       "genusIds" : [ "http://purl.obolibrary.org/obo/OMRSE_00000011" ]
-    }, {
-      "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000098",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/OMRSE_00000132" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
-        "fillerId" : "http://purl.obolibrary.org/obo/IAO_0020022"
-      }, {
-        "propertyId" : "http://purl.obolibrary.org/obo/IAO_0000136",
-        "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-      } ]
-    }, {
-      "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000100",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/OMRSE_00000132" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
-        "fillerId" : "http://purl.obolibrary.org/obo/IAO_0020022"
-      }, {
-        "propertyId" : "http://purl.obolibrary.org/obo/IAO_0000136",
-        "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-      } ]
-    }, {
-      "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000132",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/IAO_0000030" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
-        "fillerId" : "http://purl.obolibrary.org/obo/IAO_0020022"
-      }, {
-        "propertyId" : "http://purl.obolibrary.org/obo/IAO_0000136",
-        "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-      } ]
-    }, {
-      "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000133",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/OMRSE_00000132" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000050",
-        "fillerId" : "http://purl.obolibrary.org/obo/IAO_0020022"
-      }, {
-        "propertyId" : "http://purl.obolibrary.org/obo/IAO_0000136",
-        "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
-      } ]
     }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000142",
       "genusIds" : [ "http://purl.obolibrary.org/obo/IAO_0000030" ],
