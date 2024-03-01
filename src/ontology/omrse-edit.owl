@@ -46,9 +46,9 @@ Annotation(dc:creator "Shariq Tariq"@en)
 Annotation(dc:creator "Swetha Garimalla"@en)
 Annotation(dc:creator "William Hogan"@en)
 Annotation(dc:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations."@en)
+Annotation(dc:title "Ontology for Modeling and Representation of Social Entities"@en)
 Annotation(terms:license "https://creativecommons.org/licenses/by/4.0/")
 Annotation(rdfs:comment "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"@en)
-Annotation(rdfs:label "Ontology for Modeling and Representation of Social Entities"@en)
 
 Declaration(Class(obo:IAO_0020022))
 Declaration(Class(obo:IAO_0021003))
@@ -731,7 +731,7 @@ SubClassOf(obo:OMRSE_00000009 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0
 
 # Class: obo:OMRSE_00000010 (human health care role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000010 "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. "@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000010 "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000010 "Mathias Brochhausen")
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000010 "William R. Hogan"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000010 "health care role"@en)
@@ -834,7 +834,7 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000023 "collection of humans"@en)
 SubClassOf(obo:OMRSE_00000023 obo:OMRSE_00000022)
 SubClassOf(obo:OMRSE_00000023 ObjectAllValuesFrom(obo:RO_0002351 obo:NCBITaxon_9606))
 
-# Class: obo:OMRSE_00000024 (role in human social processes)
+# Class: obo:OMRSE_00000024 (obsolete role in human social processes)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000024 "A role inhering in an entity realized by social interactions in human society."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000024 "Mathias Brochhausen"@en)
@@ -1342,7 +1342,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000083 "Amanda Hicks"@en)
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000083 "OMB ethnic identity information content entity"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000083 "obsolete OMB ethnic identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000083 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000083 obo:OMRSE_00000100)
+SubClassOf(obo:OMRSE_00000083 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000084 (enrollment end date)
 
@@ -1445,7 +1445,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000098 "A racial identity is an 
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000098 "racial identity information content entity"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000098 "obsolete racial identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000098 "true"^^xsd:boolean)
-EquivalentClasses(obo:OMRSE_00000098 ObjectIntersectionOf(obo:OMRSE_00000132 ObjectSomeValuesFrom(obo:BFO_0000050 obo:IAO_0020022) ObjectSomeValuesFrom(obo:BFO_0000051 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OMRSE_00000099)) ObjectSomeValuesFrom(obo:IAO_0000136 obo:NCBITaxon_9606)))
+SubClassOf(obo:OMRSE_00000098 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000099 (racial identification process)
 
@@ -1459,7 +1459,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000100 "Amanda Hicks")
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000100 "ethnic identity information content entity"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000100 "obsolete ethnic identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000100 "true"^^xsd:boolean)
-EquivalentClasses(obo:OMRSE_00000100 ObjectIntersectionOf(obo:OMRSE_00000132 ObjectSomeValuesFrom(obo:BFO_0000050 obo:IAO_0020022) ObjectSomeValuesFrom(obo:BFO_0000051 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OMRSE_00000101)) ObjectSomeValuesFrom(obo:IAO_0000136 obo:NCBITaxon_9606)))
+SubClassOf(obo:OMRSE_00000100 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000101 (ethnic identification process)
 
@@ -1665,7 +1665,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000127 "Amanda Hicks"@en)
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000127 "OMB Hispanic or Latino identity information content entity"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000127 "obsolete hispanic or latino identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000127 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000127 obo:OMRSE_00000083)
+SubClassOf(obo:OMRSE_00000127 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000128 (obsolete not hispanic or latino identity datum)
 
@@ -1674,7 +1674,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000128 "Amanda Hicks"@en)
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000128 "OMB not Hispanic or Latino identity information content entity"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000128 "obsolete not hispanic or latino identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000128 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000128 obo:OMRSE_00000083)
+SubClassOf(obo:OMRSE_00000128 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000129 (US physician assistant role)
 
@@ -1702,8 +1702,7 @@ AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000132 "social identity informat
 AnnotationAssertion(dc:creator obo:OMRSE_00000132 "Amanda Hicks")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000132 "obsolete identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000132 "true"^^xsd:boolean)
-EquivalentClasses(obo:OMRSE_00000132 ObjectIntersectionOf(obo:IAO_0000030 ObjectSomeValuesFrom(obo:BFO_0000050 obo:IAO_0020022) ObjectSomeValuesFrom(obo:BFO_0000051 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OMRSE_00000134)) ObjectSomeValuesFrom(obo:IAO_0000136 obo:NCBITaxon_9606)))
-SubClassOf(obo:OMRSE_00000132 obo:OMRSE_00000179)
+SubClassOf(obo:OMRSE_00000132 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000133 (obsolete gender identity datum)
 
@@ -1712,7 +1711,7 @@ AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000133 "gender identity informat
 AnnotationAssertion(dc:creator obo:OMRSE_00000133 "Amanda Hicks")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000133 "obsolete gender identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000133 "true"^^xsd:boolean)
-EquivalentClasses(obo:OMRSE_00000133 ObjectIntersectionOf(obo:OMRSE_00000132 ObjectSomeValuesFrom(obo:BFO_0000050 obo:IAO_0020022) ObjectSomeValuesFrom(obo:BFO_0000051 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OMRSE_00000135)) ObjectSomeValuesFrom(obo:IAO_0000136 obo:NCBITaxon_9606)))
+SubClassOf(obo:OMRSE_00000133 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000134 (identification process)
 
@@ -1732,7 +1731,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000138 "Amanda Hicks"@en)
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000138 "female gender identity information content entity"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000138 "obsolete female gender identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000138 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000138 obo:OMRSE_00000133)
+SubClassOf(obo:OMRSE_00000138 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000139 (surgeon role)
 
@@ -1754,7 +1753,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:OMRSE_00000141 ""@en)
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000141 "male gender identity information content entity"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000141 "obsolete male gender identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000141 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000141 obo:OMRSE_00000133)
+SubClassOf(obo:OMRSE_00000141 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000142 (human traveling information)
 
@@ -1787,7 +1786,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000145 "an identity datum that h
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000145 "Amanda Hicks")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000145 "obsolete self-identity data item"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000145 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000145 obo:OMRSE_00000132)
+SubClassOf(obo:OMRSE_00000145 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000146 (employment process)
 
@@ -1899,7 +1898,7 @@ SubClassOf(obo:OMRSE_00000161 ObjectSomeValuesFrom(obo:RO_0002087 obo:OGMS_00000
 
 AnnotationAssertion(rdfs:label obo:OMRSE_00000162 "obsolete medical advice"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000162 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000162 obo:IAO_0021003)
+SubClassOf(obo:OMRSE_00000162 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000163 (response to a question asking process)
 
@@ -1928,14 +1927,12 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000166 "home health care encounter"@e
 SubClassOf(obo:OMRSE_00000166 obo:OGMS_0000097)
 SubClassOf(obo:OMRSE_00000166 ObjectSomeValuesFrom(obo:BFO_0000066 obo:OMRSE_00000074))
 
-# Class: obo:OMRSE_00000168 (questions asking process)
+# Class: obo:OMRSE_00000168 (obsolete questions asking process)
 
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000168 "http://purl.obolibrary.org/obo/OMRSE_00000198")
-AnnotationAssertion(rdfs:label obo:OMRSE_00000168 "questions asking process"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000168 "obsolete questions asking process"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000168 "true"^^xsd:boolean)
 SubClassOf(obo:OMRSE_00000168 oboInOwl:ObsoleteClass)
-SubClassOf(obo:OMRSE_00000168 ObjectSomeValuesFrom(obo:RO_0000057 obo:NCBITaxon_9606))
-SubClassOf(obo:OMRSE_00000168 ObjectSomeValuesFrom(obo:RO_0000057 obo:OMRSE_00000173))
 
 # Class: obo:OMRSE_00000169 (palliative function)
 
@@ -1962,11 +1959,11 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000172 "health care function"@en)
 EquivalentClasses(obo:OMRSE_00000172 ObjectIntersectionOf(obo:BFO_0000034 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OGMS_0000097)))
 SubClassOf(obo:OMRSE_00000172 obo:BFO_0000034)
 
-# Class: obo:OMRSE_00000173 (material information bearer of question text plus answer set)
+# Class: obo:OMRSE_00000173 (obsolete material information bearer of question text plus answer set)
 
-AnnotationAssertion(rdfs:label obo:OMRSE_00000173 "material information bearer of question text plus answer set"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000173 "obsolete material information bearer of question text plus answer set"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000173 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000173 obo:BFO_0000040)
+SubClassOf(obo:OMRSE_00000173 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000174 (refusal to answer datum)
 
@@ -1978,25 +1975,25 @@ SubClassOf(obo:OMRSE_00000174 obo:OMRSE_00000163)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000175 "response to an identity question asking process"@en)
 SubClassOf(obo:OMRSE_00000175 obo:OMRSE_00000163)
 
-# Class: obo:OMRSE_00000176 (identity question asking process)
+# Class: obo:OMRSE_00000176 (obsolete identity question asking process)
 
-AnnotationAssertion(rdfs:label obo:OMRSE_00000176 "identity question asking process"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000176 "obsolete identity question asking process"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000176 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000176 obo:OMRSE_00000168)
+SubClassOf(obo:OMRSE_00000176 oboInOwl:ObsoleteClass)
 
-# Class: obo:OMRSE_00000177 (ethnic identity question asking process)
+# Class: obo:OMRSE_00000177 (obsolete ethnic identity question asking process)
 
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000177 "http://purl.obolibrary.org/obo/OMRSE_00000199")
-AnnotationAssertion(rdfs:label obo:OMRSE_00000177 "ethnic identity question asking process"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000177 "obsolete ethnic identity question asking process"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000177 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000177 obo:OMRSE_00000176)
+SubClassOf(obo:OMRSE_00000177 oboInOwl:ObsoleteClass)
 
-# Class: obo:OMRSE_00000178 (race identity question asking process)
+# Class: obo:OMRSE_00000178 (obsolete race identity question asking process)
 
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000178 "http://purl.obolibrary.org/obo/OMRSE_00000200")
-AnnotationAssertion(rdfs:label obo:OMRSE_00000178 "race identity question asking process"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000178 "obsolete race identity question asking process"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000178 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000178 obo:OMRSE_00000176)
+SubClassOf(obo:OMRSE_00000178 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000179 (answer to identity question)
 
@@ -2010,7 +2007,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000180 "Amanda Hicks")
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000180 "OMB American Indian or Alaska Native identity information content entity"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000180 "obsolete American Indian or Alaska Native identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000180 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000180 obo:OMRSE_00000185)
+SubClassOf(obo:OMRSE_00000180 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000181 (obsolete Asian identity datum)
 
@@ -2019,7 +2016,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000181 "Amanda Hicks")
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000181 "OMB Asian identity information content entity"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000181 "obsolete Asian identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000181 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000181 obo:OMRSE_00000185)
+SubClassOf(obo:OMRSE_00000181 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000182 (obsolete black or African American identity datum)
 
@@ -2028,7 +2025,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000182 "Amanda Hicks")
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000182 "OMB black or African American identity information content entity"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000182 "obsolete black or African American identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000182 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000182 obo:OMRSE_00000185)
+SubClassOf(obo:OMRSE_00000182 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000183 (obsolete Native Hawaiian or other Pacific Islander identity datum)
 
@@ -2037,7 +2034,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000183 "Amanda Hicks")
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000183 "OMB Native Hawaiian or other Pacific Islander identity information content entity"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000183 "obsolete Native Hawaiian or other Pacific Islander identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000183 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000183 obo:OMRSE_00000185)
+SubClassOf(obo:OMRSE_00000183 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000184 (obsolete white identity datum)
 
@@ -2046,7 +2043,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000184 "Amanda Hicks")
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000184 "OMB white identity information content entity"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000184 "obsolete white identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000184 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000184 obo:OMRSE_00000185)
+SubClassOf(obo:OMRSE_00000184 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000185 (obsolete OMB racial identity datum)
 
@@ -2055,7 +2052,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000185 "Amanda Hicks")
 AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000185 "OMB racial identity information content entity"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000185 "obsolete OMB racial identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000185 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000185 obo:OMRSE_00000098)
+SubClassOf(obo:OMRSE_00000185 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000186 (heavy smoker role)
 
@@ -2150,8 +2147,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000196 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000196 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000196 "obsolete expression of preferred language"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000196 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000196 obo:OMRSE_00000192)
-SubClassOf(obo:OMRSE_00000196 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectIntersectionOf(obo:BFO_0000020 ObjectSomeValuesFrom(obo:RO_0000059 obo:OMRSE_00000197))))
+SubClassOf(obo:OMRSE_00000196 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000197 (obsolete preferred language information content entity)
 
@@ -3023,7 +3019,7 @@ AnnotationAssertion(rdfs:comment obo:OMRSE_00000507 "Alternatively: A gender ide
 Examples of usage: ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000507 "obsolete non-binary gender identity datum"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000507 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000507 obo:OMRSE_00000133)
+SubClassOf(obo:OMRSE_00000507 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00002029 (education process)
 
@@ -3538,4 +3534,7 @@ SubClassOf(obo:PCO_0000020 obo:OMRSE_00000022)
 
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
+AnnotationAssertion(owl:deprecated obo:OMIABIS_0000060 "true"^^xsd:boolean)
+AnnotationAssertion(owl:deprecated obo:OMIABIS_0001025 "true"^^xsd:boolean)
+AnnotationAssertion(owl:deprecated obo:OMIABIS_0001035 "true"^^xsd:boolean)
 )

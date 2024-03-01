@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2023-10-08/omrse-full.owl
+data-version: omrse/releases/2024-01-10/omrse-full.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -26,9 +26,9 @@ property_value: http://purl.org/dc/elements/1.1/creator "Shariq Tariq" xsd:strin
 property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:string
 property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
 property_value: http://purl.org/dc/elements/1.1/description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Ontology for Modeling and Representation of Social Entities" xsd:string
 property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/" xsd:string
-property_value: owl:versionInfo "2023-10-08" xsd:string
-name: Ontology for Modeling and Representation of Social Entities
+property_value: owl:versionInfo "2024-01-10" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -170,8 +170,8 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 [Term]
 id: BFO:0000004
 name: independent continuant
-def: "A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything." []
 def: "b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/017-002"}
+comment: A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000020 ! specifically dependent continuant
 disjoint_from: BFO:0000031 ! generically dependent continuant
@@ -269,6 +269,7 @@ id: BFO:0000015
 name: process
 def: "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t." []
 def: "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/083-003"}
+comment: An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.
 is_a: BFO:0000003 ! occurrent
 property_value: BFO:0000179 "process" xsd:string
 property_value: BFO:0000180 "Process" xsd:string
@@ -356,6 +357,7 @@ id: BFO:0000020
 name: specifically dependent continuant
 def: "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." []
 def: "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/050-003"}
+comment: A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000031 ! generically dependent continuant
 relationship: BFO:0000050 BFO:0000020 {all_only="true"} ! part of specifically dependent continuant
@@ -519,6 +521,7 @@ id: BFO:0000031
 name: generically dependent continuant
 def: "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." []
 def: "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/074-001"}
+comment: A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.
 is_a: BFO:0000002 ! continuant
 relationship: BFO:0000050 BFO:0000031 {all_only="true"} ! part of generically dependent continuant
 property_value: BFO:0000179 "gdc" xsd:string
@@ -759,7 +762,6 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 id: GO:0003674
 name: molecular_function
 def: "A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs." [GOC:pdt]
-def: "A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs. These actions are described from two distinct but related perspectives: (1) biochemical activity, and (2) role as a component in a larger system/process." [GOC:pdt]
 comment: Note that, in addition to forming the root of the molecular function ontology, this term is recommended for use for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this. Despite its name, this is not a type of 'function' in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.
 synonym: "molecular function" EXACT []
 is_a: BFO:0000034 ! function
@@ -776,7 +778,6 @@ is_a: GO:0008150 ! biological_process
 id: GO:0008150
 name: biological_process
 def: "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
-def: "A biological process represents a specific objective that the organism is genetically programmed to achieve. Biological processes are often described by their outcome or ending state, e.g., the biological process of cell division results in the creation of two daughter cells (a divided cell) from a single parent cell. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
 comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
 synonym: "biological process" EXACT []
 synonym: "physiological process" EXACT []
@@ -3305,7 +3306,7 @@ replaced_by: claimant role (IAO:0021013)
 id: IAO:0020027
 name: owner role
 def: "A role in a human social process that is based on a social act and whose bearer exercises exclusive control over a property, where this control is permitted by one or more deontic roles, which are parts of the owner role." []
-is_a: OMRSE:00000024 ! obsolete role in human social processes
+is_a: OMRSE:00002072 ! role in human social processes
 property_value: IAO:0000112 "Tammy's owner role with regards to the house on 234 Evergreen Terrace; Walter's owner role with regards to the intellectual property on his movie script" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 "https://github.com/d-acts/d-acts/issues/29" xsd:string
@@ -3897,6 +3898,28 @@ property_value: IAO:0000117 "PERSON:Kevin Clancy" xsd:string
 property_value: IAO:0000119 "OBI branch derived" xsd:string
 
 [Term]
+id: OBIB:0000667
+name: survey data
+def: "A data item that contains the outcome of a survey." []
+is_a: IAO:0000027 ! data item
+property_value: IAO:0000117 "Alice Nzinga" xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OBIB:0000701
+name: survey plan specification
+def: "A plan specification that is realized by  process of gathering information (e.g. by asking questions)." []
+is_a: IAO:0000104 ! plan specification
+property_value: IAO:0000117 "Alice Nzinga" xsd:string
+property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+
+[Term]
+id: OBIB:0000710
+name: survey execution
+def: "A planned process that realizes the concretization of a survey to generate an output(survey data.)" []
+is_a: OBI:0000011 ! planned process
+
+[Term]
 id: OGMS:0000097
 name: health care encounter
 def: "A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter" []
@@ -3930,6 +3953,8 @@ name: obsolete survey data
 is_a: ObsoleteClass
 property_value: IAO:0000117 "Alice Nzinga" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+is_obsolete: true
+replaced_by: OBIB:0000667
 
 [Term]
 id: OMIABIS:0001025
@@ -3937,11 +3962,15 @@ name: obsolete survey plan specification
 is_a: ObsoleteClass
 property_value: IAO:0000117 "Alice Nzinga" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
+is_obsolete: true
+replaced_by: OBIB:0000701
 
 [Term]
 id: OMIABIS:0001035
 name: obsolete survey execution
 is_a: ObsoleteClass
+is_obsolete: true
+replaced_by: OBIB:0000710
 
 [Term]
 id: OMRSE:00000000
@@ -4016,7 +4045,7 @@ property_value: IAO:0000118 "female gender" xsd:string
 [Term]
 id: OMRSE:00000010
 name: human health care role
-def: "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis. " []
+def: "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis." []
 is_a: OMRSE:00002072 ! role in human social processes
 relationship: BFO:0000054 OGMS:0000097 ! realized in health care encounter
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
@@ -4122,13 +4151,10 @@ relationship: RO:0002351 NCBITaxon:9606 {all_only="true"} ! has member Homo sapi
 [Term]
 id: OMRSE:00000024
 name: obsolete role in human social processes
-name: role in human social processes
 def: "A role inhering in an entity realized by social interactions in human society." []
 comment: Previous definition: A role played by an entity in human social processes.
-is_a: BFO:0000023 ! role
 is_a: ObsoleteClass
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000412 "http://purl.obolibrary.org/obo/omrse.owl" xsd:string
 is_obsolete: true
 
 [Term]
@@ -4956,8 +4982,6 @@ id: OMRSE:00000132
 name: obsolete identity datum
 def: "An identity datum is an information content entity that is the output of some identitification process and is intended to be a truthful statement about a person's social identity.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
 is_a: OMRSE:00000179 ! answer to identity question
-relationship: BFO:0000050 IAO:0020022 ! part of documented identity
-relationship: IAO:0000136 NCBITaxon:9606 ! is about Homo sapiens
 property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: social identity information content entity
@@ -5167,7 +5191,7 @@ id: OMRSE:00000163
 name: response to a question asking process
 comment: Note that not all responses to a question asking process are answers. For example, a refusal to answer is not an answer. A refusal to answer is also not a specified output of the question asking process since it does not acheive the objective of asking the question, which is to get an answer.
 is_a: IAO:0000030 ! information content entity
-relationship: RO:0000056 OMRSE:00000168 ! participates in questions asking process
+relationship: RO:0000056 OMRSE:00000168 ! participates in obsolete questions asking process
 
 [Term]
 id: OMRSE:00000164
@@ -5191,11 +5215,8 @@ relationship: BFO:0000066 OMRSE:00000074 ! occurs in housing unit
 
 [Term]
 id: OMRSE:00000168
-name: questions asking process
-is_a: BFO:0000003 ! occurrent
+name: obsolete questions asking process
 is_a: ObsoleteClass
-relationship: RO:0000057 NCBITaxon:9606 ! has_participant Homo sapiens
-relationship: RO:0000057 OMRSE:00000173 ! has_participant material information bearer of question text plus answer set
 is_obsolete: true
 replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000198
 
@@ -5228,7 +5249,7 @@ relationship: BFO:0000054 OGMS:0000097 ! realized in health care encounter
 
 [Term]
 id: OMRSE:00000173
-name: material information bearer of question text plus answer set
+name: obsolete material information bearer of question text plus answer set
 is_a: BFO:0000040 ! material entity
 is_obsolete: true
 
@@ -5244,21 +5265,21 @@ is_a: OMRSE:00000163 ! response to a question asking process
 
 [Term]
 id: OMRSE:00000176
-name: identity question asking process
-is_a: OMRSE:00000168 ! questions asking process
+name: obsolete identity question asking process
+is_a: OMRSE:00000168 ! obsolete questions asking process
 is_obsolete: true
 
 [Term]
 id: OMRSE:00000177
-name: ethnic identity question asking process
-is_a: OMRSE:00000176 ! identity question asking process
+name: obsolete ethnic identity question asking process
+is_a: OMRSE:00000176 ! obsolete identity question asking process
 is_obsolete: true
 replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000199
 
 [Term]
 id: OMRSE:00000178
-name: race identity question asking process
-is_a: OMRSE:00000176 ! identity question asking process
+name: obsolete race identity question asking process
+is_a: OMRSE:00000176 ! obsolete identity question asking process
 is_obsolete: true
 replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000200
 
@@ -5408,7 +5429,6 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000196
 name: obsolete expression of preferred language
 def: "A communication in which some participant states a preference for some communicative process to be in a certain language, and that has a concretization of a preferred language information content entity as its specified output." []
-is_a: OBI:0000011 ! planned process
 is_a: OMRSE:00000192 ! obsolete communication
 property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
@@ -5791,7 +5811,7 @@ property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 id: OMRSE:00000230
 name: county smoking survey plan specification
 def: "A survey plan specification that aims to collect information about the smoking behavior or lack thereof of a population on a county level. Concretization of a smoking survey plan that is stratified by county." []
-is_a: OMIABIS:0001025 ! obsolete survey plan specification
+is_a: OBIB:0000701 ! survey plan specification
 property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Jiang Bian" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
@@ -5805,8 +5825,7 @@ property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 id: OMRSE:00000231
 name: county smoking survey execution
 def: "A survey execution that realizes the concretization of a smoking survey plan specification that is stratified by county." []
-is_a: BFO:0000015 ! process
-is_a: OMIABIS:0001035 ! obsolete survey execution
+is_a: OBIB:0000710 ! survey execution
 property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Jiang Bian" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
@@ -5820,8 +5839,7 @@ property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 id: OMRSE:00000232
 name: county smoking survey data
 def: "Survey data that is the specified output of a county smoking survey execution." []
-is_a: BFO:0000002 ! continuant
-is_a: OMIABIS:0000060 ! obsolete survey data
+is_a: OBIB:0000667 ! survey data
 relationship: OBI:0000312 OMRSE:00000231 ! is_specified_output_of county smoking survey execution
 property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Jiang Bian" xsd:string
@@ -6769,6 +6787,7 @@ is_a: OMRSE:00000048 ! material entity role
 relationship: RO:0000052 BFO:0000040 {all_only="true"} ! characteristic of material entity
 property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000412 "http://purl.obolibrary.org/obo/omrse/releases/2023-10-08/omrse.owl" xsd:string
 
 [Term]
 id: OOSTT:00000074
@@ -6961,6 +6980,7 @@ property_value: RO:0040042 BFO:0000031
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
 property_value: seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Part_of" xsd:anyURI
 is_transitive: true
 is_a: RO:0002131 ! overlaps
 inverse_of: BFO:0000051 ! has part
@@ -7019,7 +7039,7 @@ id: BFO:0000062
 name: preceded by
 def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
 subset: ro-eco
-property_value: http://purl.org/dc/elements/1.1/source "http://www.obofoundry.org/ro/#OBO_REL:preceded_by" xsd:string
+property_value: http://purl.org/dc/terms/source "http://www.obofoundry.org/ro/#OBO_REL:preceded_by" xsd:string
 property_value: IAO:0000111 "preceded by" xsd:string
 property_value: IAO:0000116 "An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other." xsd:string
 property_value: IAO:0000118 "is preceded by" xsd:string
@@ -7056,6 +7076,7 @@ property_value: IAO:0000118 "occurs_in" xsd:string
 property_value: IAO:0000118 "unfolds in" xsd:string
 property_value: IAO:0000118 "unfolds_in" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+property_value: seeAlso "https://wiki.geneontology.org/Occurs_in" xsd:anyURI
 domain: BFO:0000003 ! occurrent
 range: BFO:0000004 ! independent continuant
 holds_over_chain: BFO:0000050 BFO:0000066
@@ -7380,6 +7401,7 @@ name: obsolete owns
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 is_a: ObsoleteProperty
 is_obsolete: true
+replaced_by: OBIB:0000732
 
 [Typedef]
 id: OMIABIS:0000009
@@ -7387,18 +7409,20 @@ name: obsolete administrates
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 is_a: ObsoleteProperty
 is_obsolete: true
+replaced_by: OBIB:0000733
 
 [Typedef]
 id: OMIABIS:0000048
 name: obsolete is owned by
 property_value: IAO:0000119 "Reinach, A. S�mtliche Werke. Texkritische Ausgabe, M�nchen: Philosophia Verlag, 1989, p.189-204." xsd:string
+replaced_by: OBIB:0000735
 
 [Typedef]
 id: OMRSE:00000020
+name: is-aggregate-of
 name: obsolete is-aggregate-of
 comment: We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.\n
 property_value: IAO:0000231 "BFO relation takes precedence." xsd:string
-is_a: ObsoleteProperty
 is_obsolete: true
 
 [Typedef]
@@ -7562,6 +7586,7 @@ name: has participant
 name: has_participant
 def: "a relation between a process and a continuant, in which the continuant is somehow involved in the process" []
 property_value: http://purl.org/dc/elements/1.1/source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
+property_value: http://purl.org/dc/terms/source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
 property_value: IAO:0000111 "has participant" xsd:string
 property_value: IAO:0000112 "this blood coagulation has participant this blood clot" xsd:string
 property_value: IAO:0000112 "this investigation has participant this investigator" xsd:string
@@ -7773,7 +7798,7 @@ name: has regulatory component activity
 def: "A 'has regulatory component activity' B if A and B are GO molecular functions (GO_0003674), A has_component B and A is regulated by B." []
 is_a: RO:0002017 ! has component activity
 is_a: RO:0002334 ! regulated by
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:30:46Z
 
 [Typedef]
@@ -7783,7 +7808,7 @@ def: "A relationship that holds between a GO molecular function and a component 
 comment: By convention GO molecular functions are classified by their effector function.  Internal regulatory functions are treated as components.  For example, NMDA glutmate receptor activity is a cation channel activity with positive regulatory component 'glutamate binding' and negative regulatory components including 'zinc binding' and 'magnesium binding'.
 is_a: RO:0002013 ! has regulatory component activity
 is_a: RO:0002335 ! negatively regulated by
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:31:01Z
 
 [Typedef]
@@ -7793,7 +7818,7 @@ def: "A relationship that holds between a GO molecular function and a component 
 comment: By convention GO molecular functions are classified by their effector function and internal regulatory functions are treated as components.  So, for example calmodulin has a protein binding activity that has positive regulatory component activity calcium binding activity. Receptor tyrosine kinase activity is a tyrosine kinase activity that has positive regulatory component 'ligand binding'.
 is_a: RO:0002013 ! has regulatory component activity
 is_a: RO:0002336 ! positively regulated by
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:31:17Z
 
 [Typedef]
@@ -7801,7 +7826,7 @@ id: RO:0002017
 name: has component activity
 comment: A 'has component activity' B if A is A and B are molecular functions (GO_0003674) and A has_component B.
 is_a: RO:0002018 ! has component process
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:44:33Z
 
 [Typedef]
@@ -7811,44 +7836,44 @@ def: "w 'has process component' p if p and w are processes,  w 'has part' p and 
 domain: BFO:0000015 ! process
 range: BFO:0000015 ! process
 is_a: RO:0002180 ! has component
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-05-24T09:49:21Z
 
 [Typedef]
 id: RO:0002022
 name: directly regulated by
-comment: Process(P2) is directly regulated by process(P1) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2. {xref="GOC:dos"}
+comment: Process(P2) is directly regulated by process(P1) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2. {xref="https://orcid.org/0000-0002-7073-9172"}
 is_a: RO:0002334 ! regulated by
 inverse_of: RO:0002578 ! directly regulates
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-09-17T13:52:24Z
 
 [Typedef]
 id: RO:0002023
 name: directly negatively regulated by
-def: "Process(P2) is directly negatively regulated by process(P1) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P2 directly negatively regulated by P1." [GOC:dos]
+def: "Process(P2) is directly negatively regulated by process(P1) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P2 directly negatively regulated by P1." [https://orcid.org/0000-0002-7073-9172]
 is_a: RO:0002022 ! directly regulated by
 inverse_of: RO:0002630 ! directly negatively regulates
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-09-17T13:52:38Z
 
 [Typedef]
 id: RO:0002024
 name: directly positively regulated by
-def: "Process(P2) is directly postively regulated by process(P1) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P2 is directly postively regulated by P1." [GOC:dos]
+def: "Process(P2) is directly postively regulated by process(P1) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P2 is directly postively regulated by P1." [https://orcid.org/0000-0002-7073-9172]
 is_a: RO:0002022 ! directly regulated by
 inverse_of: RO:0002629 ! directly positively regulates
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-09-17T13:52:47Z
 
 [Typedef]
 id: RO:0002025
 name: has effector activity
-def: "A 'has effector activity' B if A and B are GO molecular functions (GO_0003674),  A 'has component activity' B and B is the effector (output function) of B.  Each compound function has only one effector activity." [GOC:dos]
+def: "A 'has effector activity' B if A and B are GO molecular functions (GO_0003674),  A 'has component activity' B and B is the effector (output function) of B.  Each compound function has only one effector activity." [https://orcid.org/0000-0002-7073-9172]
 comment: This relation is designed for constructing compound molecular functions, typically in combination with one or more regulatory component activity relations.
 is_functional: true
 is_a: RO:0002017 ! has component activity
-created_by: dos
+created_by: https://orcid.org/0000-0002-7073-9172
 creation_date: 2017-09-22T14:14:36Z
 
 [Typedef]
@@ -8146,6 +8171,7 @@ subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "consumes" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Has_input" xsd:anyURI
 domain: BFO:0000015 ! process
 holds_over_chain: RO:0002224 RO:0002233
 is_a: RO:0000057 ! has_participant
@@ -8162,6 +8188,7 @@ subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "produces" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Has_output" xsd:anyURI
 holds_over_chain: RO:0002230 RO:0002234
 is_a: RO:0000057 ! has_participant
 inverse_of: RO:0002353 ! output of
@@ -8183,7 +8210,7 @@ def: "c acts upstream of or within p if c is enables f, and f is causally upstre
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 synonym: "affects" RELATED []
 property_value: IAO:0000112 "A gene product that has some activity, where that activity may be a part of a pathway or upstream of the pathway." xsd:string
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of_or_within
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of_or_within" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0002418
 is_a: RO:0002500 ! causal agent in process
 
@@ -8196,6 +8223,7 @@ subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-6601-2165
 property_value: RO:0004049 RO:0002411
+property_value: seeAlso https://wiki.geneontology.org/Causally_upstream_of,_positive_effect
 is_a: RO:0002411 ! causally upstream of
 is_a: RO:0004047 ! causally upstream of or within, positive effect
 
@@ -8207,6 +8235,7 @@ subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: http://purl.org/dc/terms/creator https://orcid.org/0000-0002-6601-2165
 property_value: RO:0004050 RO:0002411
+property_value: seeAlso https://wiki.geneontology.org/Causally_upstream_of,_negative_effect
 is_a: RO:0002411 ! causally upstream of
 is_a: RO:0004046 ! causally upstream of or within, negative effect
 
@@ -8245,6 +8274,7 @@ property_value: IAO:0000118 "has" xsd:string
 property_value: IAO:0000118 "is catalyzing" xsd:string
 property_value: IAO:0000118 "is executing" xsd:string
 property_value: IAO:0000232 "This relation differs from the parent relation 'capable of' in that the parent is weaker and only expresses a capability that may not be actually realized, whereas this relation is always realized." xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Enables" xsd:anyURI
 is_a: RO:0002215 ! capable of
 inverse_of: RO:0002333 ! enabled by
 transitive_over: BFO:0000051 ! has part
@@ -8273,7 +8303,7 @@ def: "c involved_in p if and only if c enables some process p', and p' is part o
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "actively involved in" xsd:string
 property_value: IAO:0000118 "enables part of" xsd:string
-property_value: seeAlso Involved:in
+property_value: seeAlso "https://wiki.geneontology.org/Involved_in" xsd:anyURI
 holds_over_chain: RO:0002327 BFO:0000050
 is_a: RO:0000056 ! participates in
 is_a: RO:0002431 ! involved in or involved in regulation of
@@ -8285,6 +8315,7 @@ name: enabled by
 def: "inverse of enables" []
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: seeAlso "https://wiki.geneontology.org/Enabled_by" xsd:anyURI
 is_a: RO:0000057 ! has_participant
 is_a: RO:0002328 ! functionally related to
 
@@ -8382,6 +8413,7 @@ def: "p indirectly positively regulates q iff p is indirectly causally upstream 
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "indirectly activates" xsd:string
 property_value: RO:0002579 RO:0002213
+property_value: seeAlso "https://wiki.geneontology.org/Indirectly_positively_regulates" xsd:anyURI
 holds_over_chain: RO:0002409 RO:0002409
 holds_over_chain: RO:0002629 RO:0002407
 holds_over_chain: RO:0002629 RO:0002629
@@ -8397,6 +8429,7 @@ def: "p indirectly negatively regulates q iff p is indirectly causally upstream 
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "indirectly inhibits" xsd:string
 property_value: RO:0002579 RO:0002212
+property_value: seeAlso "https://wiki.geneontology.org/Indirectly_negatively_regulates" xsd:anyURI
 holds_over_chain: RO:0002630 RO:0002409
 holds_over_chain: RO:0002630 RO:0002630
 is_transitive: true
@@ -8498,11 +8531,12 @@ is_a: RO:0002500 ! causal agent in process
 [Typedef]
 id: RO:0002432
 name: is active in
-def: "c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure." [GOC:cjm, GOC:dos]
+def: "c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure." [https://orcid.org/0000-0002-6601-2165, https://orcid.org/0000-0002-7073-9172]
 synonym: "enables activity in" EXACT []
 property_value: IAO:0000112 "A protein that enables activity in a cytosol." xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "executes activity in" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Is_active_in" xsd:anyURI
 holds_over_chain: RO:0002327 BFO:0000066 {RO:0002581="true"}
 is_a: RO:0002131 ! overlaps
 is_a: RO:0002328 ! functionally related to
@@ -8750,6 +8784,7 @@ subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000589 "directly positively regulates (process to process)" xsd:string
 property_value: RO:0004049 RO:0002578
+property_value: seeAlso "https://wiki.geneontology.org/Directly_positively_regulates" xsd:anyURI
 is_a: RO:0002213 ! positively regulates
 is_a: RO:0002578 ! directly regulates
 
@@ -8763,6 +8798,7 @@ subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000589 "directly negatively regulates (process to process)" xsd:string
 property_value: RO:0004050 RO:0002578
+property_value: seeAlso "https://wiki.geneontology.org/Directly_negatively_regulates" xsd:anyURI
 is_a: RO:0002212 ! negatively regulates
 is_a: RO:0002578 ! directly regulates
 
@@ -8813,7 +8849,7 @@ id: RO:0004032
 name: acts upstream of or within, positive effect
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: RO:0004049 RO:0002264
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of_or_within,_positive_effect
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of_or_within,_positive_effect" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0004047
 is_a: RO:0002264 ! acts upstream of or within
 created_by: https://orcid.org/0000-0002-6601-2165
@@ -8824,6 +8860,7 @@ id: RO:0004033
 name: acts upstream of or within, negative effect
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: RO:0004050 RO:0002264
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of_or_within,_negative_effect" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0004046
 is_a: RO:0002264 ! acts upstream of or within
 created_by: https://orcid.org/0000-0002-6601-2165
@@ -8835,7 +8872,7 @@ name: acts upstream of, positive effect
 def: "c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: RO:0004049 RO:0002263
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of,_positive_effect
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of,_positive_effect" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0002304
 is_a: RO:0002263 ! acts upstream of
 is_a: RO:0004032 ! acts upstream of or within, positive effect
@@ -8848,7 +8885,7 @@ name: acts upstream of, negative effect
 def: "c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative" []
 subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: RO:0004050 RO:0002263
-property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of,_negative_effect
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of,_negative_effect" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0002305
 is_a: RO:0002263 ! acts upstream of
 is_a: RO:0004033 ! acts upstream of or within, negative effect
@@ -8859,6 +8896,7 @@ creation_date: 2018-01-26T23:53:22Z
 id: RO:0004046
 name: causally upstream of or within, negative effect
 property_value: RO:0004050 RO:0002418
+property_value: seeAlso "https://wiki.geneontology.org/Causally_upstream_of_or_within,_negative_effect" xsd:anyURI
 is_a: RO:0002418 ! causally upstream of or within
 created_by: https://orcid.org/0000-0002-6601-2165
 creation_date: 2018-03-13T23:55:05Z
@@ -8867,6 +8905,7 @@ creation_date: 2018-03-13T23:55:05Z
 id: RO:0004047
 name: causally upstream of or within, positive effect
 property_value: RO:0004049 RO:0002418
+property_value: seeAlso https://wiki.geneontology.org/Causally_upstream_of_or_within,_positive_effect
 is_a: RO:0002418 ! causally upstream of or within
 created_by: https://orcid.org/0000-0002-6601-2165
 creation_date: 2018-03-13T23:55:19Z
@@ -8886,7 +8925,7 @@ is_obsolete: true
 id: RO:0009501
 name: realized in response to
 def: "r 'realized in response to' s iff, r is a realizable (e.g. a plant trait such as responsivity to drought), s is an environmental stimulus (a process), and s directly causes the realization of r." []
-synonym: "triggered by process" EXACT [RO:cjm]
+synonym: "triggered by process" EXACT [https://orcid.org/0000-0002-6601-2165]
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0001-6996-0040
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-6601-2165
 property_value: http://purl.org/dc/terms/contributor https://orcid.org/0000-0002-7073-9172
@@ -8942,7 +8981,7 @@ id: RO:0012011
 name: indirectly causally upstream of
 def: "p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q." []
 is_a: RO:0002411 ! causally upstream of
-created_by: pg
+created_by: https://orcid.org/0000-0003-1813-6857
 creation_date: 2022-09-26T06:07:17Z
 
 [Typedef]
@@ -8951,7 +8990,7 @@ name: indirectly regulates
 def: "p indirectly regulates q iff p is indirectly causally upstream of q and p regulates q." []
 is_a: RO:0002211 ! regulates
 is_a: RO:0012011 ! indirectly causally upstream of
-created_by: pg
+created_by: https://orcid.org/0000-0003-1813-6857
 creation_date: 2022-09-26T06:08:01Z
 
 [Typedef]
