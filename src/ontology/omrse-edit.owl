@@ -1355,7 +1355,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000085 "A role that concretizes 
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000085 "Amanda Hicks"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000085 "obsolete socio-legal human social role"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000085 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000085 obo:OMRSE_00000001)
 SubClassOf(obo:OMRSE_00000085 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000086 (human role within an organization)
