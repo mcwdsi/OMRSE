@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000057">
+        <rdfs:label xml:lang="en">has participant</rdfs:label>
+    </AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002218 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002218">
+        <rdfs:label xml:lang="en">has active participant</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
+    </AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040">
+        <rdfs:label xml:lang="en">material entity</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0021003 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021003">
+        <rdfs:label xml:lang="en">social act</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000001 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000001">
+        <rdfs:label xml:lang="en">human social role</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000083 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000083">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000100"/>
+        <rdfs:label xml:lang="en">obsolete OMB ethnic identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000085 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000085">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000001"/>
+        <rdfs:label xml:lang="en">obsolete socio-legal human social role</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000098 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
+        <rdfs:label xml:lang="en">obsolete racial identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000100 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
+        <rdfs:label xml:lang="en">obsolete ethnic identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000127 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000083"/>
+        <rdfs:label xml:lang="en">obsolete hispanic or latino identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000128 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000083"/>
+        <rdfs:label xml:lang="en">obsolete not hispanic or latino identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000132 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000179"/>
+        <rdfs:label xml:lang="en">obsolete identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000133 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
+        <rdfs:label xml:lang="en">obsolete gender identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000138 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000138">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000133"/>
+        <rdfs:label xml:lang="en">obsolete female gender identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000141 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000133"/>
+        <rdfs:label xml:lang="en">obsolete male gender identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000145 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000145">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
+        <rdfs:label xml:lang="en">obsolete self-identity data item</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000162 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000162">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
+        <rdfs:label xml:lang="en">obsolete medical advice</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000168 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000168">
+        <rdfs:label xml:lang="en">obsolete questions asking process</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000173 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:label xml:lang="en">obsolete material information bearer of question text plus answer set</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000176 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000176">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000168"/>
+        <rdfs:label xml:lang="en">obsolete identity question asking process</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000177 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000177">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000176"/>
+        <rdfs:label xml:lang="en">obsolete ethnic identity question asking process</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000178 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000178">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000176"/>
+        <rdfs:label xml:lang="en">obsolete race identity question asking process</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000179 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000179">
+        <rdfs:label xml:lang="en">answer to identity question</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000180 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000180">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
+        <rdfs:label xml:lang="en">obsolete American Indian or Alaska Native identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000181 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
+        <rdfs:label xml:lang="en">obsolete Asian identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000182 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000182">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
+        <rdfs:label xml:lang="en">obsolete black or African American identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000183 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000183">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
+        <rdfs:label xml:lang="en">obsolete Native Hawaiian or other Pacific Islander identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000184 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000184">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
+        <rdfs:label xml:lang="en">obsolete white identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000185 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000185">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000098"/>
+        <rdfs:label xml:lang="en">obsolete OMB racial identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000192 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000192">
+        <rdfs:label xml:lang="en">obsolete communication</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000196 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000196">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000192"/>
+        <rdfs:label xml:lang="en">obsolete expression of preferred language</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000507 -->
+
+    <Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000507">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000133"/>
+        <rdfs:label xml:lang="en">obsolete non-binary gender identity datum</rdfs:label>
+        <deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</deprecated>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000020">
+        <rdfs:label>is-aggregate-of</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

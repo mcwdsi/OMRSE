@@ -46,3 +46,6 @@ site
 pull-request.md
 omrse/catalog-v001.xml
 omrse/language/catalog-v001.xml
+
+.idea/
+*.py
