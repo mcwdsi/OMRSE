@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2024-01-10/omrse-full.owl
+data-version: omrse/releases/2024-03-22/omrse-full.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -28,7 +28,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:stri
 property_value: http://purl.org/dc/elements/1.1/description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Ontology for Modeling and Representation of Social Entities" xsd:string
 property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/" xsd:string
-property_value: owl:versionInfo "2024-01-10" xsd:string
+property_value: owl:versionInfo "2024-03-22" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -4144,7 +4144,7 @@ id: OMRSE:00000023
 name: collection of humans
 def: "An object aggregate all of whose components are human beings." []
 comment: An object aggregate all of whose components are human beings.
-is_a: OMRSE:00000022 ! aggregate of objectual organisms
+is_a: OMRSE:00000022 ! collection of organisms
 relationship: OMRSE:00000020 NCBITaxon:9606 ! obsolete is-aggregate-of Homo sapiens
 relationship: RO:0002351 NCBITaxon:9606 {all_only="true"} ! has member Homo sapiens
 
@@ -4635,7 +4635,7 @@ property_value: IAO:0000119 "http://www.census.gov/cps/about/cpsdef.html\n\nlast
 id: OMRSE:00000083
 name: obsolete OMB ethnic identity datum
 def: "An ethnic identity datum that is the output of an ethnic identification process that uses OMB terminology for ethnicity or terminology that is mapped the OMB ethnicity terms." []
-is_a: OMRSE:00000100 ! obsolete ethnic identity datum
+is_a: ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB ethnic identity information content entity
@@ -4649,7 +4649,6 @@ is_a: BFO:0000038 ! one-dimensional temporal region
 id: OMRSE:00000085
 name: obsolete socio-legal human social role
 is_a: ObsoleteClass
-is_a: OMRSE:00000001 ! human social role
 property_value: IAO:0000117 "A role that concretizes a socio-lega generically dependent continuant" xsd:string
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
@@ -4732,7 +4731,7 @@ is_a: BFO:0000038 ! one-dimensional temporal region
 id: OMRSE:00000098
 name: obsolete racial identity datum
 def: "A racial identity is an information content entity that is the output of some racial identitification process and is intended to be a truthful statement about the genetic or cultural race of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
-is_a: OMRSE:00000132 ! obsolete identity datum
+is_a: ObsoleteClass
 is_obsolete: true
 replaced_by: racial identity information content entity
 
@@ -4744,7 +4743,7 @@ name: racial identification process
 id: OMRSE:00000100
 name: obsolete ethnic identity datum
 def: "An ethnic identity datum is an information content entity that is the output of some ethnic identitification process and is intended to be a truthful statement about the cultural or national heritage of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
-is_a: OMRSE:00000132 ! obsolete identity datum
+is_a: ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: ethnic identity information content entity
@@ -4944,7 +4943,7 @@ property_value: IAO:0000118 "discharge process" xsd:string
 id: OMRSE:00000127
 name: obsolete hispanic or latino identity datum
 def: "An OMB ethnic identity datum that indicates the person identified is of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race." []
-is_a: OMRSE:00000083 ! obsolete OMB ethnic identity datum
+is_a: ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB Hispanic or Latino identity information content entity
@@ -4953,7 +4952,7 @@ replaced_by: OMB Hispanic or Latino identity information content entity
 id: OMRSE:00000128
 name: obsolete not hispanic or latino identity datum
 def: "An OMB ethnic identity datum that indicates the person identified is not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race." []
-is_a: OMRSE:00000083 ! obsolete OMB ethnic identity datum
+is_a: ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB not Hispanic or Latino identity information content entity
@@ -4981,7 +4980,7 @@ relationship: OBI:0000299 OMRSE:00000185 ! has_specified_output obsolete OMB rac
 id: OMRSE:00000132
 name: obsolete identity datum
 def: "An identity datum is an information content entity that is the output of some identitification process and is intended to be a truthful statement about a person's social identity.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
-is_a: OMRSE:00000179 ! answer to identity question
+is_a: ObsoleteClass
 property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: social identity information content entity
@@ -4990,7 +4989,7 @@ replaced_by: social identity information content entity
 id: OMRSE:00000133
 name: obsolete gender identity datum
 def: "A gender identity is an information content entity that is the output of some gender identitification process and is intended to be a truthful statement about a person's subjective sense of their gender.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
-is_a: OMRSE:00000132 ! obsolete identity datum
+is_a: ObsoleteClass
 property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: gender identity information content entity
@@ -5009,7 +5008,7 @@ name: gender identification process
 id: OMRSE:00000138
 name: obsolete female gender identity datum
 def: "a gender identity datum resulting from a gender identification process in which ‘female’ is selected based on the participant's subjective sense of gender" []
-is_a: OMRSE:00000133 ! obsolete gender identity datum
+is_a: ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: female gender identity information content entity
@@ -5030,7 +5029,7 @@ is_a: OMRSE:00000139 ! surgeon role
 id: OMRSE:00000141
 name: obsolete male gender identity datum
 def: "a gender identity datum resulting from a gender identification process in which ‘male’ is selected based on the participant's subjective sense of gender" []
-is_a: OMRSE:00000133 ! obsolete gender identity datum
+is_a: ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000119 "" xsd:string
 is_obsolete: true
@@ -5074,7 +5073,7 @@ property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:strin
 id: OMRSE:00000145
 name: obsolete self-identity data item
 def: "an identity datum that has been asserted by the person whom it is about" []
-is_a: OMRSE:00000132 ! obsolete identity datum
+is_a: ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 
@@ -5183,7 +5182,7 @@ property_value: IAO:0000117 "William R. Hogan" xsd:string
 [Term]
 id: OMRSE:00000162
 name: obsolete medical advice
-is_a: IAO:0021003 ! social act
+is_a: ObsoleteClass
 is_obsolete: true
 
 [Term]
@@ -5250,7 +5249,7 @@ relationship: BFO:0000054 OGMS:0000097 ! realized in health care encounter
 [Term]
 id: OMRSE:00000173
 name: obsolete material information bearer of question text plus answer set
-is_a: BFO:0000040 ! material entity
+is_a: ObsoleteClass
 is_obsolete: true
 
 [Term]
@@ -5266,20 +5265,20 @@ is_a: OMRSE:00000163 ! response to a question asking process
 [Term]
 id: OMRSE:00000176
 name: obsolete identity question asking process
-is_a: OMRSE:00000168 ! obsolete questions asking process
+is_a: ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: OMRSE:00000177
 name: obsolete ethnic identity question asking process
-is_a: OMRSE:00000176 ! obsolete identity question asking process
+is_a: ObsoleteClass
 is_obsolete: true
 replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000199
 
 [Term]
 id: OMRSE:00000178
 name: obsolete race identity question asking process
-is_a: OMRSE:00000176 ! obsolete identity question asking process
+is_a: ObsoleteClass
 is_obsolete: true
 replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000200
 
@@ -5292,7 +5291,7 @@ is_a: OMRSE:00000175 ! response to an identity question asking process
 id: OMRSE:00000180
 name: obsolete American Indian or Alaska Native identity datum
 def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment." []
-is_a: OMRSE:00000185 ! obsolete OMB racial identity datum
+is_a: ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB American Indian or Alaska Native identity information content entity
@@ -5301,7 +5300,7 @@ replaced_by: OMB American Indian or Alaska Native identity information content e
 id: OMRSE:00000181
 name: obsolete Asian identity datum
 def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent." []
-is_a: OMRSE:00000185 ! obsolete OMB racial identity datum
+is_a: ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB Asian identity information content entity
@@ -5310,7 +5309,7 @@ replaced_by: OMB Asian identity information content entity
 id: OMRSE:00000182
 name: obsolete black or African American identity datum
 def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the black racial groups of Africa." []
-is_a: OMRSE:00000185 ! obsolete OMB racial identity datum
+is_a: ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB black or African American identity information content entity
@@ -5319,7 +5318,7 @@ replaced_by: OMB black or African American identity information content entity
 id: OMRSE:00000183
 name: obsolete Native Hawaiian or other Pacific Islander identity datum
 def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands." []
-is_a: OMRSE:00000185 ! obsolete OMB racial identity datum
+is_a: ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB Native Hawaiian or other Pacific Islander identity information content entity
@@ -5328,7 +5327,7 @@ replaced_by: OMB Native Hawaiian or other Pacific Islander identity information 
 id: OMRSE:00000184
 name: obsolete white identity datum
 def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Europe, the Middle East, or North Africa." []
-is_a: OMRSE:00000185 ! obsolete OMB racial identity datum
+is_a: ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB white identity information content entity
@@ -5337,7 +5336,7 @@ replaced_by: OMB white identity information content entity
 id: OMRSE:00000185
 name: obsolete OMB racial identity datum
 def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms." []
-is_a: OMRSE:00000098 ! obsolete racial identity datum
+is_a: ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB racial identity information content entity
@@ -5429,7 +5428,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000196
 name: obsolete expression of preferred language
 def: "A communication in which some participant states a preference for some communicative process to be in a certain language, and that has a concretization of a preferred language information content entity as its specified output." []
-is_a: OMRSE:00000192 ! obsolete communication
+is_a: ObsoleteClass
 property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
 property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
@@ -6289,7 +6288,7 @@ id: OMRSE:00000507
 name: obsolete non-binary gender identity datum
 def: "A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant's subjective sense of gender." []
 comment: Alternatively: A gender identity datum stating that a person's subjective sense of gender is non-binary.)\n\nExamples of usage: ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)
-is_a: OMRSE:00000133 ! obsolete gender identity datum
+is_a: ObsoleteClass
 property_value: IAO:0000111 "non-binary gender identity datum" xsd:string
 property_value: IAO:0000117 "Paul Fabry" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
@@ -6902,7 +6901,7 @@ id: PCO:0000020
 name: family
 def: "A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption." []
 comment: Family membership through marriage or adoption apply primarily to human families. In most species, family membership is defined by common anscestry.
-is_a: OMRSE:00000022 ! aggregate of objectual organisms
+is_a: OMRSE:00000022 ! collection of organisms
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000116 "Needs axioms for family relationships." xsd:string
 property_value: IAO:0000119 "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25173" xsd:string

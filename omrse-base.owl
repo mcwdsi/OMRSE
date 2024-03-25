@@ -13,7 +13,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2024-01-10/omrse-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2024-03-22/omrse-base.owl"/>
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
         <dc:contributor xml:lang="en">Daniel Welch</dc:contributor>
@@ -36,7 +36,7 @@
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
-        <owl:versionInfo>2024-01-10</owl:versionInfo>
+        <owl:versionInfo>2024-03-22</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -2530,7 +2530,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000083 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000083">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000100"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An ethnic identity datum that is the output of an ethnic identification process that uses OMB terminology for ethnicity or terminology that is mapped the OMB ethnicity terms.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0100001 xml:lang="en">OMB ethnic identity information content entity</obo:IAO_0100001>
@@ -2552,7 +2552,6 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000085 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000085">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000001"/>
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000117 xml:lang="en">A role that concretizes a socio-lega generically dependent continuant</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
@@ -2882,7 +2881,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000098 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000098">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity is an information content entity that is the output of some racial identitification process and is intended to be a truthful statement about the genetic or cultural race of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
         <obo:IAO_0100001 xml:lang="en">racial identity information content entity</obo:IAO_0100001>
         <rdfs:label xml:lang="en">obsolete racial identity datum</rdfs:label>
@@ -2918,7 +2917,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An ethnic identity datum is an information content entity that is the output of some ethnic identitification process and is intended to be a truthful statement about the cultural or national heritage of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0100001 xml:lang="en">ethnic identity information content entity</obo:IAO_0100001>
@@ -3432,7 +3431,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000127 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000127">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000083"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An OMB ethnic identity datum that indicates the person identified is of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0100001 xml:lang="en">OMB Hispanic or Latino identity information content entity</obo:IAO_0100001>
@@ -3445,7 +3444,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000128 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000128">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000083"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An OMB ethnic identity datum that indicates the person identified is not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0100001 xml:lang="en">OMB not Hispanic or Latino identity information content entity</obo:IAO_0100001>
@@ -3499,7 +3498,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000132 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000132">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000179"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An identity datum is an information content entity that is the output of some identitification process and is intended to be a truthful statement about a person&apos;s social identity.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
         <obo:IAO_0100001 xml:lang="en">social identity information content entity</obo:IAO_0100001>
         <dc:creator>Amanda Hicks</dc:creator>
@@ -3512,7 +3511,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000133 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000133">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115>A gender identity is an information content entity that is the output of some gender identitification process and is intended to be a truthful statement about a person&apos;s subjective sense of their gender.  Unlike data items they are not necessilary contributed or acquired by a reliable method.</obo:IAO_0000115>
         <obo:IAO_0100001 xml:lang="en">gender identity information content entity</obo:IAO_0100001>
         <dc:creator>Amanda Hicks</dc:creator>
@@ -3559,7 +3558,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000138 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000138">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000133"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">a gender identity datum resulting from a gender identification process in which ‘female’ is selected based on the participant&apos;s subjective sense of gender</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0100001 xml:lang="en">female gender identity information content entity</obo:IAO_0100001>
@@ -3597,7 +3596,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000141 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000141">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000133"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">a gender identity datum resulting from a gender identification process in which ‘male’ is selected based on the participant&apos;s subjective sense of gender</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en"></obo:IAO_0000119>
@@ -3678,7 +3677,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000145 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000145">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000132"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">an identity datum that has been asserted by the person whom it is about</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">obsolete self-identity data item</rdfs:label>
@@ -3923,7 +3922,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000162 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000162">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:label xml:lang="en">obsolete medical advice</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -4088,7 +4087,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000173 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000173">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:label xml:lang="en">obsolete material information bearer of question text plus answer set</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -4116,7 +4115,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000176 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000176">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000168"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <rdfs:label xml:lang="en">obsolete identity question asking process</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
@@ -4126,7 +4125,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000177 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000177">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000176"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/OMRSE_00000199</obo:IAO_0100001>
         <rdfs:label xml:lang="en">obsolete ethnic identity question asking process</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -4137,7 +4136,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000178 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000178">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000176"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0100001>http://purl.obolibrary.org/obo/OMRSE_00000200</obo:IAO_0100001>
         <rdfs:label xml:lang="en">obsolete race identity question asking process</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
@@ -4157,7 +4156,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000180 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000180">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0100001 xml:lang="en">OMB American Indian or Alaska Native identity information content entity</obo:IAO_0100001>
@@ -4170,7 +4169,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000181 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000181">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0100001 xml:lang="en">OMB Asian identity information content entity</obo:IAO_0100001>
@@ -4183,7 +4182,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000182 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000182">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the black racial groups of Africa.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0100001 xml:lang="en">OMB black or African American identity information content entity</obo:IAO_0100001>
@@ -4196,7 +4195,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000183 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000183">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0100001 xml:lang="en">OMB Native Hawaiian or other Pacific Islander identity information content entity</obo:IAO_0100001>
@@ -4209,7 +4208,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000184 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000184">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Europe, the Middle East, or North Africa.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0100001 xml:lang="en">OMB white identity information content entity</obo:IAO_0100001>
@@ -4222,7 +4221,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000185 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000185">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000098"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0100001 xml:lang="en">OMB racial identity information content entity</obo:IAO_0100001>
@@ -4384,7 +4383,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000196 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000196">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000192"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A communication in which some participant states a preference for some communicative process to be in a certain language, and that has a concretization of a preferred language information content entity as its specified output.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
@@ -5812,7 +5811,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000507 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000507">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000133"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000111 xml:lang="en">non-binary gender identity datum</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant&apos;s subjective sense of gender.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Paul Fabry</obo:IAO_0000117>
