@@ -16,6 +16,7 @@ The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OB
 OMRSE Google Group: http://groups.google.com/group/omrse-discuss Click the "Apply for Membership" link to join. 
 
 Monthly meetings occur on the first Wednesday of each month at 11:00 ET / 10:00 CT / 8:00 PT and last one hour
+
 Agenda: https://docs.google.com/document/d/1UUD-53SaioJO7btrs8ie3yjFYJIF6HV3RUU3A7A_w2Y/edit#
 
 ## Previously known as the Ontology of Medically Related Social Entities
