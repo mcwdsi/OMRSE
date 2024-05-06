@@ -55,10 +55,10 @@ import_group:
     - id: geo
     - id: mf
       
-#components:
-#  products:
+components:
+  products:
     #- filename: education/omrse-education.owl
-    #- filename: language/language-individuals.owl
+    - filename: language/language-individuals.owl
     #- filename: language/omrse-language.owl
     #- filename: omrse-core.owl
 #    - filename: import_terms.owl

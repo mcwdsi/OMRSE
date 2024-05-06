@@ -37,5 +37,6 @@
         <uri name="http://purl.obolibrary.org/obo/omrse/components/pno.owl" uri="components/pno.owl"/>
         <uri name="http://purl.obolibrary.org/obo/omrse/components/d-acts.owl" uri="components/d-acts.owl"/>
         <uri name="http://purl.obolibrary.org/obo/omrse/components/import_terms.owl" uri="components/import_terms.owl"/>
+        <uri name="http://purl.obolibrary.org/obo/omrse/language-individuals/" uri="components/language/language-individuals.owl"/>
     </group>
 </catalog>
