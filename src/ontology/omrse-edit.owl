@@ -13,6 +13,7 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse.owl>
+Import(<http://purl.obolibrary.org/obo/omrse/external_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/d-acts_import.owl>)
@@ -27,8 +28,8 @@ Import(<http://purl.obolibrary.org/obo/omrse/imports/oostt_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/pco_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/pno_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/ro_import.owl>)
-Import(<http://purl.obolibrary.org/obo/omrse/releases/2023-09-08/imports/mf_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/language-individuals/>)
+Import(<http://purl.obolibrary.org/obo/omrse/releases/2023-09-08/imports/mf_import.owl>)
 Annotation(dc:contributor "Barry Smith"@en)
 Annotation(dc:contributor "Chris Stoeckert"@en)
 Annotation(dc:contributor "Daniel Welch"@en)
@@ -1188,7 +1189,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000063 "A health care facility t
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000063 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000063 "William Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000063 "hospital facility"@en)
-EquivalentClasses(obo:OMRSE_00000063 ObjectIntersectionOf(ObjectUnionOf(ObjectSomeValuesFrom(obo:OMIABIS_0000048 obo:OMRSE_00000056) ObjectSomeValuesFrom(obo:OMRSE_00000068 obo:OMRSE_00000056)) ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000052)))
+EquivalentClasses(obo:OMRSE_00000063 ObjectIntersectionOf(ObjectUnionOf(ObjectSomeValuesFrom(obo:OBIB_0000735 obo:OMRSE_00000056) ObjectSomeValuesFrom(obo:OMRSE_00000068 obo:OMRSE_00000056)) ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000052)))
 SubClassOf(obo:OMRSE_00000063 obo:OMRSE_00000102)
 SubClassOf(obo:OMRSE_00000063 ObjectSomeValuesFrom(obo:BFO_0000067 obo:OMRSE_00000160))
 
@@ -1197,7 +1198,7 @@ SubClassOf(obo:OMRSE_00000063 ObjectSomeValuesFrom(obo:BFO_0000067 obo:OMRSE_000
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000064 "A facility that is run by a school organization and is the bearer of a school function."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000064 "Mathias Brochhausen"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000064 "school facility"@en)
-EquivalentClasses(obo:OMRSE_00000064 ObjectIntersectionOf(obo:OMRSE_00000062 ObjectUnionOf(ObjectSomeValuesFrom(obo:OMIABIS_0000048 obo:OMRSE_00000057) ObjectSomeValuesFrom(obo:OMRSE_00000068 obo:OMRSE_00000057)) ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000053)))
+EquivalentClasses(obo:OMRSE_00000064 ObjectIntersectionOf(obo:OMRSE_00000062 ObjectUnionOf(ObjectSomeValuesFrom(obo:OBIB_0000735 obo:OMRSE_00000057) ObjectSomeValuesFrom(obo:OMRSE_00000068 obo:OMRSE_00000057)) ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000053)))
 SubClassOf(obo:OMRSE_00000064 obo:OMRSE_00000062)
 
 # Class: obo:OMRSE_00000065 (secondary school role)
@@ -1472,7 +1473,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000102 "A facility bearing the f
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000102 "William Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000102 "health care facility"@en)
 SubClassOf(obo:OMRSE_00000102 obo:OMRSE_00000062)
-SubClassOf(obo:OMRSE_00000102 ObjectUnionOf(ObjectIntersectionOf(obo:OMRSE_00000062 ObjectSomeValuesFrom(obo:OMIABIS_0000048 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000015))) ObjectSomeValuesFrom(obo:OMRSE_00000068 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000015))))
+SubClassOf(obo:OMRSE_00000102 ObjectUnionOf(ObjectIntersectionOf(obo:OMRSE_00000062 ObjectSomeValuesFrom(obo:OBIB_0000735 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000015))) ObjectSomeValuesFrom(obo:OMRSE_00000068 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000015))))
 
 # Class: obo:OMRSE_00000103 (US Census unemployed role)
 
@@ -3007,7 +3008,7 @@ SubClassOf(obo:OMRSE_00000505 obo:OMRSE_00000506)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000506 "socio-economic data item"@en)
 SubClassOf(obo:OMRSE_00000506 obo:IAO_0000027)
 
-# Class: obo:OMRSE_00000507 (obsolete non-binary gender identity datum)
+# Class: obo:OMRSE_00000507 (Afar)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000507 "non-binary gender identity datum"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000507 "A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant's subjective sense of gender."@en)

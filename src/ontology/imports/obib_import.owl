@@ -7,10 +7,10 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/obib_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2023-11-01/imports/obib_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2024-05-08/imports/obib_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obib/2023-04-05/obib.owl>)
 Annotation(<http://purl.org/dc/elements/1.1/source> "MIABIS_v2_accepted and UPenn Biobank ontology"@en)
-Annotation(owl:versionInfo "2023-11-01")
+Annotation(owl:versionInfo "2024-05-08")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
@@ -42,6 +42,8 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000055>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000066>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000067>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBIB_0000732>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OBIB_0000735>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OMIABIS_0000008>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OMIABIS_0000009>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/OMIABIS_0000048>))
@@ -132,6 +134,19 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/BFO_0000067> "[copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/BFO_0000067> "Paraphrase of definition: a relation between an independent continuant and a process, in which the process takes place entirely within the independent continuant")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000067> "contains process"@en)
+
+# Object Property: <http://purl.obolibrary.org/obo/OBIB_0000732> (owns)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBIB_0000732> "Mathias Brochhausen")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/OBIB_0000732> "This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBIB_0000732> "owns"@en)
+SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBIB_0000732> owl:topObjectProperty)
+
+# Object Property: <http://purl.obolibrary.org/obo/OBIB_0000735> (is owned by)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBIB_0000735> "a is owned by b if b has complete power over a. All rights and obligations of ownership are grounded in this (primitive) relation. The claims and obligations of ownership can be partially transferred to a third party by the owner, b."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBIB_0000735> "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBIB_0000735> "is owned by"@en)
 
 # Object Property: <http://purl.obolibrary.org/obo/OMIABIS_0000008> (obsolete owns)
 
