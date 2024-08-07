@@ -1,3 +1,7 @@
+[![Powered by the ROBOT](https://img.shields.io/static/v1?label=Powered%20by&message=ROBOT&color=green&style=flat)](http://robot.obolibrary.org/)
+<a href="http://dashboard.obofoundry.org/dashboard/omrse/dashboard.html"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2Fobo-dash.github.io%2Fgh-pages%2Fdashboard%2Fomrse%2Fdashboard-qc-badge.json" /></a>
+<a href="http://dashboard.obofoundry.org/dashboard/omrse/dashboard.html"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FOBOFoundry%2Fobo-dash.github.io%2Fgh-pages%2Fdashboard%2Fomrse%2Fdashboard-score-badge.json" /></a>
+
 # OMRSE -- The Ontology for Modeling and Representation of Social Entities
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
