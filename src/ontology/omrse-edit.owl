@@ -651,10 +651,6 @@ DataPropertyRange(obo:OMRSE_00000137 xsd:string)
 #   Classes
 ############################
 
-# Class: obo:GO_0003674 (molecular_function)
-
-SubClassOf(obo:GO_0003674 obo:BFO_0000034)
-
 # Class: obo:GO_0008150 (biological_process)
 
 SubClassOf(obo:GO_0008150 obo:BFO_0000015)

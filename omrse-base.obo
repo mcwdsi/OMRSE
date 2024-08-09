@@ -1,33 +1,34 @@
 format-version: 1.2
-data-version: omrse/releases/2024-03-22/omrse-base.owl
+data-version: omrse/releases/2024-08-09/omrse-base.owl
+idspace: dc http://purl.org/dc/elements/1.1/ 
+idspace: foaf http://xmlns.com/foaf/0.1/ 
+idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
+idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
+idspace: terms http://purl.org/dc/terms/ 
 remark: This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt
 ontology: omrse/omrse-base
-property_value: http://purl.org/dc/elements/1.1/contributor "Barry Smith" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Chris Stoeckert" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Daniel Welch" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Jie Zheng" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "John W. Judkins" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sam Smith" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Selja Seppälä" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William D. Duncan" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Yongqun He" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "Shariq Tariq" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "Swetha Garimalla" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "William Hogan" xsd:string
-property_value: http://purl.org/dc/elements/1.1/description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
-property_value: http://purl.org/dc/elements/1.1/title "Ontology for Modeling and Representation of Social Entities" xsd:string
-property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
-property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by/4.0/" xsd:string
-property_value: owl:versionInfo "2024-03-22" xsd:string
-
-[Term]
-id: GO:0003674
-is_a: BFO:0000034
+property_value: dc:contributor "Barry Smith" xsd:string
+property_value: dc:contributor "Chris Stoeckert" xsd:string
+property_value: dc:contributor "Daniel Welch" xsd:string
+property_value: dc:contributor "Jie Zheng" xsd:string
+property_value: dc:contributor "John W. Judkins" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "Sam Smith" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "Selja Seppälä" xsd:string
+property_value: dc:contributor "William D. Duncan" xsd:string
+property_value: dc:contributor "Yongqun He" xsd:string
+property_value: dc:creator "Amanda Hicks" xsd:string
+property_value: dc:creator "Mathias Brochhausen" xsd:string
+property_value: dc:creator "Shariq Tariq" xsd:string
+property_value: dc:creator "Swetha Garimalla" xsd:string
+property_value: dc:creator "William Hogan" xsd:string
+property_value: dc:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
+property_value: dc:title "Ontology for Modeling and Representation of Social Entities" xsd:string
+property_value: dc:type IAO:8000001
+property_value: owl:versionInfo "2024-08-09" xsd:string
+property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
 
 [Term]
 id: GO:0008150
@@ -38,7 +39,7 @@ id: OMRSE:00000000
 name: social security number
 def: "Social Security Number(SSN) is a Centrally Registered IDentifier that is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents under section 205(c) of the Social Security Act, codified as 42 U.S.C. § 405(c). The number is issued to an individual by the Social Security Administration, an independent agency of the United States government. Its primary purpose is to track individuals for Social Security purposes." []
 is_a: IAO:0000578
-property_value: http://purl.org/dc/elements/1.1/creator "Cheng Chen(cxchen1@ualr.edu)" xsd:string
+property_value: dc:creator "Cheng Chen(cxchen1@ualr.edu)" xsd:string
 property_value: IAO:0000118 "SSN" xsd:string
 property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Social_Security_number" xsd:string
 
@@ -160,8 +161,8 @@ name: health care provider organization role
 def: "A role that inheres in an organization and that is realized by the providing of services in a health care encounter." []
 is_a: OMRSE:00000027 ! organization health care role
 relationship: BFO:0000054 OGMS:0000097
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:creator "Amanda Hicks" xsd:string
 
 [Term]
 id: OMRSE:00000016
@@ -179,7 +180,7 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 id: OMRSE:00000018
 name: obsolete_hospital role
 def: "A role borne by an organization and realized by providing healthcare services by healthcare professionals of multiple different disciplines of medicine and enabling stationary treatment." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "hospital" xsd:string
 is_obsolete: true
@@ -210,7 +211,7 @@ id: OMRSE:00000024
 name: obsolete role in human social processes
 def: "A role inhering in an entity realized by social interactions in human society." []
 comment: Previous definition: A role played by an entity in human social processes.
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 is_obsolete: true
 
@@ -245,7 +246,7 @@ is_a: OMRSE:00000025 ! organization social role
 id: OMRSE:00000028
 name: obsolete geopolitical organization
 def: "An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii)." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "geopolitical organization" xsd:string
 is_obsolete: true
@@ -253,7 +254,7 @@ is_obsolete: true
 [Term]
 id: OMRSE:00000029
 name: obsolete geopoli organization
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000118 "geopoli organization" xsd:string
 is_obsolete: true
 
@@ -269,7 +270,7 @@ id: OMRSE:00000031
 name: obsolete major administrative subdivision
 def: "A subnational entity that is the primary organizational member of a nation, is subject to the full set of laws of the nation, enjoys all the privileges established under the laws of the nation, is not a member of any other geopolitical entity, and itself governs a part of the geographical region governed by the nation." []
 comment: example: Northern Ireland
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000118 "major administrative subdivision" xsd:string
 is_obsolete: true
 
@@ -278,7 +279,7 @@ id: OMRSE:00000032
 name: obsolete geopolitical dependency
 def: "A subnational entity that does not possess full political independence or sovereignty as a sovereign state, but remains politically outside of the controlling state and controls a geographical region that is outside the controlling state's integral region." []
 comment: Typically, the common feature is that the dependency does not conduct foreign affairs, and relegates this authority to the sovereign state.  BUt otherwise, it is largely or completely autonomous relative to the administrative subdivisions.  Examples include Puerto Rico (U.S.), Guam (U.S.), Greenland (Denmark), French Polynesia (France), and Falkland Islands (United Kingdom). 
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000118 "geopolitical dependency" xsd:string
 is_obsolete: true
 
@@ -294,7 +295,7 @@ property_value: IAO:0000117 "William R. Hogan\nAmanda Hicks" xsd:string
 id: OMRSE:00000034
 name: obsolete aggregate of sovereign states
 def: "An aggregate of sovereign states that share some feature in common, but is not an organization nor necessarily the outcome of some treaty among them." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "An aggregate of geopoli organizations that is not itself a sovereign state and whose members are only sovereign states that have some feature in common" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "aggregate of sovereign states" xsd:string
@@ -304,7 +305,7 @@ is_obsolete: true
 id: OMRSE:00000035
 name: obsolete aggregate of geopoli organizations
 def: "An object aggregate that is not itself a geopolitical organization and whose members are only geopolitical organizations that have some feature in common" []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "aggregate of geopoli organizations" xsd:string
@@ -314,7 +315,7 @@ is_obsolete: true
 id: OMRSE:00000036
 name: obsolete aggregate of dependencies
 def: "An aggregate of geopoli organizations that is not itself a geopolitical dependency and whose members are only geopolitical dependencies that have some feature in common." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000118 "aggregate of dependencies" xsd:string
 is_obsolete: true
@@ -323,7 +324,7 @@ is_obsolete: true
 id: OMRSE:00000037
 name: obsolete aggregate of major administrative subdivisions
 def: "An aggregate of geopoli organizations that is not itself a major administrative subdivision and whose members are only major administrative subdivisions that have some feature in common" []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000118 "aggregate of major administrative subdivisions" xsd:string
 is_obsolete: true
@@ -355,8 +356,8 @@ id: OMRSE:00000041
 name: obsolete intergovernmental organization
 def: "an intergovernmental organization that has at least three member states, that has activies in at least three states, and that is unified by some formal intergovernmental agreement" []
 comment: examples:\nNorth American Free Trade Argreement [NAFTA] , Universal Postal Union [UPU], Oragnaization of American States [OAS], World Bank), Organization of Petroleum exporting countries [OPEC] United Nations [UN[, The World Trade Organization [WTO], The World Health Organization [WHO], UNICEF
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/contributor "Katrina Donovan" xsd:string
+is_a: oboInOwl:ObsoleteClass
+property_value: dc:contributor "Katrina Donovan" xsd:string
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000118 "intergovernmental organization" xsd:string
 property_value: IAO:0000119 "\"IGOs are organizations whose memebers include at lesat three states, that have activities in several states, and whose members are held together by a formal intergovernmental agreement ... These organizations range in size from three members (North American Free Trade Argreement [NAFTA]) to more than 190 memembers (Universal Postal Union (UPU)].  Memebers may come from primarily one georgraphic regioni (Oragnaization of American States [OAS]) or from all geographic regions (World Bank).  although soem IGOs are designed to achieve a single purpose (Organization of Petroleum exporting countries [OPEC]), others have been developed for multiple tasks (United Nations [UN}).  ... IGOs are recognized subjects of international law with separate standing fromt heir member states.\" Karns and Mingst I(2004) p. 7" xsd:string
@@ -367,8 +368,8 @@ id: OMRSE:00000042
 name: obsolete nongovernmental organization
 def: "a geopolitical organization that is voluntary and private, whose members are individual persons or organizations that come together to acheive a common purpose." []
 comment: Examples:\nInternaltion Federation of Red Cross and Red Crescent Societies, Oxfam, CARE, Doctors Without Borders, World Wildlife Fund, Transparency International, Human Rights Watch, Amnesty International, and Save the Children.
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/contributor "Katrina Donovan" xsd:string
+is_a: oboInOwl:ObsoleteClass
+property_value: dc:contributor "Katrina Donovan" xsd:string
 property_value: IAO:0000118 "nongovernmental organizations" xsd:string
 property_value: IAO:0000119 "NGOs are private voluntary organizations whose members are individuals or associations that come together to acheive a common purpose.  Some organizations are formed to advocate a particular cause such as human rights, peace, or envirnomental projetion.  Others are established to provide services such as disaster relief, humantarian aid in war-torn socieities, or development assistance.  ... National level groups are often called interest or pressure groups, and many of them are now linked to counterpart groups in other countries through transnational networks or federations.  International NGOs, like IGOs, may draw their members from one region or several regions, and they may have very specific functions or be multi-functional.\n\nKarns and Mingst (2004) p. 10f." xsd:string
 is_obsolete: true
@@ -377,8 +378,8 @@ is_obsolete: true
 id: OMRSE:00000043
 name: obsolete private governance organizations
 comment: Examples: private bond-rating agencies such as Moody's Investors Service, International Chamber of Commerce, Worldwide Responsible Apparel Manufacturing Principles, Forest Stewardship
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/contributor "Katrina Donovan" xsd:string
+is_a: oboInOwl:ObsoleteClass
+property_value: dc:contributor "Katrina Donovan" xsd:string
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000118 "private governance organizations" xsd:string
 property_value: IAO:0000119 "\"Although the very meaning of the term is controversial, it involves authoritative decsionmaking in areas that once were part of national legal frameworks, the government, the sovereign state, or the public sector.\"\n\nKarns and Mingst (2004) p. 14." xsd:string
@@ -389,7 +390,7 @@ id: OMRSE:00000044
 name: obsolete governmental organization
 def: "An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii). \n\nNote: this definition was taken over from \"geopolitical organization\"." []
 comment: IMPORTANT: The label "geopolitical organization" was previously used for OMRSE_00000044 (governmental organization).  "geopoli organization" is a label for a new and different class.
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000118 "governmental organization" xsd:string
 is_obsolete: true
@@ -399,7 +400,7 @@ id: OMRSE:00000045
 name: obsolete sovereign state
 def: "A governmental organization with a defined territory on which it exercises internal and external sovereignty, a permanent population, a government, and the capacity to enter into relations with other sovereign states." []
 comment: Per Wikipedia, the word 'nation' does not always refer to soverign states.  For example, the "nation of Islam".
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "nation" xsd:string
 property_value: IAO:0000118 "nation state" xsd:string
@@ -411,7 +412,7 @@ is_obsolete: true
 id: OMRSE:00000046
 name: obsolete subnational entity
 def: "a governmental organization that has a local, regional, or territorial government that recognizes a sovereign state as its higher political authority" []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "subnational entity" xsd:string
@@ -421,7 +422,7 @@ is_obsolete: true
 id: OMRSE:00000047
 name: obsolete supranational entity
 comment: e.g., the EU
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000118 "supranational entity" xsd:string
 is_obsolete: true
@@ -676,7 +677,7 @@ property_value: IAO:0000119 "http://www.census.gov/cps/about/cpsdef.html\n\nlast
 id: OMRSE:00000083
 name: obsolete OMB ethnic identity datum
 def: "An ethnic identity datum that is the output of an ethnic identification process that uses OMB terminology for ethnicity or terminology that is mapped the OMB ethnicity terms." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB ethnic identity information content entity
@@ -689,7 +690,7 @@ is_a: BFO:0000038
 [Term]
 id: OMRSE:00000085
 name: obsolete socio-legal human social role
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "A role that concretizes a socio-lega generically dependent continuant" xsd:string
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
@@ -773,7 +774,7 @@ is_a: BFO:0000038
 id: OMRSE:00000098
 name: obsolete racial identity datum
 def: "A racial identity is an information content entity that is the output of some racial identitification process and is intended to be a truthful statement about the genetic or cultural race of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 replaced_by: racial identity information content entity
 
@@ -785,7 +786,7 @@ name: racial identification process
 id: OMRSE:00000100
 name: obsolete ethnic identity datum
 def: "An ethnic identity datum is an information content entity that is the output of some ethnic identitification process and is intended to be a truthful statement about the cultural or national heritage of a person.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: ethnic identity information content entity
@@ -965,7 +966,7 @@ is_a: BFO:0000034
 [Term]
 id: OMRSE:00000124
 name: obsolete residential function
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 replaced_by: residence function (OMRSE:00000075)
 
@@ -987,7 +988,7 @@ property_value: IAO:0000118 "discharge process" xsd:string
 id: OMRSE:00000127
 name: obsolete hispanic or latino identity datum
 def: "An OMB ethnic identity datum that indicates the person identified is of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB Hispanic or Latino identity information content entity
@@ -996,7 +997,7 @@ replaced_by: OMB Hispanic or Latino identity information content entity
 id: OMRSE:00000128
 name: obsolete not hispanic or latino identity datum
 def: "An OMB ethnic identity datum that indicates the person identified is not of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB not Hispanic or Latino identity information content entity
@@ -1024,8 +1025,8 @@ relationship: OBI:0000299 OMRSE:00000185 ! obsolete OMB racial identity datum
 id: OMRSE:00000132
 name: obsolete identity datum
 def: "An identity datum is an information content entity that is the output of some identitification process and is intended to be a truthful statement about a person's social identity.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+is_a: oboInOwl:ObsoleteClass
+property_value: dc:creator "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: social identity information content entity
 
@@ -1033,8 +1034,8 @@ replaced_by: social identity information content entity
 id: OMRSE:00000133
 name: obsolete gender identity datum
 def: "A gender identity is an information content entity that is the output of some gender identitification process and is intended to be a truthful statement about a person's subjective sense of their gender.  Unlike data items they are not necessilary contributed or acquired by a reliable method." []
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+is_a: oboInOwl:ObsoleteClass
+property_value: dc:creator "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: gender identity information content entity
 
@@ -1042,7 +1043,7 @@ replaced_by: gender identity information content entity
 id: OMRSE:00000134
 name: identification process
 is_a: IAO:0021003
-property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+property_value: dc:creator "Amanda Hicks" xsd:string
 
 [Term]
 id: OMRSE:00000135
@@ -1052,7 +1053,7 @@ name: gender identification process
 id: OMRSE:00000138
 name: obsolete female gender identity datum
 def: "a gender identity datum resulting from a gender identification process in which ‘female’ is selected based on the participant's subjective sense of gender" []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: female gender identity information content entity
@@ -1073,7 +1074,7 @@ is_a: OMRSE:00000139 ! surgeon role
 id: OMRSE:00000141
 name: obsolete male gender identity datum
 def: "a gender identity datum resulting from a gender identification process in which ‘male’ is selected based on the participant's subjective sense of gender" []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000119 "" xsd:string
 is_obsolete: true
@@ -1085,8 +1086,8 @@ name: human traveling information
 def: "An information content entity that is about human travel." []
 intersection_of: IAO:0000030
 intersection_of: IAO:0000136 APOLLO_SV:00000532
-property_value: http://purl.org/dc/elements/1.1/contributor "Jie Zheng" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+property_value: dc:contributor "Jie Zheng" xsd:string
+property_value: dc:creator "Amanda Hicks" xsd:string
 property_value: IAO:0000119 "https://github.com/ufbmi/OMRSE/issues/79" xsd:anyURI
 
 [Term]
@@ -1094,9 +1095,9 @@ id: OMRSE:00000143
 name: household identifier
 intersection_of: IAO:0000028
 intersection_of: IAO:0000219 OMRSE:00000076 ! household
-property_value: http://purl.org/dc/elements/1.1/contributor "A symbol that denotes a specific household" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Jie Zheng" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+property_value: dc:contributor "A symbol that denotes a specific household" xsd:string
+property_value: dc:contributor "Jie Zheng" xsd:string
+property_value: dc:creator "Amanda Hicks" xsd:string
 
 [Term]
 id: OMRSE:00000144
@@ -1104,14 +1105,14 @@ name: family identifier
 def: "A symbol that denotes a family." []
 intersection_of: IAO:0000028
 intersection_of: IAO:0000219 PCO:0000020
-property_value: http://purl.org/dc/elements/1.1/contributor "Jie Zheng" xsd:string
-property_value: http://purl.org/dc/elements/1.1/creator "Amanda Hicks" xsd:string
+property_value: dc:contributor "Jie Zheng" xsd:string
+property_value: dc:creator "Amanda Hicks" xsd:string
 
 [Term]
 id: OMRSE:00000145
 name: obsolete self-identity data item
 def: "an identity datum that has been asserted by the person whom it is about" []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 
@@ -1221,7 +1222,7 @@ property_value: IAO:0000117 "William R. Hogan" xsd:string
 [Term]
 id: OMRSE:00000162
 name: obsolete medical advice
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 
 [Term]
@@ -1254,7 +1255,7 @@ relationship: BFO:0000066 OMRSE:00000074 ! housing unit
 [Term]
 id: OMRSE:00000168
 name: obsolete questions asking process
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000198
 
@@ -1287,7 +1288,7 @@ intersection_of: BFO:0000054 OGMS:0000097
 [Term]
 id: OMRSE:00000173
 name: obsolete material information bearer of question text plus answer set
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 
 [Term]
@@ -1303,20 +1304,20 @@ is_a: OMRSE:00000163 ! response to a question asking process
 [Term]
 id: OMRSE:00000176
 name: obsolete identity question asking process
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 
 [Term]
 id: OMRSE:00000177
 name: obsolete ethnic identity question asking process
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000199
 
 [Term]
 id: OMRSE:00000178
 name: obsolete race identity question asking process
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 is_obsolete: true
 replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000200
 
@@ -1329,7 +1330,7 @@ is_a: OMRSE:00000175 ! response to an identity question asking process
 id: OMRSE:00000180
 name: obsolete American Indian or Alaska Native identity datum
 def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB American Indian or Alaska Native identity information content entity
@@ -1338,7 +1339,7 @@ replaced_by: OMB American Indian or Alaska Native identity information content e
 id: OMRSE:00000181
 name: obsolete Asian identity datum
 def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB Asian identity information content entity
@@ -1347,7 +1348,7 @@ replaced_by: OMB Asian identity information content entity
 id: OMRSE:00000182
 name: obsolete black or African American identity datum
 def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the black racial groups of Africa." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB black or African American identity information content entity
@@ -1356,7 +1357,7 @@ replaced_by: OMB black or African American identity information content entity
 id: OMRSE:00000183
 name: obsolete Native Hawaiian or other Pacific Islander identity datum
 def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB Native Hawaiian or other Pacific Islander identity information content entity
@@ -1365,7 +1366,7 @@ replaced_by: OMB Native Hawaiian or other Pacific Islander identity information 
 id: OMRSE:00000184
 name: obsolete white identity datum
 def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms and that indicates that the subject of the identity has origins in any of the original peoples of Europe, the Middle East, or North Africa." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB white identity information content entity
@@ -1374,7 +1375,7 @@ replaced_by: OMB white identity information content entity
 id: OMRSE:00000185
 name: obsolete OMB racial identity datum
 def: "A racial identity that is the output of a racial identification process that uses OMB terminology for race or terminology that is mapped the OMB race terms." []
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 is_obsolete: true
 replaced_by: OMB racial identity information content entity
@@ -1422,10 +1423,10 @@ id: OMRSE:00000192
 name: obsolete communication
 def: "A process in which some participant shares some information content entity about some state of that participant with some other participant." []
 comment: The term 'participant' in the definition need not refer to a human agent.
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+is_a: oboInOwl:ObsoleteClass
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 is_obsolete: true
 
@@ -1433,10 +1434,10 @@ is_obsolete: true
 id: OMRSE:00000193
 name: obsolete linguistic competence
 def: "A disposition inhering in a material entity that, if realized, is realized by that material entity’s communicating via some linguistic concretization." []
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+is_a: oboInOwl:ObsoleteClass
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 is_obsolete: true
 
@@ -1444,10 +1445,10 @@ is_obsolete: true
 id: OMRSE:00000194
 name: obsolete language
 def: "A disposition inhering in a linguistic community that (i) is a maximal aggregate of communicatively compatible linguistic competences, and (ii) if realized, is realized by any and all realizations of those linguistic competences." []
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+is_a: oboInOwl:ObsoleteClass
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 is_obsolete: true
 
@@ -1457,19 +1458,19 @@ name: linguistic community
 def: "A maximal aggregate of material entities such that each member bears a linguistic competence for the same language." []
 is_a: BFO:0000040
 relationship: RO:0000053 OMRSE:00002069 ! language
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
 id: OMRSE:00000196
 name: obsolete expression of preferred language
 def: "A communication in which some participant states a preference for some communicative process to be in a certain language, and that has a concretization of a preferred language information content entity as its specified output." []
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+is_a: oboInOwl:ObsoleteClass
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 is_obsolete: true
 
@@ -1477,10 +1478,10 @@ is_obsolete: true
 id: OMRSE:00000197
 name: obsolete preferred language information content entity
 def: "An information content entity that (i) is about some person, some language, and some linguistic competence; and (ii) conveys the language with which that person prefers to communicate within some given context." []
-is_a: ObsoleteClass
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+is_a: oboInOwl:ObsoleteClass
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 is_obsolete: true
 
@@ -1542,11 +1543,11 @@ name: social identity information content entity
 def: "An information content entity that is intended to be a truthful statement about some person and whether that person identifies as some particular aspect of social identity—such as a gender, an ethnicity, a race, or a sexual orientation—where the sense of identifying may correspond to either (i) an aspect of one’s cognitive representation of oneself, (ii) how one prefers to be regarded by others within some social context, or (iii) how one chooses to present oneself to others within some social context." []
 comment: We include (i)-(iii) to acknowledge that there are different senses of "identify" that are relevant here, and that we may not always be sure which sense the person concretizing the social identity information content entity intended. While (i) concerns how one thinks of oneself, (ii) and (iii) are more focused on one's interactions with others. Importantly, some choose not to share with others how they identify in the sense of (i). For example, one can consider oneself to be some certain gender without either wanting others to know or choosing to present oneself in a corresponding way. We distinguish (ii) and (iii) because one can prefer to be regarded some certain way without attempting to present oneself in any corresponding way.
 is_a: IAO:0000030
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1555,11 +1556,11 @@ name: ethnic identity information content entity
 def: "A social identity information content entity that is about whether some person identifies as some ethnicity." []
 comment: Ethnicity is separate from but related to racial identity. It refers more to identifying with a particular culture than with individuals similar in physical appearance. It includes things like Hispanic ethnicity (which spans many nations) and national cultural identities like Irish and ethnic groups within nations such as Catalan and Armenian.
 is_a: OMRSE:00000204 ! social identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1568,11 +1569,11 @@ name: OMB ethnic identity information content entity
 def: "An ethnic identity information content entity that uses OMB terminology for ethnicity or terminology that is strictly mapped onto the OMB ethnicity terms." []
 comment: OMB dichotomizes ethnicity into Hispanic or Latino and Not Hispanic or Latino, and ignores all other forms of ethnicity.
 is_a: OMRSE:00000205 ! ethnic identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1581,11 +1582,11 @@ name: OMB Hispanic or Latino identity information content entity
 def: "An OMB ethnic identity information content entity that is about some person's identifying as Hispanic or Latino, which are intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race." []
 comment: It comprehends people of Portuguese culture or origin in Brazil.
 is_a: OMRSE:00000206 ! OMB ethnic identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1593,11 +1594,11 @@ id: OMRSE:00000208
 name: OMB not Hispanic or Latino identity information content entity
 def: "An OMB ethnic identity information content entity that is about some person's identifying as neither Hispanic nor Latino, which are intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race." []
 is_a: OMRSE:00000206 ! OMB ethnic identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1605,11 +1606,11 @@ id: OMRSE:00000209
 name: gender identity information content entity
 def: "A social identity information content entity that is about whether some person identifies as some gender." []
 is_a: OMRSE:00000204 ! social identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1617,11 +1618,11 @@ id: OMRSE:00000210
 name: female gender identity information content entity
 def: "A gender identity information content entity that is about some person's identifying as female in gender." []
 is_a: OMRSE:00000209 ! gender identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1629,11 +1630,11 @@ id: OMRSE:00000211
 name: male gender identity information content entity
 def: "A gender identity information content entity that is about some person's identifying as male in gender." []
 is_a: OMRSE:00000209 ! gender identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1641,11 +1642,11 @@ id: OMRSE:00000212
 name: non-binary identity information content entity
 def: "A gender identity information content entity that is about some person's identifying as non-binary in gender." []
 is_a: OMRSE:00000209 ! gender identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1653,11 +1654,11 @@ id: OMRSE:00000213
 name: racial identity information content entity
 def: "A social identity information content entity that is about whether some person identifies as some race." []
 is_a: OMRSE:00000204 ! social identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1665,11 +1666,11 @@ id: OMRSE:00000214
 name: OMB racial identity information content entity
 def: "A racial identity information content entity that uses OMB terminology and definitions for race or terminology that is strictly mapped onto the OMB race terms." []
 is_a: OMRSE:00000213 ! racial identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1678,11 +1679,11 @@ name: OMB American Indian or Alaska Native identity information content entity
 def: "An OMB racial identity information content entity that is about some person's identifying as American Indian or Alaska Native, which is intended to mean having origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment." []
 comment: This definition corresponds to that used by OMB. It is worth noting that the OMB definition from which this one is derived is problematic, in that it implies that one's race cannot be Native American or Alaskan Native unless one maintains tribal affiliations or community attachment.
 is_a: OMRSE:00000214 ! OMB racial identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1690,11 +1691,11 @@ id: OMRSE:00000216
 name: OMB Asian identity information content entity
 def: "An OMB racial identity information content entity that is about some person's identifying as Asian, which is intended to mean having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent." []
 is_a: OMRSE:00000214 ! OMB racial identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1702,11 +1703,11 @@ id: OMRSE:00000217
 name: OMB black or African American identity information content entity
 def: "An OMB racial identity information content entity that is about some person's identifying as black or African American which is intended to mean having origins in any of the black racial groups of Africa." []
 is_a: OMRSE:00000214 ! OMB racial identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1714,11 +1715,11 @@ id: OMRSE:00000218
 name: OMB Native Hawaiian or other Pacific Islander identity information content entity
 def: "An OMB racial identity information content entity that is about some person's identifying as Native Hawaiian or other Pacific Islander, which is intended to mean having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands." []
 is_a: OMRSE:00000214 ! OMB racial identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1726,11 +1727,11 @@ id: OMRSE:00000219
 name: OMB white identity information content entity
 def: "An OMB racial identity information content entity that is about some person's identifying as white which is intended to mean having origins in any of the original peoples of Europe, the Middle East, or North Africa." []
 is_a: OMRSE:00000214 ! OMB racial identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1738,22 +1739,22 @@ id: OMRSE:00000220
 name: sexual orientation identity information content entity
 def: "A social identity information content entity that is about whether some person identifies as having some sexual orientation." []
 is_a: OMRSE:00000204 ! social identity information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Amanda Hicks" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 
 [Term]
 id: OMRSE:00000221
 name: residence ZIP code information content entity
 def: "An information content entity that is about some geographical region, in which a postal delivery route denoted by a particular ZIP code is realized, and that is the specified output of a disclosure of residence." []
 is_a: IAO:0000030
-property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Hansi Zhang" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -1761,7 +1762,7 @@ id: OMRSE:00000222
 name: debt obligation
 def: "A directive information entity that prescribes that something will be transferred from some human or organization that is the bearer of a duty holder role to another human or organization that is the bearer of a claimant role." []
 is_a: IAO:0000033
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "debt obligation" xsd:string
 property_value: IAO:0000112 "Three Arrows Capital declared bankruptcy on July 1, 2022 after defaulting on a $665 million debt obligation owed to Voyager Digital." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -1771,11 +1772,11 @@ id: OMRSE:00000223
 name: disclosure of residence
 def: "A social act that creates an information content entity that is about some geographical region in which a human being dwells." []
 is_a: IAO:0021003
-property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Hansi Zhang" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -1783,11 +1784,11 @@ id: OMRSE:00000224
 name: electronic health record data set
 def: "A data set whose members are obtained from one or more electronic health records." []
 is_a: IAO:0000100
-property_value: http://purl.org/dc/elements/1.1/contributor "Alan Ruttenberg" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brocchausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Alan Ruttenberg" xsd:string
+property_value: dc:contributor "Mathias Brocchausen" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 property_value: IAO:0000118 "EHR data set" xsd:string
 
@@ -1801,11 +1802,11 @@ comment: The outcome of the adjudication of a claim in the claims dataset could 
 comment: The reason we say billing data are only part of the input is because we are not conflating the insurance claim with the bill. It is our understanding that the provider’s bill of services is either part of the claim or “attached” to it in some manner, but doesn’t constitute the entire claim itself.
 comment: The sources of these data are held by insurers or other health plan providers.
 is_a: IAO:0000100
-property_value: http://purl.org/dc/elements/1.1/contributor "Alan Ruttenberg" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brocchausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "Alan Ruttenberg" xsd:string
+property_value: dc:contributor "Mathias Brocchausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
 [Term]
@@ -1813,11 +1814,11 @@ id: OMRSE:00000226
 name: health care billing data set
 def: "A data set whose members are obtained from billing-related data sources that (i) are generated by a health care organization as a result of internal administrative processes, and (ii) are about services rendered or materials used during some health care encounter." []
 is_a: IAO:0000100
-property_value: http://purl.org/dc/elements/1.1/contributor "Alan Ruttenberg" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Alan Ruttenberg" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1825,7 +1826,7 @@ id: OMRSE:00000227
 name: health care administrative process
 def: "A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization." []
 is_a: OBI:0000011
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000112 "Recording data in an EHR. Financial tasks for a healthcare organization. Scheduling shifts for health care workers." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
@@ -1834,7 +1835,7 @@ id: OMRSE:00000228
 name: principal diagnosis-assignment process
 def: "A health care administrative process that has as input a diagnosis, and has as output a value indicating that diagnosis is about the condition that prompts the admission process that starts the encounter during which the diagnostic process that outputs that diagnosis begins." []
 is_a: OMRSE:00000227 ! health care administrative process
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1842,7 +1843,7 @@ id: OMRSE:00000229
 name: secondary diagnosis-assignment process
 def: "A health care administrative process that has as input a diagnosis, and has as output a value indicating that diagnosis is about an underlying condition that is distinct from the condition that prompts the admission process that starts the encounter during which the diagnostic process that outputs that diagnosis begins." []
 is_a: OMRSE:00000227 ! health care administrative process
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -1850,12 +1851,12 @@ id: OMRSE:00000230
 name: county smoking survey plan specification
 def: "A survey plan specification that aims to collect information about the smoking behavior or lack thereof of a population on a county level. Concretization of a smoking survey plan that is stratified by county." []
 is_a: OBIB:0000701
-property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Jiang Bian" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Hansi Zhang" xsd:string
+property_value: dc:contributor "Jiang Bian" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000112 "The Alachua county smoking survey plan specification." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
@@ -1864,12 +1865,12 @@ id: OMRSE:00000231
 name: county smoking survey execution
 def: "A survey execution that realizes the concretization of a smoking survey plan specification that is stratified by county." []
 is_a: OBIB:0000710
-property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Jiang Bian" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Hansi Zhang" xsd:string
+property_value: dc:contributor "Jiang Bian" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000112 "The Alachua county smoking survey execution." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
@@ -1878,12 +1879,12 @@ id: OMRSE:00000232
 name: county smoking survey data
 def: "Survey data that is the specified output of a county smoking survey execution." []
 is_a: OBIB:0000667
-property_value: http://purl.org/dc/elements/1.1/contributor "Hansi Zhang" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Jiang Bian" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Hansi Zhang" xsd:string
+property_value: dc:contributor "Jiang Bian" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000112 "The Alachua county smoking survey data." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
@@ -1908,7 +1909,7 @@ id: OMRSE:00000235
 name: money
 def: "A debt obligation between two parties that has part a scalar value specification and whose concretizations indicate that their bearers can be used in a financial transaction or payment of debt, or as a measure of the value of some entity in a financial valuation process or prospective financial valuation process." []
 is_a: OMRSE:00000222 ! debt obligation
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "money" xsd:string
 property_value: IAO:0000112 "Todd does not have enough money to buy more plants at the horticultural club's poinsettia sale." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -1918,7 +1919,7 @@ id: OMRSE:00000236
 name: currency
 def: "A material entity that is the bearer of a concretization of money and is created by some governmental organization or on behalf of some governmental organization that has authorized its creation." []
 is_a: BFO:0000040
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "currency" xsd:string
 property_value: IAO:0000112 "US currency is an accepted form of legal tender, not just in the United States, but in many countries around the world, such as El Salvador." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -1928,7 +1929,7 @@ id: OMRSE:00000237
 name: exchange of ownership
 def: "A planned process whereby one agent (or active participant) or a group of agents transfer ownership of some property to another agent (or active participant) or group of agents in the process, who in return transfer ownership of some their property to the first agent (or active participant)." []
 is_a: OBI:0000011
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "exchange of ownership" xsd:string
 property_value: IAO:0000112 "Tom exchanged ownership of his computer for Tina's scooter." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -1939,7 +1940,7 @@ id: OMRSE:00000238
 name: financial transaction
 def: "A planned process whereby one participant partly or completely fulfills an obligation to another participant by transferring ownership of some other debt obligation, which is typically money." []
 is_a: OBI:0000011
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "financial transaction" xsd:string
 property_value: IAO:0000112 "Apple acquired semiconductors from Samsung in a financial transaction yesterday." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -1950,7 +1951,7 @@ id: OMRSE:00000239
 name: payment of debt
 def: "A planned process whereby ownership of some entity of value is transferred by one participant to another to fulfill some obligation, on their behalf, after some service is performed or the ownership of some entity is exchanged." []
 is_a: OBI:0000011
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "payment of debt" xsd:string
 property_value: IAO:0000112 "I made a debt payment with my credit card company yesterday and no longer owe them money." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -1960,7 +1961,7 @@ id: OMRSE:00000240
 name: financial valuation process
 def: "A planned process that has as specified output some scalar measurement datum that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some other material entity." []
 is_a: OBI:0000011
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "financial valuation process" xsd:string
 property_value: IAO:0000112 "The financial valuation of Ravi's car today determined that the car is worth $2000." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -1970,7 +1971,7 @@ id: OMRSE:00000241
 name: prospective financial valuation process
 def: "A planned process that has as specified output some predicted value that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some material entity at some point in the future." []
 is_a: OBI:0000011
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "prospective financial valuation process" xsd:string
 property_value: IAO:0000112 "The prospective valuation of my company's stock indicates strong optimism for our financial growth over the next few years." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -1980,7 +1981,7 @@ id: OMRSE:00000242
 name: intimate partnership
 def: "Relational quality inhering in persons by virtue of being each other’s spouse, boyfriend/girlfriend, dating partner, or ongoing sexual partner." []
 is_a: BFO:0000145
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -1988,7 +1989,7 @@ id: OMRSE:00000243
 name: abusive behavior
 def: "Behavior that is cruel, violent, demeaning, or invasive." []
 is_a: GO:0007610
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -1996,7 +1997,7 @@ id: OMRSE:00000244
 name: psychologically abusive behavior
 def: "Abusive behavior in which the aggressor does or attempts to do the following: mentally or emotionally harm or exert control over another." []
 is_a: OMRSE:00000243 ! abusive behavior
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2004,7 +2005,7 @@ id: OMRSE:00000245
 name: physically abusive behavior
 def: "Abusive behavior in which the aggressor does or attempts to do the following: harm, restrain, or coerce another through physical force." []
 is_a: OMRSE:00000243 ! abusive behavior
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2012,7 +2013,7 @@ id: OMRSE:00000246
 name: sexually abusive behavior
 def: "Abusive behavior in which the aggressor does or attempts to do the following: force or coerce another to participate in a sexual act to which the latter has not freely given consent." []
 is_a: OMRSE:00000243 ! abusive behavior
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2020,7 +2021,7 @@ id: OMRSE:00000249
 name: birth attendant role
 def: "A health care provider role that is realized in maintaining the health of a human being during their pregnancy and both them and the neonate during labor, delivery, and postpartum." []
 is_a: OMRSE:00000012 ! health care provider role
-property_value: http://purl.org/dc/elements/1.1/contributor "https://orcid.org/0000-0001-6595-0902" xsd:string
+property_value: dc:contributor "https://orcid.org/0000-0001-6595-0902" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 property_value: IAO:0000118 "skilled birth attendant role" xsd:string
 
@@ -2029,10 +2030,10 @@ id: OMRSE:00000250
 name: linguistic competence information content entity
 def: "An information content entity that conveys that a particular person has a linguistic competence for a particular language" []
 is_a: IAO:0000030
-property_value: http://purl.org/dc/elements/1.1/contributor "Barry Smith" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Jobst Landgrebe" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Barry Smith" xsd:string
+property_value: dc:contributor "Jobst Landgrebe" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2040,10 +2041,10 @@ id: OMRSE:00000251
 name: primary language information content entity
 def: "A linguistic competence information content entity that conveys the language is the one for which the person has their most proficient linguistic competence." []
 is_a: OMRSE:00000250 ! linguistic competence information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Barry Smith" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Jobst Landgrebe" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Barry Smith" xsd:string
+property_value: dc:contributor "Jobst Landgrebe" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2051,10 +2052,10 @@ id: OMRSE:00000252
 name: language-at-home information content entity
 def: "A linguistic competence information content entity that conveys the person uses the language at home." []
 is_a: OMRSE:00000250 ! linguistic competence information content entity
-property_value: http://purl.org/dc/elements/1.1/contributor "Barry Smith" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Jobst Landgrebe" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Barry Smith" xsd:string
+property_value: dc:contributor "Jobst Landgrebe" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2062,7 +2063,7 @@ id: OMRSE:00000253
 name: religious gathering
 def: "A social act or aggregate of social acts that include some worship, prayer, or proselytizing." []
 is_a: IAO:0021003
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2070,7 +2071,7 @@ id: OMRSE:00000254
 name: hospital bed capacity data item
 def: "A count of the number of patients that some hospital facility has the capacity for." []
 is_a: APOLLO_SV:00000032
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2078,7 +2079,7 @@ id: OMRSE:00000255
 name: proportion of population in an elementary occupation
 def: "A data item that is the output of some data transformation that takes as input the number of individuals in a population who are occupation holders and has as output the proportion of those individuals who are classified by the European Skills, Competences, Qualifications and Occupations as door-to-door sales worker, news or street vendors; building cleaning workers; pressers, textile, garment, or related materials; septic tank servicers or sewer pipe cleaners; farmworkers or laborers, crop, nursery, or greenhouse; farmworkers, farm, ranch, or aquacultural animal; agricultural workers, all other; landscaping or groundskeeping workers; grounds maintenance workers, all other; forest or conservation workers; logging workers, all other; fishing or hunting workers; helpers--extraction workers; extraction workers, all other; helpers, construction trades; rail-track laying or maintenance equipment operators; construction laborers; helpers--production workers; production workers, all other; laborers or material movers; refuse or recyclable material collectors; couriers or messengers; material moving workers, all other; aircraft cargo handling supervisors; first-line supervisors of helpers, laborer, or material mover, hand; first-line supervisors of transportation worker, all other; tank car, truck, or ship loaders; cooks, fast food; cooks, short order; food preparation workers; dining room or cafeteria attendants or bartender helpers; dishwashers; food preparation or serving related workers, all other; personal care or service workers, all other; baggage porters or bellhops; maintenance or repair workers, general; installation, maintenance, or repair workers, all other; meter readers, utilities; coin, vending, or amusement machine servicers or repairers; motion picture projectionists; ushers, lobby attendants, or ticket takers; amusement or recreation attendants; locker room, coatroom, or dressing room attendants; and parking attendants." []
 is_a: IAO:0000027
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000116 "Currently, the Occupation Ontology (OccO ) only represents occupations as they are defined by O*NET. We define this class extentionally according to the O*NET-defined occupations that map to occupations in ESCO that are classified as elementary occupations." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
@@ -2087,15 +2088,15 @@ id: OMRSE:00000256
 name: Medicaid policy holder role
 def: "A policy holder role that inheres in a person who participates in the creation of an insurance policy with a US state Medicaid agency." []
 is_a: OMRSE:00000094 ! policy holder role
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 
 [Term]
 id: OMRSE:00000257
 name: insurance company
 def: "An insurance organization that is privately owned and that participates in the creation of insurance policies in return for some money from the policy holder." []
 is_a: OMRSE:00000093 ! insurance organization
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2103,7 +2104,7 @@ id: OMRSE:00000258
 name: private insurance policy holder role
 def: "A policy holder role that inheres in a person who participates in the creation of an insurance policy with an insurance company." []
 is_a: OMRSE:00000094 ! policy holder role
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2111,7 +2112,7 @@ id: OMRSE:00000259
 name: US state Medicaid agency
 def: "A government organization that administers a given US state's Medicaid program by participating in the creation of insurance policies with eligible people and by participating in some payment of debt for a specified aggregate of health care encounters, specified processes (e.g, treatments, diagnostic tests) that are part of those encounters, and material entities used or prescribed during the encounters (e.g., medicine, prosthetics, glasses)." []
 is_a: GEO:000000400
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2119,8 +2120,8 @@ id: OMRSE:00000262
 name: categorization scheme
 def: "Information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories." []
 is_a: IAO:0000030
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2129,8 +2130,8 @@ name: social categorization scheme
 def: "Categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics." []
 is_a: OMRSE:00000262 ! categorization scheme
 relationship: OMRSE:00000263 OMRSE:00000023 {all_only="true"} ! demarcates collection of humans
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2139,8 +2140,8 @@ name: social category
 def: "Collection of humans demarcated by some social categorization scheme." []
 is_a: OMRSE:00000023 ! collection of humans
 relationship: OMRSE:00000264 OMRSE:00000265 ! demarcated by social categorization scheme
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2148,8 +2149,8 @@ id: OMRSE:00000268
 name: racial categorization scheme
 def: "Social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors." []
 is_a: OMRSE:00000265 ! social categorization scheme
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2158,8 +2159,8 @@ name: racial category
 def: "Social category demarcated by some racial categorization scheme." []
 is_a: OMRSE:00000267 ! social category
 relationship: OMRSE:00000264 OMRSE:00000268 ! demarcated by racial categorization scheme
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2167,8 +2168,8 @@ id: OMRSE:00000270
 name: ethnic categorization scheme
 def: "Social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship." []
 is_a: OMRSE:00000265 ! social categorization scheme
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2177,8 +2178,8 @@ name: ethnic category
 def: "Social category demarcated by some ethnic categorization scheme." []
 is_a: OMRSE:00000267 ! social category
 relationship: OMRSE:00000264 OMRSE:00000270 ! demarcated by ethnic categorization scheme
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2186,8 +2187,8 @@ id: OMRSE:00000274
 name: personal data disclosure
 def: "Communication in which a person reports some data items about either that person or another person." []
 is_a: OMRSE:00002068 ! communication
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2195,8 +2196,8 @@ id: OMRSE:00000277
 name: subjective representation
 def: "Cognitive representation in which the representation’s bearer is represented as being its bearer." []
 is_a: MF:0000031
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2204,8 +2205,8 @@ id: OMRSE:00000278
 name: social identity
 def: "Subjective representation of its bearer as being a member of some social category." []
 is_a: OMRSE:00000277 ! subjective representation
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2213,8 +2214,8 @@ id: OMRSE:00000279
 name: racial identity
 def: "Social identity for which the category is a racial category." []
 is_a: OMRSE:00000278 ! social identity
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2222,8 +2223,8 @@ id: OMRSE:00000281
 name: ethnic identity
 def: "Social identity for which the category is an ethnic category." []
 is_a: OMRSE:00000278 ! social identity
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2231,8 +2232,8 @@ id: OMRSE:00000282
 name: behavioral identity
 def: "Social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior." []
 is_a: OMRSE:00000278 ! social identity
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2240,14 +2241,14 @@ id: OMRSE:00000284
 name: occupation disposition
 def: "A disposition that, if realized, is realized when the bearer intends to, and does, exercise abilities and skills in pursuit of obtaining or maintaining an job role." []
 is_a: BFO:0000016
-property_value: http://purl.org/dc/elements/1.1/contributor "Damion Dooley" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Jie Zheng" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "John Beverley" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "John W. Judkins" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sam Smith" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William D. Duncan" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Yongqun He" xsd:string
+property_value: dc:contributor "Damion Dooley" xsd:string
+property_value: dc:contributor "Jie Zheng" xsd:string
+property_value: dc:contributor "John Beverley" xsd:string
+property_value: dc:contributor "John W. Judkins" xsd:string
+property_value: dc:contributor "Sam Smith" xsd:string
+property_value: dc:contributor "William D. Duncan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Yongqun He" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2255,15 +2256,15 @@ id: OMRSE:00000285
 name: occupation activity
 def: "A process in which an occupation holder participates that realizes either an occupation disposition or job role." []
 is_a: BFO:0000015
-property_value: http://purl.org/dc/elements/1.1/contributor "Damion Dooley" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Eric Merrell" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Jie Zheng" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "John Beverley" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "John W. Judkins" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sam Smith" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William D. Duncan" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Yongqun He" xsd:string
+property_value: dc:contributor "Damion Dooley" xsd:string
+property_value: dc:contributor "Eric Merrell" xsd:string
+property_value: dc:contributor "Jie Zheng" xsd:string
+property_value: dc:contributor "John Beverley" xsd:string
+property_value: dc:contributor "John W. Judkins" xsd:string
+property_value: dc:contributor "Sam Smith" xsd:string
+property_value: dc:contributor "William D. Duncan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Yongqun He" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 property_value: IAO:0000118 "occupation process" xsd:string
 
@@ -2272,10 +2273,10 @@ id: OMRSE:00000286
 name: U.S. veteran role
 def: "A human role within an organization that inheres in a person who has served in a branch of the U.S. military, is not currently serving in the U.S. military, and the person's service ended in accordance to conditions defined by the U.S. government." []
 is_a: OMRSE:00000086 ! human role within an organization
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William D. Duncan" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William D. Duncan" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 property_value: IAO:0000119 "38 U.S.C. §101(2), as well as “Determining Veteran Status” by the U.S. Department of Veterans Affairs (VA) Office of Small and Disadvantaged Business Utilization (OSDBU): https://www.va.gov/OSDBU/docs/Determining-Veteran-Status.pdf." xsd:string
 
@@ -2284,9 +2285,9 @@ id: OMRSE:00000500
 name: job role data item
 def: "A data item that is about a person's job role and/or its realization." []
 is_a: IAO:0000027
-property_value: http://purl.org/dc/elements/1.1/contributor "Chris Stoeckert" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint. Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Chris Stoeckert" xsd:string
+property_value: dc:contributor "S. Clint. Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000112 "Can be about any aspect of employment, such as salary, work location, or employer." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 property_value: IAO:0000118 "employment data item" xsd:string
@@ -2323,13 +2324,21 @@ is_a: IAO:0000027
 
 [Term]
 id: OMRSE:00000507
+name: Afar
 name: obsolete non-binary gender identity datum
 def: "A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant's subjective sense of gender." []
 comment: Alternatively: A gender identity datum stating that a person's subjective sense of gender is non-binary.)\n\nExamples of usage: ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)
-is_a: ObsoleteClass
+is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000111 "non-binary gender identity datum" xsd:string
 property_value: IAO:0000117 "Paul Fabry" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
+property_value: IAO:0000118 "Afaraf" xsd:string
+property_value: IAO:0000118 "Qafar af" xsd:string
+property_value: IAO:0000118 "Qafaraf" xsd:string
+property_value: IAO:0000118 "’Afar Af" xsd:string
+property_value: OMRSE:00002025 "aa" xsd:string
+property_value: OMRSE:00002026 "aar" xsd:string
+property_value: OMRSE:00002027 "aar" xsd:string
 is_obsolete: true
 replaced_by: non-binary gender identity information content entity
 
@@ -2536,8 +2545,8 @@ id: OMRSE:00002047
 name: kindergarten education program
 def: "A primary education plan specification that specifies the competencies and information content entities that should be acquired by students in the first year of primary education in the United States." []
 is_a: OMRSE:00002034 ! primary education program
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
-property_value: http://purl.org/dc/elements/1.1/date "2020-09-02T12:38:43Z" xsd:dateTime
+property_value: dc:creator http://orcid.org/0000-0002-9881-1017
+property_value: dc:date "2020-09-02T12:38:43Z" xsd:dateTime
 property_value: IAO:0000111 "kindergarten education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -2546,8 +2555,8 @@ id: OMRSE:00002048
 name: undergraduate higher education program
 def: "A higher education plan specification that specifies the awarding of an associates or bachelors degree in the United States or equivalent degrees in other nations, and specifies as a pre-requisite the completion of some secondary education program." []
 is_a: OMRSE:00002042 ! higher education program
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
-property_value: http://purl.org/dc/elements/1.1/date "2020-09-02T12:52:46Z" xsd:dateTime
+property_value: dc:creator http://orcid.org/0000-0002-9881-1017
+property_value: dc:date "2020-09-02T12:52:46Z" xsd:dateTime
 property_value: IAO:0000111 "undergraduate higher education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "undergraduate education program" xsd:string
@@ -2559,8 +2568,8 @@ def: "A higher education plan specification that specifies the awarding of a gra
 comment: Graduate degrees include masters, PhD, MD, PharmD, and other post-graduate professional degrees.  To distinguish MS/PhD from the professional ones, subclass this class.
 comment: The prerequisite degree is at the bachelors level or equivalent.  An associates degree is almost never sufficient for entry into graduate education programs.
 is_a: OMRSE:00002042 ! higher education program
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
-property_value: http://purl.org/dc/elements/1.1/date "2020-09-02T13:01:34Z" xsd:dateTime
+property_value: dc:creator http://orcid.org/0000-0002-9881-1017
+property_value: dc:date "2020-09-02T13:01:34Z" xsd:dateTime
 property_value: IAO:0000111 "graduate higher education plan specification" xsd:string
 property_value: IAO:0000118 "graduate education program" xsd:string
 
@@ -2570,8 +2579,8 @@ name: highest level of education is grades 1 through 6 data item
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of first through sixth grade." []
 comment: Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates completion of some to all of primary education in the United States.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
-property_value: http://purl.org/dc/elements/1.1/date "2020-09-02T13:23:46Z" xsd:dateTime
+property_value: dc:creator http://orcid.org/0000-0002-9881-1017
+property_value: dc:date "2020-09-02T13:23:46Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of grades one through six socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -2581,8 +2590,8 @@ name: highest level of education is grades 7 through 9 data item
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of seventh (7th) through ninth (9th) grade." []
 comment: Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates completion of some to all of lower secondary education in the United States.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
-property_value: http://purl.org/dc/elements/1.1/date "2020-09-02T13:27:15Z" xsd:dateTime
+property_value: dc:creator http://orcid.org/0000-0002-9881-1017
+property_value: dc:date "2020-09-02T13:27:15Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of grades seven through nine socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -2592,8 +2601,8 @@ name: highest level of education is grades 10 through 12 data item
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of tenth (10th) through twelfth (12th) grade." []
 comment: Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates completion of some to all of upper secondary education in the United States.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
-property_value: http://purl.org/dc/elements/1.1/date "2020-09-02T13:27:50Z" xsd:dateTime
+property_value: dc:creator http://orcid.org/0000-0002-9881-1017
+property_value: dc:date "2020-09-02T13:27:50Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of grades ten through twelve socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -2603,8 +2612,8 @@ name: highest level of education is completion of undergraduate degree data item
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some undergraduate degree." []
 comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
-property_value: http://purl.org/dc/elements/1.1/date "2020-09-02T13:28:27Z" xsd:dateTime
+property_value: dc:creator http://orcid.org/0000-0002-9881-1017
+property_value: dc:date "2020-09-02T13:28:27Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of some undergraduate degree socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -2614,8 +2623,8 @@ name: highest level of education is completion of graduate certificate or degree
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some graduate certificate or degree." []
 comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
-property_value: http://purl.org/dc/elements/1.1/date "2020-09-02T13:28:49Z" xsd:dateTime
+property_value: dc:creator http://orcid.org/0000-0002-9881-1017
+property_value: dc:date "2020-09-02T13:28:49Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of some graduate degree socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -2625,8 +2634,8 @@ name: highest level of education is completion of vocaational education program 
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some vocational education program." []
 comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
-property_value: http://purl.org/dc/elements/1.1/date "2020-09-02T13:29:28Z" xsd:dateTime
+property_value: dc:creator http://orcid.org/0000-0002-9881-1017
+property_value: dc:date "2020-09-02T13:29:28Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of some vocational education program socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -2636,8 +2645,8 @@ name: highest level of education is completion of kindergarten data item
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is pre-kindergarten." []
 comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates that a person has completed only early childhood education and nothing more.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
-property_value: http://purl.org/dc/elements/1.1/date "2020-09-02T13:47:38Z" xsd:dateTime
+property_value: dc:creator http://orcid.org/0000-0002-9881-1017
+property_value: dc:date "2020-09-02T13:47:38Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of kindergarten socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -2647,8 +2656,8 @@ name: highest level of education is completion of pre-kindergarten data item
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is kindergarten." []
 comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: http://purl.org/dc/elements/1.1/creator http://orcid.org/0000-0002-9881-1017
-property_value: http://purl.org/dc/elements/1.1/date "2020-09-02T13:48:10Z" xsd:dateTime
+property_value: dc:creator http://orcid.org/0000-0002-9881-1017
+property_value: dc:date "2020-09-02T13:48:10Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of pre-kindergarten socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -2660,9 +2669,9 @@ comment: Other dispositions that it can and likely does have as dispositional pa
 comment: The realization of this disposition by definition realizes the bearer's linguistic competence that is a dispositional part of this disposition.  The realization of the linguistic competence would be an occurrent part of the realization of this disposition (and not a temporal part).
 comment: Whereas linguistic competence may be afforded to non-human agents, literacy is nearly always considered in the context of human beings.
 is_a: BFO:0000016
-property_value: http://purl.org/dc/elements/1.1/contributor "Jiang Bian" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Xi Yang" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Yonghui Wu" xsd:string
+property_value: dc:contributor "Jiang Bian" xsd:string
+property_value: dc:contributor "Xi Yang" xsd:string
+property_value: dc:contributor "Yonghui Wu" xsd:string
 property_value: IAO:0000111 "language literacy competence" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "human literacy" xsd:string
@@ -2673,9 +2682,9 @@ id: OMRSE:00002059
 name: caregiver role
 def: "A human social role that, if realized, is realized in providing assistance in the activities of daily living of another human being who possesses reduced capability to complete some of these activities alone." []
 is_a: OMRSE:00000001 ! human social role
-property_value: http://purl.org/dc/elements/1.1/contributor "John Judkins" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "John Judkins" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2684,9 +2693,9 @@ name: family relationship
 def: "A relational quality that inheres within two or more persons related as members of a domestic group, or a number of domestic groups linked through descent from a common ancestor, marriage, or adoption." []
 comment: We are also intending on including other family arrangements. This is something we are working on.
 is_a: BFO:0000145
-property_value: http://purl.org/dc/elements/1.1/contributor "John Judkins" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "John Judkins" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000119 "http://purl.obolibrary.org/obo/ERO_0002033" xsd:string
 
 [Term]
@@ -2695,7 +2704,7 @@ name: monetary personal income data item
 def: "A data item that is about the sum of earnings for some person(s) from various forms of payment or profits." []
 comment: We use the phrase ‘some person’ in the definition because this class can be about an individual's or a household's earnings. Similarly, we use 'personal income' in the label because the term is typically restricted to individuals and households. This class is also restricted to being about monetary forms of income.
 is_a: IAO:0000027
-property_value: http://purl.org/dc/elements/1.1/contributor "Chris Stoeckert" xsd:string
+property_value: dc:contributor "Chris Stoeckert" xsd:string
 property_value: IAO:0000112 "Examples of monetary forms of payment include: wages, salary, or tips; interest generated by capital; dividends earned; lottery, game, or contest monetary winnings; alimony; royalties; trusts; pensions; receipt of rental payments; unemployment payments; social security payments; worker's compensation; social security payments; or profit from entrepreneurial activities." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
@@ -2707,9 +2716,9 @@ comment: Instances include any process that brings it about that some specifical
 comment: Instances include, but are not limited to, processes that bring about cognitive concretizations.
 is_a: BFO:0000015
 relationship: RO:0000057 BFO:0000040
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000112 "Taking notes on a meeting is an example in which the concretization relation is newly established, since the SDCs that concretize the GDCs come into existence as the notes are written. In contrast, using slides prepared by someone else in order to convey information during a presentation is a case of using a concretization in which the performer neither brings the concretizing SDCs into existence nor is responsible for their standing in the concretization relation to the relevant GDCs. A nonlinguistic example is drawing the logo of one’s favorite brand, in which one creates a pattern that concretizes a GDC that is also concretized by patterns on products of the brand." xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
@@ -2718,9 +2727,9 @@ id: OMRSE:00002063
 name: linguistic concretization-utilization process
 def: "A concretization-utilization process in which the utilized specifically dependent continuant concretizes the generically dependent through use of some language." []
 is_a: OMRSE:00002062 ! concretization-utilization process
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -2731,9 +2740,9 @@ comment: The interpretation need not be accurate. It may even be the case that t
 is_a: BFO:0000015
 relationship: RO:0000057 BFO:0000020
 relationship: RO:0000057 BFO:0000040
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000112 "For example, reading a text message that says, “It is raining outside,” and inferring that the words on the screen are meant to convey information about the weather. The pattern on the screen that corresponds to the words is the SDC, and the ICE about the rain is the GDC. Or, hearing your spouse say, “Can you come to the kitchen?” and then knowing that your spouse wants you to come to the kitchen. You have interpreted the patterns of the sound as concretizing a GDC about what your spouse wants. Or, seeing a drawing of a basketball player and inferring—perhaps incorrectly—that it is of Michael Jordan." xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
@@ -2742,9 +2751,9 @@ id: OMRSE:00002065
 name: linguistic concretization-interpretation process
 def: "A concretization-interpretation process in which the specifically dependent continuant is inferred to concretize the generically dependent continuant  in a way that makes use of some language." []
 is_a: OMRSE:00002064 ! concretization-interpretation process
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Sarah Bost" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "Sarah Bost" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -2754,9 +2763,9 @@ def: "A disposition that inheres in some material entity and is such that that, 
 comment: When realized in a concretization-utilization process, the only relevant concretization may in some cases be a cognitive one, but that suffices to realize a linguistic competence. For example, suppose one begins to write a letter, planning out the words ahead of time, but is interrupted before beginning to write and never resumes. During the process of planning out the words and what one intends to communicate, one is already concretizing words cognitively, as well as considering which combinations of words one can use to concretize additional generically dependent continuants. In doing so, one performs processes that realize one's linguistic competence, without producing any concretizations other than those cognitive ones.
 is_a: BFO:0000016
 relationship: RO:0000052 BFO:0000040
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -2768,9 +2777,9 @@ comment: The interpretation need not correspond exactly to what was intended by 
 comment: The term 'participant' in the definition need not refer to a human agent.
 is_a: BFO:0000015
 relationship: RO:0000057 BFO:0000040
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -2779,9 +2788,9 @@ name: language
 def: "A disposition that (i) is an aggregate of linguistic competences, considered as forming a distinct group on the basis of perceived common characteristics, such as mutual intelligibility among their bearers, in addition to historical or cultural factors; (ii) if realized, is realized in any and all realizations of those linguistic competences; and (iii) inheres in a linguistic community." []
 is_a: BFO:0000016
 relationship: RO:0002351 OMRSE:00002066 ! linguistic competence
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
 [Term]
@@ -2789,9 +2798,9 @@ id: OMRSE:00002070
 name: disclosure of preferred language
 def: "A communication in which some participant states a preference for some communicative process to be in a certain language, via some concretization of some preferred language information content entity." []
 is_a: OMRSE:00002068 ! communication
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
@@ -2801,9 +2810,9 @@ def: "An information content entity that is about some person and some language,
 is_a: IAO:0000030
 relationship: IAO:0000136 BFO:0000040
 relationship: IAO:0000136 OMRSE:00002069 ! language
-property_value: http://purl.org/dc/elements/1.1/contributor "Matthew Diller" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "Matthew Diller" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
@@ -2814,7 +2823,7 @@ comment: Previous definition: A role played by an entity in human social process
 is_a: BFO:0000023
 relationship: RO:0000052 BFO:0000040
 relationship: RO:0000052 BFO:0000040 {all_only="true"}
-property_value: http://purl.org/dc/elements/1.1/contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
@@ -2823,12 +2832,12 @@ is_a: OMRSE:00000022 ! aggregate of objectual organisms
 
 [Typedef]
 id: OMIABIS:0000008
-is_a: ObsoleteProperty
+is_a: oboInOwl:ObsoleteProperty
 is_obsolete: true
 
 [Typedef]
 id: OMIABIS:0000009
-is_a: ObsoleteProperty
+is_a: oboInOwl:ObsoleteProperty
 is_obsolete: true
 
 [Typedef]
@@ -2842,7 +2851,7 @@ is_obsolete: true
 id: OMRSE:00000021
 name: obsolete is-component-of-aggregate
 comment: At the instance level, this relation is the named inverse of is-aggregate-of.\n\nAt the type level, however, not so.\n\nWe expect BFO 2.0 to have this relation as well, and we will obsolete this property and declare it equivalent to BFO's version when BFO 2.0 comes out.
-is_a: ObsoleteProperty
+is_a: oboInOwl:ObsoleteProperty
 is_obsolete: true
 
 [Typedef]
@@ -2869,14 +2878,14 @@ name: provides service
 id: OMRSE:00000247
 name: is abuse of
 def: "Relation between an abusive behavior and one upon whom it is inflicted." []
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Typedef]
 id: OMRSE:00000248
 name: has aggressor
 def: "Relation between an abusive behavior and one who inflicts it upon someone or something else." []
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Typedef]
@@ -2890,8 +2899,8 @@ range: BFO:0000040
 id: OMRSE:00000263
 name: demarcates
 def: "Relation in which a categorization scheme stands to each category into which it partitions things." []
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 domain: OMRSE:00000262 ! categorization scheme
 is_a: IAO:0000136
@@ -2901,8 +2910,8 @@ inverse_of: OMRSE:00000264 ! demarcated by
 id: OMRSE:00000264
 name: demarcated by
 def: "Relation in which a category stands to the categorization scheme that demarcates it as a category." []
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 range: OMRSE:00000262 ! categorization scheme
 
@@ -2910,8 +2919,8 @@ range: OMRSE:00000262 ! categorization scheme
 id: OMRSE:00000272
 name: has primary data subject
 def: "Relation in which a data item stands to the person it is both about and primarily associated with." []
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 domain: IAO:0000030
 range: NCBITaxon:9606
@@ -2922,8 +2931,8 @@ inverse_of: OMRSE:00000273 ! primary data subject of
 id: OMRSE:00000273
 name: primary data subject of
 def: "The inverse of has primary data subject." []
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 domain: NCBITaxon:9606
 range: IAO:0000030
@@ -2932,8 +2941,8 @@ range: IAO:0000030
 id: OMRSE:00000275
 name: has reporter
 def: "Relation in which a personal data disclosure stands to the person who performs it by disclosing data items about someone." []
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 domain: OMRSE:00000274 ! personal data disclosure
 range: NCBITaxon:9606
@@ -2944,8 +2953,8 @@ inverse_of: OMRSE:00000276 ! reporter of
 id: OMRSE:00000276
 name: reporter of
 def: "The inverse of has reporter." []
-property_value: http://purl.org/dc/elements/1.1/contributor "S. Clint Dowland" xsd:string
-property_value: http://purl.org/dc/elements/1.1/contributor "William R. Hogan" xsd:string
+property_value: dc:contributor "S. Clint Dowland" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 domain: NCBITaxon:9606
 range: OMRSE:00000274 ! personal data disclosure
@@ -2953,5 +2962,5 @@ is_a: RO:0000056
 
 [Typedef]
 id: RO:0002217
-is_a: ObsoleteProperty
+is_a: oboInOwl:ObsoleteProperty
 
