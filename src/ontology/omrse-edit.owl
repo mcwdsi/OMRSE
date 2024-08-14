@@ -305,8 +305,10 @@ Declaration(Class(obo:OMRSE_00000256))
 Declaration(Class(obo:OMRSE_00000257))
 Declaration(Class(obo:OMRSE_00000258))
 Declaration(Class(obo:OMRSE_00000259))
+Declaration(Class(obo:OMRSE_00000261))
 Declaration(Class(obo:OMRSE_00000262))
 Declaration(Class(obo:OMRSE_00000265))
+Declaration(Class(obo:OMRSE_00000266))
 Declaration(Class(obo:OMRSE_00000267))
 Declaration(Class(obo:OMRSE_00000268))
 Declaration(Class(obo:OMRSE_00000269))
@@ -316,8 +318,10 @@ Declaration(Class(obo:OMRSE_00000274))
 Declaration(Class(obo:OMRSE_00000277))
 Declaration(Class(obo:OMRSE_00000278))
 Declaration(Class(obo:OMRSE_00000279))
+Declaration(Class(obo:OMRSE_00000280))
 Declaration(Class(obo:OMRSE_00000281))
 Declaration(Class(obo:OMRSE_00000282))
+Declaration(Class(obo:OMRSE_00000283))
 Declaration(Class(obo:OMRSE_00000284))
 Declaration(Class(obo:OMRSE_00000285))
 Declaration(Class(obo:OMRSE_00000286))
@@ -2792,6 +2796,13 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000259 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000259 "US state Medicaid agency"@en)
 SubClassOf(obo:OMRSE_00000259 obo:GEO_000000400)
 
+# Class: obo:OMRSE_00000261 (highest level of education is below high school completion or equivalent data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000261 "A highest level of education data item that represents the fact that an individual in the United States is has not achieved a level of education that is equivalent to or higher than a complete high school education."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000261 "ORCID: 0000-0003-1909-9269")
+AnnotationAssertion(rdfs:label obo:OMRSE_00000261 "highest level of education is below high school completion or equivalent data item"@en)
+SubClassOf(obo:OMRSE_00000261 obo:OMRSE_00002045)
+
 # Class: obo:OMRSE_00000262 (categorization scheme)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000262 "Information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories."@en)
@@ -2810,6 +2821,13 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000265 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000265 "social categorization scheme"@en)
 SubClassOf(obo:OMRSE_00000265 obo:OMRSE_00000262)
 SubClassOf(obo:OMRSE_00000265 ObjectAllValuesFrom(obo:OMRSE_00000263 obo:OMRSE_00000023))
+
+# Class: obo:OMRSE_00000266 (highest level of education is some college data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000266 "A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some undergraduate coursework, but without attaining an undergraduate degree."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000266 "ORCID: 0000-0003-1909-9269")
+AnnotationAssertion(rdfs:label obo:OMRSE_00000266 "highest level of education is some college data item"@en)
+SubClassOf(obo:OMRSE_00000266 obo:OMRSE_00002045)
 
 # Class: obo:OMRSE_00000267 (social category)
 
@@ -2898,6 +2916,13 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000279 "racial identity"@en)
 SubClassOf(obo:OMRSE_00000279 obo:OMRSE_00000278)
 SubClassOf(obo:OMRSE_00000279 ObjectSomeValuesFrom(obo:RO_0000059 ObjectIntersectionOf(obo:BFO_0000031 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:IAO_0000136 obo:NCBITaxon_9606) ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000269)))))
 
+# Class: obo:OMRSE_00000280 (highest level of education is some but not all high school data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000280 "A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some high school coursework, but without attaining a diploma or equivalent."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000280 "ORCID: 0000-0003-1909-9269")
+AnnotationAssertion(rdfs:label obo:OMRSE_00000280 "highest level of education is some but not all high school data item"@en)
+SubClassOf(obo:OMRSE_00000280 obo:OMRSE_00002045)
+
 # Class: obo:OMRSE_00000281 (ethnic identity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000281 "Social identity for which the category is an ethnic category."@en)
@@ -2916,6 +2941,13 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000282 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000282 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000282 "behavioral identity"@en)
 SubClassOf(obo:OMRSE_00000282 obo:OMRSE_00000278)
+
+# Class: obo:OMRSE_00000283 (highest level of education is completion of high school or equivalent data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000283 "A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of high school or equivalent."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000283 "ORCID: 0000-0003-1909-9269")
+AnnotationAssertion(rdfs:label obo:OMRSE_00000283 "highest level of education is completion of high school or equivalent data item"@en)
+SubClassOf(obo:OMRSE_00000283 obo:OMRSE_00002045)
 
 # Class: obo:OMRSE_00000284 (occupation disposition)
 
