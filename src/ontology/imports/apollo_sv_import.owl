@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2023-11-01/imports/apollo_sv_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/apollo_sv/releases/2023-06-02/apollo_sv.owl>)
-Annotation(owl:versionInfo "2023-11-01")
+<http://purl.obolibrary.org/obo/omrse/releases/2024-08-09/imports/apollo_sv_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/apollo_sv/releases/2024-04-19/apollo_sv.owl>)
+Annotation(owl:versionInfo "2024-08-09")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000480>))
@@ -39,13 +39,13 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/APOLLO_SV_00000032> "A measurement datum that is the output of counting."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/APOLLO_SV_00000032> "count"@en)
 
-# Class: <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> (geographical migration of organism)
+# Class: <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> (geographical movement of organism)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "A behavior of one or more organisms that is characterized by the displacement from one geographic region to some target geographic region, and is the realization of either a biological function or (a concretization of) an objective specification."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "Matthew Diller")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "William R. Hogan")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "A behavior of one or more organisms that is characterized by the displacement from one geographic region to some target geographic region, and is the realization of either a biological function or (a concretization of) an objective specification."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "geographical migration of organism"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/APOLLO_SV_00000480> "geographical movement of organism"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/APOLLO_SV_00000480> <http://purl.obolibrary.org/obo/GO_0007610>)
 
 # Class: <http://purl.obolibrary.org/obo/APOLLO_SV_00000532> (human travel)
