@@ -3003,7 +3003,7 @@ SubClassOf(obo:OMRSE_00000286 obo:OMRSE_00000086)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000287 "A residence function that is realized only in processes in which eligible and approved residents participate, and that is a characteristic of a housing unit that is owned by a government and intended for use by seniors, people with disabilities, or those with low incomes."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000287 "William R. Hogan"@en)
-AnnotationAssertion(dc:contributor obo:OMRSE_00000287 "ORCID:0000-0003-1909-9269")
+AnnotationAssertion(dc:contributor obo:OMRSE_00000287 "https://orcid.org/0000-0003-1909-9269"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000287 "public housing function"@en)
 SubClassOf(obo:OMRSE_00000287 ObjectIntersectionOf(obo:OMRSE_00000075 ObjectSomeValuesFrom(obo:RO_0000052 obo:OMRSE_00000074) ObjectAllValuesFrom(obo:BFO_0000054 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000288))))
 
@@ -3011,7 +3011,7 @@ SubClassOf(obo:OMRSE_00000287 ObjectIntersectionOf(obo:OMRSE_00000075 ObjectSome
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000288 "A role that inheres in a person who qualifies for public housing according to the criteria set forth by the relevant governmental entity and that is realized in processes that both have the person as a participant and realize the public housing function of some housing unit."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000288 "William R. Hogan"@en)
-AnnotationAssertion(dc:contributor obo:OMRSE_00000288 "ORCID:0000-0003-1909-9269")
+AnnotationAssertion(dc:contributor obo:OMRSE_00000288 "https://orcid.org/0000-0003-1909-9269"^^xsd:anyURI)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000288 "public housing eligibility role"@en)
 SubClassOf(obo:OMRSE_00000288 ObjectIntersectionOf(obo:OMRSE_00002072 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_9606) ObjectAllValuesFrom(obo:BFO_0000054 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000287))))
 
