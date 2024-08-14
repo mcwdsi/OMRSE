@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2024-08-09/omrse-full.owl
+data-version: omrse/releases/2024-08-14/omrse-full.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -50,7 +50,7 @@ property_value: dc:creator "Swetha Garimalla" xsd:string
 property_value: dc:creator "William Hogan" xsd:string
 property_value: dc:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
 property_value: dc:title "Ontology for Modeling and Representation of Social Entities" xsd:string
-property_value: owl:versionInfo "2024-08-09" xsd:string
+property_value: owl:versionInfo "2024-08-14" xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
 
 [Term]
@@ -6111,6 +6111,14 @@ property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
+id: OMRSE:00000261
+name: highest level of education is below high school completion or equivalent data item
+def: "A highest level of education data item that represents the fact that an individual in the United States is has not achieved a level of education that is equivalent to or higher than a complete high school education." []
+is_a: OMRSE:00002045 ! highest level of education data item
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:source "http://orcid.org/0000-0003-1909-9269" xsd:string
+
+[Term]
 id: OMRSE:00000262
 name: categorization scheme
 def: "Information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories." []
@@ -6128,6 +6136,14 @@ relationship: OMRSE:00000263 OMRSE:00000023 {all_only="true"} ! demarcates colle
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000266
+name: highest level of education is some college data item
+def: "A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some undergraduate coursework, but without attaining an undergraduate degree." []
+is_a: OMRSE:00002045 ! highest level of education data item
+property_value: dc:source "http://orcid.org/0000-0003-1909-9269" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
 
 [Term]
 id: OMRSE:00000267
@@ -6214,6 +6230,14 @@ property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
+id: OMRSE:00000280
+name: highest level of education is some but not all high school data item
+def: "A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some high school coursework, but without attaining a diploma or equivalent." []
+is_a: OMRSE:00002045 ! highest level of education data item
+property_value: dc:source "http://orcid.org/0000-0003-1909-9269" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
 id: OMRSE:00000281
 name: ethnic identity
 def: "Social identity for which the category is an ethnic category." []
@@ -6230,6 +6254,14 @@ is_a: OMRSE:00000278 ! social identity
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000283
+name: highest level of education is completion of high school or equivalent data item
+def: "A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of high school or equivalent." []
+is_a: OMRSE:00002045 ! highest level of education data item
+property_value: dc:source "http://orcid.org/0000-0003-1909-9269" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
 
 [Term]
 id: OMRSE:00000284
@@ -6274,6 +6306,20 @@ property_value: dc:contributor "William D. Duncan" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 property_value: IAO:0000119 "38 U.S.C. §101(2), as well as “Determining Veteran Status” by the U.S. Department of Veterans Affairs (VA) Office of Small and Disadvantaged Business Utilization (OSDBU): https://www.va.gov/OSDBU/docs/Determining-Veteran-Status.pdf." xsd:string
+
+[Term]
+id: OMRSE:00000287
+name: public housing function
+def: "A residence function that is realized only in processes in which eligible and approved residents participate, and that is a characteristic of a housing unit that is owned by a government and intended for use by seniors, people with disabilities, or those with low incomes." []
+property_value: dc:source "https://orcid.org/0000-0003-1909-9269" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00000288
+name: public housing eligibility role
+def: "A role that inheres in a person who qualifies for public housing according to the criteria set forth by the relevant governmental entity and that is realized in processes that both have the person as a participant and realize the public housing function of some housing unit." []
+property_value: dc:source "https://orcid.org/0000-0003-1909-9269" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
 
 [Term]
 id: OMRSE:00000500

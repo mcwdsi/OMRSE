@@ -20,7 +20,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:language-individuals="http://purl.obolibrary.org/obo/omrse/language-individuals/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2024-08-09/omrse.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2024-08-14/omrse.owl"/>
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
         <dc:contributor xml:lang="en">Daniel Welch</dc:contributor>
@@ -42,7 +42,7 @@
         <dc:title xml:lang="en">Ontology for Modeling and Representation of Social Entities</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
-        <owl:versionInfo>2024-08-09</owl:versionInfo>
+        <owl:versionInfo>2024-08-14</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -16810,6 +16810,18 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000261 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000261">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002045"/>
+        <obo:IAO_0000115 xml:lang="en">A highest level of education data item that represents the fact that an individual in the United States is has not achieved a level of education that is equivalent to or higher than a complete high school education.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <terms:source>http://orcid.org/0000-0003-1909-9269</terms:source>
+        <rdfs:label xml:lang="en">highest level of education is below high school completion or equivalent data item</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000262 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000262">
@@ -16838,6 +16850,18 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:label xml:lang="en">social categorization scheme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000266 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000266">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002045"/>
+        <obo:IAO_0000115 xml:lang="en">A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some undergraduate coursework, but without attaining an undergraduate degree.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <dc:source>http://orcid.org/0000-0003-1909-9269</dc:source>
+        <rdfs:label xml:lang="en">highest level of education is some college data item</rdfs:label>
     </owl:Class>
     
 
@@ -17051,6 +17075,18 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002045"/>
+        <obo:IAO_0000115 xml:lang="en">A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some high school coursework, but without attaining a diploma or equivalent.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <dc:source>http://orcid.org/0000-0003-1909-9269</dc:source>
+        <rdfs:label xml:lang="en">highest level of education is some but not all high school data item</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000281 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000281">
@@ -17097,6 +17133,18 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:label xml:lang="en">behavioral identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000283 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000283">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002045"/>
+        <obo:IAO_0000115 xml:lang="en">A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of high school or equivalent.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <dc:source>http://orcid.org/0000-0003-1909-9269</dc:source>
+        <rdfs:label xml:lang="en">highest level of education is completion of high school or equivalent data item</rdfs:label>
     </owl:Class>
     
 
@@ -17153,6 +17201,68 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">William D. Duncan</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:label xml:lang="en">U.S. veteran role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000287 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000287">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000075"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000074"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000288"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A residence function that is realized only in processes in which eligible and approved residents participate, and that is a characteristic of a housing unit that is owned by a government and intended for use by seniors, people with disabilities, or those with low incomes.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <dc:source>https://orcid.org/0000-0003-1909-9269</dc:source>
+        <rdfs:label xml:lang="en">public housing function</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000288">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002072"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000287"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A role that inheres in a person who qualifies for public housing according to the criteria set forth by the relevant governmental entity and that is realized in processes that both have the person as a participant and realize the public housing function of some housing unit.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <dc:source>https://orcid.org/0000-0003-1909-9269</dc:source>
+        <rdfs:label xml:lang="en">public housing eligibility role</rdfs:label>
     </owl:Class>
     
 
