@@ -325,6 +325,8 @@ Declaration(Class(obo:OMRSE_00000283))
 Declaration(Class(obo:OMRSE_00000284))
 Declaration(Class(obo:OMRSE_00000285))
 Declaration(Class(obo:OMRSE_00000286))
+Declaration(Class(obo:OMRSE_00000287))
+Declaration(Class(obo:OMRSE_00000288))
 Declaration(Class(obo:OMRSE_00000500))
 Declaration(Class(obo:OMRSE_00000501))
 Declaration(Class(obo:OMRSE_00000502))
@@ -2799,7 +2801,8 @@ SubClassOf(obo:OMRSE_00000259 obo:GEO_000000400)
 # Class: obo:OMRSE_00000261 (highest level of education is below high school completion or equivalent data item)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000261 "A highest level of education data item that represents the fact that an individual in the United States is has not achieved a level of education that is equivalent to or higher than a complete high school education."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000261 "ORCID: 0000-0003-1909-9269")
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000261 "William R. Hogan"@en)
+AnnotationAssertion(terms:contributor obo:OMRSE_00000261 "ORCID: 0000-0003-1909-9269")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000261 "highest level of education is below high school completion or equivalent data item"@en)
 SubClassOf(obo:OMRSE_00000261 obo:OMRSE_00002045)
 
@@ -2825,7 +2828,8 @@ SubClassOf(obo:OMRSE_00000265 ObjectAllValuesFrom(obo:OMRSE_00000263 obo:OMRSE_0
 # Class: obo:OMRSE_00000266 (highest level of education is some college data item)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000266 "A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some undergraduate coursework, but without attaining an undergraduate degree."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000266 "ORCID: 0000-0003-1909-9269")
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000266 "William R. Hogan"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000266 "ORCID: 0000-0003-1909-9269")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000266 "highest level of education is some college data item"@en)
 SubClassOf(obo:OMRSE_00000266 obo:OMRSE_00002045)
 
@@ -2919,7 +2923,8 @@ SubClassOf(obo:OMRSE_00000279 ObjectSomeValuesFrom(obo:RO_0000059 ObjectIntersec
 # Class: obo:OMRSE_00000280 (highest level of education is some but not all high school data item)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000280 "A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some high school coursework, but without attaining a diploma or equivalent."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000280 "ORCID: 0000-0003-1909-9269")
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000280 "William R. Hogan"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000280 "ORCID: 0000-0003-1909-9269")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000280 "highest level of education is some but not all high school data item"@en)
 SubClassOf(obo:OMRSE_00000280 obo:OMRSE_00002045)
 
@@ -2945,7 +2950,8 @@ SubClassOf(obo:OMRSE_00000282 obo:OMRSE_00000278)
 # Class: obo:OMRSE_00000283 (highest level of education is completion of high school or equivalent data item)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000283 "A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of high school or equivalent."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000283 "ORCID: 0000-0003-1909-9269")
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000283 "William R. Hogan"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000283 "ORCID: 0000-0003-1909-9269")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000283 "highest level of education is completion of high school or equivalent data item"@en)
 SubClassOf(obo:OMRSE_00000283 obo:OMRSE_00002045)
 
@@ -2992,6 +2998,22 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000286 "William D. Duncan"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000286 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000286 "U.S. veteran role"@en)
 SubClassOf(obo:OMRSE_00000286 obo:OMRSE_00000086)
+
+# Class: obo:OMRSE_00000287 (public housing function)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000287 "A residence function that is realized only in processes in which eligible and approved residents participate, and that is a characteristic of a housing unit that is owned by a government and intended for use by seniors, people with disabilities, or those with low incomes."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000287 "William R. Hogan"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000287 "ORCID: 0000-0003-1909-9269")
+AnnotationAssertion(rdfs:label obo:OMRSE_00000287 "public housing function"@en)
+SubClassOf(obo:OMRSE_00000287 ObjectIntersectionOf(obo:OMRSE_00000075 ObjectSomeValuesFrom(obo:RO_0000052 obo:OMRSE_00000074) ObjectAllValuesFrom(obo:BFO_0000054 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000288))))
+
+# Class: obo:OMRSE_00000288 (public housing eligibility role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000288 "A role that inheres in a person who qualifies for public housing according to the criteria set forth by the relevant governmental entity and that is realized in processes that both have the person as a participant and realize the public housing function of some housing unit."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000288 "William R. Hogan"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000288 "ORCID: 0000-0003-1909-9269")
+AnnotationAssertion(rdfs:label obo:OMRSE_00000288 "public housing eligibility role"@en)
+SubClassOf(obo:OMRSE_00000288 ObjectIntersectionOf(obo:OMRSE_00002072 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_9606) ObjectAllValuesFrom(obo:BFO_0000054 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000287))))
 
 # Class: obo:OMRSE_00000500 (job role data item)
 
