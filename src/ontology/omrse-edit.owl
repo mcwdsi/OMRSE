@@ -3011,7 +3011,7 @@ SubClassOf(obo:OMRSE_00000287 ObjectIntersectionOf(obo:OMRSE_00000075 ObjectSome
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000288 "A role that inheres in a person who qualifies for public housing according to the criteria set forth by the relevant governmental entity and that is realized in processes that both have the person as a participant and realize the public housing function of some housing unit."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000288 "William R. Hogan"@en)
-AnnotationAssertion(dc:contributor obo:OMRSE_00000288 "https://orcid.org/0000-0003-1909-9269")
+AnnotationAssertion(dc:source obo:OMRSE_00000288 "https://orcid.org/0000-0003-1909-9269")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000288 "public housing eligibility role"@en)
 SubClassOf(obo:OMRSE_00000288 ObjectIntersectionOf(obo:OMRSE_00002072 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_9606) ObjectAllValuesFrom(obo:BFO_0000054 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000287))))
 
