@@ -67,9 +67,9 @@
         "val" : "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-08-09"
+        "val" : "2024-08-14"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2024-08-09/omrse.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2024-08-14/omrse.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibary.org/obo/IAO_0021001",
@@ -12322,6 +12322,22 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000261",
+      "lbl" : "highest level of education is below high school completion or equivalent data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A highest level of education data item that represents the fact that an individual in the United States is has not achieved a level of education that is equivalent to or higher than a complete high school education."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/terms/source",
+          "val" : "http://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000262",
       "lbl" : "categorization scheme",
       "type" : "CLASS",
@@ -12357,6 +12373,22 @@
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000266",
+      "lbl" : "highest level of education is some college data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some undergraduate coursework, but without attaining an undergraduate degree."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/source",
+          "val" : "http://orcid.org/0000-0003-1909-9269"
         } ]
       }
     }, {
@@ -12531,6 +12563,22 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000280",
+      "lbl" : "highest level of education is some but not all high school data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some high school coursework, but without attaining a diploma or equivalent."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/source",
+          "val" : "http://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000281",
       "lbl" : "ethnic identity",
       "type" : "CLASS",
@@ -12566,6 +12614,22 @@
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000283",
+      "lbl" : "highest level of education is completion of high school or equivalent data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A highest level of education data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of high school or equivalent."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/source",
+          "val" : "http://orcid.org/0000-0003-1909-9269"
         } ]
       }
     }, {
@@ -12674,6 +12738,38 @@
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000287",
+      "lbl" : "public housing function",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A residence function that is realized only in processes in which eligible and approved residents participate, and that is a characteristic of a housing unit that is owned by a government and intended for use by seniors, people with disabilities, or those with low incomes."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/source",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000288",
+      "lbl" : "public housing eligibility role",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A role that inheres in a person who qualifies for public housing according to the criteria set forth by the relevant governmental entity and that is realized in processes that both have the person as a participant and realize the public housing function of some housing unit."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/source",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
         } ]
       }
     }, {
@@ -13906,10 +14002,10 @@
         "subsets" : [ "http://purl.org/obo/owl/obo#attribute_slim" ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-          "val" : "_:genid2147485205"
+          "val" : "_:genid2147485219"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-          "val" : "_:genid2147485206"
+          "val" : "_:genid2147485220"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "quality"
@@ -30485,6 +30581,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/GEO_000000400"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000261",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002045"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000262",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
@@ -30492,6 +30592,10 @@
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000265",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000262"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000266",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002045"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000267",
       "pred" : "is_a",
@@ -30541,6 +30645,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000278"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000280",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002045"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000281",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000278"
@@ -30548,6 +30656,10 @@
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000282",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000278"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000283",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002045"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000284",
       "pred" : "is_a",
