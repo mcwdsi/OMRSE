@@ -1,5 +1,5 @@
-#Languages and ISO-639
-##Background
+# Languages and ISO-639
+## Background
 The need for languages as a class arises from our work representing demographic information in Continuity of Care Documents (CCDs). Preferred language is an element in the CCD, and the header has meta-data indicating the language of the CCD. More details are in the following slide deck (slides 10-17): http://ncor.buffalo.edu/2015/CTSO/Hogan.pptx
 
 In these slides we propose introducing directive information entities (DIEs) for languages, e.g., 'English Directive Information Entity'. These DIEs might be concretized by languages considered as dispositions. Note that the slides refer to MF_00000022, but this has been removed from the Mental Functioning Ontology. https://github.com/jannahastings/mental-functioning-ontology/commit/6a1231b8d973c59cb6189a6d6750632c70fdcf95
@@ -20,9 +20,9 @@ We could then model the language of a document in terms of the language DIE, but
      (a) How should we model dialects?
 
 ## Some proposed necessary conditions for preferred languages
-###A Patient Whose Preferred Language is English
+### A Patient Whose Preferred Language is English
 Subclass Of: member of the population that is a bearer of a language disposition that concretizes an/the English DIE.
 
-###Person 2 speaks Englis.h
+### Person 2 speaks Englis.h
 ‘English DIE’ ‘is concretized by’ some (language and ‘inheres in at all times’ some population and (‘has continuant part at all times’ (‘Person 2’ ‘is a’  (human being))))
 

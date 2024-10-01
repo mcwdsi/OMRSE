@@ -2,16 +2,16 @@
 
 Resources
 
-* OMB
+**OMB**
 https://www.whitehouse.gov/omb/fedreg_race-ethnicity
 https://www.whitehouse.gov/sites/default/files/omb/assets/information_and_regulatory_affairs/re_app-a-update.pdf
 
-* History of the Census and Other Race and Ethnicity Classification Schemes
+**History of the Census and Other Race and Ethnicity Classification Schemes**
 http://www.pewsocialtrends.org/2010/01/21/race-and-the-census-the-%E2%80%9Cnegro%E2%80%9D-controversy/
 
-#Option #1 for modeling race data gathered by the US Census
+# Option #1 for modeling race data gathered by the US Census
 
-##OBM Categories to Date
+## OBM Categories to Date
 
 * American Indian or Alaska Native. A person having origins in any of the original peoples
 of North and South America (including Central America), and who maintains tribal
@@ -27,7 +27,7 @@ peoples of Hawaii, Guam, Samoa, or other Pacific Islands.
 * White. A person having origins in any of the original peoples of Europe, the Middle East, or
 North Africa.
 
-##How to model self-identity claims about race and ethnicity
+## How to model self-identity claims about race and ethnicity
 
 * Self-identity claims about race and ethnicity as they appear in the US Census are Information Content Entities that are intended to be a truthful statement.  They are part of a 'documented identity'.  A documented identity is "the aggregate of all data items about an entity.  Notice that a documented identity is not itself a document since a document is intended to be understood as a whole and data items about an individual are usually scattered across different documents."  
 
@@ -35,7 +35,7 @@ North Africa.
 
 * Racial identities are self-identified when they are about the same person who is the agent of the racial identification process.  This can not be represented in OWL/DL but can be captured by a SPARQL query.
 
-###New classes for OMRSE
+### New classes for OMRSE
 * **racial identity** - Superclass: 'information content entity' and ('is about' some 'Homo sapiens') and ('part of' some 'documented identity') and ('has part' some (is_specified_output_of some 'racial identification process')) and ('part of' some 'documented identity')
 * **racial identification process** - Superclass: 'social act' and 'planned process' and ('has specified output' some ('part of' some 'racial identity'))
 * **ethnic identity** - Superclass: 'information content entity' and ('is about' some 'Homo sapiens') and ('part of' some 'documented identity') and ('has part' some (is_specified_output_of some 'ethnic identification process')) and ('part of' some 'documented identity')

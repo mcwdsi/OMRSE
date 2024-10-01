@@ -1,4 +1,4 @@
-#US Census Householder 
+# US Census Householder 
 
 US Census
 "The householder refers to the person (or one of the people) in whose name the housing unit is owned or rented (maintained) or, if there is no such person, any adult member, excluding roomers, boarders, or paid employees. If the house is owned or rented jointly by a married couple, the householder may be either the husband or the wife. The person designated as the householder is the "reference person" to whom the relationship of all other household members, if any, is recorded.
@@ -17,7 +17,7 @@ Notes: There is one householder to household.  The householder role is individua
 Proposed definition:
 A US Census householder role is a human social role that inheres in a Homo sapiens and is realized by that person being a member of a household and either owning or renting the housing unit in which that household resides and being designated as the householder.  If there is only one member of the household who owns or rents the housing unit, that person is designated the householder by default.  
 
-#US Census Reference Person
+# US Census Reference Person
 
 "The reference person is the person to whom the relationship of other people in the household is recorded. The household reference person is the person listed as the householder (see definition of "Householder"). The subfamily reference person is either the single parent or the husband/wife in a married-couple situation."
 

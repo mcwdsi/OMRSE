@@ -1,20 +1,20 @@
 This page discusses questions relevant to modeling insurance and insurance policies in OMRSE
 
-"In Clarke v Clarke, (1993) 84 BCLR 2d 98, the BC Supreme Court accepted this definition (of life or disability insurance):
-"A contract by which one party undertakes, in consideration for a payment (called a premium), to secure the other against pecuniary loss, by payment of a sum of money in the event of the death or disablement of a person.""(http://www.duhaime.org/LegalDictionary/I/Insurance.aspx, accessed July 20, 2015)
+In Clarke v Clarke, (1993) 84 BCLR 2d 98, the BC Supreme Court accepted this definition (of life or disability insurance):
+"A contract by which one party undertakes, in consideration for a payment (called a premium), to secure the other against pecuniary loss, by payment of a sum of money in the event of the death or disablement of a person."(http://www.duhaime.org/LegalDictionary/I/Insurance.aspx, accessed July 20, 2015)
 
 And 
 
 "A contract whereby, for specified consideration, one party undertakes to compensate the other for a loss relating to a particular subject as a result of the occurrence of designated hazards. … A contract is considered to be insurance if it distributes risk among a large number of persons through an enterprise that is engaged primarily in the business of insurance. Warranties or service contracts for merchandise, for example, do not constitute insurance. They are not issued by insurance companies, and the risk distribution in the transaction is incidental to the purchase of the merchandise. Warranties and service contracts are thus exempt from strict insurance laws and regulations.” (http://legal-dictionary.thefreedictionary.com/insurance, accessed July 20, 2015)
 
-"“A contract (an insurance contract) whereby one person, the insurer, promises and undertakes, in exchange for consideration of a set or assessed amount of money (called a "premium"), to make a payment to either the insured or a third-party if a specified event occurs, also known as "occurrences"." (http://www.duhaime.org/LegalDictionary/I/Insurance.aspx, accessed July 20, 2015)
+"A contract (an insurance contract) whereby one person, the insurer, promises and undertakes, in exchange for consideration of a set or assessed amount of money (called a "premium"), to make a payment to either the insured or a third-party if a specified event occurs, also known as "occurrences"." (http://www.duhaime.org/LegalDictionary/I/Insurance.aspx, accessed July 20, 2015)
 
 From Couch on Insurance, 3rd Edition: "while a policy of insurance, other than life or accident insurance, is basically a contract of indemnity, not all contracts of indemnity are insurance contracts; rather, an insurance contract is one type of indemnity contract.”
 
 1. An **insurance policy** is a **contract**.  More specifically, it's a type of **indemnity contract**.
 * What's the relationship between a contract and a document act?  An insurance policy is a contract that is a document that has as parts action, conditional, plan, and objective specifications.  It is the specified output of a document act.
 2. It is distinguished from other indemnity contracts by distributing the risk among a group of persons through an organization.
-3. insurance policies are the specified output of a document act. (Is this right?)
+3. Insurance policies are the specified output of a document act. (Is this right?)
 4. That document act has as participants (1) a group of persons (the **insured parties**) and (2) the organization that issues the plan. (From 2) The organization and the **primary insured persons on the policy** are parties to a legal agreement (an insurance policy).  
 5.  An insurance company is an organization and bearer_of some **payor_role** that is realized by making a payment to the insured or a third party once (in the case of health insurance) health services are provided to the insured.  The payor role (in this case, not generally) is the concretization of a socio-legal generically dependent_continuant that is the specified output of some document act and inheres in an organization that is party to a insurance policy.  The payor role is the subject of the action specification that is a part of the insurance policy as is the payment.
 6. The enrollment date is the day that the payor and insured roles came into existence.  Or perhaps the SLGDCs that the roles concretize. (Note that the insured role is not generically dependent since one cannot transfers one's insurance benefits to another person.)
