@@ -1,2 +1,8 @@
-
+IAO:0020021     owl:Class
+IAO:0020022     owl:Class
+IAO:0020023     owl:Class
+IAO:0020024     owl:Class
+IAO:0021003     owl:Class
+IAO:0021009     owl:Class
+IAO:0021031	owl:Class
 

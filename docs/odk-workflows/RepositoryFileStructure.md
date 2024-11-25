@@ -28,7 +28,7 @@ These are the current imports in OMRSE
 | oostt | http://purl.obolibrary.org/obo/oostt.owl | None |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
 | pno | http://purl.obolibrary.org/obo/iao/pno.owl | mirror |
-| d-acts | http://purl.obolibrary.org/obo/iao/d-acts.owl | mirror |
+| d-acts | http://purl.obolibrary.org/obo/iao/d-acts.owl | filter |
 | geo | http://purl.obolibrary.org/obo/geo.owl | None |
 | mf | http://purl.obolibrary.org/obo/mf.owl | None |
 

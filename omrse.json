@@ -67,31 +67,11 @@
         "val" : "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-08-14"
+        "val" : "2024-11-25"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2024-08-14/omrse.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2024-11-25/omrse.json"
     },
     "nodes" : [ {
-      "id" : "http://purl.obolibary.org/obo/IAO_0021001",
-      "lbl" : "obsolete_deontic document act",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A deontic declaration creating or revoking a deontic role by lawfully manipulating (signing, stamping, publishing) a document."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "my filling in an immigration form, a judge's signing and stamping a court order"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000226"
-        } ],
-        "deprecated" : true
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
       "lbl" : "software development",
       "type" : "CLASS",
@@ -7281,91 +7261,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020025",
-      "lbl" : "obsolete obligor role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A role that is the specified output of an obligation generating social act and that is realized by it's bearer being the providing part of a process that fulfills the previously agreed upon requirements."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "obligor role"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "Sam's obligor role realized by him taking Nigel to lunch after promising to do so; Sarah's obligor role realized by paying the purchase price to Layla after signing the contract specifying that she is buying a piece of land from Layla."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Sarah Bost"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0100001",
-          "val" : "duty holder role (IAO:210016)"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020026",
-      "lbl" : "obsolete obligee role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A role that is the specified output of an obligation generating social act and that is realized by it's bearer being the receiving part of a process that fulfills the previously agreed upon requirements."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "obligee role"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "Nigel's obligee role realized by Sam taking him out for lunch after Sam so promised; Layla's obligee role realized by receiving the money after signing a contract in which Sarah obtained a piece of land in exchange for a specified sum of money."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Sarah Bost"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0100001",
-          "val" : "claimant role (IAO:0021013)"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020027",
-      "lbl" : "owner role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A role in a human social process that is based on a social act and whose bearer exercises exclusive control over a property, where this control is permitted by one or more deontic roles, which are parts of the owner role."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "Tammy's owner role with regards to the house on 234 Evergreen Terrace; Walter's owner role with regards to the intellectual property on his movie script"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "OBIB/ICO community"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "https://github.com/d-acts/d-acts/issues/29"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021000",
-      "lbl" : "obsolete_claim",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000226"
-        } ],
-        "deprecated" : true
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0021001",
       "lbl" : "deontic document act",
       "type" : "CLASS",
@@ -7380,29 +7275,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Mathias Brochhausen"
         } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021002",
-      "lbl" : "obsolete_document act",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A social act creating, revoking or transferring a socio-legal generically dependent continuant or a role by validating (signing, stamping, publishing) a document."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "my filling in an immigration form, a judge's signing and stamping a court order"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000103"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0100001",
-          "val" : "http://purl.obolibary.org/obo/IAO_0021001"
-        } ],
-        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0021003",
@@ -7422,95 +7294,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021004",
-      "lbl" : "obsolete_socio-legal generically dependent continuant",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "Socio-legal generically dependent continuants are generically dependent continuants that come into existence through social acts and that if they get concretized are concretized as realizable entities."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "the claim of a piece of land, the obligation to pay rent to the owner of a rental property"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021005",
-      "lbl" : "obsolete_deontic declaration",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A social act that brings about, transfers or revokes a socio-legal generically dependent continuant or brings about or transforms a role. Declarations do not depend on words spoken or written, but sometimes are merely actions, for instance the signing of a document."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "deontic declaration"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "my consenting verbally to buy a used TV set for $ 500, John Robie's taking of Mrs. Steven's jewels, Jane Doe's revoking of informed consent over the phone, John Doe signing an employment contract."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "declaration"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "status function declaration"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000103"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021006",
-      "lbl" : "obsolete obligee role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the providing part of a process that fulfills the previously agreed upon requirements."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021007",
-      "lbl" : "document act input document",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A document that is intended to be the specified input in a document act. It has a plan specification as a part that specifies the intended socio-legal entities that are created through the document (objective specification) and the way in which the document act is to be performed (by signing, by stamping, etc.) (action specification)."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021008",
-      "lbl" : "deontic role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A role that inheres in an agent and which is externally grounded in the normative expectations that other agents within a social context have concerning how that agent should behave."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Neil Otte"
-        } ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0021009",
       "lbl" : "deontic declaration",
       "type" : "CLASS",
@@ -7522,244 +7305,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Mathias Brochhausen"
         } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021010",
-      "lbl" : "obsolete_obligation",
-      "type" : "CLASS",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000226"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021013",
-      "lbl" : "claimant role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A deontic role that inheres in an agent A, that mutually depends on the existence of a duty holder role borne by agent B, and that specifies B doing or abstaining from C, or providing or surrendering C to A."
-        },
-        "comments" : [ "Claimant roles can either be discharged by one act of fulfilling a duty (e.g. when I pay back $5 owed to a friend) or they can remain intact and require ongoing adhering to a duty. \nhttps://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the claim of a child to freedom from abuse. That claim remains in existence and the duty to not abuse the child needs to be continuously be acted upon, by a multitude of agents (which all have a duty holder role). This claim is mutually dependent on the duty to abstain from abusing the child." ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "J. Neil Otte"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "https://plato.stanford.edu/entries/rights/"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021014",
-      "lbl" : "obsolete_declaration executive role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "The role borne by a human being, an organization or an aggregate of either of both that is realized by being the active participant in a declaration."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000226"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021015",
-      "lbl" : "obsolete_document template creator role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "The role of a human being or an aggregate of human beings preparing the initial document to undergo a document act, thus creating a socio-legal generically dependent continuant."
-        },
-        "comments" : [ "not that the \"template\" does not need to be a template at all. It can be a document that is getting stamped and signed and by these acts creating some socio-legal generically dependent continuants." ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "the role borne by the US Citizen and Immigration Service realized by providing the template form for entering the US as a non-resident alien, the role of a guideline committee in putting together a clinical guideline"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000226"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021016",
-      "lbl" : "duty holder role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A deontic role that inheres in an agent A, that mutually depends on the existence of a claimant role borne by agent B, and that specifies A doing or abstaining from some acition C, or providing or surrendering C to B."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "J. Neil Otte"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "https://plato.stanford.edu/entries/rights/"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021017",
-      "lbl" : "obsolete_claimant role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "The role of a human being or an aggregate of human beings concretizing a claim."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000226"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021018",
-      "lbl" : "obsolete_obligator role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "The role of a human being or an aggregate of human beings  concretizing an obligation."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000226"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021019",
-      "lbl" : "privilege holder role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A deontic role that inheres in an agent A, that specifies that no agent B bears a claimant role against A doing C."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "J. Neil Otte"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "https://plato.stanford.edu/entries/rights/"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021020",
-      "lbl" : "obsolete_declaration target",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a socio-legal generically dependent continuant brought about by or transferred in a specific document act."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "me as a bearer of a spouse role, which participates in a document act, John Doe as bearer of a debtor role, which participates in a document act"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000103"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021021",
-      "lbl" : "document act template creator role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A role that inheres in a human being or organization or aggregate of any of the aforementioned that prepares a document that is the specified input to a document act and is the input document of a document act."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "The role of the U.S. Citizenship and Immigration Service realized by the creation of an immigration form that is being filled in, the role of a national professional association realized by the creation of a clinical guideline that is to be certified"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021022",
-      "lbl" : "deontic declaration performer role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a declaration."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "declaration performer role"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021023",
-      "lbl" : "power role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A deontic role that, if realized, is realized by its bearer’s creating, altering, or annulling some deontic role."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "J. Neil Otte"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "https://plato.stanford.edu/entries/rights/"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021030",
-      "lbl" : "obsoleted_document act target",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a socio-legal generically dependent continuant brought about by or transferred in a specific document act."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        } ],
-        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0021031",
@@ -7776,73 +7321,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Mathias Brochhausen"
         } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021032",
-      "lbl" : "obsolete_obligee role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the receiving part of a process that fulfills the previously agreed upon requirements."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Sarah Bost"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000103"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021033",
-      "lbl" : "obsolete_obligor role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the providing part of a process that fulfills the previously agreed upon requirements."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Sarah Bost"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000103"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021102",
-      "lbl" : "standing declaration",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A social act that postulates a socio-legal fact for a specified group of people or organizations."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "enactment"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021300",
-      "lbl" : "obsolete obligor role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the receiving part of a process that fulfills the previously agreed upon requirements."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "John Judkins"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        } ],
-        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_8000000",
@@ -8385,7 +7863,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."
+          "val" : "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
@@ -8940,11 +8418,11 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000022",
-      "lbl" : "collection of organisms",
+      "lbl" : "aggregate of objectual organisms",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An object aggregate of organisms."
+          "val" : "An object aggregate of objectual organisms."
         },
         "comments" : [ "Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  " ]
       }
@@ -8955,8 +8433,7 @@
       "meta" : {
         "definition" : {
           "val" : "An object aggregate all of whose components are human beings."
-        },
-        "comments" : [ "An object aggregate all of whose components are human beings." ]
+        }
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000024",
@@ -9089,13 +8566,7 @@
         "comments" : [ "It is often convenient to group organizations together that otherwise might not even interact with one another. " ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "William R. Hogan"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan\nAmanda Hicks"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse.owl"
         } ]
       }
     }, {
@@ -13796,9 +13267,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Matthew Diller"
         }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/omrse/releases/2023-10-08/omrse.owl"
-        }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "Mathias Brochhausen"
         } ]
@@ -14002,10 +13470,7 @@
         "subsets" : [ "http://purl.org/obo/owl/obo#attribute_slim" ],
         "basicPropertyValues" : [ {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-          "val" : "_:genid2147485219"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-          "val" : "_:genid2147485220"
+          "val" : "_:genid2147485116"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
           "val" : "quality"
@@ -14104,34 +13569,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
           "val" : "http://purl.obolibrary.org/obo/uo.owl"
         } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role",
-      "lbl" : "obsolete obligee role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the receiving part of a process that fulfills the previously agreed upon requirements."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Sarah Bost"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role",
-      "lbl" : "obsolete obligor role",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the providing part of a process that fulfills the previously agreed upon requirements."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Sarah Bost"
-        } ],
-        "deprecated" : true
       }
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass",
@@ -14273,9 +13710,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "realized_in"
         }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/ro.owl"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000600",
           "val" : "[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])"
         }, {
@@ -14401,42 +13835,6 @@
           "val" : "http://purl.obolibrary.org/obo/bfo.owl"
         } ]
       }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000075",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000117",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000118",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000121",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000132",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000136",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000138",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000139",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/BFO_0000181",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT"
     }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000039",
       "lbl" : "has measurement unit label",
@@ -14840,38 +14238,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Mathias Brochhausen"
         } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021011",
-      "lbl" : "legally revokes",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "definition" : {
-          "val" : "d socio-legally revokes s if s participates in d and at the end of d s no longer exists.\nIt is important to note that this going out of existence of s is complete and unlike the going out of existence for material entities which basically always are transformed into something else. After the declaration nothing is left of the socio-legal generically dependent continuant in question."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0021012",
-      "lbl" : "obsolete_legally transfers",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "definition" : {
-          "val" : "d socio-legally transfers l if l participates in d and d has specified input  (concretization of l)1 and specified output  (concretization of l)2, where (concretization of l)1 and (concretization of l)2 are not identical."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000103"
-        } ],
-        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OBIB_0000732",
@@ -16283,30 +15649,14 @@
       "propertyType" : "OBJECT",
       "meta" : {
         "definition" : {
-          "val" : "x has participant y if and only if x realizes some active role that inheres in y"
+          "val" : "OBSOLETE x has participant y if and only if x realizes some active role that inheres in y"
         },
-        "subsets" : [ "http://purl.obolibrary.org/obo/ro/subsets#ro-eco" ],
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "'heart development' has active participant some Shh protein"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "This may be obsoleted and replaced by the original 'has agent' relation"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "https://orcid.org/0000-0002-6601-2165"
         }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Chris Mungall"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "has agent"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/ro.owl"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0100001",
           "val" : "http://purl.obolibrary.org/obo/RO_0002500"
@@ -27667,10 +27017,6 @@
       "id" : "http://www.w3.org/2002/07/owl#Thing"
     } ],
     "edges" : [ {
-      "sub" : "http://purl.obolibary.org/obo/IAO_0021001",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
@@ -28963,14 +28309,6 @@
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0020000"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020021",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0000310"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020021",
-      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0020022"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0020022",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
@@ -28983,141 +28321,21 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020024",
-      "pred" : "http://purl.obolibrary.org/obo/BFO_0000054",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0020023"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020025",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020026",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020027",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002072"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021000",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0021001",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0021009"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021001",
-      "pred" : "http://purl.obolibrary.org/obo/OBI_0000293",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0021007"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021001",
-      "pred" : "http://purl.obolibrary.org/obo/OBI_0000299",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0000310"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021002",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0021003",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021004",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021005",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021006",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021007",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0000310"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021008",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0021009",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0021003"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021010",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021013",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0021008"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021014",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021015",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021016",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0021008"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021017",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021018",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021019",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0021008"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021020",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021021",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021022",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021023",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0021008"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021030",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0021031",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021032",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021033",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021102",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0021003"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021300",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_8000000",
       "pred" : "is_a",
@@ -29411,17 +28629,9 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000027"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000022",
-      "pred" : "http://purl.obolibrary.org/obo/OMRSE_00000020",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000023",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000022"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000023",
-      "pred" : "http://purl.obolibrary.org/obo/OMRSE_00000020",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000024",
       "pred" : "is_a",
@@ -29474,10 +28684,6 @@
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000033",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000033",
-      "pred" : "http://purl.obolibrary.org/obo/OMRSE_00000020",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000245"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000033",
       "pred" : "http://purl.obolibrary.org/obo/RO_0002351",
@@ -31012,14 +30218,6 @@
       "sub" : "http://purl.obolibrary.org/obo/UO_0000003",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000003"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role",
-      "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000002",
       "pred" : "type",
@@ -32777,14 +31975,6 @@
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002131"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/BFO_0000054",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/BFO_0000055",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/BFO_0000062",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002086"
@@ -32853,14 +32043,6 @@
       "pred" : "subPropertyOf",
       "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021011",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0021012",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/OBIB_0000732",
       "pred" : "subPropertyOf",
       "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
@@ -32888,10 +32070,6 @@
       "sub" : "http://purl.obolibrary.org/obo/OMIABIS_0000009",
       "pred" : "subPropertyOf",
       "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000020",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000021",
       "pred" : "subPropertyOf",
@@ -33080,10 +32258,6 @@
       "sub" : "http://purl.obolibrary.org/obo/RO_0002217",
       "pred" : "subPropertyOf",
       "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0002218",
-      "pred" : "subPropertyOf",
-      "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0002223",
       "pred" : "subPropertyOf",
@@ -33734,23 +32908,6 @@
         "fillerId" : "http://purl.obolibrary.org/obo/IAO_0020000"
       } ]
     }, {
-      "definedClassId" : "http://purl.obolibrary.org/obo/IAO_0020024",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/BFO_0000023" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000054",
-        "fillerId" : "http://purl.obolibrary.org/obo/IAO_0020023"
-      } ]
-    }, {
-      "definedClassId" : "http://purl.obolibrary.org/obo/IAO_0021001",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/IAO_0021009" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/OBI_0000293",
-        "fillerId" : "http://purl.obolibrary.org/obo/IAO_0021007"
-      }, {
-        "propertyId" : "http://purl.obolibrary.org/obo/OBI_0000299",
-        "fillerId" : "http://purl.obolibrary.org/obo/IAO_0000310"
-      } ]
-    }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000030",
       "genusIds" : [ "http://purl.obolibrary.org/obo/OMRSE_00000011" ],
       "restrictions" : [ {
@@ -34009,10 +33166,6 @@
       "predicateId" : "http://purl.obolibrary.org/obo/IAO_0020013",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0020000" ],
       "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000001" ]
-    }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/IAO_0021011",
-      "domainClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0021009" ],
-      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0021008" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/OBI_0000293",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ]

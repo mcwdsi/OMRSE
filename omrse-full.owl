@@ -20,7 +20,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:language-individuals="http://purl.obolibrary.org/obo/omrse/language-individuals/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2024-08-14/omrse-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2024-11-25/omrse-full.owl"/>
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
         <dc:contributor xml:lang="en">Daniel Welch</dc:contributor>
@@ -42,7 +42,7 @@
         <dc:title xml:lang="en">Ontology for Modeling and Representation of Social Entities</dc:title>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
-        <owl:versionInfo>2024-08-14</owl:versionInfo>
+        <owl:versionInfo>2024-11-25</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1445,7 +1445,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000054">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
@@ -1455,7 +1454,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <obo:IAO_0000112 xml:lang="en">this investigator role is realized in this investigation</obo:IAO_0000112>
         <obo:IAO_0000118 xml:lang="en">is realized by</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/ro.owl</obo:IAO_0000412>
         <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
         <rdfs:comment>Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
@@ -1467,7 +1465,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
     <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000055">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
         <obo:IAO_0000111 xml:lang="en">realizes</obo:IAO_0000111>
@@ -1564,60 +1561,6 @@ A continuant cannot have an occurrent as part: use &apos;participates in&apos;. 
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <rdfs:label xml:lang="en">contains process</rdfs:label>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000075 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000075"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000117 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000117"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000118 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000118"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000121 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000121"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000132 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000132"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000136 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000136"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000138 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000138"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000139 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000139"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000181 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000181"/>
     
 
 
@@ -1994,39 +1937,6 @@ Werner suggests a solution based on &quot;Magnitudes&quot; a proposal for which 
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0021011 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0021011">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0021009"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
-        <obo:IAO_0000115 xml:lang="en">d socio-legally revokes s if s participates in d and at the end of d s no longer exists.
-It is important to note that this going out of existence of s is complete and unlike the going out of existence for material entities which basically always are transformed into something else. After the declaration nothing is left of the socio-legal generically dependent continuant in question.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">legally revokes</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021012 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0021012">
-        <rdfs:subPropertyOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <obo:IAO_0000115 xml:lang="en">d socio-legally transfers l if l participates in d and d has specified input  (concretization of l)1 and specified output  (concretization of l)2, where (concretization of l)1 and (concretization of l)2 are not identical.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
-        <rdfs:label xml:lang="en">obsolete_legally transfers</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBIB_0000732 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBIB_0000732">
@@ -2201,11 +2111,9 @@ https://sourceforge.net/tracker/index.php?func=detail&amp;aid=3512902&amp;group_
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000020 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000020">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <obo:IAO_0000231 xml:lang="en">BFO relation takes precedence.</obo:IAO_0000231>
         <rdfs:comment xml:lang="en">We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.
 </rdfs:comment>
-        <rdfs:label>is-aggregate-of</rdfs:label>
         <rdfs:label>obsolete is-aggregate-of</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
@@ -3209,19 +3117,10 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/RO_0002218 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002218">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-        <obo:IAO_0000112>&apos;heart development&apos; has active participant some Shh protein</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115>OBSOLETE x has participant y if and only if x realizes some active role that inheres in y</obo:IAO_0000115>
-        <obo:IAO_0000115>x has participant y if and only if x realizes some active role that inheres in y</obo:IAO_0000115>
-        <obo:IAO_0000116>This may be obsoleted and replaced by the original &apos;has agent&apos; relation</obo:IAO_0000116>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0002-6601-2165"/>
-        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000118>has agent</obo:IAO_0000118>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/ro.owl</obo:IAO_0000412>
         <obo:IAO_0100001 rdf:resource="http://purl.obolibrary.org/obo/RO_0002500"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/ro/subsets#ro-eco"/>
-        <rdfs:label xml:lang="en">has active participant</rdfs:label>
         <rdfs:label>obsolete has active participant</rdfs:label>
         <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:ObjectProperty>
@@ -4896,20 +4795,6 @@ For example, A and B may be gene products and binding of B by A positively regul
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibary.org/obo/IAO_0021001 -->
-
-    <owl:Class rdf:about="http://purl.obolibary.org/obo/IAO_0021001">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000112 xml:lang="en">my filling in an immigration form, a judge&apos;s signing and stamping a court order</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A deontic declaration creating or revoking a deontic role by lawfully manipulating (signing, stamping, publishing) a document.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
-        <rdfs:label xml:lang="en">obsolete_deontic document act</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
     
 
 
@@ -10950,83 +10835,6 @@ When there is no such string, it is almost always because the entities take the 
     <!-- http://purl.obolibrary.org/obo/IAO_0020021 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020021">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020022"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020024"/>
-                                            </owl:Restriction>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
-                        <owl:allValuesFrom>
-                            <owl:Class>
-                                <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                                        <owl:someValuesFrom>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020024"/>
-                                            </owl:Restriction>
-                                        </owl:someValuesFrom>
-                                    </owl:Restriction>
-                                </owl:intersectionOf>
-                            </owl:Class>
-                        </owl:allValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020022"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000058"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                                <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020024"/>
-                                    </owl:Restriction>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A document that denotes some identity and is concretized by the bearer of some credential role.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">identity document</rdfs:label>
@@ -11038,28 +10846,6 @@ When there is no such string, it is almost always because the entities take the 
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty>
-                            <rdf:Description>
-                                <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                            </rdf:Description>
-                        </owl:onProperty>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020021"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A documented identity is the aggregate of all data items about an entity.  Notice that a documented identity is not itself a document since a document is intended to be understood as a whole and data items about an individual are usually scattered across different documents.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">is an aggregate of ICEs also an ICE? yes
@@ -11073,34 +10859,6 @@ Is part_of the appropriate relation to use for data items and documented identit
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020024"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty>
-                                    <rdf:Description>
-                                        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                                    </rdf:Description>
-                                </owl:onProperty>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <obo:IAO_0000112> I order a beer and the bartender authenticates my age by looking at my DOB on my driver&apos;s license.  I sign into my email account, and the system authenticates my permission to read the email by checking the password I enter against my password listed in the database.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">Authentication is the act of checking or verifying an identity claim (that is either tacit or explicit).
 </obo:IAO_0000115>
@@ -11113,54 +10871,7 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0020024 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020024">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020023"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                                <owl:someValuesFrom>
-                                    <owl:Restriction>
-                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020021"/>
-                                    </owl:Restriction>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0020021"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A role that inheres in a concretization of an identity document and is realized by an authentication process.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">credential role</rdfs:label>
@@ -11168,113 +10879,14 @@ Is part_of the appropriate relation to use for data items and documented identit
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0020025 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020025">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000111 xml:lang="en">obligor role</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">Sam&apos;s obligor role realized by him taking Nigel to lunch after promising to do so; Sarah&apos;s obligor role realized by paying the purchase price to Layla after signing the contract specifying that she is buying a piece of land from Layla.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A role that is the specified output of an obligation generating social act and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000117>Sarah Bost</obo:IAO_0000117>
-        <obo:IAO_0100001>duty holder role (IAO:210016)</obo:IAO_0100001>
-        <rdfs:label xml:lang="en">obsolete obligor role</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0020026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020026">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000111 xml:lang="en">obligee role</obo:IAO_0000111>
-        <obo:IAO_0000112>Nigel&apos;s obligee role realized by Sam taking him out for lunch after Sam so promised; Layla&apos;s obligee role realized by receiving the money after signing a contract in which Sarah obtained a piece of land in exchange for a specified sum of money.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A role that is the specified output of an obligation generating social act and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000117>Sarah Bost</obo:IAO_0000117>
-        <obo:IAO_0100001>claimant role (IAO:0021013)</obo:IAO_0100001>
-        <rdfs:label xml:lang="en">obsolete obligee role</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0020027 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0020027">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002072"/>
-        <obo:IAO_0000112 xml:lang="en">Tammy&apos;s owner role with regards to the house on 234 Evergreen Terrace; Walter&apos;s owner role with regards to the intellectual property on his movie script</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A role in a human social process that is based on a social act and whose bearer exercises exclusive control over a property, where this control is permitted by one or more deontic roles, which are parts of the owner role.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">OBIB/ICO community</obo:IAO_0000119>
-        <obo:IAO_0000119>https://github.com/d-acts/d-acts/issues/29</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">owner role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021000">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
-        <rdfs:label xml:lang="en">obsolete_claim</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0021001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021001">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0021009"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021007"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021009"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021007"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">my filling in an immigration form, a judge&apos;s signing and stamping a court order</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A deontic declaration creating or revoking a deontic role by lawfully manipulating (signing, stamping, publishing) a document.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">deontic document act</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021002">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000112 xml:lang="en">my filling in an immigration form, a judge&apos;s signing and stamping a court order</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A social act creating, revoking or transferring a socio-legal generically dependent continuant or a role by validating (signing, stamping, publishing) a document.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
-        <obo:IAO_0100001 rdf:resource="http://purl.obolibary.org/obo/IAO_0021001"/>
-        <rdfs:label xml:lang="en">obsolete_document act</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -11294,88 +10906,9 @@ Thanks to W.R. Hogan for finding the Reinach quote.</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0021004 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021004">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000112 xml:lang="en">the claim of a piece of land, the obligation to pay rent to the owner of a rental property</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">Socio-legal generically dependent continuants are generically dependent continuants that come into existence through social acts and that if they get concretized are concretized as realizable entities.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">obsolete_socio-legal generically dependent continuant</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021005 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021005">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000111 xml:lang="en">deontic declaration</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">my consenting verbally to buy a used TV set for $ 500, John Robie&apos;s taking of Mrs. Steven&apos;s jewels, Jane Doe&apos;s revoking of informed consent over the phone, John Doe signing an employment contract.</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A social act that brings about, transfers or revokes a socio-legal generically dependent continuant or brings about or transforms a role. Declarations do not depend on words spoken or written, but sometimes are merely actions, for instance the signing of a document.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">declaration</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">status function declaration</obo:IAO_0000118>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
-        <rdfs:label xml:lang="en">obsolete_deontic declaration</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021006 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021006">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">obsolete obligee role</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021007 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021007">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
-        <obo:IAO_0000115 xml:lang="en">A document that is intended to be the specified input in a document act. It has a plan specification as a part that specifies the intended socio-legal entities that are created through the document (objective specification) and the way in which the document act is to be performed (by signing, by stamping, etc.) (action specification).</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">document act input document</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021008 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021008">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000115 xml:lang="en">A role that inheres in an agent and which is externally grounded in the normative expectations that other agents within a social context have concerning how that agent should behave.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">Neil Otte</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">deontic role</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0021009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021009">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0021011"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
         <obo:IAO_0000115>A social act that creates or revokes a deontic role.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
@@ -11384,304 +10917,14 @@ Thanks to W.R. Hogan for finding the Reinach quote.</rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0021010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021010">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
-        <rdfs:label xml:lang="en">obsolete_obligation</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021013 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
-        <obo:IAO_0000115 xml:lang="en">A deontic role that inheres in an agent A, that mutually depends on the existence of a duty holder role borne by agent B, and that specifies B doing or abstaining from C, or providing or surrendering C to A.</obo:IAO_0000115>
-        <obo:IAO_0000117>J. Neil Otte</obo:IAO_0000117>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919.</obo:IAO_0000119>
-        <obo:IAO_0000119>https://plato.stanford.edu/entries/rights/</obo:IAO_0000119>
-        <rdfs:comment xml:lang="en">Claimant roles can either be discharged by one act of fulfilling a duty (e.g. when I pay back $5 owed to a friend) or they can remain intact and require ongoing adhering to a duty. 
-https://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the claim of a child to freedom from abuse. That claim remains in existence and the duty to not abuse the child needs to be continuously be acted upon, by a multitude of agents (which all have a duty holder role). This claim is mutually dependent on the duty to abstain from abusing the child.</rdfs:comment>
-        <rdfs:label xml:lang="en">claimant role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021014 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021014">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115 xml:lang="en">The role borne by a human being, an organization or an aggregate of either of both that is realized by being the active participant in a declaration.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
-        <rdfs:label xml:lang="en">obsolete_declaration executive role</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021015 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021015">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000112 xml:lang="en">the role borne by the US Citizen and Immigration Service realized by providing the template form for entering the US as a non-resident alien, the role of a guideline committee in putting together a clinical guideline</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings preparing the initial document to undergo a document act, thus creating a socio-legal generically dependent continuant.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
-        <rdfs:comment xml:lang="en">not that the &quot;template&quot; does not need to be a template at all. It can be a document that is getting stamped and signed and by these acts creating some socio-legal generically dependent continuants.</rdfs:comment>
-        <rdfs:label xml:lang="en">obsolete_document template creator role</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021016 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
-        <obo:IAO_0000115 xml:lang="en">A deontic role that inheres in an agent A, that mutually depends on the existence of a claimant role borne by agent B, and that specifies A doing or abstaining from some acition C, or providing or surrendering C to B.</obo:IAO_0000115>
-        <obo:IAO_0000117>J. Neil Otte</obo:IAO_0000117>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919.</obo:IAO_0000119>
-        <obo:IAO_0000119>https://plato.stanford.edu/entries/rights/</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">duty holder role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021017 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021017">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings concretizing a claim.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
-        <rdfs:label xml:lang="en">obsolete_claimant role</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021018 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021018">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115 xml:lang="en">The role of a human being or an aggregate of human beings  concretizing an obligation.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000226"/>
-        <rdfs:label xml:lang="en">obsolete_obligator role</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021019 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021019">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
-        <obo:IAO_0000115 xml:lang="en">A deontic role that inheres in an agent A, that specifies that no agent B bears a claimant role against A doing C.</obo:IAO_0000115>
-        <obo:IAO_0000117>J. Neil Otte</obo:IAO_0000117>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919.</obo:IAO_0000119>
-        <obo:IAO_0000119>https://plato.stanford.edu/entries/rights/</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">privilege holder role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021020 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021020">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000112 xml:lang="en">me as a bearer of a spouse role, which participates in a document act, John Doe as bearer of a debtor role, which participates in a document act</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a socio-legal generically dependent continuant brought about by or transferred in a specific document act.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
-        <rdfs:label xml:lang="en">obsolete_declaration target</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021021 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021021">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                                <owl:allValuesFrom>
-                                    <owl:Class>
-                                        <owl:intersectionOf rdf:parseType="Collection">
-                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-                                            <owl:Restriction>
-                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                                                <owl:someValuesFrom>
-                                                    <owl:Class>
-                                                        <owl:intersectionOf rdf:parseType="Collection">
-                                                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
-                                                            <owl:Restriction>
-                                                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
-                                                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021001"/>
-                                                            </owl:Restriction>
-                                                        </owl:intersectionOf>
-                                                    </owl:Class>
-                                                </owl:someValuesFrom>
-                                            </owl:Restriction>
-                                        </owl:intersectionOf>
-                                    </owl:Class>
-                                </owl:allValuesFrom>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112 xml:lang="en">The role of the U.S. Citizenship and Immigration Service realized by the creation of an immigration form that is being filled in, the role of a national professional association realized by the creation of a clinical guideline that is to be certified</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A role that inheres in a human being or organization or aggregate of any of the aforementioned that prepares a document that is the specified input to a document act and is the input document of a document act.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">document act template creator role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021022 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <obo:IAO_0000115 xml:lang="en">A role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a declaration.</obo:IAO_0000115>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">declaration performer role</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">deontic declaration performer role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021008"/>
-        <obo:IAO_0000115 xml:lang="en">A deontic role that, if realized, is realized by its bearer’s creating, altering, or annulling some deontic role.</obo:IAO_0000115>
-        <obo:IAO_0000117>J. Neil Otte</obo:IAO_0000117>
-        <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919.</obo:IAO_0000119>
-        <obo:IAO_0000119>https://plato.stanford.edu/entries/rights/</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">power role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021030 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021030">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115>The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a socio-legal generically dependent continuant brought about by or transferred in a specific document act.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">obsoleted_document act target</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0021031 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000033"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0021001"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">a judge&apos;s role of signing a court order</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a document act.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">document act performer role</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021032 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021032">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
-        <rdfs:label xml:lang="en">obsolete_obligee role</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021033 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021033">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000103"/>
-        <rdfs:label xml:lang="en">obsolete_obligor role</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021102 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021102">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
-        <obo:IAO_0000115 xml:lang="en">A social act that postulates a socio-legal fact for a specified group of people or organizations.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">enactment</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">standing declaration</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0021300 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021300">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">John Judkins</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">obsolete obligor role</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -12104,7 +11347,6 @@ objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">BP: The definition summarizes long email discussions on the OBI developer, roles, biomaterial and denrie branches. It leaves open if an organization is a material entity or a dependent continuant, as no consensus was reached on that.  The current placement as material is therefore temporary, in order to move forward with development. Here is the entire email summary, on which the definition is based:
 
 1) there are organization_member_roles (president, treasurer, branch
@@ -12689,19 +11931,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000022 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000022">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
@@ -12716,10 +11946,8 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An object aggregate of objectual organisms.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">An object aggregate of organisms.</obo:IAO_0000115>
         <rdfs:comment xml:lang="en">Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  </rdfs:comment>
         <rdfs:label xml:lang="en">aggregate of objectual organisms</rdfs:label>
-        <rdfs:label xml:lang="en">collection of organisms</rdfs:label>
     </owl:Class>
     
 
@@ -12727,19 +11955,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000023">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000022"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
@@ -12747,7 +11963,6 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">An object aggregate all of whose components are human beings.</obo:IAO_0000115>
-        <rdfs:comment xml:lang="en">An object aggregate all of whose components are human beings.</rdfs:comment>
         <rdfs:label xml:lang="en">collection of humans</rdfs:label>
     </owl:Class>
     
@@ -12903,31 +12118,16 @@ Ditto for its current descendants.</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An aggregate of organizations that have some feature in common, but is not itself an organization.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">An object aggregate that is not itself an organization and whose members are only organizations that have some feature in common</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan
 Amanda Hicks</obo:IAO_0000117>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse.owl</obo:IAO_0000412>
         <rdfs:comment xml:lang="en">It is often convenient to group organizations together that otherwise might not even interact with one another. </rdfs:comment>
         <rdfs:label xml:lang="en">aggregate of organizations</rdfs:label>
     </owl:Class>
@@ -13471,7 +12671,7 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000061"/>
-        <rdfs:subClassOf rdf:nodeID="genid749"/>
+        <rdfs:subClassOf rdf:nodeID="genid656"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000053"/>
@@ -13482,14 +12682,14 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <rdfs:label xml:lang="en">facility</rdfs:label>
     </owl:Class>
-    <owl:Restriction rdf:nodeID="genid749">
+    <owl:Restriction rdf:nodeID="genid656">
         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000068"/>
         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
     </owl:Restriction>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000062"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
-        <owl:annotatedTarget rdf:nodeID="genid749"/>
+        <owl:annotatedTarget rdf:nodeID="genid656"/>
         <owl:versionInfo>09/09/2017</owl:versionInfo>
     </owl:Axiom>
     
@@ -18595,7 +17795,6 @@ It indicates that a person has completed only early childhood education and noth
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A role that inheres in some entity that is realized in a social act.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
-        <obo:IAO_0000412>http://purl.obolibrary.org/obo/omrse/releases/2023-10-08/omrse.owl</obo:IAO_0000412>
         <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
         <rdfs:comment xml:lang="en">Previous definition: A role played by an entity in human social processes.</rdfs:comment>
         <rdfs:label xml:lang="en">role in human social processes</rdfs:label>
@@ -18754,9 +17953,6 @@ It indicates that a person has completed only early childhood education and noth
         <oboInOwl:hasDefinition>
             <rdf:Description/>
         </oboInOwl:hasDefinition>
-        <oboInOwl:hasDefinition>
-            <rdf:Description/>
-        </oboInOwl:hasDefinition>
         <oboInOwl:hasOBONamespace>quality</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="http://purl.org/obo/owl/obo#attribute_slim"/>
         <rdfs:label xml:lang="en">pressure</rdfs:label>
@@ -18827,30 +18023,6 @@ It indicates that a person has completed only early childhood education and noth
         <obo:IAO_0000111>time unit</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uo.owl"/>
         <rdfs:label>time unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl#obligee_role">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the receiving part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">obsolete obligee role</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/iao/d-acts.owl#obligor_role">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000115 xml:lang="en">A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it&apos;s bearer being the providing part of a process that fulfills the previously agreed upon requirements.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Sarah Bost</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">obsolete obligor role</rdfs:label>
-        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 

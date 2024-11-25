@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2024-08-14/omrse-base.owl
+data-version: omrse/releases/2024-11-25/omrse-base.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: foaf http://xmlns.com/foaf/0.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -27,12 +27,8 @@ property_value: dc:creator "William Hogan" xsd:string
 property_value: dc:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
 property_value: dc:title "Ontology for Modeling and Representation of Social Entities" xsd:string
 property_value: dc:type IAO:8000001
-property_value: owl:versionInfo "2024-08-14" xsd:string
+property_value: owl:versionInfo "2024-11-25" xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
-
-[Term]
-id: GO:0008150
-is_a: BFO:0000015
 
 [Term]
 id: OMRSE:00000000
@@ -48,7 +44,7 @@ id: OMRSE:00000001
 name: human social role
 def: "A social role inhering in a human being." []
 is_a: OMRSE:00000026 ! organism social role
-relationship: RO:0000052 NCBITaxon:9606
+is_a: OMRSE:00000050 ! Homo sapiens role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -71,7 +67,7 @@ is_a: OMRSE:00000002 ! party to a legal entity
 id: OMRSE:00000005
 name: party to a marriage contract
 is_a: OMRSE:00000004 ! party to a legal agreement
-relationship: RO:0000052 NCBITaxon:9606
+is_a: OMRSE:00000050 ! Homo sapiens role
 
 [Term]
 id: OMRSE:00000006
@@ -82,8 +78,7 @@ is_a: OMRSE:00000002 ! party to a legal entity
 id: OMRSE:00000007
 name: gender role
 def: "A human social role borne by a human being being realized in behaviour which is considered socially appropriate for individuals of a specific sex in the context of a specific culture." []
-is_a: BFO:0000023
-relationship: RO:0000052 OBI:0100026
+is_a: OMRSE:00000049 ! organism role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Gender_role" xsd:string
 
@@ -121,7 +116,7 @@ name: patient role
 def: "A role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter." []
 comment: In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov't entities, with a person endowed by the gov't with certain certifications.
 is_a: OMRSE:00000010 ! human health care role
-relationship: RO:0000052 OBI:0100026
+is_a: OMRSE:00000049 ! organism role
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "patient" xsd:string
@@ -140,7 +135,7 @@ id: OMRSE:00000013
 name: physician role
 def: "A health care role borne by a human being and realized by promoting, maintaining or restoring human health through the study, diagnosis, and treatment of disease, injury and other physical and mental impairments." []
 is_a: OMRSE:00000012 ! health care provider role
-relationship: RO:0000052 NCBITaxon:9606
+is_a: OMRSE:00000050 ! Homo sapiens role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "physician" xsd:string
 property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Physician" xsd:string
@@ -150,7 +145,7 @@ id: OMRSE:00000014
 name: nurse role
 def: "A health care role borne by a human being and realized by the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life." []
 is_a: OMRSE:00000012 ! health care provider role
-relationship: RO:0000052 NCBITaxon:9606
+is_a: OMRSE:00000050 ! Homo sapiens role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "nurse" xsd:string
 property_value: IAO:0000119 "based on: http://en.wikipedia.org/wiki/Nursing" xsd:string
@@ -220,8 +215,8 @@ id: OMRSE:00000025
 name: organization social role
 def: "A role in human social processes that inheres in an organization." []
 comment: Defined class that we will ultimately move to an application ontology.  We are leaving here for now until we determine which application ontology: it is likely going to be an ontology that does not currently (2012-06-05) exist.\n\nDitto for its current descendants.
+is_a: OMRSE:00000051 ! organization role
 is_a: OMRSE:00002072 ! role in human social processes
-relationship: RO:0000052 OBI:0000245
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
 [Term]
@@ -231,8 +226,8 @@ def: "A role in human social processes that inheres in an organism." []
 comment: Defined class that we will ultimately move to an application ontology.  We are leaving here for now until we determine which application ontology: it is likely going to be an ontology that does not currently (2012-06-05) exist.\n\nDitto for its current descendants.
 comment: Includes animals as well as humans.  For example, pet, assistance animal, animal grown for food, work animal, domesticated animal, K-9, etc.  Human roles include gender role, party to legal entities, health care provider roles like doctor, nurse, etc.
 comment: Previous definition: A role in human social processes played by an organism.
+is_a: OMRSE:00000049 ! organism role
 is_a: OMRSE:00002072 ! role in human social processes
-relationship: RO:0000052 OBI:0100026
 property_value: IAO:0000117 "William R. Hogan\nMathias Brochhausen" xsd:string
 
 [Term]
@@ -262,6 +257,8 @@ is_obsolete: true
 id: OMRSE:00000030
 name: human patient role
 def: "A patient role that inheres in a human being." []
+is_a: OMRSE:00000011 ! patient role
+is_a: OMRSE:00000050 ! Homo sapiens role
 intersection_of: OMRSE:00000011 ! patient role
 intersection_of: RO:0000052 NCBITaxon:9606
 
@@ -289,6 +286,7 @@ name: aggregate of organizations
 def: "An object aggregate that is not itself an organization and whose members are only organizations that have some feature in common" []
 comment: It is often convenient to group organizations together that otherwise might not even interact with one another. 
 is_a: BFO:0000040
+relationship: RO:0002351 OBI:0000245
 property_value: IAO:0000117 "William R. Hogan\nAmanda Hicks" xsd:string
 
 [Term]
@@ -342,14 +340,12 @@ property_value: IAO:0000119 "Malcolm N. Shaw: International Law. Cambridge Unive
 id: OMRSE:00000039
 name: smoker role
 def: "A role that inheres in an organism and is realized by habitually smoking tobacco products." []
-is_a: BFO:0000023
-relationship: RO:0000052 NCBITaxon:9606
+is_a: OMRSE:00000050 ! Homo sapiens role
 
 [Term]
 id: OMRSE:00000040
 name: intravenous drug user
-is_a: BFO:0000023
-relationship: RO:0000052 NCBITaxon:9606
+is_a: OMRSE:00000050 ! Homo sapiens role
 
 [Term]
 id: OMRSE:00000041
@@ -430,22 +426,28 @@ is_obsolete: true
 [Term]
 id: OMRSE:00000048
 name: material entity role
+is_a: BFO:0000023
 intersection_of: BFO:0000023
 intersection_of: RO:0000052 BFO:0000040
 relationship: RO:0000052 BFO:0000040 {all_only="true"}
+relationship: RO:0000052 BFO:0000040
 
 [Term]
 id: OMRSE:00000049
 name: organism role
+is_a: OMRSE:00000048 ! material entity role
 intersection_of: OMRSE:00000048 ! material entity role
 intersection_of: RO:0000052 OBI:0100026
 relationship: RO:0000052 OBI:0100026 {all_only="true"}
+relationship: RO:0000052 OBI:0100026
 
 [Term]
 id: OMRSE:00000050
 name: Homo sapiens role
+is_a: OMRSE:00000049 ! organism role
 intersection_of: OMRSE:00000049 ! organism role
 intersection_of: RO:0000052 NCBITaxon:9606
+relationship: RO:0000052 NCBITaxon:9606
 relationship: RO:0000052 NCBITaxon:9606 {all_only="true"}
 
 [Term]
@@ -454,6 +456,7 @@ name: organization role
 is_a: OMRSE:00000048 ! material entity role
 intersection_of: BFO:0000023
 intersection_of: RO:0000052 OBI:0000245
+relationship: RO:0000052 OBI:0000245
 relationship: RO:0000052 OBI:0000245 {all_only="true"}
 
 [Term]
@@ -491,6 +494,7 @@ def: "An organization that is the bearer of a hospital role." []
 is_a: OBI:0000245
 intersection_of: OBI:0000245
 intersection_of: RO:0000053 OMRSE:00000054 ! hospital role
+relationship: RO:0000053 OMRSE:00000054 ! hospital role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
@@ -500,13 +504,13 @@ def: "An organization that is the bearer of a school role." []
 is_a: OBI:0000245
 intersection_of: OBI:0000245
 intersection_of: RO:0000053 OMRSE:00000055 ! school role
+relationship: RO:0000053 OMRSE:00000055 ! school role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
 id: OMRSE:00000058
 name: student role
 def: "A human social role that, if realized, is realized by the process of formal education that the bearer undergoes." []
-is_a: OMRSE:00000086 ! human role within an organization
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
@@ -539,6 +543,7 @@ is_a: OMRSE:00000061 ! architectural structure
 intersection_of: OMRSE:00000061 ! architectural structure
 intersection_of: RO:0000053 BFO:0000034
 relationship: OMRSE:00000068 OBI:0000245 {owl:versionInfo="09/09/2017"} ! is administered by
+relationship: RO:0000053 BFO:0000034
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
@@ -547,6 +552,7 @@ name: hospital facility
 def: "A health care facility that bears the function to provide acute and intensive healthcare services and that is run by a hospital organization and is the bearer of a hospital function." []
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OMRSE:00000160 ! acute care encounter
+relationship: RO:0000053 OMRSE:00000052 ! hospital function
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
 
@@ -555,6 +561,7 @@ id: OMRSE:00000064
 name: school facility
 def: "A facility that is run by a school organization and is the bearer of a school function." []
 is_a: OMRSE:00000062 ! facility
+relationship: RO:0000053 OMRSE:00000053 ! school function
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
@@ -699,7 +706,6 @@ is_obsolete: true
 id: OMRSE:00000086
 name: human role within an organization
 def: "A human social role that is created by a deontic declaration performed by an organization." []
-is_a: OMRSE:00000001 ! human social role
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000118 "human organizational role" xsd:string
 
@@ -855,8 +861,6 @@ id: OMRSE:00000108
 name: residential health care facility
 def: "A community living health care facility that provides health care services in a home-like setting" []
 is_a: OMRSE:00000150 ! community living health care facility
-relationship: BFO:0000067 OMRSE:00000153 ! assistive care encounter
-relationship: RO:0000053 OMRSE:00000075 ! residence function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
 
@@ -1007,7 +1011,7 @@ id: OMRSE:00000129
 name: US physician assistant role
 def: "A human health care provider role that inheres in a human being that is created by state licensing and that is realized by taking patient histories, performing physical exams, diagnosing illnesses, developing treatment plans, ordering lab tests, prescribing medications, counselling and educating patients, suturing wounds, and assisting in surgery under the supervision of a physician or a surgeon." []
 is_a: OMRSE:00000012 ! health care provider role
-relationship: RO:0000052 NCBITaxon:9606
+is_a: OMRSE:00000050 ! Homo sapiens role
 
 [Term]
 id: OMRSE:00000130
@@ -1084,8 +1088,10 @@ replaced_by: male gender identity information content entity
 id: OMRSE:00000142
 name: human traveling information
 def: "An information content entity that is about human travel." []
+is_a: IAO:0000030
 intersection_of: IAO:0000030
 intersection_of: IAO:0000136 APOLLO_SV:00000532
+relationship: IAO:0000136 APOLLO_SV:00000532
 property_value: dc:contributor "Jie Zheng" xsd:string
 property_value: dc:creator "Amanda Hicks" xsd:string
 property_value: IAO:0000119 "https://github.com/ufbmi/OMRSE/issues/79" xsd:anyURI
@@ -1093,8 +1099,10 @@ property_value: IAO:0000119 "https://github.com/ufbmi/OMRSE/issues/79" xsd:anyUR
 [Term]
 id: OMRSE:00000143
 name: household identifier
+is_a: IAO:0000028
 intersection_of: IAO:0000028
 intersection_of: IAO:0000219 OMRSE:00000076 ! household
+relationship: IAO:0000219 OMRSE:00000076 ! household
 property_value: dc:contributor "A symbol that denotes a specific household" xsd:string
 property_value: dc:contributor "Jie Zheng" xsd:string
 property_value: dc:creator "Amanda Hicks" xsd:string
@@ -1103,8 +1111,10 @@ property_value: dc:creator "Amanda Hicks" xsd:string
 id: OMRSE:00000144
 name: family identifier
 def: "A symbol that denotes a family." []
+is_a: IAO:0000028
 intersection_of: IAO:0000028
 intersection_of: IAO:0000219 PCO:0000020
+relationship: IAO:0000219 PCO:0000020
 property_value: dc:contributor "Jie Zheng" xsd:string
 property_value: dc:creator "Amanda Hicks" xsd:string
 
@@ -1136,7 +1146,6 @@ id: OMRSE:00000148
 name: adult foster home facility
 def: "a facility that is run by an adult foster home organization and is the bearer of an adult foster home organization" []
 is_a: OMRSE:00000150 ! community living health care facility
-relationship: BFO:0000067 OMRSE:00000153 ! assistive care encounter
 relationship: RO:0000053 OMRSE:00000149 ! adult foster home function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
@@ -1284,6 +1293,7 @@ name: health care function
 is_a: BFO:0000034
 intersection_of: BFO:0000034
 intersection_of: BFO:0000054 OGMS:0000097
+relationship: BFO:0000054 OGMS:0000097
 
 [Term]
 id: OMRSE:00000173
@@ -1531,7 +1541,6 @@ property_value: IAO:0000118 "tumor summary staging" xsd:string
 id: OMRSE:00000203
 name: cancer summary staging code
 def: "An information content entity that is the specified output of cancer summary staging." []
-is_a: IAO:0000030
 property_value: IAO:0000111 "cancer summary staging code" xsd:string
 property_value: IAO:0000112 "The cancer summary staging code that is the outcome of the cancer summary staging performed on patient John Doe's clinical picture." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
@@ -1879,6 +1888,7 @@ id: OMRSE:00000232
 name: county smoking survey data
 def: "Survey data that is the specified output of a county smoking survey execution." []
 is_a: OBIB:0000667
+relationship: OBI:0000312 OMRSE:00000231 ! county smoking survey execution
 property_value: dc:contributor "Hansi Zhang" xsd:string
 property_value: dc:contributor "Jiang Bian" xsd:string
 property_value: dc:contributor "Matthew Diller" xsd:string
@@ -2417,6 +2427,7 @@ comment: Very broad.  Covers everything from grade school to high school to coll
 is_a: IAO:0000104
 intersection_of: IAO:0000104
 intersection_of: BFO:0000051 OMRSE:00002030 ! educational objective
+relationship: BFO:0000051 OMRSE:00002030 ! educational objective
 property_value: IAO:0000111 "educational plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000600 "A plan specification with one or more educational objectives." xsd:string
@@ -2451,6 +2462,7 @@ comment: In the united states, also called "elementary education"
 comment: It can still have action specifications as parts, and possibly other ICEs as parts.  That's why we cannot say it has only primary education objectives as parts, and we have to introduce the double negative in the class axiom.
 comment: Primary education provides learning and educational activities typically designed to provide students with fundamental skills in reading, writing and mathematics (i.e. literacy and numeracy), and to establish a sound foundation for learning and solid understanding of core areas of knowledge and personal development, preparing for lower secondary education. It aims at learning at a basic level of complexity with little if any specialisation.
 is_a: OMRSE:00002031 ! educational program
+relationship: BFO:0000051 OMRSE:00002035 ! primary education objective
 property_value: IAO:0000111 "primary education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "elementary education" xsd:string
@@ -2484,6 +2496,7 @@ comment: Different degrees have different claims and obligations associated with
 is_a: IAO:0021001
 intersection_of: IAO:0021001
 intersection_of: OBI:0000299 OOSTT:00000074
+relationship: OBI:0000299 OOSTT:00000074
 property_value: IAO:0000111 "awarding of an academic degree" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -2497,6 +2510,8 @@ is_a: OMRSE:00002031 ! educational program
 intersection_of: OMRSE:00002031 ! educational program
 intersection_of: BFO:0000051 OMRSE:00002035 ! primary education objective
 intersection_of: BFO:0000051 OMRSE:00002036 ! lower secondary education objective
+relationship: BFO:0000051 OMRSE:00002035 ! primary education objective
+relationship: BFO:0000051 OMRSE:00002036 ! lower secondary education objective
 property_value: IAO:0000111 "basic education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000119 "http://uis.unesco.org/en/glossary-term/basic-education" xsd:string
@@ -2509,6 +2524,7 @@ comment: It can still have action specifications as parts, and possibly other IC
 comment: Programmes at ISCED level 2, or ‘lower secondary’ education, are typically designed to build upon the fundamental teaching and learning processes which begin at ISCED level 1. Usually, the educational aim is to lay the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities. Programmes at this level are usually organized around a more subject-oriented curriculum, introducing theoretical concepts across a broad range of subjects.
 comment: Requires successful completion of a primary education program as a pre-requisite.
 is_a: OMRSE:00002031 ! educational program
+relationship: BFO:0000051 OMRSE:00002036 ! lower secondary education objective
 property_value: IAO:0000111 "lower secondary education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -2530,6 +2546,7 @@ comment: It can still have action specifications as parts, and possibly other IC
 comment: Programmes at ISCED level 3, or ‘upper secondary’ education, are typically designed to complete secondary education in preparation for tertiary education, or to provide skills relevant to employment, or both. Programmes at this level offer students more varied, specialised and in-depth instruction than programmes at lower secondary education (ISCED level 2). They are more differentiated, with an increased range of options and streams available.
 comment: Requires successful completion of a lower secondary education program as a pre-requisite.
 is_a: OMRSE:00002031 ! educational program
+relationship: BFO:0000051 OMRSE:00002040 ! upper secondary education objective
 property_value: IAO:0000111 "upper secondary education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -2540,6 +2557,7 @@ comment: Includes college, university, community college, professional schools (
 comment: Refers to all higher education beyond secondary education, and thus encompasses ISCED levels 5 and above, which will eventually be subclasses of this one.
 comment: Requires successful completion of a secondary education program as a pre-requisite.
 is_a: OMRSE:00002031 ! educational program
+relationship: BFO:0000051 OMRSE:00002043 ! higher education objective
 property_value: IAO:0000111 "higher education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "post-secondary education plan specification" xsd:string
@@ -2582,6 +2600,7 @@ comment: Vocational education programs are designed for learners to acquire the 
 is_a: OMRSE:00002031 ! educational program
 intersection_of: OMRSE:00002031 ! educational program
 intersection_of: BFO:0000051 OMRSE:00002044 ! vocational education objective
+relationship: BFO:0000051 OMRSE:00002044 ! vocational education objective
 property_value: IAO:0000111 "vocational education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000119 "http://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-isced-2011-en.pdf" xsd:string
@@ -2866,25 +2885,10 @@ id: OMRSE:00002072
 name: role in human social processes
 def: "A role that inheres in some entity that is realized in a social act." []
 comment: Previous definition: A role played by an entity in human social processes.
-is_a: BFO:0000023
-relationship: RO:0000052 BFO:0000040
+is_a: OMRSE:00000048 ! material entity role
 relationship: RO:0000052 BFO:0000040 {all_only="true"}
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
-
-[Term]
-id: PCO:0000020
-is_a: OMRSE:00000022 ! aggregate of objectual organisms
-
-[Typedef]
-id: OMIABIS:0000008
-is_a: oboInOwl:ObsoleteProperty
-is_obsolete: true
-
-[Typedef]
-id: OMIABIS:0000009
-is_a: oboInOwl:ObsoleteProperty
-is_obsolete: true
 
 [Typedef]
 id: OMRSE:00000020
@@ -3005,8 +3009,4 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 domain: NCBITaxon:9606
 range: OMRSE:00000274 ! personal data disclosure
 is_a: RO:0000056
-
-[Typedef]
-id: RO:0002217
-is_a: oboInOwl:ObsoleteProperty
 

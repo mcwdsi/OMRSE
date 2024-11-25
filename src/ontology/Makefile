@@ -16,7 +16,7 @@
 # 3. [Update repo to latest ODK](update_repo)
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                6d7fdabc7e6d622e63f340c8f29791bf031e15c86faa2df55199cd04a497bc9f
+CONFIG_HASH=                e982da79af6e23c70c7eacfef4b1468d45fe5e4f48d15d34bbff904800ec1fb4
 
 
 # ----------------------------------------
@@ -382,10 +382,8 @@ $(IMPORTDIR)/%_terms_combined.txt: $(IMPORTSEED) $(IMPORTDIR)/%_terms.txt
 
 
 $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
-		query --update ../sparql/preprocess-module.ru \
-		remove --base-iri $(OBOBASE)"/$(shell echo $* | tr a-z A-Z)_" --axioms external --preserve-structure false --trim false \
-		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/$*_terms_combined.txt --select complement \
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+		extract -T $(IMPORTDIR)/$*_terms_combined.txt --force true --copy-ontology-annotations true --individuals include --method BOT \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
 
@@ -442,8 +440,12 @@ $(IMPORTDIR)/pno_import.owl: $(MIRRORDIR)/pno.owl $(IMPORTDIR)/pno_terms_combine
 ## Module for ontology: d-acts
 
 $(IMPORTDIR)/d-acts_import.owl: $(MIRRORDIR)/d-acts.owl $(IMPORTDIR)/d-acts_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru  \
-    $(ANNOTATE_CONVERT_FILE); fi
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/d-acts_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri http://purl.obolibrary.org/obo/IAO_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/d-acts_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
 
 
 .PHONY: refresh-imports

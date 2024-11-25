@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2024-08-14/omrse-full.owl
+data-version: omrse/releases/2024-11-25/omrse-full.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -50,7 +50,7 @@ property_value: dc:creator "Swetha Garimalla" xsd:string
 property_value: dc:creator "William Hogan" xsd:string
 property_value: dc:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
 property_value: dc:title "Ontology for Modeling and Representation of Social Entities" xsd:string
-property_value: owl:versionInfo "2024-08-14" xsd:string
+property_value: owl:versionInfo "2024-11-25" xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
 
 [Term]
@@ -3284,8 +3284,6 @@ property_value: IAO:0000233 "https://github.com/information-artifact-ontology/IA
 id: IAO:0020021
 name: identity document
 def: "A document that denotes some identity and is concretized by the bearer of some credential role." []
-is_a: IAO:0000310 ! document
-relationship: IAO:0000136 IAO:0020022 ! is about documented identity
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -3309,79 +3307,15 @@ id: IAO:0020024
 name: credential role
 def: "A role that inheres in a concretization of an identity document and is realized by an authentication process." []
 is_a: BFO:0000023 ! role
-relationship: BFO:0000054 IAO:0020023 ! realized in authentication
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
-
-[Term]
-id: IAO:0020025
-name: obsolete obligor role
-def: "A role that is the specified output of an obligation generating social act and that is realized by it's bearer being the providing part of a process that fulfills the previously agreed upon requirements." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000111 "obligor role" xsd:string
-property_value: IAO:0000112 "Sam's obligor role realized by him taking Nigel to lunch after promising to do so; Sarah's obligor role realized by paying the purchase price to Layla after signing the contract specifying that she is buying a piece of land from Layla." xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000117 "Sarah Bost" xsd:string
-is_obsolete: true
-replaced_by: duty holder role (IAO:210016)
-
-[Term]
-id: IAO:0020026
-name: obsolete obligee role
-def: "A role that is the specified output of an obligation generating social act and that is realized by it's bearer being the receiving part of a process that fulfills the previously agreed upon requirements." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000111 "obligee role" xsd:string
-property_value: IAO:0000112 "Nigel's obligee role realized by Sam taking him out for lunch after Sam so promised; Layla's obligee role realized by receiving the money after signing a contract in which Sarah obtained a piece of land in exchange for a specified sum of money." xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000117 "Sarah Bost" xsd:string
-is_obsolete: true
-replaced_by: claimant role (IAO:0021013)
-
-[Term]
-id: IAO:0020027
-name: owner role
-def: "A role in a human social process that is based on a social act and whose bearer exercises exclusive control over a property, where this control is permitted by one or more deontic roles, which are parts of the owner role." []
-is_a: OMRSE:00002072 ! role in human social processes
-property_value: IAO:0000112 "Tammy's owner role with regards to the house on 234 Evergreen Terrace; Walter's owner role with regards to the intellectual property on his movie script" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000119 "https://github.com/d-acts/d-acts/issues/29" xsd:string
-property_value: IAO:0000119 "OBIB/ICO community" xsd:string
-
-[Term]
-id: IAO:0021000
-name: obsolete_claim
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000231 IAO:0000226
-is_obsolete: true
 
 [Term]
 id: IAO:0021001
 name: deontic document act
-name: obsolete_deontic document act
 def: "A deontic declaration creating or revoking a deontic role by lawfully manipulating (signing, stamping, publishing) a document." []
 is_a: IAO:0021009 ! deontic declaration
-is_a: oboInOwl:ObsoleteClass
-intersection_of: IAO:0021009 ! deontic declaration
-intersection_of: OBI:0000293 IAO:0021007 ! has_specified_input document act input document
-intersection_of: OBI:0000299 IAO:0000310 ! has_specified_output document
-relationship: OBI:0000293 IAO:0021007 ! has_specified_input document act input document
-relationship: OBI:0000299 IAO:0000310 ! has_specified_output document
-property_value: IAO:0000112 "my filling in an immigration form, a judge's signing and stamping a court order" xsd:string
 property_value: IAO:0000112 "my filling in an immigration form, a judge's signing and stamping a court order" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000231 IAO:0000226
-is_obsolete: true
-
-[Term]
-id: IAO:0021002
-name: obsolete_document act
-def: "A social act creating, revoking or transferring a socio-legal generically dependent continuant or a role by validating (signing, stamping, publishing) a document." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000112 "my filling in an immigration form, a judge's signing and stamping a court order" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000231 IAO:0000103
-is_obsolete: true
-replaced_by: IAO:0021001
 
 [Term]
 id: IAO:0021003
@@ -3393,176 +3327,11 @@ property_value: IAO:0000112 "Colonel Klink giving Sergeant Schultz an order, Jak
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
-id: IAO:0021004
-name: obsolete_socio-legal generically dependent continuant
-def: "Socio-legal generically dependent continuants are generically dependent continuants that come into existence through social acts and that if they get concretized are concretized as realizable entities." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000112 "the claim of a piece of land, the obligation to pay rent to the owner of a rental property" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-is_obsolete: true
-
-[Term]
-id: IAO:0021005
-name: obsolete_deontic declaration
-def: "A social act that brings about, transfers or revokes a socio-legal generically dependent continuant or brings about or transforms a role. Declarations do not depend on words spoken or written, but sometimes are merely actions, for instance the signing of a document." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000111 "deontic declaration" xsd:string
-property_value: IAO:0000112 "my consenting verbally to buy a used TV set for $ 500, John Robie's taking of Mrs. Steven's jewels, Jane Doe's revoking of informed consent over the phone, John Doe signing an employment contract." xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000118 "declaration" xsd:string
-property_value: IAO:0000118 "status function declaration" xsd:string
-property_value: IAO:0000231 IAO:0000103
-is_obsolete: true
-
-[Term]
-id: IAO:0021006
-name: obsolete obligee role
-def: "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the providing part of a process that fulfills the previously agreed upon requirements." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-is_obsolete: true
-
-[Term]
-id: IAO:0021007
-name: document act input document
-def: "A document that is intended to be the specified input in a document act. It has a plan specification as a part that specifies the intended socio-legal entities that are created through the document (objective specification) and the way in which the document act is to be performed (by signing, by stamping, etc.) (action specification)." []
-is_a: IAO:0000310 ! document
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-
-[Term]
-id: IAO:0021008
-name: deontic role
-def: "A role that inheres in an agent and which is externally grounded in the normative expectations that other agents within a social context have concerning how that agent should behave." []
-is_a: BFO:0000023 ! role
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000117 "Neil Otte" xsd:string
-
-[Term]
 id: IAO:0021009
 name: deontic declaration
 def: "A social act that creates or revokes a deontic role." []
 is_a: IAO:0021003 ! social act
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-
-[Term]
-id: IAO:0021010
-name: obsolete_obligation
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000231 IAO:0000226
-is_obsolete: true
-
-[Term]
-id: IAO:0021013
-name: claimant role
-def: "A deontic role that inheres in an agent A, that mutually depends on the existence of a duty holder role borne by agent B, and that specifies B doing or abstaining from C, or providing or surrendering C to A." []
-comment: Claimant roles can either be discharged by one act of fulfilling a duty (e.g. when I pay back $5 owed to a friend) or they can remain intact and require ongoing adhering to a duty. \nhttps://plato.stanford.edu/entries/rights/#FormRighHohfAnalSyst discuss the claim of a child to freedom from abuse. That claim remains in existence and the duty to not abuse the child needs to be continuously be acted upon, by a multitude of agents (which all have a duty holder role). This claim is mutually dependent on the duty to abstain from abusing the child.
-is_a: IAO:0021008 ! deontic role
-property_value: IAO:0000117 "J. Neil Otte" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000119 "Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919." xsd:string
-property_value: IAO:0000119 "https://plato.stanford.edu/entries/rights/" xsd:string
-
-[Term]
-id: IAO:0021014
-name: obsolete_declaration executive role
-def: "The role borne by a human being, an organization or an aggregate of either of both that is realized by being the active participant in a declaration." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000231 IAO:0000226
-is_obsolete: true
-
-[Term]
-id: IAO:0021015
-name: obsolete_document template creator role
-def: "The role of a human being or an aggregate of human beings preparing the initial document to undergo a document act, thus creating a socio-legal generically dependent continuant." []
-comment: not that the "template" does not need to be a template at all. It can be a document that is getting stamped and signed and by these acts creating some socio-legal generically dependent continuants.
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000112 "the role borne by the US Citizen and Immigration Service realized by providing the template form for entering the US as a non-resident alien, the role of a guideline committee in putting together a clinical guideline" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000231 IAO:0000226
-is_obsolete: true
-
-[Term]
-id: IAO:0021016
-name: duty holder role
-def: "A deontic role that inheres in an agent A, that mutually depends on the existence of a claimant role borne by agent B, and that specifies A doing or abstaining from some acition C, or providing or surrendering C to B." []
-is_a: IAO:0021008 ! deontic role
-property_value: IAO:0000117 "J. Neil Otte" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000119 "Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919." xsd:string
-property_value: IAO:0000119 "https://plato.stanford.edu/entries/rights/" xsd:string
-
-[Term]
-id: IAO:0021017
-name: obsolete_claimant role
-def: "The role of a human being or an aggregate of human beings concretizing a claim." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000231 IAO:0000226
-is_obsolete: true
-
-[Term]
-id: IAO:0021018
-name: obsolete_obligator role
-def: "The role of a human being or an aggregate of human beings  concretizing an obligation." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000231 IAO:0000226
-is_obsolete: true
-
-[Term]
-id: IAO:0021019
-name: privilege holder role
-def: "A deontic role that inheres in an agent A, that specifies that no agent B bears a claimant role against A doing C." []
-is_a: IAO:0021008 ! deontic role
-property_value: IAO:0000117 "J. Neil Otte" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000119 "Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919." xsd:string
-property_value: IAO:0000119 "https://plato.stanford.edu/entries/rights/" xsd:string
-
-[Term]
-id: IAO:0021020
-name: obsolete_declaration target
-def: "The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a socio-legal generically dependent continuant brought about by or transferred in a specific document act." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000112 "me as a bearer of a spouse role, which participates in a document act, John Doe as bearer of a debtor role, which participates in a document act" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000231 IAO:0000103
-is_obsolete: true
-
-[Term]
-id: IAO:0021021
-name: document act template creator role
-def: "A role that inheres in a human being or organization or aggregate of any of the aforementioned that prepares a document that is the specified input to a document act and is the input document of a document act." []
-is_a: BFO:0000023 ! role
-property_value: IAO:0000112 "The role of the U.S. Citizenship and Immigration Service realized by the creation of an immigration form that is being filled in, the role of a national professional association realized by the creation of a clinical guideline that is to be certified" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-
-[Term]
-id: IAO:0021022
-name: deontic declaration performer role
-def: "A role inhering in a human being or an organization or an aggregate of any of the aforementioned that is realized by the bearer being the agent in a declaration." []
-is_a: BFO:0000023 ! role
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000118 "declaration performer role" xsd:string
-
-[Term]
-id: IAO:0021023
-name: power role
-def: "A deontic role that, if realized, is realized by its bearer’s creating, altering, or annulling some deontic role." []
-is_a: IAO:0021008 ! deontic role
-property_value: IAO:0000117 "J. Neil Otte" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000119 "Hohfeld, WN: Fundamental Legal Conceptions as Applied in Judicial Reasoning. Yale University Press, 1919." xsd:string
-property_value: IAO:0000119 "https://plato.stanford.edu/entries/rights/" xsd:string
-
-[Term]
-id: IAO:0021030
-name: obsoleted_document act target
-def: "The human being or organization or aggregate of any of the aforementioned that is the bearer of a concretization of a socio-legal generically dependent continuant brought about by or transferred in a specific document act." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-is_obsolete: true
 
 [Term]
 id: IAO:0021031
@@ -3571,41 +3340,6 @@ def: "A role inhering in a human being or an organization or an aggregate of any
 is_a: BFO:0000023 ! role
 property_value: IAO:0000112 "a judge's role of signing a court order" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-
-[Term]
-id: IAO:0021032
-name: obsolete_obligee role
-def: "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the receiving part of a process that fulfills the previously agreed upon requirements." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000117 "Sarah Bost" xsd:string
-property_value: IAO:0000231 IAO:0000103
-is_obsolete: true
-
-[Term]
-id: IAO:0021033
-name: obsolete_obligor role
-def: "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the providing part of a process that fulfills the previously agreed upon requirements." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000117 "Sarah Bost" xsd:string
-property_value: IAO:0000231 IAO:0000103
-is_obsolete: true
-
-[Term]
-id: IAO:0021102
-name: standing declaration
-def: "A social act that postulates a socio-legal fact for a specified group of people or organizations." []
-is_a: IAO:0021003 ! social act
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000118 "enactment" xsd:string
-
-[Term]
-id: IAO:0021300
-name: obsolete obligor role
-def: "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the receiving part of a process that fulfills the previously agreed upon requirements." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000117 "John Judkins" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-is_obsolete: true
 
 [Term]
 id: IAO:8000000
@@ -3853,7 +3587,6 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 id: OBI:0000245
 name: organization
 def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
-def: "An organization is a continuant entity which can play roles,  has members, and has a set of organization rules.  Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
 is_a: BFO:0000040 ! material entity
 property_value: IAO:0000111 "organization" xsd:string
 property_value: IAO:0000112 "PMID: 16353909.AAPS J. 2005 Sep 22;7(2):E274-80. Review. The joint food and agriculture organization of the United Nations/World Health Organization Expert Committee on Food Additives and its role in the evaluation of the safety of veterinary drug residues in foods." xsd:string
@@ -4166,20 +3899,15 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 [Term]
 id: OMRSE:00000022
 name: aggregate of objectual organisms
-name: collection of organisms
 def: "An object aggregate of objectual organisms." []
-def: "An object aggregate of organisms." []
 comment: Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  
 is_a: BFO:0000027 ! object aggregate
-relationship: OMRSE:00000020 OBI:0100026 ! obsolete is-aggregate-of organism
 
 [Term]
 id: OMRSE:00000023
 name: collection of humans
 def: "An object aggregate all of whose components are human beings." []
-comment: An object aggregate all of whose components are human beings.
-is_a: OMRSE:00000022 ! collection of organisms
-relationship: OMRSE:00000020 NCBITaxon:9606 ! obsolete is-aggregate-of Homo sapiens
+is_a: OMRSE:00000022 ! aggregate of objectual organisms
 relationship: RO:0002351 NCBITaxon:9606 {all_only="true"} ! has member Homo sapiens
 
 [Term]
@@ -4264,15 +3992,11 @@ is_obsolete: true
 [Term]
 id: OMRSE:00000033
 name: aggregate of organizations
-def: "An aggregate of organizations that have some feature in common, but is not itself an organization." []
 def: "An object aggregate that is not itself an organization and whose members are only organizations that have some feature in common" []
 comment: It is often convenient to group organizations together that otherwise might not even interact with one another. 
 is_a: BFO:0000040 ! material entity
-relationship: OMRSE:00000020 OBI:0000245 ! obsolete is-aggregate-of organization
 relationship: RO:0002351 OBI:0000245 ! has member organization
-property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000117 "William R. Hogan\nAmanda Hicks" xsd:string
-property_value: IAO:0000412 "http://purl.obolibrary.org/obo/omrse/releases/2022-04-06/omrse.owl" xsd:string
 
 [Term]
 id: OMRSE:00000034
@@ -4968,7 +4692,7 @@ is_a: BFO:0000034 ! function
 id: OMRSE:00000126
 name: patient discharge
 def: "A deontic document act that concludes an inpatient encounter." []
-is_a: IAO:0021001 ! obsolete_deontic document act
+is_a: IAO:0021001 ! deontic document act
 relationship: RO:0002229 OGMS:0000100 ! ends inpatient encounter
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000118 "discharge process" xsd:string
@@ -5507,7 +5231,7 @@ property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 id: OMRSE:00000201
 name: admission process
 def: "A deontic document act in which a patient is registered with a health care provider for the purpose of receiving care in an inpatient encounter." []
-is_a: IAO:0021001 ! obsolete_deontic document act
+is_a: IAO:0021001 ! deontic document act
 relationship: RO:0002083 OMRSE:00000126 ! before patient discharge
 relationship: RO:0002223 OGMS:0000100 ! starts inpatient encounter
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
@@ -6478,8 +6202,8 @@ id: OMRSE:00002037
 name: awarding an academic degree
 def: "A deontic document act that has as specified output an academic degree and that confers on recipient of the academic degree the recognition and the claims and obligations that accompany the degree." []
 comment: Different degrees have different claims and obligations associated with them.  For example, having a medical degree (either M.D. or D.O.) entitles a person to sit for stage 3 of the US Medical Licensing Exam (otherwise one may not take the exam).
-is_a: IAO:0021001 ! obsolete_deontic document act
-intersection_of: IAO:0021001 ! obsolete_deontic document act
+is_a: IAO:0021001 ! deontic document act
+intersection_of: IAO:0021001 ! deontic document act
 intersection_of: OBI:0000299 OOSTT:00000074 ! has_specified_output academic degree
 relationship: OBI:0000299 OOSTT:00000074 ! has_specified_output academic degree
 property_value: IAO:0000111 "awarding of an academic degree" xsd:string
@@ -6874,7 +6598,6 @@ is_a: OMRSE:00000048 ! material entity role
 relationship: RO:0000052 BFO:0000040 {all_only="true"} ! characteristic of material entity
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
-property_value: IAO:0000412 "http://purl.obolibrary.org/obo/omrse/releases/2023-10-08/omrse.owl" xsd:string
 
 [Term]
 id: OOSTT:00000074
@@ -6989,7 +6712,7 @@ id: PCO:0000020
 name: family
 def: "A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption." []
 comment: Family membership through marriage or adoption apply primarily to human families. In most species, family membership is defined by common anscestry.
-is_a: OMRSE:00000022 ! collection of organisms
+is_a: OMRSE:00000022 ! aggregate of objectual organisms
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000116 "Needs axioms for family relationships." xsd:string
 property_value: IAO:0000119 "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25173" xsd:string
@@ -7023,22 +6746,6 @@ name: time unit
 is_a: IAO:0000003 ! measurement unit label
 property_value: IAO:0000111 "time unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
-
-[Term]
-id: obligee_role
-name: obsolete obligee role
-def: "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the receiving part of a process that fulfills the previously agreed upon requirements." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000117 "Sarah Bost" xsd:string
-is_obsolete: true
-
-[Term]
-id: obligor_role
-name: obsolete obligor role
-def: "A role that is either the specified output of an obligation generating social act or the concretization of a transferable obligation and that is realized by it's bearer being the providing part of a process that fulfills the previously agreed upon requirements." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000117 "Sarah Bost" xsd:string
-is_obsolete: true
 
 [Typedef]
 id: BFO:0000050
@@ -7101,7 +6808,6 @@ property_value: IAO:0000112 "this fragility is realized in this shattering" xsd:
 property_value: IAO:0000112 "this investigator role is realized in this investigation" xsd:string
 property_value: IAO:0000118 "is realized by" xsd:string
 property_value: IAO:0000118 "realized_in" xsd:string
-property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ro.owl" xsd:string
 property_value: IAO:0000600 "[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 domain: BFO:0000017 ! realizable entity
@@ -7389,28 +7095,6 @@ property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 is_asymmetric: true
 
 [Typedef]
-id: IAO:0021011
-name: legally revokes
-def: "d socio-legally revokes s if s participates in d and at the end of d s no longer exists.\nIt is important to note that this going out of existence of s is complete and unlike the going out of existence for material entities which basically always are transformed into something else. After the declaration nothing is left of the socio-legal generically dependent continuant in question." []
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-domain: IAO:0021009 ! deontic declaration
-range: IAO:0021008 ! deontic role
-is_functional: true
-is_a: RO:0000057 ! has_participant
-is_asymmetric: true
-
-[Typedef]
-id: IAO:0021012
-name: obsolete_legally transfers
-def: "d socio-legally transfers l if l participates in d and d has specified input  (concretization of l)1 and specified output  (concretization of l)2, where (concretization of l)1 and (concretization of l)2 are not identical." []
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000231 IAO:0000103
-is_functional: true
-is_a: oboInOwl:ObsoleteProperty
-is_obsolete: true
-is_asymmetric: true
-
-[Typedef]
 id: OBI:0000293
 name: has_specified_input
 def: "The inverse property of is_specified_input_of" []
@@ -7525,7 +7209,6 @@ replaced_by: OBIB:0000735
 
 [Typedef]
 id: OMRSE:00000020
-name: is-aggregate-of
 name: obsolete is-aggregate-of
 comment: We anticipate BFO 2.0 including and defining this relation.  When it does, we will obsolete this property and declare it equivalent to the BFO 2.0 relation.\n
 property_value: IAO:0000231 "BFO relation takes precedence." xsd:string
@@ -8159,19 +7842,10 @@ replaced_by: RO:0002608
 
 [Typedef]
 id: RO:0002218
-name: has active participant
 name: obsolete has active participant
 def: "OBSOLETE x has participant y if and only if x realizes some active role that inheres in y" []
-def: "x has participant y if and only if x realizes some active role that inheres in y" []
-subset: ro-eco
-property_value: IAO:0000112 "'heart development' has active participant some Shh protein" xsd:string
-property_value: IAO:0000114 IAO:0000125
-property_value: IAO:0000116 "This may be obsoleted and replaced by the original 'has agent' relation" xsd:string
-property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "has agent" xsd:string
-property_value: IAO:0000412 "http://purl.obolibrary.org/obo/ro.owl" xsd:string
-is_a: RO:0000057 ! has_participant
 is_obsolete: true
 replaced_by: RO:0002500
 
