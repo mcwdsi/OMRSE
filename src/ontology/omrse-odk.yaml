@@ -1,6 +1,6 @@
 id: omrse
-title: "The Ontology of Medically Related Social Entities"
-github_org: ufbmi
+title: "The Ontology for Modeling and Representation of Social Entities"
+github_org: mcwdsi 
 repo: OMRSE
 report_fail_on: None
 export_formats:
@@ -11,7 +11,6 @@ release_artefacts:
   - base
   - full
 import_group:
-  module_type: filter
   annotation_properties:
     - rdfs:label
     - IAO:0000115
@@ -19,6 +18,8 @@ import_group:
     - IAO:0000111
     - oboInOwl:hasDbXref
     - rdfs:comment
+  exclude_iri_patterns:
+    - <http://purl.obolibrary.org/obo/OMRSE*>
   products:
     - id: ro
       module_type: slme
@@ -51,7 +52,9 @@ import_group:
       module_type: mirror
     - id: d-acts
       mirror_from: http://purl.obolibrary.org/obo/iao/d-acts.owl
-      module_type: mirror
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/IAO_ 
     - id: geo
     - id: mf
       

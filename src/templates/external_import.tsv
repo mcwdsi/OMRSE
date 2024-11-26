@@ -10,15 +10,6 @@ BFO:0000054	owl:ObjectProperty
 BFO:0000055	owl:ObjectProperty
 BFO:0000066	owl:ObjectProperty
 BFO:0000067	owl:ObjectProperty
-BFO:0000075	owl:ObjectProperty
-BFO:0000117	owl:ObjectProperty
-BFO:0000118	owl:ObjectProperty
-BFO:0000121	owl:ObjectProperty
-BFO:0000181	owl:ObjectProperty
-BFO:0000132	owl:ObjectProperty
-BFO:0000138	owl:ObjectProperty
-BFO:0000139	owl:ObjectProperty
-BFO:0000136	owl:ObjectProperty
 GEO:000000400	owl:Class
 GO:0007610	owl:Class
 GO:0008150	owl:Class
@@ -43,6 +34,7 @@ IAO:0020023	owl:Class
 IAO:0020024	owl:Class
 IAO:0021003	owl:Class
 IAO:0021009	owl:Class
+IAO:0021031
 IAO:0100001	owl:AnnotationProperty
 MF:0000030	owl:Class
 MF:0000031	owl:Class
