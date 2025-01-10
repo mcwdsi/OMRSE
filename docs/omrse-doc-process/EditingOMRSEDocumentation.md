@@ -5,18 +5,20 @@ NOTE: These instructions _supersede_ the standard Managing Documentation workflo
 The documentation for OMRSE is managed in two places (relative to the repository root):
 
 1. The `docs` directory contains all the files that pertain to the content of the documentation (more below)
-2. the `mkdocs.yaml` file contains the documentation config, in particular its navigation bar and theme.
+2. The `mkdocs.yaml` file contains the documentation config, in particular its navigation bar and theme.
 
-The documentation is hosted using GitHub pages, on a special branch of the repository (called `gh-pages`). It is important that this branch is never deleted - it contains all the files GitHub pages needs to render and deploy the site. It is also important to note that _the gh-pages branch should never be edited manually_. All changes to the docs happen inside the `docs` directory on the `main` branch.
+The documentation is hosted using GitHub Pages, on a special branch of the repository (called `gh-pages`). It is important that this branch is never deleted - it contains all the files GitHub Pages needs to render and deploy the site. It is also important to note that _the gh-pages branch should never be edited manually_. All changes to the docs happen inside the `docs` directory on the `main` branch.
 
 ## Editing the docs
 
 ### Changing content
-All the documentation is contained in the `docs` directory, and is managed in _Markdown_. Markdown is a very simple and convenient way to produce text documents with formatting instructions, and is very easy to learn - it is also used, for example, in GitHub issues. This is a normal editing workflow:
+All the documentation is contained in the `docs` directory, and is managed in _Markdown_. Markdown is a very simple and convenient way to produce text documents with formatting instructions, and is very easy to learn - it is also used, for example, in GitHub issues.
 
 There are two alternative workflows. The first is preferred more extensive editing including the creation of new documents and folders. The second workflow is more appropriate for minor edits. All edits MUST follow one of the two workflows. 
 
-NOTE: ALL CHANGES MUST BE REVIEWED BEFORE BEING MERGED INTO THE "main" BRANCH!
+Important: 
+1. ALL CHANGES MUST BE REVIEWED BEFORE BEING MERGED INTO THE "main" BRANCH!
+2. Documentation of OMRSE classes, their definitions, other annotations, axioms, and so on should be done on Markdown pages in the `modeling` folder.
 
 #### Workflow One
 1. Create a new branch either locally or on the GitHub site, depending on whether you will create and edit on the GitHub site (which is easier) or on your local machine.
