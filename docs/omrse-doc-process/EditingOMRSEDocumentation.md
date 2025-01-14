@@ -37,7 +37,7 @@ Important:
 
 ## Deploying the docs
 
-Follow the process described in [Manage Documentation](../odk-workflows/ManageDocumentation.md). However, deployment of docs should occur only from the `main` branch, after the changes have been reviewed and merged into `main`.
+Follow the process described in the standard ODK instructions for [Updating the Documentation](../odk-workflows/ManageDocumentation.md). However, deployment of docs should occur only from the `main` branch, after the changes have been reviewed and merged into `main`.
 
 ### Note on documents in the odk-workflows folder 
  _IMPORTANT_: Do not edit any files in the `docs/odk-workflows/` directory. These files are managed by the ODK system and will be overwritten when the repository is upgraded! If you wish to change these files, make an issue on the [ODK issue tracker](https://github.com/INCATools/ontology-development-kit/issues).
