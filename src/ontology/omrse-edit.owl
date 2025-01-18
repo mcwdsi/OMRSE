@@ -19,7 +19,9 @@ Import(<http://purl.obolibrary.org/obo/omrse/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/d-acts_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/geo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/go_import.owl>)
+Import(<http://purl.obolibrary.org/obo/omrse/imports/iao_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/mf_import.owl>)
+Import(<http://purl.obolibrary.org/obo/omrse/imports/ncbitaxon_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/oae_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/obib_import.owl>)
@@ -27,7 +29,6 @@ Import(<http://purl.obolibrary.org/obo/omrse/imports/ogms_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/oostt_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/pco_import.owl>)
-Import(<http://purl.obolibrary.org/obo/omrse/imports/pno_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/ro_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/language-individuals/>)
 Annotation(dc:contributor "Barry Smith"@en)
@@ -661,6 +662,10 @@ DataPropertyRange(obo:OMRSE_00000137 xsd:string)
 # Class: obo:GO_0008150 (biological_process)
 
 SubClassOf(obo:GO_0008150 obo:BFO_0000015)
+
+# Class: obo:NCBITaxon_131567 (cellular organisms)
+
+SubClassOf(obo:NCBITaxon_131567 obo:OBI_0100026)
 
 # Class: obo:OMRSE_00000000 (social security number)
 

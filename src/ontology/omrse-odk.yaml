@@ -44,11 +44,15 @@ import_group:
     - id: bfo
       module_type: slme
       slme_individuals: exclude
+    - id: ncbitaxon
+      mirror_from: http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/NCBITaxon_
     - id: oostt
     - id: omo
       module_type: mirror
-    - id: pno
-      mirror_from: http://purl.obolibrary.org/obo/iao/pno.owl
+    - id: iao 
       module_type: mirror
     - id: d-acts
       mirror_from: http://purl.obolibrary.org/obo/iao/d-acts.owl
