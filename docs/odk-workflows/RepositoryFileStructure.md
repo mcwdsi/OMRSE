@@ -25,9 +25,10 @@ These are the current imports in OMRSE
 | oae | http://purl.obolibrary.org/obo/oae.owl | None |
 | pco | http://purl.obolibrary.org/obo/pco.owl | None |
 | bfo | http://purl.obolibrary.org/obo/bfo.owl | slme |
+| ncbitaxon | http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl | filter |
 | oostt | http://purl.obolibrary.org/obo/oostt.owl | None |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
-| pno | http://purl.obolibrary.org/obo/iao/pno.owl | mirror |
+| iao | http://purl.obolibrary.org/obo/iao.owl | mirror |
 | d-acts | http://purl.obolibrary.org/obo/iao/d-acts.owl | filter |
 | geo | http://purl.obolibrary.org/obo/geo.owl | None |
 | mf | http://purl.obolibrary.org/obo/mf.owl | None |

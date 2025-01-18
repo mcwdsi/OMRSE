@@ -38,6 +38,11 @@ IAO:0021031
 IAO:0100001	owl:AnnotationProperty
 MF:0000030	owl:Class
 MF:0000031	owl:Class
+NCBITaxon:9606	owl:Class
+NCBITaxon:131567	owl:Class
+NCBITaxon:2759	owl:Class
+NCBITaxon:40674	owl:Class
+NCBITaxon:9443	owl:Class
 OAE:0000002	owl:Class
 OAE:0000067	owl:Class
 OAE:0002807	owl:Class
