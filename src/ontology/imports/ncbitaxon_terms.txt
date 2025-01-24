@@ -1,0 +1,5 @@
+NCBITaxon:9606  owl:Class
+NCBITaxon:131567        owl:Class
+NCBITaxon:2759  owl:Class
+NCBITaxon:40674 owl:Class
+NCBITaxon:9443  owl:Class
