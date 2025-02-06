@@ -1,12 +1,19 @@
-## Background
-We have a use case to represent households and housing units in the Modeling Infectious Disease Agent Study (MIDAS) Informatics Services Group (ISG). Specifically, we are representing synthetic ecosystem datasets, which are datasets that are derived from so-called "micro-samples" of actual census data.  To build agent-based epidemic simulators, researchers will often take samples of census data and expand them back up to the size of the entire population according to statistical algorithms that ensure the re-created overall population dataset matches the actual population in terms of race, gender, ethnicity, geographical distribution, and so on.
+## Use Cases
 
-For modelers, finding a synthetic ecosystem that meets their needs in terms of geography, other entities represented (such as households, schools, and workplaces) is a key issue.  We are building the Ontology-based Catalog for Infectious Disease Epidemiology (OBC.ide) to help modelers and analysts find synthetic ecosystems and other information resources.
+### Representing US Census Housing Units for Exposome Research
+
+We currently have a need to integrate American Community Survey (ACS) data for Florida with other environmental datasets in a graph database to support exposome research. These data capture measures of aggregates of households within a particular region in the US (e.g., Census tracts, counties, etc.).
+
+### Representing Synthetic Ecosystem for the Modeling Infectious Disease Agent Study
+
+We previously had a use case to represent households and housing units in the Modeling Infectious Disease Agent Study (MIDAS) Informatics Services Group (ISG). Specifically, we represented synthetic ecosystem datasets, which are datasets that are derived from so-called "micro-samples" of actual census data.  To build agent-based epidemic simulators, researchers will often take samples of census data and expand them back up to the size of the entire population according to statistical algorithms that ensure the re-created overall population dataset matches the actual population in terms of race, gender, ethnicity, geographical distribution, and so on.
+
+For modelers, finding a synthetic ecosystem that meets their needs in terms of geography, other entities represented (such as households, schools, and workplaces) is a key issue.  Therefore, we built the Ontology-based Catalog for Infectious Disease Epidemiology (OBC.ide) to help modelers and analysts find synthetic ecosystems and other information resources.
 
 We wish to transform some existing synthetic ecosystem data into RDF and need key ontology classes for it.  Two of these classes are housing unit and household.
 
-## Preliminaries 
-Because our synthetic ecosystem data are based on US Census data, we propose initially to use definitions from the US Census:
+## Background Information
+Because the data for our use cases are based on US Census data, we propose initially to use definitions from the US Census:
 
 **household**: The Census defines it as ...<em>all the people who occupy a housing unit.</em>  Source: http://www.census.gov/cps/about/cpsdef.html.
 
@@ -25,28 +32,19 @@ Here is how the US Census addresses the issue: <em>Both occupied and vacant hous
 So a house boat or a recreational vehicle is only a housing unit if it is someone's "usual place of residence", else it is not.  A mobile home is only a housing unit if it is an architectural structure.
 
 ## Definitions
-housing unit: a material entity that has as parts one or more sites that serve to (1) protect persons and their possessions from weather (wind, rain, sun, snow) and (2) are designed for sleeping of said persons.
+- **housing unit**: A material entity that has as parts one or more sites large enough to contain humans, has as part one or more material entities that separates it from other sites, and bears a residence function.
 
-In this sense a cave is not a housing unit until someone adapts it for sleeping there regularly.  This definition seems to cover vehicular residences, architectural residences, and natural geological (and maybe other natural?) formation residences.
+- **household**: A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of that housing unit's residence function.
 
-Many residences also serve as places to prepare and eat food.
+This definition is intended to cover vehicular residences, architectural residences, natural geological formation residences, and other types of material entities that can serve as housing for someone.
 
-**Residence function** - the function of a material entity, with one ore more sites as proper parts and that are large enough to contain humans, to protect persons and their possessions from weather and for one ore more of its sites to be the place where humans sleep.
+- **residence function**: A function that inheres in a material entity and, if realized, is realized by protecting persons and their possessions from weather and by some person or group of persons habitually sleeping in at least one site that is contained by that material entity.
 
-For the U.S. Census then, architectural structures that bear a residence function and vehicles that are realizing a residence function, are housing units.  Also, the U.S. Census says a mobile home does not bear a residence function until it becomes an architectural structure (it is suitably sited and anchored to the ground).
+For the U.S. Census, architectural structures that bear a residence function and vehicles that are realizing a residence function, are housing units.  Also, the U.S. Census says a mobile home does not bear a residence function until it becomes an architectural structure (it is suitably sited and anchored to the ground).
 
-Remaining issue: tents.  For U.S. Census, tents are not housing units unless they are realizing a residence function.  A tent does not have as "firm [a] connection between its foundation and the ground" so we would exclude them as architectural structures.  They don't fit category of vehicle or natural formation either.  
+Similarly, tents are not housing units unless they are realizing a residence function.  A tent does not have as "firm [a] connection between its foundation and the ground" so we would exclude them as architectural structures.  They don't fit category of vehicle or natural formation either, but may still be important to include to cover folks who are unhoused and live on the streets.
 
-housing unit - a material entity that bears a residence function and that has one or more sites as proper parts that contribute to the realization of this function, whereby 
 
-Okay, so key problem is capturing doors to common hallways.  The idea is that sites are connected to outside via doors (they're connected by windows, too, but let's assume we can define the difference adequately) or they're connected to a common, public area.  Wow, what do we mean by public?  Do we need to include the idea of privacy in the definition of housing unit?
+To make it easier to relate a person or household to the housing unit they live in, we created the object property **lives in** (OMRSE:00000260). This object property relates a household to another material entity.
 
-A housing unit could have both a door to a common hallway and a door outside to a private, fenced in area.  Or even a door out to a deck.
-
-Plus, per the definition of 'site' in BFO, each room is a site.
-
-So if we say door has to be outside, we cannot define apartments adequately.  If we say also that door could be to another site, that's too inclusive (then every room is a housing unit).  
-
-So the key is to differentiate the common apartment hallway from the foyer of your house.  Which I think brings us back to privacy.
-
-After discussion, we have figured out that the solution is that a housing unit is distinguished by being the bearer of exactly one residence function, which is designed into the structure by humans.  So, each apartment, house, townhouse, tent, RV, etc. is a collection of sites that is the bearer of one residence function.
+- **lives in**: A relation between a household and a material entity that the household stores their possessions in and sleeps in habitually.
