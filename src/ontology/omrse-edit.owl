@@ -664,6 +664,10 @@ DataPropertyRange(obo:OMRSE_00000137 xsd:string)
 
 SubClassOf(obo:GO_0008150 obo:BFO_0000015)
 
+# Class: obo:IAO_0020021 (identity document)
+
+SubClassOf(obo:IAO_0020021 obo:IAO_0000310)
+
 # Class: obo:NCBITaxon_131567 (cellular organisms)
 
 SubClassOf(obo:NCBITaxon_131567 obo:OBI_0100026)
@@ -3277,9 +3281,15 @@ SubClassOf(obo:OMRSE_00002044 obo:OMRSE_00002030)
 # Class: obo:OMRSE_00002045 (highest level of education data item)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00002045 "highest level of education socio-economic data item"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002045 "A socio-economic data item that is about a person and their completion of an education program (and its type), where that education program is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it.")
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002045 "A socio-economic data item that is about a person and their completion of at least some of the required courses of an education program, where the set of planned competencies to be acquired by completing that program, as a whole, are of a more advanced nature than the set of competencies acquired through any other educational program completed by the person."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00002045 "William R. Hogan")
-AnnotationAssertion(rdfs:comment obo:OMRSE_00002045 "This data item in a typical attribute-value system such as table, XML, JSON takes values like \"secondary education\", \"Associate Degree\", \"Bachelor Degree\", \"High School\", and so on.")
+AnnotationAssertion(dc:contributor obo:OMRSE_00002045 "Colbie Reed"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00002045 "Mathias Brochhausen"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00002045 "Matt Diller"@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00002045 "Note that by 'more advanced nature' of the competencies, we do not mean merely having more knowledge, but rather a set of competencies / capabilities that enable the person to do things of a fundamentally different nature than before. This distinction is exemplified by the difference between a Masters and a PhD degree. The PhD has a key objective of enabling the person to function as an investigator in the domain, whereas a Masters does not."@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00002045 "This data item in a typical attribute-value system such as table, XML, JSON takes values like \"secondary education\", \"Associate Degree\", \"Bachelor Degree\", \"High School\", and so on.
+
+Also, note that we revised the definition in collaboration with our APRICOT project colleagues who noted that the individual need not have completed one of the education programs in a sequence, instead demonstrating competencies for admission to the highest level of eductation in some alternative way. For example, the highest level of education might be baccalaureate degree, but the individual did not graduate a secondary education program but instead got a General Educational Development (GED) certification / degree."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00002045 "highest level of education data item")
 SubClassOf(obo:OMRSE_00002045 obo:OMRSE_00000506)
 
