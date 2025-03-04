@@ -1482,7 +1482,7 @@ SubClassOf(obo:OMRSE_00000101 ObjectIntersectionOf(obo:OMRSE_00000134 ObjectSome
 
 # Class: obo:OMRSE_00000102 (health care facility)
 
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000102 "A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000102 "A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000102 "William Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000102 "health care facility"@en)
 SubClassOf(obo:OMRSE_00000102 obo:OMRSE_00000062)
