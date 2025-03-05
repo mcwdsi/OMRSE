@@ -381,6 +381,12 @@ Declaration(Class(obo:OMRSE_00002069))
 Declaration(Class(obo:OMRSE_00002070))
 Declaration(Class(obo:OMRSE_00002071))
 Declaration(Class(obo:OMRSE_00002072))
+Declaration(Class(obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43))
+Declaration(Class(obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5))
+Declaration(Class(obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4))
+Declaration(Class(obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39))
+Declaration(Class(obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1))
+Declaration(Class(obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:BFO_0000051))
 Declaration(ObjectProperty(obo:BFO_0000054))
@@ -2819,7 +2825,7 @@ SubClassOf(obo:OMRSE_00000261 obo:OMRSE_00002045)
 
 # Class: obo:OMRSE_00000262 (categorization scheme)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000262 "Information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000262 "An information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000262 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000262 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000262 "William R. Hogan"@en)
@@ -2828,7 +2834,7 @@ SubClassOf(obo:OMRSE_00000262 obo:IAO_0000030)
 
 # Class: obo:OMRSE_00000265 (social categorization scheme)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000265 "Categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000265 "A categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000265 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000265 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000265 "William R. Hogan"@en)
@@ -2846,7 +2852,7 @@ SubClassOf(obo:OMRSE_00000266 obo:OMRSE_00002045)
 
 # Class: obo:OMRSE_00000267 (social category)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000267 "Collection of humans demarcated by some social categorization scheme."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000267 "A collection of humans demarcated by some social categorization scheme."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000267 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000267 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000267 "William R. Hogan"@en)
@@ -2856,7 +2862,7 @@ SubClassOf(obo:OMRSE_00000267 ObjectSomeValuesFrom(obo:OMRSE_00000264 obo:OMRSE_
 
 # Class: obo:OMRSE_00000268 (racial categorization scheme)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000268 "Social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000268 "A social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000268 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000268 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000268 "William R. Hogan"@en)
@@ -2865,7 +2871,7 @@ SubClassOf(obo:OMRSE_00000268 obo:OMRSE_00000265)
 
 # Class: obo:OMRSE_00000269 (racial category)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000269 "Social category demarcated by some racial categorization scheme."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000269 "A social category demarcated by some racial categorization scheme."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000269 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000269 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000269 "William R. Hogan"@en)
@@ -2875,7 +2881,7 @@ SubClassOf(obo:OMRSE_00000269 ObjectSomeValuesFrom(obo:OMRSE_00000264 obo:OMRSE_
 
 # Class: obo:OMRSE_00000270 (ethnic categorization scheme)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000270 "Social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000270 "A social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000270 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000270 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000270 "William R. Hogan"@en)
@@ -2884,7 +2890,7 @@ SubClassOf(obo:OMRSE_00000270 obo:OMRSE_00000265)
 
 # Class: obo:OMRSE_00000271 (ethnic category)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000271 "Social category demarcated by some ethnic categorization scheme."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000271 "A social category demarcated by some ethnic categorization scheme."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000271 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000271 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000271 "William R. Hogan"@en)
@@ -2904,7 +2910,7 @@ SubClassOf(obo:OMRSE_00000274 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectInterse
 
 # Class: obo:OMRSE_00000277 (subjective representation)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000277 "Cognitive representation in which the representation’s bearer is represented as being its bearer."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000277 "A cognitive representation in which the representation’s bearer is represented as being its bearer."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000277 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000277 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000277 "William R. Hogan"@en)
@@ -2913,7 +2919,7 @@ SubClassOf(obo:OMRSE_00000277 obo:MF_0000031)
 
 # Class: obo:OMRSE_00000278 (social identity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000278 "Subjective representation of its bearer as being a member of some social category."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000278 "A subjective representation of its bearer as being a member of some social category."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000278 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000278 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000278 "William R. Hogan"@en)
@@ -2923,7 +2929,7 @@ SubClassOf(obo:OMRSE_00000278 ObjectSomeValuesFrom(obo:RO_0000059 ObjectIntersec
 
 # Class: obo:OMRSE_00000279 (racial identity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000279 "Social identity for which the category is a racial category."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000279 "A social identity for which the category is a racial category."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000279 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000279 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000279 "William R. Hogan"@en)
@@ -2941,7 +2947,7 @@ SubClassOf(obo:OMRSE_00000280 obo:OMRSE_00002045)
 
 # Class: obo:OMRSE_00000281 (ethnic identity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000281 "Social identity for which the category is an ethnic category."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000281 "A social identity for which the category is an ethnic category."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000281 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000281 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000281 "William R. Hogan"@en)
@@ -2951,7 +2957,7 @@ SubClassOf(obo:OMRSE_00000281 ObjectSomeValuesFrom(obo:RO_0000059 ObjectIntersec
 
 # Class: obo:OMRSE_00000282 (behavioral identity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000282 "Social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000282 "A social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000282 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000282 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000282 "William R. Hogan"@en)
@@ -3606,6 +3612,60 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00002072 "role in human social processe
 SubClassOf(obo:OMRSE_00002072 obo:BFO_0000023)
 SubClassOf(obo:OMRSE_00002072 ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040))
 SubClassOf(obo:OMRSE_00002072 ObjectAllValuesFrom(obo:RO_0000052 obo:BFO_0000040))
+
+# Class: obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43 (gender categorization scheme)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43 "A social categorization scheme based on the social identities assumed to be coincident of certain biological traits linked to reproduction and/or reproductive behavior."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43 "gender categorization scheme"@en)
+SubClassOf(obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43 obo:OMRSE_00000265)
+
+# Class: obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 (social category data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 "A data item according to which a given person is a member of a given social category."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 "ORCID: 0000-0003-1909-9269"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 "social category data item"@en)
+SubClassOf(obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 obo:IAO_0000027)
+SubClassOf(obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 ObjectSomeValuesFrom(obo:IAO_0000136 obo:NCBITaxon_9606))
+SubClassOf(obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000267))
+
+# Class: obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4 (racial category data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4 "A social category data item for which the social category is a racial category."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4 "ORCID: 0000-0003-1909-9269"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4 "racial category data item"@en)
+SubClassOf(obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4 obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5)
+SubClassOf(obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000269))
+
+# Class: obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39 (ethnic category data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39 "A social category data item for which the social category is an ethnic category."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39 "ORCID: 0000-0003-1909-9269"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39 "ethnic category data item"@en)
+SubClassOf(obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39 obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5)
+SubClassOf(obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000271))
+
+# Class: obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1 (gender category)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1 "A social category demarcated by some gender categorization scheme."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1 "gender category"@en)
+SubClassOf(obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1 obo:OMRSE_00000267)
+SubClassOf(obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1 ObjectSomeValuesFrom(obo:OMRSE_00000264 obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43))
+
+# Class: obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979 (gender category data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979 "A social category data item for which the social category is a gender category."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979 "ORCID: 0000-0003-1909-9269"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979 "gender category data item"@en)
+SubClassOf(obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979 obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5)
+SubClassOf(obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1))
 
 # Class: obo:PCO_0000020 (family)
 
