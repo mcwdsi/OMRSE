@@ -26,6 +26,7 @@ src/ontology/simple_seed.txt
 src/ontology/patterns
 src/ontology/merged-omrse-edit.owl
 src/ontology/reports
+src/ontology/omrse-edit.properties
 reports/
 
 src/ontology/target/
