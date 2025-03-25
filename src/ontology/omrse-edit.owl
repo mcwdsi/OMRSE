@@ -330,6 +330,13 @@ Declaration(Class(obo:OMRSE_00000286))
 Declaration(Class(obo:OMRSE_00000287))
 Declaration(Class(obo:OMRSE_00000288))
 Declaration(Class(obo:OMRSE_00000289))
+Declaration(Class(obo:OMRSE_00000290))
+Declaration(Class(obo:OMRSE_00000291))
+Declaration(Class(obo:OMRSE_00000292))
+Declaration(Class(obo:OMRSE_00000293))
+Declaration(Class(obo:OMRSE_00000294))
+Declaration(Class(obo:OMRSE_00000295))
+Declaration(Class(obo:OMRSE_00000296))
 Declaration(Class(obo:OMRSE_00000500))
 Declaration(Class(obo:OMRSE_00000501))
 Declaration(Class(obo:OMRSE_00000502))
@@ -381,12 +388,6 @@ Declaration(Class(obo:OMRSE_00002069))
 Declaration(Class(obo:OMRSE_00002070))
 Declaration(Class(obo:OMRSE_00002071))
 Declaration(Class(obo:OMRSE_00002072))
-Declaration(Class(obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43))
-Declaration(Class(obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5))
-Declaration(Class(obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4))
-Declaration(Class(obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39))
-Declaration(Class(obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1))
-Declaration(Class(obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:BFO_0000051))
 Declaration(ObjectProperty(obo:BFO_0000054))
@@ -3043,6 +3044,69 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000289 "human traveler role"@en)
 SubClassOf(obo:OMRSE_00000289 obo:OMRSE_00002072)
 SubClassOf(obo:OMRSE_00000289 ObjectSomeValuesFrom(obo:BFO_0000054 obo:APOLLO_SV_00000532))
 
+# Class: obo:OMRSE_00000290 (gender categorization scheme)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000290 "A social categorization scheme based on the social identities assumed to be coincident of certain biological traits linked to reproduction and/or reproductive behavior."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000290 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000290 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000290 "gender categorization scheme"@en)
+SubClassOf(obo:OMRSE_00000290 obo:OMRSE_00000265)
+
+# Class: obo:OMRSE_00000291 (gender category)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000291 "A social category demarcated by some gender categorization scheme."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000291 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000291 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000291 "gender category"@en)
+SubClassOf(obo:OMRSE_00000291 obo:OMRSE_00000267)
+SubClassOf(obo:OMRSE_00000291 ObjectSomeValuesFrom(obo:OMRSE_00000264 obo:OMRSE_00000290))
+
+# Class: obo:OMRSE_00000292 (social category data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000292 "A data item according to which a given person is a member of a given social category."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000292 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000292 "ORCID: 0000-0003-1909-9269"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000292 "social category data item"@en)
+SubClassOf(obo:OMRSE_00000292 obo:IAO_0000027)
+SubClassOf(obo:OMRSE_00000292 ObjectSomeValuesFrom(obo:IAO_0000136 obo:NCBITaxon_9606))
+SubClassOf(obo:OMRSE_00000292 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000267))
+
+# Class: obo:OMRSE_00000293 (ethnic category data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000293 "A social category data item for which the social category is an ethnic category."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000293 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000293 "ORCID: 0000-0003-1909-9269"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000293 "ethnic category data item"@en)
+SubClassOf(obo:OMRSE_00000293 obo:OMRSE_00000292)
+SubClassOf(obo:OMRSE_00000293 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000271))
+
+# Class: obo:OMRSE_00000294 (gender category data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000294 "A social category data item for which the social category is a gender category."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000294 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000294 "ORCID: 0000-0003-1909-9269"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000294 "gender category data item"@en)
+SubClassOf(obo:OMRSE_00000294 obo:OMRSE_00000292)
+SubClassOf(obo:OMRSE_00000294 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000291))
+
+# Class: obo:OMRSE_00000295 (racial category data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000295 "A social category data item for which the social category is a racial category."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000295 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000295 "ORCID: 0000-0003-1909-9269"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000295 "racial category data item"@en)
+SubClassOf(obo:OMRSE_00000295 obo:OMRSE_00000292)
+SubClassOf(obo:OMRSE_00000295 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000269))
+
+# Class: obo:OMRSE_00000296 (gender identity)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000296 "A social identity for which the category is a gender category."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000296 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000296 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000296 "gender identity"@en)
+SubClassOf(obo:OMRSE_00000296 obo:OMRSE_00000278)
+SubClassOf(obo:OMRSE_00000296 ObjectSomeValuesFrom(obo:RO_0000059 ObjectIntersectionOf(obo:BFO_0000031 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:IAO_0000136 obo:NCBITaxon_9606) ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000291)))))
+
 # Class: obo:OMRSE_00000500 (job role data item)
 
 AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000500 "Can be about any aspect of employment, such as salary, work location, or employer."@en)
@@ -3612,60 +3676,6 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00002072 "role in human social processe
 SubClassOf(obo:OMRSE_00002072 obo:BFO_0000023)
 SubClassOf(obo:OMRSE_00002072 ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040))
 SubClassOf(obo:OMRSE_00002072 ObjectAllValuesFrom(obo:RO_0000052 obo:BFO_0000040))
-
-# Class: obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43 (gender categorization scheme)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43 "A social categorization scheme based on the social identities assumed to be coincident of certain biological traits linked to reproduction and/or reproductive behavior."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43 "ORCID: 0000-0002-5039-2052"@en)
-AnnotationAssertion(dc:contributor obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43 "ORCID: 0000-0002-5039-2052"@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43 "gender categorization scheme"@en)
-SubClassOf(obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43 obo:OMRSE_00000265)
-
-# Class: obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 (social category data item)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 "A data item according to which a given person is a member of a given social category."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 "ORCID: 0000-0002-5039-2052"@en)
-AnnotationAssertion(dc:contributor obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 "ORCID: 0000-0003-1909-9269"@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 "social category data item"@en)
-SubClassOf(obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 obo:IAO_0000027)
-SubClassOf(obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 ObjectSomeValuesFrom(obo:IAO_0000136 obo:NCBITaxon_9606))
-SubClassOf(obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000267))
-
-# Class: obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4 (racial category data item)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4 "A social category data item for which the social category is a racial category."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4 "ORCID: 0000-0002-5039-2052"@en)
-AnnotationAssertion(dc:contributor obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4 "ORCID: 0000-0003-1909-9269"@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4 "racial category data item"@en)
-SubClassOf(obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4 obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5)
-SubClassOf(obo:OMRSE_9a543c3a_22c6_4c6b_ae4c_35f781a4c2f4 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000269))
-
-# Class: obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39 (ethnic category data item)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39 "A social category data item for which the social category is an ethnic category."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39 "ORCID: 0000-0002-5039-2052"@en)
-AnnotationAssertion(dc:contributor obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39 "ORCID: 0000-0003-1909-9269"@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39 "ethnic category data item"@en)
-SubClassOf(obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39 obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5)
-SubClassOf(obo:OMRSE_9b494bdc_922b_470a_8f61_449d614d2e39 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000271))
-
-# Class: obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1 (gender category)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1 "A social category demarcated by some gender categorization scheme."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1 "ORCID: 0000-0002-5039-2052"@en)
-AnnotationAssertion(dc:contributor obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1 "ORCID: 0000-0002-5039-2052"@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1 "gender category"@en)
-SubClassOf(obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1 obo:OMRSE_00000267)
-SubClassOf(obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1 ObjectSomeValuesFrom(obo:OMRSE_00000264 obo:OMRSE_1b0d252c_b1e5_4da5_94fd_479156ba5c43))
-
-# Class: obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979 (gender category data item)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979 "A social category data item for which the social category is a gender category."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979 "ORCID: 0000-0002-5039-2052"@en)
-AnnotationAssertion(dc:contributor obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979 "ORCID: 0000-0003-1909-9269"@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979 "gender category data item"@en)
-SubClassOf(obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979 obo:OMRSE_6e046394_0093_487a_b2b4_542f7b379db5)
-SubClassOf(obo:OMRSE_c590a90f_c9de_4ec7_b580_cb5c421aa979 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_be654f2e_27e9_4d4a_913f_27c986bd9cb1))
 
 # Class: obo:PCO_0000020 (family)
 
