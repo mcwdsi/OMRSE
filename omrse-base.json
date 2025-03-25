@@ -54,25 +54,28 @@
         "pred" : "http://purl.org/dc/elements/1.1/creator",
         "val" : "William Hogan"
       }, {
-        "pred" : "http://purl.org/dc/elements/1.1/description",
-        "val" : "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations."
-      }, {
-        "pred" : "http://purl.org/dc/elements/1.1/title",
-        "val" : "Ontology for Modeling and Representation of Social Entities"
-      }, {
         "pred" : "http://purl.org/dc/elements/1.1/type",
         "val" : "http://purl.obolibrary.org/obo/IAO_8000001"
       }, {
+        "pred" : "http://purl.org/dc/terms/creator",
+        "val" : "https://orcid.org/0000-0002-9881-1017"
+      }, {
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations."
+      }, {
         "pred" : "http://purl.org/dc/terms/license",
         "val" : "https://creativecommons.org/licenses/by/4.0/"
+      }, {
+        "pred" : "http://purl.org/dc/terms/title",
+        "val" : "Ontology for Modeling and Representation of Social Entities"
       }, {
         "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
         "val" : "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-11-25"
+        "val" : "2025-03-25"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2024-11-25/omrse-base.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2025-03-25/omrse-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000032",
@@ -1488,10 +1491,10 @@
       "lbl" : "health care facility",
       "type" : "CLASS",
       "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+        "definition" : {
           "val" : "A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population."
-        }, {
+        },
+        "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William Hogan"
         } ]
@@ -3878,7 +3881,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories."
+          "val" : "An information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -3897,7 +3900,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics."
+          "val" : "A categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -3932,7 +3935,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Collection of humans demarcated by some social categorization scheme."
+          "val" : "A collection of humans demarcated by some social categorization scheme."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -3951,7 +3954,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors."
+          "val" : "A social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -3970,7 +3973,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Social category demarcated by some racial categorization scheme."
+          "val" : "A social category demarcated by some racial categorization scheme."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -3989,7 +3992,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship."
+          "val" : "A social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -4008,7 +4011,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Social category demarcated by some ethnic categorization scheme."
+          "val" : "A social category demarcated by some ethnic categorization scheme."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -4046,7 +4049,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Cognitive representation in which the representation’s bearer is represented as being its bearer."
+          "val" : "A cognitive representation in which the representation’s bearer is represented as being its bearer."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -4065,7 +4068,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Subjective representation of its bearer as being a member of some social category."
+          "val" : "A subjective representation of its bearer as being a member of some social category."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -4084,7 +4087,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Social identity for which the category is a racial category."
+          "val" : "A social identity for which the category is a racial category."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -4119,7 +4122,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Social identity for which the category is an ethnic category."
+          "val" : "A social identity for which the category is an ethnic category."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -4138,7 +4141,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior."
+          "val" : "A social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -4304,6 +4307,138 @@
           "val" : "William R. Hogan"
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/source",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000289",
+      "lbl" : "human traveler role",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A role that if realized, is realized by the bearer participating in human travel."
+        },
+        "comments" : [ "See discussion at: https://github.com/mcwdsi/OMRSE/issues/191" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "human traveller role"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Matt Diller"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000290",
+      "lbl" : "gender categorization scheme",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social categorization scheme based on the social identities assumed to be coincident of certain biological traits linked to reproduction and/or reproductive behavior."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000291",
+      "lbl" : "gender category",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social category demarcated by some gender categorization scheme."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000292",
+      "lbl" : "social category data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A data item according to which a given person is a member of a given social category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000293",
+      "lbl" : "ethnic category data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social category data item for which the social category is an ethnic category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000294",
+      "lbl" : "gender category data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social category data item for which the social category is a gender category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000295",
+      "lbl" : "racial category data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social category data item for which the social category is a racial category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000296",
+      "lbl" : "gender identity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social identity for which the category is a gender category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0003-1909-9269"
         } ]
       }
@@ -4728,15 +4863,24 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A socio-economic data item that is about a person and their completion of an education program (and its type), where that education program is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it."
+          "val" : "A socio-economic data item that is about a person and their completion of at least some of the required courses of an education program, where the set of planned competencies to be acquired by completing that program, as a whole, are of a more advanced nature than the set of competencies acquired through any other educational program completed by the person."
         },
-        "comments" : [ "This data item in a typical attribute-value system such as table, XML, JSON takes values like \"secondary education\", \"Associate Degree\", \"Bachelor Degree\", \"High School\", and so on." ],
+        "comments" : [ "Note that by 'more advanced nature' of the competencies, we do not mean merely having more knowledge, but rather a set of competencies / capabilities that enable the person to do things of a fundamentally different nature than before. This distinction is exemplified by the difference between a Masters and a PhD degree. The PhD has a key objective of enabling the person to function as an investigator in the domain, whereas a Masters does not.", "This data item in a typical attribute-value system such as table, XML, JSON takes values like \"secondary education\", \"Associate Degree\", \"Bachelor Degree\", \"High School\", and so on.\n\nAlso, note that we revised the definition in collaboration with our APRICOT project colleagues who noted that the individual need not have completed one of the education programs in a sequence, instead demonstrating competencies for admission to the highest level of eductation in some alternative way. For example, the highest level of education might be baccalaureate degree, but the individual did not graduate a secondary education program but instead got a General Educational Development (GED) certification / degree." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "highest level of education socio-economic data item"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Colbie Reed"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Mathias Brochhausen"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Matt Diller"
         } ]
       }
     }, {
@@ -13398,19 +13542,23 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://purl.org/dc/elements/1.1/description",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
       "id" : "http://purl.org/dc/elements/1.1/source",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://purl.org/dc/elements/1.1/title",
+      "id" : "http://purl.org/dc/elements/1.1/type",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://purl.org/dc/elements/1.1/type",
+      "id" : "http://purl.org/dc/terms/contributor",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/creator",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/description",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -13419,6 +13567,10 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/source",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/title",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     } ],
@@ -14784,6 +14936,66 @@
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000286",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000086"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000289",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002072"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000289",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000054",
+      "obj" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000532"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000290",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000265"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000291",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000267"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000291",
+      "pred" : "http://purl.obolibrary.org/obo/OMRSE_00000264",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000290"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000292",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000027"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000292",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000292",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000267"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000293",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000292"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000293",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000271"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000294",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000292"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000294",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000291"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000295",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000292"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000295",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000269"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000296",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000278"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000500",
       "pred" : "is_a",

@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2024-11-25/omrse-base.owl
+data-version: omrse/releases/2025-03-25/omrse-base.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: foaf http://xmlns.com/foaf/0.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -24,11 +24,12 @@ property_value: dc:creator "Mathias Brochhausen" xsd:string
 property_value: dc:creator "Shariq Tariq" xsd:string
 property_value: dc:creator "Swetha Garimalla" xsd:string
 property_value: dc:creator "William Hogan" xsd:string
-property_value: dc:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
-property_value: dc:title "Ontology for Modeling and Representation of Social Entities" xsd:string
 property_value: dc:type IAO:8000001
-property_value: owl:versionInfo "2024-11-25" xsd:string
+property_value: owl:versionInfo "2025-03-25" xsd:string
+property_value: terms:creator "https://orcid.org/0000-0002-9881-1017" xsd:anyURI
+property_value: terms:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
+property_value: terms:title "Ontology for Modeling and Representation of Social Entities" xsd:string
 
 [Term]
 id: OMRSE:00000000
@@ -804,8 +805,8 @@ name: ethnic identification process
 [Term]
 id: OMRSE:00000102
 name: health care facility
+def: "A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population." []
 is_a: OMRSE:00000062 ! facility
-property_value: IAO:0000117 "A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population." xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
 
 [Term]
@@ -2136,7 +2137,7 @@ property_value: terms:source "http://orcid.org/0000-0003-1909-9269" xsd:string
 [Term]
 id: OMRSE:00000262
 name: categorization scheme
-def: "Information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories." []
+def: "An information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories." []
 is_a: IAO:0000030
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -2145,7 +2146,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000265
 name: social categorization scheme
-def: "Categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics." []
+def: "A categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics." []
 is_a: OMRSE:00000262 ! categorization scheme
 relationship: OMRSE:00000263 OMRSE:00000023 {all_only="true"} ! demarcates collection of humans
 property_value: dc:contributor "S. Clint Dowland" xsd:string
@@ -2163,7 +2164,7 @@ property_value: IAO:0000117 "William R. Hogan" xsd:string
 [Term]
 id: OMRSE:00000267
 name: social category
-def: "Collection of humans demarcated by some social categorization scheme." []
+def: "A collection of humans demarcated by some social categorization scheme." []
 is_a: OMRSE:00000023 ! collection of humans
 relationship: OMRSE:00000264 OMRSE:00000265 ! demarcated by social categorization scheme
 property_value: dc:contributor "S. Clint Dowland" xsd:string
@@ -2173,7 +2174,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000268
 name: racial categorization scheme
-def: "Social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors." []
+def: "A social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors." []
 is_a: OMRSE:00000265 ! social categorization scheme
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -2182,7 +2183,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000269
 name: racial category
-def: "Social category demarcated by some racial categorization scheme." []
+def: "A social category demarcated by some racial categorization scheme." []
 is_a: OMRSE:00000267 ! social category
 relationship: OMRSE:00000264 OMRSE:00000268 ! demarcated by racial categorization scheme
 property_value: dc:contributor "S. Clint Dowland" xsd:string
@@ -2192,7 +2193,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000270
 name: ethnic categorization scheme
-def: "Social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship." []
+def: "A social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship." []
 is_a: OMRSE:00000265 ! social categorization scheme
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -2201,7 +2202,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000271
 name: ethnic category
-def: "Social category demarcated by some ethnic categorization scheme." []
+def: "A social category demarcated by some ethnic categorization scheme." []
 is_a: OMRSE:00000267 ! social category
 relationship: OMRSE:00000264 OMRSE:00000270 ! demarcated by ethnic categorization scheme
 property_value: dc:contributor "S. Clint Dowland" xsd:string
@@ -2220,7 +2221,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000277
 name: subjective representation
-def: "Cognitive representation in which the representation’s bearer is represented as being its bearer." []
+def: "A cognitive representation in which the representation’s bearer is represented as being its bearer." []
 is_a: MF:0000031
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -2229,7 +2230,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000278
 name: social identity
-def: "Subjective representation of its bearer as being a member of some social category." []
+def: "A subjective representation of its bearer as being a member of some social category." []
 is_a: OMRSE:00000277 ! subjective representation
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -2238,7 +2239,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000279
 name: racial identity
-def: "Social identity for which the category is a racial category." []
+def: "A social identity for which the category is a racial category." []
 is_a: OMRSE:00000278 ! social identity
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -2255,7 +2256,7 @@ property_value: IAO:0000117 "William R. Hogan" xsd:string
 [Term]
 id: OMRSE:00000281
 name: ethnic identity
-def: "Social identity for which the category is an ethnic category." []
+def: "A social identity for which the category is an ethnic category." []
 is_a: OMRSE:00000278 ! social identity
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -2264,7 +2265,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000282
 name: behavioral identity
-def: "Social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior." []
+def: "A social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior." []
 is_a: OMRSE:00000278 ! social identity
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -2335,6 +2336,79 @@ name: public housing eligibility role
 def: "A role that inheres in a person who qualifies for public housing according to the criteria set forth by the relevant governmental entity and that is realized in processes that both have the person as a participant and realize the public housing function of some housing unit." []
 property_value: dc:source "https://orcid.org/0000-0003-1909-9269" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00000289
+name: human traveler role
+def: "A role that if realized, is realized by the bearer participating in human travel." []
+comment: See discussion at: https://github.com/mcwdsi/OMRSE/issues/191
+is_a: OMRSE:00002072 ! role in human social processes
+relationship: BFO:0000054 APOLLO_SV:00000532
+property_value: dc:contributor "Matt Diller" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000118 "human traveller role" xsd:string
+
+[Term]
+id: OMRSE:00000290
+name: gender categorization scheme
+def: "A social categorization scheme based on the social identities assumed to be coincident of certain biological traits linked to reproduction and/or reproductive behavior." []
+is_a: OMRSE:00000265 ! social categorization scheme
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
+
+[Term]
+id: OMRSE:00000291
+name: gender category
+def: "A social category demarcated by some gender categorization scheme." []
+is_a: OMRSE:00000267 ! social category
+relationship: OMRSE:00000264 OMRSE:00000290 ! demarcated by gender categorization scheme
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
+
+[Term]
+id: OMRSE:00000292
+name: social category data item
+def: "A data item according to which a given person is a member of a given social category." []
+is_a: IAO:0000027
+relationship: IAO:0000136 NCBITaxon:9606
+relationship: IAO:0000136 OMRSE:00000267 ! social category
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
+
+[Term]
+id: OMRSE:00000293
+name: ethnic category data item
+def: "A social category data item for which the social category is an ethnic category." []
+is_a: OMRSE:00000292 ! social category data item
+relationship: IAO:0000136 OMRSE:00000271 ! ethnic category
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
+
+[Term]
+id: OMRSE:00000294
+name: gender category data item
+def: "A social category data item for which the social category is a gender category." []
+is_a: OMRSE:00000292 ! social category data item
+relationship: IAO:0000136 OMRSE:00000291 ! gender category
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
+
+[Term]
+id: OMRSE:00000295
+name: racial category data item
+def: "A social category data item for which the social category is a racial category." []
+is_a: OMRSE:00000292 ! social category data item
+relationship: IAO:0000136 OMRSE:00000269 ! racial category
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
+
+[Term]
+id: OMRSE:00000296
+name: gender identity
+def: "A social identity for which the category is a gender category." []
+is_a: OMRSE:00000278 ! social identity
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
 
 [Term]
 id: OMRSE:00000500
@@ -2586,9 +2660,13 @@ property_value: IAO:0000119 "http://uis.unesco.org/sites/default/files/documents
 [Term]
 id: OMRSE:00002045
 name: highest level of education data item
-def: "A socio-economic data item that is about a person and their completion of an education program (and its type), where that education program is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it." []
-comment: This data item in a typical attribute-value system such as table, XML, JSON takes values like "secondary education", "Associate Degree", "Bachelor Degree", "High School", and so on.
+def: "A socio-economic data item that is about a person and their completion of at least some of the required courses of an education program, where the set of planned competencies to be acquired by completing that program, as a whole, are of a more advanced nature than the set of competencies acquired through any other educational program completed by the person." []
+comment: Note that by 'more advanced nature' of the competencies, we do not mean merely having more knowledge, but rather a set of competencies / capabilities that enable the person to do things of a fundamentally different nature than before. This distinction is exemplified by the difference between a Masters and a PhD degree. The PhD has a key objective of enabling the person to function as an investigator in the domain, whereas a Masters does not.
+comment: This data item in a typical attribute-value system such as table, XML, JSON takes values like "secondary education", "Associate Degree", "Bachelor Degree", "High School", and so on.\n\nAlso, note that we revised the definition in collaboration with our APRICOT project colleagues who noted that the individual need not have completed one of the education programs in a sequence, instead demonstrating competencies for admission to the highest level of eductation in some alternative way. For example, the highest level of education might be baccalaureate degree, but the individual did not graduate a secondary education program but instead got a General Educational Development (GED) certification / degree.
 is_a: OMRSE:00000506 ! socio-economic data item
+property_value: dc:contributor "Colbie Reed" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matt Diller" xsd:string
 property_value: IAO:0000111 "highest level of education socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 

@@ -1,5 +1,15 @@
 format-version: 1.2
-data-version: omrse/releases/2024-11-25/omrse-full.owl
+data-version: omrse/releases/2025-03-25/omrse-full.owl
+subsetdef: gocheck_do_not_annotate ""
+subsetdef: goslim_agr ""
+subsetdef: goslim_candida ""
+subsetdef: goslim_chembl ""
+subsetdef: goslim_flybase_ribbon ""
+subsetdef: goslim_metagenomics ""
+subsetdef: goslim_pir ""
+subsetdef: goslim_plant ""
+subsetdef: goslim_pombe ""
+subsetdef: goslim_yeast ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -48,10 +58,11 @@ property_value: dc:creator "Mathias Brochhausen" xsd:string
 property_value: dc:creator "Shariq Tariq" xsd:string
 property_value: dc:creator "Swetha Garimalla" xsd:string
 property_value: dc:creator "William Hogan" xsd:string
-property_value: dc:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
-property_value: dc:title "Ontology for Modeling and Representation of Social Entities" xsd:string
-property_value: owl:versionInfo "2024-11-25" xsd:string
+property_value: owl:versionInfo "2025-03-25" xsd:string
+property_value: terms:creator "https://orcid.org/0000-0002-9881-1017" xsd:anyURI
+property_value: terms:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
+property_value: terms:title "Ontology for Modeling and Representation of Social Entities" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -101,7 +112,7 @@ name: source code repository
 def: "A document that comprises at least one source code module and provenance data about who contributed the set of files making up the module(s), and optionally comprises also multiple versions of files with detailed change history about who committed files and when, a license for the software, readme files, documentation, executables, etc." []
 comment: Refers to the stuff that lives on GitHub, not to GitHub or the git software on which it is based
 is_a: IAO:0000310 ! document
-relationship: BFO:0000051 IAO:0000096 ! has part source code module
+relationship: has_part IAO:0000096 ! source code module
 property_value: IAO:0000111 "software source code version control repository" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -156,7 +167,7 @@ name: continuant
 def: "An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts." []
 is_a: BFO:0000001 ! entity
 disjoint_from: BFO:0000003 ! occurrent
-relationship: BFO:0000050 BFO:0000002 {all_only="true"} ! part of continuant
+relationship: part_of BFO:0000002 {all_only="true"} ! continuant
 property_value: BFO:0000179 "continuant" xsd:string
 property_value: BFO:0000180 "Continuant" xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: Continuant entities are entities which can be sliced to yield parts only along the spatial dimension, yielding for example the parts of your table which we call its legs, its top, its nails. ‘My desk stretches from the window to the door. It has spatial parts, and can be sliced (in space) in two. With respect to time, however, a thing is a continuant.’ [60, p. 240" xsd:string
@@ -176,7 +187,7 @@ id: BFO:0000003
 name: occurrent
 def: "An entity that has temporal parts and that happens, unfolds or develops through time." []
 is_a: BFO:0000001 ! entity
-relationship: BFO:0000050 BFO:0000003 {all_only="true"} ! part of occurrent
+relationship: part_of BFO:0000003 {all_only="true"} ! occurrent
 property_value: BFO:0000179 "occurrent" xsd:string
 property_value: BFO:0000180 "Occurrent" xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: every occurrent that is not a temporal or spatiotemporal region is s-dependent on some independent continuant that is not a spatial region" xsd:string
@@ -198,7 +209,7 @@ comment: A continuant that is a bearer of quality and realizable entity entities
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000020 ! characteristic
 disjoint_from: BFO:0000031 ! generically dependent continuant
-relationship: BFO:0000050 BFO:0000004 {all_only="true"} ! part of independent continuant
+relationship: part_of BFO:0000004 {all_only="true"} ! independent continuant
 property_value: BFO:0000179 "ic" xsd:string
 property_value: BFO:0000180 "IndependentContinuant" xsd:string
 property_value: IAO:0000112 "a chair" xsd:string
@@ -332,7 +343,7 @@ name: realizable entity
 def: "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances." []
 is_a: BFO:0000020 ! characteristic
 disjoint_from: BFO:0000019 ! quality
-relationship: BFO:0000050 BFO:0000017 {all_only="true"} ! part of realizable entity
+relationship: part_of BFO:0000017 {all_only="true"} ! realizable entity
 property_value: BFO:0000179 "realizable" xsd:string
 property_value: BFO:0000180 "RealizableEntity" xsd:string
 property_value: IAO:0000112 "the disposition of this piece of metal to conduct electricity." xsd:string
@@ -361,7 +372,7 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 id: BFO:0000019
 name: quality
 is_a: BFO:0000020 ! characteristic
-relationship: BFO:0000050 BFO:0000019 {all_only="true"} ! part of quality
+relationship: part_of BFO:0000019 {all_only="true"} ! quality
 property_value: BFO:0000179 "quality" xsd:string
 property_value: BFO:0000180 "Quality" xsd:string
 property_value: IAO:0000112 "the ambient temperature of this portion of air" xsd:string
@@ -385,7 +396,7 @@ def: "b is a specifically dependent continuant = Def. b is a continuant & there 
 comment: A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000031 ! generically dependent continuant
-relationship: BFO:0000050 BFO:0000020 {all_only="true"} ! part of characteristic
+relationship: part_of BFO:0000020 {all_only="true"} ! characteristic
 property_value: BFO:0000179 "sdc" xsd:string
 property_value: BFO:0000180 "SpecificallyDependentContinuant" xsd:string
 property_value: IAO:0000112 "of one-sided specifically dependent continuants: the mass of this tomato" xsd:string
@@ -550,7 +561,7 @@ def: "A continuant that is dependent on one or other independent continuant bear
 def: "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/074-001"}
 comment: A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.
 is_a: BFO:0000002 ! continuant
-relationship: BFO:0000050 BFO:0000031 {all_only="true"} ! part of generically dependent continuant
+relationship: part_of BFO:0000031 {all_only="true"} ! generically dependent continuant
 property_value: BFO:0000179 "gdc" xsd:string
 property_value: BFO:0000180 "GenericallyDependentContinuant" xsd:string
 property_value: IAO:0000112 "The entries in your database are patterns instantiated as quality instances in your hard drive. The database itself is an aggregate of such patterns. When you create the database you create a particular instance of the generically dependent continuant type database. Each entry in the database is an instance of the generically dependent continuant type IAO: information content entity." xsd:string
@@ -748,36 +759,6 @@ property_value: IAO:0000600 "A history is a process that is the sum of the total
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
-id: FMA:49443
-name: Anatomical cluster
-is_a: FMA:67135 ! Anatomical structure
-
-[Term]
-id: FMA:55457
-name: vocal fold
-is_a: FMA:64854 ! Subdivision of larynx
-
-[Term]
-id: FMA:64854
-name: Subdivision of larynx
-is_a: FMA:64989 ! Heterogeneous cluster
-
-[Term]
-id: FMA:64989
-name: Heterogeneous cluster
-is_a: FMA:49443 ! Anatomical cluster
-
-[Term]
-id: FMA:67135
-name: Anatomical structure
-is_a: FMA:67165 ! Material anatomical entity
-
-[Term]
-id: FMA:67165
-name: Material anatomical entity
-is_a: BFO:0000040 ! material entity
-
-[Term]
 id: GEO:000000400
 name: governmental organization
 def: "An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii). \n\nNote: this definition was taken over from \"geopolitical organization\"." []
@@ -794,25 +775,49 @@ comment: Note that, in addition to forming the root of the molecular function on
 comment: This is the same as GO molecular function
 synonym: "molecular function" EXACT []
 is_a: BFO:0000015 ! process
-disjoint_from: GO:0008150 ! biological_process
+disjoint_from: GO:0008150 ! biological process
 
 [Term]
 id: GO:0007610
 name: behavior
+namespace: biological_process
+alt_id: GO:0023032
+alt_id: GO:0044708
+alt_id: GO:0044709
 def: "The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity." [GOC:ems, GOC:jl, ISBN:0395448956, PMID:20160973]
 comment: 1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.\n2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).
+subset: gocheck_do_not_annotate
+subset: goslim_agr
+subset: goslim_flybase_ribbon
+synonym: "behavioral response to stimulus" EXACT []
+synonym: "behaviour" EXACT []
+synonym: "behavioural response to stimulus" EXACT []
+synonym: "single-organism behavior" RELATED []
 xref: Wikipedia:Behavior
-is_a: GO:0008150 ! biological_process
+is_a: GO:0032501 ! multicellular organismal process
+created_by: jl
+creation_date: 2012-09-20T14:06:08Z
 
 [Term]
 id: GO:0008150
 name: biological process
 name: biological_process
+namespace: biological_process
+alt_id: GO:0000004
+alt_id: GO:0007582
+alt_id: GO:0044699
 def: "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
 def: "A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective." []
 comment: A biological process is an evolved process
 comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
 comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
+subset: goslim_candida
+subset: goslim_chembl
+subset: goslim_metagenomics
+subset: goslim_pir
+subset: goslim_plant
+subset: goslim_pombe
+subset: goslim_yeast
 synonym: "biological process" EXACT []
 synonym: "physiological process" EXACT []
 synonym: "single organism process" RELATED []
@@ -820,6 +825,7 @@ synonym: "single-organism process" RELATED []
 xref: Wikipedia:Biological_process
 is_a: BFO:0000015 ! process
 disjoint_from: OBI:0000011 ! planned process
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/24968" xsd:anyURI
 created_by: jl
 creation_date: 2012-09-19T15:05:24Z
 
@@ -832,6 +838,23 @@ synonym: "phosphokinase activity" EXACT []
 xref: Reactome:R-HSA-6788855 "FN3KRP phosphorylates PsiAm, RibAm"
 xref: Reactome:R-HSA-6788867 "FN3K phosphorylates ketosamines"
 is_a: GO:0003674 ! molecular_function
+
+[Term]
+id: GO:0032501
+name: multicellular organismal process
+namespace: biological_process
+alt_id: GO:0044707
+alt_id: GO:0050874
+def: "Any biological process, occurring at the level of a multicellular organism, pertinent to its function." [GOC:curators, GOC:dph, GOC:isa_complete, GOC:tb]
+comment: Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.
+subset: gocheck_do_not_annotate
+subset: goslim_pir
+synonym: "organismal physiological process" EXACT []
+synonym: "single-multicellular organism process" RELATED []
+is_a: GO:0008150 ! biological process
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/27189" xsd:anyURI
+created_by: jl
+creation_date: 2012-09-19T16:07:47Z
 
 [Term]
 id: IAO:0000001
@@ -1423,8 +1446,8 @@ name: plan specification
 def: "A directive information entity with action specifications and objective specifications as parts, and that may be concretized as a realizable entity that, if realized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified." []
 comment: 2/3/2009 Comment from OBI review.\n\nAction specification not well enough specified.\nConditional specification not well enough specified.\nQuestion whether all plan specifications have objective specifications.\n\nRequest that IAO either clarify these or change definitions not to use them
 is_a: IAO:0000033 ! directive information entity
-relationship: BFO:0000051 IAO:0000005 ! has part objective specification
-relationship: BFO:0000051 IAO:0000007 ! has part action specification
+relationship: has_part IAO:0000005 ! objective specification
+relationship: has_part IAO:0000007 ! action specification
 property_value: IAO:0000111 "plan specification" xsd:string
 property_value: IAO:0000112 "PMID: 18323827.Nat Med. 2008 Mar;14(3):226.New plan proposed to help resolve conflicting medical advice." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -1813,7 +1836,7 @@ id: IAO:0000314
 name: document part
 def: "An information content entity that is part of a document." []
 is_a: IAO:0000030 ! information content entity
-relationship: BFO:0000050 IAO:0000310 ! part of document
+relationship: part_of IAO:0000310 ! document
 property_value: IAO:0000111 "document part" xsd:string
 property_value: IAO:0000112 "An abstract, introduction, method or results section." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -1896,7 +1919,7 @@ id: IAO:0000320
 name: references section
 def: "A part of a document that has citations as parts" []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000301 ! has part citation
+relationship: has_part IAO:0000301 ! citation
 property_value: IAO:0000111 "references section" xsd:string
 property_value: IAO:0000112 "The list of citations found at the end of a scientific publication, grant proposal or patent application, sometimes called \"literature cited\" or \"bibliography\"" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -1912,7 +1935,7 @@ id: IAO:0000321
 name: author list
 def: "A part of a document that enumerates the authors of the document" []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000302 ! has part author identification
+relationship: has_part IAO:0000302 ! author identification
 property_value: IAO:0000111 "author list" xsd:string
 property_value: IAO:0000112 "Lawrence Hunter and Kevin Brettonel Cohen" xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -1923,7 +1946,7 @@ id: IAO:0000322
 name: institution list
 def: "A part of a document that has parts that are institution identifications associated with the authors of the document" []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000303 ! has part institutional identification
+relationship: has_part IAO:0000303 ! institutional identification
 property_value: IAO:0000111 "institution list" xsd:string
 property_value: IAO:0000112 "The University of Colorado Denver School of Medicine and the University of Colorado Boulder." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -2218,7 +2241,7 @@ name: assigning a centrally registered identifier
 def: "A planned process in which a new CRID is created, associated with an entity, and stored in the CRID registry thereby registering it as being associated with some entity" []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000299 IAO:0000577 ! has_specified_output centrally registered identifier symbol
-relationship: RO:0000057 IAO:0000579 ! has_participant centrally registered identifier registry
+relationship: RO:0000057 IAO:0000579 ! has participant centrally registered identifier registry
 property_value: IAO:0000112 "A new pubmed ID being created for a journal article, and the associated pubmed record containing information to the journal article. A license plate number registered at the DMV to be belonging to a specific vehicle and owner. Placing a barcode on a product and entering information in a database that this barcode is assigned." xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000116 "2014-05-05: It is the CRID registry that assigns CRIDs, not the users of the registry." xsd:string
@@ -2233,7 +2256,7 @@ name: associating information with a centrally registered identifier in its regi
 def: "A planned process in which a CRID registry associates an information content entity with a CRID symbol" []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 IAO:0000577 ! has_specified_input centrally registered identifier symbol
-relationship: RO:0000057 IAO:0000579 ! has_participant centrally registered identifier registry
+relationship: RO:0000057 IAO:0000579 ! has participant centrally registered identifier registry
 property_value: IAO:0000112 "Articles in Pubmed are reviewed by curators who add MESH terms to the Pubmed records in order to categorize them better and improve the ability to search for them. " xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON:Alan Ruttenberg" xsd:string
@@ -2253,7 +2276,7 @@ id: IAO:0000577
 name: centrally registered identifier symbol
 def: "A symbol that is part of a CRID and that is sufficient to look up a record from the CRID's registry." []
 is_a: IAO:0000028 ! symbol
-relationship: BFO:0000050 IAO:0000578 ! part of centrally registered identifier
+relationship: part_of IAO:0000578 ! centrally registered identifier
 property_value: IAO:0000112 "The sentence \"The article has Pubmed ID 12345.\" contains a CRID that has two parts: one part is the CRID symbol, which is '12345'; the other part denotes the CRID registry, which is Pubmed." xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
@@ -2268,7 +2291,7 @@ id: IAO:0000578
 name: centrally registered identifier
 def: "An information content entity that consists of a CRID symbol and additional information about the CRID registry to which it belongs." []
 is_a: IAO:0020000 ! identifier
-relationship: BFO:0000051 IAO:0000577 ! has part centrally registered identifier symbol
+relationship: has_part IAO:0000577 ! centrally registered identifier symbol
 property_value: IAO:0000112 "The sentence \"The article has Pubmed ID 12345.\" contains a CRID that has two parts: one part is the CRID symbol, which is '12345'; the other part denotes the CRID registry, which is Pubmed." xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000116 "2014-05-05: In defining this term we take no position on what the CRID denotes. In particular do not assume it denotes a *record* in the CRID registry (since the registry might not have 'records')." xsd:string
@@ -2304,7 +2327,7 @@ def: "A planned process in which a request to a CRID registry is made to return 
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 IAO:0000577 ! has_specified_input centrally registered identifier symbol
 relationship: OBI:0000299 IAO:0000030 ! has_specified_output information content entity
-relationship: RO:0000057 IAO:0000579 ! has_participant centrally registered identifier registry
+relationship: RO:0000057 IAO:0000579 ! has participant centrally registered identifier registry
 property_value: IAO:0000112 "Going to the PubMed website and entering a PubMed ID in order to retrieve the Pubmed information associated with that ID. " xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
@@ -2326,7 +2349,7 @@ id: IAO:0000584
 name: time sampled measurement data set
 def: "A data set that is an aggregate of data recording some measurement at a number of time points. The time series data set is an ordered list of pairs of time measurement data and the corresponding measurement data acquired at that time." []
 is_a: IAO:0000100 ! data set
-relationship: BFO:0000051 IAO:0000582 ! has part time stamped measurement datum
+relationship: has_part IAO:0000582 ! time stamped measurement datum
 property_value: IAO:0000112 "pmid:20604925 - time-lapse live cell microscopy" xsd:string
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
@@ -2411,7 +2434,7 @@ id: IAO:0000606
 name: abbreviations section
 def: "A part of a document where abbreviations and their long-forms used within the document are listed." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000605 ! has part abbreviation textual entity
+relationship: has_part IAO:0000605 ! abbreviation textual entity
 property_value: IAO:0000111 "abbreviations section" xsd:string
 property_value: IAO:0000112 "The section labelled 'abbreviations' in a typical scientific journal article." xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2435,7 +2458,7 @@ id: IAO:0000607
 name: author information section
 def: "A part of a document about the authors that provides biographical information and may discuss how the authors' professional experiences are relevant to the work described in the document." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000608 ! has part author information textual entity
+relationship: has_part IAO:0000608 ! author information textual entity
 property_value: IAO:0000111 "author information section" xsd:string
 property_value: IAO:0000112 "The section labelled 'author information' in a typical scientific journal article, e.g. in Takon. Ann Gen Psychiatry. 2011; 10: 25. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3204268/)" xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2461,7 +2484,7 @@ id: IAO:0000609
 name: author summary section
 def: "A part of a document, distinct from the abstract, that describes the significance and broader context of the document content. The author summary is often written in a non-technical manner and is aimed at both scientists and non-scientist readers." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000610 ! has part author summary textual entity
+relationship: has_part IAO:0000610 ! author summary textual entity
 property_value: IAO:0000111 "author summary section" xsd:string
 property_value: IAO:0000112 "The section labelled 'synopsis' in a typical scientific journal article, e.g. in Pendse et al. BMC Genomics. 2013; 14: 136. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3608171/)" xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2487,7 +2510,7 @@ id: IAO:0000611
 name: availability section
 def: "A part of a document about a resource described in the document, e.g. software, that describes where and/or how that resource can be obtained." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000612 ! has part availability textual entity
+relationship: has_part IAO:0000612 ! availability textual entity
 property_value: IAO:0000111 "availability section" xsd:string
 property_value: IAO:0000112 "The section labelled 'availability and requirements' in a typical scientific journal article, e.g. Qi et al. BMC Bioinformatics. 2014; 15: 11. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3897912/)." xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2515,7 +2538,7 @@ id: IAO:0000613
 name: case report section
 def: "A part of a document about the medical history of a specific patient as it relates to the topic of the document." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000614 ! has part case report textual entity
+relationship: has_part IAO:0000614 ! case report textual entity
 property_value: IAO:0000111 "case report section" xsd:string
 property_value: IAO:0000112 "The section labelled 'case report' in a typical scientific journal article, e.g. in Taglia et al. Acta Myol. 2012 Dec; 31(3): 201–203. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3631801/)" xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2538,7 +2561,7 @@ id: IAO:0000615
 name: conclusion section
 def: "A part of a document used to summarize the findings discussed in the document. The conclusion section is typically found near the end of a document." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000144 ! has part conclusion textual entity
+relationship: has_part IAO:0000144 ! conclusion textual entity
 property_value: IAO:0000111 "conclusion section" xsd:string
 property_value: IAO:0000112 "The section labelled 'conclusion' in a typical scientific journal article." xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2554,7 +2577,7 @@ id: IAO:0000616
 name: conflict of interest section
 def: "A part of a document used to declare any competing interests regarding the authors and/or funding organization for the work described in the document." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000617 ! has part conflict of interest textual entity
+relationship: has_part IAO:0000617 ! conflict of interest textual entity
 property_value: IAO:0000111 "conflict of interest section" xsd:string
 property_value: IAO:0000112 "The section labelled 'conflict of interest statement' in a typical scientific journal article." xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2591,7 +2614,7 @@ id: IAO:0000618
 name: consent section
 def: "A part of a document about the consent process that was used to enroll patients in a study." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000619 ! has part consent textual entity
+relationship: has_part IAO:0000619 ! consent textual entity
 property_value: IAO:0000111 "consent section" xsd:string
 property_value: IAO:0000112 "The section labelled 'consent' in a typical scientific journal article, e.g. Shiba et al. Acta Neuropathol Commun. 2013; 1: 45. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3893467/)" xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2613,7 +2636,7 @@ id: IAO:0000620
 name: ethical approval section
 def: "A part of a document about the governance body responsible for approving the work discussed in a document on an ethical basis." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000621 ! has part ethical approval textual entity
+relationship: has_part IAO:0000621 ! ethical approval textual entity
 property_value: IAO:0000111 "ethical approval section" xsd:string
 property_value: IAO:0000112 "The section labelled 'ethical approval' in a typical scientific journal article." xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2640,7 +2663,7 @@ id: IAO:0000622
 name: figures section
 def: "A part of a document that contains one or more figures." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000308 ! has part figure
+relationship: has_part IAO:0000308 ! figure
 property_value: IAO:0000111 "figures section" xsd:string
 property_value: IAO:0000112 "The section labelled 'figures' in a typical scientific journal article." xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2652,7 +2675,7 @@ id: IAO:0000623
 name: funding source declaration section
 def: "A part of a document used to detail information regarding the source of funding used in support of the generation of the document content." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000624 ! has part funding source declaration textual entity
+relationship: has_part IAO:0000624 ! funding source declaration textual entity
 property_value: IAO:0000111 "funding source declaration section" xsd:string
 property_value: IAO:0000112 "The section labelled 'funding' in a typical scientific journal article." xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2685,7 +2708,7 @@ id: IAO:0000625
 name: future directions section
 def: "A part of a document detailing extensions of the described work that may be implemented at some future point in time." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000626 ! has part future directions textual entity
+relationship: has_part IAO:0000626 ! future directions textual entity
 property_value: IAO:0000111 "future directions section" xsd:string
 property_value: IAO:0000112 "The section labelled 'future directions' in a typical scientific journal article." xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2720,7 +2743,7 @@ id: IAO:0000627
 name: genome announcement section
 def: "A document part announcing the publication of a novel draft genome sequence." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000628 ! has part genome announcement textual entity
+relationship: has_part IAO:0000628 ! genome announcement textual entity
 property_value: IAO:0000111 "genome announcement section" xsd:string
 property_value: IAO:0000112 "The section labelled 'genome announcement' in a typical scientific journal article, e.g. in Kim et al. J Bacteriol. 2011 Oct; 193(19): 5537. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3187466/)" xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2752,7 +2775,7 @@ id: IAO:0000630
 name: keywords section
 def: "A part of a document where keywords selected by the author to categorize the major theme(s) of a document are listed." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000629 ! has part keyword textual entity
+relationship: has_part IAO:0000629 ! keyword textual entity
 property_value: IAO:0000111 "keywords section" xsd:string
 property_value: IAO:0000112 "The section labelled 'keywords' in a typical scientific journal article." xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2764,7 +2787,7 @@ id: IAO:0000631
 name: study limitations section
 def: "A part of a document about biases or short comings related to the study design and execution." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000632 ! has part study limitations textual entity
+relationship: has_part IAO:0000632 ! study limitations textual entity
 relationship: IAO:0000136 OBI:0500000 ! is about study design
 property_value: IAO:0000111 "study limitations section" xsd:string
 property_value: IAO:0000112 "The section labelled 'limitations' in a typical scientific journal article." xsd:string
@@ -2812,7 +2835,7 @@ id: IAO:0000635
 name: patients section
 def: "A part of a document about the patients that participated in a study." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000636 ! has part patients textual entity
+relationship: has_part IAO:0000636 ! patients textual entity
 property_value: IAO:0000111 "patients section" xsd:string
 property_value: IAO:0000112 "The section labelled 'patients' in a typical scientific journal article, e.g. in Citak et al. Acta Orthop. 2013 Jun; 84(3): 326–327. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3715825/)" xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2833,7 +2856,7 @@ id: IAO:0000637
 name: pre-publication history section
 def: "A part of the document about the publication history of a document. This section typically details dates of document submission to a journal and dates of any re-submissions as well as reviewer comments and responses to reviewers by the authors." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000638 ! has part pre-publication history textual entity
+relationship: has_part IAO:0000638 ! pre-publication history textual entity
 property_value: IAO:0000111 "pre-publication history section" xsd:string
 property_value: IAO:0000112 "The section labelled 'pre-publication history' in a typical scientific journal article, e.g. in Xiao et al. BMC Anesthesiol. 2013; 13: 33. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4016475/)" xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2856,7 +2879,7 @@ id: IAO:0000639
 name: related work section
 def: "A part of a document about work in other publications that is relevant to the content of the document." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000640 ! has part related work textual entity
+relationship: has_part IAO:0000640 ! related work textual entity
 property_value: IAO:0000111 "related work section" xsd:string
 property_value: IAO:0000112 "The section labelled 'related work' in a typical scientific journal article, e.g. Žitnik and Zupan. Bioinformatics. 2015 Jun 15; 31(12): i230–i239. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4542780/)" xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2879,7 +2902,7 @@ id: IAO:0000641
 name: requirements section
 def: "A part of a document about a resource described in the document, e.g. software, that describes the requirements necessary to use the resource, e.g. operating systems, hardware, etc. in the case of a software resource." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000642 ! has part requirements textual entity
+relationship: has_part IAO:0000642 ! requirements textual entity
 property_value: IAO:0000111 "requirements section" xsd:string
 property_value: IAO:0000112 "The section labelled 'availability and requirements' in a typical scientific journal article, e.g. Qi et al. BMC Bioinformatics. 2014; 15: 11. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3897912/)." xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2911,7 +2934,7 @@ id: IAO:0000644
 name: statistical analysis section
 def: "A part of the document used to describe the statistical methodologies employed in the work presented in the document." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000643 ! has part statistical analysis textual entity
+relationship: has_part IAO:0000643 ! statistical analysis textual entity
 property_value: IAO:0000111 "statistical analysis section" xsd:string
 property_value: IAO:0000112 "The section labelled 'statistical analysis' in a typical scientific journal article, e.g. Mondo et al. Cardiovasc J Afr. 2013 Mar; 24(2): 28–33. (http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3734881/)" xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -2923,7 +2946,7 @@ id: IAO:0000645
 name: tables section
 def: "A part of a document that contains one or more tables." []
 is_a: IAO:0000314 ! document part
-relationship: BFO:0000051 IAO:0000306 ! has part table
+relationship: has_part IAO:0000306 ! table
 property_value: IAO:0000111 "tables section" xsd:string
 property_value: IAO:0000112 "The section labelled 'tables' in a typical scientific journal article." xsd:string
 property_value: IAO:0000117 "PERSON: Bill Baumgartner" xsd:string
@@ -3084,14 +3107,11 @@ property_value: IAO:0000233 "https://github.com/information-artifact-ontology/IA
 [Term]
 id: IAO:0020000
 name: identifier
-def: "An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity." []
 def: "An information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity." []
 comment: Sep 29, 2016: The current definition has been amended from the previous version: "A proper name is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity." to more accuratly reflect the necessary and sufficient condition on the class. (MB)
 is_a: IAO:0000030 ! information content entity
 intersection_of: IAO:0000030 ! information content entity
 intersection_of: IAO:0000219 BFO:0000001 ! denotes entity
-intersection_of: IAO:0000219 BFO:0000001 ! denotes entity
-intersection_of: OBI:0000312 IAO:0020010 {all_only="true"} ! is_specified_output_of identifier creating process
 intersection_of: OBI:0000312 IAO:0020010 ! is_specified_output_of identifier creating process
 relationship: IAO:0000219 BFO:0000001 ! denotes entity
 relationship: OBI:0000312 IAO:0020010 ! is_specified_output_of identifier creating process
@@ -3099,14 +3119,12 @@ property_value: dc:creator "Mathias Brochhausen" xsd:string
 property_value: IAO:0000111 "identifier" xsd:string
 property_value: IAO:0000117 "Justin Whorton" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "proper name" xsd:string
 property_value: IAO:0000233 "https://github.com/information-artifact-ontology/IAO/issues/237" xsd:string
 
 [Term]
 id: IAO:0020001
 name: grapheme
-def: "A grapheme  is an information content entity that is a fundamental unit in a written language. " []
 def: "An information content entity that is a fundamental unit in a written language." []
 comment: Grapheme is not about anything and hence is likely to not be an information content entity. If a new subclass of GDC for information structure entities is created it should move there.
 is_a: IAO:0000030 ! information content entity
@@ -3117,70 +3135,9 @@ property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Grapheme" xsd:string
 property_value: IAO:0000233 "https://github.com/information-artifact-ontology/IAO/issues/237" xsd:string
 
 [Term]
-id: IAO:0020002
-name: utterance
-def: "An utterance is an information content entity that is a complete unit of speech in spoken language. " []
-is_a: IAO:0000030 ! information content entity
-property_value: dc:creator "Mathias Brochhausen" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000119 "Wikipedia: http://en.wikipedia.org/wiki/Utterance" xsd:string
-
-[Term]
-id: IAO:0020003
-name: mechanical wave quality
-def: "An attributive collection of qualities inhering in energy when transported through a medium in a wave." []
-is_a: BFO:0000019 ! quality
-property_value: dc:creator "Mathias Brochhausen" xsd:string
-
-[Term]
-id: IAO:0020004
-name: writing quality
-def: "is a quality that is the concretization of graphemes and inheres in a material object." []
-is_a: BFO:0000019 ! quality
-property_value: dc:creator "Mathias Brochhausen" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-
-[Term]
-id: IAO:0020005
-name: writing bearer
-def: "is a material information bearer that bears the concretization of graphemes." []
-is_a: IAO:0000178 ! material information bearer
-property_value: dc:creator "Mathias Brochhausen" xsd:string
-property_value: IAO:0000112 "pieces of paper, tables, walls, floors, driveways, highway signs, computer screens, skin, tablets of clay, rocks, sheets of metal (license plates), sheets of papyrus, etc.   clouds of smoke in skywriting," xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-
-[Term]
-id: IAO:0020006
-name: portion of energy
-is_a: BFO:0000004 ! independent continuant
-
-[Term]
-id: IAO:0020007
-name: sound energy
-def: "Energy that is transported in a sound wave." []
-is_a: IAO:0020006 ! portion of energy
-relationship: RO:0000053 IAO:0020003 ! bearer_of mechanical wave quality
-property_value: dc:creator "Mathias Brochhausen" xsd:string
-
-[Term]
-id: IAO:0020008
-name: utterance energy
-def: "Sound energy bearing the concretization of an utterance and being the output of an uttering process. " []
-is_a: IAO:0020007 ! sound energy
-
-[Term]
-id: IAO:0020009
-name: oscillating
-def: "Oscillating is a processual that shows repetitive variation, typically in time, of some measured quality about a central value (often a point of equilibrium) or between two or more different states." []
-is_a: BFO:0000015 ! process
-property_value: dc:creator "Mathias Brochhausen" xsd:string
-property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Oscillation" xsd:string
-
-[Term]
 id: IAO:0020010
 name: identifier creating process
 def: "A planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity." []
-def: "An identifier creating process is a planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity." []
 is_a: OBI:0000011 ! planned process
 intersection_of: OBI:0000011 ! planned process
 intersection_of: OBI:0000299 IAO:0020000 ! has_specified_output identifier
@@ -3188,34 +3145,19 @@ relationship: OBI:0000299 IAO:0020000 ! has_specified_output identifier
 property_value: dc:creator "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Justin Whorton" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "dubbing process" xsd:string
 property_value: IAO:0000118 "naming" xsd:string
 property_value: IAO:0000233 "https://github.com/information-artifact-ontology/IAO/issues/237" xsd:string
 
 [Term]
-id: IAO:0020011
-name: utterance process
-def: "is a planned process of making speech sounds which may or may not have an actual language involved. " []
-is_a: OBI:0000011 ! planned process
-relationship: OBI:0000299 IAO:0020008 ! has_specified_output utterance energy
-property_value: dc:creator "Mathias Brochhausen" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-property_value: IAO:0000119 "http://en.wiktionary.org/wiki/utter" xsd:string
-
-[Term]
 id: IAO:0020015
 name: personal name
-def: "A personal name is a proper name identifying an individual person." []
 def: "An identifier referring to an individual entity that is ascribed personhood by the user of the identifier." []
 comment: Personal names "today usually comprises a given name bestowed at birth or at a young age plus a surname. It is nearly universal for a human to have a name; except in rare cases, for example feral children growing up in isolation, or infants orphaned by natural disaster for whom no written record survives.[citation needed] The Convention on the Rights of the Child specifies that a child has the right from birth to a name. Certain isolated tribes, such as the Machiguenga of the Amazon, also lack personal names." (http://en.wikipedia.org/wiki/Personal_name)
 comment: Personal names to not include names of fictional characters, e.g. Sherlock Holmes.
 comment: Sep 29, 2016: The comment that including the wikipedia definition of personal name is not to be interpreted in a way that restricts this class to only contain strings of letters. A numerical or alphanumerical identifier that denotes a human is being is a personal name, too. (MB)
 is_a: IAO:0020000 ! identifier
-intersection_of: IAO:0020000 ! identifier
-intersection_of: IAO:0000219 NCBITaxon:9606 {all_only="true"} ! denotes Homo sapiens
 property_value: IAO:0000117 "Justin Whorton" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Personal_name" xsd:string
 property_value: IAO:0000233 "https://github.com/information-artifact-ontology/IAO/issues/237" xsd:string
@@ -3223,12 +3165,9 @@ property_value: IAO:0000233 "https://github.com/information-artifact-ontology/IA
 [Term]
 id: IAO:0020016
 name: given name
-def: "A given name, in Western contexts often referred to as a first name, is a personal name that specifies and differentiates between members of a group of individuals, especially in a family, all of whose members usually share the same family name (surname). A given name is purposefully given, usually by a child's parents at or near birth, in contrast to an inherited one such as a family name" []
 def: "A personal name that specifies and differentiates between members of a group of individuals, especially in a family, all of whose members usually share the same family name (surname). A given name is purposefully given, usually by a child's parents at or near birth, in contrast to an inherited one such as a family name" []
 is_a: IAO:0020015 ! personal name
-relationship: BFO:0000050 IAO:0020015 ! part of personal name
 property_value: IAO:0000117 "Justin Whorton" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "first name" xsd:string
 property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Given_name" xsd:string
@@ -3237,12 +3176,9 @@ property_value: IAO:0000233 "https://github.com/information-artifact-ontology/IA
 [Term]
 id: IAO:0020017
 name: family name
-def: "A family name (in Western contexts often referred to as a surname or last name) is typically a part of a person's name which has been passed, according to law or custom, from one or both parents to their children." []
 def: "An identifier that is typically a part of a person's name which has been passed, according to law or custom, from one or both parents to their children." []
-is_a: IAO:0020015 ! personal name
-relationship: BFO:0000050 IAO:0020015 ! part of personal name
+is_a: IAO:0020000 ! identifier
 property_value: IAO:0000117 "Justin Whorton" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "last name" xsd:string
 property_value: IAO:0000118 "surname" xsd:string
@@ -3252,7 +3188,6 @@ property_value: IAO:0000233 "https://github.com/information-artifact-ontology/IA
 [Term]
 id: IAO:0020020
 name: code set
-def: "An information content entity that is a collection of other information content entities that has been created to identify or annotate core ideas of a specified domain, and where the intention of its creators is that the aggregated entities have a one-to-one correspondence with entities in reality outside the aggregate." []
 def: "An information content entity that is a collection of other information content entities that has been created to identify or annotate things in a specified domain, and where the intention of its creators is that the collection has a one-to-one correspondence with those things." []
 comment: Code sets might include non-entities/things (e.g. missing thumbs).
 comment: Does not imply absence vs. presence of any taxonomy.
@@ -3263,7 +3198,7 @@ comment: For National Drug Codes (NDCs) and similar code sets, there doesn’t e
 comment: Many code sets are created for a specific purpose in addition to merely identifying or annotating core ideas of a specified domain.
 comment: The information content entities do not denote each other.
 is_a: IAO:0000030 ! information content entity
-relationship: BFO:0000051 IAO:0020000 ! has part identifier
+relationship: has_part IAO:0020000 ! identifier
 property_value: dc:contributor "Alan Ruttenberg" xsd:string
 property_value: dc:contributor "Clint Dowland" xsd:string
 property_value: dc:contributor "Matt Diller" xsd:string
@@ -3271,7 +3206,6 @@ property_value: dc:contributor "Sarah Bost" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "Justin Whorton" xsd:string
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "code map" xsd:string
 property_value: IAO:0000118 "code system" xsd:string
@@ -3284,6 +3218,7 @@ property_value: IAO:0000233 "https://github.com/information-artifact-ontology/IA
 id: IAO:0020021
 name: identity document
 def: "A document that denotes some identity and is concretized by the bearer of some credential role." []
+is_a: IAO:0000310 ! document
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -3523,12 +3458,36 @@ is_a: MF:0000030 ! representation
 property_value: IAO:0000119 "http://www.jbiomedsem.com/content/1/1/10" xsd:string
 
 [Term]
+id: NCBITaxon:131567
+name: cellular organisms
+xref: GC_ID:1
+is_a: OBI:0100026 ! organism
+
+[Term]
+id: NCBITaxon:2759
+name: Eukaryota
+xref: GC_ID:1
+xref: PMID:23020233
+xref: PMID:30257078
+is_a: NCBITaxon:131567 ! cellular organisms
+
+[Term]
+id: NCBITaxon:40674
+name: Mammalia
+xref: GC_ID:1
+is_a: NCBITaxon:2759 ! Eukaryota
+
+[Term]
+id: NCBITaxon:9443
+name: Primates
+xref: GC_ID:1
+is_a: NCBITaxon:40674 ! Mammalia
+
+[Term]
 id: NCBITaxon:9606
 name: Homo sapiens
-is_a: OBI:0100026 ! organism
-property_value: IAO:0000111 "Homo sapiens" xsd:string
-property_value: IAO:0000118 "human being" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/ncbitaxon.owl
+xref: GC_ID:1
+is_a: NCBITaxon:9443 ! Primates
 
 [Term]
 id: OAE:0000002
@@ -3616,7 +3575,6 @@ property_value: IAO:0000112 "animal" xsd:string
 property_value: IAO:0000112 "fungus" xsd:string
 property_value: IAO:0000112 "plant" xsd:string
 property_value: IAO:0000112 "virus" xsd:string
-property_value: IAO:0000114 IAO:0000121
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000116 "10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and 'other organisms')" xsd:string
 property_value: IAO:0000116 "13-02-2009:\nOBI doesn't take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.\nThis issue is outside the scope of OBI." xsd:string
@@ -4202,8 +4160,8 @@ name: hospital organization
 def: "An organization that is the bearer of a hospital role." []
 is_a: OBI:0000245 ! organization
 intersection_of: OBI:0000245 ! organization
-intersection_of: RO:0000053 OMRSE:00000054 ! bearer_of hospital role
-relationship: RO:0000053 OMRSE:00000054 ! bearer_of hospital role
+intersection_of: RO:0000053 OMRSE:00000054 ! has characteristic hospital role
+relationship: RO:0000053 OMRSE:00000054 ! has characteristic hospital role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
@@ -4212,8 +4170,8 @@ name: school organization
 def: "An organization that is the bearer of a school role." []
 is_a: OBI:0000245 ! organization
 intersection_of: OBI:0000245 ! organization
-intersection_of: RO:0000053 OMRSE:00000055 ! bearer_of school role
-relationship: RO:0000053 OMRSE:00000055 ! bearer_of school role
+intersection_of: RO:0000053 OMRSE:00000055 ! has characteristic school role
+relationship: RO:0000053 OMRSE:00000055 ! has characteristic school role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
@@ -4250,9 +4208,9 @@ name: facility
 def: "An architectural structure that bears some function." []
 is_a: OMRSE:00000061 ! architectural structure
 intersection_of: OMRSE:00000061 ! architectural structure
-intersection_of: RO:0000053 BFO:0000034 ! bearer_of function
+intersection_of: RO:0000053 BFO:0000034 ! has characteristic function
 relationship: OMRSE:00000068 OBI:0000245 {owl:versionInfo="09/09/2017"} ! is administered by organization
-relationship: RO:0000053 BFO:0000034 ! bearer_of function
+relationship: RO:0000053 BFO:0000034 ! has characteristic function
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
@@ -4261,7 +4219,7 @@ name: hospital facility
 def: "A health care facility that bears the function to provide acute and intensive healthcare services and that is run by a hospital organization and is the bearer of a hospital function." []
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OMRSE:00000160 ! contains process acute care encounter
-relationship: RO:0000053 OMRSE:00000052 ! bearer_of hospital function
+relationship: RO:0000053 OMRSE:00000052 ! has characteristic hospital function
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
 
@@ -4270,7 +4228,7 @@ id: OMRSE:00000064
 name: school facility
 def: "A facility that is run by a school organization and is the bearer of a school function." []
 is_a: OMRSE:00000062 ! facility
-relationship: RO:0000053 OMRSE:00000053 ! bearer_of school function
+relationship: RO:0000053 OMRSE:00000053 ! has characteristic school function
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
 [Term]
@@ -4362,7 +4320,7 @@ property_value: IAO:0000118 "employee" xsd:string
 id: OMRSE:00000078
 name: workplace facility
 is_a: OMRSE:00000062 ! facility
-relationship: RO:0000053 OMRSE:00000079 ! bearer_of workplace function
+relationship: RO:0000053 OMRSE:00000079 ! has characteristic workplace function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -4513,8 +4471,8 @@ name: ethnic identification process
 [Term]
 id: OMRSE:00000102
 name: health care facility
+def: "A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population." []
 is_a: OMRSE:00000062 ! facility
-property_value: IAO:0000117 "A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population." xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
 
 [Term]
@@ -4530,7 +4488,7 @@ name: hospice facility
 def: "A health care facility that bears a function to provide healthcare to the sick or terminally ill" []
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OMRSE:00000152 ! contains process skilled nursing encounter
-relationship: RO:0000053 OMRSE:00000117 ! bearer_of hospice function
+relationship: RO:0000053 OMRSE:00000117 ! has characteristic hospice function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Emma Norris" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
@@ -4541,7 +4499,7 @@ id: OMRSE:00000105
 name: skilled nursing facility
 is_a: OMRSE:00000150 ! community living health care facility
 relationship: BFO:0000067 OMRSE:00000152 ! contains process skilled nursing encounter
-relationship: RO:0000053 OMRSE:00000123 ! bearer_of skilled nursing function
+relationship: RO:0000053 OMRSE:00000123 ! has characteristic skilled nursing function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -4550,7 +4508,7 @@ name: rehabilitation facility
 def: "A facility to assist in physical or addiction recovery" []
 is_a: OMRSE:00000150 ! community living health care facility
 relationship: BFO:0000067 OMRSE:00000152 ! contains process skilled nursing encounter
-relationship: RO:0000053 OMRSE:00000122 ! bearer_of rehabilitation function
+relationship: RO:0000053 OMRSE:00000122 ! has characteristic rehabilitation function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Emma Norris" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
@@ -4562,7 +4520,7 @@ name: nursing home facility
 def: "A facility that is run by a nursing home organization and is the bearer of a nursing home function." []
 is_a: OMRSE:00000150 ! community living health care facility
 relationship: BFO:0000067 OMRSE:00000152 ! contains process skilled nursing encounter
-relationship: RO:0000053 OMRSE:00000125 ! bearer_of nursing home function
+relationship: RO:0000053 OMRSE:00000125 ! has characteristic nursing home function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -4579,7 +4537,7 @@ name: overnight dialysis facility
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OBI:0600052 ! contains process dialysis
 relationship: BFO:0000067 OMRSE:00000152 ! contains process skilled nursing encounter
-relationship: RO:0000053 OMRSE:00000121 ! bearer_of overnight dialysis function
+relationship: RO:0000053 OMRSE:00000121 ! has characteristic overnight dialysis function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -4588,7 +4546,7 @@ name: outpatient clinic facility
 def: "A health care facility that bears a function to provide low intensity healthcare services to patients on a short-term basis, with patients leaving on the same date as arriving (i.e., without them staying overnight)" []
 comment: Broadened from treatment to healthcare services generally.  "Low intensity" is not defined at the moment, but is needed to differentiate from same-day surgery centers or observation stays in hospitals that last <24 hours.  The idea is that few invasive procedures are performed, and the ones that are invasive are not typically much worse than a blood draw.  Maybe bone marrow biopsy is as aggressive as it gets.  I wonder if hematologists do that on an outpatient basis.
 is_a: OMRSE:00000102 ! health care facility
-relationship: RO:0000053 OMRSE:00000120 ! bearer_of outpatient clinic function
+relationship: RO:0000053 OMRSE:00000120 ! has characteristic outpatient clinic function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Emma Norris" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
@@ -4598,7 +4556,7 @@ property_value: IAO:0000119 "Human Behaviour Change Project" xsd:string
 id: OMRSE:00000111
 name: physician office facility
 is_a: OMRSE:00000102 ! health care facility
-relationship: RO:0000053 OMRSE:00000119 ! bearer_of physician office function
+relationship: RO:0000053 OMRSE:00000119 ! has characteristic physician office function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -4606,14 +4564,14 @@ id: OMRSE:00000112
 name: ambulatory surgery facility
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OAE:0000067 ! contains process surgery
-relationship: RO:0000053 OMRSE:00000116 ! bearer_of ambulatory surgery function
+relationship: RO:0000053 OMRSE:00000116 ! has characteristic ambulatory surgery function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
 id: OMRSE:00000113
 name: urgent care facility
 is_a: OMRSE:00000102 ! health care facility
-relationship: RO:0000053 OMRSE:00000115 ! bearer_of urgent care function
+relationship: RO:0000053 OMRSE:00000115 ! has characteristic urgent care function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -4622,7 +4580,7 @@ name: emergency department facility
 def: "A health care facility that bears a function to provide emergency healthcare services and the acute care of patients who present without prior appointment, having arrived either by their own means or by ambulance" []
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OMRSE:00000160 ! contains process acute care encounter
-relationship: RO:0000053 OMRSE:00000118 ! bearer_of emergency department function
+relationship: RO:0000053 OMRSE:00000118 ! has characteristic emergency department function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Emma Norris" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
@@ -4855,7 +4813,7 @@ id: OMRSE:00000148
 name: adult foster home facility
 def: "a facility that is run by an adult foster home organization and is the bearer of an adult foster home organization" []
 is_a: OMRSE:00000150 ! community living health care facility
-relationship: RO:0000053 OMRSE:00000149 ! bearer_of adult foster home function
+relationship: RO:0000053 OMRSE:00000149 ! has characteristic adult foster home function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -4870,7 +4828,7 @@ def: "a health care facility that also bears a residence function and thus one i
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OMRSE:00000154 ! contains process assistance with activities of daily living care encounter
 relationship: BFO:0000067 OMRSE:00000155 ! contains process assistance with instrumental activities of daily living encounter
-relationship: RO:0000053 OMRSE:00000075 ! bearer_of residence function
+relationship: RO:0000053 OMRSE:00000075 ! has characteristic residence function
 
 [Term]
 id: OMRSE:00000151
@@ -4922,7 +4880,7 @@ name: post-acute health care encounter
 def: "temporally located after some acute care encounter\nSomehow involves skilled nursing encounters" []
 is_a: OGMS:0000097 ! health care encounter
 disjoint_from: OMRSE:00000160 ! acute care encounter
-relationship: BFO:0000066 OMRSE:00000150 ! occurs in community living health care facility
+relationship: occurs_in OMRSE:00000150 ! community living health care facility
 
 [Term]
 id: OMRSE:00000160
@@ -4954,7 +4912,7 @@ relationship: RO:0000056 OMRSE:00000168 ! participates in obsolete questions ask
 id: OMRSE:00000164
 name: home health care organization
 is_a: OBI:0000245 ! organization
-relationship: RO:0000053 BFO:0000034 ! bearer_of function
+relationship: RO:0000053 BFO:0000034 ! has characteristic function
 
 [Term]
 id: OMRSE:00000165
@@ -4968,7 +4926,7 @@ relationship: BFO:0000054 OMRSE:00000166 ! realized in home health care encounte
 id: OMRSE:00000166
 name: home health care encounter
 is_a: OGMS:0000097 ! health care encounter
-relationship: BFO:0000066 OMRSE:00000074 ! occurs in housing unit
+relationship: occurs_in OMRSE:00000074 ! housing unit
 
 [Term]
 id: OMRSE:00000168
@@ -4994,7 +4952,7 @@ is_a: OGMS:0000097 ! health care encounter
 id: OMRSE:00000171
 name: hospice organization
 is_a: OBI:0000245 ! organization
-relationship: RO:0000053 OMRSE:00000117 ! bearer_of hospice function
+relationship: RO:0000053 OMRSE:00000117 ! has characteristic hospice function
 
 [Term]
 id: OMRSE:00000172
@@ -5176,7 +5134,7 @@ id: OMRSE:00000195
 name: linguistic community
 def: "A maximal aggregate of material entities such that each member bears a linguistic competence for the same language." []
 is_a: BFO:0000040 ! material entity
-relationship: RO:0000053 OMRSE:00002069 ! bearer_of language
+relationship: RO:0000053 OMRSE:00002069 ! has characteristic language
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -5845,7 +5803,7 @@ property_value: terms:source "http://orcid.org/0000-0003-1909-9269" xsd:string
 [Term]
 id: OMRSE:00000262
 name: categorization scheme
-def: "Information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories." []
+def: "An information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories." []
 is_a: IAO:0000030 ! information content entity
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -5854,7 +5812,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000265
 name: social categorization scheme
-def: "Categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics." []
+def: "A categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics." []
 is_a: OMRSE:00000262 ! categorization scheme
 relationship: OMRSE:00000263 OMRSE:00000023 {all_only="true"} ! demarcates collection of humans
 property_value: dc:contributor "S. Clint Dowland" xsd:string
@@ -5872,7 +5830,7 @@ property_value: IAO:0000117 "William R. Hogan" xsd:string
 [Term]
 id: OMRSE:00000267
 name: social category
-def: "Collection of humans demarcated by some social categorization scheme." []
+def: "A collection of humans demarcated by some social categorization scheme." []
 is_a: OMRSE:00000023 ! collection of humans
 relationship: OMRSE:00000264 OMRSE:00000265 ! demarcated by social categorization scheme
 property_value: dc:contributor "S. Clint Dowland" xsd:string
@@ -5882,7 +5840,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000268
 name: racial categorization scheme
-def: "Social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors." []
+def: "A social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors." []
 is_a: OMRSE:00000265 ! social categorization scheme
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -5891,7 +5849,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000269
 name: racial category
-def: "Social category demarcated by some racial categorization scheme." []
+def: "A social category demarcated by some racial categorization scheme." []
 is_a: OMRSE:00000267 ! social category
 relationship: OMRSE:00000264 OMRSE:00000268 ! demarcated by racial categorization scheme
 property_value: dc:contributor "S. Clint Dowland" xsd:string
@@ -5901,7 +5859,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000270
 name: ethnic categorization scheme
-def: "Social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship." []
+def: "A social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship." []
 is_a: OMRSE:00000265 ! social categorization scheme
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -5910,7 +5868,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000271
 name: ethnic category
-def: "Social category demarcated by some ethnic categorization scheme." []
+def: "A social category demarcated by some ethnic categorization scheme." []
 is_a: OMRSE:00000267 ! social category
 relationship: OMRSE:00000264 OMRSE:00000270 ! demarcated by ethnic categorization scheme
 property_value: dc:contributor "S. Clint Dowland" xsd:string
@@ -5929,7 +5887,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000277
 name: subjective representation
-def: "Cognitive representation in which the representation’s bearer is represented as being its bearer." []
+def: "A cognitive representation in which the representation’s bearer is represented as being its bearer." []
 is_a: MF:0000031 ! cognitive representation
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -5938,7 +5896,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000278
 name: social identity
-def: "Subjective representation of its bearer as being a member of some social category." []
+def: "A subjective representation of its bearer as being a member of some social category." []
 is_a: OMRSE:00000277 ! subjective representation
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -5947,7 +5905,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000279
 name: racial identity
-def: "Social identity for which the category is a racial category." []
+def: "A social identity for which the category is a racial category." []
 is_a: OMRSE:00000278 ! social identity
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -5964,7 +5922,7 @@ property_value: IAO:0000117 "William R. Hogan" xsd:string
 [Term]
 id: OMRSE:00000281
 name: ethnic identity
-def: "Social identity for which the category is an ethnic category." []
+def: "A social identity for which the category is an ethnic category." []
 is_a: OMRSE:00000278 ! social identity
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -5973,7 +5931,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000282
 name: behavioral identity
-def: "Social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior." []
+def: "A social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior." []
 is_a: OMRSE:00000278 ! social identity
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -6044,6 +6002,79 @@ name: public housing eligibility role
 def: "A role that inheres in a person who qualifies for public housing according to the criteria set forth by the relevant governmental entity and that is realized in processes that both have the person as a participant and realize the public housing function of some housing unit." []
 property_value: dc:source "https://orcid.org/0000-0003-1909-9269" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
+
+[Term]
+id: OMRSE:00000289
+name: human traveler role
+def: "A role that if realized, is realized by the bearer participating in human travel." []
+comment: See discussion at: https://github.com/mcwdsi/OMRSE/issues/191
+is_a: OMRSE:00002072 ! role in human social processes
+relationship: BFO:0000054 APOLLO_SV:00000532 ! realized in human travel
+property_value: dc:contributor "Matt Diller" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: IAO:0000118 "human traveller role" xsd:string
+
+[Term]
+id: OMRSE:00000290
+name: gender categorization scheme
+def: "A social categorization scheme based on the social identities assumed to be coincident of certain biological traits linked to reproduction and/or reproductive behavior." []
+is_a: OMRSE:00000265 ! social categorization scheme
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
+
+[Term]
+id: OMRSE:00000291
+name: gender category
+def: "A social category demarcated by some gender categorization scheme." []
+is_a: OMRSE:00000267 ! social category
+relationship: OMRSE:00000264 OMRSE:00000290 ! demarcated by gender categorization scheme
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
+
+[Term]
+id: OMRSE:00000292
+name: social category data item
+def: "A data item according to which a given person is a member of a given social category." []
+is_a: IAO:0000027 ! data item
+relationship: IAO:0000136 NCBITaxon:9606 ! is about Homo sapiens
+relationship: IAO:0000136 OMRSE:00000267 ! is about social category
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
+
+[Term]
+id: OMRSE:00000293
+name: ethnic category data item
+def: "A social category data item for which the social category is an ethnic category." []
+is_a: OMRSE:00000292 ! social category data item
+relationship: IAO:0000136 OMRSE:00000271 ! is about ethnic category
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
+
+[Term]
+id: OMRSE:00000294
+name: gender category data item
+def: "A social category data item for which the social category is a gender category." []
+is_a: OMRSE:00000292 ! social category data item
+relationship: IAO:0000136 OMRSE:00000291 ! is about gender category
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
+
+[Term]
+id: OMRSE:00000295
+name: racial category data item
+def: "A social category data item for which the social category is a racial category." []
+is_a: OMRSE:00000292 ! social category data item
+relationship: IAO:0000136 OMRSE:00000269 ! is about racial category
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
+
+[Term]
+id: OMRSE:00000296
+name: gender identity
+def: "A social identity for which the category is a gender category." []
+is_a: OMRSE:00000278 ! social identity
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
 
 [Term]
 id: OMRSE:00000500
@@ -6135,8 +6166,8 @@ def: "A plan specification with an educational objective specification as part."
 comment: Very broad.  Covers everything from grade school to high school to college to graduate education, a MOOC, an individual course, a tutorial at a conference, a continuing education course or program, an informed consent video, etc, etc.
 is_a: IAO:0000104 ! plan specification
 intersection_of: IAO:0000104 ! plan specification
-intersection_of: BFO:0000051 OMRSE:00002030 ! has part educational objective
-relationship: BFO:0000051 OMRSE:00002030 ! has part educational objective
+intersection_of: has_part OMRSE:00002030 ! educational objective
+relationship: has_part OMRSE:00002030 ! educational objective
 property_value: IAO:0000111 "educational plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000600 "A plan specification with one or more educational objectives." xsd:string
@@ -6171,7 +6202,7 @@ comment: In the united states, also called "elementary education"
 comment: It can still have action specifications as parts, and possibly other ICEs as parts.  That's why we cannot say it has only primary education objectives as parts, and we have to introduce the double negative in the class axiom.
 comment: Primary education provides learning and educational activities typically designed to provide students with fundamental skills in reading, writing and mathematics (i.e. literacy and numeracy), and to establish a sound foundation for learning and solid understanding of core areas of knowledge and personal development, preparing for lower secondary education. It aims at learning at a basic level of complexity with little if any specialisation.
 is_a: OMRSE:00002031 ! educational program
-relationship: BFO:0000051 OMRSE:00002035 ! has part primary education objective
+relationship: has_part OMRSE:00002035 ! primary education objective
 property_value: IAO:0000111 "primary education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "elementary education" xsd:string
@@ -6217,10 +6248,10 @@ comment: Most nations in the world mandate that children complete at least a bas
 comment: Whole range of educational activities, taking place in various settings, that aim to meet basic learning needs as defined in the World Declaration on Education for All (Jomtien, Thailand, 1990). According to ISCED standard, basic education comprises primary education (first stage of basic education) and lower secondary education (second stage). It also covers a wide variety of non-formal and informal public and private activities intended to meet the basic learning needs of people of all ages.
 is_a: OMRSE:00002031 ! educational program
 intersection_of: OMRSE:00002031 ! educational program
-intersection_of: BFO:0000051 OMRSE:00002035 ! has part primary education objective
-intersection_of: BFO:0000051 OMRSE:00002036 ! has part lower secondary education objective
-relationship: BFO:0000051 OMRSE:00002035 ! has part primary education objective
-relationship: BFO:0000051 OMRSE:00002036 ! has part lower secondary education objective
+intersection_of: has_part OMRSE:00002035 ! primary education objective
+intersection_of: has_part OMRSE:00002036 ! lower secondary education objective
+relationship: has_part OMRSE:00002035 ! primary education objective
+relationship: has_part OMRSE:00002036 ! lower secondary education objective
 property_value: IAO:0000111 "basic education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000119 "http://uis.unesco.org/en/glossary-term/basic-education" xsd:string
@@ -6233,7 +6264,7 @@ comment: It can still have action specifications as parts, and possibly other IC
 comment: Programmes at ISCED level 2, or ‘lower secondary’ education, are typically designed to build upon the fundamental teaching and learning processes which begin at ISCED level 1. Usually, the educational aim is to lay the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities. Programmes at this level are usually organized around a more subject-oriented curriculum, introducing theoretical concepts across a broad range of subjects.
 comment: Requires successful completion of a primary education program as a pre-requisite.
 is_a: OMRSE:00002031 ! educational program
-relationship: BFO:0000051 OMRSE:00002036 ! has part lower secondary education objective
+relationship: has_part OMRSE:00002036 ! lower secondary education objective
 property_value: IAO:0000111 "lower secondary education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -6255,7 +6286,7 @@ comment: It can still have action specifications as parts, and possibly other IC
 comment: Programmes at ISCED level 3, or ‘upper secondary’ education, are typically designed to complete secondary education in preparation for tertiary education, or to provide skills relevant to employment, or both. Programmes at this level offer students more varied, specialised and in-depth instruction than programmes at lower secondary education (ISCED level 2). They are more differentiated, with an increased range of options and streams available.
 comment: Requires successful completion of a lower secondary education program as a pre-requisite.
 is_a: OMRSE:00002031 ! educational program
-relationship: BFO:0000051 OMRSE:00002040 ! has part upper secondary education objective
+relationship: has_part OMRSE:00002040 ! upper secondary education objective
 property_value: IAO:0000111 "upper secondary education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -6266,7 +6297,7 @@ comment: Includes college, university, community college, professional schools (
 comment: Refers to all higher education beyond secondary education, and thus encompasses ISCED levels 5 and above, which will eventually be subclasses of this one.
 comment: Requires successful completion of a secondary education program as a pre-requisite.
 is_a: OMRSE:00002031 ! educational program
-relationship: BFO:0000051 OMRSE:00002043 ! has part higher education objective
+relationship: has_part OMRSE:00002043 ! higher education objective
 property_value: IAO:0000111 "higher education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "post-secondary education plan specification" xsd:string
@@ -6295,9 +6326,13 @@ property_value: IAO:0000119 "http://uis.unesco.org/sites/default/files/documents
 [Term]
 id: OMRSE:00002045
 name: highest level of education data item
-def: "A socio-economic data item that is about a person and their completion of an education program (and its type), where that education program is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it." []
-comment: This data item in a typical attribute-value system such as table, XML, JSON takes values like "secondary education", "Associate Degree", "Bachelor Degree", "High School", and so on.
+def: "A socio-economic data item that is about a person and their completion of at least some of the required courses of an education program, where the set of planned competencies to be acquired by completing that program, as a whole, are of a more advanced nature than the set of competencies acquired through any other educational program completed by the person." []
+comment: Note that by 'more advanced nature' of the competencies, we do not mean merely having more knowledge, but rather a set of competencies / capabilities that enable the person to do things of a fundamentally different nature than before. This distinction is exemplified by the difference between a Masters and a PhD degree. The PhD has a key objective of enabling the person to function as an investigator in the domain, whereas a Masters does not.
+comment: This data item in a typical attribute-value system such as table, XML, JSON takes values like "secondary education", "Associate Degree", "Bachelor Degree", "High School", and so on.\n\nAlso, note that we revised the definition in collaboration with our APRICOT project colleagues who noted that the individual need not have completed one of the education programs in a sequence, instead demonstrating competencies for admission to the highest level of eductation in some alternative way. For example, the highest level of education might be baccalaureate degree, but the individual did not graduate a secondary education program but instead got a General Educational Development (GED) certification / degree.
 is_a: OMRSE:00000506 ! socio-economic data item
+property_value: dc:contributor "Colbie Reed" xsd:string
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
+property_value: dc:contributor "Matt Diller" xsd:string
 property_value: IAO:0000111 "highest level of education socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -6308,8 +6343,8 @@ def: "An educational plan specification that has a vocational objective specific
 comment: Vocational education programs are designed for learners to acquire the knowledge, skills and competencies specific to a particular occupation, trade, or class of occupations or trades. Such programs may have work-based components (e.g. apprenticeships, dual-system education programmes). Successful completion of such programs leads to labor market-relevant, vocational qualifications acknowledged as occupationally-oriented by the relevant national authorities and/or the labor market.
 is_a: OMRSE:00002031 ! educational program
 intersection_of: OMRSE:00002031 ! educational program
-intersection_of: BFO:0000051 OMRSE:00002044 ! has part vocational education objective
-relationship: BFO:0000051 OMRSE:00002044 ! has part vocational education objective
+intersection_of: has_part OMRSE:00002044 ! vocational education objective
+relationship: has_part OMRSE:00002044 ! vocational education objective
 property_value: IAO:0000111 "vocational education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000119 "http://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-isced-2011-en.pdf" xsd:string
@@ -6489,7 +6524,7 @@ def: "Process in which some participant utilizes some specifically dependent con
 comment: Instances include any process that brings it about that some specifically dependent continuant begins to stand in a concretization relation to some generically dependent continuant, as well as any process in which someone makes use of a pre-established concretization relation. To be clear, instances do not include using concretizations of words or letters for purposes that do not make use of the concretization relations in which they stand (for example, hanging up a sign in a foreign language as a decoration because one likes the colors, despite having no idea what the sign says).
 comment: Instances include, but are not limited to, processes that bring about cognitive concretizations.
 is_a: BFO:0000015 ! process
-relationship: RO:0000057 BFO:0000040 ! has_participant material entity
+relationship: RO:0000057 BFO:0000040 ! has participant material entity
 property_value: dc:contributor "Matthew Diller" xsd:string
 property_value: dc:contributor "Sarah Bost" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -6512,8 +6547,8 @@ name: concretization-interpretation process
 def: "Process in which some participant infers that some particular specifically dependent continuant stands in the concretization relation to some particular generically dependent continuant." []
 comment: The interpretation need not be accurate. It may even be the case that the specifically dependent continuant has not previously concretized anything.
 is_a: BFO:0000015 ! process
-relationship: RO:0000057 BFO:0000020 ! has_participant characteristic
-relationship: RO:0000057 BFO:0000040 ! has_participant material entity
+relationship: RO:0000057 BFO:0000020 ! has participant characteristic
+relationship: RO:0000057 BFO:0000040 ! has participant material entity
 property_value: dc:contributor "Matthew Diller" xsd:string
 property_value: dc:contributor "Sarah Bost" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -6550,7 +6585,7 @@ comment: For example, if you tell someone, “It is raining,” you produce soun
 comment: The interpretation need not correspond exactly to what was intended by the other participant.
 comment: The term 'participant' in the definition need not refer to a human agent.
 is_a: BFO:0000015 ! process
-relationship: RO:0000057 BFO:0000040 ! has_participant material entity
+relationship: RO:0000057 BFO:0000040 ! has participant material entity
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: dc:contributor "Matthew Diller" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -6693,13 +6728,6 @@ property_value: IAO:0000111 "physical quality" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/pato.owl
 
 [Term]
-id: PATO:0001025
-name: pressure
-namespace: quality
-subset: attribute_slim
-is_a: BFO:0000019 ! quality
-
-[Term]
 id: PATO:0001241
 name: physical object quality
 def: "A quality which inheres in a continuant." []
@@ -6748,57 +6776,6 @@ property_value: IAO:0000111 "time unit" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 
 [Typedef]
-id: BFO:0000050
-name: part of
-def: "a core relation that holds between a part and its whole" []
-subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
-subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
-subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
-subset: http://purl.obolibrary.org/obo/valid_for_gocam
-property_value: IAO:0000111 "is part of" xsd:string
-property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
-property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
-property_value: IAO:0000112 "this day is part of this year (occurrent parthood)" xsd:string
-property_value: IAO:0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other." xsd:string
-property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
-property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
-property_value: IAO:0000118 "part_of" xsd:string
-property_value: RO:0001900 RO:0001901
-property_value: RO:0040042 BFO:0000002
-property_value: RO:0040042 BFO:0000003
-property_value: RO:0040042 BFO:0000004
-property_value: RO:0040042 BFO:0000017
-property_value: RO:0040042 BFO:0000019
-property_value: RO:0040042 BFO:0000020
-property_value: RO:0040042 BFO:0000031
-property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections
-property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
-property_value: seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" xsd:string
-property_value: seeAlso "https://wiki.geneontology.org/Part_of" xsd:anyURI
-is_transitive: true
-is_a: RO:0002131 ! overlaps
-inverse_of: BFO:0000051 ! has part
-
-[Typedef]
-id: BFO:0000051
-name: has part
-def: "a core relation that holds between a whole and its part" []
-subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
-subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
-subset: http://purl.obolibrary.org/obo/valid_for_gocam
-property_value: IAO:0000111 "has part" xsd:string
-property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
-property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
-property_value: IAO:0000112 "this year has part this day (occurrent parthood)" xsd:string
-property_value: IAO:0000116 "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part." xsd:string
-property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
-property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
-property_value: IAO:0000118 "has_part" xsd:string
-property_value: RO:0001900 RO:0001901
-is_transitive: true
-is_a: RO:0002131 ! overlaps
-
-[Typedef]
 id: BFO:0000054
 name: realized in
 comment: Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
@@ -6839,7 +6816,7 @@ property_value: IAO:0000118 "preceded_by" xsd:string
 property_value: terms:source "http://www.obofoundry.org/ro/#OBO_REL:preceded_by" xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
-holds_over_chain: BFO:0000050 BFO:0000062
+holds_over_chain: part_of BFO:0000062
 is_transitive: true
 is_a: RO:0002086 ! ends after
 inverse_of: BFO:0000063 ! precedes
@@ -6852,29 +6829,9 @@ subset: ro-eco
 property_value: IAO:0000111 "precedes" xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
-holds_over_chain: BFO:0000050 BFO:0000063
+holds_over_chain: part_of BFO:0000063
 is_transitive: true
 is_a: RO:0002222 ! temporally related to
-
-[Typedef]
-id: BFO:0000066
-name: occurs in
-def: "b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t" []
-comment: Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant
-subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
-subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
-subset: http://purl.obolibrary.org/obo/valid_for_gocam
-property_value: IAO:0000111 "occurs in" xsd:string
-property_value: IAO:0000118 "occurs_in" xsd:string
-property_value: IAO:0000118 "unfolds in" xsd:string
-property_value: IAO:0000118 "unfolds_in" xsd:string
-property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
-property_value: seeAlso "https://wiki.geneontology.org/Occurs_in" xsd:anyURI
-domain: BFO:0000003 ! occurrent
-range: BFO:0000004 ! independent continuant
-holds_over_chain: BFO:0000050 BFO:0000066
-inverse_of: BFO:0000067 ! contains process
-transitive_over: BFO:0000050 ! part of
 
 [Typedef]
 id: BFO:0000067
@@ -6889,7 +6846,7 @@ id: IAO:0000039
 name: has measurement unit label
 range: IAO:0000003 ! measurement unit label
 is_functional: true
-is_a: BFO:0000051 ! has part
+is_a: has_part ! has part
 
 [Typedef]
 id: IAO:0000135
@@ -7002,7 +6959,7 @@ comment: relating a cartesian spatial coordinate datum to a unit label that toge
 domain: IAO:0000400 ! cartesian spatial coordinate datum
 range: UO:0000001 ! length unit
 is_functional: true
-is_a: BFO:0000051 ! has part
+is_a: has_part ! has part
 
 [Typedef]
 id: IAO:0000413
@@ -7050,7 +7007,7 @@ property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 domain: IAO:0000582 ! time stamped measurement datum
 range: IAO:0000416 ! time measurement datum
 is_functional: true
-is_a: BFO:0000051 ! has part
+is_a: has_part ! has part
 
 [Typedef]
 id: IAO:0000583
@@ -7059,40 +7016,7 @@ def: "relates a time stamped measurement datum to the measurement datum that was
 property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 domain: IAO:0000582 ! time stamped measurement datum
-is_a: BFO:0000051 ! has part
-
-[Typedef]
-id: IAO:0020012
-name: obsolete_designates
-def: "x designates y, if for any given group of language users, x is an information content entity, is about y, and represents y in a linguistic context.." []
-property_value: dc:creator "Mathias Brochhausen" xsd:string
-property_value: IAO:0000231 IAO:0000228
-is_a: oboInOwl:ObsoleteProperty
-is_obsolete: true
-replaced_by: IAO:0000219
-
-[Typedef]
-id: IAO:0020013
-name: is_borrowed_reference_to
-def: "x is_borrowed_reference_for y, if x is a proper name that is used to refer to one individual among a specific group after the dubbing process took place." []
-property_value: dc:creator "Mathias Brochhausen" xsd:string
-domain: IAO:0020000 ! identifier
-range: BFO:0000001 ! entity
-is_asymmetric: true
-
-[Typedef]
-id: IAO:0020014
-name: is_fixing_reference_to
-def: "x is_fixed_reference_for y, if x is an utterance or graphemes concretized as writing quality inhering in some independent continuant that is used to single out one individual and refer to the latter among a specific group after the." []
-property_value: dc:creator "Mathias Brochhausen" xsd:string
-is_asymmetric: true
-
-[Typedef]
-id: IAO:0020018
-name: is designated by
-def: "p1 is designated by p2, if p2 is an information content entity that represents p1 in a linguistic context." []
-property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
-is_asymmetric: true
+is_a: has_part ! has part
 
 [Typedef]
 id: OBI:0000293
@@ -7109,7 +7033,7 @@ property_value: IAO:0000117 "PERSON: Larry Hunter" xsd:string
 property_value: IAO:0000117 "PERSON: Melanie Coutot" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 domain: OBI:0000011 ! planned process
-is_a: RO:0000057 ! has_participant
+is_a: RO:0000057 ! has participant
 
 [Typedef]
 id: OBI:0000295
@@ -7128,7 +7052,7 @@ property_value: IAO:0000117 "PERSON: Larry Hunter" xsd:string
 property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 domain: OBI:0000011 ! planned process
-is_a: RO:0000057 ! has_participant
+is_a: RO:0000057 ! has participant
 inverse_of: OBI:0000312 ! is_specified_output_of
 
 [Typedef]
@@ -7313,7 +7237,7 @@ property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 domain: OMRSE:00000274 ! personal data disclosure
 range: NCBITaxon:9606 ! Homo sapiens
-is_a: RO:0000057 ! has_participant
+is_a: RO:0000057 ! has participant
 inverse_of: OMRSE:00000276 ! reporter of
 
 [Typedef]
@@ -7339,11 +7263,10 @@ property_value: IAO:0000118 "inheres_in" xsd:string
 property_value: RO:0001900 RO:0001901
 is_functional: true
 is_a: RO:0002314 ! characteristic of part of
-inverse_of: RO:0000053 ! bearer_of
+inverse_of: RO:0000053 ! has characteristic
 
 [Typedef]
 id: RO:0000053
-name: bearer_of
 name: has characteristic
 def: "Inverse of characteristic_of" []
 property_value: IAO:0000111 "bearer of" xsd:string
@@ -7367,12 +7290,11 @@ property_value: IAO:0000112 "this investigator participates in this investigatio
 property_value: IAO:0000118 "participates_in" xsd:string
 domain: BFO:0000002 ! continuant
 range: BFO:0000003 ! occurrent
-inverse_of: RO:0000057 ! has_participant
+inverse_of: RO:0000057 ! has participant
 
 [Typedef]
 id: RO:0000057
 name: has participant
-name: has_participant
 def: "a relation between a process and a continuant, in which the continuant is somehow involved in the process" []
 property_value: dc:source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
 property_value: IAO:0000111 "has participant" xsd:string
@@ -7384,16 +7306,14 @@ property_value: IAO:0000118 "has_participant" xsd:string
 property_value: terms:source "http://www.obofoundry.org/ro/#OBO_REL:has_participant" xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000002 ! continuant
-holds_over_chain: BFO:0000051 RO:0000057
+holds_over_chain: has_part RO:0000057
 
 [Typedef]
 id: RO:0000058
 name: is concretized as
 def: "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants." []
-property_value: IAO:0000111 "is concretized as" xsd:string
 property_value: IAO:0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)." xsd:string
 property_value: IAO:0000112 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)." xsd:string
-property_value: IAO:0000412 "http://purl.obolibrary.org/obo/obi.owl" xsd:string
 domain: BFO:0000031 ! generically dependent continuant
 range: BFO:0000020 ! characteristic
 inverse_of: RO:0000059 ! concretizes
@@ -7402,10 +7322,8 @@ inverse_of: RO:0000059 ! concretizes
 id: RO:0000059
 name: concretizes
 def: "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant." []
-property_value: IAO:0000111 "concretizes" xsd:string
 property_value: IAO:0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)." xsd:string
 property_value: IAO:0000112 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)." xsd:string
-property_value: IAO:0000412 "http://purl.obolibrary.org/obo/obi.owl" xsd:string
 domain: BFO:0000020 ! characteristic
 range: BFO:0000031 ! generically dependent continuant
 
@@ -7455,7 +7373,7 @@ property_value: IAO:0000116 "A bearer can have many functions, and its functions
 property_value: IAO:0000118 "has_function" xsd:string
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000034 ! function
-is_a: RO:0000053 ! bearer_of
+is_a: RO:0000053 ! has characteristic
 
 [Typedef]
 id: RO:0000086
@@ -7465,7 +7383,7 @@ property_value: IAO:0000112 "this apple has quality this red color" xsd:string
 property_value: IAO:0000116 "A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist." xsd:string
 property_value: IAO:0000118 "has_quality" xsd:string
 range: BFO:0000019 ! quality
-is_a: RO:0000053 ! bearer_of
+is_a: RO:0000053 ! has characteristic
 
 [Typedef]
 id: RO:0000087
@@ -7476,7 +7394,7 @@ property_value: IAO:0000116 "A bearer can have many roles, and its roles can exi
 property_value: IAO:0000118 "has_role" xsd:string
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000023 ! role
-is_a: RO:0000053 ! bearer_of
+is_a: RO:0000053 ! has characteristic
 
 [Typedef]
 id: RO:0000091
@@ -7484,7 +7402,7 @@ name: has disposition
 def: "a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence" []
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000016 ! disposition
-is_a: RO:0000053 ! bearer_of
+is_a: RO:0000053 ! has characteristic
 inverse_of: RO:0000092 ! disposition of
 
 [Typedef]
@@ -7578,7 +7496,7 @@ name: occurrent part of
 def: "A part of relation that applies only between occurrents." []
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
-is_a: BFO:0000050 ! part of
+is_a: part_of ! part of
 is_a: RO:0002418 ! causally upstream of or within
 
 [Typedef]
@@ -7724,12 +7642,12 @@ subset: http://purl.obolibrary.org/obo/valid_for_gocam
 subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: RO:0001900 RO:0001901
-holds_over_chain: BFO:0000050 BFO:0000050
-holds_over_chain: BFO:0000051 BFO:0000050 {RO:0002582="true"}
-holds_over_chain: BFO:0000051 RO:0002131
+holds_over_chain: has_part part_of {RO:0002582="true"}
+holds_over_chain: has_part RO:0002131
+holds_over_chain: part_of part_of
 is_symmetric: true
 is_a: RO:0002323 ! mereotopologically related to
-transitive_over: BFO:0000050 ! part of
+transitive_over: part_of ! part of
 expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)" []
 
 [Typedef]
@@ -7742,7 +7660,7 @@ property_value: IAO:0000116 "The definition of 'has component' is still under di
 property_value: IAO:0000232 "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit." xsd:string
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:Componency
-is_a: BFO:0000051 ! has part
+is_a: has_part ! has part
 
 [Typedef]
 id: RO:0002211
@@ -7825,7 +7743,7 @@ def: "c stands in this relationship to p if and only if there exists some p' suc
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "has function in" xsd:string
 property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/reflexivity/
-holds_over_chain: RO:0002215 BFO:0000050 {RO:0002582="true"}
+holds_over_chain: RO:0002215 part_of {RO:0002582="true"}
 is_a: RO:0002328 ! functionally related to
 is_a: RO:0002500 ! causal agent in process
 
@@ -7871,7 +7789,7 @@ property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000119 "Allen" xsd:string
-is_a: BFO:0000050 ! part of
+is_a: part_of ! part of
 is_a: RO:0002222 ! temporally related to
 inverse_of: RO:0002224 ! starts with
 
@@ -7886,7 +7804,7 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "started by" xsd:string
 is_transitive: true
-is_a: BFO:0000051 ! has part
+is_a: has_part ! has part
 is_a: RO:0002222 ! temporally related to
 
 [Typedef]
@@ -7897,7 +7815,7 @@ subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
-is_a: BFO:0000050 ! part of
+is_a: part_of ! part of
 is_a: RO:0002222 ! temporally related to
 inverse_of: RO:0002230 ! ends with
 
@@ -7911,7 +7829,7 @@ property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "finished by" xsd:string
 is_transitive: true
-is_a: BFO:0000051 ! has part
+is_a: has_part ! has part
 is_a: RO:0002222 ! temporally related to
 
 [Typedef]
@@ -7924,7 +7842,7 @@ property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "starts with process that occurs in" xsd:string
 domain: BFO:0000015 ! process
 range: BFO:0000004 ! independent continuant
-holds_over_chain: RO:0002224 BFO:0000066
+holds_over_chain: RO:0002224 occurs_in
 is_a: RO:0002479 ! has part that occurs in
 
 [Typedef]
@@ -7937,7 +7855,7 @@ property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "ends with process that occurs in" xsd:string
 domain: BFO:0000015 ! process
 range: BFO:0000004 ! independent continuant
-holds_over_chain: RO:0002230 BFO:0000066
+holds_over_chain: RO:0002230 occurs_in
 is_a: RO:0002479 ! has part that occurs in
 
 [Typedef]
@@ -7954,7 +7872,7 @@ property_value: IAO:0000118 "consumes" xsd:string
 property_value: seeAlso "https://wiki.geneontology.org/Has_input" xsd:anyURI
 domain: BFO:0000015 ! process
 holds_over_chain: RO:0002224 RO:0002233
-is_a: RO:0000057 ! has_participant
+is_a: RO:0000057 ! has participant
 inverse_of: RO:0002352 ! input of
 
 [Typedef]
@@ -7970,7 +7888,7 @@ property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "produces" xsd:string
 property_value: seeAlso "https://wiki.geneontology.org/Has_output" xsd:anyURI
 holds_over_chain: RO:0002230 RO:0002234
-is_a: RO:0000057 ! has_participant
+is_a: RO:0000057 ! has participant
 inverse_of: RO:0002353 ! output of
 
 [Typedef]
@@ -8029,9 +7947,9 @@ property_value: IAO:0000118 "inheres in part of" xsd:string
 property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20064205
 property_value: RO:0001900 RO:0001901
 property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/reflexivity/
-holds_over_chain: RO:0000052 BFO:0000050 {RO:0002582="true"}
+holds_over_chain: RO:0000052 part_of {RO:0002582="true"}
 is_a: RO:0002502 ! depends on
-transitive_over: BFO:0000050 ! part of
+transitive_over: part_of ! part of
 
 [Typedef]
 id: RO:0002323
@@ -8057,7 +7975,7 @@ property_value: IAO:0000232 "This relation differs from the parent relation 'cap
 property_value: seeAlso "https://wiki.geneontology.org/Enables" xsd:anyURI
 is_a: RO:0002215 ! capable of
 inverse_of: RO:0002333 ! enabled by
-transitive_over: BFO:0000051 ! has part
+transitive_over: has_part ! has part
 transitive_over: RO:0002017 ! has component activity
 
 [Typedef]
@@ -8073,7 +7991,7 @@ name: part of structure that is capable of
 def: "this relation holds between c and p when c is part of some c', and c' is capable of p." []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "false" xsd:boolean
-holds_over_chain: BFO:0000050 RO:0002215 {RO:0002581="true"}
+holds_over_chain: part_of RO:0002215 {RO:0002581="true"}
 is_a: RO:0002328 ! functionally related to
 
 [Typedef]
@@ -8084,10 +8002,10 @@ property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "actively involved in" xsd:string
 property_value: IAO:0000118 "enables part of" xsd:string
 property_value: seeAlso "https://wiki.geneontology.org/Involved_in" xsd:anyURI
-holds_over_chain: RO:0002327 BFO:0000050
+holds_over_chain: RO:0002327 part_of
 is_a: RO:0000056 ! participates in
 is_a: RO:0002431 ! involved in or involved in regulation of
-transitive_over: BFO:0000050 ! part of
+transitive_over: part_of ! part of
 
 [Typedef]
 id: RO:0002333
@@ -8096,7 +8014,7 @@ def: "inverse of enables" []
 subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: seeAlso "https://wiki.geneontology.org/Enabled_by" xsd:anyURI
-is_a: RO:0000057 ! has_participant
+is_a: RO:0000057 ! has participant
 is_a: RO:0002328 ! functionally related to
 
 [Typedef]
@@ -8136,7 +8054,7 @@ property_value: IAO:0000118 "is member of" xsd:string
 property_value: IAO:0000118 "member part of" xsd:string
 property_value: IAO:0000119 "SIO" xsd:string
 property_value: RO:0001900 RO:0001901
-is_a: BFO:0000050 ! part of
+is_a: part_of ! part of
 inverse_of: RO:0002351 ! has member
 
 [Typedef]
@@ -8145,7 +8063,7 @@ name: has member
 def: "has member is a mereological relation between a collection and an item." []
 property_value: IAO:0000119 "SIO" xsd:string
 property_value: RO:0001900 RO:0001901
-is_a: BFO:0000051 ! has part
+is_a: has_part ! has part
 
 [Typedef]
 id: RO:0002352
@@ -8317,7 +8235,7 @@ property_value: IAO:0000112 "A protein that enables activity in a cytosol." xsd:
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "executes activity in" xsd:string
 property_value: seeAlso "https://wiki.geneontology.org/Is_active_in" xsd:anyURI
-holds_over_chain: RO:0002327 BFO:0000066 {RO:0002581="true"}
+holds_over_chain: RO:0002327 occurs_in {RO:0002581="true"}
 is_a: RO:0002131 ! overlaps
 is_a: RO:0002328 ! functionally related to
 
@@ -8407,7 +8325,7 @@ subset: ro-eco
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 domain: BFO:0000003 ! occurrent
 range: BFO:0000004 ! independent continuant
-holds_over_chain: BFO:0000051 BFO:0000066 {RO:0002581="true"}
+holds_over_chain: has_part occurs_in {RO:0002581="true"}
 
 [Typedef]
 id: RO:0002481
@@ -8514,7 +8432,7 @@ name: has part structure that is capable of
 def: "s 'has part structure that is capable of' p if and only if there exists some part x such that s 'has part' x and x 'capable of' p" []
 property_value: IAO:0000112 "gland SubClassOf 'has part structure that is capable of' some 'secretion by cell'" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
-holds_over_chain: BFO:0000051 RO:0002215
+holds_over_chain: has_part RO:0002215
 is_a: RO:0002328 ! functionally related to
 is_a: RO:0002595 ! causal relation between material entity and a process
 
@@ -8627,7 +8545,7 @@ creation_date: 2017-12-26T19:45:49Z
 id: RO:0004031
 name: enables subfunction
 def: "Holds between an entity and an process P where the entity enables some larger compound process, and that larger process has-part P." []
-holds_over_chain: RO:0002327 BFO:0000051
+holds_over_chain: RO:0002327 has_part
 is_a: RO:0002328 ! functionally related to
 created_by: https://orcid.org/0000-0002-6601-2165
 creation_date: 2018-01-25T23:20:13Z
@@ -8820,4 +8738,81 @@ property_value: terms:contributor https://orcid.org/0000-0002-8688-6599
 holds_over_chain: RO:0002212 RO:0019001
 holds_over_chain: RO:0002213 RO:0019002
 is_a: RO:0019000 ! regulates characteristic
+
+[Typedef]
+id: has_part
+name: has part
+namespace: external
+def: "a core relation that holds between a whole and its part" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+xref: BFO:0000051
+property_value: IAO:0000111 "has part" xsd:string
+property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
+property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
+property_value: IAO:0000112 "this year has part this day (occurrent parthood)" xsd:string
+property_value: IAO:0000116 "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part." xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
+property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
+property_value: IAO:0000118 "has_part" xsd:string
+property_value: RO:0001900 RO:0001901
+is_transitive: true
+is_a: RO:0002131 ! overlaps
+
+[Typedef]
+id: occurs_in
+name: occurs in
+namespace: external
+def: "b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t" []
+comment: Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+xref: BFO:0000066
+property_value: IAO:0000111 "occurs in" xsd:string
+property_value: IAO:0000118 "occurs_in" xsd:string
+property_value: IAO:0000118 "unfolds in" xsd:string
+property_value: IAO:0000118 "unfolds_in" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+property_value: seeAlso "https://wiki.geneontology.org/Occurs_in" xsd:anyURI
+domain: BFO:0000003 ! occurrent
+range: BFO:0000004 ! independent continuant
+holds_over_chain: part_of occurs_in
+inverse_of: BFO:0000067 ! contains process
+transitive_over: part_of ! part of
+
+[Typedef]
+id: part_of
+name: part of
+namespace: external
+def: "a core relation that holds between a part and its whole" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+xref: BFO:0000050
+property_value: IAO:0000111 "is part of" xsd:string
+property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
+property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
+property_value: IAO:0000112 "this day is part of this year (occurrent parthood)" xsd:string
+property_value: IAO:0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other." xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See http://purl.obolibrary.org/obo/ro/docs/temporal-semantics/" xsd:string
+property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
+property_value: IAO:0000118 "part_of" xsd:string
+property_value: RO:0001900 RO:0001901
+property_value: RO:0040042 BFO:0000002
+property_value: RO:0040042 BFO:0000003
+property_value: RO:0040042 BFO:0000004
+property_value: RO:0040042 BFO:0000017
+property_value: RO:0040042 BFO:0000019
+property_value: RO:0040042 BFO:0000020
+property_value: RO:0040042 BFO:0000031
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
+property_value: seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Part_of" xsd:anyURI
+is_transitive: true
+is_a: RO:0002131 ! overlaps
+inverse_of: has_part ! has part
 

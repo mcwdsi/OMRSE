@@ -54,22 +54,25 @@
         "pred" : "http://purl.org/dc/elements/1.1/creator",
         "val" : "William Hogan"
       }, {
-        "pred" : "http://purl.org/dc/elements/1.1/description",
-        "val" : "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations."
+        "pred" : "http://purl.org/dc/terms/creator",
+        "val" : "https://orcid.org/0000-0002-9881-1017"
       }, {
-        "pred" : "http://purl.org/dc/elements/1.1/title",
-        "val" : "Ontology for Modeling and Representation of Social Entities"
+        "pred" : "http://purl.org/dc/terms/description",
+        "val" : "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations."
       }, {
         "pred" : "http://purl.org/dc/terms/license",
         "val" : "https://creativecommons.org/licenses/by/4.0/"
+      }, {
+        "pred" : "http://purl.org/dc/terms/title",
+        "val" : "Ontology for Modeling and Representation of Social Entities"
       }, {
         "pred" : "http://www.w3.org/2000/01/rdf-schema#comment",
         "val" : "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2024-11-25"
+        "val" : "2025-03-25"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2024-11-25/omrse-full.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2025-03-25/omrse-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
@@ -1675,30 +1678,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/FMA_49443",
-      "lbl" : "Anatomical cluster",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/FMA_55457",
-      "lbl" : "vocal fold",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/FMA_64854",
-      "lbl" : "Subdivision of larynx",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/FMA_64989",
-      "lbl" : "Heterogeneous cluster",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/FMA_67135",
-      "lbl" : "Anatomical structure",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/FMA_67165",
-      "lbl" : "Material anatomical entity",
-      "type" : "CLASS"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/GEO_000000400",
       "lbl" : "governmental organization",
       "type" : "CLASS",
@@ -1737,8 +1716,41 @@
           "xrefs" : [ "GOC:ems", "GOC:jl", "ISBN:0395448956", "PMID:20160973" ]
         },
         "comments" : [ "1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.\n2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis)." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate", "http://purl.obolibrary.org/obo/go#goslim_agr", "http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "behavioral response to stimulus"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "behaviour"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "behavioural response to stimulus"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "single-organism behavior"
+        } ],
         "xrefs" : [ {
           "val" : "Wikipedia:Behavior"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "jl"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2012-09-20T14:06:08Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "GO:0023032"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "GO:0044708"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "GO:0044709"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "biological_process"
         } ]
       }
     }, {
@@ -1750,6 +1762,7 @@
           "val" : "A process that emerges from two or more causally-connected macromolecular activities and has evolved to achieve a biological objective."
         },
         "comments" : [ "A biological process is an evolved process", "Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.", "Note that, in addition to forming the root of the biological process ontology, this term is recommended for use for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/go#goslim_candida", "http://purl.obolibrary.org/obo/go#goslim_chembl", "http://purl.obolibrary.org/obo/go#goslim_metagenomics", "http://purl.obolibrary.org/obo/go#goslim_pir", "http://purl.obolibrary.org/obo/go#goslim_plant", "http://purl.obolibrary.org/obo/go#goslim_pombe", "http://purl.obolibrary.org/obo/go#goslim_yeast" ],
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "biological process"
@@ -1767,11 +1780,26 @@
           "val" : "Wikipedia:Biological_process"
         } ],
         "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/geneontology/go-ontology/issues/24968"
+        }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
           "val" : "jl"
         }, {
           "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
           "val" : "2012-09-19T15:05:24Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "GO:0000004"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "GO:0007582"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "GO:0044699"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "biological_process"
         } ]
       }
     }, {
@@ -1792,6 +1820,44 @@
           "val" : "Reactome:R-HSA-6788855"
         }, {
           "val" : "Reactome:R-HSA-6788867"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/GO_0032501",
+      "lbl" : "multicellular organismal process",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "Any biological process, occurring at the level of a multicellular organism, pertinent to its function.",
+          "xrefs" : [ "GOC:curators", "GOC:dph", "GOC:isa_complete", "GOC:tb" ]
+        },
+        "comments" : [ "Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC." ],
+        "subsets" : [ "http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate", "http://purl.obolibrary.org/obo/go#goslim_pir" ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "organismal physiological process"
+        }, {
+          "pred" : "hasRelatedSynonym",
+          "val" : "single-multicellular organism process"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/geneontology/go-ontology/issues/27189"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#created_by",
+          "val" : "jl"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#creation_date",
+          "val" : "2012-09-19T16:07:47Z"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "GO:0044707"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
+          "val" : "GO:0050874"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "biological_process"
         } ]
       }
     }, {
@@ -6865,9 +6931,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Mathias Brochhausen"
         }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "proper name"
         }, {
@@ -6905,128 +6968,16 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020002",
-      "lbl" : "utterance",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "An utterance is an information content entity that is a complete unit of speech in spoken language. "
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "Wikipedia: http://en.wikipedia.org/wiki/Utterance"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "Mathias Brochhausen"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020003",
-      "lbl" : "mechanical wave quality",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "An attributive collection of qualities inhering in energy when transported through a medium in a wave."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "Mathias Brochhausen"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020004",
-      "lbl" : "writing quality",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "is a quality that is the concretization of graphemes and inheres in a material object."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "Mathias Brochhausen"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020005",
-      "lbl" : "writing bearer",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "is a material information bearer that bears the concretization of graphemes."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
-          "val" : "pieces of paper, tables, walls, floors, driveways, highway signs, computer screens, skin, tablets of clay, rocks, sheets of metal (license plates), sheets of papyrus, etc.   clouds of smoke in skywriting,"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "Mathias Brochhausen"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020006",
-      "lbl" : "portion of energy",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020007",
-      "lbl" : "sound energy",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "Energy that is transported in a sound wave."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "Mathias Brochhausen"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020008",
-      "lbl" : "utterance energy",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "Sound energy bearing the concretization of an utterance and being the output of an uttering process. "
-        }
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020009",
-      "lbl" : "oscillating",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "Oscillating is a processual that shows repetitive variation, typically in time, of some measured quality about a central value (often a point of equilibrium) or between two or more different states."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "http://en.wikipedia.org/wiki/Oscillation"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "Mathias Brochhausen"
-        } ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0020010",
       "lbl" : "identifier creating process",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "An identifier creating process is a planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity."
+          "val" : "A planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Justin Whorton"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Mathias Brochhausen"
@@ -7045,25 +6996,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020011",
-      "lbl" : "utterance process",
-      "type" : "CLASS",
-      "meta" : {
-        "definition" : {
-          "val" : "is a planned process of making speech sounds which may or may not have an actual language involved. "
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
-          "val" : "http://en.wiktionary.org/wiki/utter"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "Mathias Brochhausen"
-        } ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0020015",
       "lbl" : "personal name",
       "type" : "CLASS",
@@ -7075,9 +7007,6 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Justin Whorton"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Mathias Brochhausen"
@@ -7104,9 +7033,6 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Mathias Brochhausen"
         }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "first name"
         }, {
@@ -7128,9 +7054,6 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Justin Whorton"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Mathias Brochhausen"
@@ -7163,9 +7086,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Justin Whorton"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Mathias Brochhausen"
@@ -7682,19 +7602,52 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_131567",
+      "lbl" : "cellular organisms",
+      "type" : "CLASS",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_2759",
+      "lbl" : "Eukaryota",
+      "type" : "CLASS",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        }, {
+          "val" : "PMID:23020233"
+        }, {
+          "val" : "PMID:30257078"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_40674",
+      "lbl" : "Mammalia",
+      "type" : "CLASS",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/NCBITaxon_9443",
+      "lbl" : "Primates",
+      "type" : "CLASS",
+      "meta" : {
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/NCBITaxon_9606",
       "lbl" : "Homo sapiens",
       "type" : "CLASS",
       "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "Homo sapiens"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "human being"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/ncbitaxon.owl"
+        "xrefs" : [ {
+          "val" : "GC_ID:1"
         } ]
       }
     }, {
@@ -7933,9 +7886,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "virus"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000121"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
           "val" : "http://purl.obolibrary.org/obo/IAO_0000122"
@@ -9424,10 +9374,10 @@
       "lbl" : "health care facility",
       "type" : "CLASS",
       "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+        "definition" : {
           "val" : "A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population."
-        }, {
+        },
+        "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William Hogan"
         } ]
@@ -11814,7 +11764,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories."
+          "val" : "An information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -11833,7 +11783,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics."
+          "val" : "A categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -11868,7 +11818,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Collection of humans demarcated by some social categorization scheme."
+          "val" : "A collection of humans demarcated by some social categorization scheme."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -11887,7 +11837,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors."
+          "val" : "A social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -11906,7 +11856,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Social category demarcated by some racial categorization scheme."
+          "val" : "A social category demarcated by some racial categorization scheme."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -11925,7 +11875,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship."
+          "val" : "A social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -11944,7 +11894,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Social category demarcated by some ethnic categorization scheme."
+          "val" : "A social category demarcated by some ethnic categorization scheme."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -11982,7 +11932,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Cognitive representation in which the representation’s bearer is represented as being its bearer."
+          "val" : "A cognitive representation in which the representation’s bearer is represented as being its bearer."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -12001,7 +11951,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Subjective representation of its bearer as being a member of some social category."
+          "val" : "A subjective representation of its bearer as being a member of some social category."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -12020,7 +11970,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Social identity for which the category is a racial category."
+          "val" : "A social identity for which the category is a racial category."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -12055,7 +12005,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Social identity for which the category is an ethnic category."
+          "val" : "A social identity for which the category is an ethnic category."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -12074,7 +12024,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "Social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior."
+          "val" : "A social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -12240,6 +12190,138 @@
           "val" : "William R. Hogan"
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/source",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000289",
+      "lbl" : "human traveler role",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A role that if realized, is realized by the bearer participating in human travel."
+        },
+        "comments" : [ "See discussion at: https://github.com/mcwdsi/OMRSE/issues/191" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "human traveller role"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Matt Diller"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000290",
+      "lbl" : "gender categorization scheme",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social categorization scheme based on the social identities assumed to be coincident of certain biological traits linked to reproduction and/or reproductive behavior."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000291",
+      "lbl" : "gender category",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social category demarcated by some gender categorization scheme."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000292",
+      "lbl" : "social category data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A data item according to which a given person is a member of a given social category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000293",
+      "lbl" : "ethnic category data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social category data item for which the social category is an ethnic category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000294",
+      "lbl" : "gender category data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social category data item for which the social category is a gender category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000295",
+      "lbl" : "racial category data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social category data item for which the social category is a racial category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000296",
+      "lbl" : "gender identity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social identity for which the category is a gender category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0003-1909-9269"
         } ]
       }
@@ -12664,15 +12746,24 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A socio-economic data item that is about a person and their completion of an education program (and its type), where that education program is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it."
+          "val" : "A socio-economic data item that is about a person and their completion of at least some of the required courses of an education program, where the set of planned competencies to be acquired by completing that program, as a whole, are of a more advanced nature than the set of competencies acquired through any other educational program completed by the person."
         },
-        "comments" : [ "This data item in a typical attribute-value system such as table, XML, JSON takes values like \"secondary education\", \"Associate Degree\", \"Bachelor Degree\", \"High School\", and so on." ],
+        "comments" : [ "Note that by 'more advanced nature' of the competencies, we do not mean merely having more knowledge, but rather a set of competencies / capabilities that enable the person to do things of a fundamentally different nature than before. This distinction is exemplified by the difference between a Masters and a PhD degree. The PhD has a key objective of enabling the person to function as an investigator in the domain, whereas a Masters does not.", "This data item in a typical attribute-value system such as table, XML, JSON takes values like \"secondary education\", \"Associate Degree\", \"Bachelor Degree\", \"High School\", and so on.\n\nAlso, note that we revised the definition in collaboration with our APRICOT project colleagues who noted that the individual need not have completed one of the education programs in a sequence, instead demonstrating competencies for admission to the highest level of eductation in some alternative way. For example, the highest level of education might be baccalaureate degree, but the individual did not graduate a secondary education program but instead got a General Educational Development (GED) certification / degree." ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "highest level of education socio-economic data item"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Colbie Reed"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Mathias Brochhausen"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Matt Diller"
         } ]
       }
     }, {
@@ -13463,20 +13554,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/PATO_0001025",
-      "lbl" : "pressure",
-      "type" : "CLASS",
-      "meta" : {
-        "subsets" : [ "http://purl.org/obo/owl/obo#attribute_slim" ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
-          "val" : "_:genid2147485116"
-        }, {
-          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
-          "val" : "quality"
-        } ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/PATO_0001241",
       "lbl" : "physical object quality",
       "type" : "CLASS",
@@ -13583,6 +13660,9 @@
           "val" : "a core relation that holds between a part and its whole"
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension", "http://purl.obolibrary.org/obo/valid_for_go_gp2term", "http://purl.obolibrary.org/obo/valid_for_go_ontology", "http://purl.obolibrary.org/obo/valid_for_gocam" ],
+        "xrefs" : [ {
+          "val" : "BFO:0000050"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "is part of"
@@ -13632,6 +13712,12 @@
           "pred" : "http://purl.obolibrary.org/obo/RO_0040042",
           "val" : "http://purl.obolibrary.org/obo/BFO_0000031"
         }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "external"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "part_of"
+        }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
           "val" : "http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"
         }, {
@@ -13655,6 +13741,9 @@
           "val" : "a core relation that holds between a whole and its part"
         },
         "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension", "http://purl.obolibrary.org/obo/valid_for_go_ontology", "http://purl.obolibrary.org/obo/valid_for_gocam" ],
+        "xrefs" : [ {
+          "val" : "BFO:0000051"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "has part"
@@ -13682,6 +13771,12 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/RO_0001900",
           "val" : "http://purl.obolibrary.org/obo/RO_0001901"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "external"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "has_part"
         } ]
       }
     }, {
@@ -13797,6 +13892,9 @@
         },
         "comments" : [ "Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant" ],
         "subsets" : [ "http://purl.obolibrary.org/obo/valid_for_go_annotation_extension", "http://purl.obolibrary.org/obo/valid_for_go_ontology", "http://purl.obolibrary.org/obo/valid_for_gocam" ],
+        "xrefs" : [ {
+          "val" : "BFO:0000066"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "occurs in"
@@ -13809,6 +13907,12 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "unfolds_in"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasOBONamespace",
+          "val" : "external"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+          "val" : "occurs_in"
         }, {
           "pred" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
           "val" : "http://purl.obolibrary.org/obo/bfo.owl"
@@ -14174,69 +14278,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Alan Ruttenberg"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020012",
-      "lbl" : "obsolete_designates",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "definition" : {
-          "val" : "x designates y, if for any given group of language users, x is an information content entity, is about y, and represents y in a linguistic context.."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000228"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0100001",
-          "val" : "http://purl.obolibrary.org/obo/IAO_0000219"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "Mathias Brochhausen"
-        } ],
-        "deprecated" : true
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020013",
-      "lbl" : "is_borrowed_reference_to",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "definition" : {
-          "val" : "x is_borrowed_reference_for y, if x is a proper name that is used to refer to one individual among a specific group after the dubbing process took place."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "Mathias Brochhausen"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020014",
-      "lbl" : "is_fixing_reference_to",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "definition" : {
-          "val" : "x is_fixed_reference_for y, if x is an utterance or graphemes concretized as writing quality inhering in some independent continuant that is used to single out one individual and refer to the latter among a specific group after the."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "Mathias Brochhausen"
-        } ]
-      }
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020018",
-      "lbl" : "is designated by",
-      "type" : "PROPERTY",
-      "propertyType" : "OBJECT",
-      "meta" : {
-        "definition" : {
-          "val" : "p1 is designated by p2, if p2 is an information content entity that represents p1 in a linguistic context."
-        },
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
-          "val" : "Mathias Brochhausen"
         } ]
       }
     }, {
@@ -14775,7 +14816,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0000057",
-      "lbl" : "has_participant",
+      "lbl" : "has participant",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT",
       "meta" : {
@@ -14818,17 +14859,11 @@
           "val" : "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants."
         },
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "is concretized as"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/obi.owl"
         } ]
       }
     }, {
@@ -14841,17 +14876,11 @@
           "val" : "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant."
         },
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "concretizes"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)."
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)."
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000412",
-          "val" : "http://purl.obolibrary.org/obo/obi.owl"
         } ]
       }
     }, {
@@ -26215,18 +26244,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/IAO_0020019",
-      "lbl" : "IUI",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION",
-      "meta" : {
-        "comments" : [ "An annotation to be applied to individuals only.  Value is a GUID/UUID for use in a referent tracking system." ],
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
-          "val" : "instance unique identifier"
-        } ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0100001",
       "lbl" : "term replaced by",
       "type" : "PROPERTY",
@@ -26741,6 +26758,46 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/go#gocheck_do_not_annotate",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/go#goslim_agr",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/go#goslim_candida",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/go#goslim_chembl",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/go#goslim_flybase_ribbon",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/go#goslim_metagenomics",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/go#goslim_pir",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/go#goslim_plant",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/go#goslim_pombe",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/go#goslim_yeast",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/omrse/language-individuals/imports",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
@@ -26865,7 +26922,7 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://www.geneontology.org/formats/oboInOwl#default-namespace",
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasAlternativeId",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -26890,10 +26947,6 @@
       }
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
-      "id" : "http://www.geneontology.org/formats/oboInOwl#hasDefinition",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -26973,6 +27026,10 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#shorthand",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://www.referent-tracking.com/RTS_00000001",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
@@ -26990,7 +27047,6 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://www.w3.org/2000/01/rdf-schema#label",
-      "lbl" : "label",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -27205,30 +27261,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000015"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/FMA_49443",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FMA_67135"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FMA_55457",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FMA_64854"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FMA_64854",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FMA_64989"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FMA_64989",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FMA_49443"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FMA_67135",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/FMA_67165"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/FMA_67165",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/GEO_000000400",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000245"
@@ -27239,7 +27271,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GO_0007610",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/GO_0008150"
+      "obj" : "http://purl.obolibrary.org/obo/GO_0032501"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/GO_0008150",
       "pred" : "is_a",
@@ -27248,6 +27280,10 @@
       "sub" : "http://purl.obolibrary.org/obo/GO_0016301",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/GO_0003674"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/GO_0032501",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/GO_0008150"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0000001",
       "pred" : "is_a",
@@ -28229,42 +28265,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020002",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020003",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000019"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020004",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000019"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020005",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0000178"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020006",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000004"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020007",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0020006"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020007",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000053",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0020003"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020008",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0020007"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020009",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000015"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0020010",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
@@ -28272,14 +28272,6 @@
       "sub" : "http://purl.obolibrary.org/obo/IAO_0020010",
       "pred" : "http://purl.obolibrary.org/obo/OBI_0000299",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0020000"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020011",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020011",
-      "pred" : "http://purl.obolibrary.org/obo/OBI_0000299",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0020008"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0020015",
       "pred" : "is_a",
@@ -28289,17 +28281,9 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0020015"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020016",
-      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0020015"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0020017",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0020015"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020017",
-      "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0020015"
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0020000"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0020020",
       "pred" : "is_a",
@@ -28308,6 +28292,10 @@
       "sub" : "http://purl.obolibrary.org/obo/IAO_0020020",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0020000"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/IAO_0020021",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000310"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/IAO_0020022",
       "pred" : "is_a",
@@ -28429,9 +28417,25 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/MF_0000030"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_131567",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_2759",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_131567"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_40674",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_2759"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_9443",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_40674"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9443"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OAE_0000002",
       "pred" : "is_a",
@@ -29879,6 +29883,66 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000086"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000289",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002072"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000289",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000054",
+      "obj" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000532"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000290",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000265"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000291",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000267"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000291",
+      "pred" : "http://purl.obolibrary.org/obo/OMRSE_00000264",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000290"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000292",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000027"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000292",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000292",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000267"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000293",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000292"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000293",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000271"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000294",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000292"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000294",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000291"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000295",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000292"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000295",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000269"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000296",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000278"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000500",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000027"
@@ -30190,10 +30254,6 @@
       "sub" : "http://purl.obolibrary.org/obo/PATO_0001018",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/PATO_0001241"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/PATO_0001025",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000019"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/PATO_0001241",
       "pred" : "is_a",
@@ -32035,14 +32095,6 @@
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000051"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020012",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/IAO_0020013",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/OBIB_0000732",
       "pred" : "subPropertyOf",
       "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
@@ -32054,10 +32106,6 @@
       "sub" : "http://purl.obolibrary.org/obo/OBI_0000299",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0000057"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OBI_0000299",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0000312",
       "pred" : "subPropertyOf",
@@ -32098,14 +32146,6 @@
       "sub" : "http://purl.obolibrary.org/obo/RO_0000052",
       "pred" : "subPropertyOf",
       "obj" : "http://purl.obolibrary.org/obo/RO_0002314"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0000058",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/RO_0000059",
-      "pred" : "subPropertyOf",
-      "obj" : "http://www.w3.org/2002/07/owl#topObjectProperty"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/RO_0000079",
       "pred" : "subPropertyOf",
@@ -32891,16 +32931,6 @@
         "fillerId" : "http://purl.obolibrary.org/obo/IAO_0020010"
       } ]
     }, {
-      "definedClassId" : "http://purl.obolibrary.org/obo/IAO_0020005",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/IAO_0000178" ]
-    }, {
-      "definedClassId" : "http://purl.obolibrary.org/obo/IAO_0020007",
-      "genusIds" : [ "http://purl.obolibrary.org/obo/IAO_0020006" ],
-      "restrictions" : [ {
-        "propertyId" : "http://purl.obolibrary.org/obo/RO_0000053",
-        "fillerId" : "http://purl.obolibrary.org/obo/IAO_0020003"
-      } ]
-    }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/IAO_0020010",
       "genusIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ],
       "restrictions" : [ {
@@ -33162,10 +33192,6 @@
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/IAO_0000583",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0000582" ]
-    }, {
-      "predicateId" : "http://purl.obolibrary.org/obo/IAO_0020013",
-      "domainClassIds" : [ "http://purl.obolibrary.org/obo/IAO_0020000" ],
-      "rangeClassIds" : [ "http://purl.obolibrary.org/obo/BFO_0000001" ]
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/OBI_0000293",
       "domainClassIds" : [ "http://purl.obolibrary.org/obo/OBI_0000011" ]
