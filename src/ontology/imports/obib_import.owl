@@ -7,10 +7,10 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/obib_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2024-08-09/imports/obib_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2025-03-25/imports/obib_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obib/2023-04-05/obib.owl>)
 Annotation(<http://purl.org/dc/elements/1.1/source> "MIABIS_v2_accepted and UPenn Biobank ontology"@en)
-Annotation(owl:versionInfo "2024-08-09")
+Annotation(owl:versionInfo "2025-03-25")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000016>))
@@ -146,6 +146,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000067> "con
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBIB_0000732> "Mathias Brochhausen")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000600> <http://purl.obolibrary.org/obo/OBIB_0000732> "This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal."@en)
+AnnotationAssertion(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/OBIB_0000732> "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBIB_0000732> "owns"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBIB_0000732> owl:topObjectProperty)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/OBIB_0000732> <http://purl.obolibrary.org/obo/OBIB_0000735>)

@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/iao_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2025-01-18/imports/iao_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2025-03-25/imports/iao_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/iao/2022-11-07/iao.owl>)
-Annotation(owl:versionInfo "2025-01-18")
+Annotation(owl:versionInfo "2025-03-25")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000008>))
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000032>))
