@@ -667,6 +667,10 @@ DataPropertyRange(obo:OMRSE_00000137 xsd:string)
 #   Classes
 ############################
 
+# Class: obo:GEO_000000400 (governmental organization)
+
+SubClassOf(obo:GEO_000000400 obo:OBI_0000245)
+
 # Class: obo:GO_0008150 (biological_process)
 
 SubClassOf(obo:GO_0008150 obo:BFO_0000015)
@@ -1291,6 +1295,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000074 "Amanda Hicks"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:OMRSE_00000074 "https://github.com/ufbmi/OMRSE/wiki/Housing-unit-and-Household"@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000074 "Housing units are individuated by their residence functions."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000074 "housing unit"@en)
+SubClassOf(obo:OMRSE_00000074 obo:BFO_0000040)
 SubClassOf(obo:OMRSE_00000074 ObjectIntersectionOf(obo:BFO_0000040 ObjectSomeValuesFrom(obo:BFO_0000051 obo:BFO_0000029) ObjectSomeValuesFrom(obo:BFO_0000051 obo:BFO_0000040) ObjectExactCardinality(1 obo:RO_0000053 obo:OMRSE_00000075)))
 
 # Class: obo:OMRSE_00000075 (residence function)
@@ -3023,6 +3028,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000287 "A residence function tha
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000287 "William R. Hogan"@en)
 AnnotationAssertion(dc:source obo:OMRSE_00000287 "https://orcid.org/0000-0003-1909-9269")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000287 "public housing function"@en)
+SubClassOf(obo:OMRSE_00000287 obo:OMRSE_00000075)
 SubClassOf(obo:OMRSE_00000287 ObjectIntersectionOf(obo:OMRSE_00000075 ObjectSomeValuesFrom(obo:RO_0000052 obo:OMRSE_00000074) ObjectAllValuesFrom(obo:BFO_0000054 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000288))))
 
 # Class: obo:OMRSE_00000288 (public housing eligibility role)
@@ -3031,6 +3037,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000288 "A role that inheres in a
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000288 "William R. Hogan"@en)
 AnnotationAssertion(dc:source obo:OMRSE_00000288 "https://orcid.org/0000-0003-1909-9269")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000288 "public housing eligibility role"@en)
+SubClassOf(obo:OMRSE_00000288 obo:OMRSE_00002072)
 SubClassOf(obo:OMRSE_00000288 ObjectIntersectionOf(obo:OMRSE_00002072 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_9606) ObjectAllValuesFrom(obo:BFO_0000054 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000287))))
 
 # Class: obo:OMRSE_00000289 (human traveler role)

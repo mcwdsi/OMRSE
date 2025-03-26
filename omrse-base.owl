@@ -13,7 +13,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2024-11-25/omrse-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2025-03-26/omrse-base.owl"/>
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
         <dc:contributor xml:lang="en">Daniel Welch</dc:contributor>
@@ -31,12 +31,13 @@
         <dc:creator xml:lang="en">Shariq Tariq</dc:creator>
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
         <dc:creator xml:lang="en">William Hogan</dc:creator>
-        <dc:description xml:lang="en">The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations.</dc:description>
-        <dc:title xml:lang="en">Ontology for Modeling and Representation of Social Entities</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
+        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-9881-1017</terms:creator>
+        <terms:description xml:lang="en">The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
+        <terms:title xml:lang="en">Ontology for Modeling and Representation of Social Entities</terms:title>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
-        <owl:versionInfo>2024-11-25</owl:versionInfo>
+        <owl:versionInfo>2025-03-26</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -183,27 +184,33 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/type -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/type"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
     
 
 
@@ -216,6 +223,12 @@
     <!-- http://purl.org/dc/terms/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
     
 
 
@@ -2281,6 +2294,7 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000074 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000074">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2983,7 +2997,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000117 xml:lang="en">A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population.</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
         <rdfs:label xml:lang="en">health care facility</rdfs:label>
     </owl:Class>
@@ -5400,7 +5414,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000262">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">Information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that characterizes some aggregate of entities as partitioned into distinct subgroups, thereby demarcating them as categories.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
@@ -5419,7 +5433,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A categorization scheme that divides humans into groups considered by themselves or others as distinct on the basis of assumed common characteristics.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
@@ -5450,7 +5464,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000265"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Collection of humans demarcated by some social categorization scheme.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A collection of humans demarcated by some social categorization scheme.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
@@ -5463,7 +5477,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000268">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000265"/>
-        <obo:IAO_0000115 xml:lang="en">Social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A social categorization scheme based on characteristics assumed to be biologically hereditary and to result in part from common locality of ancestors.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
@@ -5482,7 +5496,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000268"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Social category demarcated by some racial categorization scheme.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A social category demarcated by some racial categorization scheme.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
@@ -5495,7 +5509,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000270">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000265"/>
-        <obo:IAO_0000115 xml:lang="en">Social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A social categorization scheme based on characteristics that are primarily cultural—such as ancestry, history, national or tribal background, cultural attachments or traditions, past linguistic heritage, religious affiliations, caste, or claimed kinship.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
@@ -5514,7 +5528,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000270"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Social category demarcated by some ethnic categorization scheme.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A social category demarcated by some ethnic categorization scheme.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
@@ -5566,7 +5580,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000277">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/MF_0000031"/>
-        <obo:IAO_0000115 xml:lang="en">Cognitive representation in which the representation’s bearer is represented as being its bearer.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A cognitive representation in which the representation’s bearer is represented as being its bearer.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
@@ -5603,7 +5617,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Subjective representation of its bearer as being a member of some social category.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A subjective representation of its bearer as being a member of some social category.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
@@ -5640,7 +5654,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Social identity for which the category is a racial category.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A social identity for which the category is a racial category.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
@@ -5689,7 +5703,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Social identity for which the category is an ethnic category.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A social identity for which the category is an ethnic category.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
@@ -5702,7 +5716,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000282">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000278"/>
-        <obo:IAO_0000115 xml:lang="en">Social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A social identity for which the category is also a behaviorally distinct group defined by its members degree of participation in some type of behavior.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
@@ -5782,6 +5796,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000287 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000287">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000075"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -5813,6 +5828,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000288 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000288">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002072"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -5837,6 +5853,170 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <dc:source>https://orcid.org/0000-0003-1909-9269</dc:source>
         <rdfs:label xml:lang="en">public housing eligibility role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000289 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000289">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002072"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/APOLLO_SV_00000532"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A role that if realized, is realized by the bearer participating in human travel.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">human traveller role</obo:IAO_0000118>
+        <dc:contributor xml:lang="en">Matt Diller</dc:contributor>
+        <rdfs:comment xml:lang="en">See discussion at: https://github.com/mcwdsi/OMRSE/issues/191</rdfs:comment>
+        <rdfs:label xml:lang="en">human traveler role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000290 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000290">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000265"/>
+        <obo:IAO_0000115 xml:lang="en">A social categorization scheme based on the social identities assumed to be coincident of certain biological traits linked to reproduction and/or reproductive behavior.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ORCID: 0000-0002-5039-2052</obo:IAO_0000117>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-1909-9269"/>
+        <rdfs:label xml:lang="en">gender categorization scheme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000291 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000291">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000267"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000264"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000290"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A social category demarcated by some gender categorization scheme.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ORCID: 0000-0002-5039-2052</obo:IAO_0000117>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-1909-9269"/>
+        <rdfs:label xml:lang="en">gender category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000292 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000292">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000267"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A data item according to which a given person is a member of a given social category.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ORCID: 0000-0002-5039-2052</obo:IAO_0000117>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-1909-9269"/>
+        <rdfs:label xml:lang="en">social category data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000293 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000293">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000292"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000271"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A social category data item for which the social category is an ethnic category.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ORCID: 0000-0002-5039-2052</obo:IAO_0000117>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-1909-9269"/>
+        <rdfs:label xml:lang="en">ethnic category data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000294 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000294">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000292"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000291"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A social category data item for which the social category is a gender category.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ORCID: 0000-0002-5039-2052</obo:IAO_0000117>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-1909-9269"/>
+        <rdfs:label xml:lang="en">gender category data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000295 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000295">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000292"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000269"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A social category data item for which the social category is a racial category.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ORCID: 0000-0002-5039-2052</obo:IAO_0000117>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-1909-9269"/>
+        <rdfs:label xml:lang="en">racial category data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000296 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000296">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000278"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000291"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A social identity for which the category is a gender category.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ORCID: 0000-0002-5039-2052</obo:IAO_0000117>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0003-1909-9269"/>
+        <rdfs:label xml:lang="en">gender identity</rdfs:label>
     </owl:Class>
     
 
@@ -6551,9 +6731,15 @@ This addition to the definition notwithstanding, we do not intend to incorporate
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002045">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000506"/>
         <obo:IAO_0000111 xml:lang="en">highest level of education socio-economic data item</obo:IAO_0000111>
-        <obo:IAO_0000115>A socio-economic data item that is about a person and their completion of an education program (and its type), where that education program is the last one in a sequence (of education programs) that the person has completed, where each education program completed except the last one is a pre-requisite to the education program completed after it.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A socio-economic data item that is about a person and their completion of at least some of the required courses of an education program, where the set of planned competencies to be acquired by completing that program, as a whole, are of a more advanced nature than the set of competencies acquired through any other educational program completed by the person.</obo:IAO_0000115>
         <obo:IAO_0000117>William R. Hogan</obo:IAO_0000117>
-        <rdfs:comment>This data item in a typical attribute-value system such as table, XML, JSON takes values like &quot;secondary education&quot;, &quot;Associate Degree&quot;, &quot;Bachelor Degree&quot;, &quot;High School&quot;, and so on.</rdfs:comment>
+        <dc:contributor xml:lang="en">Colbie Reed</dc:contributor>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
+        <dc:contributor xml:lang="en">Matt Diller</dc:contributor>
+        <rdfs:comment xml:lang="en">Note that by &apos;more advanced nature&apos; of the competencies, we do not mean merely having more knowledge, but rather a set of competencies / capabilities that enable the person to do things of a fundamentally different nature than before. This distinction is exemplified by the difference between a Masters and a PhD degree. The PhD has a key objective of enabling the person to function as an investigator in the domain, whereas a Masters does not.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This data item in a typical attribute-value system such as table, XML, JSON takes values like &quot;secondary education&quot;, &quot;Associate Degree&quot;, &quot;Bachelor Degree&quot;, &quot;High School&quot;, and so on.
+
+Also, note that we revised the definition in collaboration with our APRICOT project colleagues who noted that the individual need not have completed one of the education programs in a sequence, instead demonstrating competencies for admission to the highest level of eductation in some alternative way. For example, the highest level of education might be baccalaureate degree, but the individual did not graduate a secondary education program but instead got a General Educational Development (GED) certification / degree.</rdfs:comment>
         <rdfs:label>highest level of education data item</rdfs:label>
     </owl:Class>
     
@@ -7882,7 +8068,7 @@ It indicates that a person has completed only early childhood education and noth
         <obo:IAO_0000118 xml:lang="my">မြန်မာစကား</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="my">မြန်မာစာ</obo:IAO_0000118>
         <obo:OMRSE_00002025>my</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026>bur </obo:OMRSE_00002026>
+        <obo:OMRSE_00002026>bur</obo:OMRSE_00002026>
         <obo:OMRSE_00002027>mya</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Burmese</rdfs:label>
     </owl:NamedIndividual>
@@ -8251,7 +8437,7 @@ It indicates that a person has completed only early childhood education and noth
         <obo:IAO_0000118 xml:lang="cy">Cymraeg</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="cy">y Gymraeg</obo:IAO_0000118>
         <obo:OMRSE_00002025>cy</obo:OMRSE_00002025>
-        <obo:OMRSE_00002026> wel</obo:OMRSE_00002026>
+        <obo:OMRSE_00002026>wel</obo:OMRSE_00002026>
         <obo:OMRSE_00002027>cym</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Welsh</rdfs:label>
     </owl:NamedIndividual>

@@ -31,7 +31,13 @@ import_group:
         - http://purl.obolibrary.org/obo/BFO_
         - http://purl.obolibrary.org/obo/OBI_
     - id: obi
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/OBI_
     - id: apollo_sv
+      module_type: filter
+      base_iris:
+       - http://purl.obolibrary.org/obo/APOLLO_SV_
     - id: obib
       module_type: filter
       base_iris:
@@ -39,8 +45,17 @@ import_group:
         - http://purl.obolibrary.org/obo/OMIABIS_
         - http://purl.obolibrary.org/obo/BFO_
     - id: go
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/GO_
     - id: oae
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/OAE_
     - id: pco
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/PCO_
     - id: bfo
       module_type: slme
       slme_individuals: exclude
@@ -50,6 +65,9 @@ import_group:
       base_iris:
         - http://purl.obolibrary.org/obo/NCBITaxon_
     - id: oostt
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/OOSTT_
     - id: omo
       module_type: mirror
     - id: iao 
@@ -60,7 +78,13 @@ import_group:
       base_iris:
         - http://purl.obolibrary.org/obo/IAO_ 
     - id: geo
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/GEO_
     - id: mf
+      module_type: filter
+      base_iris:
+        - http://purl.obolibrary.org/obo/MF_
       
 components:
   products:

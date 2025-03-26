@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/ncbitaxon_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2025-01-18/imports/ncbitaxon_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ncbitaxon/releases/2024-11-25/subsets/taxslim.owl>)
-Annotation(owl:versionInfo "2025-01-18")
+<http://purl.obolibrary.org/obo/omrse/releases/2025-03-26/imports/ncbitaxon_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ncbitaxon/releases/2025-03-13/subsets/taxslim.owl>)
+Annotation(owl:versionInfo "2025-03-26")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_131567>))
 Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2759>))
