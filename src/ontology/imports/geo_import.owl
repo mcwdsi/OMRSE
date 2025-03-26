@@ -7,11 +7,10 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/geo_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2024-08-09/imports/geo_import.owl>
-Annotation(owl:versionInfo "2024-08-09")
+<http://purl.obolibrary.org/obo/omrse/releases/2025-03-26/imports/geo_import.owl>
+Annotation(owl:versionInfo "2025-03-26")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/GEO_000000400>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000245>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
@@ -33,7 +32,6 @@ Note: this definition was taken over from \"geopolitical organization\"."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/GEO_000000400> "Amanda Hicks"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GEO_000000400> "IMPORTANT: The label \"geopolitical organization\" was previously used for OMRSE_00000044 (governmental organization).  \"geopoli organization\" is a label for a new and different class."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GEO_000000400> "governmental organization"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/GEO_000000400> <http://purl.obolibrary.org/obo/OBI_0000245>)
 
 
 )

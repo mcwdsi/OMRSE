@@ -7,11 +7,10 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/omo_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2024-08-09/imports/omo_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/omo/releases/2023-11-02/omo.owl>)
-Annotation(owl:versionInfo "2024-08-09")
+<http://purl.obolibrary.org/obo/omrse/releases/2025-03-26/imports/omo_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/omo/releases/2024-11-13/omo.owl>)
+Annotation(owl:versionInfo "2025-03-26")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000027>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000030>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))
@@ -108,6 +107,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0003009>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0003010>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0003011>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0003012>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OMO_0004000>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/coverage>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
@@ -130,6 +130,7 @@ Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#Syn
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#created_by>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#creation_date>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>))
@@ -634,6 +635,15 @@ AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.o
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0003012> "acronym")
 SubAnnotationPropertyOf(<http://purl.obolibrary.org/obo/OMO_0003012> <http://www.geneontology.org/formats/oboInOwl#SynonymTypeProperty>)
 
+# Annotation Property: <http://purl.obolibrary.org/obo/OMO_0004000> (has symbol)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OMO_0004000> "A serial number such as \"12324X\"; a stop sign; a written proper name such as \"OBI")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OMO_0004000> "An information content entity that is a mark(s) or character(s) used as a conventional representation of another entity.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/OMO_0004000> <https://github.com/information-artifact-ontology/ontology-metadata/issues/144>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/OMO_0004000> <https://orcid.org/0000-0002-6523-4866>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://purl.obolibrary.org/obo/OMO_0004000> "2024-03-25"^^xsd:date)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OMO_0004000> "has symbol")
+
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> (has broad synonym)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "An alternative label for a class or property which has a more general meaning than the preferred name/primary label.")
@@ -642,6 +652,15 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://www.gen
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "has broad synonym"@en)
 AnnotationAssertion(rdfs:seeAlso <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "https://github.com/information-artifact-ontology/ontology-metadata/issues/18")
 SubAnnotationPropertyOf(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/IAO_0000118>)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasDbXref> (has cross-reference)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) \"NCIT:C41009\"^^xsd:string")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://github.com/information-artifact-ontology/ontology-metadata/issues/123>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://orcid.org/0000-0002-7356-1779>)
+AnnotationAssertion(<http://purl.org/dc/terms/created> <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "2024-03-18"^^xsd:date)
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasDbXref> "has cross-reference")
 
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (has exact synonym)
 
@@ -686,7 +705,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000027> <http://purl.obolibrary.
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000030> "information content entity"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000030> "information content entity"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000030> <http://purl.obolibrary.org/obo/BFO_0000031>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000078> (curation status specification)
 

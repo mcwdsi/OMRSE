@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/obi_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2024-08-09/imports/obi_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2024-06-10/obi.owl>)
-Annotation(owl:versionInfo "2024-08-09")
+<http://purl.obolibrary.org/obo/omrse/releases/2025-03-26/imports/obi_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/obi/2025-03-06/obi.owl>)
+Annotation(owl:versionInfo "2025-03-26")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000015>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
@@ -51,28 +51,28 @@ Declaration(Datatype(xsd:date))
 #   Object Properties
 ############################
 
-# Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has_specified_output)
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000299> (has specified output)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000299> "has_specified_output")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000299> "has specified output")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000299> "The inverse property of is_specified_output_of"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000299> "The inverse property of is specified output of"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000299> "PERSON: Alan Ruttenberg"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000299> "PERSON: Bjoern Peters")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000299> "PERSON: Larry Hunter")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000299> "PERSON: Melanie Courtot")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000299> "has_specified_output"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000299> "has specified output"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/RO_0000057>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000312>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/OBI_0000299> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
-# Object Property: <http://purl.obolibrary.org/obo/OBI_0000312> (is_specified_output_of)
+# Object Property: <http://purl.obolibrary.org/obo/OBI_0000312> (is specified output of)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000312> "is_specified_output_of")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000312> "is specified output of")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/IAO_0000122>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000312> "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000312> "Alan Ruttenberg"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000312> "PERSON:Bjoern Peters")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000312> "is_specified_output_of"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000312> "is specified output of"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/RO_0000056>)
 ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
@@ -80,7 +80,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000312> <http://purl.ob
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000846> "is member of organization")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000846> <http://purl.obolibrary.org/obo/IAO_0000120>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000846> "Relating a legal person or organization to an organization in the case where the legal person or organization has a role as member of the organization.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000846> "Relating a legal person or organization to an organization in the case where the legal person or organization has a role as member of the organization."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000846> "2009/10/01 Alan Ruttenberg. Barry prefers generic is-member-of. Question of what the range should be. For now organization. Is organization a population? Would the same relation be used to record members of a population")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000846> "JZ: Discussed on May 7, 2012 OBI dev call. Bjoern points out that we need to allow for organizations to be members of organizations. And agreed by the other OBI developers. So, human and organization were specified in 'Domains'. The textual definition was updated based on it.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000846> "Person:Alan Ruttenberg")
@@ -96,7 +96,7 @@ ObjectPropertyRange(<http://purl.obolibrary.org/obo/OBI_0000846> <http://purl.ob
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0001688> "has organization member"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0001688> <http://purl.obolibrary.org/obo/IAO_0000123>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001688> "Relating an organization to a legal person or organization.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0001688> "Relating an organization to a legal person or organization."@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0001688> "See tracker:
 https://sourceforge.net/tracker/index.php?func=detail&aid=3512902&group_id=177891&atid=886178")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0001688> "Person: Jie Zheng")

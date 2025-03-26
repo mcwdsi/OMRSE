@@ -18,20 +18,20 @@ These are the current imports in OMRSE
 | ------ | --- | ---- |
 | ro | http://purl.obolibrary.org/obo/ro.owl | slme |
 | ogms | http://purl.obolibrary.org/obo/ogms.owl | filter |
-| obi | http://purl.obolibrary.org/obo/obi.owl | None |
-| apollo_sv | http://purl.obolibrary.org/obo/apollo_sv.owl | None |
+| obi | http://purl.obolibrary.org/obo/obi.owl | filter |
+| apollo_sv | http://purl.obolibrary.org/obo/apollo_sv.owl | filter |
 | obib | http://purl.obolibrary.org/obo/obib.owl | filter |
-| go | http://purl.obolibrary.org/obo/go.owl | None |
-| oae | http://purl.obolibrary.org/obo/oae.owl | None |
-| pco | http://purl.obolibrary.org/obo/pco.owl | None |
+| go | http://purl.obolibrary.org/obo/go.owl | filter |
+| oae | http://purl.obolibrary.org/obo/oae.owl | filter |
+| pco | http://purl.obolibrary.org/obo/pco.owl | filter |
 | bfo | http://purl.obolibrary.org/obo/bfo.owl | slme |
 | ncbitaxon | http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl | filter |
-| oostt | http://purl.obolibrary.org/obo/oostt.owl | None |
+| oostt | http://purl.obolibrary.org/obo/oostt.owl | filter |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
 | iao | http://purl.obolibrary.org/obo/iao.owl | mirror |
 | d-acts | http://purl.obolibrary.org/obo/iao/d-acts.owl | filter |
-| geo | http://purl.obolibrary.org/obo/geo.owl | None |
-| mf | http://purl.obolibrary.org/obo/mf.owl | None |
+| geo | http://purl.obolibrary.org/obo/geo.owl | filter |
+| mf | http://purl.obolibrary.org/obo/mf.owl | filter |
 
 ## Components
 Components, in contrast to imports, are considered full members of the ontology. This means that any axiom in a component is also included in the ontology base - which means it is considered _native_ to the ontology. While this sounds complicated, consider this: conceptually, no component should be part of more than one ontology. If that seems to be the case, we are most likely talking about an import. Components are often not needed for ontologies, but there are some use cases:

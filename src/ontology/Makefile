@@ -16,7 +16,7 @@
 # 3. [Update repo to latest ODK](update_repo)
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                b702d082982fc2813887ba9432052e4a47f0ea1b41fc62348d450d34d4ef7d1b
+CONFIG_HASH=                27f64f007ebbb553efab5e5d3aabdc8a50c76c50f66fd10ee27af12f4c0f81f1
 
 
 # ----------------------------------------
@@ -407,6 +407,26 @@ $(IMPORTDIR)/ogms_import.owl: $(MIRRORDIR)/ogms.owl $(IMPORTDIR)/ogms_terms_comb
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
 
+## Module for ontology: obi
+
+$(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/obi_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri http://purl.obolibrary.org/obo/OBI_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/obi_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+## Module for ontology: apollo_sv
+
+$(IMPORTDIR)/apollo_sv_import.owl: $(MIRRORDIR)/apollo_sv.owl $(IMPORTDIR)/apollo_sv_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/apollo_sv_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri http://purl.obolibrary.org/obo/APOLLO_SV_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/apollo_sv_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
 ## Module for ontology: obib
 
 $(IMPORTDIR)/obib_import.owl: $(MIRRORDIR)/obib.owl $(IMPORTDIR)/obib_terms_combined.txt
@@ -414,6 +434,36 @@ $(IMPORTDIR)/obib_import.owl: $(MIRRORDIR)/obib.owl $(IMPORTDIR)/obib_terms_comb
     extract -T $(IMPORTDIR)/obib_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
     remove --base-iri http://purl.obolibrary.org/obo/OBIB_ --base-iri http://purl.obolibrary.org/obo/OMIABIS_ --base-iri http://purl.obolibrary.org/obo/BFO_ --axioms external --preserve-structure false --trim false \
 		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/obib_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+## Module for ontology: go
+
+$(IMPORTDIR)/go_import.owl: $(MIRRORDIR)/go.owl $(IMPORTDIR)/go_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/go_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri http://purl.obolibrary.org/obo/GO_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/go_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+## Module for ontology: oae
+
+$(IMPORTDIR)/oae_import.owl: $(MIRRORDIR)/oae.owl $(IMPORTDIR)/oae_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/oae_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri http://purl.obolibrary.org/obo/OAE_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/oae_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+## Module for ontology: pco
+
+$(IMPORTDIR)/pco_import.owl: $(MIRRORDIR)/pco.owl $(IMPORTDIR)/pco_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/pco_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri http://purl.obolibrary.org/obo/PCO_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/pco_terms_combined.txt --select complement \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
 
@@ -432,6 +482,16 @@ $(IMPORTDIR)/ncbitaxon_import.owl: $(MIRRORDIR)/ncbitaxon.owl $(IMPORTDIR)/ncbit
     extract -T $(IMPORTDIR)/ncbitaxon_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
     remove --base-iri http://purl.obolibrary.org/obo/NCBITaxon_ --axioms external --preserve-structure false --trim false \
 		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/ncbitaxon_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+## Module for ontology: oostt
+
+$(IMPORTDIR)/oostt_import.owl: $(MIRRORDIR)/oostt.owl $(IMPORTDIR)/oostt_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/oostt_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri http://purl.obolibrary.org/obo/OOSTT_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/oostt_terms_combined.txt --select complement \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
 
@@ -454,6 +514,26 @@ $(IMPORTDIR)/d-acts_import.owl: $(MIRRORDIR)/d-acts.owl $(IMPORTDIR)/d-acts_term
     extract -T $(IMPORTDIR)/d-acts_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
     remove --base-iri http://purl.obolibrary.org/obo/IAO_ --axioms external --preserve-structure false --trim false \
 		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/d-acts_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+## Module for ontology: geo
+
+$(IMPORTDIR)/geo_import.owl: $(MIRRORDIR)/geo.owl $(IMPORTDIR)/geo_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/geo_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri http://purl.obolibrary.org/obo/GEO_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/geo_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
+		$(ANNOTATE_CONVERT_FILE); fi
+
+## Module for ontology: mf
+
+$(IMPORTDIR)/mf_import.owl: $(MIRRORDIR)/mf.owl $(IMPORTDIR)/mf_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/mf_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+    remove --base-iri http://purl.obolibrary.org/obo/MF_ --axioms external --preserve-structure false --trim false \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/mf_terms_combined.txt --select complement \
 		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru --update ../sparql/postprocess-module.ru \
 		$(ANNOTATE_CONVERT_FILE); fi
 
