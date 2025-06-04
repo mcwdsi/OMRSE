@@ -337,6 +337,7 @@ Declaration(Class(obo:OMRSE_00000293))
 Declaration(Class(obo:OMRSE_00000294))
 Declaration(Class(obo:OMRSE_00000295))
 Declaration(Class(obo:OMRSE_00000296))
+Declaration(Class(obo:OMRSE_00000300))
 Declaration(Class(obo:OMRSE_00000500))
 Declaration(Class(obo:OMRSE_00000501))
 Declaration(Class(obo:OMRSE_00000502))
@@ -793,7 +794,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000013 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000013 "physician"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:OMRSE_00000013 "http://en.wikipedia.org/wiki/Physician"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000013 "physician role"@en)
-SubClassOf(obo:OMRSE_00000013 obo:OMRSE_00000012)
+SubClassOf(obo:OMRSE_00000013 obo:OMRSE_00000300)
 SubClassOf(obo:OMRSE_00000013 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_9606))
 
 # Class: obo:OMRSE_00000014 (nurse role)
@@ -803,7 +804,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000014 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000014 "nurse"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:OMRSE_00000014 "based on: http://en.wikipedia.org/wiki/Nursing"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000014 "nurse role"@en)
-SubClassOf(obo:OMRSE_00000014 obo:OMRSE_00000012)
+SubClassOf(obo:OMRSE_00000014 obo:OMRSE_00000300)
 SubClassOf(obo:OMRSE_00000014 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_9606))
 
 # Class: obo:OMRSE_00000015 (health care provider organization role)
@@ -815,10 +816,11 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000015 "health care provider organiza
 SubClassOf(obo:OMRSE_00000015 obo:OMRSE_00000027)
 SubClassOf(obo:OMRSE_00000015 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OGMS_0000097))
 
-# Class: obo:OMRSE_00000016 (person health care provider role)
+# Class: obo:OMRSE_00000016 (obsolete person health care provider role)
 
-AnnotationAssertion(rdfs:label obo:OMRSE_00000016 "person health care provider role"@en)
-SubClassOf(obo:OMRSE_00000016 obo:OMRSE_00000001)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000016 "obsolete person health care provider role"@en)
+AnnotationAssertion(owl:deprecated obo:OMRSE_00000016 "true"^^xsd:boolean)
+SubClassOf(obo:OMRSE_00000016 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000017 (physician practice)
 
@@ -1706,7 +1708,7 @@ SubClassOf(obo:OMRSE_00000128 oboInOwl:ObsoleteClass)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000129 "A human health care provider role that inheres in a human being that is created by state licensing and that is realized by taking patient histories, performing physical exams, diagnosing illnesses, developing treatment plans, ordering lab tests, prescribing medications, counselling and educating patients, suturing wounds, and assisting in surgery under the supervision of a physician or a surgeon."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000129 "US physician assistant role"@en)
-SubClassOf(obo:OMRSE_00000129 obo:OMRSE_00000012)
+SubClassOf(obo:OMRSE_00000129 obo:OMRSE_00000300)
 SubClassOf(obo:OMRSE_00000129 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_9606))
 
 # Class: obo:OMRSE_00000130 (anesthesiologist role)
@@ -1761,6 +1763,9 @@ SubClassOf(obo:OMRSE_00000138 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000139 (surgeon role)
 
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000139 "A physician role that, if realized, is realized by its bearer using operative manual and instrumental techniques to investigate, treat, or modify a patient's anatomical or physiological state for health, functional, or aesthetic purposes."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000139 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000139 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000139 "surgeon role"@en)
 SubClassOf(obo:OMRSE_00000139 obo:OMRSE_00000013)
 SubClassOf(obo:OMRSE_00000139 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OAE_0000067))
@@ -2727,7 +2732,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000249 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000249 "skilled birth attendant role"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000249 "https://orcid.org/0000-0001-6595-0902")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000249 "birth attendant role"@en)
-SubClassOf(obo:OMRSE_00000249 obo:OMRSE_00000012)
+SubClassOf(obo:OMRSE_00000249 obo:OMRSE_00000300)
 
 # Class: obo:OMRSE_00000250 (linguistic competence information content entity)
 
@@ -3113,6 +3118,16 @@ AnnotationAssertion(terms:contributor obo:OMRSE_00000296 <https://orcid.org/0000
 AnnotationAssertion(rdfs:label obo:OMRSE_00000296 "gender identity"@en)
 SubClassOf(obo:OMRSE_00000296 obo:OMRSE_00000278)
 SubClassOf(obo:OMRSE_00000296 ObjectSomeValuesFrom(obo:RO_0000059 ObjectIntersectionOf(obo:BFO_0000031 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:IAO_0000136 obo:NCBITaxon_9606) ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000291)))))
+
+# Class: obo:OMRSE_00000300 (institutional health care provider role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000300 "A human role within an organization that itself bears a healthcare provider organization role."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000300 "Matthew Diller"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000300 "human role within a healthcare organization"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000300 "Colbie Reed"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000300 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000300 "institutional health care provider role"@en)
+SubClassOf(obo:OMRSE_00000300 obo:OMRSE_00000086)
 
 # Class: obo:OMRSE_00000500 (job role data item)
 
