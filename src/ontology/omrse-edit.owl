@@ -756,19 +756,18 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000009 "female gender role"@en)
 SubClassOf(obo:OMRSE_00000009 obo:OMRSE_00000007)
 SubClassOf(obo:OMRSE_00000009 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0100026) ObjectAllValuesFrom(obo:RO_0000052 obo:OBI_0100026)))
 
-# Class: obo:OMRSE_00000010 (human health care role)
+# Class: obo:OMRSE_00000010 (health care role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000010 "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000010 "Mathias Brochhausen")
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000010 "William R. Hogan"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000010 "health care role"@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_00000010 "human health care role"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000010 "health care role"@en)
 SubClassOf(obo:OMRSE_00000010 obo:OMRSE_00002072)
 SubClassOf(obo:OMRSE_00000010 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OGMS_0000097))
 
 # Class: obo:OMRSE_00000011 (patient role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000011 "A role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000011 "A health care role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000011 "Amanda Hicks"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000011 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000011 "patient"@en)
@@ -780,7 +779,7 @@ SubClassOf(obo:OMRSE_00000011 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_010002
 
 # Class: obo:OMRSE_00000012 (health care provider role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000012 "A human health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000012 "A health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000012 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000012 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000012 "health care provider role"@en)
@@ -1242,7 +1241,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:OMRSE_00000066 "The following definition
 
 \"A trauma patient who is under the age of 15 years.\""@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000066 "pediatric trauma patient role"@en)
-SubClassOf(obo:OMRSE_00000066 obo:OMRSE_00000030)
+SubClassOf(obo:OMRSE_00000066 obo:OMRSE_00000073)
 
 # Class: obo:OMRSE_00000067 (injured patient role)
 
@@ -1828,7 +1827,7 @@ SubClassOf(obo:OMRSE_00000146 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:BFO_
 
 # Class: obo:OMRSE_00000147 (pediatric surgeon role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000147 "A surgeon role borne by a human being and that, if realized, is realized by its bearer using operative manual and instrumental techniques on preadult patients to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000147 "A surgeon role that, if realized, is realized by its bearer by performing procedures on a child."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000147 "Amanda Hicks")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000147 "pediatric surgeon role"@en)
 SubClassOf(obo:OMRSE_00000147 obo:OMRSE_00000139)
