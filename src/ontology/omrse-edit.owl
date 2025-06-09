@@ -3128,7 +3128,7 @@ SubClassOf(obo:OMRSE_00000296 ObjectSomeValuesFrom(obo:RO_0000059 ObjectIntersec
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000297 "A social categorization scheme based on the social identities assumed as a result of a person's citizenship of a country."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000297 "ORCID: 0000-0002-5039-2052"@en)
-AnnotationAssertion(dc:contributor obo:OMRSE_00000297 "https://orcid.org/0000-0002-5039-2052"@en)
+AnnotationAssertion(terms:contributor obo:OMRSE_00000297 "https://orcid.org/0000-0002-5039-2052"@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000297 "A person may be a citizen of multiple countries at once, and a person's citizenship may change over time."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000297 "nationality categorization scheme"@en)
 SubClassOf(obo:OMRSE_00000297 obo:OMRSE_00000265)
@@ -3137,7 +3137,7 @@ SubClassOf(obo:OMRSE_00000297 obo:OMRSE_00000265)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000298 "A social category data item for which the social category is a nationality category."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000298 "ORCID: 0000-0002-5039-2052"@en)
-AnnotationAssertion(dc:contributor obo:OMRSE_00000298 "https://orcid.org/0000-0002-5039-2052"@en)
+AnnotationAssertion(terms:contributor obo:OMRSE_00000298 "https://orcid.org/0000-0002-5039-2052"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000298 "nationality category data item"@en)
 SubClassOf(obo:OMRSE_00000298 obo:OMRSE_00000292)
 SubClassOf(obo:OMRSE_00000298 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000299))
