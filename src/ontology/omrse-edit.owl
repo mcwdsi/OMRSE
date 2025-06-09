@@ -3138,8 +3138,12 @@ SubClassOf(obo:OMRSE_00000297 ObjectSomeValuesFrom(obo:OMRSE_00000264 obo:OMRSE_
 
 # Class: obo:OMRSE_00000298 (nationality category data item)
 
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000298 "A social category data item for which the social category is a nationality category."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000298 "ORCID: 0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000298 "https://orcid.org/0000-0002-5039-2052"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000298 "nationality category data item"@en)
 SubClassOf(obo:OMRSE_00000298 obo:OMRSE_00000292)
+SubClassOf(obo:OMRSE_00000298 ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000297))
 
 # Class: obo:OMRSE_00000299 (nationality categorization scheme)
 
