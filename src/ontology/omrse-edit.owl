@@ -1723,8 +1723,7 @@ SubClassOf(obo:OMRSE_00000130 obo:OMRSE_00000013)
 
 AnnotationAssertion(rdfs:label obo:OMRSE_00000131 "obsolete OMB racial identification process"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000131 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000131 obo:OMRSE_00000099)
-SubClassOf(obo:OMRSE_00000131 ObjectSomeValuesFrom(obo:OBI_0000299 obo:OMRSE_00000185))
+SubClassOf(obo:OMRSE_00000131 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000132 (obsolete identity datum)
 
@@ -2285,7 +2284,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000206 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000206 "OMB dichotomizes ethnicity into Hispanic or Latino and Not Hispanic or Latino, and ignores all other forms of ethnicity."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000206 "obsolete OMB ethnic identity information content entity"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000206 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000206 obo:OMRSE_00000205)
+SubClassOf(obo:OMRSE_00000206 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000207 (obsolete OMB Hispanic or Latino identity information content entity)
 
@@ -2299,7 +2298,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000207 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000207 "It comprehends people of Portuguese culture or origin in Brazil."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000207 "obsolete OMB Hispanic or Latino identity information content entity"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000207 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000207 obo:OMRSE_00000206)
+SubClassOf(obo:OMRSE_00000207 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000208 (obsolete OMB not Hispanic or Latino identity information content entity)
 
@@ -2312,7 +2311,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000208 "Sarah Bost"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000208 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000208 "obsolete OMB not Hispanic or Latino identity information content entity"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000208 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000208 obo:OMRSE_00000206)
+SubClassOf(obo:OMRSE_00000208 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000209 (gender identity information content entity)
 
@@ -2385,7 +2384,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000214 "Sarah Bost"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000214 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000214 "obsolete OMB racial identity information content entity"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000214 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000214 obo:OMRSE_00000213)
+SubClassOf(obo:OMRSE_00000214 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000215 (obsolete OMB American Indian or Alaska Native identity information content entity)
 
@@ -2399,7 +2398,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000215 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000215 "This definition corresponds to that used by OMB. It is worth noting that the OMB definition from which this one is derived is problematic, in that it implies that one's race cannot be Native American or Alaskan Native unless one maintains tribal affiliations or community attachment."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000215 "obsolete OMB American Indian or Alaska Native identity information content entity"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000215 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000215 obo:OMRSE_00000214)
+SubClassOf(obo:OMRSE_00000215 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000216 (obsolete OMB Asian identity information content entity)
 
@@ -2412,7 +2411,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000216 "Sarah Bost"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000216 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000216 "obsolete OMB Asian identity information content entity"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000216 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000216 obo:OMRSE_00000214)
+SubClassOf(obo:OMRSE_00000216 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000217 (obsolete OMB black or African American identity information content entity)
 
@@ -2425,7 +2424,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000217 "Sarah Bost"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000217 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000217 "obsolete OMB black or African American identity information content entity"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000217 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000217 obo:OMRSE_00000214)
+SubClassOf(obo:OMRSE_00000217 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000218 (obsolete OMB Native Hawaiian or other Pacific Islander identity information content entity)
 
@@ -2438,7 +2437,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000218 "Sarah Bost"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000218 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000218 "obsolete OMB Native Hawaiian or other Pacific Islander identity information content entity"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000218 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000218 obo:OMRSE_00000214)
+SubClassOf(obo:OMRSE_00000218 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000219 (obsolete OMB white identity information content entity)
 
@@ -2451,7 +2450,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000219 "Sarah Bost"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000219 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000219 "obsolete OMB white identity information content entity"@en)
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000219 "true"^^xsd:boolean)
-SubClassOf(obo:OMRSE_00000219 obo:OMRSE_00000214)
+SubClassOf(obo:OMRSE_00000219 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000220 (sexual orientation identity information content entity)
 
