@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2025-03-26/omrse-full.owl
+data-version: omrse/releases/2025-06-30/omrse-full.owl
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
 subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
@@ -48,7 +48,7 @@ property_value: dc:creator "Mathias Brochhausen" xsd:string
 property_value: dc:creator "Shariq Tariq" xsd:string
 property_value: dc:creator "Swetha Garimalla" xsd:string
 property_value: dc:creator "William Hogan" xsd:string
-property_value: owl:versionInfo "2025-03-26" xsd:string
+property_value: owl:versionInfo "2025-06-30" xsd:string
 property_value: terms:creator "https://orcid.org/0000-0002-9881-1017" xsd:anyURI
 property_value: terms:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
@@ -3710,20 +3710,19 @@ property_value: IAO:0000118 "female gender" xsd:string
 
 [Term]
 id: OMRSE:00000010
-name: human health care role
+name: health care role
 def: "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis." []
 is_a: OMRSE:00002072 ! role in human social processes
 relationship: BFO:0000054 OGMS:0000097 ! realized in health care encounter
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
-property_value: IAO:0000118 "health care role" xsd:string
 
 [Term]
 id: OMRSE:00000011
 name: patient role
-def: "A role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter." []
+def: "A health care role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter." []
 comment: In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov't entities, with a person endowed by the gov't with certain certifications.
-is_a: OMRSE:00000010 ! human health care role
+is_a: OMRSE:00000010 ! health care role
 is_a: OMRSE:00000049 ! organism role
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
@@ -3733,8 +3732,8 @@ property_value: IAO:0000119 "CAFE domain expert working group." xsd:string
 [Term]
 id: OMRSE:00000012
 name: health care provider role
-def: "A human health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism." []
-is_a: OMRSE:00000010 ! human health care role
+def: "A health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism." []
+is_a: OMRSE:00000010 ! health care role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -3742,8 +3741,7 @@ property_value: IAO:0000117 "William R. Hogan" xsd:string
 id: OMRSE:00000013
 name: physician role
 def: "A health care role borne by a human being and realized by promoting, maintaining or restoring human health through the study, diagnosis, and treatment of disease, injury and other physical and mental impairments." []
-is_a: OMRSE:00000012 ! health care provider role
-is_a: OMRSE:00000050 ! Homo sapiens role
+is_a: OMRSE:00000300 ! institutional health care provider role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "physician" xsd:string
 property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Physician" xsd:string
@@ -3752,8 +3750,7 @@ property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Physician" xsd:string
 id: OMRSE:00000014
 name: nurse role
 def: "A health care role borne by a human being and realized by the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life." []
-is_a: OMRSE:00000012 ! health care provider role
-is_a: OMRSE:00000050 ! Homo sapiens role
+is_a: OMRSE:00000300 ! institutional health care provider role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "nurse" xsd:string
 property_value: IAO:0000119 "based on: http://en.wikipedia.org/wiki/Nursing" xsd:string
@@ -3769,8 +3766,9 @@ property_value: dc:creator "Amanda Hicks" xsd:string
 
 [Term]
 id: OMRSE:00000016
-name: person health care provider role
-is_a: OMRSE:00000001 ! human social role
+name: obsolete person health care provider role
+is_a: oboInOwl:ObsoleteClass
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000017
@@ -4182,7 +4180,7 @@ property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 id: OMRSE:00000066
 name: pediatric trauma patient role
 def: "A trauma patient role that inheres in a homo sapiens who is under the age of 15 years." []
-is_a: OMRSE:00000030 ! human patient role
+is_a: OMRSE:00000073 ! trauma patient role
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000118 "pediatric trauma patient" xsd:string
 property_value: IAO:0000119 "The following definition for 'pediatric trauma patient' was approved by the CAFE team of domain experts (experts in trauma care) May 29, 2015.\n\n\"A trauma patient who is under the age of 15 years.\"" xsd:string
@@ -4619,8 +4617,7 @@ replaced_by: OMB not Hispanic or Latino identity information content entity
 id: OMRSE:00000129
 name: US physician assistant role
 def: "A human health care provider role that inheres in a human being that is created by state licensing and that is realized by taking patient histories, performing physical exams, diagnosing illnesses, developing treatment plans, ordering lab tests, prescribing medications, counselling and educating patients, suturing wounds, and assisting in surgery under the supervision of a physician or a surgeon." []
-is_a: OMRSE:00000012 ! health care provider role
-is_a: OMRSE:00000050 ! Homo sapiens role
+is_a: OMRSE:00000300 ! institutional health care provider role
 
 [Term]
 id: OMRSE:00000130
@@ -4630,9 +4627,9 @@ is_a: OMRSE:00000013 ! physician role
 
 [Term]
 id: OMRSE:00000131
-name: OMB racial identification process
-is_a: OMRSE:00000099 ! racial identification process
-relationship: OBI:0000299 OMRSE:00000185 ! has_specified_output obsolete OMB racial identity datum
+name: obsolete OMB racial identification process
+is_a: oboInOwl:ObsoleteClass
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000132
@@ -4674,8 +4671,11 @@ replaced_by: female gender identity information content entity
 [Term]
 id: OMRSE:00000139
 name: surgeon role
+def: "A physician role that, if realized, is realized by its bearer using operative manual and instrumental techniques to investigate, treat, or modify a patient's anatomical or physiological state for health, functional, or aesthetic purposes." []
 is_a: OMRSE:00000013 ! physician role
 relationship: BFO:0000054 OAE:0000067 ! realized in surgery
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
 id: OMRSE:00000140
@@ -4746,7 +4746,7 @@ relationship: BFO:0000055 OMRSE:00000087 ! realizes employer role
 [Term]
 id: OMRSE:00000147
 name: pediatric surgeon role
-def: "A surgeon role borne by a human being and that, if realized, is realized by its bearer using operative manual and instrumental techniques on preadult patients to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas." []
+def: "A surgeon role that, if realized, is realized by its bearer by performing procedures on a child." []
 is_a: OMRSE:00000139 ! surgeon role
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
@@ -5183,41 +5183,44 @@ property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
 id: OMRSE:00000206
-name: OMB ethnic identity information content entity
+name: obsolete OMB ethnic identity information content entity
 def: "An ethnic identity information content entity that uses OMB terminology for ethnicity or terminology that is strictly mapped onto the OMB ethnicity terms." []
 comment: OMB dichotomizes ethnicity into Hispanic or Latino and Not Hispanic or Latino, and ignores all other forms of ethnicity.
-is_a: OMRSE:00000205 ! ethnic identity information content entity
+is_a: oboInOwl:ObsoleteClass
 property_value: dc:contributor "Amanda Hicks" xsd:string
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: dc:contributor "Matthew Diller" xsd:string
 property_value: dc:contributor "Sarah Bost" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000207
-name: OMB Hispanic or Latino identity information content entity
+name: obsolete OMB Hispanic or Latino identity information content entity
 def: "An OMB ethnic identity information content entity that is about some person's identifying as Hispanic or Latino, which are intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race." []
 comment: It comprehends people of Portuguese culture or origin in Brazil.
-is_a: OMRSE:00000206 ! OMB ethnic identity information content entity
+is_a: oboInOwl:ObsoleteClass
 property_value: dc:contributor "Amanda Hicks" xsd:string
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: dc:contributor "Matthew Diller" xsd:string
 property_value: dc:contributor "Sarah Bost" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000208
-name: OMB not Hispanic or Latino identity information content entity
+name: obsolete OMB not Hispanic or Latino identity information content entity
 def: "An OMB ethnic identity information content entity that is about some person's identifying as neither Hispanic nor Latino, which are intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race." []
-is_a: OMRSE:00000206 ! OMB ethnic identity information content entity
+is_a: oboInOwl:ObsoleteClass
 property_value: dc:contributor "Amanda Hicks" xsd:string
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: dc:contributor "Matthew Diller" xsd:string
 property_value: dc:contributor "Sarah Bost" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000209
@@ -5281,76 +5284,82 @@ property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
 id: OMRSE:00000214
-name: OMB racial identity information content entity
+name: obsolete OMB racial identity information content entity
 def: "A racial identity information content entity that uses OMB terminology and definitions for race or terminology that is strictly mapped onto the OMB race terms." []
-is_a: OMRSE:00000213 ! racial identity information content entity
+is_a: oboInOwl:ObsoleteClass
 property_value: dc:contributor "Amanda Hicks" xsd:string
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: dc:contributor "Matthew Diller" xsd:string
 property_value: dc:contributor "Sarah Bost" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000215
-name: OMB American Indian or Alaska Native identity information content entity
+name: obsolete OMB American Indian or Alaska Native identity information content entity
 def: "An OMB racial identity information content entity that is about some person's identifying as American Indian or Alaska Native, which is intended to mean having origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment." []
 comment: This definition corresponds to that used by OMB. It is worth noting that the OMB definition from which this one is derived is problematic, in that it implies that one's race cannot be Native American or Alaskan Native unless one maintains tribal affiliations or community attachment.
-is_a: OMRSE:00000214 ! OMB racial identity information content entity
+is_a: oboInOwl:ObsoleteClass
 property_value: dc:contributor "Amanda Hicks" xsd:string
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: dc:contributor "Matthew Diller" xsd:string
 property_value: dc:contributor "Sarah Bost" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000216
-name: OMB Asian identity information content entity
+name: obsolete OMB Asian identity information content entity
 def: "An OMB racial identity information content entity that is about some person's identifying as Asian, which is intended to mean having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent." []
-is_a: OMRSE:00000214 ! OMB racial identity information content entity
+is_a: oboInOwl:ObsoleteClass
 property_value: dc:contributor "Amanda Hicks" xsd:string
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: dc:contributor "Matthew Diller" xsd:string
 property_value: dc:contributor "Sarah Bost" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000217
-name: OMB black or African American identity information content entity
+name: obsolete OMB black or African American identity information content entity
 def: "An OMB racial identity information content entity that is about some person's identifying as black or African American which is intended to mean having origins in any of the black racial groups of Africa." []
-is_a: OMRSE:00000214 ! OMB racial identity information content entity
+is_a: oboInOwl:ObsoleteClass
 property_value: dc:contributor "Amanda Hicks" xsd:string
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: dc:contributor "Matthew Diller" xsd:string
 property_value: dc:contributor "Sarah Bost" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000218
-name: OMB Native Hawaiian or other Pacific Islander identity information content entity
+name: obsolete OMB Native Hawaiian or other Pacific Islander identity information content entity
 def: "An OMB racial identity information content entity that is about some person's identifying as Native Hawaiian or other Pacific Islander, which is intended to mean having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands." []
-is_a: OMRSE:00000214 ! OMB racial identity information content entity
+is_a: oboInOwl:ObsoleteClass
 property_value: dc:contributor "Amanda Hicks" xsd:string
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: dc:contributor "Matthew Diller" xsd:string
 property_value: dc:contributor "Sarah Bost" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000219
-name: OMB white identity information content entity
+name: obsolete OMB white identity information content entity
 def: "An OMB racial identity information content entity that is about some person's identifying as white which is intended to mean having origins in any of the original peoples of Europe, the Middle East, or North Africa." []
-is_a: OMRSE:00000214 ! OMB racial identity information content entity
+is_a: oboInOwl:ObsoleteClass
 property_value: dc:contributor "Amanda Hicks" xsd:string
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: dc:contributor "Matthew Diller" xsd:string
 property_value: dc:contributor "Sarah Bost" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000220
@@ -5639,7 +5648,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000249
 name: birth attendant role
 def: "A health care provider role that is realized in maintaining the health of a human being during their pregnancy and both them and the neonate during labor, delivery, and postpartum." []
-is_a: OMRSE:00000012 ! health care provider role
+is_a: OMRSE:00000300 ! institutional health care provider role
 property_value: dc:contributor "https://orcid.org/0000-0001-6595-0902" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 property_value: IAO:0000118 "skilled birth attendant role" xsd:string
@@ -5797,6 +5806,7 @@ relationship: OMRSE:00000264 OMRSE:00000268 ! demarcated by racial categorizatio
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "racial group" xsd:string
 
 [Term]
 id: OMRSE:00000270
@@ -5816,6 +5826,7 @@ relationship: OMRSE:00000264 OMRSE:00000270 ! demarcated by ethnic categorizatio
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "ethnic group" xsd:string
 
 [Term]
 id: OMRSE:00000274
@@ -5973,6 +5984,7 @@ def: "A social category demarcated by some gender categorization scheme." []
 is_a: OMRSE:00000267 ! social category
 relationship: OMRSE:00000264 OMRSE:00000290 ! demarcated by gender categorization scheme
 property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: IAO:0000118 "gender group" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
 
 [Term]
@@ -6019,6 +6031,44 @@ def: "A social identity for which the category is a gender category." []
 is_a: OMRSE:00000278 ! social identity
 property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
+
+[Term]
+id: OMRSE:00000297
+name: nationality categorization scheme
+def: "A social categorization scheme based on the social identities assumed as a result of a person's citizenship of a country." []
+comment: A person may be a citizen of multiple countries at once, and a person's citizenship may change over time.
+is_a: OMRSE:00000265 ! social categorization scheme
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0002-5039-2052
+
+[Term]
+id: OMRSE:00000298
+name: nationality category data item
+def: "A social category data item for which the social category is a nationality category." []
+is_a: OMRSE:00000292 ! social category data item
+relationship: IAO:0000136 OMRSE:00000299 ! is about nationality category
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0002-5039-2052
+
+[Term]
+id: OMRSE:00000299
+name: nationality category
+def: "A social category demarcated by some nationality categorization scheme." []
+is_a: OMRSE:00000267 ! social category
+relationship: OMRSE:00000264 OMRSE:00000297 ! demarcated by nationality categorization scheme
+property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
+property_value: IAO:0000118 "nationality group" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0002-5039-2052
+
+[Term]
+id: OMRSE:00000300
+name: institutional health care provider role
+def: "A human role within an organization that itself bears a healthcare provider organization role." []
+is_a: OMRSE:00000086 ! human role within an organization
+property_value: dc:contributor "Colbie Reed" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "human role within a healthcare organization" xsd:string
 
 [Term]
 id: OMRSE:00000500

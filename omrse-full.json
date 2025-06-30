@@ -70,9 +70,9 @@
         "val" : "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-03-26"
+        "val" : "2025-06-30"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2025-03-26/omrse-full.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2025-06-30/omrse-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
@@ -8124,7 +8124,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000010",
-      "lbl" : "human health care role",
+      "lbl" : "health care role",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -8136,9 +8136,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "health care role"
         } ]
       }
     }, {
@@ -8147,7 +8144,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter."
+          "val" : "A health care role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter."
         },
         "comments" : [ "In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov't entities, with a person endowed by the gov't with certain certifications." ],
         "basicPropertyValues" : [ {
@@ -8170,7 +8167,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A human health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism."
+          "val" : "A health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -8236,8 +8233,11 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000016",
-      "lbl" : "person health care provider role",
-      "type" : "CLASS"
+      "lbl" : "obsolete person health care provider role",
+      "type" : "CLASS",
+      "meta" : {
+        "deprecated" : true
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000017",
       "lbl" : "physician practice",
@@ -9605,8 +9605,11 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000131",
-      "lbl" : "OMB racial identification process",
-      "type" : "CLASS"
+      "lbl" : "obsolete OMB racial identification process",
+      "type" : "CLASS",
+      "meta" : {
+        "deprecated" : true
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000132",
       "lbl" : "obsolete identity datum",
@@ -9675,7 +9678,19 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000139",
       "lbl" : "surgeon role",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A physician role that, if realized, is realized by its bearer using operative manual and instrumental techniques to investigate, treat, or modify a patient's anatomical or physiological state for health, functional, or aesthetic purposes."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000140",
       "lbl" : "neurosurgeon role",
@@ -9784,7 +9799,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A surgeon role borne by a human being and that, if realized, is realized by its bearer using operative manual and instrumental techniques on preadult patients to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas."
+          "val" : "A surgeon role that, if realized, is realized by its bearer by performing procedures on a child."
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -10439,7 +10454,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000206",
-      "lbl" : "OMB ethnic identity information content entity",
+      "lbl" : "obsolete OMB ethnic identity information content entity",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -10464,11 +10479,12 @@
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "William R. Hogan"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000207",
-      "lbl" : "OMB Hispanic or Latino identity information content entity",
+      "lbl" : "obsolete OMB Hispanic or Latino identity information content entity",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -10493,11 +10509,12 @@
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "William R. Hogan"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000208",
-      "lbl" : "OMB not Hispanic or Latino identity information content entity",
+      "lbl" : "obsolete OMB not Hispanic or Latino identity information content entity",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -10521,7 +10538,8 @@
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "William R. Hogan"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000209",
@@ -10665,7 +10683,7 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000214",
-      "lbl" : "OMB racial identity information content entity",
+      "lbl" : "obsolete OMB racial identity information content entity",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -10689,11 +10707,12 @@
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "William R. Hogan"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000215",
-      "lbl" : "OMB American Indian or Alaska Native identity information content entity",
+      "lbl" : "obsolete OMB American Indian or Alaska Native identity information content entity",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -10718,11 +10737,12 @@
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "William R. Hogan"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000216",
-      "lbl" : "OMB Asian identity information content entity",
+      "lbl" : "obsolete OMB Asian identity information content entity",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -10746,11 +10766,12 @@
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "William R. Hogan"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000217",
-      "lbl" : "OMB black or African American identity information content entity",
+      "lbl" : "obsolete OMB black or African American identity information content entity",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -10774,11 +10795,12 @@
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "William R. Hogan"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000218",
-      "lbl" : "OMB Native Hawaiian or other Pacific Islander identity information content entity",
+      "lbl" : "obsolete OMB Native Hawaiian or other Pacific Islander identity information content entity",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -10802,11 +10824,12 @@
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "William R. Hogan"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000219",
-      "lbl" : "OMB white identity information content entity",
+      "lbl" : "obsolete OMB white identity information content entity",
       "type" : "CLASS",
       "meta" : {
         "definition" : {
@@ -10830,7 +10853,8 @@
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "William R. Hogan"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000220",
@@ -11777,6 +11801,9 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Matthew Diller"
         }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "racial group"
+        }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "S. Clint Dowland"
         }, {
@@ -11814,6 +11841,9 @@
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "ethnic group"
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "S. Clint Dowland"
@@ -12156,6 +12186,9 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "ORCID: 0000-0002-5039-2052"
         }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "gender group"
+        }, {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0003-1909-9269"
         } ]
@@ -12238,6 +12271,80 @@
         }, {
           "pred" : "http://purl.org/dc/terms/contributor",
           "val" : "https://orcid.org/0000-0003-1909-9269"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000297",
+      "lbl" : "nationality categorization scheme",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social categorization scheme based on the social identities assumed as a result of a person's citizenship of a country."
+        },
+        "comments" : [ "A person may be a citizen of multiple countries at once, and a person's citizenship may change over time." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-5039-2052"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000298",
+      "lbl" : "nationality category data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social category data item for which the social category is a nationality category."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-5039-2052"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000299",
+      "lbl" : "nationality category",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A social category demarcated by some nationality categorization scheme."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "ORCID: 0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "nationality group"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0002-5039-2052"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000300",
+      "lbl" : "institutional health care provider role",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A human role within an organization that itself bears a healthcare provider organization role."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "human role within a healthcare organization"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Colbie Reed"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
         } ]
       }
     }, {
@@ -28485,19 +28592,11 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000013",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000012"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000013",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000050"
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000300"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000014",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000012"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000014",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000050"
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000300"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000015",
       "pred" : "is_a",
@@ -28509,7 +28608,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000016",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000001"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000017",
       "pred" : "is_a",
@@ -28763,7 +28862,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000066",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000030"
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000073"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000067",
       "pred" : "is_a",
@@ -29079,11 +29178,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000129",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000012"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000129",
-      "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000050"
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000300"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000130",
       "pred" : "is_a",
@@ -29091,11 +29186,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000131",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000099"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000131",
-      "pred" : "http://purl.obolibrary.org/obo/OBI_0000299",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000185"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000132",
       "pred" : "is_a",
@@ -29479,15 +29570,15 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000206",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000205"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000207",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000206"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000208",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000206"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000209",
       "pred" : "is_a",
@@ -29511,27 +29602,27 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000214",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000213"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000215",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000214"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000216",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000214"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000217",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000214"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000218",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000214"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000219",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000214"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000220",
       "pred" : "is_a",
@@ -29647,7 +29738,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000249",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000012"
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000300"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000250",
       "pred" : "is_a",
@@ -29848,6 +29939,30 @@
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000296",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000278"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000297",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000265"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000298",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000292"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000298",
+      "pred" : "http://purl.obolibrary.org/obo/IAO_0000136",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000299"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000299",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000267"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000299",
+      "pred" : "http://purl.obolibrary.org/obo/OMRSE_00000264",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000297"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000300",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000086"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000500",
       "pred" : "is_a",
