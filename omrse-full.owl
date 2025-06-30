@@ -20,7 +20,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:language-individuals="http://purl.obolibrary.org/obo/omrse/language-individuals/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2025-03-26/omrse-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2025-06-30/omrse-full.owl"/>
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
         <dc:contributor xml:lang="en">Daniel Welch</dc:contributor>
@@ -43,7 +43,7 @@
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title xml:lang="en">Ontology for Modeling and Representation of Social Entities</terms:title>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
-        <owl:versionInfo>2025-03-26</owl:versionInfo>
+        <owl:versionInfo>2025-06-30</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -11376,8 +11376,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
         <obo:IAO_0000115 xml:lang="en">A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">health care role</obo:IAO_0000118>
-        <rdfs:label xml:lang="en">human health care role</rdfs:label>
+        <rdfs:label xml:lang="en">health care role</rdfs:label>
     </owl:Class>
     
 
@@ -11387,7 +11386,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000010"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000049"/>
-        <obo:IAO_0000115 xml:lang="en">A role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A health care role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">patient</obo:IAO_0000118>
@@ -11430,7 +11429,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A human health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <rdfs:label xml:lang="en">health care provider role</rdfs:label>
@@ -11441,8 +11440,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000013 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000012"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000050"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000300"/>
         <obo:IAO_0000115 xml:lang="en">A health care role borne by a human being and realized by promoting, maintaining or restoring human health through the study, diagnosis, and treatment of disease, injury and other physical and mental impairments.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">physician</obo:IAO_0000118>
@@ -11455,8 +11453,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000014 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000012"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000050"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000300"/>
         <obo:IAO_0000115 xml:lang="en">A health care role borne by a human being and realized by the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">nurse</obo:IAO_0000118>
@@ -11487,8 +11484,9 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000001"/>
-        <rdfs:label xml:lang="en">person health care provider role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:label xml:lang="en">obsolete person health care provider role</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -12432,7 +12430,7 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000066 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000066">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000073"/>
         <obo:IAO_0000115 xml:lang="en">A trauma patient role that inheres in a homo sapiens who is under the age of 15 years.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">pediatric trauma patient</obo:IAO_0000118>
@@ -13709,8 +13707,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000129 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000129">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000012"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000050"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000300"/>
         <obo:IAO_0000115 xml:lang="en">A human health care provider role that inheres in a human being that is created by state licensing and that is realized by taking patient histories, performing physical exams, diagnosing illnesses, developing treatment plans, ordering lab tests, prescribing medications, counselling and educating patients, suturing wounds, and assisting in surgery under the supervision of a physician or a surgeon.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">US physician assistant role</rdfs:label>
     </owl:Class>
@@ -13730,14 +13727,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000131 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000131">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000099"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000185"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">OMB racial identification process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:label xml:lang="en">obsolete OMB racial identification process</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -13825,6 +13817,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OAE_0000067"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A physician role that, if realized, is realized by its bearer using operative manual and instrumental techniques to investigate, treat, or modify a patient&apos;s anatomical or physiological state for health, functional, or aesthetic purposes.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:label xml:lang="en">surgeon role</rdfs:label>
     </owl:Class>
     
@@ -13982,7 +13977,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000147">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000139"/>
-        <obo:IAO_0000115 xml:lang="en">A surgeon role borne by a human being and that, if realized, is realized by its bearer using operative manual and instrumental techniques on preadult patients to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A surgeon role that, if realized, is realized by its bearer by performing procedures on a child.</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">pediatric surgeon role</rdfs:label>
     </owl:Class>
@@ -14811,7 +14806,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000206 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000206">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000205"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An ethnic identity information content entity that uses OMB terminology for ethnicity or terminology that is strictly mapped onto the OMB ethnicity terms.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
@@ -14820,7 +14815,8 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:comment xml:lang="en">OMB dichotomizes ethnicity into Hispanic or Latino and Not Hispanic or Latino, and ignores all other forms of ethnicity.</rdfs:comment>
-        <rdfs:label xml:lang="en">OMB ethnic identity information content entity</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete OMB ethnic identity information content entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -14828,7 +14824,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000207 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000207">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000206"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An OMB ethnic identity information content entity that is about some person&apos;s identifying as Hispanic or Latino, which are intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
@@ -14837,7 +14833,8 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:comment xml:lang="en">It comprehends people of Portuguese culture or origin in Brazil.</rdfs:comment>
-        <rdfs:label xml:lang="en">OMB Hispanic or Latino identity information content entity</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete OMB Hispanic or Latino identity information content entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -14845,7 +14842,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000208 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000208">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000206"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An OMB ethnic identity information content entity that is about some person&apos;s identifying as neither Hispanic nor Latino, which are intended to mean being of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin, regardless of race.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
@@ -14853,7 +14850,8 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
         <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
-        <rdfs:label xml:lang="en">OMB not Hispanic or Latino identity information content entity</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete OMB not Hispanic or Latino identity information content entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -14941,7 +14939,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000214 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000214">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000213"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">A racial identity information content entity that uses OMB terminology and definitions for race or terminology that is strictly mapped onto the OMB race terms.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
@@ -14949,7 +14947,8 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
         <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
-        <rdfs:label xml:lang="en">OMB racial identity information content entity</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete OMB racial identity information content entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -14957,7 +14956,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000215 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000215">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000214"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An OMB racial identity information content entity that is about some person&apos;s identifying as American Indian or Alaska Native, which is intended to mean having origins in any of the original peoples of North and South America (including Central America), and maintains tribal affiliation or community attachment.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
@@ -14966,7 +14965,8 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:comment xml:lang="en">This definition corresponds to that used by OMB. It is worth noting that the OMB definition from which this one is derived is problematic, in that it implies that one&apos;s race cannot be Native American or Alaskan Native unless one maintains tribal affiliations or community attachment.</rdfs:comment>
-        <rdfs:label xml:lang="en">OMB American Indian or Alaska Native identity information content entity</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete OMB American Indian or Alaska Native identity information content entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -14974,7 +14974,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000216 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000216">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000214"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An OMB racial identity information content entity that is about some person&apos;s identifying as Asian, which is intended to mean having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
@@ -14982,7 +14982,8 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
         <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
-        <rdfs:label xml:lang="en">OMB Asian identity information content entity</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete OMB Asian identity information content entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -14990,7 +14991,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000217 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000217">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000214"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An OMB racial identity information content entity that is about some person&apos;s identifying as black or African American which is intended to mean having origins in any of the black racial groups of Africa.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
@@ -14998,7 +14999,8 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
         <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
-        <rdfs:label xml:lang="en">OMB black or African American identity information content entity</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete OMB black or African American identity information content entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -15006,7 +15008,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000218 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000218">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000214"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An OMB racial identity information content entity that is about some person&apos;s identifying as Native Hawaiian or other Pacific Islander, which is intended to mean having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
@@ -15014,7 +15016,8 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
         <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
-        <rdfs:label xml:lang="en">OMB Native Hawaiian or other Pacific Islander identity information content entity</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete OMB Native Hawaiian or other Pacific Islander identity information content entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -15022,7 +15025,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000219 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000219">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000214"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <obo:IAO_0000115 xml:lang="en">An OMB racial identity information content entity that is about some person&apos;s identifying as white which is intended to mean having origins in any of the original peoples of Europe, the Middle East, or North Africa.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
@@ -15030,7 +15033,8 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
         <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
-        <rdfs:label xml:lang="en">OMB white identity information content entity</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete OMB white identity information content entity</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -15462,7 +15466,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000249 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000249">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000012"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000300"/>
         <obo:IAO_0000115 xml:lang="en">A health care provider role that is realized in maintaining the health of a human being during their pregnancy and both them and the neonate during labor, delivery, and postpartum.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">skilled birth attendant role</obo:IAO_0000118>
@@ -15749,6 +15753,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A social category demarcated by some racial categorization scheme.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">racial group</obo:IAO_0000118>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:label xml:lang="en">racial category</rdfs:label>
@@ -15781,6 +15786,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A social category demarcated by some ethnic categorization scheme.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">ethnic group</obo:IAO_0000118>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:label xml:lang="en">ethnic category</rdfs:label>
@@ -16152,6 +16158,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A social category demarcated by some gender categorization scheme.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">ORCID: 0000-0002-5039-2052</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">gender group</obo:IAO_0000118>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1909-9269"/>
         <rdfs:label xml:lang="en">gender category</rdfs:label>
     </owl:Class>
@@ -16268,6 +16275,70 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">ORCID: 0000-0002-5039-2052</obo:IAO_0000117>
         <terms:contributor rdf:resource="https://orcid.org/0000-0003-1909-9269"/>
         <rdfs:label xml:lang="en">gender identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000297 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000297">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000265"/>
+        <obo:IAO_0000115 xml:lang="en">A social categorization scheme based on the social identities assumed as a result of a person&apos;s citizenship of a country.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ORCID: 0000-0002-5039-2052</obo:IAO_0000117>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-5039-2052"/>
+        <rdfs:comment xml:lang="en">A person may be a citizen of multiple countries at once, and a person&apos;s citizenship may change over time.</rdfs:comment>
+        <rdfs:label xml:lang="en">nationality categorization scheme</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000298 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000298">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000292"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000299"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A social category data item for which the social category is a nationality category.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ORCID: 0000-0002-5039-2052</obo:IAO_0000117>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-5039-2052"/>
+        <rdfs:label xml:lang="en">nationality category data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000299 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000299">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000267"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000264"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000297"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A social category demarcated by some nationality categorization scheme.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">ORCID: 0000-0002-5039-2052</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">nationality group</obo:IAO_0000118>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0002-5039-2052"/>
+        <rdfs:label xml:lang="en">nationality category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000086"/>
+        <obo:IAO_0000115 xml:lang="en">A human role within an organization that itself bears a healthcare provider organization role.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">human role within a healthcare organization</obo:IAO_0000118>
+        <dc:contributor xml:lang="en">Colbie Reed</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">institutional health care provider role</rdfs:label>
     </owl:Class>
     
 
