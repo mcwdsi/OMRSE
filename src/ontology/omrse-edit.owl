@@ -1103,29 +1103,28 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000047 "obsolete supranational entity
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000047 "true"^^xsd:boolean)
 SubClassOf(obo:OMRSE_00000047 oboInOwl:ObsoleteClass)
 
-# Class: obo:OMRSE_00000048 (material entity role)
+# Class: obo:OMRSE_00000048 (obsolete material entity role)
 
-AnnotationAssertion(rdfs:label obo:OMRSE_00000048 "material entity role"@en)
-EquivalentClasses(obo:OMRSE_00000048 ObjectIntersectionOf(obo:BFO_0000023 ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040)))
-SubClassOf(obo:OMRSE_00000048 ObjectAllValuesFrom(obo:RO_0000052 obo:BFO_0000040))
+AnnotationAssertion(rdfs:label obo:OMRSE_00000048 "obsolete material entity role"@en)
+AnnotationAssertion(owl:deprecated obo:OMRSE_00000048 "true"^^xsd:boolean)
+SubClassOf(obo:OMRSE_00000048 oboInOwl:ObsoleteClass)
 
-# Class: obo:OMRSE_00000049 (organism role)
+# Class: obo:OMRSE_00000049 (obsolete organism role)
 
-AnnotationAssertion(rdfs:label obo:OMRSE_00000049 "organism role"@en)
-EquivalentClasses(obo:OMRSE_00000049 ObjectIntersectionOf(obo:OMRSE_00000048 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0100026)))
-SubClassOf(obo:OMRSE_00000049 ObjectAllValuesFrom(obo:RO_0000052 obo:OBI_0100026))
+AnnotationAssertion(rdfs:label obo:OMRSE_00000049 "obsolete organism role"@en)
+AnnotationAssertion(owl:deprecated obo:OMRSE_00000049 "true"^^xsd:boolean)
+SubClassOf(obo:OMRSE_00000049 oboInOwl:ObsoleteClass)
 
-# Class: obo:OMRSE_00000050 (Homo sapiens role)
+# Class: obo:OMRSE_00000050 (obsolete Homo sapiens role)
 
-AnnotationAssertion(rdfs:label obo:OMRSE_00000050 "Homo sapiens role"@en)
-EquivalentClasses(obo:OMRSE_00000050 ObjectIntersectionOf(obo:OMRSE_00000049 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_9606)))
-SubClassOf(obo:OMRSE_00000050 ObjectAllValuesFrom(obo:RO_0000052 obo:NCBITaxon_9606))
+AnnotationAssertion(rdfs:label obo:OMRSE_00000050 "obsolete Homo sapiens role"@en)
+AnnotationAssertion(owl:deprecated obo:OMRSE_00000050 "true"^^xsd:boolean)
+SubClassOf(obo:OMRSE_00000050 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000051 (organization role)
 
 AnnotationAssertion(rdfs:label obo:OMRSE_00000051 "organization role"@en)
 EquivalentClasses(obo:OMRSE_00000051 ObjectIntersectionOf(obo:BFO_0000023 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0000245)))
-SubClassOf(obo:OMRSE_00000051 obo:OMRSE_00000048)
 SubClassOf(obo:OMRSE_00000051 ObjectAllValuesFrom(obo:RO_0000052 obo:OBI_0000245))
 
 # Class: obo:OMRSE_00000052 (hospital function)
