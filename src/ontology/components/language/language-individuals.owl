@@ -114,7 +114,8 @@
         <obo:OMRSE_00002025>aa</obo:OMRSE_00002025>
         <obo:OMRSE_00002026>aar</obo:OMRSE_00002026>
         <obo:OMRSE_00002027>aar</obo:OMRSE_00002027>
-        <rdfs:label xml:lang="en">Afar</rdfs:label>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/OMRSE_00000923</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete Afar</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -5413,6 +5414,22 @@
         <obo:OMRSE_00002026>zza</obo:OMRSE_00002026>
         <obo:OMRSE_00002027>zza</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Zaza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000923 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000923">
+        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002069"/>
+        <obo:IAO_0000118 xml:lang="aa">Afaraf</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="aa">Qafar af</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="aa">Qafaraf</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="aa">’Afar Af</obo:IAO_0000118>
+        <obo:OMRSE_00002025>aa</obo:OMRSE_00002025>
+        <obo:OMRSE_00002026>aar</obo:OMRSE_00002026>
+        <obo:OMRSE_00002027>aar</obo:OMRSE_00002027>
+        <rdfs:label xml:lang="en">Afar</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
