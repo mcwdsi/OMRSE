@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2025-03-26/imports/apollo_sv_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2025-08-13/imports/apollo_sv_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/apollo_sv/releases/2024-12-24/apollo_sv.owl>)
-Annotation(owl:versionInfo "2025-03-26")
+Annotation(owl:versionInfo "2025-08-13")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000032>))
 Declaration(Class(<http://purl.obolibrary.org/obo/APOLLO_SV_00000480>))
@@ -18,15 +18,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0007610>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000600>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
-Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
-Declaration(AnnotationProperty(<http://www.referent-tracking.com/RTS_00000001>))
-Declaration(AnnotationProperty(<http://www.referent-tracking.com/RTS_00000002>))
 
 
 ############################
