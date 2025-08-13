@@ -63,6 +63,15 @@ OBIB:0000667	owl:Class
 OBIB:0000701	owl:Class
 OBIB:0000732	owl:ObjectProperty
 OBIB:0000735	owl:ObjectProperty
+OCCO:00000128	owl:Class
+OCCO:00000123	owl:Class
+OCCO:00000124	owl:Class
+OCCO:00000118	owl:Class
+OCCO:00000119	owl:Class
+OCCO:00000126	owl:Class
+OCCO:00000127	owl:Class
+OCCO:00000120	owl:Class
+OCCO:00000122	owl:Class
 OOSTT:00000030	owl:AnnotationProperty
 OOSTT:00000081	owl:Class
 OOSTT:00000082	owl:Class

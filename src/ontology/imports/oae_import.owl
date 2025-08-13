@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/oae_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2025-03-26/imports/oae_import.owl>
-Annotation(owl:versionInfo "2025-03-26")
+<http://purl.obolibrary.org/obo/omrse/releases/2025-08-13/imports/oae_import.owl>
+Annotation(owl:versionInfo "2025-08-13")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/OAE_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OAE_0000067>))
@@ -20,22 +20,14 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OAE_0004334>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/creator>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/date>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/format>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/license>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/subject>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
 ############################
 #   Annotation Properties
 ############################
 
 # Annotation Property: <http://purl.obolibrary.org/obo/OAE_0004334> (has_MedDRA_id)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OAE_0004334> "has_MedDRA_id"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OAE_0004334> "has_MedDRA_id")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OAE_0004334> "has_MedDRA_id"@en)
 
 
 
