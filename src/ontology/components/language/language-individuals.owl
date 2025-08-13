@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/omrse/language-individuals/"
-     xml:base="http://purl.obolibrary.org/obo/omrse/language-individuals/"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/omrse/language-individuals.owl/"
+     xml:base="http://purl.obolibrary.org/obo/omrse/language-individuals.owl/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -11,8 +11,9 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/language-individuals/">
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:language-individuals="http://purl.obolibrary.org/obo/omrse/language-individuals/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/language-individuals.owl">
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:creator xml:lang="en">Matthew Diller</dc:creator>
         <dc:creator xml:lang="en">S. Clint Dowland</dc:creator>
@@ -36,6 +37,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0100001 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001"/>
     
 
 
@@ -111,10 +118,10 @@
         <obo:IAO_0000118 xml:lang="aa">Qafar af</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="aa">Qafaraf</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="aa">’Afar Af</obo:IAO_0000118>
+        <obo:IAO_0100001>http://purl.obolibrary.org/obo/OMRSE_00000923</obo:IAO_0100001>
         <obo:OMRSE_00002025>aa</obo:OMRSE_00002025>
         <obo:OMRSE_00002026>aar</obo:OMRSE_00002026>
         <obo:OMRSE_00002027>aar</obo:OMRSE_00002027>
-        <obo:IAO_0100001>http://purl.obolibrary.org/obo/OMRSE_00000923</obo:IAO_0100001>
         <rdfs:label xml:lang="en">obsolete Afar</rdfs:label>
     </owl:NamedIndividual>
     

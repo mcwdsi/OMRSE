@@ -13,7 +13,7 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse.owl>
-Import(<http://purl.obolibrary.org/obo/omrse/components/language/language-individuals.owl>)
+Import(<http://purl.obolibrary.org/obo/omrse/language-individuals.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/d-acts_import.owl>)

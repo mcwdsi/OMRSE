@@ -18,7 +18,7 @@
     <uri name="http://purl.obolibrary.org/obo/omrse/imports/geo_import.owl" uri="imports/geo_import.owl" />
     <uri name="http://purl.obolibrary.org/obo/omrse/imports/mf_import.owl" uri="imports/mf_import.owl" />
     <uri name="http://purl.obolibrary.org/obo/omrse/imports/occo_import.owl" uri="imports/occo_import.owl" />
-    <uri name="http://purl.obolibrary.org/obo/omrse/components/language/language-individuals.owl" uri="components/language/language-individuals.owl" />
+    <uri name="http://purl.obolibrary.org/obo/omrse/language-individuals.owl" uri="components/language/language-individuals.owl" />
   </group>
   <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/omrse/releases/2025-01-18/imports/ncbitaxon_import.owl" uri="imports/ncbitaxon_import.owl" />
   <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/omrse/releases/2023-09-08/imports/mf_import.owl" uri="imports/mf_import.owl" />
