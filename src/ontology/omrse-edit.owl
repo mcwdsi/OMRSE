@@ -341,6 +341,11 @@ Declaration(Class(obo:OMRSE_00000297))
 Declaration(Class(obo:OMRSE_00000298))
 Declaration(Class(obo:OMRSE_00000299))
 Declaration(Class(obo:OMRSE_00000300))
+Declaration(Class(obo:OMRSE_00000301))
+Declaration(Class(obo:OMRSE_00000302))
+Declaration(Class(obo:OMRSE_00000303))
+Declaration(Class(obo:OMRSE_00000304))
+Declaration(Class(obo:OMRSE_00000305))
 Declaration(Class(obo:OMRSE_00000500))
 Declaration(Class(obo:OMRSE_00000501))
 Declaration(Class(obo:OMRSE_00000502))
@@ -1524,7 +1529,10 @@ SubClassOf(obo:OMRSE_00000104 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_0000
 
 # Class: obo:OMRSE_00000105 (skilled nursing facility)
 
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000105 "Amanda Hicks")
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000105 "A community living health care facility in which patients receive health care by licensed nurses."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000105 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000105 "Amanda Hicks"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000105 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000105 "skilled nursing facility"@en)
 SubClassOf(obo:OMRSE_00000105 obo:OMRSE_00000150)
 SubClassOf(obo:OMRSE_00000105 ObjectSomeValuesFrom(obo:BFO_0000067 obo:OMRSE_00000152))
@@ -1850,7 +1858,10 @@ SubClassOf(obo:OMRSE_00000149 obo:BFO_0000034)
 
 # Class: obo:OMRSE_00000150 (community living health care facility)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000150 "a health care facility that also bears a residence function and thus one in which the patients are also residents of the facility"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000150 "A health care facility that also bears a residence function and thus is one in which the patients are also residents of the facility."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000150 "Matthew Diller"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000150 "long-term health care facility"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000150 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000150 "community living health care facility"@en)
 SubClassOf(obo:OMRSE_00000150 obo:OMRSE_00000102)
 SubClassOf(obo:OMRSE_00000150 ObjectSomeValuesFrom(obo:BFO_0000067 obo:OMRSE_00000154))
@@ -1859,6 +1870,10 @@ SubClassOf(obo:OMRSE_00000150 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_0000
 
 # Class: obo:OMRSE_00000151 (registered nurse role)
 
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000151 "A nurse role that requires successful completion of some nursing education program and some nursing license examination."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000151 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000151 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000151 "This class is intended to apply to registered nurse positions broadly, including those outside the US."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000151 "registered nurse role"@en)
 SubClassOf(obo:OMRSE_00000151 obo:OMRSE_00000014)
 
@@ -3170,6 +3185,47 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000300 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000300 "institutional health care provider role"@en)
 SubClassOf(obo:OMRSE_00000300 obo:OMRSE_00000086)
 
+# Class: obo:OMRSE_00000301 (skilled nursing role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000301 "A healthcare provider organization role that is realized by employing licensed nurses to deliver health care and assist with activities of daily living to patients in a skilled nursing facility."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000301 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000301 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000301 "skilled nursing role"@en)
+SubClassOf(obo:OMRSE_00000301 obo:OMRSE_00000015)
+
+# Class: obo:OMRSE_00000302 (skilled nursing organization)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000302 "An organization that is the bearer of a skilled nursing role."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000302 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000302 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000302 "skilled nursing organization"@en)
+SubClassOf(obo:OMRSE_00000302 obo:OBI_0000245)
+SubClassOf(obo:OMRSE_00000302 ObjectSomeValuesFrom(obo:RO_0000087 obo:OMRSE_00000301))
+
+# Class: obo:OMRSE_00000303 (number of hours per day of employment data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000303 "A time measurement data item that is measured in hours and is about the sum of the duration(s) of process(es) that realize a bearer's job role in a day."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000303 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000303 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000303 "number of hours per day of employment data item"@en)
+SubClassOf(obo:OMRSE_00000303 obo:IAO_0000416)
+
+# Class: obo:OMRSE_00000304 (marital status)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000304 "An information content entity that is about whether someone is party to a marriage contract."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000304 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000304 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000304 "marital status"@en)
+SubClassOf(obo:OMRSE_00000304 obo:IAO_0000030)
+
+# Class: obo:OMRSE_00000305 (married)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000305 "A marital status that is about a person who is party to a marriage contract."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000305 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000305 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000305 "married"@en)
+SubClassOf(obo:OMRSE_00000305 obo:OMRSE_00000304)
+
 # Class: obo:OMRSE_00000500 (job role data item)
 
 AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000500 "Can be about any aspect of employment, such as salary, work location, or employer."@en)
@@ -3213,7 +3269,7 @@ SubClassOf(obo:OMRSE_00000505 obo:OMRSE_00000506)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000506 "socio-economic data item"@en)
 SubClassOf(obo:OMRSE_00000506 obo:IAO_0000027)
 
-# Class: obo:OMRSE_00000507 (obsolete Afar)
+# Class: obo:OMRSE_00000507 (obsolete non-binary gender identity datum)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00000507 "non-binary gender identity datum"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000507 "A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant's subjective sense of gender."@en)
