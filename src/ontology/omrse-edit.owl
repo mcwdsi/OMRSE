@@ -1481,10 +1481,11 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000098 "obsolete racial identity datu
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000098 "true"^^xsd:boolean)
 SubClassOf(obo:OMRSE_00000098 oboInOwl:ObsoleteClass)
 
-# Class: obo:OMRSE_00000099 (racial identification process)
+# Class: obo:OMRSE_00000099 (obsolete racial identification process)
 
-AnnotationAssertion(rdfs:label obo:OMRSE_00000099 "racial identification process"@en)
-SubClassOf(obo:OMRSE_00000099 ObjectIntersectionOf(obo:OMRSE_00000134 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectSomeValuesFrom(obo:BFO_0000050 obo:OMRSE_00000098))))
+AnnotationAssertion(rdfs:label obo:OMRSE_00000099 "obsolete racial identification process"@en)
+AnnotationAssertion(owl:deprecated obo:OMRSE_00000099 "true"^^xsd:boolean)
+SubClassOf(obo:OMRSE_00000099 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000100 (obsolete ethnic identity datum)
 
@@ -1495,10 +1496,11 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000100 "obsolete ethnic identity datu
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000100 "true"^^xsd:boolean)
 SubClassOf(obo:OMRSE_00000100 oboInOwl:ObsoleteClass)
 
-# Class: obo:OMRSE_00000101 (ethnic identification process)
+# Class: obo:OMRSE_00000101 (obsolete ethnic identification process)
 
-AnnotationAssertion(rdfs:label obo:OMRSE_00000101 "ethnic identification process"@en)
-SubClassOf(obo:OMRSE_00000101 ObjectIntersectionOf(obo:OMRSE_00000134 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectSomeValuesFrom(obo:BFO_0000050 obo:OMRSE_00000100))))
+AnnotationAssertion(rdfs:label obo:OMRSE_00000101 "obsolete ethnic identification process"@en)
+AnnotationAssertion(owl:deprecated obo:OMRSE_00000101 "true"^^xsd:boolean)
+SubClassOf(obo:OMRSE_00000101 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000102 (health care facility)
 
@@ -1750,16 +1752,18 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000133 "obsolete gender identity datu
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000133 "true"^^xsd:boolean)
 SubClassOf(obo:OMRSE_00000133 oboInOwl:ObsoleteClass)
 
-# Class: obo:OMRSE_00000134 (identification process)
+# Class: obo:OMRSE_00000134 (obsolete identification process)
 
 AnnotationAssertion(dc:creator obo:OMRSE_00000134 "Amanda Hicks")
-AnnotationAssertion(rdfs:label obo:OMRSE_00000134 "identification process"@en)
-SubClassOf(obo:OMRSE_00000134 obo:IAO_0021003)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000134 "obsolete identification process"@en)
+AnnotationAssertion(owl:deprecated obo:OMRSE_00000134 "true"^^xsd:boolean)
+SubClassOf(obo:OMRSE_00000134 oboInOwl:ObsoleteClass)
 
-# Class: obo:OMRSE_00000135 (gender identification process)
+# Class: obo:OMRSE_00000135 (obsolete gender identification process)
 
-AnnotationAssertion(rdfs:label obo:OMRSE_00000135 "gender identification process"@en)
-SubClassOf(obo:OMRSE_00000135 ObjectIntersectionOf(obo:OMRSE_00000134 ObjectSomeValuesFrom(obo:OBI_0000299 ObjectSomeValuesFrom(obo:BFO_0000050 obo:OMRSE_00000133))))
+AnnotationAssertion(rdfs:label obo:OMRSE_00000135 "obsolete gender identification process"@en)
+AnnotationAssertion(owl:deprecated obo:OMRSE_00000135 "true"^^xsd:boolean)
+SubClassOf(obo:OMRSE_00000135 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000138 (obsolete female gender identity datum)
 
