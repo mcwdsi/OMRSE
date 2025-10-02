@@ -73,9 +73,9 @@
         "val" : "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-08-13"
+        "val" : "2025-06-30"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2025-08-13/omrse-base.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2025-06-30/omrse-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000032",
@@ -888,25 +888,16 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000048",
-      "lbl" : "obsolete material entity role",
-      "type" : "CLASS",
-      "meta" : {
-        "deprecated" : true
-      }
+      "lbl" : "material entity role",
+      "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000049",
-      "lbl" : "obsolete organism role",
-      "type" : "CLASS",
-      "meta" : {
-        "deprecated" : true
-      }
+      "lbl" : "organism role",
+      "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000050",
-      "lbl" : "obsolete Homo sapiens role",
-      "type" : "CLASS",
-      "meta" : {
-        "deprecated" : true
-      }
+      "lbl" : "Homo sapiens role",
+      "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000051",
       "lbl" : "organization role",
@@ -4640,9 +4631,6 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "’Afar Af"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0100001",
-          "val" : "http://purl.obolibrary.org/obo/OMRSE_00000923"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0100001",
           "val" : "non-binary gender identity information content entity"
@@ -13539,34 +13527,6 @@
         } ]
       }
     }, {
-      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000923",
-      "lbl" : "Afar",
-      "type" : "INDIVIDUAL",
-      "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "Afaraf"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "Qafar af"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "Qafaraf"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "’Afar Af"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/OMRSE_00002025",
-          "val" : "aa"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/OMRSE_00002026",
-          "val" : "aar"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/OMRSE_00002027",
-          "val" : "aar"
-        } ]
-      }
-    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000111",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
@@ -13731,8 +13691,8 @@
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000026"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000001",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000050"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000002",
       "pred" : "is_a",
@@ -13751,8 +13711,8 @@
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000004"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000005",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000050"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000006",
       "pred" : "is_a",
@@ -13760,11 +13720,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000007",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000007",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000049"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000008",
       "pred" : "is_a",
@@ -13787,8 +13743,8 @@
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000010"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000011",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000049"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000012",
       "pred" : "is_a",
@@ -13848,11 +13804,11 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000026",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002072"
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000049"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000026",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002072"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000027",
       "pred" : "is_a",
@@ -13871,8 +13827,8 @@
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000011"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000030",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000050"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000031",
       "pred" : "is_a",
@@ -13912,19 +13868,11 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000039",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000039",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000050"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000040",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000040",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000050"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000041",
       "pred" : "is_a",
@@ -13956,19 +13904,31 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000048",
       "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000048",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
+      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000049",
       "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000048"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000049",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000050",
       "pred" : "is_a",
-      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000049"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000050",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000051",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000048"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000051",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
@@ -14084,18 +14044,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000074",
-      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000029"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000074",
-      "pred" : "http://purl.obolibrary.org/obo/BFO_0000051",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000074",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000053",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000075"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000075",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000034"
@@ -14175,10 +14123,6 @@
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000093",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000245"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000093",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000053",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000096"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000095",
       "pred" : "is_a",
@@ -15092,17 +15036,9 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000075"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000287",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000074"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000288",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002072"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000288",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000289",
       "pred" : "is_a",
@@ -15436,10 +15372,6 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000016"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00002069",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0002351",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002066"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00002070",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002068"
@@ -15458,11 +15390,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00002072",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000023"
-    }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00002072",
-      "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000048"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000507",
       "pred" : "type",
@@ -17128,10 +17056,6 @@
       "pred" : "type",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002069"
     }, {
-      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000923",
-      "pred" : "type",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002069"
-    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000021",
       "pred" : "subPropertyOf",
       "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"
@@ -17171,6 +17095,27 @@
     "logicalDefinitionAxioms" : [ {
       "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000030",
       "genusIds" : [ "http://purl.obolibrary.org/obo/OMRSE_00000011" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0000052",
+        "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000048",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/BFO_0000023" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0000052",
+        "fillerId" : "http://purl.obolibrary.org/obo/BFO_0000040"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000049",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/OMRSE_00000048" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/RO_0000052",
+        "fillerId" : "http://purl.obolibrary.org/obo/OBI_0100026"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000050",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/OMRSE_00000049" ],
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/RO_0000052",
         "fillerId" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
@@ -17285,6 +17230,18 @@
     }, {
       "predicateId" : "http://purl.obolibrary.org/obo/RO_0000052",
       "allValuesFromEdges" : [ {
+        "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000048",
+        "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
+        "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
+      }, {
+        "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000049",
+        "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
+        "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
+      }, {
+        "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000050",
+        "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
+        "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+      }, {
         "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000051",
         "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
         "obj" : "http://purl.obolibrary.org/obo/OBI_0000245"

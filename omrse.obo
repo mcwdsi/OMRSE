@@ -1,5 +1,11 @@
 format-version: 1.2
-data-version: omrse/releases/2025-08-13/omrse-full.owl
+data-version: omrse/releases/2025-06-30/omrse-full.owl
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_gp2term ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_go_ontology ""
+subsetdef: http://purl.obolibrary.org/obo/valid_for_gocam ""
+subsetdef: ro-eco ""
+subsetdef: RO:0002259 ""
 synonymtypedef: OMO:0003000 "abbreviation"
 synonymtypedef: OMO:0003001 "ambiguous synonym"
 synonymtypedef: OMO:0003002 "dubious synonym"
@@ -17,9 +23,12 @@ idspace: dc http://purl.org/dc/elements/1.1/
 idspace: foaf http://xmlns.com/foaf/0.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
 idspace: protege http://protege.stanford.edu/plugins/owl/protege# 
+idspace: skos http://www.w3.org/2004/02/skos/core# 
 idspace: swrl http://www.w3.org/2003/11/swrl# 
+idspace: swrla http://swrl.stanford.edu/ontologies/3.3/swrla.owl# 
 idspace: swrlb http://www.w3.org/2003/11/swrlb# 
 idspace: terms http://purl.org/dc/terms/ 
+idspace: www http://www.referent-tracking.com/ 
 remark: This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt
 ontology: omrse/omrse-full
 property_value: dc:contributor "Barry Smith" xsd:string
@@ -39,7 +48,7 @@ property_value: dc:creator "Mathias Brochhausen" xsd:string
 property_value: dc:creator "Shariq Tariq" xsd:string
 property_value: dc:creator "Swetha Garimalla" xsd:string
 property_value: dc:creator "William Hogan" xsd:string
-property_value: owl:versionInfo "2025-08-13" xsd:string
+property_value: owl:versionInfo "2025-06-30" xsd:string
 property_value: terms:creator "https://orcid.org/0000-0002-9881-1017" xsd:anyURI
 property_value: terms:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
@@ -61,8 +70,8 @@ name: count
 def: "A measurement datum that is the output of counting." []
 is_a: IAO:0000109 ! measurement datum
 intersection_of: IAO:0000027 ! data item
-intersection_of: OBI:0000312 APOLLO_SV:00000033 ! is specified output of counting
-relationship: OBI:0000312 APOLLO_SV:00000033 ! is specified output of counting
+intersection_of: OBI:0000312 APOLLO_SV:00000033 ! is_specified_output_of counting
+relationship: OBI:0000312 APOLLO_SV:00000033 ! is_specified_output_of counting
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000600 "A measurement datum that is the output of counting." xsd:string
 
@@ -72,8 +81,8 @@ name: counting
 def: "The planned process of finding the number of elements in a finite set of objects." []
 is_a: OBI:0000011 ! planned process
 intersection_of: OBI:0000011 ! planned process
-intersection_of: OBI:0000299 APOLLO_SV:00000032 ! has specified output count
-relationship: OBI:0000299 APOLLO_SV:00000032 ! has specified output count
+intersection_of: OBI:0000299 APOLLO_SV:00000032 ! has_specified_output count
+relationship: OBI:0000299 APOLLO_SV:00000032 ! has_specified_output count
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Counting" xsd:string
 property_value: IAO:0000600 "The planned process of finding the number of elements in a finite set of objects." xsd:string
@@ -102,6 +111,7 @@ id: APOLLO_SV:00000524
 name: compiling software
 def: "A planned process that converts human-written or curated software into a machine-executable or interpretable set of instructions." []
 comment: It's compiling "software" (scare quotes) and not "source code" because you can compile Java bytecode to machine code, and Java bytecode is not technically "source code".  Compiling source code would be a subclass of this class (as would compiling Java bytecode, etc.).
+comment: Source code can be automatically generated to some extent, but we're assuming humans still curate it minimally. Also, in the case of Java and its JVM, it's machine interpretable instructions, not directly executable. Ditto for other languages with intermediate form like Java byte code.
 is_a: APOLLO_SV:00000008 ! software development
 property_value: IAO:0000111 "process of compiling software" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
@@ -120,8 +130,8 @@ name: dataset creating
 def: "A planned process that has a data set as its specified output." []
 is_a: OBI:0000011 ! planned process
 intersection_of: OBI:0000011 ! planned process
-intersection_of: OBI:0000299 IAO:0000100 ! has specified output data set
-relationship: OBI:0000299 IAO:0000100 ! has specified output data set
+intersection_of: OBI:0000299 IAO:0000100 ! has_specified_output data set
+relationship: OBI:0000299 IAO:0000100 ! has_specified_output data set
 property_value: IAO:0000111 "creating a data set" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "data set creation" xsd:string
@@ -137,7 +147,7 @@ property_value: IAO:0000112 "the Second World War" xsd:string
 property_value: IAO:0000112 "Verdi’s Requiem" xsd:string
 property_value: IAO:0000112 "your body mass index" xsd:string
 property_value: IAO:0000116 "BFO 2 Reference: In all areas of empirical inquiry we encounter general terms of two sorts. First are general terms which refer to universals or types:animaltuberculosissurgical procedurediseaseSecond, are general terms used to refer to groups of entities which instantiate a given universal but do not correspond to the extension of any subuniversal of that universal because there is nothing intrinsic to the entities in question by virtue of which they – and only they – are counted as belonging to the given group. Examples are: animal purchased by the Emperortuberculosis diagnosed on a Wednesdaysurgical procedure performed on a patient from Stockholmperson identified as candidate for clinical trial #2056-555person who is signatory of Form 656-PPVpainting by Leonardo da VinciSuch terms, which represent what are called ‘specializations’ in [81" xsd:string
-property_value: IAO:0000116 "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000004", comment="per discussion with Barry Smith", seeAlso="http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf"}
+property_value: IAO:0000116 "Entity doesn't have a closure axiom because the subclasses don't necessarily exhaust all possibilites. For example Werner Ceusters 'portions of reality' include 4 sorts, entities (as BFO construes them), universals, configurations, and relations. It is an open question as to whether entities as construed in BFO will at some point also include these other portions of reality. See, for example, 'How to track absolutely everything' at http://www.referent-tracking.com/_RTU/papers/CeustersICbookRevised.pdf" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000004", comment="per discussion with Barry Smith", seeAlso="www:_RTU/papers/CeustersICbookRevised.pdf"}
 property_value: IAO:0000600 "An entity is anything that exists or has existed or will exist. (axiom label in BFO2 Reference: [001-001])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/001-001"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
@@ -282,6 +292,7 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 id: BFO:0000015
 name: process
 def: "An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t." []
+def: "p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/083-003"}
 comment: An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.
 is_a: BFO:0000003 ! occurrent
 property_value: BFO:0000179 "process" xsd:string
@@ -369,6 +380,7 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 id: BFO:0000020
 name: specifically dependent continuant
 def: "A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same." []
+def: "b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/050-003"}
 comment: A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.
 is_a: BFO:0000002 ! continuant
 disjoint_from: BFO:0000031 ! generically dependent continuant
@@ -532,6 +544,7 @@ property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 id: BFO:0000031
 name: generically dependent continuant
 def: "A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time." []
+def: "b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])" [] {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/074-001"}
 comment: A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.
 is_a: BFO:0000002 ! continuant
 relationship: BFO:0000050 BFO:0000031 {all_only="true"} ! part of generically dependent continuant
@@ -742,9 +755,11 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
 id: GO:0003674
+name: gene product or complex activity
 name: molecular_function
 def: "A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs." [GOC:pdt]
 comment: Note that, in addition to forming the root of the molecular function ontology, this term is recommended for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this. Despite its name, this is not a type of 'function' in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.
+synonym: "molecular function" EXACT []
 is_a: BFO:0000015 ! process
 property_value: IAO:0000116 "This is the same as GO molecular function" xsd:string
 
@@ -758,18 +773,26 @@ is_a: GO:0008150 ! biological_process
 
 [Term]
 id: GO:0008150
+name: biological process
 name: biological_process
 def: "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
 comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
+synonym: "biological process" EXACT []
+synonym: "physiological process" EXACT []
+synonym: "single organism process" RELATED []
+synonym: "single-organism process" RELATED []
 xref: Wikipedia:Biological_process
 is_a: BFO:0000015 ! process
 disjoint_from: OBI:0000011 ! planned process
+created_by: jl
+creation_date: 2012-09-19T15:05:24Z
 
 [Term]
 id: GO:0016301
 name: kinase activity
 def: "Catalysis of the transfer of a phosphate group, usually from ATP, to a substrate molecule." [ISBN:0198506732]
 comment: Note that this term encompasses all activities that transfer a single phosphate group; although ATP is by far the most common phosphate donor, reactions using other phosphate donors are included in this term.
+synonym: "phosphokinase activity" EXACT []
 xref: Reactome:R-HSA-6788855 "FN3KRP phosphorylates PsiAm, RibAm"
 xref: Reactome:R-HSA-6788867 "FN3K phosphorylates ketosamines"
 is_a: GO:0003674 ! molecular_function
@@ -892,8 +915,8 @@ name: journal article
 def: "A report that is published in a journal." []
 is_a: IAO:0000088 ! report
 is_a: IAO:0000311 ! publication
-relationship: OBI:0000312 IAO:0000444 ! is specified output of publishing process
-relationship: OBI:0000312 IAO:0000444 {all_only="true"} ! is specified output of publishing process
+relationship: OBI:0000312 IAO:0000444 ! is_specified_output_of publishing process
+relationship: OBI:0000312 IAO:0000444 {all_only="true"} ! is_specified_output_of publishing process
 property_value: IAO:0000111 "journal article" xsd:string
 property_value: IAO:0000112 "Examples are articles published in the journals, Nature and Science. The content can often be cited by reference to a paper based encoding, e.g.  Authors, Title of article, Journal name, date or year of publication, volume and page number." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -1717,7 +1740,7 @@ def: "A document that is the output of a publishing process." []
 comment: Revisit the term in Octorber 2020. Improve the defintion.
 is_a: IAO:0000310 ! document
 intersection_of: IAO:0000310 ! document
-intersection_of: OBI:0000312 IAO:0000444 {all_only="true"} ! is specified output of publishing process
+intersection_of: OBI:0000312 IAO:0000444 {all_only="true"} ! is_specified_output_of publishing process
 property_value: IAO:0000111 "publication" xsd:string
 property_value: IAO:0000112 "journal article, newspaper story, book, etc." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -2101,7 +2124,7 @@ name: data item extraction from journal article
 def: "A planned process in which journal articles are read or processed and data items are extracted, typically for further analysis or indexing" []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 IAO:0000013 ! has_specified_input journal article
-relationship: OBI:0000299 IAO:0000027 ! has specified output data item
+relationship: OBI:0000299 IAO:0000027 ! has_specified_output data item
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
 
@@ -2133,7 +2156,7 @@ name: documenting
 def: "A planned process in which a document is created or added to by including the specified input in it." []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 IAO:0000030 ! has_specified_input information content entity
-relationship: OBI:0000299 IAO:0000310 ! has specified output document
+relationship: OBI:0000299 IAO:0000310 ! has_specified_output document
 property_value: IAO:0000112 "Recording the current temperature in a laboratory notebook. Writing a journal article. Updating a patient record in a database." xsd:string
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "6/11/9: Edited at OBI workshop. We need to be able identify a child form of information artifact which corresponds to something enduring (not brain like). This used to be restricted to physical document or digital entity as the output, but that excludes e.g. an audio cassette tape" xsd:string
@@ -2158,7 +2181,7 @@ id: IAO:0000574
 name: assigning a centrally registered identifier
 def: "A planned process in which a new CRID is created, associated with an entity, and stored in the CRID registry thereby registering it as being associated with some entity" []
 is_a: OBI:0000011 ! planned process
-relationship: OBI:0000299 IAO:0000577 ! has specified output centrally registered identifier symbol
+relationship: OBI:0000299 IAO:0000577 ! has_specified_output centrally registered identifier symbol
 relationship: RO:0000057 IAO:0000579 ! has participant centrally registered identifier registry
 property_value: IAO:0000112 "A new pubmed ID being created for a journal article, and the associated pubmed record containing information to the journal article. A license plate number registered at the DMV to be belonging to a specific vehicle and owner. Placing a barcode on a product and entering information in a database that this barcode is assigned." xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -2244,7 +2267,7 @@ name: looking up a centrally registered identifier
 def: "A planned process in which a request to a CRID registry is made to return the information associated with a CRID symbol" []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 IAO:0000577 ! has_specified_input centrally registered identifier symbol
-relationship: OBI:0000299 IAO:0000030 ! has specified output information content entity
+relationship: OBI:0000299 IAO:0000030 ! has_specified_output information content entity
 relationship: RO:0000057 IAO:0000579 ! has participant centrally registered identifier registry
 property_value: IAO:0000112 "Going to the PubMed website and entering a PubMed ID in order to retrieve the Pubmed information associated with that ID. " xsd:string
 property_value: IAO:0000114 IAO:0000120
@@ -2899,7 +2922,7 @@ name: database extract, transform, and load process
 def: "A planned process which takes as input a database and fills another database by extracting concretizations of information entities from the first, transforming them, and loading the transformed concretizations into the second." []
 is_a: OBI:0000011 ! planned process
 relationship: OBI:0000293 IAO:0000030 ! has_specified_input information content entity
-relationship: OBI:0000299 IAO:0000030 ! has specified output information content entity
+relationship: OBI:0000299 IAO:0000030 ! has_specified_output information content entity
 property_value: foaf:page https://en.wikipedia.org/wiki/Extract,_transform,_load
 property_value: IAO:0000111 "database extract, transform, and load process" xsd:string
 property_value: IAO:0000116 "Alan Ruttenberg 12/21/16: Maybe this definition instead: A planned process which takes as input a database and copies concretizations from the first, optionally transforms then copies the result to the second" xsd:string
@@ -3030,9 +3053,9 @@ comment: Sep 29, 2016: The current definition has been amended from the previous
 is_a: IAO:0000030 ! information content entity
 intersection_of: IAO:0000030 ! information content entity
 intersection_of: IAO:0000219 BFO:0000001 ! denotes entity
-intersection_of: OBI:0000312 IAO:0020010 ! is specified output of identifier creating process
+intersection_of: OBI:0000312 IAO:0020010 ! is_specified_output_of identifier creating process
 relationship: IAO:0000219 BFO:0000001 ! denotes entity
-relationship: OBI:0000312 IAO:0020010 ! is specified output of identifier creating process
+relationship: OBI:0000312 IAO:0020010 ! is_specified_output_of identifier creating process
 property_value: dc:creator "Mathias Brochhausen" xsd:string
 property_value: IAO:0000111 "identifier" xsd:string
 property_value: IAO:0000117 "Justin Whorton" xsd:string
@@ -3058,8 +3081,8 @@ name: identifier creating process
 def: "A planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity." []
 is_a: OBI:0000011 ! planned process
 intersection_of: OBI:0000011 ! planned process
-intersection_of: OBI:0000299 IAO:0020000 ! has specified output identifier
-relationship: OBI:0000299 IAO:0020000 ! has specified output identifier
+intersection_of: OBI:0000299 IAO:0020000 ! has_specified_output identifier
+relationship: OBI:0000299 IAO:0020000 ! has_specified_output identifier
 property_value: dc:creator "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Justin Whorton" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
@@ -3072,6 +3095,8 @@ id: IAO:0020015
 name: personal name
 def: "An identifier referring to an individual entity that is ascribed personhood by the user of the identifier." []
 comment: Personal names "today usually comprises a given name bestowed at birth or at a young age plus a surname. It is nearly universal for a human to have a name; except in rare cases, for example feral children growing up in isolation, or infants orphaned by natural disaster for whom no written record survives.[citation needed] The Convention on the Rights of the Child specifies that a child has the right from birth to a name. Certain isolated tribes, such as the Machiguenga of the Amazon, also lack personal names." (http://en.wikipedia.org/wiki/Personal_name)
+comment: Personal names to not include names of fictional characters, e.g. Sherlock Holmes.
+comment: Sep 29, 2016: The comment that including the wikipedia definition of personal name is not to be interpreted in a way that restricts this class to only contain strings of letters. A numerical or alphanumerical identifier that denotes a human is being is a personal name, too. (MB)
 is_a: IAO:0020000 ! identifier
 property_value: IAO:0000117 "Justin Whorton" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
@@ -3106,6 +3131,13 @@ id: IAO:0020020
 name: code set
 def: "An information content entity that is a collection of other information content entities that has been created to identify or annotate things in a specified domain, and where the intention of its creators is that the collection has a one-to-one correspondence with those things." []
 comment: Code sets might include non-entities/things (e.g. missing thumbs).
+comment: Does not imply absence vs. presence of any taxonomy.
+comment: Does not imply that aggregated entities denote particulars, universals, or defined classes (a.k.a. attributive collections) or even that they denote only one of these three types of entities.
+comment: Each aggregated entity is often (but not necessarily) associated with a text string—variously called a “description,” “name,” “title,” or “label”—that helps humans reach the target of denotation.\n\nWhen there is no such string, it is almost always because the entities take the form of human language words. For example, a “sex” or “gender” code set could contain “MALE” and “FEMALE,” or even “M” and “F” (by convention, we understand what these mean).
+comment: For each given domain, there can potentially exist multiple code sets. The multiplicity of code sets is partially due to the different specific purposes of those code sets.
+comment: For National Drug Codes (NDCs) and similar code sets, there doesn’t even have to be a single, fully-concretized copy somewhere (for example, for NDCs there is no centralized database or repository where they all live as one instance of concretization of code set). The code set can be “distributively” concretized. This seems like an unusual exception, but it also likely applies to Universal Product Codes (UPCs) and their follow on Global Trade Item Numbers (GTINs).
+comment: Many code sets are created for a specific purpose in addition to merely identifying or annotating core ideas of a specified domain.
+comment: The information content entities do not denote each other.
 is_a: IAO:0000030 ! information content entity
 relationship: BFO:0000051 IAO:0020000 ! has part identifier
 property_value: dc:contributor "Alan Ruttenberg" xsd:string
@@ -3524,7 +3556,7 @@ id: OBI:0600052
 name: dialysis
 def: "a protocol application that uses diffusion through a semi-permeable membrane to separate an input material into two fractions of different composition" []
 is_a: OBI:0000011 ! planned process
-relationship: OBI:0000299 BFO:0000040 ! has specified output material entity
+relationship: OBI:0000299 BFO:0000040 ! has_specified_output material entity
 property_value: IAO:0000111 "dialysis" xsd:string
 property_value: IAO:0000112 "the use of a dialysis bag of select pore size to remove salt from collagen isolated from mouse cartilage" xsd:string
 property_value: IAO:0000114 IAO:0000125
@@ -3552,151 +3584,6 @@ id: OBIB:0000710
 name: survey execution
 def: "A planned process that realizes the concretization of a survey to generate an output(survey data.)" []
 is_a: OBI:0000011 ! planned process
-
-[Term]
-id: OCCO:00000118
-name: credential
-def: "A document issued by a third party recognized as bearing the relevant authority to do so, that is designed to be about an entity's competence, qualifications, or authority." []
-is_a: IAO:0000310 ! document
-property_value: IAO:0000117 "Bill Duncan" xsd:string
-property_value: IAO:0000117 "Bill Hogan" xsd:string
-property_value: IAO:0000117 "Finn Wilson" xsd:string
-property_value: IAO:0000117 "Giacomo De Colle" xsd:string
-property_value: IAO:0000117 "Jie Zheng" xsd:string
-property_value: IAO:0000117 "John Beverley" xsd:string
-property_value: IAO:0000117 "Matthew Diller" xsd:string
-property_value: IAO:0000117 "Oliver He" xsd:string
-property_value: IAO:0000117 "Robin McGill" xsd:string
-property_value: IAO:0000117 "Sam Smith" xsd:string
-property_value: IAO:0000119 "https://storage.googleapis.com/wzukusers/user-12947767/documents/2c18c4f456ce4f6eab176c0983f75791/FOIS_2023_paper_920.pdf" xsd:string
-property_value: IAO:0000119 "https://www.degruyter.com/document/doi/10.1515/jso-2019-0034/html" xsd:string
-
-[Term]
-id: OCCO:00000119
-name: occupational credential
-def: "A credential that is designed to be about an organism's competence or qualifications with respect to an occupation." []
-is_a: OCCO:00000118 ! credential
-property_value: IAO:0000117 "Bill Duncan" xsd:string
-property_value: IAO:0000117 "Jie Zheng" xsd:string
-property_value: IAO:0000117 "John Beverley" xsd:string
-property_value: IAO:0000117 "Matthew Diller" xsd:string
-property_value: IAO:0000117 "Oliver He" xsd:string
-property_value: IAO:0000117 "Robin McGill" xsd:string
-property_value: IAO:0000117 "Sam Smith" xsd:string
-property_value: IAO:0000119 "https://storage.googleapis.com/wzukusers/user-12947767/documents/2c18c4f456ce4f6eab176c0983f75791/FOIS_2023_paper_920.pdf" xsd:string
-property_value: IAO:0000119 "https://www.degruyter.com/document/doi/10.1515/jso-2019-0034/html" xsd:string
-
-[Term]
-id: OCCO:00000120
-name: credential granting agency
-def: "An organization that bears a credential grantor role." []
-is_a: OBI:0000245 ! organization
-property_value: IAO:0000117 "Bill Duncan" xsd:string
-property_value: IAO:0000117 "Bill Hogan" xsd:string
-property_value: IAO:0000117 "Finn Wilson" xsd:string
-property_value: IAO:0000117 "Giacomo De Colle" xsd:string
-property_value: IAO:0000117 "Jie Zheng" xsd:string
-property_value: IAO:0000117 "John Beverley" xsd:string
-property_value: IAO:0000117 "Matthew Diller" xsd:string
-property_value: IAO:0000117 "Oliver He" xsd:string
-property_value: IAO:0000117 "Robin McGill" xsd:string
-property_value: IAO:0000117 "Sam Smith" xsd:string
-
-[Term]
-id: OCCO:00000122
-name: occupational credential holder
-def: "An organism that an occupation credential is about." []
-is_a: NCBITaxon:9606 ! Homo sapiens
-property_value: IAO:0000117 "Bill Duncan" xsd:string
-property_value: IAO:0000117 "Bill Hogan" xsd:string
-property_value: IAO:0000117 "Finn Wilson" xsd:string
-property_value: IAO:0000117 "Giacomo De Colle" xsd:string
-property_value: IAO:0000117 "Jie Zheng" xsd:string
-property_value: IAO:0000117 "John Beverley" xsd:string
-property_value: IAO:0000117 "Matthew Diller" xsd:string
-property_value: IAO:0000117 "Oliver He" xsd:string
-property_value: IAO:0000117 "Robin McGill" xsd:string
-property_value: IAO:0000117 "Sam Smith" xsd:string
-
-[Term]
-id: OCCO:00000123
-name: certificate
-def: "A credential awarded by a credential granting agency designed to signify participation in or completion of a training program requiring the demonstration of some specified knowledge or skill." []
-is_a: OCCO:00000118 ! credential
-property_value: IAO:0000117 "Bill Duncan" xsd:string
-property_value: IAO:0000117 "Bill Hogan" xsd:string
-property_value: IAO:0000117 "Finn Wilson" xsd:string
-property_value: IAO:0000117 "Giacomo De Colle" xsd:string
-property_value: IAO:0000117 "Jie Zheng" xsd:string
-property_value: IAO:0000117 "John Beverley" xsd:string
-property_value: IAO:0000117 "Matthew Diller" xsd:string
-property_value: IAO:0000117 "Oliver He" xsd:string
-property_value: IAO:0000117 "Robin McGill" xsd:string
-property_value: IAO:0000117 "Sam Smith" xsd:string
-
-[Term]
-id: OCCO:00000124
-name: certification
-def: "A credential awarded by a professional organization designed to signify the holder's competence as measured against a specified professional benchmark." []
-is_a: OCCO:00000118 ! credential
-property_value: IAO:0000117 "Bill Duncan" xsd:string
-property_value: IAO:0000117 "Bill Hogan" xsd:string
-property_value: IAO:0000117 "Finn Wilson" xsd:string
-property_value: IAO:0000117 "Giacomo De Colle" xsd:string
-property_value: IAO:0000117 "Jie Zheng" xsd:string
-property_value: IAO:0000117 "John Beverley" xsd:string
-property_value: IAO:0000117 "Matthew Diller" xsd:string
-property_value: IAO:0000117 "Oliver He" xsd:string
-property_value: IAO:0000117 "Robin McGill" xsd:string
-property_value: IAO:0000117 "Sam Smith" xsd:string
-
-[Term]
-id: OCCO:00000126
-name: license
-def: "A credential awarded by a government or government-authorized agency designed to signify legal authority to engage in specified actions without being liable to sanctions or penalties that would otherwise be associated with those actions." []
-is_a: OCCO:00000118 ! credential
-property_value: IAO:0000117 "Bill Duncan" xsd:string
-property_value: IAO:0000117 "Bill Hogan" xsd:string
-property_value: IAO:0000117 "Finn Wilson" xsd:string
-property_value: IAO:0000117 "Giacomo De Colle" xsd:string
-property_value: IAO:0000117 "Jie Zheng" xsd:string
-property_value: IAO:0000117 "John Beverley" xsd:string
-property_value: IAO:0000117 "Matthew Diller" xsd:string
-property_value: IAO:0000117 "Oliver He" xsd:string
-property_value: IAO:0000117 "Robin McGill" xsd:string
-property_value: IAO:0000117 "Sam Smith" xsd:string
-
-[Term]
-id: OCCO:00000127
-name: credential grantor role
-def: "A role borne by an organization that has been accredited by a quality assurance group through a deontic declaration having action regulation output, which authorizes the organization to bestow credentials according to quality control standards established or enforced by the accrediting group." []
-is_a: BFO:0000023 ! role
-property_value: IAO:0000117 "Bill Duncan" xsd:string
-property_value: IAO:0000117 "Bill Hogan" xsd:string
-property_value: IAO:0000117 "Finn Wilson" xsd:string
-property_value: IAO:0000117 "Giacomo De Colle" xsd:string
-property_value: IAO:0000117 "Jie Zheng" xsd:string
-property_value: IAO:0000117 "John Beverley" xsd:string
-property_value: IAO:0000117 "Matthew Diller" xsd:string
-property_value: IAO:0000117 "Oliver He" xsd:string
-property_value: IAO:0000117 "Robin McGill" xsd:string
-property_value: IAO:0000117 "Sam Smith" xsd:string
-
-[Term]
-id: OCCO:00000128
-name: credential issuing process
-def: "A social act in which a credential granting agency asserts that an organism has satisfied the requirements for being awarded a credential, having as output a credential about the organism." []
-is_a: IAO:0021003 ! social act
-property_value: IAO:0000117 "Bill Duncan" xsd:string
-property_value: IAO:0000117 "Bill Hogan" xsd:string
-property_value: IAO:0000117 "Finn Wilson" xsd:string
-property_value: IAO:0000117 "Giacomo De Colle" xsd:string
-property_value: IAO:0000117 "Jie Zheng" xsd:string
-property_value: IAO:0000117 "John Beverley" xsd:string
-property_value: IAO:0000117 "Matthew Diller" xsd:string
-property_value: IAO:0000117 "Oliver He" xsd:string
-property_value: IAO:0000117 "Robin McGill" xsd:string
-property_value: IAO:0000117 "Sam Smith" xsd:string
 
 [Term]
 id: OGMS:0000097
@@ -3765,7 +3652,7 @@ id: OMRSE:00000001
 name: human social role
 def: "A social role inhering in a human being." []
 is_a: OMRSE:00000026 ! organism social role
-relationship: RO:0000052 NCBITaxon:9606 ! characteristic of Homo sapiens
+is_a: OMRSE:00000050 ! Homo sapiens role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -3788,7 +3675,7 @@ is_a: OMRSE:00000002 ! party to a legal entity
 id: OMRSE:00000005
 name: party to a marriage contract
 is_a: OMRSE:00000004 ! party to a legal agreement
-relationship: RO:0000052 NCBITaxon:9606 ! characteristic of Homo sapiens
+is_a: OMRSE:00000050 ! Homo sapiens role
 
 [Term]
 id: OMRSE:00000006
@@ -3799,8 +3686,7 @@ is_a: OMRSE:00000002 ! party to a legal entity
 id: OMRSE:00000007
 name: gender role
 def: "A human social role borne by a human being being realized in behaviour which is considered socially appropriate for individuals of a specific sex in the context of a specific culture." []
-is_a: BFO:0000023 ! role
-relationship: RO:0000052 OBI:0100026 ! characteristic of organism
+is_a: OMRSE:00000049 ! organism role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Gender_role" xsd:string
 
@@ -3837,7 +3723,7 @@ name: patient role
 def: "A health care role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter." []
 comment: In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov't entities, with a person endowed by the gov't with certain certifications.
 is_a: OMRSE:00000010 ! health care role
-relationship: RO:0000052 OBI:0100026 ! characteristic of organism
+is_a: OMRSE:00000049 ! organism role
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "patient" xsd:string
@@ -3944,8 +3830,10 @@ id: OMRSE:00000026
 name: organism social role
 def: "A role in human social processes that inheres in an organism." []
 comment: Defined class that we will ultimately move to an application ontology.  We are leaving here for now until we determine which application ontology: it is likely going to be an ontology that does not currently (2012-06-05) exist.\n\nDitto for its current descendants.
+comment: Includes animals as well as humans.  For example, pet, assistance animal, animal grown for food, work animal, domesticated animal, K-9, etc.  Human roles include gender role, party to legal entities, health care provider roles like doctor, nurse, etc.
+comment: Previous definition: A role in human social processes played by an organism.
+is_a: OMRSE:00000049 ! organism role
 is_a: OMRSE:00002072 ! role in human social processes
-relationship: RO:0000052 OBI:0100026 ! characteristic of organism
 property_value: IAO:0000117 "William R. Hogan\nMathias Brochhausen" xsd:string
 
 [Term]
@@ -3976,9 +3864,9 @@ id: OMRSE:00000030
 name: human patient role
 def: "A patient role that inheres in a human being." []
 is_a: OMRSE:00000011 ! patient role
+is_a: OMRSE:00000050 ! Homo sapiens role
 intersection_of: OMRSE:00000011 ! patient role
 intersection_of: RO:0000052 NCBITaxon:9606 ! characteristic of Homo sapiens
-relationship: RO:0000052 NCBITaxon:9606 ! characteristic of Homo sapiens
 
 [Term]
 id: OMRSE:00000031
@@ -4058,14 +3946,12 @@ property_value: IAO:0000119 "Malcolm N. Shaw: International Law. Cambridge Unive
 id: OMRSE:00000039
 name: smoker role
 def: "A role that inheres in an organism and is realized by habitually smoking tobacco products." []
-is_a: BFO:0000023 ! role
-relationship: RO:0000052 NCBITaxon:9606 ! characteristic of Homo sapiens
+is_a: OMRSE:00000050 ! Homo sapiens role
 
 [Term]
 id: OMRSE:00000040
 name: intravenous drug user
-is_a: BFO:0000023 ! role
-relationship: RO:0000052 NCBITaxon:9606 ! characteristic of Homo sapiens
+is_a: OMRSE:00000050 ! Homo sapiens role
 
 [Term]
 id: OMRSE:00000041
@@ -4115,6 +4001,7 @@ is_obsolete: true
 id: OMRSE:00000045
 name: obsolete sovereign state
 def: "A governmental organization with a defined territory on which it exercises internal and external sovereignty, a permanent population, a government, and the capacity to enter into relations with other sovereign states." []
+comment: Per Wikipedia, the word 'nation' does not always refer to soverign states.  For example, the "nation of Islam".
 is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "nation" xsd:string
@@ -4144,26 +4031,35 @@ is_obsolete: true
 
 [Term]
 id: OMRSE:00000048
-name: obsolete material entity role
-is_a: oboInOwl:ObsoleteClass
-is_obsolete: true
+name: material entity role
+is_a: BFO:0000023 ! role
+intersection_of: BFO:0000023 ! role
+intersection_of: RO:0000052 BFO:0000040 ! characteristic of material entity
+relationship: RO:0000052 BFO:0000040 {all_only="true"} ! characteristic of material entity
+relationship: RO:0000052 BFO:0000040 ! characteristic of material entity
 
 [Term]
 id: OMRSE:00000049
-name: obsolete organism role
-is_a: oboInOwl:ObsoleteClass
-is_obsolete: true
+name: organism role
+is_a: OMRSE:00000048 ! material entity role
+intersection_of: OMRSE:00000048 ! material entity role
+intersection_of: RO:0000052 OBI:0100026 ! characteristic of organism
+relationship: RO:0000052 OBI:0100026 {all_only="true"} ! characteristic of organism
+relationship: RO:0000052 OBI:0100026 ! characteristic of organism
 
 [Term]
 id: OMRSE:00000050
-name: obsolete Homo sapiens role
-is_a: oboInOwl:ObsoleteClass
-is_obsolete: true
+name: Homo sapiens role
+is_a: OMRSE:00000049 ! organism role
+intersection_of: OMRSE:00000049 ! organism role
+intersection_of: RO:0000052 NCBITaxon:9606 ! characteristic of Homo sapiens
+relationship: RO:0000052 NCBITaxon:9606 ! characteristic of Homo sapiens
+relationship: RO:0000052 NCBITaxon:9606 {all_only="true"} ! characteristic of Homo sapiens
 
 [Term]
 id: OMRSE:00000051
 name: organization role
-is_a: BFO:0000023 ! role
+is_a: OMRSE:00000048 ! material entity role
 intersection_of: BFO:0000023 ! role
 intersection_of: RO:0000052 OBI:0000245 ! characteristic of organization
 relationship: RO:0000052 OBI:0000245 ! characteristic of organization
@@ -4240,6 +4136,7 @@ id: OMRSE:00000061
 name: architectural structure
 def: "A material entity that is a human made strcuture with firm connection between its foundation and the ground." []
 comment: "Building" is a subclass of this. 
+comment: This type of entity is referred to as "Bauwerk" or "Bauliche Anlage".
 is_a: BFO:0000040 ! material entity
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 "http://de.wikipedia.org/wiki/Bauwerk" xsd:string
@@ -4331,9 +4228,6 @@ name: housing unit
 def: "A material entity that has as parts one or more sites large enough to contain humans, has as part one or more material entities that separates it from other sites, and bears a residence function." []
 comment: Housing units are individuated by their residence functions.
 is_a: BFO:0000040 ! material entity
-relationship: BFO:0000051 BFO:0000029 ! has part site
-relationship: BFO:0000051 BFO:0000040 ! has part material entity
-relationship: RO:0000053 OMRSE:00000075 ! has characteristic residence function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000119 "https://github.com/ufbmi/OMRSE/wiki/Housing-unit-and-Household" xsd:string
 
@@ -4349,6 +4243,7 @@ id: OMRSE:00000076
 name: household
 def: "A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of that housing unit's residence function." []
 comment: Note in OMRSE it is the housing unit, not the people living there, that are the bearers of a "residence function".  Note the distinction between being a residence and a resident.
+comment: Note that it is not possible in OWL 2, at least that we have yet found, to say that the housing unit in which the process occurs is the same one that is the bearer of the residence function (that the process realizes).
 is_a: BFO:0000040 ! material entity
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
@@ -4465,7 +4360,6 @@ id: OMRSE:00000093
 name: insurance organization
 def: "An organization that secures a group of people against pecuniary loss by payment of a sum of money if a a specified event occurs." []
 is_a: OBI:0000245 ! organization
-relationship: RO:0000053 OMRSE:00000096 ! has characteristic party to an insurance policy
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -5215,6 +5109,7 @@ id: OMRSE:00000198
 name: information content entity-request process
 def: "a communication in which some participant requests of some other participant an information content entity about some portion of reality" []
 comment: As with the parent class, 'participant' in the definition need not refer to a human agent.
+comment: The medium and grammatical form are irrelevant. For example, the request may be written or spoken, and while it may be in the form of a question, it need not be.
 is_a: OMRSE:00002068 ! communication
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
@@ -5529,6 +5424,10 @@ id: OMRSE:00000225
 name: health care claim data set
 def: "A data set whose members are the specified output of some process of adjudicating health care insurance claims (and whose inputs are at least partly some members of a health care billing data set)." []
 comment: It covers prescription claims because pharmacies bill insurance companies for patients’ prescriptions via submitting insurance claims.
+comment: The insurance claim is submitted to the insurance company by either the patient or the provider. It is not necessarily always the provider, although in the United States, it typically is.
+comment: The outcome of the adjudication of a claim in the claims dataset could be favorable or unfavorable for the healthcare provider, the patient, or both. The idea is just that they’ve been adjudicated, one way or the other (or anything in between if that’s a possibility).
+comment: The reason we say billing data are only part of the input is because we are not conflating the insurance claim with the bill. It is our understanding that the provider’s bill of services is either part of the claim or “attached” to it in some manner, but doesn’t constitute the entire claim itself.
+comment: The sources of these data are held by insurers or other health plan providers.
 is_a: IAO:0000100 ! data set
 property_value: dc:contributor "Alan Ruttenberg" xsd:string
 property_value: dc:contributor "Mathias Brocchausen" xsd:string
@@ -5607,7 +5506,7 @@ id: OMRSE:00000232
 name: county smoking survey data
 def: "Survey data that is the specified output of a county smoking survey execution." []
 is_a: OBIB:0000667 ! survey data
-relationship: OBI:0000312 OMRSE:00000231 ! is specified output of county smoking survey execution
+relationship: OBI:0000312 OMRSE:00000231 ! is_specified_output_of county smoking survey execution
 property_value: dc:contributor "Hansi Zhang" xsd:string
 property_value: dc:contributor "Jiang Bian" xsd:string
 property_value: dc:contributor "Matthew Diller" xsd:string
@@ -6048,7 +5947,6 @@ id: OMRSE:00000287
 name: public housing function
 def: "A residence function that is realized only in processes in which eligible and approved residents participate, and that is a characteristic of a housing unit that is owned by a government and intended for use by seniors, people with disabilities, or those with low incomes." []
 is_a: OMRSE:00000075 ! residence function
-relationship: RO:0000052 OMRSE:00000074 ! characteristic of housing unit
 property_value: dc:source "https://orcid.org/0000-0003-1909-9269" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -6057,7 +5955,6 @@ id: OMRSE:00000288
 name: public housing eligibility role
 def: "A role that inheres in a person who qualifies for public housing according to the criteria set forth by the relevant governmental entity and that is realized in processes that both have the person as a participant and realize the public housing function of some housing unit." []
 is_a: OMRSE:00002072 ! role in human social processes
-relationship: RO:0000052 NCBITaxon:9606 ! characteristic of Homo sapiens
 property_value: dc:source "https://orcid.org/0000-0003-1909-9269" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -6217,7 +6114,8 @@ is_a: IAO:0000027 ! data item
 
 [Term]
 id: OMRSE:00000507
-name: obsolete Afar
+name: Afar
+name: obsolete non-binary gender identity datum
 def: "A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant's subjective sense of gender." []
 comment: Alternatively: A gender identity datum stating that a person's subjective sense of gender is non-binary.)\n\nExamples of usage: ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)
 is_a: oboInOwl:ObsoleteClass
@@ -6232,7 +6130,6 @@ property_value: OMRSE:00002025 "aa" xsd:string
 property_value: OMRSE:00002026 "aar" xsd:string
 property_value: OMRSE:00002027 "aar" xsd:string
 is_obsolete: true
-replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000923
 replaced_by: non-binary gender identity information content entity
 
 [Term]
@@ -6240,6 +6137,7 @@ id: OMRSE:00002029
 name: education process
 def: "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative." []
 comment: An interesting question is whether there must be another participant who is the "educator".  Some might object that many people are "self taught".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the tip of a finger.  There was no previous information about that type of skill.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow "plays a role" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).
+comment: The loss of a "bad" capability is something like losing a bad golf swing and replacing it with a good one.  Also a capability to disrupt the classroom might be something an educating process diminishes possibly to the point of "removal" in a student.\n\nThis addition to the definition notwithstanding, we do not intend to incorporate the receipt of punishment into the definition of educating.
 is_a: OBI:0000011 ! planned process
 property_value: IAO:0000111 "educating" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
@@ -6273,6 +6171,7 @@ id: OMRSE:00002032
 name: completing a program of education
 def: "An educating that realizes a concretization of some program of education." []
 comment: Note that parent class 'educating' and referenced class 'program of education' are defined elsewhere in this education module of OMRSE.
+comment: This class refers extremely broadly to the successful realization of any program of education: a single course, first grade, MD, PhD, high school, the ninth grade, getting a black belt in karate, getting a master mechanic certification, a bachelor's degree, a masters degree, a graduate certificate, early childhood education program, and even getting a certificate at the end of some week-long workshop, summer camp, a certifcate from a cooking class, an actuarial certification.
 is_a: OMRSE:00002029 ! education process
 property_value: IAO:0000111 "completing a program of education" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
@@ -6294,6 +6193,8 @@ id: OMRSE:00002034
 name: primary education program
 def: "An education plan specification with one or more primary education objective specifications as parts, and these are the only objective specifications it has as parts." []
 comment: In the united states, also called "elementary education"
+comment: It can still have action specifications as parts, and possibly other ICEs as parts.  That's why we cannot say it has only primary education objectives as parts, and we have to introduce the double negative in the class axiom.
+comment: Primary education provides learning and educational activities typically designed to provide students with fundamental skills in reading, writing and mathematics (i.e. literacy and numeracy), and to establish a sound foundation for learning and solid understanding of core areas of knowledge and personal development, preparing for lower secondary education. It aims at learning at a basic level of complexity with little if any specialisation.
 is_a: OMRSE:00002031 ! educational program
 relationship: BFO:0000051 OMRSE:00002035 ! has part primary education objective
 property_value: IAO:0000111 "primary education plan specification" xsd:string
@@ -6315,6 +6216,7 @@ id: OMRSE:00002036
 name: lower secondary education objective
 def: "An education objective specification that has a concretization that, when realized, confers to the active participant skills and knowledge in subject areas more specialized than basic reading, writing, and mathematics, with the overall goal of laying the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities." []
 comment: Examples of specific subjects could--but are not necessarily required to--include biology, history, science, literature, music, art.  Programs at this level are usually organized around a more subject-oriented curriculum, introducing theoretical concepts across a broad range of subjects.
+comment: Programmes at ISCED level 2, or ‘lower secondary’ education, are typically designed to build upon the fundamental teaching and learning processes which begin at ISCED level 1. Usually, the educational aim is to lay the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities. Programmes at this level are usually organized around a more subject-oriented curriculum, introducing theoretical concepts across a broad range of subjects.
 is_a: OMRSE:00002030 ! educational objective
 property_value: IAO:0000111 "lower secondary education objective specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
@@ -6327,8 +6229,8 @@ def: "A deontic document act that has as specified output an academic degree and
 comment: Different degrees have different claims and obligations associated with them.  For example, having a medical degree (either M.D. or D.O.) entitles a person to sit for stage 3 of the US Medical Licensing Exam (otherwise one may not take the exam).
 is_a: IAO:0021001 ! deontic document act
 intersection_of: IAO:0021001 ! deontic document act
-intersection_of: OBI:0000299 OOSTT:00000074 ! has specified output academic degree
-relationship: OBI:0000299 OOSTT:00000074 ! has specified output academic degree
+intersection_of: OBI:0000299 OOSTT:00000074 ! has_specified_output academic degree
+relationship: OBI:0000299 OOSTT:00000074 ! has_specified_output academic degree
 property_value: IAO:0000111 "awarding of an academic degree" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -6337,6 +6239,7 @@ id: OMRSE:00002038
 name: basic education program
 def: "An education plan specification that has as part both a primary educational objective specification and a lower secondary educational objective specification." []
 comment: Most nations in the world mandate that children complete at least a basic education program.  Some nations go further and include upper secondary education after basic education.
+comment: Whole range of educational activities, taking place in various settings, that aim to meet basic learning needs as defined in the World Declaration on Education for All (Jomtien, Thailand, 1990). According to ISCED standard, basic education comprises primary education (first stage of basic education) and lower secondary education (second stage). It also covers a wide variety of non-formal and informal public and private activities intended to meet the basic learning needs of people of all ages.
 is_a: OMRSE:00002031 ! educational program
 intersection_of: OMRSE:00002031 ! educational program
 intersection_of: BFO:0000051 OMRSE:00002035 ! has part primary education objective
@@ -6352,6 +6255,8 @@ id: OMRSE:00002039
 name: lower secondary education program
 def: "An education plan specification with one or more lower secondary education objective specifications as parts, and these are the only objective specifications it has as parts." []
 comment: It can still have action specifications as parts, and possibly other ICEs as parts.  That's why we cannot say it has only lower secondary education objectives as parts, and we have to introduce the double negative in the class axiom.
+comment: Programmes at ISCED level 2, or ‘lower secondary’ education, are typically designed to build upon the fundamental teaching and learning processes which begin at ISCED level 1. Usually, the educational aim is to lay the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities. Programmes at this level are usually organized around a more subject-oriented curriculum, introducing theoretical concepts across a broad range of subjects.
+comment: Requires successful completion of a primary education program as a pre-requisite.
 is_a: OMRSE:00002031 ! educational program
 relationship: BFO:0000051 OMRSE:00002036 ! has part lower secondary education objective
 property_value: IAO:0000111 "lower secondary education plan specification" xsd:string
@@ -6372,6 +6277,8 @@ id: OMRSE:00002041
 name: upper secondary education program
 def: "An education plan specification with one or more upper secondary education objective specifications as parts, and these are the only objective specifications it has as parts." []
 comment: It can still have action specifications as parts, and possibly other ICEs as parts.  That's why we cannot say it has only lower secondary education objectives as parts, and we have to introduce the double negative in the class axiom.
+comment: Programmes at ISCED level 3, or ‘upper secondary’ education, are typically designed to complete secondary education in preparation for tertiary education, or to provide skills relevant to employment, or both. Programmes at this level offer students more varied, specialised and in-depth instruction than programmes at lower secondary education (ISCED level 2). They are more differentiated, with an increased range of options and streams available.
+comment: Requires successful completion of a lower secondary education program as a pre-requisite.
 is_a: OMRSE:00002031 ! educational program
 relationship: BFO:0000051 OMRSE:00002040 ! has part upper secondary education objective
 property_value: IAO:0000111 "upper secondary education plan specification" xsd:string
@@ -6381,6 +6288,8 @@ property_value: IAO:0000117 "William R. Hogan" xsd:string
 id: OMRSE:00002042
 name: higher education program
 comment: Includes college, university, community college, professional schools (MD, RN, PharmD, PT, OT, DDS, dental hygienist, etc.), and so on.
+comment: Refers to all higher education beyond secondary education, and thus encompasses ISCED levels 5 and above, which will eventually be subclasses of this one.
+comment: Requires successful completion of a secondary education program as a pre-requisite.
 is_a: OMRSE:00002031 ! educational program
 relationship: BFO:0000051 OMRSE:00002043 ! has part higher education objective
 property_value: IAO:0000111 "higher education plan specification" xsd:string
@@ -6413,6 +6322,7 @@ id: OMRSE:00002045
 name: highest level of education data item
 def: "A socio-economic data item that is about a person and their completion of at least some of the required courses of an education program, where the set of planned competencies to be acquired by completing that program, as a whole, are of a more advanced nature than the set of competencies acquired through any other educational program completed by the person." []
 comment: Note that by 'more advanced nature' of the competencies, we do not mean merely having more knowledge, but rather a set of competencies / capabilities that enable the person to do things of a fundamentally different nature than before. This distinction is exemplified by the difference between a Masters and a PhD degree. The PhD has a key objective of enabling the person to function as an investigator in the domain, whereas a Masters does not.
+comment: This data item in a typical attribute-value system such as table, XML, JSON takes values like "secondary education", "Associate Degree", "Bachelor Degree", "High School", and so on.\n\nAlso, note that we revised the definition in collaboration with our APRICOT project colleagues who noted that the individual need not have completed one of the education programs in a sequence, instead demonstrating competencies for admission to the highest level of eductation in some alternative way. For example, the highest level of education might be baccalaureate degree, but the individual did not graduate a secondary education program but instead got a General Educational Development (GED) certification / degree.
 is_a: OMRSE:00000506 ! socio-economic data item
 property_value: dc:contributor "Colbie Reed" xsd:string
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
@@ -6459,6 +6369,7 @@ id: OMRSE:00002049
 name: graduate higher education program
 def: "A higher education plan specification that specifies the awarding of a graduate certificate or degree, and specifies as a pre-requisite the awarding of an undergraduate degree." []
 comment: Graduate degrees include masters, PhD, MD, PharmD, and other post-graduate professional degrees.  To distinguish MS/PhD from the professional ones, subclass this class.
+comment: The prerequisite degree is at the bachelors level or equivalent.  An associates degree is almost never sufficient for entry into graduate education programs.
 is_a: OMRSE:00002042 ! higher education program
 property_value: dc:creator http://orcid.org/0000-0002-9881-1017
 property_value: dc:date "2020-09-02T13:01:34Z" xsd:dateTime
@@ -6558,6 +6469,8 @@ id: OMRSE:00002058
 name: linguistic literacy competence
 def: "A disposition borne by a human being that (1) has a linguistic competence as a dispositional part and (2) if realized, is realized by the bearer's achievement of some personal goal." []
 comment: Other dispositions that it can and likely does have as dispositional parts include cultural competencies, interpersonal competencies, competencies for navigating a society's systems of laws, claims, obligations, deontic declarations, and norms of financial and other economic exchange.
+comment: The realization of this disposition by definition realizes the bearer's linguistic competence that is a dispositional part of this disposition.  The realization of the linguistic competence would be an occurrent part of the realization of this disposition (and not a temporal part).
+comment: Whereas linguistic competence may be afforded to non-human agents, literacy is nearly always considered in the context of human beings.
 is_a: BFO:0000016 ! disposition
 property_value: dc:contributor "Jiang Bian" xsd:string
 property_value: dc:contributor "Xi Yang" xsd:string
@@ -6603,6 +6516,7 @@ id: OMRSE:00002062
 name: concretization-utilization process
 def: "Process in which some participant utilizes some specifically dependent continuant as a concretization of some generically dependent continuant." []
 comment: Instances include any process that brings it about that some specifically dependent continuant begins to stand in a concretization relation to some generically dependent continuant, as well as any process in which someone makes use of a pre-established concretization relation. To be clear, instances do not include using concretizations of words or letters for purposes that do not make use of the concretization relations in which they stand (for example, hanging up a sign in a foreign language as a decoration because one likes the colors, despite having no idea what the sign says).
+comment: Instances include, but are not limited to, processes that bring about cognitive concretizations.
 is_a: BFO:0000015 ! process
 relationship: RO:0000057 BFO:0000040 ! has participant material entity
 property_value: dc:contributor "Matthew Diller" xsd:string
@@ -6662,6 +6576,8 @@ id: OMRSE:00002068
 name: communication
 def: "A process in which some participant shares some generically dependent continuant with some other participant. The former utilizes some specifically dependent continuant that concretizes the generically dependent continuant intended to be shared, while the latter interprets that specifically dependent continuant to concretize some particular generically dependent continuant, aiming to accurately infer the other participant’s intent." []
 comment: For example, if you tell someone, “It is raining,” you produce sounds that have patterns that concretize information about the weather. Your utilization of that concretization is part of the communication. When the other person hears you, they interpret those patterns to concretize something, which may or may not be the same as what you intended to convey. In other words, they interpret the sounds you produce to have meanings associated with them, and that interpretation process is another part of the communication. If a process does not have a part of each type, it is not a communication.
+comment: The interpretation need not correspond exactly to what was intended by the other participant.
+comment: The term 'participant' in the definition need not refer to a human agent.
 is_a: BFO:0000015 ! process
 relationship: RO:0000057 BFO:0000040 ! has participant material entity
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
@@ -6674,7 +6590,6 @@ id: OMRSE:00002069
 name: language
 def: "A disposition that (i) is an aggregate of linguistic competences, considered as forming a distinct group on the basis of perceived common characteristics, such as mutual intelligibility among their bearers, in addition to historical or cultural factors; (ii) if realized, is realized in any and all realizations of those linguistic competences; and (iii) inheres in a linguistic community." []
 is_a: BFO:0000016 ! disposition
-relationship: RO:0002351 OMRSE:00002066 ! has member linguistic competence
 relationship: RO:0002351 OMRSE:00002066 ! has member linguistic competence
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: dc:contributor "Matthew Diller" xsd:string
@@ -6708,8 +6623,7 @@ id: OMRSE:00002072
 name: role in human social processes
 def: "A role that inheres in some entity that is realized in a social act." []
 comment: Previous definition: A role played by an entity in human social processes.
-is_a: BFO:0000023 ! role
-relationship: RO:0000052 BFO:0000040 ! characteristic of material entity
+is_a: OMRSE:00000048 ! material entity role
 relationship: RO:0000052 BFO:0000040 {all_only="true"} ! characteristic of material entity
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -6859,6 +6773,10 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
 id: BFO:0000050
 name: part of
 def: "a core relation that holds between a part and its whole" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000111 "is part of" xsd:string
 property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
 property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
@@ -6868,7 +6786,17 @@ property_value: IAO:0000116 "Occurrents are not subject to change and so parthoo
 property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
 property_value: IAO:0000118 "part_of" xsd:string
 property_value: RO:0001900 RO:0001901
+property_value: RO:0040042 BFO:0000002
+property_value: RO:0040042 BFO:0000003
+property_value: RO:0040042 BFO:0000004
+property_value: RO:0040042 BFO:0000017
+property_value: RO:0040042 BFO:0000019
+property_value: RO:0040042 BFO:0000020
+property_value: RO:0040042 BFO:0000031
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:PartOf
 property_value: seeAlso "http://www.obofoundry.org/ro/#OBO_REL:part_of" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Part_of" xsd:anyURI
 is_transitive: true
 is_a: RO:0002131 ! overlaps
 inverse_of: BFO:0000051 ! has part
@@ -6877,6 +6805,9 @@ inverse_of: BFO:0000051 ! has part
 id: BFO:0000051
 name: has part
 def: "a core relation that holds between a whole and its part" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000111 "has part" xsd:string
 property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
 property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
@@ -6923,6 +6854,7 @@ range: BFO:0000017 ! realizable entity
 id: BFO:0000062
 name: preceded by
 def: "x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
+subset: ro-eco
 property_value: IAO:0000111 "preceded by" xsd:string
 property_value: IAO:0000116 "An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other." xsd:string
 property_value: IAO:0000118 "is preceded by" xsd:string
@@ -6939,6 +6871,7 @@ inverse_of: BFO:0000063 ! precedes
 id: BFO:0000063
 name: precedes
 def: "x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
+subset: ro-eco
 property_value: IAO:0000111 "precedes" xsd:string
 domain: BFO:0000003 ! occurrent
 range: BFO:0000003 ! occurrent
@@ -6951,11 +6884,15 @@ id: BFO:0000066
 name: occurs in
 def: "b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t" []
 comment: Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000111 "occurs in" xsd:string
 property_value: IAO:0000118 "occurs_in" xsd:string
 property_value: IAO:0000118 "unfolds in" xsd:string
 property_value: IAO:0000118 "unfolds_in" xsd:string
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+property_value: seeAlso "https://wiki.geneontology.org/Occurs_in" xsd:anyURI
 domain: BFO:0000003 ! occurrent
 range: BFO:0000004 ! independent continuant
 holds_over_chain: BFO:0000050 BFO:0000066
@@ -7171,7 +7108,9 @@ name: is_specified_input_of
 [Typedef]
 id: OBI:0000299
 name: has specified output
+name: has_specified_output
 def: "The inverse property of is specified output of" []
+def: "The inverse property of is_specified_output_of" []
 property_value: IAO:0000111 "has specified output" xsd:string
 property_value: IAO:0000111 "has_specified_output" xsd:string
 property_value: IAO:0000111 "has_specified_output" xsd:string
@@ -7183,11 +7122,12 @@ property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 domain: OBI:0000011 ! planned process
 is_a: RO:0000057 ! has participant
-inverse_of: OBI:0000312 ! is specified output of
+inverse_of: OBI:0000312 ! is_specified_output_of
 
 [Typedef]
 id: OBI:0000312
 name: is specified output of
+name: is_specified_output_of
 def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
 property_value: IAO:0000111 "is specified output of" xsd:string
 property_value: IAO:0000111 "is_specified_output_of" xsd:string
@@ -7444,6 +7384,7 @@ holds_over_chain: BFO:0000051 RO:0000057
 id: RO:0000058
 name: is concretized as
 def: "A relationship between a generically dependent continuant and a specifically dependent continuant or process, in which the generically dependent continuant depends on some independent continuant or process in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants or processes." []
+def: "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants." []
 property_value: IAO:0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)." xsd:string
 property_value: IAO:0000112 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)." xsd:string
 domain: BFO:0000031 ! generically dependent continuant
@@ -7454,6 +7395,7 @@ inverse_of: RO:0000059 ! concretizes
 id: RO:0000059
 name: concretizes
 def: "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant." []
+def: "A relationship between a specifically dependent continuant or process and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant or process also depends on that same independent continuant. Multiple specifically dependent continuants or processes can concretize the same generically dependent continuant." []
 property_value: IAO:0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)." xsd:string
 property_value: IAO:0000112 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)." xsd:string
 domain: BFO:0000020 ! specifically dependent continuant
@@ -7542,6 +7484,7 @@ id: RO:0000092
 name: disposition of
 def: "inverse of has disposition" []
 comment: This relation is modeled after the BFO relation of the same name which was in BFO2, but is used in a more restricted sense - specifically, we model this relation as functional (inherited from characteristic-of). Note that this relation is now removed from BFO2020.
+subset: RO:0002259
 is_a: RO:0000052 ! characteristic of
 
 [Typedef]
@@ -7636,6 +7579,8 @@ name: has regulatory component activity
 def: "A 'has regulatory component activity' B if A and B are GO molecular functions (GO_0003674), A has_component B and A is regulated by B." []
 is_a: RO:0002017 ! has component activity
 is_a: RO:0002334 ! regulated by
+created_by: https://orcid.org/0000-0002-7073-9172
+creation_date: 2017-05-24T09:30:46Z
 
 [Typedef]
 id: RO:0002014
@@ -7644,6 +7589,8 @@ def: "A relationship that holds between a GO molecular function and a component 
 comment: By convention GO molecular functions are classified by their effector function.  Internal regulatory functions are treated as components.  For example, NMDA glutmate receptor activity is a cation channel activity with positive regulatory component 'glutamate binding' and negative regulatory components including 'zinc binding' and 'magnesium binding'.
 is_a: RO:0002013 ! has regulatory component activity
 is_a: RO:0002335 ! negatively regulated by
+created_by: https://orcid.org/0000-0002-7073-9172
+creation_date: 2017-05-24T09:31:01Z
 
 [Typedef]
 id: RO:0002015
@@ -7652,12 +7599,16 @@ def: "A relationship that holds between a GO molecular function and a component 
 comment: By convention GO molecular functions are classified by their effector function and internal regulatory functions are treated as components.  So, for example calmodulin has a protein binding activity that has positive regulatory component activity calcium binding activity. Receptor tyrosine kinase activity is a tyrosine kinase activity that has positive regulatory component 'ligand binding'.
 is_a: RO:0002013 ! has regulatory component activity
 is_a: RO:0002336 ! positively regulated by
+created_by: https://orcid.org/0000-0002-7073-9172
+creation_date: 2017-05-24T09:31:17Z
 
 [Typedef]
 id: RO:0002017
 name: has component activity
 comment: A 'has component activity' B if A is A and B are molecular functions (GO_0003674) and A has_component B.
 is_a: RO:0002018 ! has component process
+created_by: https://orcid.org/0000-0002-7073-9172
+creation_date: 2017-05-24T09:44:33Z
 
 [Typedef]
 id: RO:0002018
@@ -7666,6 +7617,8 @@ def: "w 'has process component' p if p and w are processes,  w 'has part' p and 
 domain: BFO:0000015 ! process
 range: BFO:0000015 ! process
 is_a: RO:0002180 ! has component
+created_by: https://orcid.org/0000-0002-7073-9172
+creation_date: 2017-05-24T09:49:21Z
 
 [Typedef]
 id: RO:0002022
@@ -7673,6 +7626,8 @@ name: directly regulated by
 comment: Process(P2) is directly regulated by process(P1) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2. {xref="https://orcid.org/0000-0002-7073-9172"}
 is_a: RO:0002334 ! regulated by
 inverse_of: RO:0002578 ! directly regulates
+created_by: https://orcid.org/0000-0002-7073-9172
+creation_date: 2017-09-17T13:52:24Z
 
 [Typedef]
 id: RO:0002023
@@ -7680,6 +7635,8 @@ name: directly negatively regulated by
 def: "Process(P2) is directly negatively regulated by process(P1) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P2 directly negatively regulated by P1." [https://orcid.org/0000-0002-7073-9172]
 is_a: RO:0002022 ! directly regulated by
 inverse_of: RO:0002630 ! directly negatively regulates
+created_by: https://orcid.org/0000-0002-7073-9172
+creation_date: 2017-09-17T13:52:38Z
 
 [Typedef]
 id: RO:0002024
@@ -7687,6 +7644,8 @@ name: directly positively regulated by
 def: "Process(P2) is directly postively regulated by process(P1) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P2 is directly postively regulated by P1." [https://orcid.org/0000-0002-7073-9172]
 is_a: RO:0002022 ! directly regulated by
 inverse_of: RO:0002629 ! directly positively regulates
+created_by: https://orcid.org/0000-0002-7073-9172
+creation_date: 2017-09-17T13:52:47Z
 
 [Typedef]
 id: RO:0002025
@@ -7695,12 +7654,15 @@ def: "A 'has effector activity' B if A and B are GO molecular functions (GO_0003
 comment: This relation is designed for constructing compound molecular functions, typically in combination with one or more regulatory component activity relations.
 is_functional: true
 is_a: RO:0002017 ! has component activity
+created_by: https://orcid.org/0000-0002-7073-9172
+creation_date: 2017-09-22T14:14:36Z
 
 [Typedef]
 id: RO:0002081
 name: before or simultaneous with
 comment: Primitive instance level timing relation between events
-property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
+subset: ro-eco
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "<=" xsd:string
 is_a: RO:0002222 ! temporally related to
 
@@ -7708,7 +7670,8 @@ is_a: RO:0002222 ! temporally related to
 id: RO:0002083
 name: before
 comment: t1 before t2 iff:=  t1 before_or_simulataneous_with t2  and not (t1 simultaeous_with t2)
-property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
+subset: ro-eco
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 is_transitive: true
 is_a: RO:0002081 ! before or simultaneous with
 
@@ -7716,7 +7679,8 @@ is_a: RO:0002081 ! before or simultaneous with
 id: RO:0002086
 name: ends after
 comment: X ends_after Y iff: end(Y) before_or_simultaneous_with end(X)
-property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
+subset: ro-eco
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 is_transitive: true
 is_a: RO:0002222 ! temporally related to
 
@@ -7724,7 +7688,7 @@ is_a: RO:0002222 ! temporally related to
 id: RO:0002087
 name: immediately preceded by
 comment: X immediately_preceded_by Y iff: end(X) simultaneous_with start(Y)
-property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000118 "starts_at_end_of" xsd:string
 holds_over_chain: RO:0002224 RO:0002230
 is_a: BFO:0000062 ! preceded by
@@ -7734,9 +7698,12 @@ inverse_of: RO:0002090 ! immediately precedes
 id: RO:0002090
 name: immediately precedes
 comment: X immediately_precedes_Y iff: end(X) simultaneous_with start(Y)
+subset: ro-eco
+property_value: IAO:0000117 "David Osumi-Sutherland" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-7073-9172
 property_value: IAO:0000118 "ends_at_start_of" xsd:string
 property_value: IAO:0000118 "meets" xsd:string
+property_value: RO:0002575 BFO:0000063
 holds_over_chain: RO:0002230 RO:0002224
 is_a: BFO:0000063 ! precedes
 
@@ -7744,32 +7711,45 @@ is_a: BFO:0000063 ! precedes
 id: RO:0002131
 name: overlaps
 def: "x overlaps y if and only if there exists some z such that x has part z and z part of y" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
+property_value: RO:0001900 RO:0001901
 holds_over_chain: BFO:0000050 BFO:0000050
+holds_over_chain: BFO:0000051 BFO:0000050 {RO:0002582="true"}
 holds_over_chain: BFO:0000051 RO:0002131
 is_symmetric: true
 is_a: RO:0002323 ! mereotopologically related to
 transitive_over: BFO:0000050 ! part of
+expand_expression_to: "http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.obolibrary.org/obo/BFO_0000050 some ?Y)" []
 
 [Typedef]
 id: RO:0002180
 name: has component
 def: "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type." []
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000116 "The definition of 'has component' is still under discussion. The challenge is in providing a definition that does not imply transitivity." xsd:string
 property_value: IAO:0000232 "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit." xsd:string
+property_value: RO:0001900 RO:0001901
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:Componency
 is_a: BFO:0000051 ! has part
 
 [Typedef]
 id: RO:0002211
 name: regulates
 def: "p regulates q iff p is causally upstream of q, the execution of p is not constant and varies according to specific conditions, and p influences the rate or magnitude of execution of q due to an effect either on some enabler of q or some enabler of a part of q." []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000117 https://orcid.org/0000-0001-7476-6306
 property_value: IAO:0000117 https://orcid.org/0000-0002-3837-8864
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000119 "GO" xsd:string
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 property_value: IAO:0000232 "Regulation precludes parthood; the regulatory process may not be within the regulated process." xsd:string
+property_value: IAO:0000589 "regulates (processual)" xsd:string
 property_value: IAO:0000600 "false" xsd:boolean
 domain: BFO:0000015 ! process
 range: BFO:0000015 ! process
@@ -7784,8 +7764,13 @@ transitive_over: RO:0002025 ! has effector activity
 id: RO:0002212
 name: negatively regulates
 def: "p negatively regulates q iff p regulates q, and p decreases the rate or magnitude of execution of q." []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: IAO:0000589 "negatively regulates (process to process)" xsd:string
+property_value: RO:0004050 RO:0002211
 holds_over_chain: RO:0002230 RO:0002212
 is_a: RO:0002211 ! regulates
 is_a: RO:0002305 ! causally upstream of, negative effect
@@ -7795,8 +7780,13 @@ inverse_of: RO:0002335 ! negatively regulated by
 id: RO:0002213
 name: positively regulates
 def: "p positively regulates q iff p regulates q, and p increases the rate or magnitude of execution of q." []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: IAO:0000589 "positively regulates (process to process)" xsd:string
+property_value: RO:0004049 RO:0002211
 holds_over_chain: RO:0002212 RO:0002212
 holds_over_chain: RO:0002230 RO:0002213
 is_transitive: true
@@ -7808,6 +7798,7 @@ inverse_of: RO:0002336 ! positively regulated by
 id: RO:0002215
 name: capable of
 def: "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. " []
+subset: ro-eco
 property_value: IAO:0000112 "mechanosensory neuron capable of detection of mechanical stimulus involved in sensory perception (GO:0050974)" xsd:string
 property_value: IAO:0000112 "osteoclast SubClassOf 'capable of' some 'bone resorption'" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
@@ -7825,6 +7816,8 @@ name: capable of part of
 def: "c stands in this relationship to p if and only if there exists some p' such that c is capable_of p', and p' is part_of p." []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "has function in" xsd:string
+property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/reflexivity/
+holds_over_chain: RO:0002215 BFO:0000050 {RO:0002582="true"}
 is_a: RO:0002328 ! functionally related to
 is_a: RO:0002500 ! causal agent in process
 
@@ -7836,6 +7829,7 @@ comment: Obsoleted as the inverse property was obsoleted.
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "agent in" xsd:string
 is_a: oboInOwl:ObsoleteProperty
+is_obsolete: true
 replaced_by: RO:0002608
 
 [Typedef]
@@ -7844,12 +7838,14 @@ name: obsolete has active participant
 def: "OBSOLETE x has participant y if and only if x realizes some active role that inheres in y" []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "has agent" xsd:string
+is_obsolete: true
 replaced_by: RO:0002500
 
 [Typedef]
 id: RO:0002222
 name: temporally related to
 comment: A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000119 https://en.wikipedia.org/wiki/Allen%27s_interval_algebra
@@ -7862,7 +7858,9 @@ range: BFO:0000003 ! occurrent
 id: RO:0002223
 name: starts
 def: "inverse of starts with" []
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000119 "Allen" xsd:string
 is_a: BFO:0000050 ! part of
@@ -7873,8 +7871,10 @@ inverse_of: RO:0002224 ! starts with
 id: RO:0002224
 name: starts with
 def: "x starts with y if and only if x has part y and the time point at which x starts is equivalent to the time point at which y starts. Formally: α(y) = α(x) ∧ ω(y) < ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
+subset: ro-eco
 property_value: IAO:0000112 "Every insulin receptor signaling pathway starts with the binding of a ligand to the insulin receptor" xsd:string
 property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "started by" xsd:string
 is_transitive: true
@@ -7885,7 +7885,9 @@ is_a: RO:0002222 ! temporally related to
 id: RO:0002229
 name: ends
 def: "inverse of ends with" []
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 is_a: BFO:0000050 ! part of
 is_a: RO:0002222 ! temporally related to
@@ -7895,7 +7897,9 @@ inverse_of: RO:0002230 ! ends with
 id: RO:0002230
 name: ends with
 def: "x ends with y if and only if x has part y and the time point at which x ends is equivalent to the time point at which y ends. Formally: α(y) > α(x) ∧ ω(y) = ω(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point." []
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000117 "Chris Mungall" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "finished by" xsd:string
 is_transitive: true
@@ -7906,6 +7910,7 @@ is_a: RO:0002222 ! temporally related to
 id: RO:0002231
 name: has start location
 def: "x 'has starts location' y if and only if there exists some process z such that x 'starts with' z and z 'occurs in' y" []
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "starts with process that occurs in" xsd:string
@@ -7918,6 +7923,7 @@ is_a: RO:0002479 ! has part that occurs in
 id: RO:0002232
 name: has end location
 def: "x 'has end location' y if and only if there exists some process z such that x 'ends with' z and z 'occurs in' y" []
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "ends with process that occurs in" xsd:string
@@ -7930,9 +7936,14 @@ is_a: RO:0002479 ! has part that occurs in
 id: RO:0002233
 name: has input
 def: "p has input c iff: p is a process, c is a material entity, c is a participant in p, c is present at the start of p, and the state of c is modified during p." []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "consumes" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Has_input" xsd:anyURI
 domain: BFO:0000015 ! process
 holds_over_chain: RO:0002224 RO:0002233
 is_a: RO:0000057 ! has participant
@@ -7942,9 +7953,14 @@ inverse_of: RO:0002352 ! input of
 id: RO:0002234
 name: has output
 def: "p has output c iff c is a participant in p, c is present at the end of p, and c is not present in the same state at the beginning of p." []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "produces" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Has_output" xsd:anyURI
 holds_over_chain: RO:0002230 RO:0002234
 is_a: RO:0000057 ! has participant
 inverse_of: RO:0002353 ! output of
@@ -7953,7 +7969,9 @@ inverse_of: RO:0002353 ! output of
 id: RO:0002263
 name: acts upstream of
 def: "c acts upstream of p if and only if c enables some f that is involved in p' and p' occurs chronologically before p, is not part of p, and affects the execution of p. c is a material entity and f, p, p' are processes." []
+subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: IAO:0000112 "A faulty traffic light (material entity) whose malfunctioning (a process) is causally upstream of a traffic collision (a process): the traffic light acts upstream of the collision." xsd:string
+property_value: seeAlso http://wiki.geneontology.org/index.php/Acts_upstream_of
 holds_over_chain: RO:0002327 RO:0002411
 is_a: RO:0002264 ! acts upstream of or within
 
@@ -7961,7 +7979,10 @@ is_a: RO:0002264 ! acts upstream of or within
 id: RO:0002264
 name: acts upstream of or within
 def: "c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process." []
+subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+synonym: "affects" RELATED []
 property_value: IAO:0000112 "A gene product that has some activity, where that activity may be a part of a pathway or upstream of the pathway." xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of_or_within" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0002418
 is_a: RO:0002500 ! causal agent in process
 
@@ -7970,6 +7991,10 @@ id: RO:0002304
 name: causally upstream of, positive effect
 def: "p is causally upstream of, positive effect q iff p is casually upstream of q, and the execution of p is required for the execution of q." []
 comment: holds between x and y if and only if x is causally upstream of y and the progression of x increases the frequency, rate or extent of y
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+property_value: RO:0004049 RO:0002411
+property_value: seeAlso https://wiki.geneontology.org/Causally_upstream_of,_positive_effect
 property_value: terms:creator https://orcid.org/0000-0002-6601-2165
 is_a: RO:0002411 ! causally upstream of
 is_a: RO:0004047 ! causally upstream of or within, positive effect
@@ -7978,6 +8003,10 @@ is_a: RO:0004047 ! causally upstream of or within, positive effect
 id: RO:0002305
 name: causally upstream of, negative effect
 def: "p is causally upstream of, negative effect q iff p is casually upstream of q, and the execution of p decreases the execution of q." []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
+property_value: RO:0004050 RO:0002411
+property_value: seeAlso https://wiki.geneontology.org/Causally_upstream_of,_negative_effect
 property_value: terms:creator https://orcid.org/0000-0002-6601-2165
 is_a: RO:0002411 ! causally upstream of
 is_a: RO:0004046 ! causally upstream of or within, negative effect
@@ -7990,6 +8019,9 @@ property_value: IAO:0000116 "Because part_of is transitive, inheres in is a sub-
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "inheres in part of" xsd:string
 property_value: IAO:0000119 http://www.ncbi.nlm.nih.gov/pubmed/20064205
+property_value: RO:0001900 RO:0001901
+property_value: seeAlso http://purl.obolibrary.org/obo/ro/docs/reflexivity/
+holds_over_chain: RO:0000052 BFO:0000050 {RO:0002582="true"}
 is_a: RO:0002502 ! depends on
 transitive_over: BFO:0000050 ! part of
 
@@ -7999,11 +8031,13 @@ name: mereotopologically related to
 def: "A mereological relationship or a topological relationship" []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000232 "Do not use this relation directly. It is ended as a grouping for a diverse set of relations, all involving parthood or connectivity relationships" xsd:string
+property_value: RO:0001900 RO:0001901
 
 [Typedef]
 id: RO:0002327
 name: enables
 def: "c enables p iff c is capable of p and c acts to execute p." []
+subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
 property_value: IAO:0000112 "a particular instances of akt-2 enables some instance of protein kinase activity" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "catalyzes" xsd:string
@@ -8012,6 +8046,7 @@ property_value: IAO:0000118 "has" xsd:string
 property_value: IAO:0000118 "is catalyzing" xsd:string
 property_value: IAO:0000118 "is executing" xsd:string
 property_value: IAO:0000232 "This relation differs from the parent relation 'capable of' in that the parent is weaker and only expresses a capability that may not be actually realized, whereas this relation is always realized." xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Enables" xsd:anyURI
 is_a: RO:0002215 ! capable of
 inverse_of: RO:0002333 ! enabled by
 transitive_over: BFO:0000051 ! has part
@@ -8030,6 +8065,7 @@ name: part of structure that is capable of
 def: "this relation holds between c and p when c is part of some c', and c' is capable of p." []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "false" xsd:boolean
+holds_over_chain: BFO:0000050 RO:0002215 {RO:0002581="true"}
 is_a: RO:0002328 ! functionally related to
 
 [Typedef]
@@ -8039,6 +8075,7 @@ def: "c involved_in p if and only if c enables some process p', and p' is part o
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "actively involved in" xsd:string
 property_value: IAO:0000118 "enables part of" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Involved_in" xsd:anyURI
 holds_over_chain: RO:0002327 BFO:0000050
 is_a: RO:0000056 ! participates in
 is_a: RO:0002431 ! involved in or involved in regulation of
@@ -8048,7 +8085,9 @@ transitive_over: BFO:0000050 ! part of
 id: RO:0002333
 name: enabled by
 def: "inverse of enables" []
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: seeAlso "https://wiki.geneontology.org/Enabled_by" xsd:anyURI
 is_a: RO:0000057 ! has participant
 is_a: RO:0002328 ! functionally related to
 
@@ -8056,7 +8095,9 @@ is_a: RO:0002328 ! functionally related to
 id: RO:0002334
 name: regulated by
 def: "inverse of regulates" []
+subset: RO:0002259
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000589 "regulated by (processual)" xsd:string
 domain: BFO:0000015 ! process
 range: BFO:0000015 ! process
 is_transitive: true
@@ -8066,6 +8107,7 @@ is_a: RO:0002427 ! causally downstream of or within
 id: RO:0002335
 name: negatively regulated by
 def: "inverse of negatively regulates" []
+subset: RO:0002259
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 is_a: RO:0002334 ! regulated by
 
@@ -8073,6 +8115,7 @@ is_a: RO:0002334 ! regulated by
 id: RO:0002336
 name: positively regulated by
 def: "inverse of positively regulates" []
+subset: RO:0002259
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 is_a: RO:0002334 ! regulated by
 
@@ -8100,6 +8143,8 @@ is_a: BFO:0000051 ! has part
 id: RO:0002352
 name: input of
 def: "inverse of has input" []
+subset: ro-eco
+subset: RO:0002259
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 is_a: RO:0000056 ! participates in
 is_a: RO:0002328 ! functionally related to
@@ -8108,6 +8153,8 @@ is_a: RO:0002328 ! functionally related to
 id: RO:0002353
 name: output of
 def: "inverse of has output" []
+subset: ro-eco
+subset: RO:0002259
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 is_a: RO:0000056 ! participates in
 is_a: RO:0002328 ! functionally related to
@@ -8137,6 +8184,8 @@ name: indirectly positively regulates
 def: "p indirectly positively regulates q iff p is indirectly causally upstream of q and p positively regulates q." []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "indirectly activates" xsd:string
+property_value: RO:0002579 RO:0002213
+property_value: seeAlso "https://wiki.geneontology.org/Indirectly_positively_regulates" xsd:anyURI
 holds_over_chain: RO:0002409 RO:0002409
 holds_over_chain: RO:0002629 RO:0002407
 holds_over_chain: RO:0002629 RO:0002629
@@ -8151,6 +8200,8 @@ name: indirectly negatively regulates
 def: "p indirectly negatively regulates q iff p is indirectly causally upstream of q and p negatively regulates q." []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "indirectly inhibits" xsd:string
+property_value: RO:0002579 RO:0002212
+property_value: seeAlso "https://wiki.geneontology.org/Indirectly_negatively_regulates" xsd:anyURI
 holds_over_chain: RO:0002630 RO:0002409
 holds_over_chain: RO:0002630 RO:0002630
 is_transitive: true
@@ -8170,6 +8221,8 @@ property_value: IAO:0000232 "Do not use this relation directly. It is intended a
 id: RO:0002411
 name: causally upstream of
 def: "p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q." []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 is_transitive: true
 is_a: BFO:0000063 ! precedes
@@ -8180,36 +8233,15 @@ id: RO:0002412
 name: immediately causally upstream of
 def: "p is immediately causally upstream of q iff p is causally upstream of q, and the end of p is coincident with the beginning of q." []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: RO:0002575 RO:0002411
 is_a: RO:0002090 ! immediately precedes
 is_a: RO:0002411 ! causally upstream of
-
-[Typedef]
-id: RO:0002413
-name: provides input for
-def: "p provides input for q iff p is immediately causally upstream of q, and there exists some c such that p has_output c and q has_input c." []
-property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
-property_value: IAO:0000118 "directly provides input for" xsd:string
-property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
-holds_over_chain: RO:0002234 RO:0002233
-is_a: RO:0002412 ! immediately causally upstream of
-is_a: RO:0002414 ! transitively provides input for
-
-[Typedef]
-id: RO:0002414
-name: transitively provides input for
-def: "transitive form of directly_provides_input_for" []
-property_value: IAO:0000114 IAO:0000428
-property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
-property_value: IAO:0000232 "This is a grouping relation that should probably not be used in annotation. Consider instead the child relation 'provides input for'." xsd:string
-domain: BFO:0000015 ! process
-range: BFO:0000015 ! process
-is_transitive: true
-is_a: RO:0004047 ! causally upstream of or within, positive effect
 
 [Typedef]
 id: RO:0002418
 name: causally upstream of or within
 def: "p is 'causally upstream or within' q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q." []
+synonym: "affects" RELATED []
 property_value: IAO:0000116 "We would like to make this disjoint with 'preceded by', but this is prohibited in OWL2" xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "influences (processual)" xsd:string
@@ -8222,6 +8254,7 @@ transitive_over: BFO:0000050 ! part of
 id: RO:0002427
 name: causally downstream of or within
 def: "inverse of causally upstream of or within" []
+subset: RO:0002259
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
 is_transitive: true
@@ -8242,6 +8275,7 @@ id: RO:0002429
 name: involved in positive regulation of
 def: "c involved in regulation of p if c is involved in some p' and p' positively regulates some p" []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: RO:0004049 RO:0002428
 holds_over_chain: RO:0002327 RO:0002213
 holds_over_chain: RO:0002331 RO:0002213
 is_a: RO:0002428 ! involved in regulation of
@@ -8251,6 +8285,7 @@ id: RO:0002430
 name: involved in negative regulation of
 def: "c involved in regulation of p if c is involved in some p' and p' negatively regulates some p" []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: RO:0004050 RO:0002428
 holds_over_chain: RO:0002327 RO:0002212
 holds_over_chain: RO:0002331 RO:0002212
 is_a: RO:0002428 ! involved in regulation of
@@ -8270,9 +8305,12 @@ is_a: RO:0002500 ! causal agent in process
 id: RO:0002432
 name: is active in
 def: "c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure." [https://orcid.org/0000-0002-6601-2165, https://orcid.org/0000-0002-7073-9172]
+synonym: "enables activity in" EXACT []
 property_value: IAO:0000112 "A protein that enables activity in a cytosol." xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "executes activity in" xsd:string
+property_value: seeAlso "https://wiki.geneontology.org/Is_active_in" xsd:anyURI
+holds_over_chain: RO:0002327 BFO:0000066 {RO:0002581="true"}
 is_a: RO:0002131 ! overlaps
 is_a: RO:0002328 ! functionally related to
 
@@ -8280,10 +8318,14 @@ is_a: RO:0002328 ! functionally related to
 id: RO:0002434
 name: interacts with
 def: "A relationship that holds between two entities in which the processes executed by the two entities are causally connected." []
+subset: ro-eco
+synonym: "in pairwise interaction with" EXACT []
 property_value: IAO:0000116 "Considering relabeling as 'pairwise interacts with'" xsd:anyURI
 property_value: IAO:0000116 "This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact." xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000232 "Note that this relationship type, and sub-relationship types may be redundant with process terms from other ontologies. For example, the symbiotic relationship hierarchy parallels GO. The relations are provided as a convenient shortcut. Consider using the more expressive processual form to capture your data. In the future, these relations will be linked to their cognate processes through rules." xsd:string
+property_value: seeAlso "http://purl.obolibrary.org/obo/ro/docs/interaction-relations/" xsd:anyURI
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/MI_0914" xsd:anyURI
 domain: BFO:0000040 ! material entity
 range: BFO:0000040 ! material entity
 is_symmetric: true
@@ -8295,6 +8337,8 @@ def: "An interaction relationship in which the two partners are molecular entiti
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "binds" xsd:string
 property_value: IAO:0000118 "molecularly binds with" xsd:string
+property_value: seeAlso ECO:0000353
+property_value: skos:closeMatch "http://purl.obolibrary.org/obo/MI_0915" xsd:anyURI
 is_symmetric: true
 is_a: RO:0002434 ! interacts with
 
@@ -8310,6 +8354,7 @@ is_a: RO:0002436 ! molecularly interacts with
 id: RO:0002448
 name: directly regulates activity of
 def: "The entity A, immediately upstream of the entity B, has an activity that regulates an activity performed by B. For example, A and B may be gene products and binding of B by A regulates the kinase activity of B.\n\nA and B can be physically interacting but not necessarily. Immediately upstream means there are no intermediate entity between A and B." []
+synonym: "molecularly controls" EXACT []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000117 https://orcid.org/0000-0003-4639-4431
 domain: BFO:0000040 ! material entity
@@ -8321,6 +8366,7 @@ is_a: RO:0011002 ! regulates activity of
 id: RO:0002449
 name: directly negatively regulates activity of
 def: "The entity A, immediately upstream of the entity B, has an activity that negatively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B." []
+synonym: "molecularly decreases activity of" EXACT []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000117 https://orcid.org/0000-0003-4639-4431
 property_value: IAO:0000118 "directly inhibits" xsd:string
@@ -8332,6 +8378,7 @@ is_a: RO:0002448 ! directly regulates activity of
 id: RO:0002450
 name: directly positively regulates activity of
 def: "The entity A, immediately upstream of the entity B, has an activity that positively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B." []
+synonym: "molecularly increases activity of" EXACT []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000117 https://orcid.org/0000-0003-4639-4431
 property_value: IAO:0000118 "directly activates" xsd:string
@@ -8349,9 +8396,11 @@ property_value: IAO:0000232 "This property or its subproperties is not to be use
 id: RO:0002479
 name: has part that occurs in
 def: "p has part that occurs in c if and only if there exists some p1, such that p has_part p1, and p1 occurs in c." []
+subset: ro-eco
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 domain: BFO:0000003 ! occurrent
 range: BFO:0000004 ! independent continuant
+holds_over_chain: BFO:0000051 BFO:0000066 {RO:0002581="true"}
 
 [Typedef]
 id: RO:0002481
@@ -8382,6 +8431,7 @@ is_a: RO:0002410 ! causally related to
 id: RO:0002502
 name: depends on
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: seeAlso BFO:0000169
 
 [Typedef]
 id: RO:0002506
@@ -8399,6 +8449,7 @@ id: RO:0002559
 name: causally influenced by
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: IAO:0000589 "causally influenced by (entity-centric)" xsd:string
 is_a: RO:0002506 ! causal relation between entities
 inverse_of: RO:0002566 ! causally influences
 
@@ -8406,6 +8457,8 @@ inverse_of: RO:0002566 ! causally influences
 id: RO:0002563
 name: interaction relation helper property
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:N-Ary_Relation_Pattern_%28OWL_2%29
+property_value: seeAlso "http://purl.obolibrary.org/obo/ro/docs/interaction-relations/" xsd:anyURI
 is_a: RO:0002464 ! helper property (not for use in curation)
 
 [Typedef]
@@ -8421,16 +8474,30 @@ def: "The entity or characteristic A is causally upstream of the entity or chara
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000117 https://orcid.org/0000-0003-4639-4431
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: IAO:0000589 "causally influences (entity-centric)" xsd:string
 domain: BFO:0000002 ! continuant
 range: BFO:0000002 ! continuant
 is_a: RO:0002506 ! causal relation between entities
 
 [Typedef]
+id: RO:0002577
+name: system
+def: "A material entity consisting of multiple components that are causally integrated." []
+property_value: IAO:0000116 "May be replaced by a BFO class, as discussed in http://www.jbiomedsem.com/content/4/1/43" xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
+property_value: IAO:0000119 "http://www.jbiomedsem.com/content/4/1/43" xsd:string
+
+[Typedef]
 id: RO:0002578
 name: directly regulates
 def: "p directly regulates q iff p is immediately causally upstream of q and p regulates q." []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: IAO:0000589 "directly regulates (processual)" xsd:string
+property_value: RO:0002575 RO:0002211
 is_a: RO:0002211 ! regulates
 is_a: RO:0002412 ! immediately causally upstream of
 
@@ -8492,7 +8559,13 @@ is_a: RO:0002410 ! causally related to
 id: RO:0002629
 name: directly positively regulates
 def: "p directly positively regulates q iff p is immediately causally upstream of q, and p positively regulates q." []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: IAO:0000589 "directly positively regulates (process to process)" xsd:string
+property_value: RO:0004049 RO:0002578
+property_value: seeAlso "https://wiki.geneontology.org/Directly_positively_regulates" xsd:anyURI
 is_a: RO:0002213 ! positively regulates
 is_a: RO:0002578 ! directly regulates
 
@@ -8500,7 +8573,13 @@ is_a: RO:0002578 ! directly regulates
 id: RO:0002630
 name: directly negatively regulates
 def: "p directly negatively regulates q iff p is immediately causally upstream of q, and p negatively regulates q." []
+subset: http://purl.obolibrary.org/obo/valid_for_go_annotation_extension
+subset: http://purl.obolibrary.org/obo/valid_for_go_ontology
+subset: http://purl.obolibrary.org/obo/valid_for_gocam
 property_value: IAO:0000119 http://purl.obolibrary.org/obo/ro/docs/causal-relations
+property_value: IAO:0000589 "directly negatively regulates (process to process)" xsd:string
+property_value: RO:0004050 RO:0002578
+property_value: seeAlso "https://wiki.geneontology.org/Directly_negatively_regulates" xsd:anyURI
 is_a: RO:0002212 ! negatively regulates
 is_a: RO:0002578 ! directly regulates
 
@@ -8509,6 +8588,7 @@ id: RO:0003000
 name: produces
 def: "a produces b if some process that occurs_in a has_output b, where a and b are material entities. Examples: hybridoma cell line produces monoclonal antibody reagent; chondroblast produces avascular GAG-rich matrix." []
 comment: Note that this definition doesn't quite distinguish the output of a transformation process from a production process, which is related to the identity/granularity issue.
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 https://orcid.org/0000-0001-9114-8737
 domain: BFO:0000040 ! material entity
@@ -8519,6 +8599,7 @@ inverse_of: RO:0003001 ! produced by
 id: RO:0003001
 name: produced by
 def: "a produced_by b iff some process that occurs_in b has_output a." []
+subset: ro-eco
 property_value: IAO:0000114 IAO:0000125
 property_value: IAO:0000117 https://orcid.org/0000-0001-9114-8737
 domain: BFO:0000040 ! material entity
@@ -8532,6 +8613,8 @@ domain: BFO:0000017 ! realizable entity
 range: BFO:0000040 ! material entity
 holds_over_chain: RO:0009501 RO:0002233
 is_a: RO:0002410 ! causally related to
+created_by: https://orcid.org/0000-0002-6601-2165
+creation_date: 2017-12-26T19:45:49Z
 
 [Typedef]
 id: RO:0004031
@@ -8539,44 +8622,74 @@ name: enables subfunction
 def: "Holds between an entity and an process P where the entity enables some larger compound process, and that larger process has-part P." []
 holds_over_chain: RO:0002327 BFO:0000051
 is_a: RO:0002328 ! functionally related to
+created_by: https://orcid.org/0000-0002-6601-2165
+creation_date: 2018-01-25T23:20:13Z
 
 [Typedef]
 id: RO:0004032
 name: acts upstream of or within, positive effect
+subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+property_value: RO:0004049 RO:0002264
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of_or_within,_positive_effect" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0004047
 is_a: RO:0002264 ! acts upstream of or within
+created_by: https://orcid.org/0000-0002-6601-2165
+creation_date: 2018-01-26T23:49:30Z
 
 [Typedef]
 id: RO:0004033
 name: acts upstream of or within, negative effect
+subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+property_value: RO:0004050 RO:0002264
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of_or_within,_negative_effect" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0004046
 is_a: RO:0002264 ! acts upstream of or within
+created_by: https://orcid.org/0000-0002-6601-2165
+creation_date: 2018-01-26T23:49:51Z
 
 [Typedef]
 id: RO:0004034
 name: acts upstream of, positive effect
 def: "c 'acts upstream of, positive effect' p if c is enables f, and f is causally upstream of p, and the direction of f is positive" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+property_value: RO:0004049 RO:0002263
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of,_positive_effect" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0002304
 is_a: RO:0002263 ! acts upstream of
 is_a: RO:0004032 ! acts upstream of or within, positive effect
+created_by: https://orcid.org/0000-0002-6601-2165
+creation_date: 2018-01-26T23:53:14Z
 
 [Typedef]
 id: RO:0004035
 name: acts upstream of, negative effect
 def: "c 'acts upstream of, negative effect' p if c is enables f, and f is causally upstream of p, and the direction of f is negative" []
+subset: http://purl.obolibrary.org/obo/valid_for_go_gp2term
+property_value: RO:0004050 RO:0002263
+property_value: seeAlso "https://wiki.geneontology.org/Acts_upstream_of,_negative_effect" xsd:anyURI
 holds_over_chain: RO:0002327 RO:0002305
 is_a: RO:0002263 ! acts upstream of
 is_a: RO:0004033 ! acts upstream of or within, negative effect
+created_by: https://orcid.org/0000-0002-6601-2165
+creation_date: 2018-01-26T23:53:22Z
 
 [Typedef]
 id: RO:0004046
 name: causally upstream of or within, negative effect
+property_value: RO:0004050 RO:0002418
+property_value: seeAlso "https://wiki.geneontology.org/Causally_upstream_of_or_within,_negative_effect" xsd:anyURI
 is_a: RO:0002418 ! causally upstream of or within
+created_by: https://orcid.org/0000-0002-6601-2165
+creation_date: 2018-03-13T23:55:05Z
 
 [Typedef]
 id: RO:0004047
 name: causally upstream of or within, positive effect
+property_value: RO:0004049 RO:0002418
+property_value: seeAlso https://wiki.geneontology.org/Causally_upstream_of_or_within,_positive_effect
 is_a: RO:0002418 ! causally upstream of or within
+created_by: https://orcid.org/0000-0002-6601-2165
+creation_date: 2018-03-13T23:55:19Z
 
 [Typedef]
 id: RO:0004096
@@ -8593,9 +8706,11 @@ is_obsolete: true
 id: RO:0009501
 name: realized in response to
 def: "r 'realized in response to' s iff, r is a realizable (e.g. a plant trait such as responsivity to drought), s is an environmental stimulus (a process), and s directly causes the realization of r." []
+synonym: "triggered by process" EXACT [https://orcid.org/0000-0002-6601-2165]
 property_value: IAO:0000112 "A drought sensitivity trait that inheres in a whole plant is realized in a systemic response process in response to exposure to drought conditions." xsd:string
 property_value: IAO:0000112 "An inflammatory disease that is realized in response to an inflammatory process occurring in the gut (which is itself the realization of a process realized in response to harmful stimuli in the mucosal lining of th gut)" xsd:string
 property_value: IAO:0000112 "Environmental polymorphism in butterflies: These butterflies have a 'responsivity to day length trait' that is realized in response to the duration of the day, and is realized in developmental processes that lead to increased or decreased pigmentation in the adult morph." xsd:string
+property_value: seeAlso "https://docs.google.com/document/d/1KWhZxVBhIPkV6_daHta0h6UyHbjY2eIrnON1WIRGgdY/edit" xsd:anyURI
 property_value: terms:contributor https://orcid.org/0000-0001-6996-0040
 property_value: terms:contributor https://orcid.org/0000-0002-6601-2165
 property_value: terms:contributor https://orcid.org/0000-0002-7073-9172
@@ -8609,6 +8724,7 @@ is_a: RO:0002410 ! causally related to
 id: RO:0010001
 name: generically depends on
 def: "A generically dependent continuant *b* generically depends on an independent continuant *c* at time *t* means: there inheres in *c* a specifically deendent continuant which concretizes *b* at *t*." []
+synonym: "g-depends on" EXACT []
 property_value: IAO:0000112 "Genetic information generically depend on molecules of DNA." xsd:string
 property_value: IAO:0000112 "The novel *War and Peace* generically depends on this copy of the novel." xsd:string
 property_value: IAO:0000112 "The pattern shared by chess boards generically depends on any chess board." xsd:string
@@ -8646,6 +8762,8 @@ id: RO:0012011
 name: indirectly causally upstream of
 def: "p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q." []
 is_a: RO:0002411 ! causally upstream of
+created_by: https://orcid.org/0000-0003-1813-6857
+creation_date: 2022-09-26T06:07:17Z
 
 [Typedef]
 id: RO:0012012
@@ -8653,17 +8771,21 @@ name: indirectly regulates
 def: "p indirectly regulates q iff p is indirectly causally upstream of q and p regulates q." []
 is_a: RO:0002211 ! regulates
 is_a: RO:0012011 ! indirectly causally upstream of
+created_by: https://orcid.org/0000-0003-1813-6857
+creation_date: 2022-09-26T06:08:01Z
 
 [Typedef]
 id: RO:0017001
 name: device utilizes material
 def: "X device utilizes material Y means X and Y are material entities, and X is capable of some process P that has input Y." []
+synonym: "utilizes" BROAD []
 property_value: IAO:0000112 "A diagnostic testing device utilizes a specimen." xsd:string
 property_value: IAO:0000232 "A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input." xsd:string
 property_value: IAO:0000232 "See github ticket https://github.com/oborel/obo-relations/issues/497" xsd:string
 property_value: terms:contributor https://orcid.org/0000-0001-9625-1899
 property_value: terms:contributor https://orcid.org/0000-0003-2620-0345
 holds_over_chain: RO:0002215 RO:0002233
+creation_date: 2021-11-08T12:00:00Z
 
 [Typedef]
 id: RO:0019000

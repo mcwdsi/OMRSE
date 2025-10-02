@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2025-08-13/omrse-base.owl
+data-version: omrse/releases/2025-06-30/omrse-base.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: foaf http://xmlns.com/foaf/0.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -25,7 +25,7 @@ property_value: dc:creator "Shariq Tariq" xsd:string
 property_value: dc:creator "Swetha Garimalla" xsd:string
 property_value: dc:creator "William Hogan" xsd:string
 property_value: dc:type IAO:8000001
-property_value: owl:versionInfo "2025-08-13" xsd:string
+property_value: owl:versionInfo "2025-06-30" xsd:string
 property_value: terms:creator "https://orcid.org/0000-0002-9881-1017" xsd:anyURI
 property_value: terms:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
@@ -45,7 +45,7 @@ id: OMRSE:00000001
 name: human social role
 def: "A social role inhering in a human being." []
 is_a: OMRSE:00000026 ! organism social role
-relationship: RO:0000052 NCBITaxon:9606
+is_a: OMRSE:00000050 ! Homo sapiens role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -68,7 +68,7 @@ is_a: OMRSE:00000002 ! party to a legal entity
 id: OMRSE:00000005
 name: party to a marriage contract
 is_a: OMRSE:00000004 ! party to a legal agreement
-relationship: RO:0000052 NCBITaxon:9606
+is_a: OMRSE:00000050 ! Homo sapiens role
 
 [Term]
 id: OMRSE:00000006
@@ -79,8 +79,7 @@ is_a: OMRSE:00000002 ! party to a legal entity
 id: OMRSE:00000007
 name: gender role
 def: "A human social role borne by a human being being realized in behaviour which is considered socially appropriate for individuals of a specific sex in the context of a specific culture." []
-is_a: BFO:0000023
-relationship: RO:0000052 OBI:0100026
+is_a: OMRSE:00000049 ! organism role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Gender_role" xsd:string
 
@@ -117,7 +116,7 @@ name: patient role
 def: "A health care role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter." []
 comment: In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov't entities, with a person endowed by the gov't with certain certifications.
 is_a: OMRSE:00000010 ! health care role
-relationship: RO:0000052 OBI:0100026
+is_a: OMRSE:00000049 ! organism role
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "patient" xsd:string
@@ -224,8 +223,10 @@ id: OMRSE:00000026
 name: organism social role
 def: "A role in human social processes that inheres in an organism." []
 comment: Defined class that we will ultimately move to an application ontology.  We are leaving here for now until we determine which application ontology: it is likely going to be an ontology that does not currently (2012-06-05) exist.\n\nDitto for its current descendants.
+comment: Includes animals as well as humans.  For example, pet, assistance animal, animal grown for food, work animal, domesticated animal, K-9, etc.  Human roles include gender role, party to legal entities, health care provider roles like doctor, nurse, etc.
+comment: Previous definition: A role in human social processes played by an organism.
+is_a: OMRSE:00000049 ! organism role
 is_a: OMRSE:00002072 ! role in human social processes
-relationship: RO:0000052 OBI:0100026
 property_value: IAO:0000117 "William R. Hogan\nMathias Brochhausen" xsd:string
 
 [Term]
@@ -256,9 +257,9 @@ id: OMRSE:00000030
 name: human patient role
 def: "A patient role that inheres in a human being." []
 is_a: OMRSE:00000011 ! patient role
+is_a: OMRSE:00000050 ! Homo sapiens role
 intersection_of: OMRSE:00000011 ! patient role
 intersection_of: RO:0000052 NCBITaxon:9606
-relationship: RO:0000052 NCBITaxon:9606
 
 [Term]
 id: OMRSE:00000031
@@ -338,14 +339,12 @@ property_value: IAO:0000119 "Malcolm N. Shaw: International Law. Cambridge Unive
 id: OMRSE:00000039
 name: smoker role
 def: "A role that inheres in an organism and is realized by habitually smoking tobacco products." []
-is_a: BFO:0000023
-relationship: RO:0000052 NCBITaxon:9606
+is_a: OMRSE:00000050 ! Homo sapiens role
 
 [Term]
 id: OMRSE:00000040
 name: intravenous drug user
-is_a: BFO:0000023
-relationship: RO:0000052 NCBITaxon:9606
+is_a: OMRSE:00000050 ! Homo sapiens role
 
 [Term]
 id: OMRSE:00000041
@@ -395,6 +394,7 @@ is_obsolete: true
 id: OMRSE:00000045
 name: obsolete sovereign state
 def: "A governmental organization with a defined territory on which it exercises internal and external sovereignty, a permanent population, a government, and the capacity to enter into relations with other sovereign states." []
+comment: Per Wikipedia, the word 'nation' does not always refer to soverign states.  For example, the "nation of Islam".
 is_a: oboInOwl:ObsoleteClass
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "nation" xsd:string
@@ -424,26 +424,35 @@ is_obsolete: true
 
 [Term]
 id: OMRSE:00000048
-name: obsolete material entity role
-is_a: oboInOwl:ObsoleteClass
-is_obsolete: true
+name: material entity role
+is_a: BFO:0000023
+intersection_of: BFO:0000023
+intersection_of: RO:0000052 BFO:0000040
+relationship: RO:0000052 BFO:0000040 {all_only="true"}
+relationship: RO:0000052 BFO:0000040
 
 [Term]
 id: OMRSE:00000049
-name: obsolete organism role
-is_a: oboInOwl:ObsoleteClass
-is_obsolete: true
+name: organism role
+is_a: OMRSE:00000048 ! material entity role
+intersection_of: OMRSE:00000048 ! material entity role
+intersection_of: RO:0000052 OBI:0100026
+relationship: RO:0000052 OBI:0100026 {all_only="true"}
+relationship: RO:0000052 OBI:0100026
 
 [Term]
 id: OMRSE:00000050
-name: obsolete Homo sapiens role
-is_a: oboInOwl:ObsoleteClass
-is_obsolete: true
+name: Homo sapiens role
+is_a: OMRSE:00000049 ! organism role
+intersection_of: OMRSE:00000049 ! organism role
+intersection_of: RO:0000052 NCBITaxon:9606
+relationship: RO:0000052 NCBITaxon:9606
+relationship: RO:0000052 NCBITaxon:9606 {all_only="true"}
 
 [Term]
 id: OMRSE:00000051
 name: organization role
-is_a: BFO:0000023
+is_a: OMRSE:00000048 ! material entity role
 intersection_of: BFO:0000023
 intersection_of: RO:0000052 OBI:0000245
 relationship: RO:0000052 OBI:0000245
@@ -520,6 +529,7 @@ id: OMRSE:00000061
 name: architectural structure
 def: "A material entity that is a human made strcuture with firm connection between its foundation and the ground." []
 comment: "Building" is a subclass of this. 
+comment: This type of entity is referred to as "Bauwerk" or "Bauliche Anlage".
 is_a: BFO:0000040
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 "http://de.wikipedia.org/wiki/Bauwerk" xsd:string
@@ -611,9 +621,6 @@ name: housing unit
 def: "A material entity that has as parts one or more sites large enough to contain humans, has as part one or more material entities that separates it from other sites, and bears a residence function." []
 comment: Housing units are individuated by their residence functions.
 is_a: BFO:0000040
-relationship: BFO:0000051 BFO:0000029
-relationship: BFO:0000051 BFO:0000040
-relationship: RO:0000053 OMRSE:00000075 ! residence function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000119 "https://github.com/ufbmi/OMRSE/wiki/Housing-unit-and-Household" xsd:string
 
@@ -629,6 +636,7 @@ id: OMRSE:00000076
 name: household
 def: "A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of that housing unit's residence function." []
 comment: Note in OMRSE it is the housing unit, not the people living there, that are the bearers of a "residence function".  Note the distinction between being a residence and a resident.
+comment: Note that it is not possible in OWL 2, at least that we have yet found, to say that the housing unit in which the process occurs is the same one that is the bearer of the residence function (that the process realizes).
 is_a: BFO:0000040
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
@@ -745,7 +753,6 @@ id: OMRSE:00000093
 name: insurance organization
 def: "An organization that secures a group of people against pecuniary loss by payment of a sum of money if a a specified event occurs." []
 is_a: OBI:0000245
-relationship: RO:0000053 OMRSE:00000096 ! party to an insurance policy
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -1495,6 +1502,7 @@ id: OMRSE:00000198
 name: information content entity-request process
 def: "a communication in which some participant requests of some other participant an information content entity about some portion of reality" []
 comment: As with the parent class, 'participant' in the definition need not refer to a human agent.
+comment: The medium and grammatical form are irrelevant. For example, the request may be written or spoken, and while it may be in the form of a question, it need not be.
 is_a: OMRSE:00002068 ! communication
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
@@ -1809,6 +1817,10 @@ id: OMRSE:00000225
 name: health care claim data set
 def: "A data set whose members are the specified output of some process of adjudicating health care insurance claims (and whose inputs are at least partly some members of a health care billing data set)." []
 comment: It covers prescription claims because pharmacies bill insurance companies for patients’ prescriptions via submitting insurance claims.
+comment: The insurance claim is submitted to the insurance company by either the patient or the provider. It is not necessarily always the provider, although in the United States, it typically is.
+comment: The outcome of the adjudication of a claim in the claims dataset could be favorable or unfavorable for the healthcare provider, the patient, or both. The idea is just that they’ve been adjudicated, one way or the other (or anything in between if that’s a possibility).
+comment: The reason we say billing data are only part of the input is because we are not conflating the insurance claim with the bill. It is our understanding that the provider’s bill of services is either part of the claim or “attached” to it in some manner, but doesn’t constitute the entire claim itself.
+comment: The sources of these data are held by insurers or other health plan providers.
 is_a: IAO:0000100
 property_value: dc:contributor "Alan Ruttenberg" xsd:string
 property_value: dc:contributor "Mathias Brocchausen" xsd:string
@@ -2328,7 +2340,6 @@ id: OMRSE:00000287
 name: public housing function
 def: "A residence function that is realized only in processes in which eligible and approved residents participate, and that is a characteristic of a housing unit that is owned by a government and intended for use by seniors, people with disabilities, or those with low incomes." []
 is_a: OMRSE:00000075 ! residence function
-relationship: RO:0000052 OMRSE:00000074 ! housing unit
 property_value: dc:source "https://orcid.org/0000-0003-1909-9269" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -2337,7 +2348,6 @@ id: OMRSE:00000288
 name: public housing eligibility role
 def: "A role that inheres in a person who qualifies for public housing according to the criteria set forth by the relevant governmental entity and that is realized in processes that both have the person as a participant and realize the public housing function of some housing unit." []
 is_a: OMRSE:00002072 ! role in human social processes
-relationship: RO:0000052 NCBITaxon:9606
 property_value: dc:source "https://orcid.org/0000-0003-1909-9269" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 
@@ -2497,7 +2507,8 @@ is_a: IAO:0000027
 
 [Term]
 id: OMRSE:00000507
-name: obsolete Afar
+name: Afar
+name: obsolete non-binary gender identity datum
 def: "A gender identity datum resulting from a gender identification process in which ‘non binary’ is selected based on the participant's subjective sense of gender." []
 comment: Alternatively: A gender identity datum stating that a person's subjective sense of gender is non-binary.)\n\nExamples of usage: ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfluid’, ‘2’ (intended to refer to a non-binary gender role)
 is_a: oboInOwl:ObsoleteClass
@@ -2512,7 +2523,6 @@ property_value: OMRSE:00002025 "aa" xsd:string
 property_value: OMRSE:00002026 "aar" xsd:string
 property_value: OMRSE:00002027 "aar" xsd:string
 is_obsolete: true
-replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000923
 replaced_by: non-binary gender identity information content entity
 
 [Term]
@@ -2520,6 +2530,7 @@ id: OMRSE:00002029
 name: education process
 def: "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative." []
 comment: An interesting question is whether there must be another participant who is the "educator".  Some might object that many people are "self taught".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the tip of a finger.  There was no previous information about that type of skill.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow "plays a role" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).
+comment: The loss of a "bad" capability is something like losing a bad golf swing and replacing it with a good one.  Also a capability to disrupt the classroom might be something an educating process diminishes possibly to the point of "removal" in a student.\n\nThis addition to the definition notwithstanding, we do not intend to incorporate the receipt of punishment into the definition of educating.
 is_a: OBI:0000011
 property_value: IAO:0000111 "educating" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
@@ -2553,6 +2564,7 @@ id: OMRSE:00002032
 name: completing a program of education
 def: "An educating that realizes a concretization of some program of education." []
 comment: Note that parent class 'educating' and referenced class 'program of education' are defined elsewhere in this education module of OMRSE.
+comment: This class refers extremely broadly to the successful realization of any program of education: a single course, first grade, MD, PhD, high school, the ninth grade, getting a black belt in karate, getting a master mechanic certification, a bachelor's degree, a masters degree, a graduate certificate, early childhood education program, and even getting a certificate at the end of some week-long workshop, summer camp, a certifcate from a cooking class, an actuarial certification.
 is_a: OMRSE:00002029 ! education process
 property_value: IAO:0000111 "completing a program of education" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
@@ -2574,6 +2586,8 @@ id: OMRSE:00002034
 name: primary education program
 def: "An education plan specification with one or more primary education objective specifications as parts, and these are the only objective specifications it has as parts." []
 comment: In the united states, also called "elementary education"
+comment: It can still have action specifications as parts, and possibly other ICEs as parts.  That's why we cannot say it has only primary education objectives as parts, and we have to introduce the double negative in the class axiom.
+comment: Primary education provides learning and educational activities typically designed to provide students with fundamental skills in reading, writing and mathematics (i.e. literacy and numeracy), and to establish a sound foundation for learning and solid understanding of core areas of knowledge and personal development, preparing for lower secondary education. It aims at learning at a basic level of complexity with little if any specialisation.
 is_a: OMRSE:00002031 ! educational program
 relationship: BFO:0000051 OMRSE:00002035 ! primary education objective
 property_value: IAO:0000111 "primary education plan specification" xsd:string
@@ -2595,6 +2609,7 @@ id: OMRSE:00002036
 name: lower secondary education objective
 def: "An education objective specification that has a concretization that, when realized, confers to the active participant skills and knowledge in subject areas more specialized than basic reading, writing, and mathematics, with the overall goal of laying the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities." []
 comment: Examples of specific subjects could--but are not necessarily required to--include biology, history, science, literature, music, art.  Programs at this level are usually organized around a more subject-oriented curriculum, introducing theoretical concepts across a broad range of subjects.
+comment: Programmes at ISCED level 2, or ‘lower secondary’ education, are typically designed to build upon the fundamental teaching and learning processes which begin at ISCED level 1. Usually, the educational aim is to lay the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities. Programmes at this level are usually organized around a more subject-oriented curriculum, introducing theoretical concepts across a broad range of subjects.
 is_a: OMRSE:00002030 ! educational objective
 property_value: IAO:0000111 "lower secondary education objective specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
@@ -2617,6 +2632,7 @@ id: OMRSE:00002038
 name: basic education program
 def: "An education plan specification that has as part both a primary educational objective specification and a lower secondary educational objective specification." []
 comment: Most nations in the world mandate that children complete at least a basic education program.  Some nations go further and include upper secondary education after basic education.
+comment: Whole range of educational activities, taking place in various settings, that aim to meet basic learning needs as defined in the World Declaration on Education for All (Jomtien, Thailand, 1990). According to ISCED standard, basic education comprises primary education (first stage of basic education) and lower secondary education (second stage). It also covers a wide variety of non-formal and informal public and private activities intended to meet the basic learning needs of people of all ages.
 is_a: OMRSE:00002031 ! educational program
 intersection_of: OMRSE:00002031 ! educational program
 intersection_of: BFO:0000051 OMRSE:00002035 ! primary education objective
@@ -2632,6 +2648,8 @@ id: OMRSE:00002039
 name: lower secondary education program
 def: "An education plan specification with one or more lower secondary education objective specifications as parts, and these are the only objective specifications it has as parts." []
 comment: It can still have action specifications as parts, and possibly other ICEs as parts.  That's why we cannot say it has only lower secondary education objectives as parts, and we have to introduce the double negative in the class axiom.
+comment: Programmes at ISCED level 2, or ‘lower secondary’ education, are typically designed to build upon the fundamental teaching and learning processes which begin at ISCED level 1. Usually, the educational aim is to lay the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities. Programmes at this level are usually organized around a more subject-oriented curriculum, introducing theoretical concepts across a broad range of subjects.
+comment: Requires successful completion of a primary education program as a pre-requisite.
 is_a: OMRSE:00002031 ! educational program
 relationship: BFO:0000051 OMRSE:00002036 ! lower secondary education objective
 property_value: IAO:0000111 "lower secondary education plan specification" xsd:string
@@ -2652,6 +2670,8 @@ id: OMRSE:00002041
 name: upper secondary education program
 def: "An education plan specification with one or more upper secondary education objective specifications as parts, and these are the only objective specifications it has as parts." []
 comment: It can still have action specifications as parts, and possibly other ICEs as parts.  That's why we cannot say it has only lower secondary education objectives as parts, and we have to introduce the double negative in the class axiom.
+comment: Programmes at ISCED level 3, or ‘upper secondary’ education, are typically designed to complete secondary education in preparation for tertiary education, or to provide skills relevant to employment, or both. Programmes at this level offer students more varied, specialised and in-depth instruction than programmes at lower secondary education (ISCED level 2). They are more differentiated, with an increased range of options and streams available.
+comment: Requires successful completion of a lower secondary education program as a pre-requisite.
 is_a: OMRSE:00002031 ! educational program
 relationship: BFO:0000051 OMRSE:00002040 ! upper secondary education objective
 property_value: IAO:0000111 "upper secondary education plan specification" xsd:string
@@ -2661,6 +2681,8 @@ property_value: IAO:0000117 "William R. Hogan" xsd:string
 id: OMRSE:00002042
 name: higher education program
 comment: Includes college, university, community college, professional schools (MD, RN, PharmD, PT, OT, DDS, dental hygienist, etc.), and so on.
+comment: Refers to all higher education beyond secondary education, and thus encompasses ISCED levels 5 and above, which will eventually be subclasses of this one.
+comment: Requires successful completion of a secondary education program as a pre-requisite.
 is_a: OMRSE:00002031 ! educational program
 relationship: BFO:0000051 OMRSE:00002043 ! higher education objective
 property_value: IAO:0000111 "higher education plan specification" xsd:string
@@ -2693,6 +2715,7 @@ id: OMRSE:00002045
 name: highest level of education data item
 def: "A socio-economic data item that is about a person and their completion of at least some of the required courses of an education program, where the set of planned competencies to be acquired by completing that program, as a whole, are of a more advanced nature than the set of competencies acquired through any other educational program completed by the person." []
 comment: Note that by 'more advanced nature' of the competencies, we do not mean merely having more knowledge, but rather a set of competencies / capabilities that enable the person to do things of a fundamentally different nature than before. This distinction is exemplified by the difference between a Masters and a PhD degree. The PhD has a key objective of enabling the person to function as an investigator in the domain, whereas a Masters does not.
+comment: This data item in a typical attribute-value system such as table, XML, JSON takes values like "secondary education", "Associate Degree", "Bachelor Degree", "High School", and so on.\n\nAlso, note that we revised the definition in collaboration with our APRICOT project colleagues who noted that the individual need not have completed one of the education programs in a sequence, instead demonstrating competencies for admission to the highest level of eductation in some alternative way. For example, the highest level of education might be baccalaureate degree, but the individual did not graduate a secondary education program but instead got a General Educational Development (GED) certification / degree.
 is_a: OMRSE:00000506 ! socio-economic data item
 property_value: dc:contributor "Colbie Reed" xsd:string
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
@@ -2739,6 +2762,7 @@ id: OMRSE:00002049
 name: graduate higher education program
 def: "A higher education plan specification that specifies the awarding of a graduate certificate or degree, and specifies as a pre-requisite the awarding of an undergraduate degree." []
 comment: Graduate degrees include masters, PhD, MD, PharmD, and other post-graduate professional degrees.  To distinguish MS/PhD from the professional ones, subclass this class.
+comment: The prerequisite degree is at the bachelors level or equivalent.  An associates degree is almost never sufficient for entry into graduate education programs.
 is_a: OMRSE:00002042 ! higher education program
 property_value: dc:creator http://orcid.org/0000-0002-9881-1017
 property_value: dc:date "2020-09-02T13:01:34Z" xsd:dateTime
@@ -2838,6 +2862,8 @@ id: OMRSE:00002058
 name: linguistic literacy competence
 def: "A disposition borne by a human being that (1) has a linguistic competence as a dispositional part and (2) if realized, is realized by the bearer's achievement of some personal goal." []
 comment: Other dispositions that it can and likely does have as dispositional parts include cultural competencies, interpersonal competencies, competencies for navigating a society's systems of laws, claims, obligations, deontic declarations, and norms of financial and other economic exchange.
+comment: The realization of this disposition by definition realizes the bearer's linguistic competence that is a dispositional part of this disposition.  The realization of the linguistic competence would be an occurrent part of the realization of this disposition (and not a temporal part).
+comment: Whereas linguistic competence may be afforded to non-human agents, literacy is nearly always considered in the context of human beings.
 is_a: BFO:0000016
 property_value: dc:contributor "Jiang Bian" xsd:string
 property_value: dc:contributor "Xi Yang" xsd:string
@@ -2883,6 +2909,7 @@ id: OMRSE:00002062
 name: concretization-utilization process
 def: "Process in which some participant utilizes some specifically dependent continuant as a concretization of some generically dependent continuant." []
 comment: Instances include any process that brings it about that some specifically dependent continuant begins to stand in a concretization relation to some generically dependent continuant, as well as any process in which someone makes use of a pre-established concretization relation. To be clear, instances do not include using concretizations of words or letters for purposes that do not make use of the concretization relations in which they stand (for example, hanging up a sign in a foreign language as a decoration because one likes the colors, despite having no idea what the sign says).
+comment: Instances include, but are not limited to, processes that bring about cognitive concretizations.
 is_a: BFO:0000015
 relationship: RO:0000057 BFO:0000040
 property_value: dc:contributor "Matthew Diller" xsd:string
@@ -2942,6 +2969,8 @@ id: OMRSE:00002068
 name: communication
 def: "A process in which some participant shares some generically dependent continuant with some other participant. The former utilizes some specifically dependent continuant that concretizes the generically dependent continuant intended to be shared, while the latter interprets that specifically dependent continuant to concretize some particular generically dependent continuant, aiming to accurately infer the other participant’s intent." []
 comment: For example, if you tell someone, “It is raining,” you produce sounds that have patterns that concretize information about the weather. Your utilization of that concretization is part of the communication. When the other person hears you, they interpret those patterns to concretize something, which may or may not be the same as what you intended to convey. In other words, they interpret the sounds you produce to have meanings associated with them, and that interpretation process is another part of the communication. If a process does not have a part of each type, it is not a communication.
+comment: The interpretation need not correspond exactly to what was intended by the other participant.
+comment: The term 'participant' in the definition need not refer to a human agent.
 is_a: BFO:0000015
 relationship: RO:0000057 BFO:0000040
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
@@ -2954,7 +2983,6 @@ id: OMRSE:00002069
 name: language
 def: "A disposition that (i) is an aggregate of linguistic competences, considered as forming a distinct group on the basis of perceived common characteristics, such as mutual intelligibility among their bearers, in addition to historical or cultural factors; (ii) if realized, is realized in any and all realizations of those linguistic competences; and (iii) inheres in a linguistic community." []
 is_a: BFO:0000016
-relationship: RO:0002351 OMRSE:00002066 ! linguistic competence
 relationship: RO:0002351 OMRSE:00002066 ! linguistic competence
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: dc:contributor "Matthew Diller" xsd:string
@@ -2988,8 +3016,7 @@ id: OMRSE:00002072
 name: role in human social processes
 def: "A role that inheres in some entity that is realized in a social act." []
 comment: Previous definition: A role played by an entity in human social processes.
-is_a: BFO:0000023
-relationship: RO:0000052 BFO:0000040
+is_a: OMRSE:00000048 ! material entity role
 relationship: RO:0000052 BFO:0000040 {all_only="true"}
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
