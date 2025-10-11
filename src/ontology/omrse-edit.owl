@@ -692,6 +692,10 @@ SubClassOf(obo:IAO_0020021 obo:IAO_0000310)
 
 SubClassOf(obo:NCBITaxon_131567 obo:OBI_0100026)
 
+# Class: obo:OGMS_0000097 (health care encounter)
+
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OGMS_0000097 "healthcare encounter"@en)
+
 # Class: obo:OMRSE_00000000 (social security number)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000000 "Social Security Number(SSN) is a Centrally Registered IDentifier that is a nine-digit number issued to U.S. citizens, permanent residents, and temporary (working) residents under section 205(c) of the Social Security Act, codified as 42 U.S.C. § 405(c). The number is issued to an individual by the Social Security Administration, an independent agency of the United States government. Its primary purpose is to track individuals for Social Security purposes.")
@@ -769,6 +773,7 @@ SubClassOf(obo:OMRSE_00000009 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000010 "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000010 "Mathias Brochhausen")
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000010 "William R. Hogan"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000010 "healthcare role"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000010 "health care role"@en)
 SubClassOf(obo:OMRSE_00000010 obo:OMRSE_00002072)
 SubClassOf(obo:OMRSE_00000010 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OGMS_0000097))
@@ -790,6 +795,7 @@ SubClassOf(obo:OMRSE_00000011 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_010002
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000012 "A health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000012 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000012 "William R. Hogan"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000012 "healthcare provider role"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000012 "health care provider role"@en)
 SubClassOf(obo:OMRSE_00000012 obo:OMRSE_00000010)
 SubClassOf(obo:OMRSE_00000012 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0000052 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245)) ObjectAllValuesFrom(obo:RO_0000052 ObjectUnionOf(obo:NCBITaxon_9606 obo:OBI_0000245))))
@@ -819,6 +825,7 @@ SubClassOf(obo:OMRSE_00000014 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000015 "A role that inheres in an organization and that is realized by the providing of services in a health care encounter."@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000015 "Mathias Brochhausen")
 AnnotationAssertion(dc:creator obo:OMRSE_00000015 "Amanda Hicks")
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000015 "healthcare provider organization role"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000015 "health care provider organization role"@en)
 SubClassOf(obo:OMRSE_00000015 obo:OMRSE_00000027)
 SubClassOf(obo:OMRSE_00000015 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OGMS_0000097))
@@ -906,6 +913,7 @@ SubClassOf(obo:OMRSE_00000026 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_010002
 # Class: obo:OMRSE_00000027 (organization health care role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000027 "An organization social role that, if realized, is realized by either a health care process or an ancillary health care process"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000027 "organization healthcare role"@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000027 "Previous definition: An organization social role played by an organization in health care processes."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000027 "organization health care role"@en)
 SubClassOf(obo:OMRSE_00000027 obo:OMRSE_00000025)
@@ -1506,6 +1514,7 @@ SubClassOf(obo:OMRSE_00000101 oboInOwl:ObsoleteClass)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000102 "A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000102 "William Hogan"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000102 "healthcare facility"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000102 "health care facility"@en)
 SubClassOf(obo:OMRSE_00000102 obo:OMRSE_00000062)
 SubClassOf(obo:OMRSE_00000102 ObjectUnionOf(ObjectIntersectionOf(obo:OMRSE_00000062 ObjectSomeValuesFrom(obo:OBIB_0000735 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000015))) ObjectSomeValuesFrom(obo:OMRSE_00000068 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000015))))
@@ -1566,6 +1575,7 @@ SubClassOf(obo:OMRSE_00000107 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_0000
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000108 "A community living health care facility that provides health care services in a home-like setting"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000108 "Amanda Hicks")
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000108 "William Hogan"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000108 "residential healthcare facility"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000108 "residential health care facility"@en)
 SubClassOf(obo:OMRSE_00000108 obo:OMRSE_00000150)
 SubClassOf(obo:OMRSE_00000108 ObjectSomeValuesFrom(obo:BFO_0000067 obo:OMRSE_00000153))
@@ -1865,7 +1875,9 @@ SubClassOf(obo:OMRSE_00000149 obo:BFO_0000034)
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000150 "A health care facility that also bears a residence function and thus is one in which the patients are also residents of the facility."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000150 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000150 "long-term health care facility"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000150 "long-term healthcare facility"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000150 "William R. Hogan"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000150 "community living healthcare facility"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000150 "community living health care facility"@en)
 SubClassOf(obo:OMRSE_00000150 obo:OMRSE_00000102)
 SubClassOf(obo:OMRSE_00000150 ObjectSomeValuesFrom(obo:BFO_0000067 obo:OMRSE_00000154))
@@ -1926,6 +1938,7 @@ SubClassOf(obo:OMRSE_00000158 obo:BFO_0000034)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000159 "temporally located after some acute care encounter
 Somehow involves skilled nursing encounters"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000159 "post-acute healthcare encounter"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000159 "post-acute health care encounter"@en)
 SubClassOf(obo:OMRSE_00000159 obo:OGMS_0000097)
 SubClassOf(obo:OMRSE_00000159 ObjectSomeValuesFrom(obo:BFO_0000066 obo:OMRSE_00000150))
@@ -1940,6 +1953,7 @@ SubClassOf(obo:OMRSE_00000160 obo:OGMS_0000097)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000161 "A process (1) where the active participant, who at the beginning of the process is located in a healthcare facility, exits the facility and no longer stands in a \"located in\" relationship to the facility and (2) is immediately preceded by a healthcare encounter in which the active participant also participated."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000161 "William R. Hogan"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000161 "leaving a healthcare facility after receiving care"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000161 "leaving a health care facility after receiving care"@en)
 SubClassOf(obo:OMRSE_00000161 obo:BFO_0000015)
 SubClassOf(obo:OMRSE_00000161 ObjectSomeValuesFrom(obo:RO_0000057 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000011)))
@@ -1960,12 +1974,14 @@ SubClassOf(obo:OMRSE_00000163 ObjectSomeValuesFrom(obo:RO_0000056 obo:OMRSE_0000
 
 # Class: obo:OMRSE_00000164 (home health care organization)
 
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000164 "home healthcare organization"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000164 "home health care organization"@en)
 SubClassOf(obo:OMRSE_00000164 obo:OBI_0000245)
 SubClassOf(obo:OMRSE_00000164 ObjectSomeValuesFrom(obo:RO_0000053 obo:BFO_0000034))
 
 # Class: obo:OMRSE_00000165 (home health care function)
 
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000165 "home healthcare function"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000165 "home health care function"@en)
 SubClassOf(obo:OMRSE_00000165 obo:OMRSE_00000172)
 SubClassOf(obo:OMRSE_00000165 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OMRSE_00000154))
@@ -1974,6 +1990,7 @@ SubClassOf(obo:OMRSE_00000165 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OMRSE_000
 
 # Class: obo:OMRSE_00000166 (home health care encounter)
 
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000166 "home healthcare encounter"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000166 "home health care encounter"@en)
 SubClassOf(obo:OMRSE_00000166 obo:OGMS_0000097)
 SubClassOf(obo:OMRSE_00000166 ObjectSomeValuesFrom(obo:BFO_0000066 obo:OMRSE_00000074))
@@ -2006,6 +2023,7 @@ SubClassOf(obo:OMRSE_00000171 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_0000
 
 # Class: obo:OMRSE_00000172 (health care function)
 
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000172 "healthcare function"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000172 "health care function"@en)
 EquivalentClasses(obo:OMRSE_00000172 ObjectIntersectionOf(obo:BFO_0000034 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OGMS_0000097)))
 SubClassOf(obo:OMRSE_00000172 obo:BFO_0000034)
@@ -2537,6 +2555,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000225 "Mathias Brocchausen"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000225 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000225 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000225 "Sarah Bost"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000225 "healthcare claim data set"@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000225 "It covers prescription claims because pharmacies bill insurance companies for patients’ prescriptions via submitting insurance claims."@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000225 "The insurance claim is submitted to the insurance company by either the patient or the provider. It is not necessarily always the provider, although in the United States, it typically is."@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000225 "The outcome of the adjudication of a claim in the claims dataset could be favorable or unfavorable for the healthcare provider, the patient, or both. The idea is just that they’ve been adjudicated, one way or the other (or anything in between if that’s a possibility)."@en)
@@ -2554,6 +2573,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000226 "Mathias Brochhausen"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000226 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000226 "Sarah Bost"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000226 "William R. Hogan"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000226 "healthcare billing data set"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000226 "health care billing data set"@en)
 SubClassOf(obo:OMRSE_00000226 obo:IAO_0000100)
 
@@ -2563,6 +2583,7 @@ AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000227 "Recording data in an EHR
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000227 "A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000227 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000227 "S. Clint Dowland"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000227 "healthcare administrative process"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000227 "health care administrative process"@en)
 SubClassOf(obo:OMRSE_00000227 obo:OBI_0000011)
 
@@ -3184,8 +3205,10 @@ SubClassOf(obo:OMRSE_00000299 ObjectSomeValuesFrom(obo:OMRSE_00000264 obo:OMRSE_
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000300 "A human role within an organization that itself bears a healthcare provider organization role."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000300 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000300 "human role within a healthcare organization"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000300 "human role within a health care organization")
 AnnotationAssertion(dc:contributor obo:OMRSE_00000300 "Colbie Reed"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000300 "William R. Hogan"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000300 "institutional healthcare provider role"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000300 "institutional health care provider role"@en)
 SubClassOf(obo:OMRSE_00000300 obo:OMRSE_00000086)
 
@@ -3250,11 +3273,13 @@ SubClassOf(obo:OMRSE_00000501 obo:OMRSE_00000506)
 
 # Class: obo:OMRSE_00000502 (government assistance health care plan data item)
 
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000502 "government assistance healthcare plan data item"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000502 "government assistance health care plan data item"@en)
 SubClassOf(obo:OMRSE_00000502 obo:OMRSE_00000506)
 
 # Class: obo:OMRSE_00000503 (health care plan data item)
 
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000503 "healthcare plan data item"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000503 "health care plan data item"@en)
 SubClassOf(obo:OMRSE_00000503 obo:OMRSE_00000506)
 
