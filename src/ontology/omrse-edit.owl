@@ -1994,6 +1994,10 @@ SubClassOf(obo:OMRSE_00000165 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OMRSE_000
 
 # Class: obo:OMRSE_00000166 (home health care encounter)
 
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000166 "A health care encounter that occurs in the housing unit where the patient resides."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000166 "https://orcid.org/0000-0002-5039-2052"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000166 "https://orcid.org/0000-0002-9881-1017"@en)
+AnnotationAssertion(dc:source obo:OMRSE_00000166 "https://github.com/mcwdsi/OMRSE/issues/304"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000166 "home healthcare encounter"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000166 "home health care encounter"@en)
 SubClassOf(obo:OMRSE_00000166 obo:OGMS_0000097)
