@@ -1895,7 +1895,12 @@ SubClassOf(obo:OMRSE_00000151 obo:OMRSE_00000014)
 
 # Class: obo:OMRSE_00000152 (skilled nursing encounter)
 
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000152 "A heatlh care encounter that occurs in a skilled nursing facility."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000152 "https://orcid.org/0000-0002-5039-2052"@en)
+AnnotationAssertion(obo:IAO_0000233 obo:OMRSE_00000152 "https://github.com/mcwdsi/OMRSE/issues/305"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000152 "https://orcid.org/0000-0002-9881-1017"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000152 "skilled nursing encounter"@en)
+EquivalentClasses(obo:OMRSE_00000152 ObjectIntersectionOf(obo:OGMS_0000097 ObjectSomeValuesFrom(obo:BFO_0000066 obo:OMRSE_00000105)))
 SubClassOf(obo:OMRSE_00000152 obo:OGMS_0000097)
 SubClassOf(obo:OMRSE_00000152 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000151))
 
@@ -1990,8 +1995,13 @@ SubClassOf(obo:OMRSE_00000165 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OMRSE_000
 
 # Class: obo:OMRSE_00000166 (home health care encounter)
 
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000166 "A health care encounter that occurs in the housing unit where the patient resides."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000166 "https://orcid.org/0000-0002-5039-2052"@en)
+AnnotationAssertion(obo:IAO_0000233 obo:OMRSE_00000166 "https://github.com/mcwdsi/OMRSE/issues/304"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000166 "https://orcid.org/0000-0002-9881-1017"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000166 "home healthcare encounter"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000166 "home health care encounter"@en)
+EquivalentClasses(obo:OMRSE_00000166 ObjectIntersectionOf(obo:OGMS_0000097 ObjectSomeValuesFrom(obo:BFO_0000066 obo:OMRSE_00000074)))
 SubClassOf(obo:OMRSE_00000166 obo:OGMS_0000097)
 SubClassOf(obo:OMRSE_00000166 ObjectSomeValuesFrom(obo:BFO_0000066 obo:OMRSE_00000074))
 
@@ -3204,8 +3214,8 @@ SubClassOf(obo:OMRSE_00000299 ObjectSomeValuesFrom(obo:OMRSE_00000264 obo:OMRSE_
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000300 "A human role within an organization that itself bears a healthcare provider organization role."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000300 "Matthew Diller"@en)
-AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000300 "human role within a healthcare organization"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000300 "human role within a health care organization")
+AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000300 "human role within a healthcare organization"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000300 "Colbie Reed"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000300 "William R. Hogan"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000300 "institutional healthcare provider role"@en)
