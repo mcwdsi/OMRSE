@@ -13,7 +13,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2025-08-13/omrse-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2026-01-06/omrse-base.owl"/>
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
         <dc:contributor xml:lang="en">Daniel Welch</dc:contributor>
@@ -37,7 +37,7 @@
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title xml:lang="en">Ontology for Modeling and Representation of Social Entities</terms:title>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
-        <owl:versionInfo>2025-08-13</owl:versionInfo>
+        <owl:versionInfo>2026-01-06</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -98,6 +98,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
     
 
 
@@ -229,6 +235,12 @@
     <!-- http://purl.org/dc/terms/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
     
 
 
@@ -552,6 +564,12 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     <!-- http://purl.obolibrary.org/obo/RO_0000085 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000085"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000087"/>
     
 
 
@@ -1154,6 +1172,7 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
         <obo:IAO_0000115 xml:lang="en">A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym xml:lang="en">healthcare role</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">health care role</rdfs:label>
     </owl:Class>
     
@@ -1228,6 +1247,7 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
         <obo:IAO_0000115 xml:lang="en">A health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Mathias Brochhausen</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym xml:lang="en">healthcare provider role</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">health care provider role</rdfs:label>
     </owl:Class>
     
@@ -1272,6 +1292,7 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
         <obo:IAO_0000115 xml:lang="en">A role that inheres in an organization and that is realized by the providing of services in a health care encounter.</obo:IAO_0000115>
         <dc:contributor>Mathias Brochhausen</dc:contributor>
         <dc:creator>Amanda Hicks</dc:creator>
+        <oboInOwl:hasExactSynonym xml:lang="en">healthcare provider organization role</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">health care provider organization role</rdfs:label>
     </owl:Class>
     
@@ -1456,6 +1477,7 @@ Ditto for its current descendants.</rdfs:comment>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000025"/>
         <obo:IAO_0000115 xml:lang="en">An organization social role that, if realized, is realized by either a health care process or an ancillary health care process</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">organization healthcare role</oboInOwl:hasExactSynonym>
         <rdfs:comment xml:lang="en">Previous definition: An organization social role played by an organization in health care processes.</rdfs:comment>
         <rdfs:label xml:lang="en">organization health care role</rdfs:label>
     </owl:Class>
@@ -3051,23 +3073,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000099 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000099">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000134"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000098"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">racial identification process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:label xml:lang="en">obsolete racial identification process</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3088,23 +3096,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000101 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000101">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000134"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000100"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">ethnic identification process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:label xml:lang="en">obsolete ethnic identification process</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3144,6 +3138,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym xml:lang="en">healthcare facility</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">health care facility</rdfs:label>
     </owl:Class>
     
@@ -3202,7 +3197,10 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000123"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A community living health care facility in which patients receive health care by licensed nurses.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:label xml:lang="en">skilled nursing facility</rdfs:label>
     </owl:Class>
     
@@ -3264,6 +3262,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A community living health care facility that provides health care services in a home-like setting</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">William Hogan</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym xml:lang="en">residential healthcare facility</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">residential health care facility</rdfs:label>
     </owl:Class>
     
@@ -3659,9 +3658,10 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000134 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000134">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0021003"/>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
         <dc:creator>Amanda Hicks</dc:creator>
-        <rdfs:label xml:lang="en">identification process</rdfs:label>
+        <rdfs:label xml:lang="en">obsolete identification process</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3669,23 +3669,9 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000135 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000135">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000134"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                        <owl:someValuesFrom>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000133"/>
-                            </owl:Restriction>
-                        </owl:someValuesFrom>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">gender identification process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <rdfs:label xml:lang="en">obsolete gender identification process</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -3928,7 +3914,12 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000075"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a health care facility that also bears a residence function and thus one in which the patients are also residents of the facility</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A health care facility that also bears a residence function and thus is one in which the patients are also residents of the facility.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">long-term health care facility</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">long-term healthcare facility</obo:IAO_0000118>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <oboInOwl:hasExactSynonym xml:lang="en">community living healthcare facility</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">community living health care facility</rdfs:label>
     </owl:Class>
     
@@ -3938,6 +3929,10 @@ last accessed June 30, 2015</obo:IAO_0000119>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000151">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000014"/>
+        <obo:IAO_0000115 xml:lang="en">A nurse role that requires successful completion of some nursing education program and some nursing license examination.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">This class is intended to apply to registered nurse positions broadly, including those outside the US.</rdfs:comment>
         <rdfs:label xml:lang="en">registered nurse role</rdfs:label>
     </owl:Class>
     
@@ -3946,6 +3941,17 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000152 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000152">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000097"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000105"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -3953,6 +3959,16 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000151"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000105"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A heatlh care encounter that occurs in a skilled nursing facility.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">https://orcid.org/0000-0002-5039-2052</obo:IAO_0000117>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/mcwdsi/OMRSE/issues/305</obo:IAO_0000233>
+        <dc:contributor xml:lang="en">https://orcid.org/0000-0002-9881-1017</dc:contributor>
         <rdfs:label xml:lang="en">skilled nursing encounter</rdfs:label>
     </owl:Class>
     
@@ -4030,6 +4046,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000160"/>
         <obo:IAO_0000115 xml:lang="en">temporally located after some acute care encounter
 Somehow involves skilled nursing encounters</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">post-acute healthcare encounter</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">post-acute health care encounter</rdfs:label>
     </owl:Class>
     
@@ -4067,6 +4084,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A process (1) where the active participant, who at the beginning of the process is located in a healthcare facility, exits the facility and no longer stands in a &quot;located in&quot; relationship to the facility and (2) is immediately preceded by a healthcare encounter in which the active participant also participated.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
+        <oboInOwl:hasExactSynonym xml:lang="en">leaving a healthcare facility after receiving care</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">leaving a health care facility after receiving care</rdfs:label>
     </owl:Class>
     
@@ -4108,6 +4126,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym xml:lang="en">home healthcare organization</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">home health care organization</rdfs:label>
     </owl:Class>
     
@@ -4135,6 +4154,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000166"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym xml:lang="en">home healthcare function</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">home health care function</rdfs:label>
     </owl:Class>
     
@@ -4143,6 +4163,17 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000166 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000166">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGMS_0000097"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000066"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000074"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -4150,6 +4181,11 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000074"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A health care encounter that occurs in the housing unit where the patient resides.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">https://orcid.org/0000-0002-5039-2052</obo:IAO_0000117>
+        <obo:IAO_0000233 xml:lang="en">https://github.com/mcwdsi/OMRSE/issues/304</obo:IAO_0000233>
+        <dc:contributor xml:lang="en">https://orcid.org/0000-0002-9881-1017</dc:contributor>
+        <oboInOwl:hasExactSynonym xml:lang="en">home healthcare encounter</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">home health care encounter</rdfs:label>
     </owl:Class>
     
@@ -4238,6 +4274,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000097"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym xml:lang="en">healthcare function</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">health care function</rdfs:label>
     </owl:Class>
     
@@ -5024,6 +5061,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
+        <oboInOwl:hasExactSynonym xml:lang="en">healthcare claim data set</oboInOwl:hasExactSynonym>
         <rdfs:comment xml:lang="en">It covers prescription claims because pharmacies bill insurance companies for patients’ prescriptions via submitting insurance claims.</rdfs:comment>
         <rdfs:comment xml:lang="en">The insurance claim is submitted to the insurance company by either the patient or the provider. It is not necessarily always the provider, although in the United States, it typically is.</rdfs:comment>
         <rdfs:comment xml:lang="en">The outcome of the adjudication of a claim in the claims dataset could be favorable or unfavorable for the healthcare provider, the patient, or both. The idea is just that they’ve been adjudicated, one way or the other (or anything in between if that’s a possibility).</rdfs:comment>
@@ -5045,6 +5083,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <dc:contributor xml:lang="en">Matthew Diller</dc:contributor>
         <dc:contributor xml:lang="en">Sarah Bost</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <oboInOwl:hasExactSynonym xml:lang="en">healthcare billing data set</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">health care billing data set</rdfs:label>
     </owl:Class>
     
@@ -5058,6 +5097,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
+        <oboInOwl:hasExactSynonym xml:lang="en">healthcare administrative process</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">health care administrative process</rdfs:label>
     </owl:Class>
     
@@ -6243,10 +6283,78 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000086"/>
         <obo:IAO_0000115 xml:lang="en">A human role within an organization that itself bears a healthcare provider organization role.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118>human role within a health care organization</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">human role within a healthcare organization</obo:IAO_0000118>
         <dc:contributor xml:lang="en">Colbie Reed</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <oboInOwl:hasExactSynonym xml:lang="en">institutional healthcare provider role</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">institutional health care provider role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000301 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000301">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000015"/>
+        <obo:IAO_0000115 xml:lang="en">A healthcare provider organization role that is realized by employing licensed nurses to deliver health care and assist with activities of daily living to patients in a skilled nursing facility.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">skilled nursing role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000302 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000302">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000245"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000301"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">An organization that is the bearer of a skilled nursing role.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">skilled nursing organization</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000303 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000303">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000416"/>
+        <obo:IAO_0000115 xml:lang="en">A time measurement data item that is measured in hours and is about the sum of the duration(s) of process(es) that realize a bearer&apos;s job role in a day.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">number of hours per day of employment data item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000304 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000304">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is about whether someone is party to a marriage contract.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">marital status</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000304"/>
+        <obo:IAO_0000115 xml:lang="en">A marital status that is about a person who is party to a marriage contract.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">married</rdfs:label>
     </owl:Class>
     
 
@@ -6327,6 +6435,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000502">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000506"/>
+        <oboInOwl:hasExactSynonym xml:lang="en">government assistance healthcare plan data item</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">government assistance health care plan data item</rdfs:label>
     </owl:Class>
     
@@ -6336,6 +6445,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000503">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000506"/>
+        <oboInOwl:hasExactSynonym xml:lang="en">healthcare plan data item</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">health care plan data item</rdfs:label>
     </owl:Class>
     

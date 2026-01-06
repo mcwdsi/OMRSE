@@ -70,9 +70,9 @@
         "val" : "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-08-13"
+        "val" : "2026-01-06"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2025-08-13/omrse-full.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2026-01-06/omrse-full.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
@@ -1014,9 +1014,6 @@
           "val" : "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects "
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
-          "val" : "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects "
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "BFO 2 Reference: object aggregates may gain and lose parts while remaining numerically identical (one and the same individual) over time. This holds both for aggregates whose membership is determined naturally (the aggregate of cells in your body) and aggregates determined by fiat (a baseball team, a congressional committee)."
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
@@ -1698,6 +1695,10 @@
           "xrefs" : [ "GOC:pdt" ]
         },
         "comments" : [ "Note that, in addition to forming the root of the molecular function ontology, this term is recommended for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this. Despite its name, this is not a type of 'function' in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex." ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "molecular function"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "This is the same as GO molecular function"
@@ -1713,6 +1714,16 @@
           "xrefs" : [ "GOC:ems", "GOC:jl", "ISBN:0395448956", "PMID:20160973" ]
         },
         "comments" : [ "1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.\n2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis)." ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "behavioral response to stimulus"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "behaviour"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "behavioural response to stimulus"
+        } ],
         "xrefs" : [ {
           "val" : "Wikipedia:Behavior"
         } ]
@@ -1727,8 +1738,19 @@
           "xrefs" : [ "GOC:pdt" ]
         },
         "comments" : [ "Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this." ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "biological process"
+        }, {
+          "pred" : "hasExactSynonym",
+          "val" : "physiological process"
+        } ],
         "xrefs" : [ {
           "val" : "Wikipedia:Biological_process"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/geneontology/go-ontology/issues/24968"
         } ]
       }
     }, {
@@ -1741,6 +1763,10 @@
           "xrefs" : [ "ISBN:0198506732" ]
         },
         "comments" : [ "Note that this term encompasses all activities that transfer a single phosphate group; although ATP is by far the most common phosphate donor, reactions using other phosphate donors are included in this term." ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "phosphokinase activity"
+        } ],
         "xrefs" : [ {
           "val" : "Reactome:R-HSA-6788855"
         }, {
@@ -7648,6 +7674,9 @@
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "obsolete planned process"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "planned process"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
@@ -7665,14 +7694,23 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some \nobjectives is a planned process."
         }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some objectives is a planned process."
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Bjoern Peters"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "branch derived"
         }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000228"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
           "val" : "6/11/9: Edited at workshop. Used to include: is initiated by an agent"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
           "val" : "This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)"
@@ -7760,7 +7798,13 @@
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "obsolete organism"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "organism"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "animal"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "animal"
@@ -7769,7 +7813,16 @@
           "val" : "fungus"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "fungus"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "plant"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "plant"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "virus"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "virus"
@@ -7783,11 +7836,20 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "13-02-2009:\nOBI doesn't take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.\nThis issue is outside the scope of OBI."
         }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
+          "val" : "13-02-2009: OBI doesn't take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus. This issue is outside the scope of OBI."
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "GROUP: OBI Biomaterial Branch"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "WEB: http://en.wikipedia.org/wiki/Organism"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
+          "val" : "WEB: http://en.wikipedia.org/wiki/Organism"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000231",
+          "val" : "http://purl.obolibrary.org/obo/IAO_0000228"
         } ]
       }
     }, {
@@ -7930,6 +7992,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000119",
           "val" : "https://www.degruyter.com/document/doi/10.1515/jso-2019-0034/html"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/Occupation-Ontology/OccO/issues/31"
         } ]
       }
     }, {
@@ -8257,6 +8322,10 @@
         "definition" : {
           "val" : "A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter"
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare encounter"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Albert Goldfain"
@@ -8465,6 +8534,10 @@
         "definition" : {
           "val" : "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare role"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Mathias Brochhausen"
@@ -8504,6 +8577,10 @@
         "definition" : {
           "val" : "A health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare provider role"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Mathias Brochhausen"
@@ -8558,6 +8635,10 @@
         "definition" : {
           "val" : "A role that inheres in an organization and that is realized by the providing of services in a health care encounter."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare provider organization role"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "Mathias Brochhausen"
@@ -8686,7 +8767,11 @@
         "definition" : {
           "val" : "An organization social role that, if realized, is realized by either a health care process or an ancillary health care process"
         },
-        "comments" : [ "Previous definition: An organization social role played by an organization in health care processes." ]
+        "comments" : [ "Previous definition: An organization social role played by an organization in health care processes." ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "organization healthcare role"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000028",
@@ -9605,8 +9690,11 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000099",
-      "lbl" : "racial identification process",
-      "type" : "CLASS"
+      "lbl" : "obsolete racial identification process",
+      "type" : "CLASS",
+      "meta" : {
+        "deprecated" : true
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000100",
       "lbl" : "obsolete ethnic identity datum",
@@ -9626,8 +9714,11 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000101",
-      "lbl" : "ethnic identification process",
-      "type" : "CLASS"
+      "lbl" : "obsolete ethnic identification process",
+      "type" : "CLASS",
+      "meta" : {
+        "deprecated" : true
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000102",
       "lbl" : "health care facility",
@@ -9636,6 +9727,10 @@
         "definition" : {
           "val" : "A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare facility"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William Hogan"
@@ -9681,9 +9776,18 @@
       "lbl" : "skilled nursing facility",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A community living health care facility in which patients receive health care by licensed nurses."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "Amanda Hicks"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
         } ]
       }
     }, {
@@ -9729,6 +9833,10 @@
         "definition" : {
           "val" : "A community living health care facility that provides health care services in a home-like setting"
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "residential healthcare facility"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Amanda Hicks"
@@ -9990,18 +10098,22 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000134",
-      "lbl" : "identification process",
+      "lbl" : "obsolete identification process",
       "type" : "CLASS",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/elements/1.1/creator",
           "val" : "Amanda Hicks"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000135",
-      "lbl" : "gender identification process",
-      "type" : "CLASS"
+      "lbl" : "obsolete gender identification process",
+      "type" : "CLASS",
+      "meta" : {
+        "deprecated" : true
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000138",
       "lbl" : "obsolete female gender identity datum",
@@ -10173,17 +10285,62 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "a health care facility that also bears a residence function and thus one in which the patients are also residents of the facility"
-        }
+          "val" : "A health care facility that also bears a residence function and thus is one in which the patients are also residents of the facility."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "community living healthcare facility"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "long-term health care facility"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "long-term healthcare facility"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000151",
       "lbl" : "registered nurse role",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A nurse role that requires successful completion of some nursing education program and some nursing license examination."
+        },
+        "comments" : [ "This class is intended to apply to registered nurse positions broadly, including those outside the US." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000152",
       "lbl" : "skilled nursing encounter",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A heatlh care encounter that occurs in a skilled nursing facility."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/mcwdsi/OMRSE/issues/305"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-9881-1017"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000153",
       "lbl" : "assistive care encounter",
@@ -10229,7 +10386,11 @@
       "meta" : {
         "definition" : {
           "val" : "temporally located after some acute care encounter\nSomehow involves skilled nursing encounters"
-        }
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "post-acute healthcare encounter"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000160",
@@ -10243,6 +10404,10 @@
         "definition" : {
           "val" : "A process (1) where the active participant, who at the beginning of the process is located in a healthcare facility, exits the facility and no longer stands in a \"located in\" relationship to the facility and (2) is immediately preceded by a healthcare encounter in which the active participant also participated."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "leaving a healthcare facility after receiving care"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
@@ -10265,15 +10430,46 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000164",
       "lbl" : "home health care organization",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "home healthcare organization"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000165",
       "lbl" : "home health care function",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "home healthcare function"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000166",
       "lbl" : "home health care encounter",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A health care encounter that occurs in the housing unit where the patient resides."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "home healthcare encounter"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/mcwdsi/OMRSE/issues/304"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-9881-1017"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000168",
       "lbl" : "obsolete questions asking process",
@@ -10300,7 +10496,13 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000172",
       "lbl" : "health care function",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare function"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000173",
       "lbl" : "obsolete material information bearer of question text plus answer set",
@@ -11343,6 +11545,10 @@
           "val" : "A data set whose members are the specified output of some process of adjudicating health care insurance claims (and whose inputs are at least partly some members of a health care billing data set)."
         },
         "comments" : [ "It covers prescription claims because pharmacies bill insurance companies for patients’ prescriptions via submitting insurance claims.", "The insurance claim is submitted to the insurance company by either the patient or the provider. It is not necessarily always the provider, although in the United States, it typically is.", "The outcome of the adjudication of a claim in the claims dataset could be favorable or unfavorable for the healthcare provider, the patient, or both. The idea is just that they’ve been adjudicated, one way or the other (or anything in between if that’s a possibility).", "The reason we say billing data are only part of the input is because we are not conflating the insurance claim with the bill. It is our understanding that the provider’s bill of services is either part of the claim or “attached” to it in some manner, but doesn’t constitute the entire claim itself.", "The sources of these data are held by insurers or other health plan providers." ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare claim data set"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
@@ -11371,6 +11577,10 @@
         "definition" : {
           "val" : "A data set whose members are obtained from billing-related data sources that (i) are generated by a health care organization as a result of internal administrative processes, and (ii) are about services rendered or materials used during some health care encounter."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare billing data set"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "S. Clint Dowland"
@@ -11399,6 +11609,10 @@
         "definition" : {
           "val" : "A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare administrative process"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "Recording data in an EHR. Financial tasks for a healthcare organization. Scheduling shifts for health care workers."
@@ -12677,15 +12891,102 @@
         "definition" : {
           "val" : "A human role within an organization that itself bears a healthcare provider organization role."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "institutional healthcare provider role"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "human role within a health care organization"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "human role within a healthcare organization"
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "Colbie Reed"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000301",
+      "lbl" : "skilled nursing role",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A healthcare provider organization role that is realized by employing licensed nurses to deliver health care and assist with activities of daily living to patients in a skilled nursing facility."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000302",
+      "lbl" : "skilled nursing organization",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An organization that is the bearer of a skilled nursing role."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000303",
+      "lbl" : "number of hours per day of employment data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A time measurement data item that is measured in hours and is about the sum of the duration(s) of process(es) that realize a bearer's job role in a day."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000304",
+      "lbl" : "marital status",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity that is about whether someone is party to a marriage contract."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000305",
+      "lbl" : "married",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A marital status that is about a person who is party to a marriage contract."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "William R. Hogan"
@@ -12726,11 +13027,23 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000502",
       "lbl" : "government assistance health care plan data item",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "government assistance healthcare plan data item"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000503",
       "lbl" : "health care plan data item",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare plan data item"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000504",
       "lbl" : "government assistance income data item",
@@ -16656,6 +16969,10 @@
           "val" : "c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure.",
           "xrefs" : [ "https://orcid.org/0000-0002-6601-2165", "https://orcid.org/0000-0002-7073-9172" ]
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "enables activity in"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "A protein that enables activity in a cytosol."
@@ -16676,6 +16993,10 @@
         "definition" : {
           "val" : "A relationship that holds between two entities in which the processes executed by the two entities are causally connected."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "in pairwise interaction with"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000116",
           "val" : "This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact."
@@ -16736,6 +17057,10 @@
         "definition" : {
           "val" : "The entity A, immediately upstream of the entity B, has an activity that regulates an activity performed by B. For example, A and B may be gene products and binding of B by A regulates the kinase activity of B.\n\nA and B can be physically interacting but not necessarily. Immediately upstream means there are no intermediate entity between A and B."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "molecularly controls"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "https://orcid.org/0000-0002-6601-2165"
@@ -16753,6 +17078,10 @@
         "definition" : {
           "val" : "The entity A, immediately upstream of the entity B, has an activity that negatively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "molecularly decreases activity of"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "https://orcid.org/0000-0002-6601-2165"
@@ -16773,6 +17102,10 @@
         "definition" : {
           "val" : "The entity A, immediately upstream of the entity B, has an activity that positively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "molecularly increases activity of"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "https://orcid.org/0000-0002-6601-2165"
@@ -17209,6 +17542,11 @@
         "definition" : {
           "val" : "r 'realized in response to' s iff, r is a realizable (e.g. a plant trait such as responsivity to drought), s is an environmental stimulus (a process), and s directly causes the realization of r."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "triggered by process",
+          "xrefs" : [ "https://orcid.org/0000-0002-6601-2165" ]
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "A drought sensitivity trait that inheres in a whole plant is realized in a systemic response process in response to exposure to drought conditions."
@@ -17241,6 +17579,10 @@
         "definition" : {
           "val" : "A generically dependent continuant *b* generically depends on an independent continuant *c* at time *t* means: there inheres in *c* a specifically deendent continuant which concretizes *b* at *t*."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "g-depends on"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "Genetic information generically depend on molecules of DNA."
@@ -17573,6 +17915,10 @@
       "lbl" : "Yemen and Saudi Arabia Ecoregion",
       "type" : "INDIVIDUAL",
       "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Arabian Peninsula: Yemen and Saudi Arabia"
+        } ],
         "xrefs" : [ {
           "val" : "WWF:AT1321"
         }, {
@@ -17584,6 +17930,10 @@
       "lbl" : "Yemen, Saudi Arabia, and Oman Ecoregion",
       "type" : "INDIVIDUAL",
       "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Arabian Peninsula: Yemen, Saudi Arabia, and Oman"
+        } ],
         "xrefs" : [ {
           "val" : "WWF:AT1320"
         }, {
@@ -17595,6 +17945,10 @@
       "lbl" : "Somali Montane Xeric Woodland Ecoregion",
       "type" : "INDIVIDUAL",
       "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Somali montane xeric woodlands ecoregion"
+        } ],
         "xrefs" : [ {
           "val" : "WWF:AT1319"
         }, {
@@ -17683,6 +18037,10 @@
       "lbl" : "Madagascar Spiny Thickets Ecoregion",
       "type" : "INDIVIDUAL",
       "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Madagascar spiny desert ecoregion"
+        } ],
         "xrefs" : [ {
           "val" : "WWF:AT1311"
         }, {
@@ -17694,6 +18052,10 @@
       "lbl" : "Kaokoveld Desert Ecoregion",
       "type" : "INDIVIDUAL",
       "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Africa: Coastal Namibia and Angola Ecoregion"
+        } ],
         "xrefs" : [ {
           "val" : "WWF:AT1310"
         }, {
@@ -17716,6 +18078,10 @@
       "lbl" : "Ile Europa and Bassas da India Ecoregion",
       "type" : "INDIVIDUAL",
       "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Southern Africa: Islands about half-way between southern Madagascar and southern Mozambique Ecoregion"
+        } ],
         "xrefs" : [ {
           "val" : "WWF:AT1308"
         }, {
@@ -17738,6 +18104,10 @@
       "lbl" : "Oman and United Arab Emirates Ecoregion",
       "type" : "INDIVIDUAL",
       "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Arabian Peninsula: Oman and United Arab Emirates Ecoregion"
+        } ],
         "xrefs" : [ {
           "val" : "WWF:AT1306"
         }, {
@@ -17771,6 +18141,10 @@
       "lbl" : "East Saharan Montane Xeric Woodland Ecoregion",
       "type" : "INDIVIDUAL",
       "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "North central Africa: Eastern Chad and small area of western Sudan"
+        } ],
         "xrefs" : [ {
           "val" : "WWF:AT1303"
         }, {
@@ -17782,6 +18156,10 @@
       "lbl" : "Oman, Yemen, and Saudi Arabia Ecoregion",
       "type" : "INDIVIDUAL",
       "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "Western Asia: Oman, Yemen, and Saudi Arabia Ecoregion"
+        } ],
         "xrefs" : [ {
           "val" : "WWF:AT1302"
         }, {
@@ -27332,7 +27710,7 @@
       }
     }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
-      "lbl" : "has exact synonym",
+      "lbl" : "has_exact_synonym",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION",
       "meta" : {
@@ -28818,6 +29196,10 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000015"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0000011",
+      "pred" : "is_a",
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0000066",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
@@ -28833,6 +29215,10 @@
       "sub" : "http://purl.obolibrary.org/obo/OBI_0100026",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/BFO_0000040"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OBI_0100026",
+      "pred" : "is_a",
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OBI_0200000",
       "pred" : "is_a",
@@ -29384,7 +29770,15 @@
       "pred" : "is_a",
       "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000099",
+      "pred" : "is_a",
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000100",
+      "pred" : "is_a",
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000101",
       "pred" : "is_a",
       "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
@@ -29602,7 +29996,11 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000134",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0021003"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000135",
+      "pred" : "is_a",
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000138",
       "pred" : "is_a",
@@ -29699,6 +30097,10 @@
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000152",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000055",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000151"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000152",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000066",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000105"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000153",
       "pred" : "is_a",
@@ -30375,6 +30777,30 @@
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000300",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000086"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000301",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000015"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000302",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000245"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000302",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000301"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000303",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000416"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000304",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000305",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000304"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000500",
       "pred" : "is_a",
@@ -33592,6 +34018,20 @@
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/IAO_0000219",
         "fillerId" : "http://purl.obolibrary.org/obo/PCO_0000020"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000152",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/OGMS_0000097" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000066",
+        "fillerId" : "http://purl.obolibrary.org/obo/OMRSE_00000105"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000166",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/OGMS_0000097" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000066",
+        "fillerId" : "http://purl.obolibrary.org/obo/OMRSE_00000074"
       } ]
     }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000172",

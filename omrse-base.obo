@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2025-08-13/omrse-base.owl
+data-version: omrse/releases/2026-01-06/omrse-base.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: foaf http://xmlns.com/foaf/0.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -25,7 +25,7 @@ property_value: dc:creator "Shariq Tariq" xsd:string
 property_value: dc:creator "Swetha Garimalla" xsd:string
 property_value: dc:creator "William Hogan" xsd:string
 property_value: dc:type IAO:8000001
-property_value: owl:versionInfo "2025-08-13" xsd:string
+property_value: owl:versionInfo "2026-01-06" xsd:string
 property_value: terms:creator "https://orcid.org/0000-0002-9881-1017" xsd:anyURI
 property_value: terms:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
@@ -106,6 +106,7 @@ property_value: IAO:0000118 "female gender" xsd:string
 id: OMRSE:00000010
 name: health care role
 def: "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis." []
+synonym: "healthcare role" EXACT []
 is_a: OMRSE:00002072 ! role in human social processes
 relationship: BFO:0000054 OGMS:0000097
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
@@ -127,6 +128,7 @@ property_value: IAO:0000119 "CAFE domain expert working group." xsd:string
 id: OMRSE:00000012
 name: health care provider role
 def: "A health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism." []
+synonym: "healthcare provider role" EXACT []
 is_a: OMRSE:00000010 ! health care role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
@@ -153,6 +155,7 @@ property_value: IAO:0000119 "based on: http://en.wikipedia.org/wiki/Nursing" xsd
 id: OMRSE:00000015
 name: health care provider organization role
 def: "A role that inheres in an organization and that is realized by the providing of services in a health care encounter." []
+synonym: "healthcare provider organization role" EXACT []
 is_a: OMRSE:00000027 ! organization health care role
 relationship: BFO:0000054 OGMS:0000097
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
@@ -233,6 +236,7 @@ id: OMRSE:00000027
 name: organization health care role
 def: "An organization social role that, if realized, is realized by either a health care process or an ancillary health care process" []
 comment: Previous definition: An organization social role played by an organization in health care processes.
+synonym: "organization healthcare role" EXACT []
 is_a: OMRSE:00000025 ! organization social role
 
 [Term]
@@ -779,7 +783,9 @@ replaced_by: racial identity information content entity
 
 [Term]
 id: OMRSE:00000099
-name: racial identification process
+name: obsolete racial identification process
+is_a: oboInOwl:ObsoleteClass
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000100
@@ -792,12 +798,15 @@ replaced_by: ethnic identity information content entity
 
 [Term]
 id: OMRSE:00000101
-name: ethnic identification process
+name: obsolete ethnic identification process
+is_a: oboInOwl:ObsoleteClass
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000102
 name: health care facility
 def: "A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population." []
+synonym: "healthcare facility" EXACT []
 is_a: OMRSE:00000062 ! facility
 property_value: IAO:0000117 "William Hogan" xsd:string
 
@@ -823,10 +832,13 @@ property_value: IAO:0000119 "Human Behaviour Change Project" xsd:string
 [Term]
 id: OMRSE:00000105
 name: skilled nursing facility
+def: "A community living health care facility in which patients receive health care by licensed nurses." []
 is_a: OMRSE:00000150 ! community living health care facility
 relationship: BFO:0000067 OMRSE:00000152 ! skilled nursing encounter
 relationship: RO:0000053 OMRSE:00000123 ! skilled nursing function
-property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
 id: OMRSE:00000106
@@ -853,6 +865,7 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 id: OMRSE:00000108
 name: residential health care facility
 def: "A community living health care facility that provides health care services in a home-like setting" []
+synonym: "residential healthcare facility" EXACT []
 is_a: OMRSE:00000150 ! community living health care facility
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
@@ -1037,13 +1050,16 @@ replaced_by: gender identity information content entity
 
 [Term]
 id: OMRSE:00000134
-name: identification process
-is_a: IAO:0021003
+name: obsolete identification process
+is_a: oboInOwl:ObsoleteClass
 property_value: dc:creator "Amanda Hicks" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000135
-name: gender identification process
+name: obsolete gender identification process
+is_a: oboInOwl:ObsoleteClass
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000138
@@ -1152,22 +1168,38 @@ is_a: BFO:0000034
 [Term]
 id: OMRSE:00000150
 name: community living health care facility
-def: "a health care facility that also bears a residence function and thus one in which the patients are also residents of the facility" []
+def: "A health care facility that also bears a residence function and thus is one in which the patients are also residents of the facility." []
+synonym: "community living healthcare facility" EXACT []
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OMRSE:00000154 ! assistance with activities of daily living care encounter
 relationship: BFO:0000067 OMRSE:00000155 ! assistance with instrumental activities of daily living encounter
 relationship: RO:0000053 OMRSE:00000075 ! residence function
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "long-term health care facility" xsd:string
+property_value: IAO:0000118 "long-term healthcare facility" xsd:string
 
 [Term]
 id: OMRSE:00000151
 name: registered nurse role
+def: "A nurse role that requires successful completion of some nursing education program and some nursing license examination." []
+comment: This class is intended to apply to registered nurse positions broadly, including those outside the US.
 is_a: OMRSE:00000014 ! nurse role
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
 id: OMRSE:00000152
 name: skilled nursing encounter
+def: "A heatlh care encounter that occurs in a skilled nursing facility." []
 is_a: OGMS:0000097
+intersection_of: OGMS:0000097
+intersection_of: BFO:0000066 OMRSE:00000105 ! skilled nursing facility
 relationship: BFO:0000055 OMRSE:00000151 ! registered nurse role
+relationship: BFO:0000066 OMRSE:00000105 ! skilled nursing facility
+property_value: dc:contributor "https://orcid.org/0000-0002-9881-1017" xsd:string
+property_value: IAO:0000117 "https://orcid.org/0000-0002-5039-2052" xsd:string
+property_value: IAO:0000233 "https://github.com/mcwdsi/OMRSE/issues/305" xsd:string
 
 [Term]
 id: OMRSE:00000153
@@ -1206,6 +1238,7 @@ is_a: BFO:0000034
 id: OMRSE:00000159
 name: post-acute health care encounter
 def: "temporally located after some acute care encounter\nSomehow involves skilled nursing encounters" []
+synonym: "post-acute healthcare encounter" EXACT []
 is_a: OGMS:0000097
 disjoint_from: OMRSE:00000160 ! acute care encounter
 relationship: BFO:0000066 OMRSE:00000150 ! community living health care facility
@@ -1219,6 +1252,7 @@ is_a: OGMS:0000097
 id: OMRSE:00000161
 name: leaving a health care facility after receiving care
 def: "A process (1) where the active participant, who at the beginning of the process is located in a healthcare facility, exits the facility and no longer stands in a \"located in\" relationship to the facility and (2) is immediately preceded by a healthcare encounter in which the active participant also participated." []
+synonym: "leaving a healthcare facility after receiving care" EXACT []
 is_a: BFO:0000015
 relationship: RO:0002087 OGMS:0000097
 property_value: IAO:0000117 "William R. Hogan" xsd:string
@@ -1239,12 +1273,14 @@ relationship: RO:0000056 OMRSE:00000168 ! obsolete questions asking process
 [Term]
 id: OMRSE:00000164
 name: home health care organization
+synonym: "home healthcare organization" EXACT []
 is_a: OBI:0000245
 relationship: RO:0000053 BFO:0000034
 
 [Term]
 id: OMRSE:00000165
 name: home health care function
+synonym: "home healthcare function" EXACT []
 is_a: OMRSE:00000172 ! health care function
 relationship: BFO:0000054 OMRSE:00000154 ! assistance with activities of daily living care encounter
 relationship: BFO:0000054 OMRSE:00000155 ! assistance with instrumental activities of daily living encounter
@@ -1253,8 +1289,15 @@ relationship: BFO:0000054 OMRSE:00000166 ! home health care encounter
 [Term]
 id: OMRSE:00000166
 name: home health care encounter
+def: "A health care encounter that occurs in the housing unit where the patient resides." []
+synonym: "home healthcare encounter" EXACT []
 is_a: OGMS:0000097
+intersection_of: OGMS:0000097
+intersection_of: BFO:0000066 OMRSE:00000074 ! housing unit
 relationship: BFO:0000066 OMRSE:00000074 ! housing unit
+property_value: dc:contributor "https://orcid.org/0000-0002-9881-1017" xsd:string
+property_value: IAO:0000117 "https://orcid.org/0000-0002-5039-2052" xsd:string
+property_value: IAO:0000233 "https://github.com/mcwdsi/OMRSE/issues/304" xsd:string
 
 [Term]
 id: OMRSE:00000168
@@ -1285,6 +1328,7 @@ relationship: RO:0000053 OMRSE:00000117 ! hospice function
 [Term]
 id: OMRSE:00000172
 name: health care function
+synonym: "healthcare function" EXACT []
 is_a: BFO:0000034
 intersection_of: BFO:0000034
 intersection_of: BFO:0000054 OGMS:0000097
@@ -1809,6 +1853,7 @@ id: OMRSE:00000225
 name: health care claim data set
 def: "A data set whose members are the specified output of some process of adjudicating health care insurance claims (and whose inputs are at least partly some members of a health care billing data set)." []
 comment: It covers prescription claims because pharmacies bill insurance companies for patients’ prescriptions via submitting insurance claims.
+synonym: "healthcare claim data set" EXACT []
 is_a: IAO:0000100
 property_value: dc:contributor "Alan Ruttenberg" xsd:string
 property_value: dc:contributor "Mathias Brocchausen" xsd:string
@@ -1821,6 +1866,7 @@ property_value: IAO:0000117 "William R. Hogan" xsd:string
 id: OMRSE:00000226
 name: health care billing data set
 def: "A data set whose members are obtained from billing-related data sources that (i) are generated by a health care organization as a result of internal administrative processes, and (ii) are about services rendered or materials used during some health care encounter." []
+synonym: "healthcare billing data set" EXACT []
 is_a: IAO:0000100
 property_value: dc:contributor "Alan Ruttenberg" xsd:string
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
@@ -1833,6 +1879,7 @@ property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 id: OMRSE:00000227
 name: health care administrative process
 def: "A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization." []
+synonym: "healthcare administrative process" EXACT []
 is_a: OBI:0000011
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000112 "Recording data in an EHR. Financial tasks for a healthcare organization. Scheduling shifts for health care workers." xsd:string
@@ -2447,11 +2494,54 @@ property_value: terms:contributor https://orcid.org/0000-0002-5039-2052
 id: OMRSE:00000300
 name: institutional health care provider role
 def: "A human role within an organization that itself bears a healthcare provider organization role." []
+synonym: "institutional healthcare provider role" EXACT []
 is_a: OMRSE:00000086 ! human role within an organization
 property_value: dc:contributor "Colbie Reed" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "human role within a health care organization" xsd:string
 property_value: IAO:0000118 "human role within a healthcare organization" xsd:string
+
+[Term]
+id: OMRSE:00000301
+name: skilled nursing role
+def: "A healthcare provider organization role that is realized by employing licensed nurses to deliver health care and assist with activities of daily living to patients in a skilled nursing facility." []
+is_a: OMRSE:00000015 ! health care provider organization role
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000302
+name: skilled nursing organization
+def: "An organization that is the bearer of a skilled nursing role." []
+is_a: OBI:0000245
+relationship: RO:0000087 OMRSE:00000301 ! skilled nursing role
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000303
+name: number of hours per day of employment data item
+def: "A time measurement data item that is measured in hours and is about the sum of the duration(s) of process(es) that realize a bearer's job role in a day." []
+is_a: IAO:0000416
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000304
+name: marital status
+def: "An information content entity that is about whether someone is party to a marriage contract." []
+is_a: IAO:0000030
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000305
+name: married
+def: "A marital status that is about a person who is party to a marriage contract." []
+is_a: OMRSE:00000304 ! marital status
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
 id: OMRSE:00000500
@@ -2473,11 +2563,13 @@ is_a: OMRSE:00000506 ! socio-economic data item
 [Term]
 id: OMRSE:00000502
 name: government assistance health care plan data item
+synonym: "government assistance healthcare plan data item" EXACT []
 is_a: OMRSE:00000506 ! socio-economic data item
 
 [Term]
 id: OMRSE:00000503
 name: health care plan data item
+synonym: "healthcare plan data item" EXACT []
 is_a: OMRSE:00000506 ! socio-economic data item
 
 [Term]
