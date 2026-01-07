@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/ro_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2025-08-13/imports/ro_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2026-01-06/imports/ro_import.owl>
 Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ro/releases/2025-06-24/ro.owl>)
-Annotation(owl:versionInfo "2025-08-13")
+Annotation(owl:versionInfo "2026-01-06")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -224,6 +224,7 @@ Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000232>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000233>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000412>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000600>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0100001>))
@@ -237,6 +238,7 @@ Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
 Declaration(AnnotationProperty(rdfs:comment))
 Declaration(AnnotationProperty(rdfs:label))
 ############################
@@ -348,6 +350,17 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000232> "PERSON:Alan Ruttenberg"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000232> "curator note"@en)
 
+# Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000233> (term tracker item)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000233> "term tracker item"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/IAO_0000233> "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000233> <http://purl.obolibrary.org/obo/IAO_0000125>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/IAO_0000233> "An IRI or similar locator for a request or discussion of an ontology term."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000233> "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000233> "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0000233> "The 'tracker item' can associate a tracker with a specific ontology term."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000233> "term tracker item"@en)
+
 # Annotation Property: <http://purl.obolibrary.org/obo/IAO_0000412> (imported from)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/IAO_0000412> "imported from"@en)
@@ -375,6 +388,14 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0100001> "Person:Alan Ruttenberg"@en)
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0100001> "Add as annotation triples in the granting ontology"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0100001> "term replaced by"@en)
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (has exact synonym)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://orcid.org/0000-0001-5208-3432>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "https://github.com/information-artifact-ontology/ontology-metadata/issues/20")
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has exact synonym"@en)
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has_exact_synonym")
 
 
 ############################
@@ -1272,6 +1293,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.ob
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://orcid.org/0000-0002-6601-2165>) Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://orcid.org/0000-0002-7073-9172>) <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002432> "c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002432> <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002432> "executes activity in")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/RO_0002432> "enables activity in")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002432> "is active in")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002432> <http://purl.obolibrary.org/obo/RO_0002131>)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002432> <http://purl.obolibrary.org/obo/RO_0002328>)
@@ -1283,6 +1305,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0002434> "Considering relabeling as 'pairwise interacts with'"^^xsd:anyURI)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002434> <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/RO_0002434> "Note that this relationship type, and sub-relationship types may be redundant with process terms from other ontologies. For example, the symbiotic relationship hierarchy parallels GO. The relations are provided as a convenient shortcut. Consider using the more expressive processual form to capture your data. In the future, these relations will be linked to their cognate processes through rules.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/RO_0002434> "in pairwise interaction with")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002434> "interacts with")
 SymmetricObjectProperty(<http://purl.obolibrary.org/obo/RO_0002434>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002434> <http://purl.obolibrary.org/obo/BFO_0000040>)
@@ -1313,6 +1336,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 A and B can be physically interacting but not necessarily. Immediately upstream means there are no intermediate entity between A and B.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002448> <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002448> <https://orcid.org/0000-0003-4639-4431>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/RO_0002448> "molecularly controls")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002448> "directly regulates activity of")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002448> <http://purl.obolibrary.org/obo/RO_0002436>)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002448> <http://purl.obolibrary.org/obo/RO_0011002>)
@@ -1326,6 +1350,7 @@ For example, A and B may be gene products and binding of B by A negatively regul
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002449> <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002449> <https://orcid.org/0000-0003-4639-4431>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002449> "directly inhibits")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/RO_0002449> "molecularly decreases activity of")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002449> "directly negatively regulates activity of")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002449> <http://purl.obolibrary.org/obo/RO_0002448>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002449> <http://purl.obolibrary.org/obo/BFO_0000040>)
@@ -1338,6 +1363,7 @@ For example, A and B may be gene products and binding of B by A positively regul
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002450> <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002450> <https://orcid.org/0000-0003-4639-4431>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002450> "directly activates")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/RO_0002450> "molecularly increases activity of")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002450> "directly positively regulates activity of")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002450> <http://purl.obolibrary.org/obo/RO_0002448>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0002450> <http://purl.obolibrary.org/obo/BFO_0000040>)
@@ -1582,6 +1608,7 @@ AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibra
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/RO_0009501> <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/RO_0009501> <https://orcid.org/0000-0002-7073-9172>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/RO_0009501> <https://orcid.org/0000-0002-8461-9745>)
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <https://orcid.org/0000-0002-6601-2165>) <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/RO_0009501> "triggered by process")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0009501> "realized in response to"@en)
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0009501> <http://purl.obolibrary.org/obo/RO_0002410>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0009501> <http://purl.obolibrary.org/obo/BFO_0000017>)
@@ -1596,6 +1623,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0010001> "This pdf file generically depends on this server.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0010001> "A generically dependent continuant *b* generically depends on an independent continuant *c* at time *t* means: there inheres in *c* a specifically deendent continuant which concretizes *b* at *t*.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/RO_0010001> "[072-ISO]")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/RO_0010001> "g-depends on")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0010001> "generically depends on")
 InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0010001> <http://purl.obolibrary.org/obo/RO_0010002>)
 ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0010001> <http://purl.obolibrary.org/obo/BFO_0000031>)
@@ -1764,6 +1792,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:pdt") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0003674> "A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/GO_0003674> "This is the same as GO molecular function"@en)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0003674> "molecular function")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0003674> "Note that, in addition to forming the root of the molecular function ontology, this term is recommended for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this. Despite its name, this is not a type of 'function' in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0003674> "gene product or complex activity"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0003674> "molecular_function")
@@ -1773,6 +1802,8 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0003674> <http://purl.obolibrary.o
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:pdt") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0008150> "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0008150> "Wikipedia:Biological_process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "biological process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "physiological process")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0008150> "Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological process"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological_process")
@@ -1784,6 +1815,7 @@ DisjointClasses(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibr
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0198506732") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0016301> "Catalysis of the transfer of a phosphate group, usually from ATP, to a substrate molecule.")
 AnnotationAssertion(Annotation(rdfs:label "FN3KRP phosphorylates PsiAm, RibAm") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0016301> "Reactome:R-HSA-6788855")
 AnnotationAssertion(Annotation(rdfs:label "FN3K phosphorylates ketosamines") <http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0016301> "Reactome:R-HSA-6788867")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0016301> "phosphokinase activity")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0016301> "Note that this term encompasses all activities that transfer a single phosphate group; although ATP is by far the most common phosphate donor, reactions using other phosphate donors are included in this term.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0016301> "kinase activity")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0016301> <http://purl.obolibrary.org/obo/GO_0003674>)
@@ -1946,6 +1978,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001585> "WWF:AT1321")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001585> "https://www.worldwildlife.org/ecoregions/at1321")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/ENVO_01001585> "Arabian Peninsula: Yemen and Saudi Arabia")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001585> "Yemen and Saudi Arabia Ecoregion"@en)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/ENVO_01001585> <http://purl.obolibrary.org/obo/ENVO_01001583>)
 
@@ -1953,6 +1986,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001586> "WWF:AT1320")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001586> "https://www.worldwildlife.org/ecoregions/at1320")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/ENVO_01001586> "Arabian Peninsula: Yemen, Saudi Arabia, and Oman")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001586> "Yemen, Saudi Arabia, and Oman Ecoregion"@en)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/ENVO_01001586> <http://purl.obolibrary.org/obo/ENVO_01001583>)
 
@@ -1960,6 +1994,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001587> "WWF:AT1319")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001587> "https://www.worldwildlife.org/ecoregions/at1319")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/ENVO_01001587> "Somali montane xeric woodlands ecoregion")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001587> "Somali Montane Xeric Woodland Ecoregion"@en)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/ENVO_01001587> <http://purl.obolibrary.org/obo/ENVO_01001583>)
 
@@ -2016,6 +2051,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001595> "WWF:AT1311")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001595> "https://www.worldwildlife.org/ecoregions/at1311")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/ENVO_01001595> "Madagascar spiny desert ecoregion")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001595> "Madagascar Spiny Thickets Ecoregion"@en)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/ENVO_01001595> <http://purl.obolibrary.org/obo/ENVO_01001583>)
 
@@ -2023,6 +2059,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001596> "WWF:AT1310")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001596> "https://www.worldwildlife.org/ecoregions/at1310")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/ENVO_01001596> "Africa: Coastal Namibia and Angola Ecoregion")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001596> "Kaokoveld Desert Ecoregion"@en)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/ENVO_01001596> <http://purl.obolibrary.org/obo/ENVO_01001583>)
 
@@ -2037,6 +2074,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001598> "WWF:AT1308")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001598> "https://www.worldwildlife.org/ecoregions/at1308")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/ENVO_01001598> "Southern Africa: Islands about half-way between southern Madagascar and southern Mozambique Ecoregion")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001598> "Ile Europa and Bassas da India Ecoregion"@en)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/ENVO_01001598> <http://purl.obolibrary.org/obo/ENVO_01001583>)
 
@@ -2051,6 +2089,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001600> "WWF:AT1306")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001600> "https://www.worldwildlife.org/ecoregions/at1306")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/ENVO_01001600> "Arabian Peninsula: Oman and United Arab Emirates Ecoregion")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001600> "Oman and United Arab Emirates Ecoregion"@en)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/ENVO_01001600> <http://purl.obolibrary.org/obo/ENVO_01001583>)
 
@@ -2072,6 +2111,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001603> "WWF:AT1303")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001603> "https://www.worldwildlife.org/ecoregions/at1303")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/ENVO_01001603> "North central Africa: Eastern Chad and small area of western Sudan")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001603> "East Saharan Montane Xeric Woodland Ecoregion"@en)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/ENVO_01001603> <http://purl.obolibrary.org/obo/ENVO_01001583>)
 
@@ -2079,6 +2119,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001604> "WWF:AT1302")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001604> "https://www.worldwildlife.org/ecoregions/at1302")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/ENVO_01001604> "Western Asia: Oman, Yemen, and Saudi Arabia Ecoregion")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001604> "Oman, Yemen, and Saudi Arabia Ecoregion"@en)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/ENVO_01001604> <http://purl.obolibrary.org/obo/ENVO_01001583>)
 

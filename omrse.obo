@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2025-08-13/omrse-full.owl
+data-version: omrse/releases/2026-01-06/omrse-full.owl
 synonymtypedef: OMO:0003000 "abbreviation"
 synonymtypedef: OMO:0003001 "ambiguous synonym"
 synonymtypedef: OMO:0003002 "dubious synonym"
@@ -39,7 +39,7 @@ property_value: dc:creator "Mathias Brochhausen" xsd:string
 property_value: dc:creator "Shariq Tariq" xsd:string
 property_value: dc:creator "Swetha Garimalla" xsd:string
 property_value: dc:creator "William Hogan" xsd:string
-property_value: owl:versionInfo "2025-08-13" xsd:string
+property_value: owl:versionInfo "2026-01-06" xsd:string
 property_value: terms:creator "https://orcid.org/0000-0002-9881-1017" xsd:anyURI
 property_value: terms:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
@@ -49,7 +49,7 @@ property_value: terms:title "Ontology for Modeling and Representation of Social 
 id: APOLLO_SV:00000008
 name: software development
 def: "A planned process that has specified output a software product and that involves the creation of source code." []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Software_development" xsd:string
@@ -70,8 +70,8 @@ property_value: IAO:0000600 "A measurement datum that is the output of counting.
 id: APOLLO_SV:00000033
 name: counting
 def: "The planned process of finding the number of elements in a finite set of objects." []
-is_a: OBI:0000011 ! planned process
-intersection_of: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
+intersection_of: OBI:0000011 ! obsolete planned process
 intersection_of: OBI:0000299 APOLLO_SV:00000032 ! has specified output count
 relationship: OBI:0000299 APOLLO_SV:00000032 ! has specified output count
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
@@ -118,8 +118,8 @@ property_value: IAO:0000117 "William R. Hogan" xsd:string
 id: APOLLO_SV:00000796
 name: dataset creating
 def: "A planned process that has a data set as its specified output." []
-is_a: OBI:0000011 ! planned process
-intersection_of: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
+intersection_of: OBI:0000011 ! obsolete planned process
 intersection_of: OBI:0000299 IAO:0000100 ! has specified output data set
 relationship: OBI:0000299 IAO:0000100 ! has specified output data set
 property_value: IAO:0000111 "creating a data set" xsd:string
@@ -458,8 +458,7 @@ property_value: IAO:0000112 "the aggregate of blood cells in your body" xsd:stri
 property_value: IAO:0000112 "the nitrogen atoms in the atmosphere" xsd:string
 property_value: IAO:0000112 "the restaurants in Palo Alto" xsd:string
 property_value: IAO:0000112 "your collection of Meissen ceramic plates." xsd:string
-property_value: IAO:0000116 "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000301"}
-property_value: IAO:0000116 "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000011"}
+property_value: IAO:0000116 "An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects " xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000011", IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000301"}
 property_value: IAO:0000116 "BFO 2 Reference: object aggregates may gain and lose parts while remaining numerically identical (one and the same individual) over time. This holds both for aggregates whose membership is determined naturally (the aggregate of cells in your body) and aggregates determined by fiat (a baseball team, a congressional committee)." xsd:string
 property_value: IAO:0000119 "ISBN:978-3-938793-98-5pp124-158#Thomas Bittner and Barry Smith, 'A Theory of Granular Partitions', in K. Munn and B. Smith (eds.), Applied Ontology: An Introduction, Frankfurt/Lancaster: ontos, 2008, 125-158." xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/0000300"}
 property_value: IAO:0000600 "b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])" xsd:string {IAO:0010000="http://purl.obolibrary.org/obo/bfo/axiom/025-004"}
@@ -745,6 +744,7 @@ id: GO:0003674
 name: molecular_function
 def: "A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs." [GOC:pdt]
 comment: Note that, in addition to forming the root of the molecular function ontology, this term is recommended for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this. Despite its name, this is not a type of 'function' in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.
+synonym: "molecular function" EXACT []
 is_a: BFO:0000015 ! process
 property_value: IAO:0000116 "This is the same as GO molecular function" xsd:string
 
@@ -753,6 +753,9 @@ id: GO:0007610
 name: behavior
 def: "The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity." [GOC:ems, GOC:jl, ISBN:0395448956, PMID:20160973]
 comment: 1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.\n2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).
+synonym: "behavioral response to stimulus" EXACT []
+synonym: "behaviour" EXACT []
+synonym: "behavioural response to stimulus" EXACT []
 xref: Wikipedia:Behavior
 is_a: GO:0008150 ! biological_process
 
@@ -761,15 +764,19 @@ id: GO:0008150
 name: biological_process
 def: "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence." [GOC:pdt]
 comment: Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.
+synonym: "biological process" EXACT []
+synonym: "physiological process" EXACT []
 xref: Wikipedia:Biological_process
 is_a: BFO:0000015 ! process
-disjoint_from: OBI:0000011 ! planned process
+disjoint_from: OBI:0000011 ! obsolete planned process
+property_value: IAO:0000233 "https://github.com/geneontology/go-ontology/issues/24968" xsd:anyURI
 
 [Term]
 id: GO:0016301
 name: kinase activity
 def: "Catalysis of the transfer of a phosphate group, usually from ATP, to a substrate molecule." [ISBN:0198506732]
 comment: Note that this term encompasses all activities that transfer a single phosphate group; although ATP is by far the most common phosphate donor, reactions using other phosphate donors are included in this term.
+synonym: "phosphokinase activity" EXACT []
 xref: Reactome:R-HSA-6788855 "FN3KRP phosphorylates PsiAm, RibAm"
 xref: Reactome:R-HSA-6788867 "FN3K phosphorylates ketosamines"
 is_a: GO:0003674 ! molecular_function
@@ -2099,7 +2106,7 @@ property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 id: IAO:0000443
 name: data item extraction from journal article
 def: "A planned process in which journal articles are read or processed and data items are extracted, typically for further analysis or indexing" []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 relationship: OBI:0000293 IAO:0000013 ! has_specified_input journal article
 relationship: OBI:0000299 IAO:0000027 ! has specified output data item
 property_value: IAO:0000114 IAO:0000120
@@ -2109,7 +2116,7 @@ property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
 id: IAO:0000444
 name: publishing process
 def: "A planned process of making information, such as literature, music, and software etc., available to the public for sale or for free." []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 property_value: IAO:0000114 IAO:0000120
 property_value: IAO:0000117 "Person: Jie Zheng" xsd:string
 property_value: IAO:0000119 "https://en.wikipedia.org/wiki/Publishing" xsd:string
@@ -2131,7 +2138,7 @@ property_value: IAO:0000234 "VEuPathDB" xsd:string
 id: IAO:0000572
 name: documenting
 def: "A planned process in which a document is created or added to by including the specified input in it." []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 relationship: OBI:0000293 IAO:0000030 ! has_specified_input information content entity
 relationship: OBI:0000299 IAO:0000310 ! has specified output document
 property_value: IAO:0000112 "Recording the current temperature in a laboratory notebook. Writing a journal article. Updating a patient record in a database." xsd:string
@@ -2157,7 +2164,7 @@ property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Line_chart" xsd:s
 id: IAO:0000574
 name: assigning a centrally registered identifier
 def: "A planned process in which a new CRID is created, associated with an entity, and stored in the CRID registry thereby registering it as being associated with some entity" []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 relationship: OBI:0000299 IAO:0000577 ! has specified output centrally registered identifier symbol
 relationship: RO:0000057 IAO:0000579 ! has participant centrally registered identifier registry
 property_value: IAO:0000112 "A new pubmed ID being created for a journal article, and the associated pubmed record containing information to the journal article. A license plate number registered at the DMV to be belonging to a specific vehicle and owner. Placing a barcode on a product and entering information in a database that this barcode is assigned." xsd:string
@@ -2172,7 +2179,7 @@ property_value: IAO:0000118 "assigning a CRID" xsd:string
 id: IAO:0000575
 name: associating information with a centrally registered identifier in its registry
 def: "A planned process in which a CRID registry associates an information content entity with a CRID symbol" []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 relationship: OBI:0000293 IAO:0000577 ! has_specified_input centrally registered identifier symbol
 relationship: RO:0000057 IAO:0000579 ! has participant centrally registered identifier registry
 property_value: IAO:0000112 "Articles in Pubmed are reviewed by curators who add MESH terms to the Pubmed records in order to categorize them better and improve the ability to search for them. " xsd:string
@@ -2242,7 +2249,7 @@ property_value: IAO:0000233 "https://github.com/information-artifact-ontology/IA
 id: IAO:0000580
 name: looking up a centrally registered identifier
 def: "A planned process in which a request to a CRID registry is made to return the information associated with a CRID symbol" []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 relationship: OBI:0000293 IAO:0000577 ! has_specified_input centrally registered identifier symbol
 relationship: OBI:0000299 IAO:0000030 ! has specified output information content entity
 relationship: RO:0000057 IAO:0000579 ! has participant centrally registered identifier registry
@@ -2897,7 +2904,7 @@ property_value: IAO:0000118 "ZIP code" xsd:string
 id: IAO:0000650
 name: database extract, transform, and load process
 def: "A planned process which takes as input a database and fills another database by extracting concretizations of information entities from the first, transforming them, and loading the transformed concretizations into the second." []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 relationship: OBI:0000293 IAO:0000030 ! has_specified_input information content entity
 relationship: OBI:0000299 IAO:0000030 ! has specified output information content entity
 property_value: foaf:page https://en.wikipedia.org/wiki/Extract,_transform,_load
@@ -3056,8 +3063,8 @@ property_value: IAO:0000233 "https://github.com/information-artifact-ontology/IA
 id: IAO:0020010
 name: identifier creating process
 def: "A planned process that provides a reference to an individual entity shared by a group of subscribers to refer to that individual entity." []
-is_a: OBI:0000011 ! planned process
-intersection_of: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
+intersection_of: OBI:0000011 ! obsolete planned process
 intersection_of: OBI:0000299 IAO:0020000 ! has specified output identifier
 relationship: OBI:0000299 IAO:0020000 ! has specified output identifier
 property_value: dc:creator "Mathias Brochhausen" xsd:string
@@ -3166,7 +3173,7 @@ id: IAO:0021003
 name: social act
 def: "A planned process that is carried out by a conscious being or an organization, and is self-generated, directed towards another conscious being or an aggregate of conscious beings, an organization or an aggregate of organizations, and that is in need of being perceived." []
 comment: The phrase "in need of being perceived" does not imply that only planned processes that are in fact perceived can be social acts. Reinach clarifies that by exemplifying these matters for commands: "The command is according to its essence in need of being heard (vernehmungsbedürtig". It can of course happen that commands are given without being heard. Then they fail to fulfil their purpose. They are like thrown spears which fall to the ground without hitting their target." (A. Reinach: The Apriori Foundations of the Civil Law." Edited by J. Crosby, Heusenstamm: ontos Verlag, 2012).\nReinach clearly does not imply that a command that does not fulfill its prupose would not be a command.\nThanks to W.R. Hogan for finding the Reinach quote.
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 property_value: IAO:0000112 "Colonel Klink giving Sergeant Schultz an order, Jake promising Jill to take her to the junior prom" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
@@ -3370,7 +3377,7 @@ property_value: IAO:0000119 "http://www.jbiomedsem.com/content/1/1/10" xsd:strin
 id: NCBITaxon:131567
 name: cellular organisms
 xref: GC_ID:1
-is_a: OBI:0100026 ! organism
+is_a: OBI:0100026 ! obsolete organism
 
 [Term]
 id: NCBITaxon:2759
@@ -3402,7 +3409,7 @@ is_a: NCBITaxon:9443 ! Primates
 id: OAE:0000002
 name: medical intervention
 def: "medical intervention is a planned process that has the goal of diagnosing, preventing or relieving illness or injury." []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 property_value: IAO:0000116 "The act of intervening, interfering or interceding with the intent of modifying the outcome. In medicine, an intervention is usually undertaken to help treat or cure a condition. For example, \"Acupuncture as a therapeutic intervention is widely practiced in the United States,\" \nReference:\nhttp://www.medterms.com/script/main/art.asp?articlekey=34214 . Some interventions can be used for diagnosis. " xsd:string
 property_value: IAO:0000117 "YH" xsd:string
 property_value: IAO:0000119 "WEB: http://wiki.answers.com/Q/What_is_medical_intervention" xsd:string
@@ -3428,18 +3435,23 @@ property_value: IAO:0000119 "WEB: http://www.wisegeekhealth.com/what-is-the-diff
 
 [Term]
 id: OBI:0000011
-name: planned process
+name: obsolete planned process
 def: "A process that realizes a plan which is the concretization of a plan specification." []
 is_a: BFO:0000015 ! process
+is_a: oboInOwl:ObsoleteClass
+property_value: IAO:0000111 "obsolete planned process" xsd:string
 property_value: IAO:0000111 "planned process" xsd:string
 property_value: IAO:0000111 "planned process" xsd:string
 property_value: IAO:0000112 "Injecting mice with a vaccine in order to test its efficacy" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000116 "'Plan' includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn't have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)" xsd:string
 property_value: IAO:0000116 "We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some \nobjectives is a planned process." xsd:string
+property_value: IAO:0000116 "We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some objectives is a planned process." xsd:string
 property_value: IAO:0000117 "Bjoern Peters" xsd:string
 property_value: IAO:0000119 "branch derived" xsd:string
+property_value: IAO:0000231 IAO:0000228
 property_value: IAO:0000232 "6/11/9: Edited at workshop. Used to include: is initiated by an agent" xsd:string
+property_value: IAO:0000232 "This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)" xsd:string
 property_value: IAO:0000232 "This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
@@ -3447,7 +3459,7 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 id: OBI:0000066
 name: investigation
 def: "a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s)." []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 property_value: IAO:0000111 "investigation" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
@@ -3470,31 +3482,40 @@ property_value: IAO:0000119 "GROUP: OBI" xsd:string
 id: OBI:0000471
 name: study design execution
 def: "a planned process that carries out a study design" []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 property_value: IAO:0000111 "study design execution" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
 id: OBI:0100026
-name: organism
+name: obsolete organism
 def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
 is_a: BFO:0000040 ! material entity
+is_a: oboInOwl:ObsoleteClass
+property_value: IAO:0000111 "obsolete organism" xsd:string
 property_value: IAO:0000111 "organism" xsd:string
 property_value: IAO:0000112 "animal" xsd:string
+property_value: IAO:0000112 "animal" xsd:string
+property_value: IAO:0000112 "fungus" xsd:string
 property_value: IAO:0000112 "fungus" xsd:string
 property_value: IAO:0000112 "plant" xsd:string
+property_value: IAO:0000112 "plant" xsd:string
+property_value: IAO:0000112 "virus" xsd:string
 property_value: IAO:0000112 "virus" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000116 "10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and 'other organisms')" xsd:string
 property_value: IAO:0000116 "13-02-2009:\nOBI doesn't take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.\nThis issue is outside the scope of OBI." xsd:string
+property_value: IAO:0000116 "13-02-2009: OBI doesn't take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus. This issue is outside the scope of OBI." xsd:string
 property_value: IAO:0000117 "GROUP: OBI Biomaterial Branch" xsd:string
 property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Organism" xsd:string
+property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Organism" xsd:string
+property_value: IAO:0000231 IAO:0000228
 
 [Term]
 id: OBI:0200000
 name: data transformation
-def: "A planned process that produces output data from input data." []
-is_a: OBI:0000011 ! planned process
+def: "A completely executed planned process that produces output data from input data." []
+is_a: OBI:0000011 ! obsolete planned process
 property_value: IAO:0000111 "data transformation" xsd:string
 property_value: IAO:0000112 "The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -3523,7 +3544,7 @@ property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 id: OBI:0600052
 name: dialysis
 def: "a protocol application that uses diffusion through a semi-permeable membrane to separate an input material into two fractions of different composition" []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 relationship: OBI:0000299 BFO:0000040 ! has specified output material entity
 property_value: IAO:0000111 "dialysis" xsd:string
 property_value: IAO:0000112 "the use of a dialysis bag of select pore size to remove salt from collagen isolated from mouse cartilage" xsd:string
@@ -3551,7 +3572,7 @@ property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 id: OBIB:0000710
 name: survey execution
 def: "A planned process that realizes the concretization of a survey to generate an output(survey data.)" []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 
 [Term]
 id: OCCO:00000118
@@ -3570,6 +3591,7 @@ property_value: IAO:0000117 "Robin McGill" xsd:string
 property_value: IAO:0000117 "Sam Smith" xsd:string
 property_value: IAO:0000119 "https://storage.googleapis.com/wzukusers/user-12947767/documents/2c18c4f456ce4f6eab176c0983f75791/FOIS_2023_paper_920.pdf" xsd:string
 property_value: IAO:0000119 "https://www.degruyter.com/document/doi/10.1515/jso-2019-0034/html" xsd:string
+property_value: IAO:0000233 "https://github.com/Occupation-Ontology/OccO/issues/31" xsd:string
 
 [Term]
 id: OCCO:00000119
@@ -3702,7 +3724,8 @@ property_value: IAO:0000117 "Sam Smith" xsd:string
 id: OGMS:0000097
 name: health care encounter
 def: "A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter" []
-is_a: OBI:0000011 ! planned process
+synonym: "healthcare encounter" EXACT []
+is_a: OBI:0000011 ! obsolete planned process
 property_value: IAO:0000117 "Albert Goldfain" xsd:string
 property_value: IAO:0000119 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6" xsd:string
 property_value: IAO:0000232 "creation date: 2011-02-21T09:57:44Z" xsd:string
@@ -3800,7 +3823,7 @@ id: OMRSE:00000007
 name: gender role
 def: "A human social role borne by a human being being realized in behaviour which is considered socially appropriate for individuals of a specific sex in the context of a specific culture." []
 is_a: BFO:0000023 ! role
-relationship: RO:0000052 OBI:0100026 ! characteristic of organism
+relationship: RO:0000052 OBI:0100026 ! characteristic of obsolete organism
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Gender_role" xsd:string
 
@@ -3809,7 +3832,7 @@ id: OMRSE:00000008
 name: male gender role
 def: "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the male sex in the context of the culture in question." []
 is_a: OMRSE:00000007 ! gender role
-relationship: RO:0000052 OBI:0100026 ! characteristic of organism
+relationship: RO:0000052 OBI:0100026 ! characteristic of obsolete organism
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "male gender" xsd:string
 
@@ -3818,7 +3841,7 @@ id: OMRSE:00000009
 name: female gender role
 def: "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the female sex in the context of the culture in question." []
 is_a: OMRSE:00000007 ! gender role
-relationship: RO:0000052 OBI:0100026 ! characteristic of organism
+relationship: RO:0000052 OBI:0100026 ! characteristic of obsolete organism
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "female gender" xsd:string
 
@@ -3826,6 +3849,7 @@ property_value: IAO:0000118 "female gender" xsd:string
 id: OMRSE:00000010
 name: health care role
 def: "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis." []
+synonym: "healthcare role" EXACT []
 is_a: OMRSE:00002072 ! role in human social processes
 relationship: BFO:0000054 OGMS:0000097 ! realized in health care encounter
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
@@ -3837,7 +3861,7 @@ name: patient role
 def: "A health care role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter." []
 comment: In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov't entities, with a person endowed by the gov't with certain certifications.
 is_a: OMRSE:00000010 ! health care role
-relationship: RO:0000052 OBI:0100026 ! characteristic of organism
+relationship: RO:0000052 OBI:0100026 ! characteristic of obsolete organism
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "patient" xsd:string
@@ -3847,6 +3871,7 @@ property_value: IAO:0000119 "CAFE domain expert working group." xsd:string
 id: OMRSE:00000012
 name: health care provider role
 def: "A health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism." []
+synonym: "healthcare provider role" EXACT []
 is_a: OMRSE:00000010 ! health care role
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
@@ -3873,6 +3898,7 @@ property_value: IAO:0000119 "based on: http://en.wikipedia.org/wiki/Nursing" xsd
 id: OMRSE:00000015
 name: health care provider organization role
 def: "A role that inheres in an organization and that is realized by the providing of services in a health care encounter." []
+synonym: "healthcare provider organization role" EXACT []
 is_a: OMRSE:00000027 ! organization health care role
 relationship: BFO:0000054 OGMS:0000097 ! realized in health care encounter
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
@@ -3945,7 +3971,7 @@ name: organism social role
 def: "A role in human social processes that inheres in an organism." []
 comment: Defined class that we will ultimately move to an application ontology.  We are leaving here for now until we determine which application ontology: it is likely going to be an ontology that does not currently (2012-06-05) exist.\n\nDitto for its current descendants.
 is_a: OMRSE:00002072 ! role in human social processes
-relationship: RO:0000052 OBI:0100026 ! characteristic of organism
+relationship: RO:0000052 OBI:0100026 ! characteristic of obsolete organism
 property_value: IAO:0000117 "William R. Hogan\nMathias Brochhausen" xsd:string
 
 [Term]
@@ -3953,6 +3979,7 @@ id: OMRSE:00000027
 name: organization health care role
 def: "An organization social role that, if realized, is realized by either a health care process or an ancillary health care process" []
 comment: Previous definition: An organization social role played by an organization in health care processes.
+synonym: "organization healthcare role" EXACT []
 is_a: OMRSE:00000025 ! organization social role
 
 [Term]
@@ -4499,7 +4526,9 @@ replaced_by: racial identity information content entity
 
 [Term]
 id: OMRSE:00000099
-name: racial identification process
+name: obsolete racial identification process
+is_a: oboInOwl:ObsoleteClass
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000100
@@ -4512,12 +4541,15 @@ replaced_by: ethnic identity information content entity
 
 [Term]
 id: OMRSE:00000101
-name: ethnic identification process
+name: obsolete ethnic identification process
+is_a: oboInOwl:ObsoleteClass
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000102
 name: health care facility
 def: "A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population." []
+synonym: "healthcare facility" EXACT []
 is_a: OMRSE:00000062 ! facility
 property_value: IAO:0000117 "William Hogan" xsd:string
 
@@ -4543,10 +4575,13 @@ property_value: IAO:0000119 "Human Behaviour Change Project" xsd:string
 [Term]
 id: OMRSE:00000105
 name: skilled nursing facility
+def: "A community living health care facility in which patients receive health care by licensed nurses." []
 is_a: OMRSE:00000150 ! community living health care facility
 relationship: BFO:0000067 OMRSE:00000152 ! contains process skilled nursing encounter
 relationship: RO:0000053 OMRSE:00000123 ! has characteristic skilled nursing function
-property_value: IAO:0000117 "Amanda Hicks" xsd:string
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
 id: OMRSE:00000106
@@ -4573,6 +4608,7 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 id: OMRSE:00000108
 name: residential health care facility
 def: "A community living health care facility that provides health care services in a home-like setting" []
+synonym: "residential healthcare facility" EXACT []
 is_a: OMRSE:00000150 ! community living health care facility
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "William Hogan" xsd:string
@@ -4757,13 +4793,16 @@ replaced_by: gender identity information content entity
 
 [Term]
 id: OMRSE:00000134
-name: identification process
-is_a: IAO:0021003 ! social act
+name: obsolete identification process
+is_a: oboInOwl:ObsoleteClass
 property_value: dc:creator "Amanda Hicks" xsd:string
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000135
-name: gender identification process
+name: obsolete gender identification process
+is_a: oboInOwl:ObsoleteClass
+is_obsolete: true
 
 [Term]
 id: OMRSE:00000138
@@ -4845,7 +4884,7 @@ is_obsolete: true
 id: OMRSE:00000146
 name: employment process
 def: "A planned process in which the bearer of an employer role provides wages or salary to the bearer of an employee roll in fullfillment of the arrangements specified in some declaration" []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 relationship: BFO:0000055 OMRSE:00000077 ! realizes job role
 relationship: BFO:0000055 OMRSE:00000087 ! realizes employer role
 
@@ -4872,28 +4911,44 @@ is_a: BFO:0000034 ! function
 [Term]
 id: OMRSE:00000150
 name: community living health care facility
-def: "a health care facility that also bears a residence function and thus one in which the patients are also residents of the facility" []
+def: "A health care facility that also bears a residence function and thus is one in which the patients are also residents of the facility." []
+synonym: "community living healthcare facility" EXACT []
 is_a: OMRSE:00000102 ! health care facility
 relationship: BFO:0000067 OMRSE:00000154 ! contains process assistance with activities of daily living care encounter
 relationship: BFO:0000067 OMRSE:00000155 ! contains process assistance with instrumental activities of daily living encounter
 relationship: RO:0000053 OMRSE:00000075 ! has characteristic residence function
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "long-term health care facility" xsd:string
+property_value: IAO:0000118 "long-term healthcare facility" xsd:string
 
 [Term]
 id: OMRSE:00000151
 name: registered nurse role
+def: "A nurse role that requires successful completion of some nursing education program and some nursing license examination." []
+comment: This class is intended to apply to registered nurse positions broadly, including those outside the US.
 is_a: OMRSE:00000014 ! nurse role
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
 id: OMRSE:00000152
 name: skilled nursing encounter
+def: "A heatlh care encounter that occurs in a skilled nursing facility." []
 is_a: OGMS:0000097 ! health care encounter
+intersection_of: OGMS:0000097 ! health care encounter
+intersection_of: BFO:0000066 OMRSE:00000105 ! occurs in skilled nursing facility
 relationship: BFO:0000055 OMRSE:00000151 ! realizes registered nurse role
+relationship: BFO:0000066 OMRSE:00000105 ! occurs in skilled nursing facility
+property_value: dc:contributor "https://orcid.org/0000-0002-9881-1017" xsd:string
+property_value: IAO:0000117 "https://orcid.org/0000-0002-5039-2052" xsd:string
+property_value: IAO:0000233 "https://github.com/mcwdsi/OMRSE/issues/305" xsd:string
 
 [Term]
 id: OMRSE:00000153
 name: assistive care encounter
 def: "They include assistance with activities of daily living, assistance with instrumental activities of daily living, medication assistance, and health support\n\nhttp://ahca.myflorida.com/Medicaid/acs/index.shtml" []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -4926,6 +4981,7 @@ is_a: BFO:0000034 ! function
 id: OMRSE:00000159
 name: post-acute health care encounter
 def: "temporally located after some acute care encounter\nSomehow involves skilled nursing encounters" []
+synonym: "post-acute healthcare encounter" EXACT []
 is_a: OGMS:0000097 ! health care encounter
 disjoint_from: OMRSE:00000160 ! acute care encounter
 relationship: BFO:0000066 OMRSE:00000150 ! occurs in community living health care facility
@@ -4939,6 +4995,7 @@ is_a: OGMS:0000097 ! health care encounter
 id: OMRSE:00000161
 name: leaving a health care facility after receiving care
 def: "A process (1) where the active participant, who at the beginning of the process is located in a healthcare facility, exits the facility and no longer stands in a \"located in\" relationship to the facility and (2) is immediately preceded by a healthcare encounter in which the active participant also participated." []
+synonym: "leaving a healthcare facility after receiving care" EXACT []
 is_a: BFO:0000015 ! process
 relationship: RO:0002087 OGMS:0000097 ! immediately preceded by health care encounter
 property_value: IAO:0000117 "William R. Hogan" xsd:string
@@ -4959,12 +5016,14 @@ relationship: RO:0000056 OMRSE:00000168 ! participates in obsolete questions ask
 [Term]
 id: OMRSE:00000164
 name: home health care organization
+synonym: "home healthcare organization" EXACT []
 is_a: OBI:0000245 ! organization
 relationship: RO:0000053 BFO:0000034 ! has characteristic function
 
 [Term]
 id: OMRSE:00000165
 name: home health care function
+synonym: "home healthcare function" EXACT []
 is_a: OMRSE:00000172 ! health care function
 relationship: BFO:0000054 OMRSE:00000154 ! realized in assistance with activities of daily living care encounter
 relationship: BFO:0000054 OMRSE:00000155 ! realized in assistance with instrumental activities of daily living encounter
@@ -4973,8 +5032,15 @@ relationship: BFO:0000054 OMRSE:00000166 ! realized in home health care encounte
 [Term]
 id: OMRSE:00000166
 name: home health care encounter
+def: "A health care encounter that occurs in the housing unit where the patient resides." []
+synonym: "home healthcare encounter" EXACT []
 is_a: OGMS:0000097 ! health care encounter
+intersection_of: OGMS:0000097 ! health care encounter
+intersection_of: BFO:0000066 OMRSE:00000074 ! occurs in housing unit
 relationship: BFO:0000066 OMRSE:00000074 ! occurs in housing unit
+property_value: dc:contributor "https://orcid.org/0000-0002-9881-1017" xsd:string
+property_value: IAO:0000117 "https://orcid.org/0000-0002-5039-2052" xsd:string
+property_value: IAO:0000233 "https://github.com/mcwdsi/OMRSE/issues/304" xsd:string
 
 [Term]
 id: OMRSE:00000168
@@ -5005,6 +5071,7 @@ relationship: RO:0000053 OMRSE:00000117 ! has characteristic hospice function
 [Term]
 id: OMRSE:00000172
 name: health care function
+synonym: "healthcare function" EXACT []
 is_a: BFO:0000034 ! function
 intersection_of: BFO:0000034 ! function
 intersection_of: BFO:0000054 OGMS:0000097 ! realized in health care encounter
@@ -5245,7 +5312,7 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 id: OMRSE:00000202
 name: cancer summary staging
 def: "A planned process of determining the extent to which a cancer disease has developed by growing and spreading throughout an organism." []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 property_value: IAO:0000111 "cancer summary staging" xsd:string
 property_value: IAO:0000112 "The cancer summary staging performed on patient John Doe's clinical picture." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
@@ -5529,6 +5596,7 @@ id: OMRSE:00000225
 name: health care claim data set
 def: "A data set whose members are the specified output of some process of adjudicating health care insurance claims (and whose inputs are at least partly some members of a health care billing data set)." []
 comment: It covers prescription claims because pharmacies bill insurance companies for patients’ prescriptions via submitting insurance claims.
+synonym: "healthcare claim data set" EXACT []
 is_a: IAO:0000100 ! data set
 property_value: dc:contributor "Alan Ruttenberg" xsd:string
 property_value: dc:contributor "Mathias Brocchausen" xsd:string
@@ -5541,6 +5609,7 @@ property_value: IAO:0000117 "William R. Hogan" xsd:string
 id: OMRSE:00000226
 name: health care billing data set
 def: "A data set whose members are obtained from billing-related data sources that (i) are generated by a health care organization as a result of internal administrative processes, and (ii) are about services rendered or materials used during some health care encounter." []
+synonym: "healthcare billing data set" EXACT []
 is_a: IAO:0000100 ! data set
 property_value: dc:contributor "Alan Ruttenberg" xsd:string
 property_value: dc:contributor "Mathias Brochhausen" xsd:string
@@ -5553,7 +5622,8 @@ property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 id: OMRSE:00000227
 name: health care administrative process
 def: "A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization." []
-is_a: OBI:0000011 ! planned process
+synonym: "healthcare administrative process" EXACT []
+is_a: OBI:0000011 ! obsolete planned process
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000112 "Recording data in an EHR. Financial tasks for a healthcare organization. Scheduling shifts for health care workers." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -5657,7 +5727,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000237
 name: exchange of ownership
 def: "A planned process whereby one agent (or active participant) or a group of agents transfer ownership of some property to another agent (or active participant) or group of agents in the process, who in return transfer ownership of some their property to the first agent (or active participant)." []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "exchange of ownership" xsd:string
 property_value: IAO:0000112 "Tom exchanged ownership of his computer for Tina's scooter." xsd:string
@@ -5668,7 +5738,7 @@ property_value: IAO:0000118 "barter" xsd:string
 id: OMRSE:00000238
 name: financial transaction
 def: "A planned process whereby one participant partly or completely fulfills an obligation to another participant by transferring ownership of some other debt obligation, which is typically money." []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "financial transaction" xsd:string
 property_value: IAO:0000112 "Apple acquired semiconductors from Samsung in a financial transaction yesterday." xsd:string
@@ -5679,7 +5749,7 @@ property_value: IAO:0000118 "monetary transaction" xsd:string
 id: OMRSE:00000239
 name: payment of debt
 def: "A planned process whereby ownership of some entity of value is transferred by one participant to another to fulfill some obligation, on their behalf, after some service is performed or the ownership of some entity is exchanged." []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "payment of debt" xsd:string
 property_value: IAO:0000112 "I made a debt payment with my credit card company yesterday and no longer owe them money." xsd:string
@@ -5689,7 +5759,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000240
 name: financial valuation process
 def: "A planned process that has as specified output some scalar measurement datum that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some other material entity." []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "financial valuation process" xsd:string
 property_value: IAO:0000112 "The financial valuation of Ravi's car today determined that the car is worth $2000." xsd:string
@@ -5699,7 +5769,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000241
 name: prospective financial valuation process
 def: "A planned process that has as specified output some predicted value that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some material entity at some point in the future." []
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "prospective financial valuation process" xsd:string
 property_value: IAO:0000112 "The prospective valuation of my company's stock indicates strong optimism for our financial growth over the next few years." xsd:string
@@ -6167,11 +6237,54 @@ property_value: terms:contributor https://orcid.org/0000-0002-5039-2052
 id: OMRSE:00000300
 name: institutional health care provider role
 def: "A human role within an organization that itself bears a healthcare provider organization role." []
+synonym: "institutional healthcare provider role" EXACT []
 is_a: OMRSE:00000086 ! human role within an organization
 property_value: dc:contributor "Colbie Reed" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "human role within a health care organization" xsd:string
 property_value: IAO:0000118 "human role within a healthcare organization" xsd:string
+
+[Term]
+id: OMRSE:00000301
+name: skilled nursing role
+def: "A healthcare provider organization role that is realized by employing licensed nurses to deliver health care and assist with activities of daily living to patients in a skilled nursing facility." []
+is_a: OMRSE:00000015 ! health care provider organization role
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000302
+name: skilled nursing organization
+def: "An organization that is the bearer of a skilled nursing role." []
+is_a: OBI:0000245 ! organization
+relationship: RO:0000087 OMRSE:00000301 ! has role skilled nursing role
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000303
+name: number of hours per day of employment data item
+def: "A time measurement data item that is measured in hours and is about the sum of the duration(s) of process(es) that realize a bearer's job role in a day." []
+is_a: IAO:0000416 ! time measurement datum
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000304
+name: marital status
+def: "An information content entity that is about whether someone is party to a marriage contract." []
+is_a: IAO:0000030 ! information content entity
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000305
+name: married
+def: "A marital status that is about a person who is party to a marriage contract." []
+is_a: OMRSE:00000304 ! marital status
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
 id: OMRSE:00000500
@@ -6193,11 +6306,13 @@ is_a: OMRSE:00000506 ! socio-economic data item
 [Term]
 id: OMRSE:00000502
 name: government assistance health care plan data item
+synonym: "government assistance healthcare plan data item" EXACT []
 is_a: OMRSE:00000506 ! socio-economic data item
 
 [Term]
 id: OMRSE:00000503
 name: health care plan data item
+synonym: "healthcare plan data item" EXACT []
 is_a: OMRSE:00000506 ! socio-economic data item
 
 [Term]
@@ -6240,7 +6355,7 @@ id: OMRSE:00002029
 name: education process
 def: "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative." []
 comment: An interesting question is whether there must be another participant who is the "educator".  Some might object that many people are "self taught".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the tip of a finger.  There was no previous information about that type of skill.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow "plays a role" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).
-is_a: OBI:0000011 ! planned process
+is_a: OBI:0000011 ! obsolete planned process
 property_value: IAO:0000111 "educating" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "learning process" xsd:string
@@ -7161,7 +7276,7 @@ property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
 property_value: IAO:0000117 "PERSON: Larry Hunter" xsd:string
 property_value: IAO:0000117 "PERSON: Melanie Coutot" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
-domain: OBI:0000011 ! planned process
+domain: OBI:0000011 ! obsolete planned process
 is_a: RO:0000057 ! has participant
 
 [Typedef]
@@ -7181,14 +7296,14 @@ property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
 property_value: IAO:0000117 "PERSON: Larry Hunter" xsd:string
 property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
-domain: OBI:0000011 ! planned process
+domain: OBI:0000011 ! obsolete planned process
 is_a: RO:0000057 ! has participant
 inverse_of: OBI:0000312 ! is specified output of
 
 [Typedef]
 id: OBI:0000312
 name: is specified output of
-def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
+def: "A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
 property_value: IAO:0000111 "is specified output of" xsd:string
 property_value: IAO:0000111 "is_specified_output_of" xsd:string
 property_value: IAO:0000111 "is_specified_output_of" xsd:string
@@ -7196,7 +7311,7 @@ property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
 property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
-range: OBI:0000011 ! planned process
+range: OBI:0000011 ! obsolete planned process
 is_a: RO:0000056 ! participates in
 
 [Typedef]
@@ -8270,6 +8385,7 @@ is_a: RO:0002500 ! causal agent in process
 id: RO:0002432
 name: is active in
 def: "c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure." [https://orcid.org/0000-0002-6601-2165, https://orcid.org/0000-0002-7073-9172]
+synonym: "enables activity in" EXACT []
 property_value: IAO:0000112 "A protein that enables activity in a cytosol." xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000118 "executes activity in" xsd:string
@@ -8280,6 +8396,7 @@ is_a: RO:0002328 ! functionally related to
 id: RO:0002434
 name: interacts with
 def: "A relationship that holds between two entities in which the processes executed by the two entities are causally connected." []
+synonym: "in pairwise interaction with" EXACT []
 property_value: IAO:0000116 "Considering relabeling as 'pairwise interacts with'" xsd:anyURI
 property_value: IAO:0000116 "This relation and all sub-relations can be applied to either (1) pairs of entities that are interacting at any moment of time (2) populations or species of entity whose members have the disposition to interact (3) classes whose members have the disposition to interact." xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
@@ -8310,6 +8427,7 @@ is_a: RO:0002436 ! molecularly interacts with
 id: RO:0002448
 name: directly regulates activity of
 def: "The entity A, immediately upstream of the entity B, has an activity that regulates an activity performed by B. For example, A and B may be gene products and binding of B by A regulates the kinase activity of B.\n\nA and B can be physically interacting but not necessarily. Immediately upstream means there are no intermediate entity between A and B." []
+synonym: "molecularly controls" EXACT []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000117 https://orcid.org/0000-0003-4639-4431
 domain: BFO:0000040 ! material entity
@@ -8321,6 +8439,7 @@ is_a: RO:0011002 ! regulates activity of
 id: RO:0002449
 name: directly negatively regulates activity of
 def: "The entity A, immediately upstream of the entity B, has an activity that negatively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A negatively regulates the kinase activity of B." []
+synonym: "molecularly decreases activity of" EXACT []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000117 https://orcid.org/0000-0003-4639-4431
 property_value: IAO:0000118 "directly inhibits" xsd:string
@@ -8332,6 +8451,7 @@ is_a: RO:0002448 ! directly regulates activity of
 id: RO:0002450
 name: directly positively regulates activity of
 def: "The entity A, immediately upstream of the entity B, has an activity that positively regulates an activity performed by B. \nFor example, A and B may be gene products and binding of B by A positively regulates the kinase activity of B." []
+synonym: "molecularly increases activity of" EXACT []
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000117 https://orcid.org/0000-0003-4639-4431
 property_value: IAO:0000118 "directly activates" xsd:string
@@ -8593,6 +8713,7 @@ is_obsolete: true
 id: RO:0009501
 name: realized in response to
 def: "r 'realized in response to' s iff, r is a realizable (e.g. a plant trait such as responsivity to drought), s is an environmental stimulus (a process), and s directly causes the realization of r." []
+synonym: "triggered by process" EXACT [https://orcid.org/0000-0002-6601-2165]
 property_value: IAO:0000112 "A drought sensitivity trait that inheres in a whole plant is realized in a systemic response process in response to exposure to drought conditions." xsd:string
 property_value: IAO:0000112 "An inflammatory disease that is realized in response to an inflammatory process occurring in the gut (which is itself the realization of a process realized in response to harmful stimuli in the mucosal lining of th gut)" xsd:string
 property_value: IAO:0000112 "Environmental polymorphism in butterflies: These butterflies have a 'responsivity to day length trait' that is realized in response to the duration of the day, and is realized in developmental processes that lead to increased or decreased pigmentation in the adult morph." xsd:string
@@ -8609,6 +8730,7 @@ is_a: RO:0002410 ! causally related to
 id: RO:0010001
 name: generically depends on
 def: "A generically dependent continuant *b* generically depends on an independent continuant *c* at time *t* means: there inheres in *c* a specifically deendent continuant which concretizes *b* at *t*." []
+synonym: "g-depends on" EXACT []
 property_value: IAO:0000112 "Genetic information generically depend on molecules of DNA." xsd:string
 property_value: IAO:0000112 "The novel *War and Peace* generically depends on this copy of the novel." xsd:string
 property_value: IAO:0000112 "The pattern shared by chess boards generically depends on any chess board." xsd:string

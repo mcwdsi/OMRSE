@@ -73,9 +73,9 @@
         "val" : "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2025-08-13"
+        "val" : "2026-01-06"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2025-08-13/omrse-base.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2026-01-06/omrse-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000032",
@@ -332,6 +332,10 @@
         "definition" : {
           "val" : "A role in human social processes that is realized by health care processes such as seeking or providing treatment for disease and injury, diagnosing disease and injury, or undergoing diagnosis."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare role"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Mathias Brochhausen"
@@ -371,6 +375,10 @@
         "definition" : {
           "val" : "A health care role inhering in an organization or human being that is realized by a process of providing health care services to an organism."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare provider role"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Mathias Brochhausen"
@@ -425,6 +433,10 @@
         "definition" : {
           "val" : "A role that inheres in an organization and that is realized by the providing of services in a health care encounter."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare provider organization role"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "Mathias Brochhausen"
@@ -553,7 +565,11 @@
         "definition" : {
           "val" : "An organization social role that, if realized, is realized by either a health care process or an ancillary health care process"
         },
-        "comments" : [ "Previous definition: An organization social role played by an organization in health care processes." ]
+        "comments" : [ "Previous definition: An organization social role played by an organization in health care processes." ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "organization healthcare role"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000028",
@@ -1472,8 +1488,11 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000099",
-      "lbl" : "racial identification process",
-      "type" : "CLASS"
+      "lbl" : "obsolete racial identification process",
+      "type" : "CLASS",
+      "meta" : {
+        "deprecated" : true
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000100",
       "lbl" : "obsolete ethnic identity datum",
@@ -1493,8 +1512,11 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000101",
-      "lbl" : "ethnic identification process",
-      "type" : "CLASS"
+      "lbl" : "obsolete ethnic identification process",
+      "type" : "CLASS",
+      "meta" : {
+        "deprecated" : true
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000102",
       "lbl" : "health care facility",
@@ -1503,6 +1525,10 @@
         "definition" : {
           "val" : "A facility bearing the function to provide healthcare and that is administered by a health care organization for the purpose of providing health care to a patient or patient population."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare facility"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William Hogan"
@@ -1548,9 +1574,18 @@
       "lbl" : "skilled nursing facility",
       "type" : "CLASS",
       "meta" : {
+        "definition" : {
+          "val" : "A community living health care facility in which patients receive health care by licensed nurses."
+        },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "Amanda Hicks"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
         } ]
       }
     }, {
@@ -1596,6 +1631,10 @@
         "definition" : {
           "val" : "A community living health care facility that provides health care services in a home-like setting"
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "residential healthcare facility"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Amanda Hicks"
@@ -1857,18 +1896,22 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000134",
-      "lbl" : "identification process",
+      "lbl" : "obsolete identification process",
       "type" : "CLASS",
       "meta" : {
         "basicPropertyValues" : [ {
           "pred" : "http://purl.org/dc/elements/1.1/creator",
           "val" : "Amanda Hicks"
-        } ]
+        } ],
+        "deprecated" : true
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000135",
-      "lbl" : "gender identification process",
-      "type" : "CLASS"
+      "lbl" : "obsolete gender identification process",
+      "type" : "CLASS",
+      "meta" : {
+        "deprecated" : true
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000138",
       "lbl" : "obsolete female gender identity datum",
@@ -2040,17 +2083,62 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "a health care facility that also bears a residence function and thus one in which the patients are also residents of the facility"
-        }
+          "val" : "A health care facility that also bears a residence function and thus is one in which the patients are also residents of the facility."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "community living healthcare facility"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "long-term health care facility"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "long-term healthcare facility"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000151",
       "lbl" : "registered nurse role",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A nurse role that requires successful completion of some nursing education program and some nursing license examination."
+        },
+        "comments" : [ "This class is intended to apply to registered nurse positions broadly, including those outside the US." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000152",
       "lbl" : "skilled nursing encounter",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A heatlh care encounter that occurs in a skilled nursing facility."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/mcwdsi/OMRSE/issues/305"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-9881-1017"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000153",
       "lbl" : "assistive care encounter",
@@ -2096,7 +2184,11 @@
       "meta" : {
         "definition" : {
           "val" : "temporally located after some acute care encounter\nSomehow involves skilled nursing encounters"
-        }
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "post-acute healthcare encounter"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000160",
@@ -2110,6 +2202,10 @@
         "definition" : {
           "val" : "A process (1) where the active participant, who at the beginning of the process is located in a healthcare facility, exits the facility and no longer stands in a \"located in\" relationship to the facility and (2) is immediately preceded by a healthcare encounter in which the active participant also participated."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "leaving a healthcare facility after receiving care"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
@@ -2132,15 +2228,46 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000164",
       "lbl" : "home health care organization",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "home healthcare organization"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000165",
       "lbl" : "home health care function",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "home healthcare function"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000166",
       "lbl" : "home health care encounter",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A health care encounter that occurs in the housing unit where the patient resides."
+        },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "home healthcare encounter"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "https://orcid.org/0000-0002-5039-2052"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/mcwdsi/OMRSE/issues/304"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "https://orcid.org/0000-0002-9881-1017"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000168",
       "lbl" : "obsolete questions asking process",
@@ -2167,7 +2294,13 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000172",
       "lbl" : "health care function",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare function"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000173",
       "lbl" : "obsolete material information bearer of question text plus answer set",
@@ -3210,6 +3343,10 @@
           "val" : "A data set whose members are the specified output of some process of adjudicating health care insurance claims (and whose inputs are at least partly some members of a health care billing data set)."
         },
         "comments" : [ "It covers prescription claims because pharmacies bill insurance companies for patients’ prescriptions via submitting insurance claims.", "The insurance claim is submitted to the insurance company by either the patient or the provider. It is not necessarily always the provider, although in the United States, it typically is.", "The outcome of the adjudication of a claim in the claims dataset could be favorable or unfavorable for the healthcare provider, the patient, or both. The idea is just that they’ve been adjudicated, one way or the other (or anything in between if that’s a possibility).", "The reason we say billing data are only part of the input is because we are not conflating the insurance claim with the bill. It is our understanding that the provider’s bill of services is either part of the claim or “attached” to it in some manner, but doesn’t constitute the entire claim itself.", "The sources of these data are held by insurers or other health plan providers." ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare claim data set"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
@@ -3238,6 +3375,10 @@
         "definition" : {
           "val" : "A data set whose members are obtained from billing-related data sources that (i) are generated by a health care organization as a result of internal administrative processes, and (ii) are about services rendered or materials used during some health care encounter."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare billing data set"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "S. Clint Dowland"
@@ -3266,6 +3407,10 @@
         "definition" : {
           "val" : "A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare administrative process"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "Recording data in an EHR. Financial tasks for a healthcare organization. Scheduling shifts for health care workers."
@@ -4544,15 +4689,102 @@
         "definition" : {
           "val" : "A human role within an organization that itself bears a healthcare provider organization role."
         },
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "institutional healthcare provider role"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "human role within a health care organization"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "human role within a healthcare organization"
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "Colbie Reed"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000301",
+      "lbl" : "skilled nursing role",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A healthcare provider organization role that is realized by employing licensed nurses to deliver health care and assist with activities of daily living to patients in a skilled nursing facility."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000302",
+      "lbl" : "skilled nursing organization",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An organization that is the bearer of a skilled nursing role."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000303",
+      "lbl" : "number of hours per day of employment data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A time measurement data item that is measured in hours and is about the sum of the duration(s) of process(es) that realize a bearer's job role in a day."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000304",
+      "lbl" : "marital status",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An information content entity that is about whether someone is party to a marriage contract."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000305",
+      "lbl" : "married",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A marital status that is about a person who is party to a marriage contract."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
         }, {
           "pred" : "http://purl.org/dc/elements/1.1/contributor",
           "val" : "William R. Hogan"
@@ -4593,11 +4825,23 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000502",
       "lbl" : "government assistance health care plan data item",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "government assistance healthcare plan data item"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000503",
       "lbl" : "health care plan data item",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "healthcare plan data item"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000504",
       "lbl" : "government assistance income data item",
@@ -5887,6 +6131,10 @@
       "propertyType" : "OBJECT"
     }, {
       "id" : "http://purl.obolibrary.org/obo/RO_0000085",
+      "type" : "PROPERTY",
+      "propertyType" : "OBJECT"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/RO_0000087",
       "type" : "PROPERTY",
       "propertyType" : "OBJECT"
     }, {
@@ -13599,6 +13847,10 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000233",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000600",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
@@ -13718,6 +13970,10 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/title",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     } ],
@@ -14196,7 +14452,15 @@
       "pred" : "is_a",
       "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000099",
+      "pred" : "is_a",
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000100",
+      "pred" : "is_a",
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000101",
       "pred" : "is_a",
       "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
@@ -14414,7 +14678,11 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000134",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/IAO_0021003"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000135",
+      "pred" : "is_a",
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000138",
       "pred" : "is_a",
@@ -14511,6 +14779,10 @@
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000152",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000055",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000151"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000152",
+      "pred" : "http://purl.obolibrary.org/obo/BFO_0000066",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000105"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000153",
       "pred" : "is_a",
@@ -15187,6 +15459,30 @@
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000300",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000086"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000301",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000015"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000302",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OBI_0000245"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000302",
+      "pred" : "http://purl.obolibrary.org/obo/RO_0000087",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000301"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000303",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000416"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000304",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000030"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000305",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000304"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000500",
       "pred" : "is_a",
@@ -17226,6 +17522,20 @@
       "restrictions" : [ {
         "propertyId" : "http://purl.obolibrary.org/obo/IAO_0000219",
         "fillerId" : "http://purl.obolibrary.org/obo/PCO_0000020"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000152",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/OGMS_0000097" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000066",
+        "fillerId" : "http://purl.obolibrary.org/obo/OMRSE_00000105"
+      } ]
+    }, {
+      "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000166",
+      "genusIds" : [ "http://purl.obolibrary.org/obo/OGMS_0000097" ],
+      "restrictions" : [ {
+        "propertyId" : "http://purl.obolibrary.org/obo/BFO_0000066",
+        "fillerId" : "http://purl.obolibrary.org/obo/OMRSE_00000074"
       } ]
     }, {
       "definedClassId" : "http://purl.obolibrary.org/obo/OMRSE_00000172",
