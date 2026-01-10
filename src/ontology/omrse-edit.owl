@@ -1351,7 +1351,7 @@ SubClassOf(obo:OMRSE_00000078 ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_0000
 
 # Class: obo:OMRSE_00000079 (workplace function)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000079 "a function inhering in a material entity that, if realized, is realized by that material entity being the site where the work of some organization is carried out"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000079 "A function inhering in a material entity that, if realized, is realized by that material entity being the site where the work of some organization is carried out"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000079 "Amanda Hicks"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000079 "workplace function"@en)
 SubClassOf(obo:OMRSE_00000079 obo:BFO_0000034)
@@ -1411,7 +1411,7 @@ SubClassOf(obo:OMRSE_00000086 ObjectIntersectionOf(obo:OMRSE_00000001 ObjectSome
 
 # Class: obo:OMRSE_00000087 (employer role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000087 "a role in human social processes that is realized when the bearer provides a wage or salary in exchange for some labour or services as specified by some declaration"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000087 "A role in human social processes that is realized when the bearer provides a wage or salary in exchange for some labour or services as specified by some declaration"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000087 "employer role"@en)
 SubClassOf(obo:OMRSE_00000087 obo:OMRSE_00002072)
 SubClassOf(obo:OMRSE_00000087 ObjectSomeValuesFrom(obo:BFO_0000054 obo:OMRSE_00000146))
@@ -1858,7 +1858,7 @@ SubClassOf(obo:OMRSE_00000147 obo:OMRSE_00000139)
 
 # Class: obo:OMRSE_00000148 (adult foster home facility)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000148 "a facility that is run by an adult foster home organization and is the bearer of an adult foster home organization"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000148 "A facility that is run by an adult foster home organization and is the bearer of an adult foster home organization"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000148 "Amanda Hicks")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000148 "adult foster home facility"@en)
 SubClassOf(obo:OMRSE_00000148 obo:OMRSE_00000150)
@@ -2241,7 +2241,7 @@ SubClassOf(obo:OMRSE_00000197 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000198 (information content entity-request process)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000198 "a communication in which some participant requests of some other participant an information content entity about some portion of reality"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000198 "A communication in which some participant requests of some other participant an information content entity about some portion of reality"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000198 "S. Clint Dowland"@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000198 "As with the parent class, 'participant' in the definition need not refer to a human agent."@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000198 "The medium and grammatical form are irrelevant. For example, the request may be written or spoken, and while it may be in the form of a question, it need not be."@en)
@@ -2250,14 +2250,14 @@ SubClassOf(obo:OMRSE_00000198 obo:OMRSE_00002068)
 
 # Class: obo:OMRSE_00000199 (information content entity request about ethnic identity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000199 "an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the ethnic identity of that other participant"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000199 "An information content entity-request process in which some participant requests of some other participant an information content entity that indicates the ethnic identity of that other participant"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000199 "S. Clint Dowland"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000199 "information content entity request about ethnic identity"@en)
 SubClassOf(obo:OMRSE_00000199 obo:OMRSE_00000198)
 
 # Class: obo:OMRSE_00000200 (information content entity request about racial identity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000200 "an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the racial identity of that other participant"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000200 "An information content entity-request process in which some participant requests of some other participant an information content entity that indicates the racial identity of that other participant"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000200 "S. Clint Dowland"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000200 "information content entity request about racial identity"@en)
 SubClassOf(obo:OMRSE_00000200 obo:OMRSE_00000198)
