@@ -3276,10 +3276,12 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000500 "job role data item"@en)
 EquivalentClasses(obo:OMRSE_00000500 ObjectIntersectionOf(obo:IAO_0000027 ObjectSomeValuesFrom(obo:IAO_0000136 ObjectUnionOf(obo:OMRSE_00000077 ObjectIntersectionOf(obo:BFO_0000015 ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000077))))))
 SubClassOf(obo:OMRSE_00000500 obo:IAO_0000027)
 
-# Class: obo:OMRSE_00000501 (income data item)
+# Class: obo:OMRSE_00000501 (obsolete income data item)
 
-AnnotationAssertion(rdfs:label obo:OMRSE_00000501 "income data item"@en)
-SubClassOf(obo:OMRSE_00000501 obo:OMRSE_00000506)
+AnnotationAssertion(obo:IAO_0100001 obo:OMRSE_00000501 "'monetary personal income data item'")
+AnnotationAssertion(rdfs:label obo:OMRSE_00000501 "obsolete income data item"@en)
+AnnotationAssertion(owl:deprecated obo:OMRSE_00000501 "true"^^xsd:boolean)
+SubClassOf(obo:OMRSE_00000501 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000502 (government assistance health care plan data item)
 
