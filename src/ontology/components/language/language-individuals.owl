@@ -82,6 +82,12 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1250,8 +1256,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000595">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002069"/>
-        <obo:IAO_0000118>ڈوگرى</obo:IAO_0000118>
-        <obo:IAO_0000118>डोगरी</obo:IAO_0000118>
         <obo:OMRSE_00002026>dgr</obo:OMRSE_00002026>
         <obo:OMRSE_00002027>dgr</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Dogrib</rdfs:label>
@@ -1436,7 +1440,6 @@
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000610">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002069"/>
-        <obo:IAO_0000118 xml:lang="en">English</obo:IAO_0000118>
         <obo:OMRSE_00002025>en</obo:OMRSE_00002025>
         <obo:OMRSE_00002026>eng</obo:OMRSE_00002026>
         <obo:OMRSE_00002027>eng</obo:OMRSE_00002027>
@@ -1625,10 +1628,10 @@
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000625">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002069"/>
-        <obo:IAO_0000118>franceis</obo:IAO_0000118>
-        <obo:IAO_0000118>françois</obo:IAO_0000118>
         <obo:OMRSE_00002026>frm</obo:OMRSE_00002026>
         <obo:OMRSE_00002027>frm</obo:OMRSE_00002027>
+        <oboInOwl:hasRelatedSynonym>franceis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>françois</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">French, Middle (ca. 1400–1600)</rdfs:label>
     </owl:NamedIndividual>
     
