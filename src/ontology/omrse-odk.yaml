@@ -71,7 +71,10 @@ import_group:
     - id: omo
       module_type: mirror
     - id: iao 
-      module_type: mirror
+      module_type: filter
+      make_base: true
+      base_iris:
+        - http://purl.obolibrary.org/obo/IAO_ 
     - id: d-acts
       mirror_from: http://purl.obolibrary.org/obo/iao/d-acts.owl
       module_type: filter

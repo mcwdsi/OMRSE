@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/omrse/language-individuals.owl/"
-     xml:base="http://purl.obolibrary.org/obo/omrse/language-individuals.owl/"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/omrse/components/language/language-individuals.owl/"
+     xml:base="http://purl.obolibrary.org/obo/omrse/components/language/language-individuals.owl/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -12,8 +12,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:language-individuals="http://purl.obolibrary.org/obo/omrse/language-individuals/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/language-individuals.owl">
+     xmlns:language-individuals="http://purl.obolibrary.org/obo/omrse/components/language/language-individuals/">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/components/language/language-individuals.owl">
         <dc:creator xml:lang="en">Mathias Brochhausen</dc:creator>
         <dc:creator xml:lang="en">Matthew Diller</dc:creator>
         <dc:creator xml:lang="en">S. Clint Dowland</dc:creator>

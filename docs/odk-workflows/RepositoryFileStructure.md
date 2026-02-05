@@ -28,7 +28,7 @@ These are the current imports in OMRSE
 | ncbitaxon | http://purl.obolibrary.org/obo/ncbitaxon/subsets/taxslim.owl | filter |
 | oostt | http://purl.obolibrary.org/obo/oostt.owl | filter |
 | omo | http://purl.obolibrary.org/obo/omo.owl | mirror |
-| iao | http://purl.obolibrary.org/obo/iao.owl | mirror |
+| iao | http://purl.obolibrary.org/obo/iao.owl | filter |
 | d-acts | http://purl.obolibrary.org/obo/iao/d-acts.owl | filter |
 | geo | http://purl.obolibrary.org/obo/geo.owl | filter |
 | mf | http://purl.obolibrary.org/obo/mf.owl | filter |
