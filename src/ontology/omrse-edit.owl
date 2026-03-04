@@ -354,7 +354,6 @@ Declaration(Class(obo:OMRSE_00000504))
 Declaration(Class(obo:OMRSE_00000505))
 Declaration(Class(obo:OMRSE_00000506))
 Declaration(Class(obo:OMRSE_00000507))
-Declaration(Class(obo:OMRSE_00000924))
 Declaration(Class(obo:OMRSE_00000925))
 Declaration(Class(obo:OMRSE_00000926))
 Declaration(Class(obo:OMRSE_00000927))
@@ -3008,10 +3007,12 @@ SubClassOf(obo:OMRSE_00000277 obo:MF_0000031)
 
 # Class: obo:OMRSE_00000278 (social identity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000278 "A subjective representation of its bearer as being a member of some social category."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000278 "A subjective representation of themselves by a person or group."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000278 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000278 "S. Clint Dowland"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000278 "William R. Hogan"@en)
+AnnotationAssertion(oboInOwl:hasBroadSynonym obo:OMRSE_00000278 "identity"@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000278 "Definition updated to AddictO defintion."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000278 "social identity"@en)
 SubClassOf(obo:OMRSE_00000278 obo:OMRSE_00000277)
 SubClassOf(obo:OMRSE_00000278 ObjectSomeValuesFrom(obo:RO_0000059 ObjectIntersectionOf(obo:BFO_0000031 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:IAO_0000136 obo:NCBITaxon_9606) ObjectSomeValuesFrom(obo:IAO_0000136 obo:OMRSE_00000267)))))
@@ -3340,29 +3341,24 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000507 "obsolete non-binary gender id
 AnnotationAssertion(owl:deprecated obo:OMRSE_00000507 "true"^^xsd:boolean)
 SubClassOf(obo:OMRSE_00000507 oboInOwl:ObsoleteClass)
 
-# Class: obo:OMRSE_00000924 (identity)
-
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000924 "A cognitive representation of themselves by a person or a group about themselves."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000924 "Matthew Diller"@en)
-AnnotationAssertion(rdfs:comment obo:OMRSE_00000924 "This entity is more than self-identity of an individual as it includes group identity."@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_00000924 "identity"@en)
-SubClassOf(obo:OMRSE_00000924 obo:MF_0000031)
-
 # Class: obo:OMRSE_00000925 (self-identity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000925 "An identity that a person has about themselves."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000925 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000232 obo:OMRSE_00000925 "The term 'self' sounds tautologous but is required to reflect the fact that this is not identity in terms of who you are but how you represent yourself to yourself."@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000925 "Adopted from AddictO"@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000925 "The cognitive representation includes multiple aspects and some of these are social. For example, group memberships, cultural norms. Collective identity as a shared attribute of group is related to this but is separate."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000925 "self-identity"@en)
-SubClassOf(obo:OMRSE_00000925 obo:OMRSE_00000924)
+SubClassOf(obo:OMRSE_00000925 obo:OMRSE_00000278)
 
 # Class: obo:OMRSE_00000926 (group identity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000926 "An identity that a group holds about itself."@en)
 AnnotationAssertion(obo:IAO_0000232 obo:OMRSE_00000926 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000232 obo:OMRSE_00000926 "can a socially shared representtaion be said to be purely cognitive? I.e query parent entity?"@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000926 "Adopted from AddictO"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000926 "group identity"@en)
-SubClassOf(obo:OMRSE_00000926 obo:OMRSE_00000924)
+SubClassOf(obo:OMRSE_00000926 obo:OMRSE_00000278)
 
 # Class: obo:OMRSE_00000927 (vocal linguistic concretization utilization process)
 
