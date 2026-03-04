@@ -360,6 +360,7 @@ Declaration(Class(obo:OMRSE_00000927))
 Declaration(Class(obo:OMRSE_00000928))
 Declaration(Class(obo:OMRSE_00000929))
 Declaration(Class(obo:OMRSE_00000930))
+Declaration(Class(obo:OMRSE_00000931))
 Declaration(Class(obo:OMRSE_00002029))
 Declaration(Class(obo:OMRSE_00002030))
 Declaration(Class(obo:OMRSE_00002031))
@@ -3324,6 +3325,10 @@ SubClassOf(obo:OMRSE_00000505 obo:OMRSE_00000506)
 
 # Class: obo:OMRSE_00000506 (socio-economic data item)
 
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000506 "A data item about a person or population of people that indicates their access to material or social goods."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000506 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000506 "Colbie Reed"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000506 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000506 "socio-economic data item"@en)
 SubClassOf(obo:OMRSE_00000506 obo:IAO_0000027)
 
@@ -3397,6 +3402,17 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000930 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000930 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000930 "family income"@en)
 SubClassOf(obo:OMRSE_00000930 obo:OMRSE_00000929)
+
+# Class: obo:OMRSE_00000931 (poverty line)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000931 "A data item of income level that is calculated based on what level of income is minimally adequate to afford basic necessities, such as housing or food."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000931 "Matthew Diller"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000931 "Amanda Hicks"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000931 "Colbie Reed"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000931 "William R. Hogan"@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000931 "Federal poverty levels are used to determine your eligibility for certain programs and benefits, and are often calculated annually."@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000931 "poverty line"@en)
+SubClassOf(obo:OMRSE_00000931 obo:IAO_0000027)
 
 # Class: obo:OMRSE_00002029 (education process)
 
