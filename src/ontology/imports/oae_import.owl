@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/oae_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-02-04/imports/oae_import.owl>
-Annotation(owl:versionInfo "2026-02-04")
+<http://purl.obolibrary.org/obo/omrse/releases/2026-03-05/imports/oae_import.owl>
+Annotation(owl:versionInfo "2026-03-05")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/OAE_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OAE_0000067>))

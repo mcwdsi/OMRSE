@@ -13,7 +13,7 @@
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/omrse/omrse-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2026-01-06/omrse-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/omrse/releases/2026-03-05/omrse-base.owl"/>
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert</dc:contributor>
         <dc:contributor xml:lang="en">Daniel Welch</dc:contributor>
@@ -32,12 +32,12 @@
         <dc:creator xml:lang="en">Swetha Garimalla</dc:creator>
         <dc:creator xml:lang="en">William Hogan</dc:creator>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
-        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://orcid.org/0000-0002-9881-1017</terms:creator>
+        <terms:creator rdf:resource="https://orcid.org/0000-0002-9881-1017"/>
         <terms:description xml:lang="en">The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations.</terms:description>
         <terms:license>https://creativecommons.org/licenses/by/4.0/</terms:license>
         <terms:title xml:lang="en">Ontology for Modeling and Representation of Social Entities</terms:title>
         <rdfs:comment xml:lang="en">This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government&apos;s &quot;meaningful use&quot; criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt</rdfs:comment>
-        <owl:versionInfo>2026-01-06</owl:versionInfo>
+        <owl:versionInfo>2026-03-05</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -98,6 +98,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000231 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000231"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000232"/>
     
 
 
@@ -184,12 +190,6 @@
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/date -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
-    
-
-
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
@@ -205,6 +205,12 @@
     <!-- http://purl.org/dc/terms/contributor -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
@@ -238,9 +244,21 @@
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     
 
 
@@ -2538,7 +2556,7 @@ A patient sustaining an injury who has been admitted to the hospital, transferre
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000079">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000034"/>
-        <obo:IAO_0000115 xml:lang="en">a function inhering in a material entity that, if realized, is realized by that material entity being the site where the work of some organization is carried out</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A function inhering in a material entity that, if realized, is realized by that material entity being the site where the work of some organization is carried out</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">workplace function</rdfs:label>
     </owl:Class>
@@ -2678,7 +2696,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000146"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a role in human social processes that is realized when the bearer provides a wage or salary in exchange for some labour or services as specified by some declaration</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A role in human social processes that is realized when the bearer provides a wage or salary in exchange for some labour or services as specified by some declaration</obo:IAO_0000115>
         <rdfs:label xml:lang="en">employer role</rdfs:label>
     </owl:Class>
     
@@ -3876,7 +3894,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000149"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">a facility that is run by an adult foster home organization and is the bearer of an adult foster home organization</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A facility that is run by an adult foster home organization and is the bearer of an adult foster home organization</obo:IAO_0000115>
         <obo:IAO_0000117>Amanda Hicks</obo:IAO_0000117>
         <rdfs:label xml:lang="en">adult foster home facility</rdfs:label>
     </owl:Class>
@@ -4044,8 +4062,8 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000160"/>
-        <obo:IAO_0000115 xml:lang="en">temporally located after some acute care encounter
-Somehow involves skilled nursing encounters</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A health care encounter that provide medical and supportive services after a patient leaves an acute care setting. The aim of the post-acute health care encounter it to help the patient recover or regain independence.</obo:IAO_0000115>
+        <dc:contributor xml:lang="en">Mathias Brochhausen</dc:contributor>
         <oboInOwl:hasExactSynonym xml:lang="en">post-acute healthcare encounter</oboInOwl:hasExactSynonym>
         <rdfs:label xml:lang="en">post-acute health care encounter</rdfs:label>
     </owl:Class>
@@ -4610,7 +4628,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000198">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002068"/>
-        <obo:IAO_0000115 xml:lang="en">a communication in which some participant requests of some other participant an information content entity about some portion of reality</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A communication in which some participant requests of some other participant an information content entity about some portion of reality</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <rdfs:comment xml:lang="en">As with the parent class, &apos;participant&apos; in the definition need not refer to a human agent.</rdfs:comment>
         <rdfs:comment xml:lang="en">The medium and grammatical form are irrelevant. For example, the request may be written or spoken, and while it may be in the form of a question, it need not be.</rdfs:comment>
@@ -4623,7 +4641,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000199">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000198"/>
-        <obo:IAO_0000115 xml:lang="en">an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the ethnic identity of that other participant</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity-request process in which some participant requests of some other participant an information content entity that indicates the ethnic identity of that other participant</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <rdfs:label xml:lang="en">information content entity request about ethnic identity</rdfs:label>
     </owl:Class>
@@ -4634,7 +4652,7 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000200">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000198"/>
-        <obo:IAO_0000115 xml:lang="en">an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the racial identity of that other participant</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An information content entity-request process in which some participant requests of some other participant an information content entity that indicates the racial identity of that other participant</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">S. Clint Dowland</obo:IAO_0000117>
         <rdfs:label xml:lang="en">information content entity request about racial identity</rdfs:label>
     </owl:Class>
@@ -5810,10 +5828,12 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A subjective representation of its bearer as being a member of some social category.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A subjective representation of themselves by a person or group.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
         <dc:contributor xml:lang="en">S. Clint Dowland</dc:contributor>
         <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <oboInOwl:hasBroadSynonym xml:lang="en">identity</oboInOwl:hasBroadSynonym>
+        <rdfs:comment xml:lang="en">Definition updated to AddictO defintion.</rdfs:comment>
         <rdfs:label xml:lang="en">social identity</rdfs:label>
     </owl:Class>
     
@@ -6425,8 +6445,10 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000501 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000501">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000506"/>
-        <rdfs:label xml:lang="en">income data item</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+        <obo:IAO_0100001>&apos;monetary personal income data item&apos;</obo:IAO_0100001>
+        <rdfs:label xml:lang="en">obsolete income data item</rdfs:label>
+        <owl:deprecated rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:deprecated>
     </owl:Class>
     
 
@@ -6473,6 +6495,10 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000506">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115 xml:lang="en">A data item about a person or population of people that indicates their access to material or social goods.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Colbie Reed</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
         <rdfs:label xml:lang="en">socio-economic data item</rdfs:label>
     </owl:Class>
     
@@ -6482,6 +6508,102 @@ Somehow involves skilled nursing encounters</obo:IAO_0000115>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000507">
         <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000925 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000925">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000278"/>
+        <obo:IAO_0000115 xml:lang="en">An identity that a person has about themselves.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000232 xml:lang="en">The term &apos;self&apos; sounds tautologous but is required to reflect the fact that this is not identity in terms of who you are but how you represent yourself to yourself.</obo:IAO_0000232>
+        <rdfs:comment xml:lang="en">Adopted from AddictO</rdfs:comment>
+        <rdfs:comment xml:lang="en">The cognitive representation includes multiple aspects and some of these are social. For example, group memberships, cultural norms. Collective identity as a shared attribute of group is related to this but is separate.</rdfs:comment>
+        <rdfs:label xml:lang="en">self-identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000926 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000926">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000278"/>
+        <obo:IAO_0000115 xml:lang="en">An identity that a group holds about itself.</obo:IAO_0000115>
+        <obo:IAO_0000232 xml:lang="en">Matthew Diller</obo:IAO_0000232>
+        <obo:IAO_0000232 xml:lang="en">can a socially shared representtaion be said to be purely cognitive? I.e query parent entity?</obo:IAO_0000232>
+        <rdfs:comment xml:lang="en">Adopted from AddictO</rdfs:comment>
+        <rdfs:label xml:lang="en">group identity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000927 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000927">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002063"/>
+        <obo:IAO_0000115 xml:lang="en">A linguistic concretization utilization process where the GDC includes words or expressions of a language and is concretized as sound waves in the air which are generated by the participant.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">vocalization</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">vocalizing</obo:IAO_0000118>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">It must include words or expressions specific to a particular language. This avoids clapping or other non-voice sounds falling under the definition.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Speaking and singing are both encompassed and should be subclasses if &amp; when needed.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The sound wave is a quality of the air, a pattern of rarefactions and compressions, sequentially over time.</rdfs:comment>
+        <rdfs:comment xml:lang="en">We don’t say ‘vocal cords’ because we want to include computer-generated voice via speakers, ear buds, headphones, etc, etc. We could have a child class specific to use of organisms&apos; vocal cords eventually if &amp; when needed.</rdfs:comment>
+        <rdfs:label xml:lang="en">vocal linguistic concretization utilization process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000928 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000928">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002068"/>
+        <obo:IAO_0000115 xml:lang="en">A communication where one or more linguistic concretization utilization parts are vocal linguistic concretization utilization processes.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">verbal communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000929 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000929">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002061"/>
+        <obo:IAO_0000115 xml:lang="en">A monetary personal income data item that is about a household.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">household income</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000930 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000930">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00000929"/>
+        <obo:IAO_0000115 xml:lang="en">A household income that pertains to members of a household related by birth, marriage, or adoption.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:label xml:lang="en">family income</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000931 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000931">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000115 xml:lang="en">A data item of income level that is calculated based on what level of income is minimally adequate to afford basic necessities, such as housing or food.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
+        <dc:contributor xml:lang="en">Amanda Hicks</dc:contributor>
+        <dc:contributor xml:lang="en">Colbie Reed</dc:contributor>
+        <dc:contributor xml:lang="en">William R. Hogan</dc:contributor>
+        <rdfs:comment xml:lang="en">Federal poverty levels are used to determine your eligibility for certain programs and benefits, and are often calculated annually.</rdfs:comment>
+        <rdfs:label xml:lang="en">poverty line</rdfs:label>
     </owl:Class>
     
 
@@ -7154,8 +7276,8 @@ Also, note that we revised the definition in collaboration with our APRICOT proj
         <obo:IAO_0000111 xml:lang="en">kindergarten education plan specification</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A primary education plan specification that specifies the competencies and information content entities that should be acquired by students in the first year of primary education in the United States.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T12:38:43Z</dc:date>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T12:38:43Z</terms:created>
+        <terms:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
         <rdfs:label xml:lang="en">kindergarten education program</rdfs:label>
     </owl:Class>
     
@@ -7169,8 +7291,8 @@ Also, note that we revised the definition in collaboration with our APRICOT proj
         <obo:IAO_0000115 xml:lang="en">A higher education plan specification that specifies the awarding of an associates or bachelors degree in the United States or equivalent degrees in other nations, and specifies as a pre-requisite the completion of some secondary education program.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">undergraduate education program</obo:IAO_0000118>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T12:52:46Z</dc:date>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T12:52:46Z</terms:created>
+        <terms:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
         <rdfs:label xml:lang="en">undergraduate higher education program</rdfs:label>
     </owl:Class>
     
@@ -7183,8 +7305,8 @@ Also, note that we revised the definition in collaboration with our APRICOT proj
         <obo:IAO_0000111 xml:lang="en">graduate higher education plan specification</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A higher education plan specification that specifies the awarding of a graduate certificate or degree, and specifies as a pre-requisite the awarding of an undergraduate degree.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">graduate education program</obo:IAO_0000118>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:01:34Z</dc:date>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:01:34Z</terms:created>
+        <terms:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
         <rdfs:comment xml:lang="en">Graduate degrees include masters, PhD, MD, PharmD, and other post-graduate professional degrees.  To distinguish MS/PhD from the professional ones, subclass this class.</rdfs:comment>
         <rdfs:comment xml:lang="en">The prerequisite degree is at the bachelors level or equivalent.  An associates degree is almost never sufficient for entry into graduate education programs.</rdfs:comment>
         <rdfs:label xml:lang="en">graduate higher education program</rdfs:label>
@@ -7199,8 +7321,8 @@ Also, note that we revised the definition in collaboration with our APRICOT proj
         <obo:IAO_0000111 xml:lang="en">highest level of education is completion of grades one through six socio-economic data item</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of first through sixth grade.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:23:46Z</dc:date>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:23:46Z</terms:created>
+        <terms:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
         <rdfs:comment xml:lang="en">Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
 
 It indicates completion of some to all of primary education in the United States.</rdfs:comment>
@@ -7216,8 +7338,8 @@ It indicates completion of some to all of primary education in the United States
         <obo:IAO_0000111 xml:lang="en">highest level of education is completion of grades seven through nine socio-economic data item</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of seventh (7th) through ninth (9th) grade.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:27:15Z</dc:date>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:27:15Z</terms:created>
+        <terms:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
         <rdfs:comment xml:lang="en">Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
 
 It indicates completion of some to all of lower secondary education in the United States.</rdfs:comment>
@@ -7233,8 +7355,8 @@ It indicates completion of some to all of lower secondary education in the Unite
         <obo:IAO_0000111 xml:lang="en">highest level of education is completion of grades ten through twelve socio-economic data item</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of tenth (10th) through twelfth (12th) grade.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:27:50Z</dc:date>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:27:50Z</terms:created>
+        <terms:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
         <rdfs:comment xml:lang="en">Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
 
 It indicates completion of some to all of upper secondary education in the United States.</rdfs:comment>
@@ -7250,8 +7372,8 @@ It indicates completion of some to all of upper secondary education in the Unite
         <obo:IAO_0000111 xml:lang="en">highest level of education is completion of some undergraduate degree socio-economic data item</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some undergraduate degree.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:28:27Z</dc:date>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:28:27Z</terms:created>
+        <terms:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
         <rdfs:comment xml:lang="en">Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.</rdfs:comment>
         <rdfs:label xml:lang="en">highest level of education is completion of undergraduate degree data item</rdfs:label>
     </owl:Class>
@@ -7265,8 +7387,8 @@ It indicates completion of some to all of upper secondary education in the Unite
         <obo:IAO_0000111 xml:lang="en">highest level of education is completion of some graduate degree socio-economic data item</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some graduate certificate or degree.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:28:49Z</dc:date>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:28:49Z</terms:created>
+        <terms:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
         <rdfs:comment xml:lang="en">Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.</rdfs:comment>
         <rdfs:label xml:lang="en">highest level of education is completion of graduate certificate or degree data item</rdfs:label>
     </owl:Class>
@@ -7280,8 +7402,8 @@ It indicates completion of some to all of upper secondary education in the Unite
         <obo:IAO_0000111 xml:lang="en">highest level of education is completion of some vocational education program socio-economic data item</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some vocational education program.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:29:28Z</dc:date>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:29:28Z</terms:created>
+        <terms:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
         <rdfs:comment xml:lang="en">Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.</rdfs:comment>
         <rdfs:label xml:lang="en">highest level of education is completion of vocaational education program data item</rdfs:label>
     </owl:Class>
@@ -7295,8 +7417,8 @@ It indicates completion of some to all of upper secondary education in the Unite
         <obo:IAO_0000111 xml:lang="en">highest level of education is completion of kindergarten socio-economic data item</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is pre-kindergarten.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:47:38Z</dc:date>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:47:38Z</terms:created>
+        <terms:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
         <rdfs:comment xml:lang="en">Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
 
 It indicates that a person has completed only early childhood education and nothing more.</rdfs:comment>
@@ -7312,8 +7434,8 @@ It indicates that a person has completed only early childhood education and noth
         <obo:IAO_0000111 xml:lang="en">highest level of education is completion of pre-kindergarten socio-economic data item</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is kindergarten.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
-        <dc:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
-        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:48:10Z</dc:date>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-09-02T13:48:10Z</terms:created>
+        <terms:creator rdf:resource="http://orcid.org/0000-0002-9881-1017"/>
         <rdfs:comment xml:lang="en">Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.</rdfs:comment>
         <rdfs:label xml:lang="en">highest level of education is completion of pre-kindergarten data item</rdfs:label>
     </owl:Class>
@@ -8905,8 +9027,6 @@ It indicates that a person has completed only early childhood education and noth
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000595">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002069"/>
-        <obo:IAO_0000118>ڈوگرى</obo:IAO_0000118>
-        <obo:IAO_0000118>डोगरी</obo:IAO_0000118>
         <obo:OMRSE_00002026>dgr</obo:OMRSE_00002026>
         <obo:OMRSE_00002027>dgr</obo:OMRSE_00002027>
         <rdfs:label xml:lang="en">Dogrib</rdfs:label>
@@ -9091,7 +9211,6 @@ It indicates that a person has completed only early childhood education and noth
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000610">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002069"/>
-        <obo:IAO_0000118 xml:lang="en">English</obo:IAO_0000118>
         <obo:OMRSE_00002025>en</obo:OMRSE_00002025>
         <obo:OMRSE_00002026>eng</obo:OMRSE_00002026>
         <obo:OMRSE_00002027>eng</obo:OMRSE_00002027>
@@ -9280,10 +9399,10 @@ It indicates that a person has completed only early childhood education and noth
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000625">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OMRSE_00002069"/>
-        <obo:IAO_0000118>franceis</obo:IAO_0000118>
-        <obo:IAO_0000118>françois</obo:IAO_0000118>
         <obo:OMRSE_00002026>frm</obo:OMRSE_00002026>
         <obo:OMRSE_00002027>frm</obo:OMRSE_00002027>
+        <oboInOwl:hasRelatedSynonym>franceis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>françois</oboInOwl:hasRelatedSynonym>
         <rdfs:label xml:lang="en">French, Middle (ca. 1400–1600)</rdfs:label>
     </owl:NamedIndividual>
     
