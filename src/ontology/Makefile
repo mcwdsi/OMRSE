@@ -16,7 +16,7 @@
 # 3. [Update repo to latest ODK](update_repo)
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                027a2056f9a26e4b98ccf68e5955782f997ec0ed3eb75d0555f7b991cf3c861f
+CONFIG_HASH=                879dc7871381ee6621572417dc84da3100024bd200fd4b73f6e43e87c21dbfa0
 
 
 # ----------------------------------------
@@ -442,8 +442,6 @@ $(IMPORTDIR)/ogms_import.owl: $(MIRRORDIR)/ogms.owl $(IMPORTDIR)/ogms_terms.txt 
 		         --copy-ontology-annotations true --force true --method BOT \
 		 remove --axioms external --preserve-structure false --trim false \
 		        --base-iri http://purl.obolibrary.org/obo/OGMS_ \
-		        --base-iri http://purl.obolibrary.org/obo/BFO_ \
-		        --base-iri http://purl.obolibrary.org/obo/OBI_ \
 		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
 		        --term rdfs:label \
 		        --term IAO:0000115 \
@@ -463,6 +461,7 @@ $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt $(I
 		         --copy-ontology-annotations true --force true --method BOT \
 		 remove --axioms external --preserve-structure false --trim false \
 		        --base-iri http://purl.obolibrary.org/obo/OBI_ \
+		        --base-iri http://purl.obolibrary.org/obo/COB_ \
 		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
 		        --term rdfs:label \
 		        --term IAO:0000115 \
@@ -797,7 +796,7 @@ mirror-ro: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/ogms.owl
 mirror-ogms: | $(TMPDIR)
 	curl -L $(OBOBASE)/ogms.owl --create-dirs -o $(TMPDIR)/ogms-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/ogms-download.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) remove -i $(TMPDIR)/ogms-download.owl --base-iri http://purl.obolibrary.org/obo/OGMS_ --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: obi

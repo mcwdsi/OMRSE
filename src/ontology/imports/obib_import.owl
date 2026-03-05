@@ -30,7 +30,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000104>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBIB_0000667>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBIB_0000701>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OBIB_0000710>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMIABIS_0000060>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMIABIS_0001025>))
 Declaration(Class(<http://purl.obolibrary.org/obo/OMIABIS_0001035>))
@@ -378,7 +377,6 @@ SubClassOf(<http://purl.obolibrary.org/obo/OBIB_0000701> <http://purl.obolibrary
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBIB_0000710> "A planned process that realizes the concretization of a survey to generate an output(survey data.)"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBIB_0000710> "survey execution"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OBIB_0000710> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/OMIABIS_0000060> (obsolete survey data)
 

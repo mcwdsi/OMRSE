@@ -35,7 +35,6 @@ Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0021001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0021003>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0021009>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0021031>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000136>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/IAO_0000219>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000111>))
@@ -406,7 +405,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/IAO_0000572> "Bjoern Peters"@en)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/IAO_0000572> "wikipedia http://en.wikipedia.org/wiki/Documenting"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000572> "documenting"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0000572> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0000578> (centrally registered identifier)
 
@@ -472,7 +470,6 @@ AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0021003> "T
 Reinach clearly does not imply that a command that does not fulfill its prupose would not be a command.
 Thanks to W.R. Hogan for finding the Reinach quote."@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0021003> "social act"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/IAO_0021003> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/IAO_0021009> (deontic declaration)
 
