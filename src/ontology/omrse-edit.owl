@@ -3397,7 +3397,7 @@ SubClassOf(obo:OMRSE_00000929 obo:OMRSE_00002061)
 
 # Class: obo:OMRSE_00000930 (family income)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000930 "Household income that pertains to members of a household related by birth, marriage, or adoption."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000930 "A household income that pertains to members of a household related by birth, marriage, or adoption."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000930 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000930 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000930 "family income"@en)
