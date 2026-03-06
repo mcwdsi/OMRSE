@@ -349,6 +349,20 @@ name: history
 is_a: BFO:0000015 ! process
 
 [Term]
+id: COB:0000022
+name: organism
+def: "A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome" []
+is_a: UBERON:0000465 ! material anatomical entity
+property_value: IAO:0000116 "'Maximal functionally integrated unit' is intended to express unity, which Barry considers synonymous with BFO 'object'." xsd:string
+property_value: IAO:0000116 "Includes virus - we will later have a class for cellular organisms." xsd:string
+
+[Term]
+id: COB:0000035
+name: completely executed planned process
+is_a: BFO:0000015 ! process
+disjoint_from: GO:0008150 ! biological_process
+
+[Term]
 id: GEO:000000400
 name: governmental organization
 def: "An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii). \n\nNote: this definition was taken over from \"geopolitical organization\"." []
@@ -586,7 +600,7 @@ property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
 id: IAO:0000572
 name: documenting
 def: "A planned process in which a document is created or added to by including the specified input in it." []
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 property_value: IAO:0000112 "Recording the current temperature in a laboratory notebook. Writing a journal article. Updating a patient record in a database." xsd:string
 property_value: IAO:0000116 "6/11/9: Edited at OBI workshop. We need to be able identify a child form of information artifact which corresponds to something enduring (not brain like). This used to be restricted to physical document or digital entity as the output, but that excludes e.g. an audio cassette tape" xsd:string
 property_value: IAO:0000117 "Bjoern Peters" xsd:string
@@ -651,7 +665,7 @@ id: IAO:0021003
 name: social act
 def: "A planned process that is carried out by a conscious being or an organization, and is self-generated, directed towards another conscious being or an aggregate of conscious beings, an organization or an aggregate of organizations, and that is in need of being perceived." []
 comment: The phrase "in need of being perceived" does not imply that only planned processes that are in fact perceived can be social acts. Reinach clarifies that by exemplifying these matters for commands: "The command is according to its essence in need of being heard (vernehmungsbedürtig". It can of course happen that commands are given without being heard. Then they fail to fulfil their purpose. They are like thrown spears which fall to the ground without hitting their target." (A. Reinach: The Apriori Foundations of the Civil Law." Edited by J. Crosby, Heusenstamm: ontos Verlag, 2012).\nReinach clearly does not imply that a command that does not fulfill its prupose would not be a command.\nThanks to W.R. Hogan for finding the Reinach quote.
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 property_value: IAO:0000112 "Colonel Klink giving Sergeant Schultz an order, Jake promising Jill to take her to the junior prom" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
@@ -855,7 +869,7 @@ property_value: IAO:0000119 "http://www.jbiomedsem.com/content/1/1/10" xsd:strin
 id: NCBITaxon:131567
 name: cellular organisms
 xref: GC_ID:1
-is_a: OBI:0100026 ! obsolete organism
+is_a: COB:0000022 ! organism
 
 [Term]
 id: NCBITaxon:2759
@@ -887,7 +901,7 @@ is_a: NCBITaxon:9443 ! Primates
 id: OAE:0000002
 name: medical intervention
 def: "medical intervention is a planned process that has the goal of diagnosing, preventing or relieving illness or injury." []
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 property_value: IAO:0000116 "The act of intervening, interfering or interceding with the intent of modifying the outcome. In medicine, an intervention is usually undertaken to help treat or cure a condition. For example, \"Acupuncture as a therapeutic intervention is widely practiced in the United States,\" \nReference:\nhttp://www.medterms.com/script/main/art.asp?articlekey=34214 . Some interventions can be used for diagnosis. " xsd:string
 property_value: IAO:0000117 "YH" xsd:string
 property_value: IAO:0000119 "WEB: http://wiki.answers.com/Q/What_is_medical_intervention" xsd:string
@@ -912,24 +926,6 @@ property_value: IAO:0000117 "YH, SS" xsd:string
 property_value: IAO:0000119 "WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm" xsd:string
 
 [Term]
-id: OBI:0000011
-name: obsolete planned process
-def: "A process that realizes a plan which is the concretization of a plan specification." []
-is_a: BFO:0000015 ! process
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000111 "obsolete planned process" xsd:string
-property_value: IAO:0000112 "Injecting mice with a vaccine in order to test its efficacy" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "'Plan' includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn't have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)" xsd:string
-property_value: IAO:0000116 "We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some objectives is a planned process." xsd:string
-property_value: IAO:0000117 "Bjoern Peters" xsd:string
-property_value: IAO:0000119 "branch derived" xsd:string
-property_value: IAO:0000231 IAO:0000228
-property_value: IAO:0000232 "6/11/9: Edited at workshop. Used to include: is initiated by an agent" xsd:string
-property_value: IAO:0000232 "This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)" xsd:string
-property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
-
-[Term]
 id: OBI:0000245
 name: organization
 def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
@@ -945,27 +941,10 @@ property_value: IAO:0000117 "PERSON: Susanna Sansone" xsd:string
 property_value: IAO:0000119 "GROUP: OBI" xsd:string
 
 [Term]
-id: OBI:0100026
-name: obsolete organism
-def: "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs." []
-is_a: oboInOwl:ObsoleteClass
-property_value: IAO:0000111 "obsolete organism" xsd:string
-property_value: IAO:0000112 "animal" xsd:string
-property_value: IAO:0000112 "fungus" xsd:string
-property_value: IAO:0000112 "plant" xsd:string
-property_value: IAO:0000112 "virus" xsd:string
-property_value: IAO:0000114 IAO:0000122
-property_value: IAO:0000116 "10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and 'other organisms')" xsd:string
-property_value: IAO:0000116 "13-02-2009: OBI doesn't take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus. This issue is outside the scope of OBI." xsd:string
-property_value: IAO:0000117 "GROUP: OBI Biomaterial Branch" xsd:string
-property_value: IAO:0000119 "WEB: http://en.wikipedia.org/wiki/Organism" xsd:string
-property_value: IAO:0000231 IAO:0000228
-
-[Term]
 id: OBI:0200000
 name: data transformation
 def: "A completely executed planned process that produces output data from input data." []
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 property_value: IAO:0000111 "data transformation" xsd:string
 property_value: IAO:0000112 "The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value." xsd:string
 property_value: IAO:0000114 IAO:0000122
@@ -985,7 +964,7 @@ property_value: IAO:0000119 "Branch editors" xsd:string
 id: OBI:0600052
 name: dialysis
 def: "a protocol application that uses diffusion through a semi-permeable membrane to separate an input material into two fractions of different composition" []
-is_a: BFO:0000003 ! occurrent
+is_a: COB:0000035 ! completely executed planned process
 relationship: OBI:0000299 BFO:0000040 ! has specified output material entity
 property_value: IAO:0000111 "dialysis" xsd:string
 property_value: IAO:0000112 "the use of a dialysis bag of select pore size to remove salt from collagen isolated from mouse cartilage" xsd:string
@@ -1013,7 +992,7 @@ property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 id: OBIB:0000710
 name: survey execution
 def: "A planned process that realizes the concretization of a survey to generate an output(survey data.)" []
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 
 [Term]
 id: OCCO:00000118
@@ -1162,11 +1141,29 @@ property_value: IAO:0000117 "Robin McGill" xsd:string
 property_value: IAO:0000117 "Sam Smith" xsd:string
 
 [Term]
+id: OGMS:0000045
+name: disorder
+def: "A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000117 "Albert Goldfain" xsd:string
+property_value: IAO:0000119 "http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf" xsd:string
+property_value: IAO:0000232 "creation date: 2009-06-23T11:39:44Z" xsd:string
+
+[Term]
+id: OGMS:0000096
+name: health care process
+def: "A planned process with the objective to improve the health status of a patient that directly involves the treatment, diagnosis, or prevention of disease or injury of a patient" []
+is_a: COB:0000035 ! completely executed planned process
+property_value: IAO:0000117 "Albert Goldfain\nSagar Jain" xsd:string
+property_value: IAO:0000119 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6" xsd:string
+property_value: IAO:0000232 "creation date: 2011-02-21T09:57:44Z\neditor date: 2017-04-18" xsd:string
+
+[Term]
 id: OGMS:0000097
 name: health care encounter
 def: "A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter" []
 synonym: "healthcare encounter" EXACT []
-is_a: OBI:0000011 ! obsolete planned process
+is_a: OGMS:0000096 ! health care process
 property_value: IAO:0000117 "Albert Goldfain" xsd:string
 property_value: IAO:0000119 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6" xsd:string
 property_value: IAO:0000232 "creation date: 2011-02-21T09:57:44Z" xsd:string
@@ -1184,7 +1181,7 @@ property_value: IAO:0000232 "creation date: 2011-02-21T09:57:44Z" xsd:string
 id: OGMS:0000102
 name: injury
 def: "A disorder that involves some structural damage that is immediately caused by a catastrophic external force." []
-is_a: BFO:0000040 ! material entity
+is_a: OGMS:0000045 ! disorder
 property_value: IAO:0000116 "At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making 'injury' a subtype of 'disorder'.\n\nNote: Adopted subtype of disorder, and injury can occur at the scale of organism down to cellular level." xsd:string
 property_value: IAO:0000117 "Albert Goldfain\nSagar Jain" xsd:string
 property_value: IAO:0000119 "http://groups.google.com/group/ogms-discuss/browse_thread/thread/ca0ad373f27774c5\n\nOGMS call adoption- 16 SEPT 2015\nhttps://docs.google.com/document/d/1iiV1-fTS7BUUSzDw3N_Afx42698YWf54-FOTY2NkAxo/edit" xsd:string
@@ -1264,7 +1261,7 @@ id: OMRSE:00000007
 name: gender role
 def: "A human social role borne by a human being being realized in behaviour which is considered socially appropriate for individuals of a specific sex in the context of a specific culture." []
 is_a: BFO:0000023 ! role
-relationship: RO:0000052 OBI:0100026 ! characteristic of obsolete organism
+relationship: RO:0000052 COB:0000022 ! characteristic of organism
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Gender_role" xsd:string
 
@@ -1273,7 +1270,7 @@ id: OMRSE:00000008
 name: male gender role
 def: "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the male sex in the context of the culture in question." []
 is_a: OMRSE:00000007 ! gender role
-relationship: RO:0000052 OBI:0100026 ! characteristic of obsolete organism
+relationship: RO:0000052 COB:0000022 ! characteristic of organism
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "male gender" xsd:string
 
@@ -1282,7 +1279,7 @@ id: OMRSE:00000009
 name: female gender role
 def: "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the female sex in the context of the culture in question." []
 is_a: OMRSE:00000007 ! gender role
-relationship: RO:0000052 OBI:0100026 ! characteristic of obsolete organism
+relationship: RO:0000052 COB:0000022 ! characteristic of organism
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "female gender" xsd:string
 
@@ -1302,7 +1299,7 @@ name: patient role
 def: "A health care role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter." []
 comment: In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov't entities, with a person endowed by the gov't with certain certifications.
 is_a: OMRSE:00000010 ! health care role
-relationship: RO:0000052 OBI:0100026 ! characteristic of obsolete organism
+relationship: RO:0000052 COB:0000022 ! characteristic of organism
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "patient" xsd:string
@@ -1412,7 +1409,7 @@ name: organism social role
 def: "A role in human social processes that inheres in an organism." []
 comment: Defined class that we will ultimately move to an application ontology.  We are leaving here for now until we determine which application ontology: it is likely going to be an ontology that does not currently (2012-06-05) exist.\n\nDitto for its current descendants.
 is_a: OMRSE:00002072 ! role in human social processes
-relationship: RO:0000052 OBI:0100026 ! characteristic of obsolete organism
+relationship: RO:0000052 COB:0000022 ! characteristic of organism
 property_value: IAO:0000117 "William R. Hogan\nMathias Brochhausen" xsd:string
 
 [Term]
@@ -2325,7 +2322,7 @@ is_obsolete: true
 id: OMRSE:00000146
 name: employment process
 def: "A planned process in which the bearer of an employer role provides wages or salary to the bearer of an employee roll in fullfillment of the arrangements specified in some declaration" []
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 relationship: BFO:0000055 OMRSE:00000077 ! realizes job role
 relationship: BFO:0000055 OMRSE:00000087 ! realizes employer role
 
@@ -2389,7 +2386,7 @@ property_value: IAO:0000233 "https://github.com/mcwdsi/OMRSE/issues/305" xsd:str
 id: OMRSE:00000153
 name: assistive care encounter
 def: "They include assistance with activities of daily living, assistance with instrumental activities of daily living, medication assistance, and health support\n\nhttp://ahca.myflorida.com/Medicaid/acs/index.shtml" []
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -2754,7 +2751,7 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 id: OMRSE:00000202
 name: cancer summary staging
 def: "A planned process of determining the extent to which a cancer disease has developed by growing and spreading throughout an organism." []
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 property_value: IAO:0000111 "cancer summary staging" xsd:string
 property_value: IAO:0000112 "The cancer summary staging performed on patient John Doe's clinical picture." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
@@ -3065,7 +3062,7 @@ id: OMRSE:00000227
 name: health care administrative process
 def: "A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization." []
 synonym: "healthcare administrative process" EXACT []
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000112 "Recording data in an EHR. Financial tasks for a healthcare organization. Scheduling shifts for health care workers." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -3169,7 +3166,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000237
 name: exchange of ownership
 def: "A planned process whereby one agent (or active participant) or a group of agents transfer ownership of some property to another agent (or active participant) or group of agents in the process, who in return transfer ownership of some their property to the first agent (or active participant)." []
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "exchange of ownership" xsd:string
 property_value: IAO:0000112 "Tom exchanged ownership of his computer for Tina's scooter." xsd:string
@@ -3180,7 +3177,7 @@ property_value: IAO:0000118 "barter" xsd:string
 id: OMRSE:00000238
 name: financial transaction
 def: "A planned process whereby one participant partly or completely fulfills an obligation to another participant by transferring ownership of some other debt obligation, which is typically money." []
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "financial transaction" xsd:string
 property_value: IAO:0000112 "Apple acquired semiconductors from Samsung in a financial transaction yesterday." xsd:string
@@ -3191,7 +3188,7 @@ property_value: IAO:0000118 "monetary transaction" xsd:string
 id: OMRSE:00000239
 name: payment of debt
 def: "A planned process whereby ownership of some entity of value is transferred by one participant to another to fulfill some obligation, on their behalf, after some service is performed or the ownership of some entity is exchanged." []
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "payment of debt" xsd:string
 property_value: IAO:0000112 "I made a debt payment with my credit card company yesterday and no longer owe them money." xsd:string
@@ -3201,7 +3198,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000240
 name: financial valuation process
 def: "A planned process that has as specified output some scalar measurement datum that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some other material entity." []
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "financial valuation process" xsd:string
 property_value: IAO:0000112 "The financial valuation of Ravi's car today determined that the car is worth $2000." xsd:string
@@ -3211,7 +3208,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000241
 name: prospective financial valuation process
 def: "A planned process that has as specified output some predicted value that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some material entity at some point in the future." []
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "prospective financial valuation process" xsd:string
 property_value: IAO:0000112 "The prospective valuation of my company's stock indicates strong optimism for our financial growth over the next few years." xsd:string
@@ -3869,7 +3866,7 @@ id: OMRSE:00002029
 name: education process
 def: "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative." []
 comment: An interesting question is whether there must be another participant who is the "educator".  Some might object that many people are "self taught".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the tip of a finger.  There was no previous information about that type of skill.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow "plays a role" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).
-is_a: OBI:0000011 ! obsolete planned process
+is_a: COB:0000035 ! completely executed planned process
 property_value: IAO:0000111 "educating" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "learning process" xsd:string
@@ -4423,6 +4420,45 @@ property_value: IAO:0000116 "May be replaced by a BFO class, as discussed in htt
 property_value: IAO:0000117 https://orcid.org/0000-0002-6601-2165
 property_value: IAO:0000119 "http://www.jbiomedsem.com/content/4/1/43" xsd:string
 
+[Term]
+id: UBERON:0000465
+name: material anatomical entity
+def: "Anatomical entity that has mass." [http://orcid.org/0000-0001-9114-8737]
+xref: AAO:0010264
+xref: AEO:0000006
+xref: BILA:0000006
+xref: CARO:0000006
+xref: EHDAA2:0003006
+xref: FMA:67165
+xref: HAO:0000006
+xref: TAO:0001836
+xref: TGMA:0001826
+xref: VHOG:0001721
+is_a: BFO:0000040 ! material entity
+is_a: UBERON:0001062 ! anatomical entity
+
+[Term]
+id: UBERON:0001062
+name: anatomical entity
+def: "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species." [FMA:62955, http://orcid.org/0000-0001-9114-8737]
+xref: AAO:0010841
+xref: AEO:0000000
+xref: BFO:0000004
+xref: BILA:0000000
+xref: BIRNLEX:6
+xref: CARO:0000000
+xref: EHDAA2:0002229
+xref: FMA:62955
+xref: HAO:0000000
+xref: MA:0000001
+xref: NCIT:C12219
+xref: TAO:0100000
+xref: TGMA:0001822
+xref: WBbt:0000100
+xref: XAO:0000000
+xref: ZFA:0100000
+is_a: BFO:0000004 ! independent continuant
+
 [Typedef]
 id: BFO:0000050
 name: part of
@@ -4562,6 +4598,7 @@ property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
 property_value: IAO:0000117 "PERSON: Larry Hunter" xsd:string
 property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
+domain: COB:0000035 ! completely executed planned process
 is_a: RO:0000057 ! has participant
 inverse_of: OBI:0000312 ! is specified output of
 
@@ -4573,6 +4610,7 @@ property_value: IAO:0000111 "is specified output of" xsd:string
 property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
+range: COB:0000035 ! completely executed planned process
 is_a: RO:0000056 ! participates in
 
 [Typedef]
@@ -5982,4 +6020,11 @@ property_value: terms:contributor https://orcid.org/0000-0002-8688-6599
 holds_over_chain: RO:0002212 RO:0019001
 holds_over_chain: RO:0002213 RO:0019002
 is_a: RO:0019000 ! regulates characteristic
+
+[Typedef]
+id: RO:0020105
+name: is anatomical entity
+def: "This property only applies to anatomical entities." []
+property_value: terms:contributor https://orcid.org/0000-0001-6677-8489
+domain: UBERON:0001062 ! anatomical entity
 

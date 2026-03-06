@@ -1363,6 +1363,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000299">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000057"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111>has specified output</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>The inverse property of is specified output of</obo:IAO_0000115>
@@ -1379,6 +1380,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111>is specified output of</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A relation between a completely executed planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of.</obo:IAO_0000115>
@@ -3670,6 +3672,17 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0020105 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0020105">
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <obo:IAO_0000115>This property only applies to anatomical entities.</obo:IAO_0000115>
+        <terms:contributor rdf:resource="https://orcid.org/0000-0001-6677-8489"/>
+        <rdfs:label>is anatomical entity</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty -->
 
     <owl:ObjectProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#ObsoleteProperty"/>
@@ -4180,6 +4193,28 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">&apos;Maximal functionally integrated unit&apos; is intended to express unity, which Barry considers synonymous with BFO &apos;object&apos;.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Includes virus - we will later have a class for cellular organisms.</obo:IAO_0000116>
+        <rdfs:label xml:lang="en">organism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
+        <rdfs:label xml:lang="en">completely executed planned process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GEO_000000400 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000400">
@@ -4597,7 +4632,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
     <!-- http://purl.obolibrary.org/obo/IAO_0000572 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000572">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000112 xml:lang="en">Recording the current temperature in a laboratory notebook. Writing a journal article. Updating a patient record in a database.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process in which a document is created or added to by including the specified input in it.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">6/11/9: Edited at OBI workshop. We need to be able identify a child form of information artifact which corresponds to something enduring (not brain like). This used to be restricted to physical document or digital entity as the output, but that excludes e.g. an audio cassette tape</obo:IAO_0000116>
@@ -4691,7 +4726,7 @@ Is part_of the appropriate relation to use for data items and documented identit
     <!-- http://purl.obolibrary.org/obo/IAO_0021003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0021003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000112 xml:lang="en">Colonel Klink giving Sergeant Schultz an order, Jake promising Jill to take her to the junior prom</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process that is carried out by a conscious being or an organization, and is self-generated, directed towards another conscious being or an aggregate of conscious beings, an organization or an aggregate of organizations, and that is in need of being perceived.</obo:IAO_0000115>
         <obo:IAO_0000117>Mathias Brochhausen</obo:IAO_0000117>
@@ -5017,7 +5052,7 @@ No imports</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_131567 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_131567">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
         <oboInOwl:hasDbXref>GC_ID:1</oboInOwl:hasDbXref>
         <rdfs:label>cellular organisms</rdfs:label>
     </owl:Class>
@@ -5069,7 +5104,7 @@ No imports</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OAE_0000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000115>medical intervention is a planned process that has the goal of diagnosing, preventing or relieving illness or injury.</obo:IAO_0000115>
         <obo:IAO_0000116>The act of intervening, interfering or interceding with the intent of modifying the outcome. In medicine, an intervention is usually undertaken to help treat or cure a condition. For example, &quot;Acupuncture as a therapeutic intervention is widely practiced in the United States,&quot; 
 Reference:
@@ -5135,32 +5170,9 @@ http://www.medterms.com/script/main/art.asp?articlekey=34214 . Some intervention
     <!-- http://purl.obolibrary.org/obo/OBIB_0000710 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBIB_0000710">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000115 xml:lang="en">A planned process that realizes the concretization of a survey to generate an output(survey data.)</obo:IAO_0000115>
         <rdfs:label xml:lang="en">survey execution</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000111>obsolete planned process</obo:IAO_0000111>
-        <obo:IAO_0000112>Injecting mice with a vaccine in order to test its efficacy</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A process that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
-        <obo:IAO_0000116>&apos;Plan&apos; includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn&apos;t have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)</obo:IAO_0000116>
-        <obo:IAO_0000116>We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some objectives is a planned process.</obo:IAO_0000116>
-        <obo:IAO_0000117>Bjoern Peters</obo:IAO_0000117>
-        <obo:IAO_0000119>branch derived</obo:IAO_0000119>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000228"/>
-        <obo:IAO_0000232>6/11/9: Edited at workshop. Used to include: is initiated by an agent</obo:IAO_0000232>
-        <obo:IAO_0000232>This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)</obo:IAO_0000232>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-        <rdfs:label>obsolete planned process</rdfs:label>
-        <rdfs:label xml:lang="en">planned process</rdfs:label>
     </owl:Class>
     
 
@@ -5210,31 +5222,10 @@ for now.</obo:IAO_0000116>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026">
-        <rdfs:subClassOf rdf:resource="http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"/>
-        <obo:IAO_0000111>obsolete organism</obo:IAO_0000111>
-        <obo:IAO_0000112>animal</obo:IAO_0000112>
-        <obo:IAO_0000112>fungus</obo:IAO_0000112>
-        <obo:IAO_0000112>plant</obo:IAO_0000112>
-        <obo:IAO_0000112>virus</obo:IAO_0000112>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <obo:IAO_0000115 xml:lang="en">A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.</obo:IAO_0000115>
-        <obo:IAO_0000116>10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and &apos;other organisms&apos;)</obo:IAO_0000116>
-        <obo:IAO_0000116>13-02-2009: OBI doesn&apos;t take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus. This issue is outside the scope of OBI.</obo:IAO_0000116>
-        <obo:IAO_0000117>GROUP: OBI Biomaterial Branch</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Organism</obo:IAO_0000119>
-        <obo:IAO_0000231 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000228"/>
-        <rdfs:label>obsolete organism</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">data transformation</obo:IAO_0000111>
         <obo:IAO_0000112>The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
@@ -5258,7 +5249,7 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0600052 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0600052">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
@@ -5458,10 +5449,38 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000045 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 xml:lang="en">A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2009-06-23T11:39:44Z</obo:IAO_0000232>
+        <rdfs:label>disorder</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000096 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process with the objective to improve the health status of a patient that directly involves the treatment, diagnosis, or prevention of disease or injury of a patient</obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain
+Sagar Jain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z
+editor date: 2017-04-18</obo:IAO_0000232>
+        <rdfs:label>health care process</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGMS_0000097 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000097">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000096"/>
         <obo:IAO_0000115 xml:lang="en">A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter</obo:IAO_0000115>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
@@ -5488,7 +5507,7 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OGMS_0000102 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGMS_0000102">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000045"/>
         <obo:IAO_0000115 xml:lang="en">A disorder that involves some structural damage that is immediately caused by a catastrophic external force.</obo:IAO_0000115>
         <obo:IAO_0000116>At the scale of organism (as opposed to the cellular scale or the population scale), an injury is typically the result of a catastrophic event. Consider the implications of making &apos;injury&apos; a subtype of &apos;disorder&apos;.
 
@@ -5673,7 +5692,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A human social role borne by a human being being realized in behaviour which is considered socially appropriate for individuals of a specific sex in the context of a specific culture.</obo:IAO_0000115>
@@ -5693,11 +5712,11 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -5719,11 +5738,11 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -5762,7 +5781,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A health care role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter.</obo:IAO_0000115>
@@ -5969,7 +5988,7 @@ edited date: 30 SEPT 2015</obo:IAO_0000232>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022"/>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -6033,7 +6052,7 @@ Ditto for its current descendants.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A role in human social processes that inheres in an organism.</obo:IAO_0000115>
@@ -6818,7 +6837,7 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000102"/>
@@ -6837,7 +6856,7 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000102"/>
@@ -8411,7 +8430,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000146 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000146">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -8554,7 +8573,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000153 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000153">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000115 xml:lang="en">They include assistance with activities of daily living, assistance with instrumental activities of daily living, medication assistance, and health support
 
 http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
@@ -9244,7 +9263,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000202 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000202">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">cancer summary staging</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The cancer summary staging performed on patient John Doe&apos;s clinical picture.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process of determining the extent to which a cancer disease has developed by growing and spreading throughout an organism.</obo:IAO_0000115>
@@ -9669,7 +9688,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000227 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000227">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000112 xml:lang="en">Recording data in an EHR. Financial tasks for a healthcare organization. Scheduling shifts for health care workers.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
@@ -9847,7 +9866,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000237 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000237">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">exchange of ownership</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Tom exchanged ownership of his computer for Tina&apos;s scooter.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process whereby one agent (or active participant) or a group of agents transfer ownership of some property to another agent (or active participant) or group of agents in the process, who in return transfer ownership of some their property to the first agent (or active participant).</obo:IAO_0000115>
@@ -9862,7 +9881,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000238 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000238">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">financial transaction</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Apple acquired semiconductors from Samsung in a financial transaction yesterday.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process whereby one participant partly or completely fulfills an obligation to another participant by transferring ownership of some other debt obligation, which is typically money.</obo:IAO_0000115>
@@ -9877,7 +9896,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000239 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000239">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">payment of debt</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">I made a debt payment with my credit card company yesterday and no longer owe them money.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process whereby ownership of some entity of value is transferred by one participant to another to fulfill some obligation, on their behalf, after some service is performed or the ownership of some entity is exchanged.</obo:IAO_0000115>
@@ -9891,7 +9910,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000240 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000240">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">financial valuation process</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The financial valuation of Ravi&apos;s car today determined that the car is worth $2000.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process that has as specified output some scalar measurement datum that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some other material entity.</obo:IAO_0000115>
@@ -9905,7 +9924,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000241 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000241">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">prospective financial valuation process</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The prospective valuation of my company&apos;s stock indicates strong optimism for our financial growth over the next few years.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process that has as specified output some predicted value that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some material entity at some point in the future.</obo:IAO_0000115>
@@ -11170,7 +11189,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00002029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">educating</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) &quot;improves&quot; an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>
@@ -12545,6 +12564,72 @@ It indicates that a person has completed only early childhood education and noth
         <obo:IAO_0000119>http://www.jbiomedsem.com/content/4/1/43</obo:IAO_0000119>
         <rdfs:label>system</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000465 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000465">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <obo:IAO_0000115>Anatomical entity that has mass.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>AAO:0010264</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BILA:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0003006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:67165</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HAO:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0001836</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGMA:0001826</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>VHOG:0001721</oboInOwl:hasDbXref>
+        <rdfs:label>material anatomical entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000465"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Anatomical entity that has mass.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-9114-8737</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0020105"/>
+                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>AAO:0010841</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>AEO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BFO:0000004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BILA:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>BIRNLEX:6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>CARO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>EHDAA2:0002229</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>FMA:62955</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>HAO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>MA:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>NCIT:C12219</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TAO:0100000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>TGMA:0001822</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>WBbt:0000100</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>XAO:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>ZFA:0100000</oboInOwl:hasDbXref>
+        <rdfs:label>anatomical entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>FMA:62955</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://orcid.org/0000-0001-9114-8737</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -18783,6 +18868,50 @@ Examples of usage: ‘Non-binary’, ‘Trigender’, ‘Agender’, ‘Genderfl
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0019002"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0019001"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
                     </rdf:Description>
@@ -19853,50 +19982,6 @@ e.g.  if GP X enables ATPase coupled transporter activity&apos; and &apos;ATPase
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#y"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0019002"/>
-                                <swrl:argument1 rdf:resource="urn:swrl:var#y"/>
-                                <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0019001"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
                     </rdf:Description>
