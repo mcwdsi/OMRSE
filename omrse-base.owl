@@ -792,6 +792,18 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     
 
 
+    <!-- http://purl.obolibrary.org/obo/COB_0000022 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000022"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/COB_0000035 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/COB_0000035"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GEO_000000400 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/GEO_000000400"/>
@@ -936,21 +948,9 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000245"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
     
 
 
@@ -1114,7 +1114,7 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A human social role borne by a human being being realized in behaviour which is considered socially appropriate for individuals of a specific sex in the context of a specific culture.</obo:IAO_0000115>
@@ -1134,11 +1134,11 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1160,11 +1160,11 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -1203,7 +1203,7 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A health care role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter.</obo:IAO_0000115>
@@ -1410,7 +1410,7 @@ We expect BFO 2.0 to have this relation as well, and we will obsolete this prope
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022"/>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -1474,7 +1474,7 @@ Ditto for its current descendants.</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/COB_0000022"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A role in human social processes that inheres in an organism.</obo:IAO_0000115>
@@ -2259,7 +2259,7 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022"/>
                                     <owl:Restriction>
                                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000102"/>
@@ -2278,7 +2278,7 @@ Note: this definition was taken over from &quot;geopolitical organization&quot;.
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/COB_0000022"/>
                             <owl:Restriction>
                                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGMS_0000102"/>
@@ -3852,7 +3852,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000146 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000146">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -3995,7 +3995,7 @@ last accessed June 30, 2015</obo:IAO_0000119>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000153 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000153">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000115 xml:lang="en">They include assistance with activities of daily living, assistance with instrumental activities of daily living, medication assistance, and health support
 
 http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
@@ -4685,7 +4685,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000202 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000202">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">cancer summary staging</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The cancer summary staging performed on patient John Doe&apos;s clinical picture.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process of determining the extent to which a cancer disease has developed by growing and spreading throughout an organism.</obo:IAO_0000115>
@@ -5110,7 +5110,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000227 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000227">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000112 xml:lang="en">Recording data in an EHR. Financial tasks for a healthcare organization. Scheduling shifts for health care workers.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Matthew Diller</obo:IAO_0000117>
@@ -5288,7 +5288,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000237 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000237">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">exchange of ownership</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Tom exchanged ownership of his computer for Tina&apos;s scooter.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process whereby one agent (or active participant) or a group of agents transfer ownership of some property to another agent (or active participant) or group of agents in the process, who in return transfer ownership of some their property to the first agent (or active participant).</obo:IAO_0000115>
@@ -5303,7 +5303,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000238 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000238">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">financial transaction</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">Apple acquired semiconductors from Samsung in a financial transaction yesterday.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process whereby one participant partly or completely fulfills an obligation to another participant by transferring ownership of some other debt obligation, which is typically money.</obo:IAO_0000115>
@@ -5318,7 +5318,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000239 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000239">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">payment of debt</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">I made a debt payment with my credit card company yesterday and no longer owe them money.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process whereby ownership of some entity of value is transferred by one participant to another to fulfill some obligation, on their behalf, after some service is performed or the ownership of some entity is exchanged.</obo:IAO_0000115>
@@ -5332,7 +5332,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000240 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000240">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">financial valuation process</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The financial valuation of Ravi&apos;s car today determined that the car is worth $2000.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process that has as specified output some scalar measurement datum that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some other material entity.</obo:IAO_0000115>
@@ -5346,7 +5346,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000241 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00000241">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">prospective financial valuation process</obo:IAO_0000111>
         <obo:IAO_0000112 xml:lang="en">The prospective valuation of my company&apos;s stock indicates strong optimism for our financial growth over the next few years.</obo:IAO_0000112>
         <obo:IAO_0000115 xml:lang="en">A planned process that has as specified output some predicted value that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some material entity at some point in the future.</obo:IAO_0000115>
@@ -6611,7 +6611,7 @@ http://ahca.myflorida.com/Medicaid/acs/index.shtml</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OMRSE_00002029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OMRSE_00002029">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/COB_0000035"/>
         <obo:IAO_0000111 xml:lang="en">educating</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) &quot;improves&quot; an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">William R. Hogan</obo:IAO_0000117>

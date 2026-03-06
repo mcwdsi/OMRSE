@@ -80,7 +80,7 @@ id: OMRSE:00000007
 name: gender role
 def: "A human social role borne by a human being being realized in behaviour which is considered socially appropriate for individuals of a specific sex in the context of a specific culture." []
 is_a: BFO:0000023
-relationship: RO:0000052 OBI:0100026
+relationship: RO:0000052 COB:0000022
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Gender_role" xsd:string
 
@@ -89,7 +89,7 @@ id: OMRSE:00000008
 name: male gender role
 def: "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the male sex in the context of the culture in question." []
 is_a: OMRSE:00000007 ! gender role
-relationship: RO:0000052 OBI:0100026
+relationship: RO:0000052 COB:0000022
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "male gender" xsd:string
 
@@ -98,7 +98,7 @@ id: OMRSE:00000009
 name: female gender role
 def: "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the female sex in the context of the culture in question." []
 is_a: OMRSE:00000007 ! gender role
-relationship: RO:0000052 OBI:0100026
+relationship: RO:0000052 COB:0000022
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "female gender" xsd:string
 
@@ -118,7 +118,7 @@ name: patient role
 def: "A health care role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter." []
 comment: In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov't entities, with a person endowed by the gov't with certain certifications.
 is_a: OMRSE:00000010 ! health care role
-relationship: RO:0000052 OBI:0100026
+relationship: RO:0000052 COB:0000022
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "patient" xsd:string
@@ -228,7 +228,7 @@ name: organism social role
 def: "A role in human social processes that inheres in an organism." []
 comment: Defined class that we will ultimately move to an application ontology.  We are leaving here for now until we determine which application ontology: it is likely going to be an ontology that does not currently (2012-06-05) exist.\n\nDitto for its current descendants.
 is_a: OMRSE:00002072 ! role in human social processes
-relationship: RO:0000052 OBI:0100026
+relationship: RO:0000052 COB:0000022
 property_value: IAO:0000117 "William R. Hogan\nMathias Brochhausen" xsd:string
 
 [Term]
@@ -1141,7 +1141,7 @@ is_obsolete: true
 id: OMRSE:00000146
 name: employment process
 def: "A planned process in which the bearer of an employer role provides wages or salary to the bearer of an employee roll in fullfillment of the arrangements specified in some declaration" []
-is_a: OBI:0000011
+is_a: COB:0000035
 relationship: BFO:0000055 OMRSE:00000077 ! job role
 relationship: BFO:0000055 OMRSE:00000087 ! employer role
 
@@ -1205,7 +1205,7 @@ property_value: IAO:0000233 "https://github.com/mcwdsi/OMRSE/issues/305" xsd:str
 id: OMRSE:00000153
 name: assistive care encounter
 def: "They include assistance with activities of daily living, assistance with instrumental activities of daily living, medication assistance, and health support\n\nhttp://ahca.myflorida.com/Medicaid/acs/index.shtml" []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -1570,7 +1570,7 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 id: OMRSE:00000202
 name: cancer summary staging
 def: "A planned process of determining the extent to which a cancer disease has developed by growing and spreading throughout an organism." []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: IAO:0000111 "cancer summary staging" xsd:string
 property_value: IAO:0000112 "The cancer summary staging performed on patient John Doe's clinical picture." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
@@ -1881,7 +1881,7 @@ id: OMRSE:00000227
 name: health care administrative process
 def: "A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization." []
 synonym: "healthcare administrative process" EXACT []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000112 "Recording data in an EHR. Financial tasks for a healthcare organization. Scheduling shifts for health care workers." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -1985,7 +1985,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000237
 name: exchange of ownership
 def: "A planned process whereby one agent (or active participant) or a group of agents transfer ownership of some property to another agent (or active participant) or group of agents in the process, who in return transfer ownership of some their property to the first agent (or active participant)." []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "exchange of ownership" xsd:string
 property_value: IAO:0000112 "Tom exchanged ownership of his computer for Tina's scooter." xsd:string
@@ -1996,7 +1996,7 @@ property_value: IAO:0000118 "barter" xsd:string
 id: OMRSE:00000238
 name: financial transaction
 def: "A planned process whereby one participant partly or completely fulfills an obligation to another participant by transferring ownership of some other debt obligation, which is typically money." []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "financial transaction" xsd:string
 property_value: IAO:0000112 "Apple acquired semiconductors from Samsung in a financial transaction yesterday." xsd:string
@@ -2007,7 +2007,7 @@ property_value: IAO:0000118 "monetary transaction" xsd:string
 id: OMRSE:00000239
 name: payment of debt
 def: "A planned process whereby ownership of some entity of value is transferred by one participant to another to fulfill some obligation, on their behalf, after some service is performed or the ownership of some entity is exchanged." []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "payment of debt" xsd:string
 property_value: IAO:0000112 "I made a debt payment with my credit card company yesterday and no longer owe them money." xsd:string
@@ -2017,7 +2017,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000240
 name: financial valuation process
 def: "A planned process that has as specified output some scalar measurement datum that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some other material entity." []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "financial valuation process" xsd:string
 property_value: IAO:0000112 "The financial valuation of Ravi's car today determined that the car is worth $2000." xsd:string
@@ -2027,7 +2027,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000241
 name: prospective financial valuation process
 def: "A planned process that has as specified output some predicted value that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some material entity at some point in the future." []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "prospective financial valuation process" xsd:string
 property_value: IAO:0000112 "The prospective valuation of my company's stock indicates strong optimism for our financial growth over the next few years." xsd:string
@@ -2685,7 +2685,7 @@ id: OMRSE:00002029
 name: education process
 def: "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative." []
 comment: An interesting question is whether there must be another participant who is the "educator".  Some might object that many people are "self taught".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the tip of a finger.  There was no previous information about that type of skill.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow "plays a role" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: IAO:0000111 "educating" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "learning process" xsd:string
