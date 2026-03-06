@@ -10,6 +10,9 @@ BFO:0000054	owl:ObjectProperty
 BFO:0000055	owl:ObjectProperty
 BFO:0000066	owl:ObjectProperty
 BFO:0000067	owl:ObjectProperty
+COB:0000035     owl:Class
+COB:0000026     owl:Class
+COB:0000022     owl:Class
 GEO:000000400	owl:Class
 GO:0007610	owl:Class
 GO:0008150	owl:Class
@@ -52,9 +55,10 @@ OBI:0000299	owl:ObjectProperty
 OBI:0000312	owl:ObjectProperty
 OBI:0000846	owl:ObjectProperty
 OBI:0001688	owl:ObjectProperty
-OBI:0100026	owl:Class
 OBI:0200000	owl:Class
 OBI:0600052	owl:Class
+OGMS:0000045	owl:Class
+OGMS:0000096	owl:Class
 OGMS:0000097	owl:Class
 OGMS:0000100	owl:Class
 OGMS:0000102	owl:Class

@@ -696,17 +696,37 @@ SubClassOf(obo:GEO_000000400 obo:OBI_0000245)
 
 SubClassOf(obo:GO_0008150 obo:BFO_0000015)
 
+# Class: obo:IAO_0000572 (documenting)
+
+SubClassOf(obo:IAO_0000572 obo:COB_0000035)
+
 # Class: obo:IAO_0020021 (identity document)
 
 SubClassOf(obo:IAO_0020021 obo:IAO_0000310)
 
+# Class: obo:IAO_0021003 (social act)
+
+SubClassOf(obo:IAO_0021003 obo:COB_0000035)
+
 # Class: obo:NCBITaxon_131567 (cellular organisms)
 
-SubClassOf(obo:NCBITaxon_131567 obo:OBI_0100026)
+SubClassOf(obo:NCBITaxon_131567 obo:COB_0000022)
+
+# Class: obo:OAE_0000002 (medical intervention)
+
+SubClassOf(obo:OAE_0000002 obo:COB_0000035)
+
+# Class: obo:OBIB_0000710 (survey execution)
+
+SubClassOf(obo:OBIB_0000710 obo:COB_0000035)
 
 # Class: obo:OBI_0200000 (data transformation)
 
-SubClassOf(obo:OBI_0200000 obo:OBI_0000011)
+SubClassOf(obo:OBI_0200000 obo:COB_0000035)
+
+# Class: obo:OGMS_0000096 (health care process)
+
+SubClassOf(obo:OGMS_0000096 obo:COB_0000035)
 
 # Class: obo:OGMS_0000097 (health care encounter)
 
@@ -764,7 +784,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000007 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:OMRSE_00000007 "http://en.wikipedia.org/wiki/Gender_role"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000007 "gender role"@en)
 SubClassOf(obo:OMRSE_00000007 obo:BFO_0000023)
-SubClassOf(obo:OMRSE_00000007 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0100026))
+SubClassOf(obo:OMRSE_00000007 ObjectSomeValuesFrom(obo:RO_0000052 obo:COB_0000022))
 
 # Class: obo:OMRSE_00000008 (male gender role)
 
@@ -773,7 +793,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000008 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000008 "male gender"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000008 "male gender role"@en)
 SubClassOf(obo:OMRSE_00000008 obo:OMRSE_00000007)
-SubClassOf(obo:OMRSE_00000008 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0100026) ObjectAllValuesFrom(obo:RO_0000052 obo:OBI_0100026)))
+SubClassOf(obo:OMRSE_00000008 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0000052 obo:COB_0000022) ObjectAllValuesFrom(obo:RO_0000052 obo:COB_0000022)))
 
 # Class: obo:OMRSE_00000009 (female gender role)
 
@@ -782,7 +802,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000009 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000009 "female gender"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000009 "female gender role"@en)
 SubClassOf(obo:OMRSE_00000009 obo:OMRSE_00000007)
-SubClassOf(obo:OMRSE_00000009 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0100026) ObjectAllValuesFrom(obo:RO_0000052 obo:OBI_0100026)))
+SubClassOf(obo:OMRSE_00000009 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0000052 obo:COB_0000022) ObjectAllValuesFrom(obo:RO_0000052 obo:COB_0000022)))
 
 # Class: obo:OMRSE_00000010 (health care role)
 
@@ -804,7 +824,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:OMRSE_00000011 "CAFE domain expert worki
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000011 "In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov't entities, with a person endowed by the gov't with certain certifications."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000011 "patient role"@en)
 SubClassOf(obo:OMRSE_00000011 obo:OMRSE_00000010)
-SubClassOf(obo:OMRSE_00000011 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0100026))
+SubClassOf(obo:OMRSE_00000011 ObjectSomeValuesFrom(obo:RO_0000052 obo:COB_0000022))
 
 # Class: obo:OMRSE_00000012 (health care provider role)
 
@@ -883,7 +903,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000022 "An object aggregate of o
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000022 "Any arbitrary collection of organisms.  They need not be of the same taxonomic class.  "@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000022 "aggregate of objectual organisms"@en)
 SubClassOf(obo:OMRSE_00000022 obo:BFO_0000027)
-SubClassOf(obo:OMRSE_00000022 ObjectAllValuesFrom(obo:RO_0002351 ObjectIntersectionOf(obo:BFO_0000030 obo:OBI_0100026)))
+SubClassOf(obo:OMRSE_00000022 ObjectAllValuesFrom(obo:RO_0002351 ObjectIntersectionOf(obo:BFO_0000030 obo:COB_0000022)))
 
 # Class: obo:OMRSE_00000023 (collection of humans)
 
@@ -924,7 +944,7 @@ AnnotationAssertion(rdfs:comment obo:OMRSE_00000026 "Includes animals as well as
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000026 "Previous definition: A role in human social processes played by an organism."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000026 "organism social role"@en)
 SubClassOf(obo:OMRSE_00000026 obo:OMRSE_00002072)
-SubClassOf(obo:OMRSE_00000026 ObjectSomeValuesFrom(obo:RO_0000052 obo:OBI_0100026))
+SubClassOf(obo:OMRSE_00000026 ObjectSomeValuesFrom(obo:RO_0000052 obo:COB_0000022))
 
 # Class: obo:OMRSE_00000027 (organization health care role)
 
@@ -1283,7 +1303,7 @@ AnnotationAssertion(obo:IAO_0000119 obo:OMRSE_00000067 "The following definition
 
 A patient suffering one or more injuries."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000067 "injured patient role"@en)
-EquivalentClasses(obo:OMRSE_00000067 ObjectIntersectionOf(obo:OMRSE_00000011 ObjectSomeValuesFrom(obo:RO_0000052 ObjectIntersectionOf(obo:OBI_0100026 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OGMS_0000102)))))
+EquivalentClasses(obo:OMRSE_00000067 ObjectIntersectionOf(obo:OMRSE_00000011 ObjectSomeValuesFrom(obo:RO_0000052 ObjectIntersectionOf(obo:COB_0000022 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OGMS_0000102)))))
 SubClassOf(obo:OMRSE_00000067 obo:OMRSE_00000011)
 
 # Class: obo:OMRSE_00000069 (burn patient role)
@@ -1862,7 +1882,7 @@ SubClassOf(obo:OMRSE_00000145 oboInOwl:ObsoleteClass)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000146 "A planned process in which the bearer of an employer role provides wages or salary to the bearer of an employee roll in fullfillment of the arrangements specified in some declaration"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000146 "employment process"@en)
-SubClassOf(obo:OMRSE_00000146 obo:OBI_0000011)
+SubClassOf(obo:OMRSE_00000146 obo:COB_0000035)
 SubClassOf(obo:OMRSE_00000146 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000077) ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000087)))
 
 # Class: obo:OMRSE_00000147 (pediatric surgeon role)
@@ -1927,7 +1947,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000153 "They include assistance 
 http://ahca.myflorida.com/Medicaid/acs/index.shtml"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000153 "Amanda Hicks")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000153 "assistive care encounter"@en)
-SubClassOf(obo:OMRSE_00000153 obo:OBI_0000011)
+SubClassOf(obo:OMRSE_00000153 obo:COB_0000035)
 
 # Class: obo:OMRSE_00000154 (assistance with activities of daily living care encounter)
 
@@ -2295,7 +2315,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000202 "A planned process of det
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000202 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000202 "tumor summary staging"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000202 "cancer summary staging"@en)
-SubClassOf(obo:OMRSE_00000202 obo:OBI_0000011)
+SubClassOf(obo:OMRSE_00000202 obo:COB_0000035)
 
 # Class: obo:OMRSE_00000203 (cancer summary staging code)
 
@@ -2611,7 +2631,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000227 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000227 "S. Clint Dowland"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000227 "healthcare administrative process"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000227 "health care administrative process"@en)
-SubClassOf(obo:OMRSE_00000227 obo:OBI_0000011)
+SubClassOf(obo:OMRSE_00000227 obo:COB_0000035)
 
 # Class: obo:OMRSE_00000228 (principal diagnosis-assignment process)
 
@@ -2718,7 +2738,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000237 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000237 "barter"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000237 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000237 "exchange of ownership"@en)
-SubClassOf(obo:OMRSE_00000237 obo:OBI_0000011)
+SubClassOf(obo:OMRSE_00000237 obo:COB_0000035)
 
 # Class: obo:OMRSE_00000238 (financial transaction)
 
@@ -2729,7 +2749,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000238 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000238 "monetary transaction"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000238 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000238 "financial transaction"@en)
-SubClassOf(obo:OMRSE_00000238 obo:OBI_0000011)
+SubClassOf(obo:OMRSE_00000238 obo:COB_0000035)
 
 # Class: obo:OMRSE_00000239 (payment of debt)
 
@@ -2739,7 +2759,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000239 "A planned process whereb
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000239 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000239 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000239 "payment of debt"@en)
-SubClassOf(obo:OMRSE_00000239 obo:OBI_0000011)
+SubClassOf(obo:OMRSE_00000239 obo:COB_0000035)
 
 # Class: obo:OMRSE_00000240 (financial valuation process)
 
@@ -2749,7 +2769,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000240 "A planned process that h
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000240 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000240 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000240 "financial valuation process"@en)
-SubClassOf(obo:OMRSE_00000240 obo:OBI_0000011)
+SubClassOf(obo:OMRSE_00000240 obo:COB_0000035)
 
 # Class: obo:OMRSE_00000241 (prospective financial valuation process)
 
@@ -2759,7 +2779,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000241 "A planned process that h
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000241 "Matthew Diller"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000241 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000241 "prospective financial valuation process"@en)
-SubClassOf(obo:OMRSE_00000241 obo:OBI_0000011)
+SubClassOf(obo:OMRSE_00000241 obo:COB_0000035)
 
 # Class: obo:OMRSE_00000242 (intimate partnership)
 
@@ -3428,7 +3448,7 @@ AnnotationAssertion(rdfs:comment obo:OMRSE_00002029 "The loss of a \"bad\" capab
 
 This addition to the definition notwithstanding, we do not intend to incorporate the receipt of punishment into the definition of educating."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00002029 "education process"@en)
-SubClassOf(obo:OMRSE_00002029 obo:OBI_0000011)
+SubClassOf(obo:OMRSE_00002029 obo:COB_0000035)
 
 # Class: obo:OMRSE_00002030 (educational objective)
 
