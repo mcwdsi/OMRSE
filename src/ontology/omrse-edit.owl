@@ -350,6 +350,7 @@ Declaration(Class(obo:OMRSE_00000306))
 Declaration(Class(obo:OMRSE_00000307))
 Declaration(Class(obo:OMRSE_00000308))
 Declaration(Class(obo:OMRSE_00000309))
+Declaration(Class(obo:OMRSE_00000310))
 Declaration(Class(obo:OMRSE_00000500))
 Declaration(Class(obo:OMRSE_00000501))
 Declaration(Class(obo:OMRSE_00000502))
@@ -3360,6 +3361,20 @@ AnnotationAssertion(rdfs:comment obo:OMRSE_00000309 "Note that this excludes voc
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000309 "This is separate from “gestural communication”. You can fist pump, signal touchdown, and throw up your hands in frustration when alone or otherwise not intending to communicate, and yet you have concretized a GDC and thus gestured."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000309 "gesturing"@en)
 SubClassOf(obo:OMRSE_00000309 obo:OMRSE_00002062)
+
+# Class: obo:OMRSE_00000310 (purely gestural communication)
+
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000310 "Waving hello, an usher waving a patron to her seat, placing the index finger in front of the mouth to order another to be silent, signaling someone in a crowd to come over."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000310 "A communication carried out only through gesturing."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000310 "William R. Hogan"@en)
+AnnotationAssertion(terms:created obo:OMRSE_00000310 "2026-03-21T18:18:14Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:OMRSE_00000310 <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(oboInOwl:hasBroadSynonym obo:OMRSE_00000310 "gestural communication"@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000310 "Differs from gesturing because now we add the fact that there is another entity that is doing a concretization interpretation process."@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000310 "Excludes vocalization and writing. It could include gesturing the letters, though. For example, the Y-M-C-A motions without vocalizing “why—emm—see—ayy” would be gestural communication."@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000310 "Most linguistic communication with a human speaker that occurs via vocalization also includes gesturing. Here we are concerned with gesture-only communication."@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000310 "purely gestural communication"@en)
+SubClassOf(obo:OMRSE_00000310 obo:OMRSE_00002068)
 
 # Class: obo:OMRSE_00000500 (job role data item)
 
