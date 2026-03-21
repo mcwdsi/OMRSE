@@ -3361,6 +3361,7 @@ AnnotationAssertion(rdfs:comment obo:OMRSE_00000309 "Note that this excludes voc
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000309 "This is separate from “gestural communication”. You can fist pump, signal touchdown, and throw up your hands in frustration when alone or otherwise not intending to communicate, and yet you have concretized a GDC and thus gestured."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000309 "gesturing"@en)
 SubClassOf(obo:OMRSE_00000309 obo:OMRSE_00002062)
+SubClassOf(obo:OMRSE_00000309 ObjectIntersectionOf(obo:OMRSE_00002062 ObjectSomeValuesFrom(obo:BFO_0000051 obo:OMRSE_00000309)))
 
 # Class: obo:OMRSE_00000310 (purely gestural communication)
 
