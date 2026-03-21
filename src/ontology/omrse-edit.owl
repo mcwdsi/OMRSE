@@ -349,6 +349,7 @@ Declaration(Class(obo:OMRSE_00000305))
 Declaration(Class(obo:OMRSE_00000306))
 Declaration(Class(obo:OMRSE_00000307))
 Declaration(Class(obo:OMRSE_00000308))
+Declaration(Class(obo:OMRSE_00000309))
 Declaration(Class(obo:OMRSE_00000500))
 Declaration(Class(obo:OMRSE_00000501))
 Declaration(Class(obo:OMRSE_00000502))
@@ -3345,6 +3346,20 @@ AnnotationAssertion(terms:creator obo:OMRSE_00000308 <https://orcid.org/0000-000
 AnnotationAssertion(rdfs:label obo:OMRSE_00000308 "household assets data item"@en)
 SubClassOf(obo:OMRSE_00000308 obo:OMRSE_00000506)
 SubClassOf(obo:OMRSE_00000308 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OMRSE_00000240))
+
+# Class: obo:OMRSE_00000309 (gesturing)
+
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000309 "Throwing up one’s hands in frustration, fist pump to indicate pride in a success."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000309 "A concretization utilization process whereby the participant moves one or more of its material parts in such a way that the part(s) moved bear one or more new qualities, possibly in succession, that collectively concretize the generically dependent continuant."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000309 "William R. Hogan"@en)
+AnnotationAssertion(terms:created obo:OMRSE_00000309 "2026-03-21T18:13:08Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:OMRSE_00000309 <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000309 "gesture"@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000309 "Note that the qualities are by and large shape qualities."@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000309 "Note that this excludes vocalization, because in that case, it is not the qualities of the parts moved--but qualities of the air--that concretize the generically dependent continuant."@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000309 "This is separate from “gestural communication”. You can fist pump, signal touchdown, and throw up your hands in frustration when alone or otherwise not intending to communicate, and yet you have concretized a GDC and thus gestured."@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000309 "gesturing"@en)
+SubClassOf(obo:OMRSE_00000309 obo:OMRSE_00002062)
 
 # Class: obo:OMRSE_00000500 (job role data item)
 
