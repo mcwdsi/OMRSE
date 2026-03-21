@@ -26,14 +26,14 @@ import_group:
       slme_individuals: exclude
     - id: ogms
       module_type: filter
+      make_base: true
       base_iris:
         - http://purl.obolibrary.org/obo/OGMS_
-        - http://purl.obolibrary.org/obo/BFO_
-        - http://purl.obolibrary.org/obo/OBI_
     - id: obi
       module_type: filter
       base_iris:
         - http://purl.obolibrary.org/obo/OBI_
+        - http://purl.obolibrary.org/obo/COB_
     - id: apollo_sv
       module_type: filter
       base_iris:
@@ -71,7 +71,10 @@ import_group:
     - id: omo
       module_type: mirror
     - id: iao 
-      module_type: mirror
+      module_type: filter
+      make_base: true
+      base_iris:
+        - http://purl.obolibrary.org/obo/IAO_ 
     - id: d-acts
       mirror_from: http://purl.obolibrary.org/obo/iao/d-acts.owl
       module_type: filter

@@ -73,9 +73,9 @@
         "val" : "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-01-06"
+        "val" : "2026-03-05"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2026-01-06/omrse-base.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2026-03-05/omrse-base.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000032",
@@ -124,6 +124,12 @@
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/BFO_0000182",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/COB_0000022",
+      "type" : "CLASS"
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/COB_0000035",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/GEO_000000400",
@@ -198,13 +204,7 @@
       "id" : "http://purl.obolibrary.org/obo/OBIB_0000710",
       "type" : "CLASS"
     }, {
-      "id" : "http://purl.obolibrary.org/obo/OBI_0000011",
-      "type" : "CLASS"
-    }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0000245",
-      "type" : "CLASS"
-    }, {
-      "id" : "http://purl.obolibrary.org/obo/OBI_0100026",
       "type" : "CLASS"
     }, {
       "id" : "http://purl.obolibrary.org/obo/OBI_0200000",
@@ -1279,7 +1279,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "a function inhering in a material entity that, if realized, is realized by that material entity being the site where the work of some organization is carried out"
+          "val" : "A function inhering in a material entity that, if realized, is realized by that material entity being the site where the work of some organization is carried out"
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -1375,7 +1375,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "a role in human social processes that is realized when the bearer provides a wage or salary in exchange for some labour or services as specified by some declaration"
+          "val" : "A role in human social processes that is realized when the bearer provides a wage or salary in exchange for some labour or services as specified by some declaration"
         }
       }
     }, {
@@ -2066,7 +2066,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "a facility that is run by an adult foster home organization and is the bearer of an adult foster home organization"
+          "val" : "A facility that is run by an adult foster home organization and is the bearer of an adult foster home organization"
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2183,11 +2183,15 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "temporally located after some acute care encounter\nSomehow involves skilled nursing encounters"
+          "val" : "A health care encounter that provide medical and supportive services after a patient leaves an acute care setting. The aim of the post-acute health care encounter it to help the patient recover or regain independence."
         },
         "synonyms" : [ {
           "pred" : "hasExactSynonym",
           "val" : "post-acute healthcare encounter"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Mathias Brochhausen"
         } ]
       }
     }, {
@@ -2647,7 +2651,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "a communication in which some participant requests of some other participant an information content entity about some portion of reality"
+          "val" : "A communication in which some participant requests of some other participant an information content entity about some portion of reality"
         },
         "comments" : [ "As with the parent class, 'participant' in the definition need not refer to a human agent.", "The medium and grammatical form are irrelevant. For example, the request may be written or spoken, and while it may be in the form of a question, it need not be." ],
         "basicPropertyValues" : [ {
@@ -2661,7 +2665,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the ethnic identity of that other participant"
+          "val" : "An information content entity-request process in which some participant requests of some other participant an information content entity that indicates the ethnic identity of that other participant"
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -2674,7 +2678,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the racial identity of that other participant"
+          "val" : "An information content entity-request process in which some participant requests of some other participant an information content entity that indicates the racial identity of that other participant"
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -4252,8 +4256,13 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A subjective representation of its bearer as being a member of some social category."
+          "val" : "A subjective representation of themselves by a person or group."
         },
+        "comments" : [ "Definition updated to AddictO defintion." ],
+        "synonyms" : [ {
+          "pred" : "hasBroadSynonym",
+          "val" : "identity"
+        } ],
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "Matthew Diller"
@@ -4820,8 +4829,15 @@
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000501",
-      "lbl" : "income data item",
-      "type" : "CLASS"
+      "lbl" : "obsolete income data item",
+      "type" : "CLASS",
+      "meta" : {
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0100001",
+          "val" : "'monetary personal income data item'"
+        } ],
+        "deprecated" : true
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000502",
       "lbl" : "government assistance health care plan data item",
@@ -4853,7 +4869,22 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000506",
       "lbl" : "socio-economic data item",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A data item about a person or population of people that indicates their access to material or social goods."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Colbie Reed"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000507",
       "lbl" : "obsolete non-binary gender identity datum",
@@ -4901,6 +4932,134 @@
           "val" : "aar"
         } ],
         "deprecated" : true
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000925",
+      "lbl" : "self-identity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An identity that a person has about themselves."
+        },
+        "comments" : [ "Adopted from AddictO", "The cognitive representation includes multiple aspects and some of these are social. For example, group memberships, cultural norms. Collective identity as a shared attribute of group is related to this but is separate." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "The term 'self' sounds tautologous but is required to reflect the fact that this is not identity in terms of who you are but how you represent yourself to yourself."
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000926",
+      "lbl" : "group identity",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "An identity that a group holds about itself."
+        },
+        "comments" : [ "Adopted from AddictO" ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000232",
+          "val" : "can a socially shared representtaion be said to be purely cognitive? I.e query parent entity?"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000927",
+      "lbl" : "vocal linguistic concretization utilization process",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A linguistic concretization utilization process where the GDC includes words or expressions of a language and is concretized as sound waves in the air which are generated by the participant."
+        },
+        "comments" : [ "It must include words or expressions specific to a particular language. This avoids clapping or other non-voice sounds falling under the definition.", "Speaking and singing are both encompassed and should be subclasses if & when needed.", "The sound wave is a quality of the air, a pattern of rarefactions and compressions, sequentially over time.", "We don’t say ‘vocal cords’ because we want to include computer-generated voice via speakers, ear buds, headphones, etc, etc. We could have a child class specific to use of organisms' vocal cords eventually if & when needed." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "vocalization"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "val" : "vocalizing"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000928",
+      "lbl" : "verbal communication",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A communication where one or more linguistic concretization utilization parts are vocal linguistic concretization utilization processes."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000929",
+      "lbl" : "household income",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A monetary personal income data item that is about a household."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000930",
+      "lbl" : "family income",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A household income that pertains to members of a household related by birth, marriage, or adoption."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000931",
+      "lbl" : "poverty line",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A data item of income level that is calculated based on what level of income is minimally adequate to afford basic necessities, such as housing or food."
+        },
+        "comments" : [ "Federal poverty levels are used to determine your eligibility for certain programs and benefits, and are often calculated annually." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "Matthew Diller"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Amanda Hicks"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Colbie Reed"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "William R. Hogan"
+        } ]
       }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00002029",
@@ -5281,11 +5440,11 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
         }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "http://orcid.org/0000-0002-9881-1017"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "pred" : "http://purl.org/dc/terms/created",
           "val" : "2020-09-02T12:38:43Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-9881-1017"
         } ]
       }
     }, {
@@ -5306,11 +5465,11 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "undergraduate education program"
         }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "http://orcid.org/0000-0002-9881-1017"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "pred" : "http://purl.org/dc/terms/created",
           "val" : "2020-09-02T12:52:46Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-9881-1017"
         } ]
       }
     }, {
@@ -5329,11 +5488,11 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
           "val" : "graduate education program"
         }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "http://orcid.org/0000-0002-9881-1017"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "pred" : "http://purl.org/dc/terms/created",
           "val" : "2020-09-02T13:01:34Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-9881-1017"
         } ]
       }
     }, {
@@ -5352,11 +5511,11 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
         }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "http://orcid.org/0000-0002-9881-1017"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "pred" : "http://purl.org/dc/terms/created",
           "val" : "2020-09-02T13:23:46Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-9881-1017"
         } ]
       }
     }, {
@@ -5375,11 +5534,11 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
         }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "http://orcid.org/0000-0002-9881-1017"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "pred" : "http://purl.org/dc/terms/created",
           "val" : "2020-09-02T13:27:15Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-9881-1017"
         } ]
       }
     }, {
@@ -5398,11 +5557,11 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
         }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "http://orcid.org/0000-0002-9881-1017"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "pred" : "http://purl.org/dc/terms/created",
           "val" : "2020-09-02T13:27:50Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-9881-1017"
         } ]
       }
     }, {
@@ -5421,11 +5580,11 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
         }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "http://orcid.org/0000-0002-9881-1017"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "pred" : "http://purl.org/dc/terms/created",
           "val" : "2020-09-02T13:28:27Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-9881-1017"
         } ]
       }
     }, {
@@ -5444,11 +5603,11 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
         }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "http://orcid.org/0000-0002-9881-1017"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "pred" : "http://purl.org/dc/terms/created",
           "val" : "2020-09-02T13:28:49Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-9881-1017"
         } ]
       }
     }, {
@@ -5467,11 +5626,11 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
         }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "http://orcid.org/0000-0002-9881-1017"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "pred" : "http://purl.org/dc/terms/created",
           "val" : "2020-09-02T13:29:28Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-9881-1017"
         } ]
       }
     }, {
@@ -5490,11 +5649,11 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
         }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "http://orcid.org/0000-0002-9881-1017"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "pred" : "http://purl.org/dc/terms/created",
           "val" : "2020-09-02T13:47:38Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-9881-1017"
         } ]
       }
     }, {
@@ -5513,11 +5672,11 @@
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
           "val" : "William R. Hogan"
         }, {
-          "pred" : "http://purl.org/dc/elements/1.1/creator",
-          "val" : "http://orcid.org/0000-0002-9881-1017"
-        }, {
-          "pred" : "http://purl.org/dc/elements/1.1/date",
+          "pred" : "http://purl.org/dc/terms/created",
           "val" : "2020-09-02T13:48:10Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "http://orcid.org/0000-0002-9881-1017"
         } ]
       }
     }, {
@@ -7815,12 +7974,6 @@
       "type" : "INDIVIDUAL",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "ڈوگرى"
-        }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "डोगरी"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/OMRSE_00002026",
           "val" : "dgr"
         }, {
@@ -8073,9 +8226,6 @@
       "type" : "INDIVIDUAL",
       "meta" : {
         "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
-          "val" : "English"
-        }, {
           "pred" : "http://purl.obolibrary.org/obo/OMRSE_00002025",
           "val" : "en"
         }, {
@@ -8339,13 +8489,14 @@
       "lbl" : "French, Middle (ca. 1400–1600)",
       "type" : "INDIVIDUAL",
       "meta" : {
-        "basicPropertyValues" : [ {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+        "synonyms" : [ {
+          "pred" : "hasRelatedSynonym",
           "val" : "franceis"
         }, {
-          "pred" : "http://purl.obolibrary.org/obo/IAO_0000118",
+          "pred" : "hasRelatedSynonym",
           "val" : "françois"
-        }, {
+        } ],
+        "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/OMRSE_00002026",
           "val" : "frm"
         }, {
@@ -13847,6 +13998,10 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
+      "id" : "http://purl.obolibrary.org/obo/IAO_0000232",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://purl.obolibrary.org/obo/IAO_0000233",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
@@ -13937,10 +14092,6 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
-      "id" : "http://purl.org/dc/elements/1.1/date",
-      "type" : "PROPERTY",
-      "propertyType" : "ANNOTATION"
-    }, {
       "id" : "http://purl.org/dc/elements/1.1/source",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
@@ -13950,6 +14101,10 @@
       "propertyType" : "ANNOTATION"
     }, {
       "id" : "http://purl.org/dc/terms/contributor",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://purl.org/dc/terms/created",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
@@ -13973,7 +14128,15 @@
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
       "id" : "http://www.geneontology.org/formats/oboInOwl#hasExactSynonym",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION"
+    }, {
+      "id" : "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
       "type" : "PROPERTY",
       "propertyType" : "ANNOTATION"
     } ],
@@ -14020,7 +14183,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000007",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000022"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000008",
       "pred" : "is_a",
@@ -14044,7 +14207,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000011",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000022"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000012",
       "pred" : "is_a",
@@ -14108,7 +14271,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000026",
       "pred" : "http://purl.obolibrary.org/obo/RO_0000052",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0100026"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000022"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000027",
       "pred" : "is_a",
@@ -14734,7 +14897,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000146",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000035"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000147",
       "pred" : "is_a",
@@ -14786,7 +14949,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000153",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000035"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000154",
       "pred" : "is_a",
@@ -15046,7 +15209,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000202",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000035"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000204",
       "pred" : "is_a",
@@ -15142,7 +15305,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000227",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000035"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000228",
       "pred" : "is_a",
@@ -15186,23 +15349,23 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000237",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000035"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000238",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000035"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000239",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000035"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000240",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000035"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000241",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000035"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000242",
       "pred" : "is_a",
@@ -15490,7 +15653,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000501",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000506"
+      "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000502",
       "pred" : "is_a",
@@ -15516,9 +15679,37 @@
       "pred" : "is_a",
       "obj" : "http://www.geneontology.org/formats/oboInOwl#ObsoleteClass"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000925",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000278"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000926",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000278"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000927",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002063"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000928",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002068"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000929",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002061"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000930",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000929"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000931",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/IAO_0000027"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00002029",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OBI_0000011"
+      "obj" : "http://purl.obolibrary.org/obo/COB_0000035"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00002030",
       "pred" : "is_a",

@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2026-01-06/omrse-base.owl
+data-version: omrse/releases/2026-03-05/omrse-base.owl
 idspace: dc http://purl.org/dc/elements/1.1/ 
 idspace: foaf http://xmlns.com/foaf/0.1/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -25,8 +25,8 @@ property_value: dc:creator "Shariq Tariq" xsd:string
 property_value: dc:creator "Swetha Garimalla" xsd:string
 property_value: dc:creator "William Hogan" xsd:string
 property_value: dc:type IAO:8000001
-property_value: owl:versionInfo "2026-01-06" xsd:string
-property_value: terms:creator "https://orcid.org/0000-0002-9881-1017" xsd:anyURI
+property_value: owl:versionInfo "2026-03-05" xsd:string
+property_value: terms:creator https://orcid.org/0000-0002-9881-1017
 property_value: terms:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
 property_value: terms:title "Ontology for Modeling and Representation of Social Entities" xsd:string
@@ -80,7 +80,7 @@ id: OMRSE:00000007
 name: gender role
 def: "A human social role borne by a human being being realized in behaviour which is considered socially appropriate for individuals of a specific sex in the context of a specific culture." []
 is_a: BFO:0000023
-relationship: RO:0000052 OBI:0100026
+relationship: RO:0000052 COB:0000022
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000119 "http://en.wikipedia.org/wiki/Gender_role" xsd:string
 
@@ -89,7 +89,7 @@ id: OMRSE:00000008
 name: male gender role
 def: "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the male sex in the context of the culture in question." []
 is_a: OMRSE:00000007 ! gender role
-relationship: RO:0000052 OBI:0100026
+relationship: RO:0000052 COB:0000022
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "male gender" xsd:string
 
@@ -98,7 +98,7 @@ id: OMRSE:00000009
 name: female gender role
 def: "A gender role borne by a human being that is realized in behaviour which is considered socially appropriate for individuals of the female sex in the context of the culture in question." []
 is_a: OMRSE:00000007 ! gender role
-relationship: RO:0000052 OBI:0100026
+relationship: RO:0000052 COB:0000022
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "female gender" xsd:string
 
@@ -118,7 +118,7 @@ name: patient role
 def: "A health care role borne by an organism and that is realized by presenting to a health care provider in a clinical encounter." []
 comment: In order to avoid the presumption of the formal structures and institutions of Western civilization, bearing a patient role does not entail that the organism presents at an official place of business, with an organization formally and legally registered with various gov't entities, with a person endowed by the gov't with certain certifications.
 is_a: OMRSE:00000010 ! health care role
-relationship: RO:0000052 OBI:0100026
+relationship: RO:0000052 COB:0000022
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000118 "patient" xsd:string
@@ -228,7 +228,7 @@ name: organism social role
 def: "A role in human social processes that inheres in an organism." []
 comment: Defined class that we will ultimately move to an application ontology.  We are leaving here for now until we determine which application ontology: it is likely going to be an ontology that does not currently (2012-06-05) exist.\n\nDitto for its current descendants.
 is_a: OMRSE:00002072 ! role in human social processes
-relationship: RO:0000052 OBI:0100026
+relationship: RO:0000052 COB:0000022
 property_value: IAO:0000117 "William R. Hogan\nMathias Brochhausen" xsd:string
 
 [Term]
@@ -655,7 +655,7 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 [Term]
 id: OMRSE:00000079
 name: workplace function
-def: "a function inhering in a material entity that, if realized, is realized by that material entity being the site where the work of some organization is carried out" []
+def: "A function inhering in a material entity that, if realized, is realized by that material entity being the site where the work of some organization is carried out" []
 is_a: BFO:0000034
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
@@ -708,7 +708,7 @@ property_value: IAO:0000118 "human organizational role" xsd:string
 [Term]
 id: OMRSE:00000087
 name: employer role
-def: "a role in human social processes that is realized when the bearer provides a wage or salary in exchange for some labour or services as specified by some declaration" []
+def: "A role in human social processes that is realized when the bearer provides a wage or salary in exchange for some labour or services as specified by some declaration" []
 is_a: OMRSE:00002072 ! role in human social processes
 relationship: BFO:0000054 OMRSE:00000146 ! employment process
 
@@ -1141,7 +1141,7 @@ is_obsolete: true
 id: OMRSE:00000146
 name: employment process
 def: "A planned process in which the bearer of an employer role provides wages or salary to the bearer of an employee roll in fullfillment of the arrangements specified in some declaration" []
-is_a: OBI:0000011
+is_a: COB:0000035
 relationship: BFO:0000055 OMRSE:00000077 ! job role
 relationship: BFO:0000055 OMRSE:00000087 ! employer role
 
@@ -1155,7 +1155,7 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 [Term]
 id: OMRSE:00000148
 name: adult foster home facility
-def: "a facility that is run by an adult foster home organization and is the bearer of an adult foster home organization" []
+def: "A facility that is run by an adult foster home organization and is the bearer of an adult foster home organization" []
 is_a: OMRSE:00000150 ! community living health care facility
 relationship: RO:0000053 OMRSE:00000149 ! adult foster home function
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
@@ -1205,7 +1205,7 @@ property_value: IAO:0000233 "https://github.com/mcwdsi/OMRSE/issues/305" xsd:str
 id: OMRSE:00000153
 name: assistive care encounter
 def: "They include assistance with activities of daily living, assistance with instrumental activities of daily living, medication assistance, and health support\n\nhttp://ahca.myflorida.com/Medicaid/acs/index.shtml" []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: IAO:0000117 "Amanda Hicks" xsd:string
 
 [Term]
@@ -1237,11 +1237,12 @@ is_a: BFO:0000034
 [Term]
 id: OMRSE:00000159
 name: post-acute health care encounter
-def: "temporally located after some acute care encounter\nSomehow involves skilled nursing encounters" []
+def: "A health care encounter that provide medical and supportive services after a patient leaves an acute care setting. The aim of the post-acute health care encounter it to help the patient recover or regain independence." []
 synonym: "post-acute healthcare encounter" EXACT []
 is_a: OGMS:0000097
 disjoint_from: OMRSE:00000160 ! acute care encounter
 relationship: BFO:0000066 OMRSE:00000150 ! community living health care facility
+property_value: dc:contributor "Mathias Brochhausen" xsd:string
 
 [Term]
 id: OMRSE:00000160
@@ -1537,7 +1538,7 @@ is_obsolete: true
 [Term]
 id: OMRSE:00000198
 name: information content entity-request process
-def: "a communication in which some participant requests of some other participant an information content entity about some portion of reality" []
+def: "A communication in which some participant requests of some other participant an information content entity about some portion of reality" []
 comment: As with the parent class, 'participant' in the definition need not refer to a human agent.
 is_a: OMRSE:00002068 ! communication
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
@@ -1545,14 +1546,14 @@ property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 [Term]
 id: OMRSE:00000199
 name: information content entity request about ethnic identity
-def: "an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the ethnic identity of that other participant" []
+def: "An information content entity-request process in which some participant requests of some other participant an information content entity that indicates the ethnic identity of that other participant" []
 is_a: OMRSE:00000198 ! information content entity-request process
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
 [Term]
 id: OMRSE:00000200
 name: information content entity request about racial identity
-def: "an information content entity-request process in which some participant requests of some other participant an information content entity that indicates the racial identity of that other participant" []
+def: "An information content entity-request process in which some participant requests of some other participant an information content entity that indicates the racial identity of that other participant" []
 is_a: OMRSE:00000198 ! information content entity-request process
 property_value: IAO:0000117 "S. Clint Dowland" xsd:string
 
@@ -1569,7 +1570,7 @@ property_value: IAO:0000117 "Amanda Hicks" xsd:string
 id: OMRSE:00000202
 name: cancer summary staging
 def: "A planned process of determining the extent to which a cancer disease has developed by growing and spreading throughout an organism." []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: IAO:0000111 "cancer summary staging" xsd:string
 property_value: IAO:0000112 "The cancer summary staging performed on patient John Doe's clinical picture." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
@@ -1880,7 +1881,7 @@ id: OMRSE:00000227
 name: health care administrative process
 def: "A planned process (i) that is neither a health care process nor an ancillary health care process, and (ii) in which some employee of a health care organization manages, or helps to manage, the performance of tasks that realize the functions of that organization." []
 synonym: "healthcare administrative process" EXACT []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: IAO:0000112 "Recording data in an EHR. Financial tasks for a healthcare organization. Scheduling shifts for health care workers." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -1984,7 +1985,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000237
 name: exchange of ownership
 def: "A planned process whereby one agent (or active participant) or a group of agents transfer ownership of some property to another agent (or active participant) or group of agents in the process, who in return transfer ownership of some their property to the first agent (or active participant)." []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "exchange of ownership" xsd:string
 property_value: IAO:0000112 "Tom exchanged ownership of his computer for Tina's scooter." xsd:string
@@ -1995,7 +1996,7 @@ property_value: IAO:0000118 "barter" xsd:string
 id: OMRSE:00000238
 name: financial transaction
 def: "A planned process whereby one participant partly or completely fulfills an obligation to another participant by transferring ownership of some other debt obligation, which is typically money." []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "financial transaction" xsd:string
 property_value: IAO:0000112 "Apple acquired semiconductors from Samsung in a financial transaction yesterday." xsd:string
@@ -2006,7 +2007,7 @@ property_value: IAO:0000118 "monetary transaction" xsd:string
 id: OMRSE:00000239
 name: payment of debt
 def: "A planned process whereby ownership of some entity of value is transferred by one participant to another to fulfill some obligation, on their behalf, after some service is performed or the ownership of some entity is exchanged." []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "payment of debt" xsd:string
 property_value: IAO:0000112 "I made a debt payment with my credit card company yesterday and no longer owe them money." xsd:string
@@ -2016,7 +2017,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000240
 name: financial valuation process
 def: "A planned process that has as specified output some scalar measurement datum that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some other material entity." []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "financial valuation process" xsd:string
 property_value: IAO:0000112 "The financial valuation of Ravi's car today determined that the car is worth $2000." xsd:string
@@ -2026,7 +2027,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000241
 name: prospective financial valuation process
 def: "A planned process that has as specified output some predicted value that is about an entity—such as a material good or a service—and is measured in terms of the quantity of some material entity at some point in the future." []
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000111 "prospective financial valuation process" xsd:string
 property_value: IAO:0000112 "The prospective valuation of my company's stock indicates strong optimism for our financial growth over the next few years." xsd:string
@@ -2277,7 +2278,9 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00000278
 name: social identity
-def: "A subjective representation of its bearer as being a member of some social category." []
+def: "A subjective representation of themselves by a person or group." []
+comment: Definition updated to AddictO defintion.
+synonym: "identity" BROAD []
 is_a: OMRSE:00000277 ! subjective representation
 property_value: dc:contributor "S. Clint Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -2557,8 +2560,10 @@ property_value: IAO:0000118 "employment data item" xsd:string
 
 [Term]
 id: OMRSE:00000501
-name: income data item
-is_a: OMRSE:00000506 ! socio-economic data item
+name: obsolete income data item
+is_a: oboInOwl:ObsoleteClass
+is_obsolete: true
+replaced_by: 'monetary personal income data item'
 
 [Term]
 id: OMRSE:00000502
@@ -2585,7 +2590,11 @@ is_a: OMRSE:00000506 ! socio-economic data item
 [Term]
 id: OMRSE:00000506
 name: socio-economic data item
+def: "A data item about a person or population of people that indicates their access to material or social goods." []
 is_a: IAO:0000027
+property_value: dc:contributor "Colbie Reed" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
 id: OMRSE:00000507
@@ -2608,11 +2617,75 @@ replaced_by: http://purl.obolibrary.org/obo/OMRSE_00000923
 replaced_by: non-binary gender identity information content entity
 
 [Term]
+id: OMRSE:00000925
+name: self-identity
+def: "An identity that a person has about themselves." []
+comment: Adopted from AddictO
+is_a: OMRSE:00000278 ! social identity
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000232 "The term 'self' sounds tautologous but is required to reflect the fact that this is not identity in terms of who you are but how you represent yourself to yourself." xsd:string
+
+[Term]
+id: OMRSE:00000926
+name: group identity
+def: "An identity that a group holds about itself." []
+comment: Adopted from AddictO
+is_a: OMRSE:00000278 ! social identity
+property_value: IAO:0000232 "can a socially shared representtaion be said to be purely cognitive? I.e query parent entity?" xsd:string
+property_value: IAO:0000232 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000927
+name: vocal linguistic concretization utilization process
+def: "A linguistic concretization utilization process where the GDC includes words or expressions of a language and is concretized as sound waves in the air which are generated by the participant." []
+comment: It must include words or expressions specific to a particular language. This avoids clapping or other non-voice sounds falling under the definition.
+is_a: OMRSE:00002063 ! linguistic concretization-utilization process
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+property_value: IAO:0000118 "vocalization" xsd:string
+property_value: IAO:0000118 "vocalizing" xsd:string
+
+[Term]
+id: OMRSE:00000928
+name: verbal communication
+def: "A communication where one or more linguistic concretization utilization parts are vocal linguistic concretization utilization processes." []
+is_a: OMRSE:00002068 ! communication
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000929
+name: household income
+def: "A monetary personal income data item that is about a household." []
+is_a: OMRSE:00002061 ! monetary personal income data item
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000930
+name: family income
+def: "A household income that pertains to members of a household related by birth, marriage, or adoption." []
+is_a: OMRSE:00000929 ! household income
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
+id: OMRSE:00000931
+name: poverty line
+def: "A data item of income level that is calculated based on what level of income is minimally adequate to afford basic necessities, such as housing or food." []
+comment: Federal poverty levels are used to determine your eligibility for certain programs and benefits, and are often calculated annually.
+is_a: IAO:0000027
+property_value: dc:contributor "Amanda Hicks" xsd:string
+property_value: dc:contributor "Colbie Reed" xsd:string
+property_value: dc:contributor "William R. Hogan" xsd:string
+property_value: IAO:0000117 "Matthew Diller" xsd:string
+
+[Term]
 id: OMRSE:00002029
 name: education process
 def: "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative." []
 comment: An interesting question is whether there must be another participant who is the "educator".  Some might object that many people are "self taught".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the tip of a finger.  There was no previous information about that type of skill.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow "plays a role" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).
-is_a: OBI:0000011
+is_a: COB:0000035
 property_value: IAO:0000111 "educating" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "learning process" xsd:string
@@ -2810,21 +2883,21 @@ id: OMRSE:00002047
 name: kindergarten education program
 def: "A primary education plan specification that specifies the competencies and information content entities that should be acquired by students in the first year of primary education in the United States." []
 is_a: OMRSE:00002034 ! primary education program
-property_value: dc:creator http://orcid.org/0000-0002-9881-1017
-property_value: dc:date "2020-09-02T12:38:43Z" xsd:dateTime
 property_value: IAO:0000111 "kindergarten education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:created "2020-09-02T12:38:43Z" xsd:dateTime
+property_value: terms:creator http://orcid.org/0000-0002-9881-1017
 
 [Term]
 id: OMRSE:00002048
 name: undergraduate higher education program
 def: "A higher education plan specification that specifies the awarding of an associates or bachelors degree in the United States or equivalent degrees in other nations, and specifies as a pre-requisite the completion of some secondary education program." []
 is_a: OMRSE:00002042 ! higher education program
-property_value: dc:creator http://orcid.org/0000-0002-9881-1017
-property_value: dc:date "2020-09-02T12:52:46Z" xsd:dateTime
 property_value: IAO:0000111 "undergraduate higher education plan specification" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
 property_value: IAO:0000118 "undergraduate education program" xsd:string
+property_value: terms:created "2020-09-02T12:52:46Z" xsd:dateTime
+property_value: terms:creator http://orcid.org/0000-0002-9881-1017
 
 [Term]
 id: OMRSE:00002049
@@ -2832,10 +2905,10 @@ name: graduate higher education program
 def: "A higher education plan specification that specifies the awarding of a graduate certificate or degree, and specifies as a pre-requisite the awarding of an undergraduate degree." []
 comment: Graduate degrees include masters, PhD, MD, PharmD, and other post-graduate professional degrees.  To distinguish MS/PhD from the professional ones, subclass this class.
 is_a: OMRSE:00002042 ! higher education program
-property_value: dc:creator http://orcid.org/0000-0002-9881-1017
-property_value: dc:date "2020-09-02T13:01:34Z" xsd:dateTime
 property_value: IAO:0000111 "graduate higher education plan specification" xsd:string
 property_value: IAO:0000118 "graduate education program" xsd:string
+property_value: terms:created "2020-09-02T13:01:34Z" xsd:dateTime
+property_value: terms:creator http://orcid.org/0000-0002-9881-1017
 
 [Term]
 id: OMRSE:00002050
@@ -2843,10 +2916,10 @@ name: highest level of education is grades 1 through 6 data item
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of first through sixth grade." []
 comment: Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates completion of some to all of primary education in the United States.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: dc:creator http://orcid.org/0000-0002-9881-1017
-property_value: dc:date "2020-09-02T13:23:46Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of grades one through six socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:created "2020-09-02T13:23:46Z" xsd:dateTime
+property_value: terms:creator http://orcid.org/0000-0002-9881-1017
 
 [Term]
 id: OMRSE:00002051
@@ -2854,10 +2927,10 @@ name: highest level of education is grades 7 through 9 data item
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of seventh (7th) through ninth (9th) grade." []
 comment: Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates completion of some to all of lower secondary education in the United States.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: dc:creator http://orcid.org/0000-0002-9881-1017
-property_value: dc:date "2020-09-02T13:27:15Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of grades seven through nine socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:created "2020-09-02T13:27:15Z" xsd:dateTime
+property_value: terms:creator http://orcid.org/0000-0002-9881-1017
 
 [Term]
 id: OMRSE:00002052
@@ -2865,10 +2938,10 @@ name: highest level of education is grades 10 through 12 data item
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is in the range of tenth (10th) through twelfth (12th) grade." []
 comment: Note: this broad, very loose level of grouping emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates completion of some to all of upper secondary education in the United States.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: dc:creator http://orcid.org/0000-0002-9881-1017
-property_value: dc:date "2020-09-02T13:27:50Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of grades ten through twelve socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:created "2020-09-02T13:27:50Z" xsd:dateTime
+property_value: terms:creator http://orcid.org/0000-0002-9881-1017
 
 [Term]
 id: OMRSE:00002053
@@ -2876,10 +2949,10 @@ name: highest level of education is completion of undergraduate degree data item
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some undergraduate degree." []
 comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: dc:creator http://orcid.org/0000-0002-9881-1017
-property_value: dc:date "2020-09-02T13:28:27Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of some undergraduate degree socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:created "2020-09-02T13:28:27Z" xsd:dateTime
+property_value: terms:creator http://orcid.org/0000-0002-9881-1017
 
 [Term]
 id: OMRSE:00002054
@@ -2887,10 +2960,10 @@ name: highest level of education is completion of graduate certificate or degree
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some graduate certificate or degree." []
 comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: dc:creator http://orcid.org/0000-0002-9881-1017
-property_value: dc:date "2020-09-02T13:28:49Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of some graduate degree socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:created "2020-09-02T13:28:49Z" xsd:dateTime
+property_value: terms:creator http://orcid.org/0000-0002-9881-1017
 
 [Term]
 id: OMRSE:00002055
@@ -2898,10 +2971,10 @@ name: highest level of education is completion of vocaational education program 
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is completion of some vocational education program." []
 comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: dc:creator http://orcid.org/0000-0002-9881-1017
-property_value: dc:date "2020-09-02T13:29:28Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of some vocational education program socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:created "2020-09-02T13:29:28Z" xsd:dateTime
+property_value: terms:creator http://orcid.org/0000-0002-9881-1017
 
 [Term]
 id: OMRSE:00002056
@@ -2909,10 +2982,10 @@ name: highest level of education is completion of kindergarten data item
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is pre-kindergarten." []
 comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.\n\nIt indicates that a person has completed only early childhood education and nothing more.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: dc:creator http://orcid.org/0000-0002-9881-1017
-property_value: dc:date "2020-09-02T13:47:38Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of kindergarten socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:created "2020-09-02T13:47:38Z" xsd:dateTime
+property_value: terms:creator http://orcid.org/0000-0002-9881-1017
 
 [Term]
 id: OMRSE:00002057
@@ -2920,10 +2993,10 @@ name: highest level of education is completion of pre-kindergarten data item
 def: "A highest level of education socio-economic data item that represents the fact that the highest level of education achieved by an individual in the United States is kindergarten." []
 comment: Note: The requirement for this class emerged as an early requirement from the SODA project, funded by a PCORI Methods Grant, at the University of Florida with Dr. Yonghui Wu as PI.
 is_a: OMRSE:00002045 ! highest level of education data item
-property_value: dc:creator http://orcid.org/0000-0002-9881-1017
-property_value: dc:date "2020-09-02T13:48:10Z" xsd:dateTime
 property_value: IAO:0000111 "highest level of education is completion of pre-kindergarten socio-economic data item" xsd:string
 property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:created "2020-09-02T13:48:10Z" xsd:dateTime
+property_value: terms:creator http://orcid.org/0000-0002-9881-1017
 
 [Term]
 id: OMRSE:00002058

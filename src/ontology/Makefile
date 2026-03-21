@@ -16,7 +16,7 @@
 # 3. [Update repo to latest ODK](update_repo)
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                8f3e3334536fd37070740c6e9f4eba111d6ee240094a95f1b91e2b3c52b552e6
+CONFIG_HASH=                879dc7871381ee6621572417dc84da3100024bd200fd4b73f6e43e87c21dbfa0
 
 
 # ----------------------------------------
@@ -442,8 +442,6 @@ $(IMPORTDIR)/ogms_import.owl: $(MIRRORDIR)/ogms.owl $(IMPORTDIR)/ogms_terms.txt 
 		         --copy-ontology-annotations true --force true --method BOT \
 		 remove --axioms external --preserve-structure false --trim false \
 		        --base-iri http://purl.obolibrary.org/obo/OGMS_ \
-		        --base-iri http://purl.obolibrary.org/obo/BFO_ \
-		        --base-iri http://purl.obolibrary.org/obo/OBI_ \
 		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
 		        --term rdfs:label \
 		        --term IAO:0000115 \
@@ -463,6 +461,7 @@ $(IMPORTDIR)/obi_import.owl: $(MIRRORDIR)/obi.owl $(IMPORTDIR)/obi_terms.txt $(I
 		         --copy-ontology-annotations true --force true --method BOT \
 		 remove --axioms external --preserve-structure false --trim false \
 		        --base-iri http://purl.obolibrary.org/obo/OBI_ \
+		        --base-iri http://purl.obolibrary.org/obo/COB_ \
 		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
 		        --term rdfs:label \
 		        --term IAO:0000115 \
@@ -618,12 +617,22 @@ $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl | all_robot_plugins
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 
-## Module for ontology: iao (mirror)
-$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl | all_robot_plugins
+## Module for ontology: iao (filter)
+$(IMPORTDIR)/iao_import.owl: $(MIRRORDIR)/iao.owl $(IMPORTDIR)/iao_terms.txt $(IMPORTSEED) | all_robot_plugins
 	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/iao_terms.txt $(T_IMPORTSEED) \
+		         --copy-ontology-annotations true --force true --method BOT \
+		 remove --axioms external --preserve-structure false --trim false \
+		        --base-iri http://purl.obolibrary.org/obo/IAO_ \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+		        --term rdfs:label \
+		        --term IAO:0000115 \
+		        --term OMO:0002000 \
+		        --term-file $(IMPORTDIR)/iao_terms.txt $(T_IMPORTSEED) \
+		        --select complement \
 		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
 		               --subset-decls true --synonym-decls true \
-		               --add-source true \
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 
@@ -787,7 +796,7 @@ mirror-ro: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/ogms.owl
 mirror-ogms: | $(TMPDIR)
 	curl -L $(OBOBASE)/ogms.owl --create-dirs -o $(TMPDIR)/ogms-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/ogms-download.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) remove -i $(TMPDIR)/ogms-download.owl --base-iri http://purl.obolibrary.org/obo/OGMS_ --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: obi
@@ -874,7 +883,7 @@ mirror-omo: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/iao.owl
 mirror-iao: | $(TMPDIR)
 	curl -L $(OBOBASE)/iao.owl --create-dirs -o $(TMPDIR)/iao-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/iao-download.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) remove -i $(TMPDIR)/iao-download.owl --base-iri http://purl.obolibrary.org/obo/IAO_ --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: d-acts

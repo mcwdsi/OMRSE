@@ -7,9 +7,9 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/ro_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-01-06/imports/ro_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ro/releases/2025-06-24/ro.owl>)
-Annotation(owl:versionInfo "2026-01-06")
+<http://purl.obolibrary.org/obo/omrse/releases/2026-03-05/imports/ro_import.owl>
+Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ro/releases/2025-12-17/ro.owl>)
+Annotation(owl:versionInfo "2026-03-05")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000003>))
@@ -23,14 +23,16 @@ Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000023>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000031>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000034>))
 Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/COB_0000035>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0003674>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0008150>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0016301>))
 Declaration(Class(<http://purl.obolibrary.org/obo/IAO_0000078>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0000011>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OBI_0100026>))
 Declaration(Class(<http://purl.obolibrary.org/obo/PATO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/RO_0002577>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0000465>))
+Declaration(Class(<http://purl.obolibrary.org/obo/UBERON_0001062>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000054>))
@@ -166,6 +168,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0017001>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0019000>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0019001>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0019002>))
+Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0020105>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ENVO_01001569>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ENVO_01001571>))
 Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/ENVO_01001572>))
@@ -232,13 +235,16 @@ Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/created>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/license>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/source>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/title>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym>))
+Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym>))
 Declaration(AnnotationProperty(rdfs:comment))
 Declaration(AnnotationProperty(rdfs:label))
 ############################
@@ -389,6 +395,14 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/IAO_0100001> "Add as annotation triples in the granting ontology"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0100001> "term replaced by"@en)
 
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> (has_broad_synonym)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "An alternative label for a class or property which has a more general meaning than the preferred name/primary label.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://orcid.org/0000-0001-5208-3432>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "https://github.com/information-artifact-ontology/ontology-metadata/issues/18")
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "has broad synonym"@en)
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> "has_broad_synonym")
+
 # Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> (has exact synonym)
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.")
@@ -396,6 +410,14 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://www.gen
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "https://github.com/information-artifact-ontology/ontology-metadata/issues/20")
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has exact synonym"@en)
 AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> "has_exact_synonym")
+
+# Annotation Property: <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> (has_related_synonym)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://orcid.org/0000-0001-5208-3432>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "https://github.com/information-artifact-ontology/ontology-metadata/issues/21")
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "has related synonym"@en)
+AnnotationAssertion(rdfs:label <http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> "has_related_synonym")
 
 
 ############################
@@ -990,6 +1012,7 @@ SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002263> <http://purl.obo
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/RO_0002264> "A gene product that has some activity, where that activity may be a part of a pathway or upstream of the pathway.")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0002264> "c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/RO_0002264> "affects")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002264> "acts upstream of or within")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002264> <http://purl.obolibrary.org/obo/RO_0002500>)
 
@@ -1240,6 +1263,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/RO_0002418> "We would like to make this disjoint with 'preceded by', but this is prohibited in OWL2")
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/RO_0002418> <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/RO_0002418> "influences (processual)")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/RO_0002418> "affects")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002418> "causally upstream of or within")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0002418> <http://purl.obolibrary.org/obo/RO_0002501>)
 InverseObjectProperties(<http://purl.obolibrary.org/obo/RO_0002418> <http://purl.obolibrary.org/obo/RO_0002427>)
@@ -1670,6 +1694,7 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.ob
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/RO_0017001> "See github ticket https://github.com/oborel/obo-relations/issues/497")
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/RO_0017001> <https://orcid.org/0000-0001-9625-1899>)
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/RO_0017001> <https://orcid.org/0000-0003-2620-0345>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/RO_0017001> "utilizes")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0017001> "device utilizes material"@en)
 
 # Object Property: <http://purl.obolibrary.org/obo/RO_0019000> (regulates characteristic)
@@ -1694,6 +1719,13 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.ob
 AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/RO_0019002> <https://orcid.org/0000-0002-8688-6599>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0019002> "negatively regulates characteristic")
 SubObjectPropertyOf(<http://purl.obolibrary.org/obo/RO_0019002> <http://purl.obolibrary.org/obo/RO_0019000>)
+
+# Object Property: <http://purl.obolibrary.org/obo/RO_0020105> (is anatomical entity)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/RO_0020105> "This property only applies to anatomical entities.")
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://purl.obolibrary.org/obo/RO_0020105> <https://orcid.org/0000-0001-6677-8489>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0020105> "is anatomical entity")
+ObjectPropertyDomain(<http://purl.obolibrary.org/obo/RO_0020105> <http://purl.obolibrary.org/obo/UBERON_0001062>)
 
 
 
@@ -1788,6 +1820,19 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/BFO_0000040> "material entity"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/BFO_0000040> <http://purl.obolibrary.org/obo/BFO_0000004>)
 
+# Class: <http://purl.obolibrary.org/obo/COB_0000022> (organism)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/COB_0000022> "A material entity that is a maximal functionally integrated unit that develops from a program encoded in a genome"@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/COB_0000022> "'Maximal functionally integrated unit' is intended to express unity, which Barry considers synonymous with BFO 'object'."@en)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/COB_0000022> "Includes virus - we will later have a class for cellular organisms."@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000022> "organism"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000022> <http://purl.obolibrary.org/obo/UBERON_0000465>)
+
+# Class: <http://purl.obolibrary.org/obo/COB_0000035> (completely executed planned process)
+
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/COB_0000035> "completely executed planned process"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/COB_0000035> <http://purl.obolibrary.org/obo/BFO_0000015>)
+
 # Class: <http://purl.obolibrary.org/obo/GO_0003674> (molecular_function)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:pdt") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0003674> "A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs.")
@@ -1804,11 +1849,12 @@ AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#has
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0008150> "Wikipedia:Biological_process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "biological process")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "physiological process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "single organism process")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/GO_0008150> "single-organism process")
 AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GO_0008150> "Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological process"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0008150> "biological_process")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/BFO_0000015>)
-DisjointClasses(<http://purl.obolibrary.org/obo/GO_0008150> <http://purl.obolibrary.org/obo/OBI_0000011>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0016301> (kinase activity)
 
@@ -1833,40 +1879,6 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/IAO_0000078> "curation status specification"@en)
 EquivalentClasses(<http://purl.obolibrary.org/obo/IAO_0000078> ObjectOneOf(<http://purl.obolibrary.org/obo/IAO_0000002> <http://purl.obolibrary.org/obo/IAO_0000120> <http://purl.obolibrary.org/obo/IAO_0000121> <http://purl.obolibrary.org/obo/IAO_0000122> <http://purl.obolibrary.org/obo/IAO_0000123> <http://purl.obolibrary.org/obo/IAO_0000124> <http://purl.obolibrary.org/obo/IAO_0000125> <http://purl.obolibrary.org/obo/IAO_0000423> <http://purl.obolibrary.org/obo/IAO_0000428>))
 
-# Class: <http://purl.obolibrary.org/obo/OBI_0000011> (planned process)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0000011> "planned process")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0000011> "Injecting mice with a vaccine in order to test its efficacy")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0000011> "A process that realizes a plan which is the concretization of a plan specification."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000011> "'Plan' includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn't have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0000011> "We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some 
-objectives is a planned process.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0000011> "Bjoern Peters")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0000011> "branch derived")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OBI_0000011> "6/11/9: Edited at workshop. Used to include: is initiated by an agent")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000232> <http://purl.obolibrary.org/obo/OBI_0000011> "This class merges the previously separated objective driven process and planned process, as they the separation proved hard to maintain. (1/22/09, branch call)"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0000011> "planned process"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0000011> <http://purl.obolibrary.org/obo/BFO_0000015>)
-
-# Class: <http://purl.obolibrary.org/obo/OBI_0100026> (organism)
-
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000111> <http://purl.obolibrary.org/obo/OBI_0100026> "organism"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0100026> "animal"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0100026> "fungus"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0100026> "plant"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000112> <http://purl.obolibrary.org/obo/OBI_0100026> "virus"@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/OBI_0100026> <http://purl.obolibrary.org/obo/IAO_0000122>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OBI_0100026> "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0100026> "10/21/09: This is a placeholder term, that should ideally be imported from the NCBI taxonomy, but the high level hierarchy there does not suit our needs (includes plasmids and 'other organisms')")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OBI_0100026> "13-02-2009:
-OBI doesn't take position as to  when an organism starts or ends being an organism - e.g. sperm, foetus.
-This issue is outside the scope of OBI.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OBI_0100026> "GROUP: OBI Biomaterial Branch")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OBI_0100026> "WEB: http://en.wikipedia.org/wiki/Organism"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OBI_0100026> "organism"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OBI_0100026> <http://purl.obolibrary.org/obo/BFO_0000040>)
-
 # Class: <http://purl.obolibrary.org/obo/PATO_0000001> (quality)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PATOC:GVG") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PATO_0000001> "A dependent entity that inheres in a bearer by virtue of how the bearer is related to other entities")
@@ -1882,6 +1894,46 @@ AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.ob
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0002577> "system")
 SubClassOf(<http://purl.obolibrary.org/obo/RO_0002577> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
+# Class: <http://purl.obolibrary.org/obo/UBERON_0000465> (material anatomical entity)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://orcid.org/0000-0001-9114-8737") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0000465> "Anatomical entity that has mass.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "AAO:0010264")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "AEO:0000006")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "BILA:0000006")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "CARO:0000006")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "EHDAA2:0003006")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "FMA:67165")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "HAO:0000006")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "TAO:0001836")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "TGMA:0001826")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0000465> "VHOG:0001721")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0000465> "material anatomical entity")
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/BFO_0000040>)
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0000465> <http://purl.obolibrary.org/obo/UBERON_0001062>)
+
+# Class: <http://purl.obolibrary.org/obo/UBERON_0001062> (anatomical entity)
+
+AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "FMA:62955") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "http://orcid.org/0000-0001-9114-8737") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/UBERON_0001062> "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "AAO:0010841")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "AEO:0000000")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "BFO:0000004")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "BILA:0000000")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "BIRNLEX:6")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "CARO:0000000")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "EHDAA2:0002229")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "FMA:62955")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "HAO:0000000")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "MA:0000001")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "NCIT:C12219")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "TAO:0100000")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "TGMA:0001822")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "WBbt:0000100")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "XAO:0000000")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/UBERON_0001062> "ZFA:0100000")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/UBERON_0001062> "anatomical entity")
+EquivalentClasses(<http://purl.obolibrary.org/obo/UBERON_0001062> ObjectHasSelf(<http://purl.obolibrary.org/obo/RO_0020105>))
+SubClassOf(<http://purl.obolibrary.org/obo/UBERON_0001062> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
 
 ############################
 #   Named Individuals
@@ -1889,6 +1941,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/RO_0002577> <http://purl.obolibrary.o
 
 # Individual: <http://purl.obolibrary.org/obo/ENVO_01001569> (Western Australian Mulga Shrublands Ecoregion)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/ENVO_01001569> "Western Australia Ecoregion")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001569> "WWF:AA1310")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001569> "https://www.worldwildlife.org/ecoregions/aa1310")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001569> "Western Australian Mulga Shrublands Ecoregion"@en)
@@ -1901,6 +1954,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001571> "A
 
 # Individual: <http://purl.obolibrary.org/obo/ENVO_01001572> (Tirari-Sturt Stony Desert Ecoregion)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/ENVO_01001572> "Southern central Australia Ecoregion"@en)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001572> "WWF:AA1309")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001572> "https://www.worldwildlife.org/ecoregions/aa1309")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001572> "Tirari-Sturt Stony Desert Ecoregion")
@@ -1908,6 +1962,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 # Individual: <http://purl.obolibrary.org/obo/ENVO_01001573> (Simpson Desert Region)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/ENVO_01001573> "Eastern central Australia Ecoregion")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001573> "WWF:AA1308")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001573> "https://www.worldwildlife.org/ecoregions/aa1308")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001573> "Simpson Desert Region"@en)
@@ -1915,6 +1970,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 # Individual: <http://purl.obolibrary.org/obo/ENVO_01001574> (Pilbara Shrublands Ecoregion)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/ENVO_01001574> "Western Australia Ecoregion")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001574> "WWF:AA1307")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001574> "https://www.worldwildlife.org/ecoregions/aa1307")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001574> "Pilbara Shrublands Ecoregion"@en)
@@ -1922,6 +1978,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 # Individual: <http://purl.obolibrary.org/obo/ENVO_01001575> (Carnarvon Xeric Shrublands Ecoregion)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/ENVO_01001575> "Western coast of Australia Ecoregion")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001575> "WWF:AA1301")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001575> "https://www.worldwildlife.org/ecoregions/aa1301")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001575> "Carnarvon Xeric Shrublands Ecoregion"@en)
@@ -1929,6 +1986,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 # Individual: <http://purl.obolibrary.org/obo/ENVO_01001576> (Central Ranges Xeric Shrub Ecoregion)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/ENVO_01001576> "Central Australia Ecoregion")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001576> "WWF:AA1302")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001576> "https://www.worldwildlife.org/ecoregions/aa1302")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001576> "Central Ranges Xeric Shrub Ecoregion"@en)
@@ -1936,6 +1994,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 # Individual: <http://purl.obolibrary.org/obo/ENVO_01001577> (Gibson Desert Ecoregion)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/ENVO_01001577> "Western central Australia")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001577> "WWF:AA1303")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001577> "https://www.worldwildlife.org/ecoregions/aa1303")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001577> "Gibson Desert Ecoregion"@en)
@@ -1943,6 +2002,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 # Individual: <http://purl.obolibrary.org/obo/ENVO_01001578> (The Great Sandy-Tanami Desert Ecoregion)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/ENVO_01001578> "Northwestern Australia")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001578> "WWF:AA1304")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001578> "https://www.worldwildlife.org/ecoregions/aa1304")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001578> "The Great Sandy-Tanami Desert Ecoregion"@en)
@@ -1950,6 +2010,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 # Individual: <http://purl.obolibrary.org/obo/ENVO_01001579> (Great Victoria Desert Ecoregion)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/ENVO_01001579> "Southern Australia Ecoregion")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001579> "WWF:AA1305")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001579> "https://www.worldwildlife.org/ecoregions/aa1305")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001579> "Great Victoria Desert Ecoregion"@en)
@@ -1957,6 +2018,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 # Individual: <http://purl.obolibrary.org/obo/ENVO_01001580> (Nullarbor Plains Xeric Shrubland Ecoregion)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/ENVO_01001580> "Southern Australia Ecoregion")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001580> "WWF:AA1306")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001580> "https://www.worldwildlife.org/ecoregions/aa1306")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001580> "Nullarbor Plains Xeric Shrubland Ecoregion"@en)
@@ -1969,6 +2031,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001583> "A
 
 # Individual: <http://purl.obolibrary.org/obo/ENVO_01001584> (Succulent Karoo Ecoregion)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/ENVO_01001584> "Southern Africa: Southern Namibia into South Africa")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001584> "WWF:AT1322")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001584> "https://www.worldwildlife.org/ecoregions/at1322")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001584> "Succulent Karoo Ecoregion"@en)
@@ -2000,6 +2063,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 # Individual: <http://purl.obolibrary.org/obo/ENVO_01001588> (Socotran Archipelago Ecoregion)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/ENVO_01001588> "Islands east of the Horn of Africa and south of Yemen Ecoregion")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001588> "WWF:AT1318")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001588> "https://www.worldwildlife.org/ecoregions/at1318")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001588> "Socotran Archipelago Ecoregion"@en)
@@ -2021,6 +2085,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 # Individual: <http://purl.obolibrary.org/obo/ENVO_01001591> (Namib Desert Ecoregion)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/ENVO_01001591> "Africa: Namibia Ecoregion")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001591> "WWF:AT1315")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001591> "https://www.worldwildlife.org/ecoregions/at1315")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001591> "Namib Desert Ecoregion"@en)
@@ -2080,6 +2145,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 # Individual: <http://purl.obolibrary.org/obo/ENVO_01001599> (Hobyo Grassland and Shrubland Ecoregion)
 
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym> <http://purl.obolibrary.org/obo/ENVO_01001599> "Eastern Africa: Somalia")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001599> "WWF:AT1307")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001599> "https://www.worldwildlife.org/ecoregions/at1307")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001599> "Hobyo Grassland and Shrubland Ecoregion"@en)
@@ -2139,6 +2205,7 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001626> "I
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001627> <https://www.worldwildlife.org/ecoregions/im1304>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001627> "WWF:IM1304")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/ENVO_01001627> "Southern Asia: Western India into Pakistan")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001627> "Thar Desert"@en)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/ENVO_01001627> <http://purl.obolibrary.org/obo/ENVO_01001626>)
 
@@ -2146,6 +2213,7 @@ ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://pur
 
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001628> <https://www.worldwildlife.org/ecoregions/im1303>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/ENVO_01001628> "WWF:IM1303")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym> <http://purl.obolibrary.org/obo/ENVO_01001628> "Southern Asia: Eastern India and western Pakistan")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/ENVO_01001628> "Northwestern Thorn Scrub Forests"@en)
 ObjectPropertyAssertion(<http://purl.obolibrary.org/obo/BFO_0000050> <http://purl.obolibrary.org/obo/ENVO_01001628> <http://purl.obolibrary.org/obo/ENVO_01001626>)
 
@@ -2292,7 +2360,7 @@ SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_00026
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0002630> <http://purl.obolibrary.org/obo/RO_0002630>) <http://purl.obolibrary.org/obo/RO_0002409>)
 SubObjectPropertyOf(ObjectPropertyChain(<http://purl.obolibrary.org/obo/RO_0009501> <http://purl.obolibrary.org/obo/RO_0002233>) <http://purl.obolibrary.org/obo/RO_0004028>)
 SubObjectPropertyOf(ObjectPropertyChain(ObjectInverseOf(<http://purl.obolibrary.org/obo/BFO_0000066>) <http://purl.obolibrary.org/obo/RO_0002234>) <http://purl.obolibrary.org/obo/RO_0003000>)
-DLSafeRule(Body(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002180> Variable(<urn:swrl:var#w>) Variable(<urn:swrl:var#p>)) ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000015> Variable(<urn:swrl:var#w>)) ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000015> Variable(<urn:swrl:var#p>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002018> Variable(<urn:swrl:var#w>) Variable(<urn:swrl:var#p>))))
+DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000015> Variable(<urn:swrl:var#w>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002180> Variable(<urn:swrl:var#w>) Variable(<urn:swrl:var#p>)) ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000015> Variable(<urn:swrl:var#p>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0002018> Variable(<urn:swrl:var#w>) Variable(<urn:swrl:var#p>))))
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000016> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000091> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000019> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000086> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
 DLSafeRule(Body(ClassAtom(<http://purl.obolibrary.org/obo/BFO_0000023> Variable(<urn:swrl:var#d>)) ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000053> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>)))Head(ObjectPropertyAtom(<http://purl.obolibrary.org/obo/RO_0000087> Variable(<urn:swrl:var#e>) Variable(<urn:swrl:var#d>))))
