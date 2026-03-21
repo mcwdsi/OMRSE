@@ -443,6 +443,8 @@ Declaration(ObjectProperty(obo:RO_0002350))
 Declaration(ObjectProperty(obo:RO_0002351))
 Declaration(DataProperty(obo:OMRSE_00000136))
 Declaration(DataProperty(obo:OMRSE_00000137))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-6378-1703>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-9881-1017>))
 Declaration(AnnotationProperty(obo:IAO_0000111))
 Declaration(AnnotationProperty(obo:IAO_0000112))
 Declaration(AnnotationProperty(obo:IAO_0000115))
@@ -3883,6 +3885,21 @@ SubClassOf(obo:OMRSE_00002072 ObjectAllValuesFrom(obo:RO_0000052 obo:BFO_0000040
 # Class: obo:PCO_0000020 (family)
 
 SubClassOf(obo:PCO_0000020 obo:OMRSE_00000022)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://orcid.org/0000-0001-6378-1703> (Matthew Diller)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-6378-1703> "Matthew Diller"@en)
+ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0001-6378-1703>)
+
+# Individual: <https://orcid.org/0000-0002-9881-1017> (William R. Hogan)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-9881-1017> "William R. Hogan"@en)
+ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0002-9881-1017>)
 
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
