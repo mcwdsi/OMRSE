@@ -17,7 +17,7 @@ Ontology: <http://purl.obolibrary.org/obo/omrse/omrse-idranges.owl>
 Annotations: 
     idsfor: "OMRSE",
     idprefix: "http://purl.obolibrary.org/obo/OMRSE_",
-    iddigits: 7
+    iddigits: 8
 
 AnnotationProperty: idprefix:
 
