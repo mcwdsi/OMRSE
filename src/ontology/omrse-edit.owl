@@ -3308,7 +3308,7 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000305 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000305 "married"@en)
 SubClassOf(obo:OMRSE_00000305 obo:OMRSE_00000304)
 
-# Class: obo:OMRSE_00000306 (categorial household wealth index)
+# Class: obo:OMRSE_00000306 (categorical household wealth index)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000306 "A socio-economic data item about a household's cumulative living standard represented in a categorical datum. The wealth index is calculated using data on a household's ownership of selected assets, such as televisions and bicycles; materials used for housing construction; and types of water access and sanitation facilities."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000306 "William R. Hogan"@en)
@@ -3320,7 +3320,7 @@ AnnotationAssertion(terms:contributor obo:OMRSE_00000306 <https://orcid.org/0000
 AnnotationAssertion(terms:creator obo:OMRSE_00000306 <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:OMRSE_00000306 obo:EUPATH_0000143)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000306 "Per agreement with VEUPathDB team, OMRSE is taking ownership of this class and cross-referencing back to EUPATH IRIs."@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_00000306 "categorial household wealth index"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000306 "categorical household wealth index"@en)
 SubClassOf(obo:OMRSE_00000306 obo:OMRSE_00000506)
 
 # Class: obo:OMRSE_00000307 (numerical household wealth index)
