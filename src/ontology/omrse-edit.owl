@@ -346,6 +346,11 @@ Declaration(Class(obo:OMRSE_00000302))
 Declaration(Class(obo:OMRSE_00000303))
 Declaration(Class(obo:OMRSE_00000304))
 Declaration(Class(obo:OMRSE_00000305))
+Declaration(Class(obo:OMRSE_00000306))
+Declaration(Class(obo:OMRSE_00000307))
+Declaration(Class(obo:OMRSE_00000308))
+Declaration(Class(obo:OMRSE_00000309))
+Declaration(Class(obo:OMRSE_00000310))
 Declaration(Class(obo:OMRSE_00000500))
 Declaration(Class(obo:OMRSE_00000501))
 Declaration(Class(obo:OMRSE_00000502))
@@ -448,6 +453,8 @@ Declaration(ObjectProperty(obo:RO_0002351))
 Declaration(ObjectProperty(oboInOwl:ObsoleteProperty))
 Declaration(DataProperty(obo:OMRSE_00000136))
 Declaration(DataProperty(obo:OMRSE_00000137))
+Declaration(NamedIndividual(<https://orcid.org/0000-0001-6378-1703>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0002-9881-1017>))
 Declaration(AnnotationProperty(obo:IAO_0000111))
 Declaration(AnnotationProperty(obo:IAO_0000112))
 Declaration(AnnotationProperty(obo:IAO_0000115))
@@ -3301,6 +3308,75 @@ AnnotationAssertion(dc:contributor obo:OMRSE_00000305 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000305 "married"@en)
 SubClassOf(obo:OMRSE_00000305 obo:OMRSE_00000304)
 
+# Class: obo:OMRSE_00000306 (categorical household wealth index)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000306 "A socio-economic data item about a household's cumulative living standard represented in a categorical datum. The wealth index is calculated using data on a household's ownership of selected assets, such as televisions and bicycles; materials used for housing construction; and types of water access and sanitation facilities."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000306 "William R. Hogan"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000306 "Chris Stoeckert"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000306 "David Roos"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000306 "Grant Dorsey"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000306 "Jie Zheng"@en)
+AnnotationAssertion(terms:contributor obo:OMRSE_00000306 <https://orcid.org/0000-0001-6378-1703>)
+AnnotationAssertion(terms:creator obo:OMRSE_00000306 <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:OMRSE_00000306 obo:EUPATH_0000143)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000306 "Per agreement with VEUPathDB team, OMRSE is taking ownership of this class and cross-referencing back to EUPATH IRIs."@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000306 "categorical household wealth index"@en)
+SubClassOf(obo:OMRSE_00000306 obo:OMRSE_00000506)
+
+# Class: obo:OMRSE_00000307 (numerical household wealth index)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000307 "A socio-economic data item of a household's cumulative living standard represented in a numerical datum."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000307 "William R. Hogan"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000307 "Chris Stoeckert"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000307 "Jie Zheng"@en)
+AnnotationAssertion(terms:contributor obo:OMRSE_00000307 <https://orcid.org/0000-0001-6378-1703>)
+AnnotationAssertion(terms:creator obo:OMRSE_00000307 <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:OMRSE_00000307 obo:EUPATH_0000014)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000307 "Per agreement with VEUPathDB team, OMRSE is taking ownership of this class and cross-referencing back to EUPATH IRIs."@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000307 "The wealth index is calculated using easy-to-collect data on a household's ownership of selected assets, such as televisions and bicycles; materials used for housing construction; and types of water access and sanitation facilities."@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000307 "numerical household wealth index"@en)
+SubClassOf(obo:OMRSE_00000307 obo:OMRSE_00000506)
+
+# Class: obo:OMRSE_00000308 (household assets data item)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000308 "A socio-economic data item about the possessions of a household that have monetary value and that is the output of a financial valuation process."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000308 "William R. Hogan"@en)
+AnnotationAssertion(dc:contributor obo:OMRSE_00000308 "Colbie Reed"@en)
+AnnotationAssertion(terms:contributor obo:OMRSE_00000308 <https://orcid.org/0000-0001-6378-1703>)
+AnnotationAssertion(terms:creator obo:OMRSE_00000308 <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000308 "household assets data item"@en)
+SubClassOf(obo:OMRSE_00000308 obo:OMRSE_00000506)
+SubClassOf(obo:OMRSE_00000308 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OMRSE_00000240))
+
+# Class: obo:OMRSE_00000309 (gesturing)
+
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000309 "Throwing up one’s hands in frustration, fist pump to indicate pride in a success."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000309 "A concretization utilization process whereby the participant moves one or more of its material parts in such a way that the part(s) moved bear one or more new qualities, possibly in succession, that collectively concretize the generically dependent continuant."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000309 "William R. Hogan"@en)
+AnnotationAssertion(terms:created obo:OMRSE_00000309 "2026-03-21T18:13:08Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:OMRSE_00000309 <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000309 "gesture"@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000309 "Note that the qualities are by and large shape qualities."@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000309 "Note that this excludes vocalization, because in that case, it is not the qualities of the parts moved--but qualities of the air--that concretize the generically dependent continuant."@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000309 "This is separate from “gestural communication”. You can fist pump, signal touchdown, and throw up your hands in frustration when alone or otherwise not intending to communicate, and yet you have concretized a GDC and thus gestured."@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000309 "gesturing"@en)
+SubClassOf(obo:OMRSE_00000309 obo:OMRSE_00002062)
+
+# Class: obo:OMRSE_00000310 (purely gestural communication)
+
+AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000310 "Waving hello, an usher waving a patron to her seat, placing the index finger in front of the mouth to order another to be silent, signaling someone in a crowd to come over."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000310 "A communication carried out only through gesturing."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000310 "William R. Hogan"@en)
+AnnotationAssertion(terms:created obo:OMRSE_00000310 "2026-03-21T18:18:14Z"^^xsd:dateTime)
+AnnotationAssertion(terms:creator obo:OMRSE_00000310 <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(oboInOwl:hasBroadSynonym obo:OMRSE_00000310 "gestural communication"@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000310 "Differs from gesturing because now we add the fact that there is another entity that is doing a concretization interpretation process."@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000310 "Excludes vocalization and writing. It could include gesturing the letters, though. For example, the Y-M-C-A motions without vocalizing “why—emm—see—ayy” would be gestural communication."@en)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000310 "Most linguistic communication with a human speaker that occurs via vocalization also includes gesturing. Here we are concerned with gesture-only communication."@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000310 "purely gestural communication"@en)
+SubClassOf(obo:OMRSE_00000310 obo:OMRSE_00002068)
+SubClassOf(obo:OMRSE_00000310 ObjectIntersectionOf(obo:OMRSE_00002068 ObjectSomeValuesFrom(ObjectInverseOf(obo:RO_0002012) obo:OMRSE_00000309)))
+
 # Class: obo:OMRSE_00000500 (job role data item)
 
 AnnotationAssertion(obo:IAO_0000112 obo:OMRSE_00000500 "Can be about any aspect of employment, such as salary, work location, or employer."@en)
@@ -3335,8 +3411,13 @@ SubClassOf(obo:OMRSE_00000503 obo:OMRSE_00000506)
 
 # Class: obo:OMRSE_00000504 (government assistance income data item)
 
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000504 "A monetary personal income data item that is about solely the income an individual receives from a governmental organization through a program designed to provide low or no-income individuals with money to offset at least some costs of housing, food, or other necessities."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000504 "William R. Hogan"@en)
+AnnotationAssertion(terms:contributor obo:OMRSE_00000504 <https://orcid.org/0000-0001-6378-1703>)
+AnnotationAssertion(terms:creator obo:OMRSE_00000504 <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(rdfs:comment obo:OMRSE_00000504 "It excludes employment income for government employees."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000504 "government assistance income data item"@en)
-SubClassOf(obo:OMRSE_00000504 obo:OMRSE_00000506)
+SubClassOf(obo:OMRSE_00000504 obo:OMRSE_00002061)
 
 # Class: obo:OMRSE_00000505 (WIC data item)
 
@@ -3437,7 +3518,7 @@ SubClassOf(obo:OMRSE_00000931 obo:IAO_0000027)
 # Class: obo:OMRSE_00002029 (education process)
 
 AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00002029 "educating"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002029 "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00002029 "A planned process with an active participant who acquires mental representations of information content entities, which had no previous mental representation in the cognitive system, and through repeated use or application of these information content entities either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00002029 "William R. Hogan"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00002029 "learning process"@en)
 AnnotationAssertion(obo:IAO_0000600 obo:OMRSE_00002029 "An act of acquiring new information and repeatedly applying that information to develop a new skill, improve an existing skill, and/or losing a skill at doing something \"bad\"."@en)
@@ -3950,6 +4031,21 @@ SubClassOf(obo:OMRSE_00002072 ObjectAllValuesFrom(obo:RO_0000052 obo:BFO_0000040
 # Class: obo:PCO_0000020 (family)
 
 SubClassOf(obo:PCO_0000020 obo:OMRSE_00000022)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://orcid.org/0000-0001-6378-1703> (Matthew Diller)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-6378-1703> "Matthew Diller"@en)
+ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0001-6378-1703>)
+
+# Individual: <https://orcid.org/0000-0002-9881-1017> (William R. Hogan)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-9881-1017> "William R. Hogan"@en)
+ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0002-9881-1017>)
 
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
