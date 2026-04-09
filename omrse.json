@@ -70,9 +70,9 @@
         "val" : "This ontology grew out of efforts to represent the reality underlying the demographic information required by the US federal government's \"meaningful use\" criteria for electronic medical records and a presentation by Dr. William Hogan at the Electronic Health Record of the Future conference in Buffalo, NY http://ontology.buffalo.edu/EHR/Demographics_Hogan_Buffalo_2010_09_22.ppt"
       }, {
         "pred" : "http://www.w3.org/2002/07/owl#versionInfo",
-        "val" : "2026-03-05"
+        "val" : "2026-04-07"
       } ],
-      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2026-03-05/omrse.json"
+      "version" : "http://purl.obolibrary.org/obo/omrse/releases/2026-04-07/omrse.json"
     },
     "nodes" : [ {
       "id" : "http://purl.obolibrary.org/obo/APOLLO_SV_00000032",
@@ -951,6 +951,9 @@
           "val" : "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements."
         },
         "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
+          "val" : "data entity"
+        }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000111",
           "val" : "data item"
         }, {
@@ -7174,6 +7177,146 @@
         } ]
       }
     }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000306",
+      "lbl" : "categorical household wealth index",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A socio-economic data item about a household's cumulative living standard represented in a categorical datum. The wealth index is calculated using data on a household's ownership of selected assets, such as televisions and bicycles; materials used for housing construction; and types of water access and sanitation facilities."
+        },
+        "comments" : [ "Per agreement with VEUPathDB team, OMRSE is taking ownership of this class and cross-referencing back to EUPATH IRIs." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Chris Stoeckert"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "David Roos"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Grant Dorsey"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Jie Zheng"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6378-1703"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-9881-1017"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+          "val" : "http://purl.obolibrary.org/obo/EUPATH_0000143"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000307",
+      "lbl" : "numerical household wealth index",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A socio-economic data item of a household's cumulative living standard represented in a numerical datum."
+        },
+        "comments" : [ "Per agreement with VEUPathDB team, OMRSE is taking ownership of this class and cross-referencing back to EUPATH IRIs.", "The wealth index is calculated using easy-to-collect data on a household's ownership of selected assets, such as televisions and bicycles; materials used for housing construction; and types of water access and sanitation facilities." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Chris Stoeckert"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Jie Zheng"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6378-1703"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-9881-1017"
+        }, {
+          "pred" : "http://www.geneontology.org/formats/oboInOwl#hasDbXref",
+          "val" : "http://purl.obolibrary.org/obo/EUPATH_0000014"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000308",
+      "lbl" : "household assets data item",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A socio-economic data item about the possessions of a household that have monetary value and that is the output of a financial valuation process."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/elements/1.1/contributor",
+          "val" : "Colbie Reed"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6378-1703"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-9881-1017"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000309",
+      "lbl" : "gesturing",
+      "type" : "CLASS",
+      "meta" : {
+        "comments" : [ "Note that the qualities are by and large shape qualities.", "Note that this excludes vocalization, because in that case, it is not the qualities of the parts moved--but qualities of the air--that concretize the generically dependent continuant.", "This is separate from “gestural communication”. You can fist pump, signal touchdown, and throw up your hands in frustration when alone or otherwise not intending to communicate, and yet you have concretized a GDC and thus gestured." ],
+        "synonyms" : [ {
+          "pred" : "hasExactSynonym",
+          "val" : "gesture"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "Throwing up one’s hands in frustration, fist pump to indicate pride in a success."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "A concretization utilization process whereby the participant moves one or more of its material parts in such a way that the part(s) moved bear one or more new qualities, possibly in succession, that collectively concretize the generically dependent continuant."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2026-03-21T18:13:08Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-9881-1017"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMRSE_00000310",
+      "lbl" : "purely gestural communication",
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A communication carried out only through gesturing."
+        },
+        "comments" : [ "Differs from gesturing because now we add the fact that there is another entity that is doing a concretization interpretation process.", "Excludes vocalization and writing. It could include gesturing the letters, though. For example, the Y-M-C-A motions without vocalizing “why—emm—see—ayy” would be gestural communication.", "Most linguistic communication with a human speaker that occurs via vocalization also includes gesturing. Here we are concerned with gesture-only communication." ],
+        "synonyms" : [ {
+          "pred" : "hasBroadSynonym",
+          "val" : "gestural communication"
+        } ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "Waving hello, an usher waving a patron to her seat, placing the index finger in front of the mouth to order another to be silent, signaling someone in a crowd to come over."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2026-03-21T18:18:14Z"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-9881-1017"
+        } ]
+      }
+    }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000500",
       "lbl" : "job role data item",
       "type" : "CLASS",
@@ -7235,7 +7378,23 @@
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000504",
       "lbl" : "government assistance income data item",
-      "type" : "CLASS"
+      "type" : "CLASS",
+      "meta" : {
+        "definition" : {
+          "val" : "A monetary personal income data item that is about solely the income an individual receives from a governmental organization through a program designed to provide low or no-income individuals with money to offset at least some costs of housing, food, or other necessities."
+        },
+        "comments" : [ "It excludes employment income for government employees." ],
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000117",
+          "val" : "William R. Hogan"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0001-6378-1703"
+        }, {
+          "pred" : "http://purl.org/dc/terms/creator",
+          "val" : "https://orcid.org/0000-0002-9881-1017"
+        } ]
+      }
     }, {
       "id" : "http://purl.obolibrary.org/obo/OMRSE_00000505",
       "lbl" : "WIC data item",
@@ -7441,7 +7600,7 @@
       "type" : "CLASS",
       "meta" : {
         "definition" : {
-          "val" : "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative."
+          "val" : "A planned process with an active participant who acquires mental representations of information content entities, which had no previous mental representation in the cognitive system, and through repeated use or application of these information content entities either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative."
         },
         "comments" : [ "An interesting question is whether there must be another participant who is the \"educator\".  Some might object that many people are \"self taught\".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the tip of a finger.  There was no previous information about that type of skill.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow \"plays a role\" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).", "The loss of a \"bad\" capability is something like losing a bad golf swing and replacing it with a good one.  Also a capability to disrupt the classroom might be something an educating process diminishes possibly to the point of \"removal\" in a student.\n\nThis addition to the definition notwithstanding, we do not intend to incorporate the receipt of punishment into the definition of educating." ],
         "basicPropertyValues" : [ {
@@ -19977,6 +20136,14 @@
         } ]
       }
     }, {
+      "id" : "https://orcid.org/0000-0001-6378-1703",
+      "lbl" : "Matthew Diller",
+      "type" : "INDIVIDUAL"
+    }, {
+      "id" : "https://orcid.org/0000-0002-9881-1017",
+      "lbl" : "William R. Hogan",
+      "type" : "INDIVIDUAL"
+    }, {
       "id" : "https://orcid.org/0000-0003-1909-9269",
       "lbl" : "S. Clint Dowland",
       "type" : "INDIVIDUAL",
@@ -20266,6 +20433,9 @@
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
           "val" : "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "the URL for an ontology term tracker issue, such as https://github.com/monarch-initiative/mondo/issues/7588"
         }, {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000114",
           "val" : "http://purl.obolibrary.org/obo/IAO_0000125"
@@ -20800,7 +20970,7 @@
       "propertyType" : "ANNOTATION",
       "meta" : {
         "definition" : {
-          "val" : "A synonym type for describing abbreviations or initalisms"
+          "val" : "A synonym type for describing abbreviations or initialisms"
         },
         "basicPropertyValues" : [ {
           "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
@@ -21082,6 +21252,29 @@
         }, {
           "pred" : "http://purl.org/dc/terms/created",
           "val" : "2023-11-01"
+        } ]
+      }
+    }, {
+      "id" : "http://purl.obolibrary.org/obo/OMO_0003014",
+      "lbl" : "has ontology hierarchical property",
+      "type" : "PROPERTY",
+      "propertyType" : "ANNOTATION",
+      "meta" : {
+        "definition" : {
+          "val" : "Relates an ontology to predicates/properties that should be used by user interfaces to render the hierarchical structure of the ontology. Typically, this is rdfs:subClassOf, but in ontologies that are partonomies, this might also include BFO:0000050 (part of). Tools like OLS can use predicates annotated with this property for rendering the ontology class hierarchy. There can be more than one hierarchical property. In the absence of any, it should be assumed that it is rdfs:subClassOf."
+        },
+        "basicPropertyValues" : [ {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000112",
+          "val" : "The Developing Mouse Brain Atlas Ontology (DBMA) ontology uses part-of in its hierarchy, so this would correspond to the following turtle: `<https://purl.brain-bican.org/ontology/dmbao/dmbao.owl> a owl:Ontology; OMO:0003014 rdfs:subClassOf, BFO:0000050`."
+        }, {
+          "pred" : "http://purl.obolibrary.org/obo/IAO_0000233",
+          "val" : "https://github.com/information-artifact-ontology/IAO/issues/292"
+        }, {
+          "pred" : "http://purl.org/dc/terms/contributor",
+          "val" : "https://orcid.org/0000-0003-4423-4370"
+        }, {
+          "pred" : "http://purl.org/dc/terms/created",
+          "val" : "2025-09-17"
         } ]
       }
     }, {
@@ -23358,6 +23551,30 @@
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000304"
     }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000306",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000506"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000307",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000506"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000308",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000506"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000308",
+      "pred" : "http://purl.obolibrary.org/obo/OBI_0000312",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000240"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000309",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002062"
+    }, {
+      "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000310",
+      "pred" : "is_a",
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002068"
+    }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000500",
       "pred" : "is_a",
       "obj" : "http://purl.obolibrary.org/obo/IAO_0000027"
@@ -23376,7 +23593,7 @@
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000504",
       "pred" : "is_a",
-      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00000506"
+      "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002061"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000505",
       "pred" : "is_a",
@@ -25453,6 +25670,14 @@
       "sub" : "http://purl.obolibrary.org/obo/OMRSE_00000923",
       "pred" : "type",
       "obj" : "http://purl.obolibrary.org/obo/OMRSE_00002069"
+    }, {
+      "sub" : "https://orcid.org/0000-0001-6378-1703",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
+    }, {
+      "sub" : "https://orcid.org/0000-0002-9881-1017",
+      "pred" : "type",
+      "obj" : "http://purl.obolibrary.org/obo/NCBITaxon_9606"
     }, {
       "sub" : "http://purl.obolibrary.org/obo/ENVO_01001569",
       "pred" : "http://purl.obolibrary.org/obo/BFO_0000050",

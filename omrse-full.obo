@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: omrse/releases/2026-03-05/omrse-full.owl
+data-version: omrse/releases/2026-04-07/omrse-full.owl
 synonymtypedef: OMO:0003000 "abbreviation"
 synonymtypedef: OMO:0003001 "ambiguous synonym"
 synonymtypedef: OMO:0003002 "dubious synonym"
@@ -39,7 +39,7 @@ property_value: dc:creator "Mathias Brochhausen" xsd:string
 property_value: dc:creator "Shariq Tariq" xsd:string
 property_value: dc:creator "Swetha Garimalla" xsd:string
 property_value: dc:creator "William Hogan" xsd:string
-property_value: owl:versionInfo "2026-03-05" xsd:string
+property_value: owl:versionInfo "2026-04-07" xsd:string
 property_value: terms:creator https://orcid.org/0000-0002-9881-1017
 property_value: terms:description "The Ontology for Modeling and Representation of Social Entities (OMRSE) is an OBO Foundry ontology that represents the various entities that arise from human social interactions, such as social acts, social roles, social groups, and organizations." xsd:string
 property_value: terms:license "https://creativecommons.org/licenses/by/4.0/" xsd:string
@@ -49,7 +49,7 @@ property_value: terms:title "Ontology for Modeling and Representation of Social 
 id: APOLLO_SV:00000032
 name: count
 def: "A measurement datum that is the output of counting." []
-is_a: IAO:0000027 ! data item
+is_a: IAO:0000027 ! data entity
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 property_value: IAO:0000600 "A measurement datum that is the output of counting." xsd:string
 
@@ -453,9 +453,10 @@ property_value: IAO:0000119 "OBI Plan and Planned Process branch" xsd:string
 
 [Term]
 id: IAO:0000027
-name: data item
+name: data entity
 def: "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements." []
 is_a: IAO:0000030 ! information content entity
+property_value: IAO:0000111 "data entity" xsd:string
 property_value: IAO:0000111 "data item" xsd:string
 property_value: IAO:0000112 "Data items include counts of things, analyte concentrations, and statistical summaries." xsd:string
 property_value: IAO:0000116 "2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers." xsd:string
@@ -523,7 +524,7 @@ property_value: IAO:0000119 "OBI_0000266" xsd:string
 id: IAO:0000100
 name: data set
 def: "A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets." []
-is_a: IAO:0000027 ! data item
+is_a: IAO:0000027 ! data entity
 property_value: IAO:0000111 "data set" xsd:string
 property_value: IAO:0000112 "Intensity values in a CEL file or from multiple CEL files comprise a data set (as opposed to the CEL files themselves)." xsd:string
 property_value: IAO:0000116 "2009/10/23 Alan Ruttenberg. The intention is that this term represent collections of like data. So this isn't for, e.g. the whole contents of a cel file, which includes parameters, metadata etc. This is more like java arrays of a certain rather specific type" xsd:string
@@ -537,7 +538,7 @@ property_value: IAO:0000119 "OBI_0000042" xsd:string
 id: IAO:0000102
 name: data about an ontology part
 def: "Data about an ontology part is a data item about a part of an ontology, for example a term" []
-is_a: IAO:0000027 ! data item
+is_a: IAO:0000027 ! data entity
 property_value: IAO:0000111 "data about an ontology part" xsd:string
 property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
 
@@ -592,7 +593,7 @@ property_value: IAO:0000119 "Barry Smith, Werner Ceusters" xsd:string
 id: IAO:0000416
 name: time measurement datum
 def: "A scalar measurement datum that is the result of measuring a temporal interval" []
-is_a: IAO:0000027 ! data item
+is_a: IAO:0000027 ! data entity
 property_value: IAO:0000116 "2009/09/28 Alan Ruttenberg. Fucoidan-use-case" xsd:string
 property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
 
@@ -976,7 +977,7 @@ property_value: IAO:0000119 "OBI branch derived" xsd:string
 id: OBIB:0000667
 name: survey data
 def: "A data item that contains the outcome of a survey." []
-is_a: IAO:0000027 ! data item
+is_a: IAO:0000027 ! data entity
 property_value: IAO:0000117 "Alice Nzinga" xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
@@ -3138,7 +3139,7 @@ property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 id: OMRSE:00000234
 name: county smoking rate data
 def: "A data item that is the specified output of a smoking rate calculation that has data about smoking behavior or lack there of on a county level." []
-is_a: IAO:0000027 ! data item
+is_a: IAO:0000027 ! data entity
 property_value: IAO:0000112 "The Alachua County smoking rate." xsd:string
 property_value: IAO:0000117 "Mathias Brochhausen" xsd:string
 
@@ -3316,7 +3317,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 id: OMRSE:00000255
 name: proportion of population in an elementary occupation
 def: "A data item that is the output of some data transformation that takes as input the number of individuals in a population who are occupation holders and has as output the proportion of those individuals who are classified by the European Skills, Competences, Qualifications and Occupations as door-to-door sales worker, news or street vendors; building cleaning workers; pressers, textile, garment, or related materials; septic tank servicers or sewer pipe cleaners; farmworkers or laborers, crop, nursery, or greenhouse; farmworkers, farm, ranch, or aquacultural animal; agricultural workers, all other; landscaping or groundskeeping workers; grounds maintenance workers, all other; forest or conservation workers; logging workers, all other; fishing or hunting workers; helpers--extraction workers; extraction workers, all other; helpers, construction trades; rail-track laying or maintenance equipment operators; construction laborers; helpers--production workers; production workers, all other; laborers or material movers; refuse or recyclable material collectors; couriers or messengers; material moving workers, all other; aircraft cargo handling supervisors; first-line supervisors of helpers, laborer, or material mover, hand; first-line supervisors of transportation worker, all other; tank car, truck, or ship loaders; cooks, fast food; cooks, short order; food preparation workers; dining room or cafeteria attendants or bartender helpers; dishwashers; food preparation or serving related workers, all other; personal care or service workers, all other; baggage porters or bellhops; maintenance or repair workers, general; installation, maintenance, or repair workers, all other; meter readers, utilities; coin, vending, or amusement machine servicers or repairers; motion picture projectionists; ushers, lobby attendants, or ticket takers; amusement or recreation attendants; locker room, coatroom, or dressing room attendants; and parking attendants." []
-is_a: IAO:0000027 ! data item
+is_a: IAO:0000027 ! data entity
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000116 "Currently, the Occupation Ontology (OccO ) only represents occupations as they are defined by O*NET. We define this class extentionally according to the O*NET-defined occupations that map to occupations in ESCO that are classified as elementary occupations." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -3605,7 +3606,7 @@ property_value: terms:contributor https://orcid.org/0000-0003-1909-9269
 id: OMRSE:00000292
 name: social category data item
 def: "A data item according to which a given person is a member of a given social category." []
-is_a: IAO:0000027 ! data item
+is_a: IAO:0000027 ! data entity
 relationship: IAO:0000136 NCBITaxon:9606 ! is about Homo sapiens
 relationship: IAO:0000136 OMRSE:00000267 ! is about social category
 property_value: IAO:0000117 "ORCID: 0000-0002-5039-2052" xsd:string
@@ -3728,10 +3729,73 @@ property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
 
 [Term]
+id: OMRSE:00000306
+name: categorical household wealth index
+def: "A socio-economic data item about a household's cumulative living standard represented in a categorical datum. The wealth index is calculated using data on a household's ownership of selected assets, such as televisions and bicycles; materials used for housing construction; and types of water access and sanitation facilities." []
+comment: Per agreement with VEUPathDB team, OMRSE is taking ownership of this class and cross-referencing back to EUPATH IRIs.
+xref: EUPATH:0000143
+is_a: OMRSE:00000506 ! socio-economic data item
+property_value: dc:contributor "Chris Stoeckert" xsd:string
+property_value: dc:contributor "David Roos" xsd:string
+property_value: dc:contributor "Grant Dorsey" xsd:string
+property_value: dc:contributor "Jie Zheng" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6378-1703
+property_value: terms:creator https://orcid.org/0000-0002-9881-1017
+
+[Term]
+id: OMRSE:00000307
+name: numerical household wealth index
+def: "A socio-economic data item of a household's cumulative living standard represented in a numerical datum." []
+comment: Per agreement with VEUPathDB team, OMRSE is taking ownership of this class and cross-referencing back to EUPATH IRIs.
+xref: EUPATH:0000014
+is_a: OMRSE:00000506 ! socio-economic data item
+property_value: dc:contributor "Chris Stoeckert" xsd:string
+property_value: dc:contributor "Jie Zheng" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6378-1703
+property_value: terms:creator https://orcid.org/0000-0002-9881-1017
+
+[Term]
+id: OMRSE:00000308
+name: household assets data item
+def: "A socio-economic data item about the possessions of a household that have monetary value and that is the output of a financial valuation process." []
+is_a: OMRSE:00000506 ! socio-economic data item
+relationship: OBI:0000312 OMRSE:00000240 ! is specified output of financial valuation process
+property_value: dc:contributor "Colbie Reed" xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6378-1703
+property_value: terms:creator https://orcid.org/0000-0002-9881-1017
+
+[Term]
+id: OMRSE:00000309
+name: gesturing
+comment: Note that the qualities are by and large shape qualities.
+synonym: "gesture" EXACT []
+is_a: OMRSE:00002062 ! concretization-utilization process
+property_value: IAO:0000112 "Throwing up one’s hands in frustration, fist pump to indicate pride in a success." xsd:string
+property_value: IAO:0000117 "A concretization utilization process whereby the participant moves one or more of its material parts in such a way that the part(s) moved bear one or more new qualities, possibly in succession, that collectively concretize the generically dependent continuant." xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:created "2026-03-21T18:13:08Z" xsd:dateTime
+property_value: terms:creator https://orcid.org/0000-0002-9881-1017
+
+[Term]
+id: OMRSE:00000310
+name: purely gestural communication
+def: "A communication carried out only through gesturing." []
+comment: Differs from gesturing because now we add the fact that there is another entity that is doing a concretization interpretation process.
+synonym: "gestural communication" BROAD []
+is_a: OMRSE:00002068 ! communication
+property_value: IAO:0000112 "Waving hello, an usher waving a patron to her seat, placing the index finger in front of the mouth to order another to be silent, signaling someone in a crowd to come over." xsd:string
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:created "2026-03-21T18:18:14Z" xsd:dateTime
+property_value: terms:creator https://orcid.org/0000-0002-9881-1017
+
+[Term]
 id: OMRSE:00000500
 name: job role data item
 def: "A data item that is about a person's job role and/or its realization." []
-is_a: IAO:0000027 ! data item
+is_a: IAO:0000027 ! data entity
 property_value: dc:contributor "Chris Stoeckert" xsd:string
 property_value: dc:contributor "S. Clint. Dowland" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -3761,7 +3825,12 @@ is_a: OMRSE:00000506 ! socio-economic data item
 [Term]
 id: OMRSE:00000504
 name: government assistance income data item
-is_a: OMRSE:00000506 ! socio-economic data item
+def: "A monetary personal income data item that is about solely the income an individual receives from a governmental organization through a program designed to provide low or no-income individuals with money to offset at least some costs of housing, food, or other necessities." []
+comment: It excludes employment income for government employees.
+is_a: OMRSE:00002061 ! monetary personal income data item
+property_value: IAO:0000117 "William R. Hogan" xsd:string
+property_value: terms:contributor https://orcid.org/0000-0001-6378-1703
+property_value: terms:creator https://orcid.org/0000-0002-9881-1017
 
 [Term]
 id: OMRSE:00000505
@@ -3772,7 +3841,7 @@ is_a: OMRSE:00000506 ! socio-economic data item
 id: OMRSE:00000506
 name: socio-economic data item
 def: "A data item about a person or population of people that indicates their access to material or social goods." []
-is_a: IAO:0000027 ! data item
+is_a: IAO:0000027 ! data entity
 property_value: dc:contributor "Colbie Reed" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
@@ -3855,7 +3924,7 @@ id: OMRSE:00000931
 name: poverty line
 def: "A data item of income level that is calculated based on what level of income is minimally adequate to afford basic necessities, such as housing or food." []
 comment: Federal poverty levels are used to determine your eligibility for certain programs and benefits, and are often calculated annually.
-is_a: IAO:0000027 ! data item
+is_a: IAO:0000027 ! data entity
 property_value: dc:contributor "Amanda Hicks" xsd:string
 property_value: dc:contributor "Colbie Reed" xsd:string
 property_value: dc:contributor "William R. Hogan" xsd:string
@@ -3864,7 +3933,7 @@ property_value: IAO:0000117 "Matthew Diller" xsd:string
 [Term]
 id: OMRSE:00002029
 name: education process
-def: "A planned process with an active participant who acquires mental representations of information content entities (ICEs), which had no previous mental representation in the cognitive system, and through repeated use or application of these ICEs either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative." []
+def: "A planned process with an active participant who acquires mental representations of information content entities, which had no previous mental representation in the cognitive system, and through repeated use or application of these information content entities either (1) becomes the bearer of a new instance of some type of capability, and the participant was not previously the bearer of that instance of that type of capability, (2) \"improves\" an existing capability as demonstrated through realization(s) of that capability, and/or (3) loses a capability whose realization is considered negative." []
 comment: An interesting question is whether there must be another participant who is the "educator".  Some might object that many people are "self taught".  A real case of being self taught is the first person who learned to play a stringed instrument, or to spin a ball on the tip of a finger.  There was no previous information about that type of skill.  The ICEs acquired are via one's sensory systems (vision, proprioception, auditory, etc.).\n\nOn the other hand, in the case of those who are self-taught by reading books or watching videos, or acquiring some other form of ICEs concretized outside their brain, one argument might be that the author of those ICEs somehow "plays a role" in the education, although they cannot participate in the education process itself (If I read Aristotle, and through repeated application of the information I acquire through doing so, develop the ability to write better ontology definitions, surely Aristotle did not actively participate in my particular education process, although he did influence it in a very real way).
 is_a: COB:0000035 ! completely executed planned process
 property_value: IAO:0000111 "educating" xsd:string
@@ -4219,7 +4288,7 @@ id: OMRSE:00002061
 name: monetary personal income data item
 def: "A data item that is about the sum of earnings for some person(s) from various forms of payment or profits." []
 comment: We use the phrase ‘some person’ in the definition because this class can be about an individual's or a household's earnings. Similarly, we use 'personal income' in the label because the term is typically restricted to individuals and households. This class is also restricted to being about monetary forms of income.
-is_a: IAO:0000027 ! data item
+is_a: IAO:0000027 ! data entity
 property_value: dc:contributor "Chris Stoeckert" xsd:string
 property_value: IAO:0000112 "Examples of monetary forms of payment include: wages, salary, or tips; interest generated by capital; dividends earned; lottery, game, or contest monetary winnings; alimony; royalties; trusts; pensions; receipt of rental payments; unemployment payments; social security payments; worker's compensation; social security payments; or profit from entrepreneurial activities." xsd:string
 property_value: IAO:0000117 "Matthew Diller" xsd:string
