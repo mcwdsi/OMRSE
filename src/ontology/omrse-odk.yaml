@@ -92,7 +92,11 @@ import_group:
       module_type: filter
       base_iris:
         - http://purl.obolibrary.org/obo/OCCO_
-      
+    - id: bcio
+      module_type: custom 
+      mirror_from: http://humanbehaviourchange.org/ontology/bcio.owl
+      base_iris:
+        - http://humanbehaviourchange.org/ontology/BCIO_      
 components:
   products:
     #- filename: education/omrse-education.owl

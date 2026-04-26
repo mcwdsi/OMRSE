@@ -15,6 +15,7 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 Ontology(<http://purl.obolibrary.org/obo/omrse.owl>
 Import(<http://purl.obolibrary.org/obo/omrse/components/language/language-individuals.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl>)
+Import(<http://purl.obolibrary.org/obo/omrse/imports/bcio_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/d-acts_import.owl>)
 Import(<http://purl.obolibrary.org/obo/omrse/imports/geo_import.owl>)
@@ -1278,11 +1279,12 @@ SubClassOf(obo:OMRSE_00000063 ObjectSomeValuesFrom(obo:BFO_0000067 obo:OMRSE_000
 
 # Class: obo:OMRSE_00000064 (school facility)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000064 "A facility that is run by a school organization and is the bearer of a school function."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000064 "An educational facility that is run by a school organization and is the bearer of a school function."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000064 "Mathias Brochhausen"@en)
+AnnotationAssertion(terms:contributor obo:OMRSE_00000064 <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000064 "school facility"@en)
-EquivalentClasses(obo:OMRSE_00000064 ObjectIntersectionOf(obo:OMRSE_00000062 ObjectUnionOf(ObjectSomeValuesFrom(obo:OBIB_0000735 obo:OMRSE_00000057) ObjectSomeValuesFrom(obo:OMRSE_00000068 obo:OMRSE_00000057)) ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000053)))
-SubClassOf(obo:OMRSE_00000064 obo:OMRSE_00000062)
+EquivalentClasses(obo:OMRSE_00000064 ObjectIntersectionOf(<http://humanbehaviourchange.org/ontology/BCIO_026022> ObjectUnionOf(ObjectSomeValuesFrom(obo:OBIB_0000735 obo:OMRSE_00000057) ObjectSomeValuesFrom(obo:OMRSE_00000068 obo:OMRSE_00000057)) ObjectSomeValuesFrom(obo:RO_0000053 obo:OMRSE_00000053)))
+SubClassOf(obo:OMRSE_00000064 <http://humanbehaviourchange.org/ontology/BCIO_026022>)
 
 # Class: obo:OMRSE_00000065 (secondary school role)
 

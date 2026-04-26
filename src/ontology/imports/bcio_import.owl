@@ -1,0 +1,294 @@
+Prefix(:=<http://purl.obolibrary.org/obo/omrse/imports/bcio_import.owl#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(sdg:=<http://purl.unep.org/sdg/>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+Prefix(sssom:=<https://w3id.org/sssom/>)
+Prefix(terms:=<http://purl.org/dc/terms/>)
+Prefix(schema:=<https://schema.org/>)
+Prefix(Property:=<https://www.wikidata.org/wiki/Property:>)
+Prefix(metadata:=<http://data.bioontology.org/metadata/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
+Prefix(owlready_ontology:=<http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#>)
+
+
+Ontology(<http://purl.obolibrary.org/obo/omrse/imports/bcio_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2026-04-26/imports/bcio_import.owl>
+Annotation(dc:source <http://humanbehaviourchange.org/ontology/bcio.owl/2026-03-23>)
+Annotation(owl:versionInfo "2026-04-26")
+
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010025>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010084>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010085>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010086>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010087>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010088>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010089>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010090>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010091>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010092>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015043>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015045>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015046>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015047>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015048>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015049>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015050>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015051>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015083>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015084>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015085>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015086>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015087>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015088>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015089>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015090>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_026022>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_050300>))
+Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_050475>))
+Declaration(Class(obo:BFO_0000020))
+Declaration(Class(obo:BFO_0000023))
+Declaration(Class(obo:OMRSE_00000062))
+Declaration(AnnotationProperty(obo:IAO_0000112))
+Declaration(AnnotationProperty(obo:IAO_0000114))
+Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(obo:IAO_0000119))
+Declaration(AnnotationProperty(obo:IAO_0000232))
+Declaration(AnnotationProperty(dc:source))
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010025> (teaching professional)
+
+AnnotationAssertion(obo:IAO_0000112 <http://humanbehaviourchange.org/ontology/BCIO_010025> "Education Methods Specialist, Other Language Teacher, Information Technology Teacher, Private Tutor, School Counsellor, Student Advisor")
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010025> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010025> "A professional that teaches the theory and practice of one or more disciplines at different educational levels.")
+AnnotationAssertion(obo:IAO_0000119 <http://humanbehaviourchange.org/ontology/BCIO_010025> "International Standard Classification of Occupations (ISCO)")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010025> "teaching professional")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010025> obo:BFO_0000023)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010084> (student or trainee role)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010084> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010084> "A role which inheres in a person and is realised by being enrolled in an educational institution or a formal programme of professional training.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010084> "student or trainee role")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010084> obo:BFO_0000023)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010085> (informal education student or trainee)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010085> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010085> "A student or trainee that is currently learning in a non-institutional setting.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010085> "informal education student or trainee")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010085> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010086> (school student or trainee)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010086> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010086> "A student or trainee that is currently learning at a primary or secondary education level in an institutional, organised setting.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010086> "school student or trainee")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010086> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010087> (vocational training student or trainee)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010087> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010087> "A student or trainee that is currently learning the curriculum material of vocational programme, normally in preparation for employment in a trade, job or profession.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010087> "vocational training student or trainee")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010087> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010088> (higher education student or trainee)
+
+AnnotationAssertion(obo:IAO_0000112 <http://humanbehaviourchange.org/ontology/BCIO_010088> "completing a university bachelor's or master's course of study, medical school or other professional school.")
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010088> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010088> "A student or trainee that is currently learning on an advanced educational programme in a university, college or professional school.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010088> "higher education student or trainee")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010088> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010089> (undergraduate student or trainee)
+
+AnnotationAssertion(obo:IAO_0000112 <http://humanbehaviourchange.org/ontology/BCIO_010089> "undergraduate student")
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010089> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010089> "A higher education student or trainee that is currently studying for an undergraduate degree.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010089> "undergraduate student or trainee")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010089> <http://humanbehaviourchange.org/ontology/BCIO_010088>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010090> (graduate student or trainee)
+
+AnnotationAssertion(obo:IAO_0000112 <http://humanbehaviourchange.org/ontology/BCIO_010090> "graduate student")
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010090> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010090> "A higher education student or trainee that has completed an undergraduate degree.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010090> "graduate student or trainee")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010090> <http://humanbehaviourchange.org/ontology/BCIO_010088>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010091> (masters student or trainee)
+
+AnnotationAssertion(obo:IAO_0000112 <http://humanbehaviourchange.org/ontology/BCIO_010091> "MSc student, Masters student")
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010091> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010091> "A higher education student or trainee that is currently studying for a Masters degree.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010091> "masters student or trainee")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010091> <http://humanbehaviourchange.org/ontology/BCIO_010088>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010092> (doctoral student or trainee)
+
+AnnotationAssertion(obo:IAO_0000112 <http://humanbehaviourchange.org/ontology/BCIO_010092> "PhD student")
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010092> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010092> "A higher education student or trainee that is currently studying for a doctoral degree.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010092> "doctoral student or trainee")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010092> <http://humanbehaviourchange.org/ontology/BCIO_010088>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015043> (highest level of formal educational qualification achieved)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015043> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015043> "A personal attribute related to the highest level of education achieved.")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_015043> "The highest level of a packaged education process an individual has completed")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015043> "highest level of formal educational qualification achieved")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015043> <http://humanbehaviourchange.org/ontology/BCIO_050300>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015045> (achieved early childhood education)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015045> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015045> "A highest level of formal educational qualification achieved after participating in an education process intended to introduce very young children to a school-type environment.")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_015045> "A highest level of formal educational qualification achieved that is pre-primary education (ISCED 0), defined as the initial stage of organised instruction, designed primarily to introduce very young children to a school-type environment, that is, to provide a bridge between home and a school-based atmosphere.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015045> "achieved early childhood education")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015045> <http://humanbehaviourchange.org/ontology/BCIO_015043>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015046> (achieved primary education)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015046> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015046> "A highest level of formal educational qualification achieved after participating in an education process intended to result in the acquisition of fundamental skills in reading, writing and mathematics.")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_015046> "A highest level of formal educational qualification achieved that is primary education (ISCED 1) which usually begins at age 5, 6, or 7 and generally lasts for 4 (e.g. Germany) to 6 years (the mode of the OECD countries being six years). Programmes at the primary level generally require no previous formal education, although it is becoming increasingly common for children to have attended a pre-primary programme before entering primary education")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015046> "achieved primary education")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015046> <http://humanbehaviourchange.org/ontology/BCIO_015043>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015047> (achieved lower secondary education)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015047> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015047> "A highest level of formal educational qualification achieved after participating in an education process intended to result in the acquisition and development of skills and knowledge in subject areas more specialised than basic reading, writing and mathematics, with the overall goal of laying the foundation for lifelong learning and human development on which education systems may systematically expand further educational opportunities.")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_015047> "A highest level of formal educational qualification achieved that is lower secondary level of education (ISCED 2) which generally pursues the basic programmes of the primary level, although teaching is typically more subject-focused, often employing more specialised teachers who conduct classes in their field of specialisation. Lower secondary education may be either “terminal”(i.e. preparing students for direct entry into working life) and / or “preparatory” (i.e. preparing students for upper secondary education).This level can range from 2 to 6 years of schooling (the mode of OECD countries is 3 years).")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015047> "achieved lower secondary education")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015047> <http://humanbehaviourchange.org/ontology/BCIO_015043>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015048> (achieved upper secondary education)
+
+AnnotationAssertion(obo:IAO_0000112 <http://humanbehaviourchange.org/ontology/BCIO_015048> "graduated high school, International Baccaulaureate, A Levels")
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015048> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015048> "A highest level of formal educational qualification achieved after participating in an education process intended to result in the acquisition and development of skills and knowledge that prepare participants for tertiary education or employment.")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_015048> "A highest level of formal educational qualification achieved that corresponds to the final stage of secondary education in most OECD countries. Instruction is often more organised along subject-matter lines than at ISCED 2 level and teachers typically need to have a higher level, or more subject-specific, qualifications than at ISCED 2. The entrance age to this level is typically 15 or 16 years. There are substantial differences in the typical duration of ISCED 3 programmes both between and within countries, typically ranging from 2 to 5 years of schooling. ISCED 3 may either be “terminal” (i.e. preparing students for direct entry into working life) and/or “preparatory” (i.e. preparing students for tertiary education).")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015048> "achieved upper secondary education")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015048> <http://humanbehaviourchange.org/ontology/BCIO_015043>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015049> (achieved bachelor's degree or equivalent level)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015049> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015049> "A highest level of formal education qualification achieved after participating in an education process intended to result in the acquisition and development of skills and knowledge in a specialised discipline that culminated in the award of an undergraduate degree.")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_015049> "A highest level of formal educational qualification achieved that is reserved for tertiary programmes (ISCED 6) that lead directly to the award of an advanced research qualification. The theoretical duration of these programmes is 3 years full-time in most countries (for a cumulative total of at least 7 years FTE at the tertiary level), although the actual enrolment time is typically longer. The programmes are devoted to advanced study and original research. For a programme to be classified at ISCED 6, it:• requires, for successful completion, the submission of a thesis or dissertation of publishable quality that is the product of original research and represents a significant contribution to knowledge")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015049> "achieved bachelor's degree or equivalent level")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015049> <http://humanbehaviourchange.org/ontology/BCIO_015043>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015050> (achieved master's or equivalent level)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015050> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015050> "A highest level of formal educational qualification achieved after participating in an education process which has as a prerequisite an undergraduate degree and which is intended to result in the acquisition and development of advanced academic or professional skills and knowledge in a specialised discipline, that culminated in the award of a Master's or equivalent degree.")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_015050> "A highest level of formal educational qualification achieved that is a master's or equivalent level education. Entry into master's (ISCED level 7) programmes preparing for a second or further degree normally requires the successful completion of an ISCED level 6 or 7 programme. Additionally, it may be required to take and succeed in entry examinations. Programmes at ISCED level 7, or Master’s or equivalent level, are often designed to provide participants with advanced academic and/or professional knowledge, skills and competencies, leading to a second degree or equivalent qualification. Programmes at this level may have a substantial research component but do not yet lead to the award of a doctoral qualification. Typically, programmes at this level are theoretically-based but may include practical components and are informed by state of the art research and/or best professional practice. They are traditionally offered by universities and other tertiary educational institutions.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015050> "achieved master's or equivalent level")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015050> <http://humanbehaviourchange.org/ontology/BCIO_015043>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015051> (achieved doctoral or equivalent level education)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015051> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015051> "A highest level of formal educational qualification achieved after participating in an education process devoted to advanced study and original research that led to the award of a PhD or equivalent level qualification.")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_015051> "A highest level of formal educational qualification achieved that is a doctoral or equivalent level education.  Entry into doctoral (ISCED level 8) programmes or junior research positions normally requires the successful completion of specific ISCED level 7 programmes. Programmes at ISCED level 8, or doctoral or equivalent level, are designed primarily to lead to an advanced research qualification. Programmes at this ISCED level are devoted to advanced study and original research and are typically offered only by research-oriented tertiary educational institutions such as universities. Doctoral programmes exist in both academic and professional fields.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015051> "achieved doctoral or equivalent level education")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015051> <http://humanbehaviourchange.org/ontology/BCIO_015043>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015083> (informal education student role)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015083> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015083> "A student or trainee role realised by  currently learning in a non-institutional setting.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015083> "informal education student role")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015083> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015084> (preschool student role)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015084> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015084> "A student or trainee role realised by  currently learning at an initial level of organised instruction, primarily to familiarise the bearer to the school-type environment.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015084> "preschool student role")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015084> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015085> (school student role)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015085> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015085> "A student or trainee role realised by currently learning at a primary or secondary education level in an institutional, organised setting.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015085> "school student role")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015085> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015086> (vocational training student or trainee role)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015086> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015086> "A student or trainee role realised by currently learning the curriculum material of vocational programme, normally in preparation for employment in a trade, job or profession.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015086> "vocational training student or trainee role")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015086> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015087> (higher education student role)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015087> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015087> "A student or trainee role realised by currently learning on an advanced educational programme in a university, college or professional school. For example, completing a university bachelor's or master's course of study, medical school or other professional school.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015087> "higher education student role")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015087> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015088> (undergraduate student role)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015088> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015088> "A higher education student role realised by currently studying for an undergraduate degree.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015088> "undergraduate student role")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015088> <http://humanbehaviourchange.org/ontology/BCIO_015087>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015089> (graduate student role)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015089> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015089> "A higher education student role realised by currently studying for a more advanced degree after completing an undergraduate degree.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015089> "graduate student role")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015089> <http://humanbehaviourchange.org/ontology/BCIO_015087>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_015090> (masters student role)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015090> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015090> "A higher education student  role realised by currently studying for a masters degree.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015090> "masters student role")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015090> <http://humanbehaviourchange.org/ontology/BCIO_015087>)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_026022> (educational facility)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_026022> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_026022> "A facility in which formal education is provided to a student population.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_026022> "educational facility")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_026022> obo:OMRSE_00000062)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_050300> (personal attribute)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_050300> "External")
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_050300> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_050300> "A specifically dependent continuant that inheres in a person.")
+AnnotationAssertion(obo:IAO_0000232 <http://humanbehaviourchange.org/ontology/BCIO_050300> "The BCIO population ontology individuals branch defines many personal attributes")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_050300> "Attributes included under this header are age, immigration, social and economic conditions.")
+AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_050300> "Includes everything that can be said about a person: the most general class under which all other qualities, dispositions, roles etc belong.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_050300> "personal attribute")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_050300> obo:BFO_0000020)
+
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_050475> (doctoral student role)
+
+AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_050475> "Published")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_050475> "A higher education student  role realised by currently studying for a doctoral degree.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_050475> "doctoral student role")
+SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_050475> <http://humanbehaviourchange.org/ontology/BCIO_015087>)
+
+
+)
