@@ -456,6 +456,7 @@ Declaration(DataProperty(obo:OMRSE_00000136))
 Declaration(DataProperty(obo:OMRSE_00000137))
 Declaration(NamedIndividual(<https://orcid.org/0000-0001-6378-1703>))
 Declaration(NamedIndividual(<https://orcid.org/0000-0002-9881-1017>))
+Declaration(NamedIndividual(<https://orcid.org/0000-0003-1834-3856>))
 Declaration(AnnotationProperty(obo:IAO_0000111))
 Declaration(AnnotationProperty(obo:IAO_0000112))
 Declaration(AnnotationProperty(obo:IAO_0000115))
@@ -4048,6 +4049,11 @@ ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0001-6378-1703>)
 
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0002-9881-1017> "William R. Hogan"@en)
 ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0002-9881-1017>)
+
+# Individual: <https://orcid.org/0000-0003-1834-3856> (Mathias Brochhausen)
+
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-1834-3856> "Mathias Brochhausen"@en)
+ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0003-1834-3856>)
 
 
 AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
