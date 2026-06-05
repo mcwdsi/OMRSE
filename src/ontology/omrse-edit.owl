@@ -911,7 +911,7 @@ SubClassOf(obo:OMRSE_00000012 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:RO_0
 
 # Class: obo:OMRSE_00000013 (physician role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000013 "A health care role borne by a human being and realized by promoting, maintaining or restoring human health through the study, diagnosis, and treatment of disease, injury and other physical and mental impairments."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000013 "An institutional health care provider role borne by a human being and realized by promoting, maintaining or restoring human health through the study, diagnosis, and treatment of disease, injury and other physical and mental impairments."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000013 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000013 "physician"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:OMRSE_00000013 "http://en.wikipedia.org/wiki/Physician"@en)
@@ -921,7 +921,7 @@ SubClassOf(obo:OMRSE_00000013 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_
 
 # Class: obo:OMRSE_00000014 (nurse role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000014 "A health care role borne by a human being and realized by the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000014 "An institutional health care role borne by a human being and realized by the care of individuals, families, and communities so they may attain, maintain, or recover optimal health and quality of life."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000014 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000014 "nurse"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:OMRSE_00000014 "based on: http://en.wikipedia.org/wiki/Nursing"@en)
@@ -1837,7 +1837,7 @@ SubClassOf(obo:OMRSE_00000128 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000129 (US physician assistant role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000129 "A human health care provider role that inheres in a human being that is created by state licensing and that is realized by taking patient histories, performing physical exams, diagnosing illnesses, developing treatment plans, ordering lab tests, prescribing medications, counselling and educating patients, suturing wounds, and assisting in surgery under the supervision of a physician or a surgeon."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000129 "An institutional health care provider role that inheres in a human being that is created by state licensing and that is realized by taking patient histories, performing physical exams, diagnosing illnesses, developing treatment plans, ordering lab tests, prescribing medications, counselling and educating patients, suturing wounds, and assisting in surgery under the supervision of a physician or a surgeon."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000129 "US physician assistant role"@en)
 SubClassOf(obo:OMRSE_00000129 obo:OMRSE_00000300)
 SubClassOf(obo:OMRSE_00000129 ObjectSomeValuesFrom(obo:RO_0000052 obo:NCBITaxon_9606))
@@ -2906,7 +2906,7 @@ SubClassOf(obo:OMRSE_00000246 obo:OMRSE_00000243)
 
 # Class: obo:OMRSE_00000249 (birth attendant role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000249 "A health care provider role that is realized in maintaining the health of a human being during their pregnancy and both them and the neonate during labor, delivery, and postpartum."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000249 "An institutional health care provider role that is realized in maintaining the health of a human being during their pregnancy and both them and the neonate during labor, delivery, and postpartum."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000249 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000249 "skilled birth attendant role"@en)
 AnnotationAssertion(dc:contributor obo:OMRSE_00000249 "https://orcid.org/0000-0001-6595-0902")
@@ -4106,7 +4106,7 @@ SubClassOf(obo:OMRSE_00002072 ObjectAllValuesFrom(obo:RO_0000052 obo:BFO_0000040
 
 # Class: obo:OOSTT_00000075 (occupational therapist role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000075 "A healthcare provider role borne by a human being and that, if realized, realized by providing assessment and treatment to develop, recover, or maintain the daily living and work skills of people with a physical, mental, or cognitive disorder."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000075 "An institutional health care provider role borne by a human being and that, if realized, realized by providing assessment and treatment to develop, recover, or maintain the daily living and work skills of people with a physical, mental, or cognitive disorder."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000075 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000075 "http://purl.obolibrary.org/obo/oostt/release/2025-08-28/oostt.owl")
 AnnotationAssertion(obo:OOSTT_00000030 obo:OOSTT_00000075 "A healthcare professional who specializes in providing assessment and treatment to develop, recover, or maintain the daily living functioning and work-related skills of a person with a disability."@en)
@@ -4116,7 +4116,7 @@ SubClassOf(obo:OOSTT_00000075 obo:OMRSE_00000300)
 
 # Class: obo:OOSTT_00000076 (physical therapist role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000076 "A health care provider role borne by a human being and, if realized, is realized by providing assessment and treatment to remediate impairments or promote mobility, function, and quality of by interventions that use mechanical force and movements."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000076 "An institutional health care provider role borne by a human being and, if realized, is realized by providing assessment and treatment to remediate impairments or promote mobility, function, and quality of by interventions that use mechanical force and movements."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000076 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000076 "http://purl.obolibrary.org/obo/oostt/release/2025-08-28/oostt.owl")
 AnnotationAssertion(obo:OOSTT_00000030 obo:OOSTT_00000076 "A healthcare professional who specializes in providing assessment and treatment to remediate impairments or promote mobility, function, and quality of life by interventions that use mechanical force, movements, massage, or electrical stimulation."@en)
@@ -4126,7 +4126,7 @@ SubClassOf(obo:OOSTT_00000076 obo:OMRSE_00000300)
 
 # Class: obo:OOSTT_00000077 (rehabilitation specialist role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000077 "A healthcare provider role borne by a human being and if realized, is realized by providing assessment and treatment that follows surgery, or treatment of a disease or of an injury, and which restores a patient's preferable functionality."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000077 "An institutional health care provider role borne by a human being and if realized, is realized by providing assessment and treatment that follows surgery, or treatment of a disease or of an injury, and which restores a patient's preferable functionality."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000077 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000077 "http://purl.obolibrary.org/obo/oostt/release/2025-08-28/oostt.owl")
 AnnotationAssertion(obo:OOSTT_00000030 obo:OOSTT_00000077 "A health professional (physiatrist, PT, OT, speech/language therapist) who promotes return to or improvement in functional status after a debilitating illness or injury event."@en)
