@@ -412,6 +412,9 @@ Declaration(Class(obo:OMRSE_00002069))
 Declaration(Class(obo:OMRSE_00002070))
 Declaration(Class(obo:OMRSE_00002071))
 Declaration(Class(obo:OMRSE_00002072))
+Declaration(Class(obo:OOSTT_00000235))
+Declaration(Class(obo:OOSTT_00000236))
+Declaration(Class(obo:OOSTT_00000330))
 Declaration(ObjectProperty(obo:BFO_0000050))
 Declaration(ObjectProperty(obo:BFO_0000051))
 Declaration(ObjectProperty(obo:BFO_0000054))
@@ -485,10 +488,28 @@ Declaration(AnnotationProperty(terms:license))
 
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
 AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000115 "textual definition")
+
+# Annotation Property: obo:IAO_0000117 (definition editor)
+
+AnnotationAssertion(rdfs:label obo:IAO_0000117 "definition editor")
+AnnotationAssertion(rdfs:label obo:IAO_0000117 "definition editor"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000117 "term editor")
+AnnotationAssertion(rdfs:label obo:IAO_0000117 "term editor"@en)
+
+# Annotation Property: obo:IAO_0000118 (alternative label)
+
+AnnotationAssertion(rdfs:label obo:IAO_0000118 "alternative label"@en)
+AnnotationAssertion(rdfs:label obo:IAO_0000118 "alternative term"@en)
 
 # Annotation Property: obo:IAO_0000119 (definition source)
 
+AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source")
 AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source"@en)
+
+# Annotation Property: obo:IAO_0000412 (imported from)
+
+AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
 
 # Annotation Property: obo:OMRSE_00000080 (U.S. Census PUMS serial number)
 
@@ -522,6 +543,15 @@ AnnotationAssertion(obo:IAO_0000111 obo:OMRSE_00002028 "ISO 639-3 code"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00002028 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00002028 "ISO 639-3 assigns three-character identifiers to individual human languages.  This annotation property is for use in annotating OWL2 individuals in OMRSE that represent languages with their appropriate ISO 639-3 code that designates them in that standard system."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00002028 "ISO 639-3 code"@en)
+
+# Annotation Property: obo:OOSTT_00000030 (OOSTT user-centered description)
+
+AnnotationAssertion(rdfs:label obo:OOSTT_00000030 "OOSTT user-centered description"@en)
+
+# Annotation Property: rdfs:label (label)
+
+AnnotationAssertion(rdfs:label rdfs:label "label")
+AnnotationAssertion(rdfs:label rdfs:label "label"@en)
 
 
 ############################
@@ -4033,6 +4063,39 @@ SubClassOf(obo:OMRSE_00002072 obo:BFO_0000023)
 SubClassOf(obo:OMRSE_00002072 ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040))
 SubClassOf(obo:OMRSE_00002072 ObjectAllValuesFrom(obo:RO_0000052 obo:BFO_0000040))
 
+# Class: obo:OOSTT_00000235 (advanced practice registered nurse role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000235 "A registered nurse role that is the specified output of post-graduate education in nursing and that is realized by using extended and expanded skills, experience and knowledge in assessment, planning, implementation, diagnosis and evaluation of the care required."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000235 "Mathias Brochhausen"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000235 "Sarah Bost"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000235 "http://purl.obolibrary.org/obo/oostt/release/2025-08-28/oostt.owl")
+AnnotationAssertion(obo:OOSTT_00000030 obo:OOSTT_00000235 "A nurse with, at minimum, a Master's degree in nursing who uses expanded knowledge and skills in assessment, diagnosis, planning, implementation, and evaluation of patient care."@en)
+AnnotationAssertion(rdfs:isDefinedBy obo:OOSTT_00000235 obo:omrse.owl)
+AnnotationAssertion(rdfs:label obo:OOSTT_00000235 "advanced practice registered nurse role"@en)
+SubClassOf(obo:OOSTT_00000235 obo:OMRSE_00000151)
+
+# Class: obo:OOSTT_00000236 (certified registered nurse anesthetist role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000236 "An advanced practice registered nurse role that is the specified outcome of an accredition process with the Council of Accreditation in the United States of American and depends on graduate level education and board certification in anesthesiology."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000236 "Mathias Brochhausen"@en)
+AnnotationAssertion(obo:IAO_0000118 obo:OOSTT_00000236 "CRNA role"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000236 "http://purl.obolibrary.org/obo/oostt/release/2025-08-28/oostt.owl")
+AnnotationAssertion(obo:OOSTT_00000030 obo:OOSTT_00000236 "A nurse with advanced education and training in anesthesiology who has successfully completed a national certification examination process, and is credentialed to practice by a healthcare facility.")
+AnnotationAssertion(rdfs:isDefinedBy obo:OOSTT_00000236 obo:omrse.owl)
+AnnotationAssertion(rdfs:label obo:OOSTT_00000236 "certified registered nurse anesthetist role"@en)
+SubClassOf(obo:OOSTT_00000236 obo:OOSTT_00000235)
+
+# Class: obo:OOSTT_00000330 (nurse practitioner role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000330 "An advanced practice registered nurse role that if realized is realized by its bearer assessing patient needs, ordering and interpreting diagnostic and laboratory tests, diagnosing illness and disease, prescribing medication and formulating treatment plans."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000330 "Mathias Brochhausen")
+AnnotationAssertion(obo:IAO_0000118 obo:OOSTT_00000330 "NP role"@en)
+AnnotationAssertion(obo:IAO_0000119 obo:OOSTT_00000330 "https://en.wikipedia.org/w/index.php?title=Nurse_practitioner&oldid=889394537"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000330 "http://purl.obolibrary.org/obo/oostt/release/2025-08-28/oostt.owl")
+AnnotationAssertion(rdfs:isDefinedBy obo:OOSTT_00000330 obo:omrse.owl)
+AnnotationAssertion(rdfs:label obo:OOSTT_00000330 "nurse practitioner role"@en)
+SubClassOf(obo:OOSTT_00000330 obo:OOSTT_00000235)
+
 # Class: obo:PCO_0000020 (family)
 
 SubClassOf(obo:PCO_0000020 obo:OMRSE_00000022)
@@ -4057,8 +4120,11 @@ ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-1834-3856> "Mathias Brochhausen"@en)
 ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0003-1834-3856>)
 
+# Individual: <https://orcid.org/0000-0003-1909-9269> (S. Clint Dowland)
 
-AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
+ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0003-1909-9269>)
+
+
 AnnotationAssertion(owl:deprecated obo:OMIABIS_0000060 "true"^^xsd:boolean)
 AnnotationAssertion(owl:deprecated obo:OMIABIS_0001025 "true"^^xsd:boolean)
 AnnotationAssertion(owl:deprecated obo:OMIABIS_0001035 "true"^^xsd:boolean)
