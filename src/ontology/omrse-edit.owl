@@ -412,6 +412,9 @@ Declaration(Class(obo:OMRSE_00002069))
 Declaration(Class(obo:OMRSE_00002070))
 Declaration(Class(obo:OMRSE_00002071))
 Declaration(Class(obo:OMRSE_00002072))
+Declaration(Class(obo:OOSTT_00000075))
+Declaration(Class(obo:OOSTT_00000076))
+Declaration(Class(obo:OOSTT_00000077))
 Declaration(Class(obo:OOSTT_00000090))
 Declaration(Class(obo:OOSTT_00000091))
 Declaration(Class(obo:OOSTT_00000096))
@@ -4100,6 +4103,36 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00002072 "role in human social processe
 SubClassOf(obo:OMRSE_00002072 obo:BFO_0000023)
 SubClassOf(obo:OMRSE_00002072 ObjectSomeValuesFrom(obo:RO_0000052 obo:BFO_0000040))
 SubClassOf(obo:OMRSE_00002072 ObjectAllValuesFrom(obo:RO_0000052 obo:BFO_0000040))
+
+# Class: obo:OOSTT_00000075 (occupational therapist role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000075 "A healthcare provider role borne by a human being and that, if realized, realized by providing assessment and treatment to develop, recover, or maintain the daily living and work skills of people with a physical, mental, or cognitive disorder."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000075 "Mathias Brochhausen"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000075 "http://purl.obolibrary.org/obo/oostt/release/2025-08-28/oostt.owl")
+AnnotationAssertion(obo:OOSTT_00000030 obo:OOSTT_00000075 "A healthcare professional who specializes in providing assessment and treatment to develop, recover, or maintain the daily living functioning and work-related skills of a person with a disability."@en)
+AnnotationAssertion(rdfs:isDefinedBy obo:OOSTT_00000075 obo:omrse.owl)
+AnnotationAssertion(rdfs:label obo:OOSTT_00000075 "occupational therapist role"@en)
+SubClassOf(obo:OOSTT_00000075 obo:OMRSE_00000300)
+
+# Class: obo:OOSTT_00000076 (physical therapist role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000076 "A health care provider role borne by a human being and, if realized, is realized by providing assessment and treatment to remediate impairments or promote mobility, function, and quality of by interventions that use mechanical force and movements."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000076 "Mathias Brochhausen"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000076 "http://purl.obolibrary.org/obo/oostt/release/2025-08-28/oostt.owl")
+AnnotationAssertion(obo:OOSTT_00000030 obo:OOSTT_00000076 "A healthcare professional who specializes in providing assessment and treatment to remediate impairments or promote mobility, function, and quality of life by interventions that use mechanical force, movements, massage, or electrical stimulation."@en)
+AnnotationAssertion(rdfs:isDefinedBy obo:OOSTT_00000076 obo:omrse.owl)
+AnnotationAssertion(rdfs:label obo:OOSTT_00000076 "physical therapist role"@en)
+SubClassOf(obo:OOSTT_00000076 obo:OMRSE_00000300)
+
+# Class: obo:OOSTT_00000077 (rehabilitation specialist role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000077 "A healthcare provider role borne by a human being and if realized, is realized by providing assessment and treatment that follows surgery, or treatment of a disease or of an injury, and which restores a patient's preferable functionality."@en)
+AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000077 "Mathias Brochhausen"@en)
+AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000077 "http://purl.obolibrary.org/obo/oostt/release/2025-08-28/oostt.owl")
+AnnotationAssertion(obo:OOSTT_00000030 obo:OOSTT_00000077 "A health professional (physiatrist, PT, OT, speech/language therapist) who promotes return to or improvement in functional status after a debilitating illness or injury event."@en)
+AnnotationAssertion(rdfs:isDefinedBy obo:OOSTT_00000077 obo:omrse.owl)
+AnnotationAssertion(rdfs:label obo:OOSTT_00000077 "rehabilitation specialist role"@en)
+SubClassOf(obo:OOSTT_00000077 obo:OMRSE_00000300)
 
 # Class: obo:OOSTT_00000090 (orthopedic surgeon role)
 
