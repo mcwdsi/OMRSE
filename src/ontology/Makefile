@@ -16,7 +16,7 @@
 # 3. [Update repo to latest ODK](update_repo)
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                77c2c8e733d53bbcbbf668b07a9c250e5fa8647e909b97aead4ef88cec5c6ec2
+CONFIG_HASH=                e26d915d296be0f650f905a02d7b507f5e529907ba615ff0c43f155f5502eb3b
 
 
 # ----------------------------------------
@@ -589,24 +589,11 @@ $(IMPORTDIR)/ncbitaxon_import.owl: $(MIRRORDIR)/ncbitaxon.owl $(IMPORTDIR)/ncbit
 		 repair --merge-axiom-annotations true \
 		 $(ANNOTATE_CONVERT_FILE)
 
-## Module for ontology: oostt (filter)
-$(IMPORTDIR)/oostt_import.owl: $(MIRRORDIR)/oostt.owl $(IMPORTDIR)/oostt_terms.txt $(IMPORTSEED) | all_robot_plugins
-	$(ROBOT) annotate --input $< --remove-annotations \
-		 odk:normalize --add-source true \
-		 extract --term-file $(IMPORTDIR)/oostt_terms.txt $(T_IMPORTSEED) \
-		         --copy-ontology-annotations true --force true --method BOT \
-		 remove --axioms external --preserve-structure false --trim false \
-		        --base-iri http://purl.obolibrary.org/obo/OOSTT_ \
-		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
-		        --term rdfs:label \
-		        --term IAO:0000115 \
-		        --term OMO:0002000 \
-		        --term-file $(IMPORTDIR)/oostt_terms.txt $(T_IMPORTSEED) \
-		        --select complement \
-		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
-		               --subset-decls true --synonym-decls true \
-		 repair --merge-axiom-annotations true \
-		 $(ANNOTATE_CONVERT_FILE)
+## Module for ontology: oostt (custom)
+$(IMPORTDIR)/oostt_import.owl: $(MIRRORDIR)/oostt.owl
+	@echo "ERROR: You have configured oostt as a custom module;"
+	@echo "       This rule needs to be overwritten in omrse.Makefile!"
+	@false
 
 ## Module for ontology: omo (mirror)
 $(IMPORTDIR)/omo_import.owl: $(MIRRORDIR)/omo.owl | all_robot_plugins

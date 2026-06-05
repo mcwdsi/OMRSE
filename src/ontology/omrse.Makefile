@@ -9,10 +9,10 @@
 
 ifeq ($(IMP),true)
 
-.PHONY: mirror-bcio
-.PRECIOUS: $(MIRRORDIR)/bcio.owl
-mirror-bcio: | $(TMPDIR)
-        $(ROBOT) convert -I http://humanbehaviourchange.org/ontology/bcio.owl -o $(TMPDIR)/$@.owl
+#.PHONY: mirror-bcio
+#.PRECIOUS: $(MIRRORDIR)/bcio.owl
+#mirror-bcio: | $(TMPDIR)
+#        $(ROBOT) convert -I http://humanbehaviourchange.org/ontology/bcio.owl -o $(TMPDIR)/$@.owl
 
 $(IMPORTDIR)/bcio_import.owl: $(MIRRORDIR)/bcio.owl $(IMPORTDIR)/bcio_terms.txt $(IMPORTSEED) | all_robot_plugins
 	$(ROBOT) merge --input $< \
@@ -28,6 +28,30 @@ $(IMPORTDIR)/bcio_import.owl: $(MIRRORDIR)/bcio.owl $(IMPORTDIR)/bcio_terms.txt 
 			--subset-decls true --synonym-decls true \
 		repair --merge-axiom-annotations true \
 		$(ANNOTATE_CONVERT_FILE)
+
+#.PHONY: mirror-oostt
+#.PRECIOUS: $(MIRRORDIR)/oostt.owl
+#mirror-oostt: | $(TMPDIR)
+#        $(ROBOT) convert -I http://purl.obolibrary.org/obo/oostt.owl -o $(TMPDIR)/$@.owl
+#
+$(IMPORTDIR)/oostt_import.owl: $(MIRRORDIR)/oostt.owl $(IMPORTDIR)/oostt_terms.txt $(IMPORTSEED) | all_robot_plugins
+	$(ROBOT) annotate --input $< --remove-annotations \
+		 odk:normalize --add-source true \
+		 extract --term-file $(IMPORTDIR)/oostt_terms.txt $(T_IMPORTSEED) \
+			 --copy-ontology-annotations true --force true --method BOT \
+		 remove --axioms external --preserve-structure false --trim false \
+			 --base-iri http://purl.obolibrary.org/obo/OOSTT_ \
+		 remove --term-file imports/oostt_exclude_terms.txt \
+		 remove $(foreach p, $(ANNOTATION_PROPERTIES), --term $(p)) \
+			 --term rdfs:label \
+			 --term IAO:0000115 \
+			 --term OMO:0002000 \
+			 --term-file $(IMPORTDIR)/oostt_terms.txt $(T_IMPORTSEED) \
+			 --select complement \
+		 odk:normalize --base-iri http://purl.obolibrary.org/obo \
+			 --subset-decls true --synonym-decls true \
+		 repair --merge-axiom-annotations true \
+		 $(ANNOTATE_CONVERT_FILE)
 
 endif
 
