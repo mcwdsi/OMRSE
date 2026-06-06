@@ -32,4 +32,4 @@ http://purl.obolibrary.org/obo/OOSTT_00000332
 http://purl.obolibrary.org/obo/OOSTT_00000333
 http://purl.obolibrary.org/obo/OOSTT_00000365
 http://purl.obolibrary.org/obo/OOSTT_00000366
-http://purl.obolibrary.org/obo/OOSTT_00000367>
+http://purl.obolibrary.org/obo/OOSTT_00000367
