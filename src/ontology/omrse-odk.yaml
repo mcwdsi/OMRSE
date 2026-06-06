@@ -65,7 +65,7 @@ import_group:
       base_iris:
         - http://purl.obolibrary.org/obo/NCBITaxon_
     - id: oostt
-      module_type: filter
+      module_type: custom 
       base_iris:
         - http://purl.obolibrary.org/obo/OOSTT_
     - id: omo
