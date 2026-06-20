@@ -1,36 +1,45 @@
 Prefix(:=<http://purl.obolibrary.org/obo/omrse/imports/pco_import.owl#>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(zdc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(prov:=<http://www.w3.org/ns/prov#>)
+Prefix(rdfa:=<http://www.w3.org/ns/rdfa#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+Prefix(void:=<http://rdfs.org/ns/void#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/pco_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-04-26/imports/pco_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/pco/releases/2021-05-03/pco.owl>)
-Annotation(owl:versionInfo "2026-04-26")
+<http://purl.obolibrary.org/obo/omrse/releases/2026-06-20/imports/pco_import.owl>
+Annotation(zdc:source <http://purl.obolibrary.org/obo/pco/releases/2021-05-03/pco.owl>)
+Annotation(owl:versionInfo "2026-06-20")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/PCO_0000020>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000114>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(Class(obo:PCO_0000020))
+Declaration(AnnotationProperty(obo:IAO_0000114))
+Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(obo:IAO_0000116))
+Declaration(AnnotationProperty(obo:IAO_0000119))
+Declaration(AnnotationProperty(zdc:source))
 
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/PCO_0000020> (family)
+# Class: obo:PCO_0000020 (family)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/PCO_0000020> <http://purl.obolibrary.org/obo/IAO_0000123>)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/PCO_0000020> "A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/PCO_0000020> "Needs axioms for family relationships."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/PCO_0000020> "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25173"@en)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/PCO_0000020> "Family membership through marriage or adoption apply primarily to human families. In most species, family membership is defined by common anscestry.")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/PCO_0000020> "family"@en)
+AnnotationAssertion(obo:IAO_0000114 obo:PCO_0000020 obo:IAO_0000123)
+AnnotationAssertion(obo:IAO_0000115 obo:PCO_0000020 "A domestic group, or a number of domestic groups linked through descent (demonstrated or stipulated) from a common ancestor, marriage, or adoption."@en)
+AnnotationAssertion(obo:IAO_0000116 obo:PCO_0000020 "Needs axioms for family relationships."@en)
+AnnotationAssertion(obo:IAO_0000119 obo:PCO_0000020 "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25173"@en)
+AnnotationAssertion(rdfs:comment obo:PCO_0000020 "Family membership through marriage or adoption apply primarily to human families. In most species, family membership is defined by common anscestry.")
+AnnotationAssertion(rdfs:label obo:PCO_0000020 "family"@en)
 
 
 )

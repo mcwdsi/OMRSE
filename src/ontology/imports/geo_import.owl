@@ -1,32 +1,41 @@
 Prefix(:=<http://purl.obolibrary.org/obo/omrse/imports/geo_import.owl#>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(zdc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(prov:=<http://www.w3.org/ns/prov#>)
+Prefix(rdfa:=<http://www.w3.org/ns/rdfa#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+Prefix(void:=<http://rdfs.org/ns/void#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/geo_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-04-26/imports/geo_import.owl>
-Annotation(owl:versionInfo "2026-04-26")
+<http://purl.obolibrary.org/obo/omrse/releases/2026-06-20/imports/geo_import.owl>
+Annotation(owl:versionInfo "2026-06-20")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/GEO_000000400>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
+Declaration(Class(obo:GEO_000000400))
+Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(obo:IAO_0000117))
 
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/GEO_000000400> (governmental organization)
+# Class: obo:GEO_000000400 (governmental organization)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GEO_000000400> "An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii). 
+AnnotationAssertion(obo:IAO_0000115 obo:GEO_000000400 "An organization that governs the people living in a particular geographical region or aggregate of geographical regions.  The geographical region it governs can change over time (such as the westward expansion of the United States and the addition of Hawaii). 
 
 Note: this definition was taken over from \"geopolitical organization\"."@en)
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/GEO_000000400> "Amanda Hicks"@en)
-AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/GEO_000000400> "IMPORTANT: The label \"geopolitical organization\" was previously used for OMRSE_00000044 (governmental organization).  \"geopoli organization\" is a label for a new and different class."@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GEO_000000400> "governmental organization"@en)
+AnnotationAssertion(obo:IAO_0000117 obo:GEO_000000400 "Amanda Hicks"@en)
+AnnotationAssertion(rdfs:comment obo:GEO_000000400 "IMPORTANT: The label \"geopolitical organization\" was previously used for OMRSE_00000044 (governmental organization).  \"geopoli organization\" is a label for a new and different class."@en)
+AnnotationAssertion(rdfs:label obo:GEO_000000400 "governmental organization"@en)
 
 
 )
