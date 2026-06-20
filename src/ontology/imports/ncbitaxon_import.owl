@@ -1,59 +1,68 @@
 Prefix(:=<http://purl.obolibrary.org/obo/omrse/imports/ncbitaxon_import.owl#>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(zdc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(prov:=<http://www.w3.org/ns/prov#>)
+Prefix(rdfa:=<http://www.w3.org/ns/rdfa#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+Prefix(void:=<http://rdfs.org/ns/void#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/ncbitaxon_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-04-26/imports/ncbitaxon_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/ncbitaxon/releases/2025-12-03/subsets/taxslim.owl>)
-Annotation(owl:versionInfo "2026-04-26")
+<http://purl.obolibrary.org/obo/omrse/releases/2026-06-20/imports/ncbitaxon_import.owl>
+Annotation(zdc:source <http://purl.obolibrary.org/obo/ncbitaxon/releases/2026-05-13/subsets/taxslim.owl>)
+Annotation(owl:versionInfo "2026-06-20")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_131567>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_2759>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_40674>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9443>))
-Declaration(Class(<http://purl.obolibrary.org/obo/NCBITaxon_9606>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
-Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(Class(obo:NCBITaxon_131567))
+Declaration(Class(obo:NCBITaxon_2759))
+Declaration(Class(obo:NCBITaxon_40674))
+Declaration(Class(obo:NCBITaxon_9443))
+Declaration(Class(obo:NCBITaxon_9606))
+Declaration(AnnotationProperty(zdc:source))
+Declaration(AnnotationProperty(oboInOwl:hasDbXref))
 
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_131567> (cellular organisms)
+# Class: obo:NCBITaxon_131567 (cellular organisms)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_131567> "GC_ID:1")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_131567> "cellular organisms")
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_131567 "GC_ID:1")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_131567 "cellular organisms")
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_2759> (Eukaryota)
+# Class: obo:NCBITaxon_2759 (Eukaryota)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_2759> "GC_ID:1")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_2759> "PMID:23020233")
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_2759> "PMID:30257078")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_2759> "Eukaryota")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_2759> <http://purl.obolibrary.org/obo/NCBITaxon_131567>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_2759 "GC_ID:1")
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_2759 "PMID:23020233")
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_2759 "PMID:30257078")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_2759 "Eukaryota")
+SubClassOf(obo:NCBITaxon_2759 obo:NCBITaxon_131567)
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_40674> (Mammalia)
+# Class: obo:NCBITaxon_40674 (Mammalia)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_40674> "GC_ID:1")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_40674> "Mammalia")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_40674> <http://purl.obolibrary.org/obo/NCBITaxon_2759>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_40674 "GC_ID:1")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_40674 "Mammalia")
+SubClassOf(obo:NCBITaxon_40674 obo:NCBITaxon_2759)
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9443> (Primates)
+# Class: obo:NCBITaxon_9443 (Primates)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9443> "GC_ID:1")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9443> "Primates")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9443> <http://purl.obolibrary.org/obo/NCBITaxon_40674>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_9443 "GC_ID:1")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_9443 "Primates")
+SubClassOf(obo:NCBITaxon_9443 obo:NCBITaxon_40674)
 
-# Class: <http://purl.obolibrary.org/obo/NCBITaxon_9606> (Homo sapiens)
+# Class: obo:NCBITaxon_9606 (Homo sapiens)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/NCBITaxon_9606> "GC_ID:1")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/NCBITaxon_9606> "Homo sapiens")
-SubClassOf(<http://purl.obolibrary.org/obo/NCBITaxon_9606> <http://purl.obolibrary.org/obo/NCBITaxon_9443>)
+AnnotationAssertion(oboInOwl:hasDbXref obo:NCBITaxon_9606 "GC_ID:1")
+AnnotationAssertion(rdfs:label obo:NCBITaxon_9606 "Homo sapiens")
+SubClassOf(obo:NCBITaxon_9606 obo:NCBITaxon_9443)
 
 
 )

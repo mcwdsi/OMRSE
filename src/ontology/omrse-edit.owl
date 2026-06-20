@@ -516,33 +516,6 @@ Declaration(AnnotationProperty(terms:license))
 #   Annotation Properties
 ############################
 
-# Annotation Property: obo:IAO_0000115 (definition)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition")
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "definition"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000115 "textual definition")
-
-# Annotation Property: obo:IAO_0000117 (definition editor)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000117 "definition editor")
-AnnotationAssertion(rdfs:label obo:IAO_0000117 "definition editor"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000117 "term editor")
-AnnotationAssertion(rdfs:label obo:IAO_0000117 "term editor"@en)
-
-# Annotation Property: obo:IAO_0000118 (alternative label)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000118 "alternative label"@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000118 "alternative term"@en)
-
-# Annotation Property: obo:IAO_0000119 (definition source)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source")
-AnnotationAssertion(rdfs:label obo:IAO_0000119 "definition source"@en)
-
-# Annotation Property: obo:IAO_0000412 (imported from)
-
-AnnotationAssertion(rdfs:label obo:IAO_0000412 "imported from"@en)
-
 # Annotation Property: obo:OMRSE_00000080 (U.S. Census PUMS serial number)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000080 "The PUMS serial number assigned to a housing unit, which is only unique within each state, and which explicitly links the housing unit record with person records in PUMS data.")
@@ -4145,7 +4118,7 @@ AnnotationAssertion(rdfs:isDefinedBy obo:OOSTT_00000090 obo:omrse.owl)
 AnnotationAssertion(rdfs:label obo:OOSTT_00000090 "orthopedic surgeon role"@en)
 SubClassOf(obo:OOSTT_00000090 obo:OMRSE_00000139)
 
-# Class: obo:OOSTT_00000091 (pediatric surgeon role)
+# Class: obo:OOSTT_00000091 (obsolete pediatric surgeon role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000091 "A physician role borne by a human being and that, if realized, is being realized by its bearer using operative manual and instrumental techniques on preadult patients to investigate or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000091 "http://purl.obolibrary.org/obo/oostt/release/2025-08-28/oostt.owl")
@@ -4396,7 +4369,7 @@ AnnotationAssertion(rdfs:isDefinedBy obo:OOSTT_00000250 obo:omrse.owl)
 AnnotationAssertion(rdfs:label obo:OOSTT_00000250 "hand surgeon role"@en)
 SubClassOf(obo:OOSTT_00000250 obo:OMRSE_00000139)
 
-# Class: obo:OOSTT_00000323 (registered nurse role)
+# Class: obo:OOSTT_00000323 (obsolete registered nurse role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000323 "A nurse role that is the specified output of nursing licensing act as specified by a country, state, province or similar licensing body ensureing that the bearer of the role meets the requirements specified in their jursidiction to obtain a nursing license."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000323 "Mathias Brochhausen"@en)
@@ -4460,7 +4433,7 @@ AnnotationAssertion(rdfs:isDefinedBy obo:OOSTT_00000366 obo:omrse.owl)
 AnnotationAssertion(rdfs:label obo:OOSTT_00000366 "board eligible neurosurgeon role"@en)
 SubClassOf(obo:OOSTT_00000366 obo:OMRSE_00000140)
 
-# Class: obo:OOSTT_00000367 (neurosurgeon role)
+# Class: obo:OOSTT_00000367 (obsolete neurosurgeon role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000367 "A surgeon role borne by a human being and that, if realized, is realized by its bearer using operative manual and instrumental techniques on the nervous system of a patient to investigate or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas."@en)
 AnnotationAssertion(obo:IAO_0000412 obo:OOSTT_00000367 "http://purl.obolibrary.org/obo/oostt/release/2025-08-28/oostt.owl")

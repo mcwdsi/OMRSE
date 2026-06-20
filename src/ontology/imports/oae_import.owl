@@ -1,33 +1,42 @@
 Prefix(:=<http://purl.obolibrary.org/obo/omrse/imports/oae_import.owl#>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(zdc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(prov:=<http://www.w3.org/ns/prov#>)
+Prefix(rdfa:=<http://www.w3.org/ns/rdfa#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+Prefix(void:=<http://rdfs.org/ns/void#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/oae_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-04-26/imports/oae_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/oae/releases/2026-04-15/oae.owl>)
-Annotation(owl:versionInfo "2026-04-26")
+<http://purl.obolibrary.org/obo/omrse/releases/2026-06-20/imports/oae_import.owl>
+Annotation(zdc:source <http://purl.obolibrary.org/obo/oae/releases/2026-04-15/oae.owl>)
+Annotation(owl:versionInfo "2026-06-20")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/OAE_0000002>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OAE_0000067>))
-Declaration(Class(<http://purl.obolibrary.org/obo/OAE_0002807>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000116>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000117>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000118>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/OAE_0004334>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(Class(obo:OAE_0000002))
+Declaration(Class(obo:OAE_0000067))
+Declaration(Class(obo:OAE_0002807))
+Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(obo:IAO_0000116))
+Declaration(AnnotationProperty(obo:IAO_0000117))
+Declaration(AnnotationProperty(obo:IAO_0000118))
+Declaration(AnnotationProperty(obo:IAO_0000119))
+Declaration(AnnotationProperty(obo:OAE_0004334))
+Declaration(AnnotationProperty(zdc:source))
 ############################
 #   Annotation Properties
 ############################
 
-# Annotation Property: <http://purl.obolibrary.org/obo/OAE_0004334> (has_MedDRA_id)
+# Annotation Property: obo:OAE_0004334 (has_MedDRA_id)
 
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OAE_0004334> "has_MedDRA_id"@en)
+AnnotationAssertion(rdfs:label obo:OAE_0004334 "has_MedDRA_id"@en)
 
 
 
@@ -35,34 +44,34 @@ AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OAE_0004334> "has
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/OAE_0000002> (medical intervention)
+# Class: obo:OAE_0000002 (medical intervention)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OAE_0000002> "medical intervention is a planned process that has the goal of diagnosing, preventing or relieving illness or injury.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000116> <http://purl.obolibrary.org/obo/OAE_0000002> "The act of intervening, interfering or interceding with the intent of modifying the outcome. In medicine, an intervention is usually undertaken to help treat or cure a condition. For example, \"Acupuncture as a therapeutic intervention is widely practiced in the United States,\" 
+AnnotationAssertion(obo:IAO_0000115 obo:OAE_0000002 "medical intervention is a planned process that has the goal of diagnosing, preventing or relieving illness or injury.")
+AnnotationAssertion(obo:IAO_0000116 obo:OAE_0000002 "The act of intervening, interfering or interceding with the intent of modifying the outcome. In medicine, an intervention is usually undertaken to help treat or cure a condition. For example, \"Acupuncture as a therapeutic intervention is widely practiced in the United States,\" 
 Reference:
 http://www.medterms.com/script/main/art.asp?articlekey=34214 . Some interventions can be used for diagnosis. ")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OAE_0000002> "YH")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OAE_0000002> "WEB: http://wiki.answers.com/Q/What_is_medical_intervention")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OAE_0000002> "medical intervention")
+AnnotationAssertion(obo:IAO_0000117 obo:OAE_0000002 "YH")
+AnnotationAssertion(obo:IAO_0000119 obo:OAE_0000002 "WEB: http://wiki.answers.com/Q/What_is_medical_intervention")
+AnnotationAssertion(rdfs:label obo:OAE_0000002 "medical intervention")
 
-# Class: <http://purl.obolibrary.org/obo/OAE_0000067> (surgery)
+# Class: obo:OAE_0000067 (surgery)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OAE_0000067> "Surgery is a medical procedure that uses operative manual and instrumental techniques on a patient to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance. The key difference between a surgery and a general procedure is the need for an incision. Making an incision, or cutting into the skin to gain access to the body’s deeper tissues or organs, is a defining characteristic of surgery.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OAE_0000067> "YH, SS")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000118> <http://purl.obolibrary.org/obo/OAE_0000067> "surgical procedure")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OAE_0000067> "WEB: http://en.wikipedia.org/wiki/Surgery")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OAE_0000067> "WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/OAE_0004334> <http://purl.obolibrary.org/obo/OAE_0000067> "10042609")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OAE_0000067> "surgery")
-SubClassOf(<http://purl.obolibrary.org/obo/OAE_0000067> <http://purl.obolibrary.org/obo/OAE_0002807>)
+AnnotationAssertion(obo:IAO_0000115 obo:OAE_0000067 "Surgery is a medical procedure that uses operative manual and instrumental techniques on a patient to investigate and/or treat a pathological condition such as disease or injury, to help improve bodily function or appearance. The key difference between a surgery and a general procedure is the need for an incision. Making an incision, or cutting into the skin to gain access to the body’s deeper tissues or organs, is a defining characteristic of surgery.")
+AnnotationAssertion(obo:IAO_0000117 obo:OAE_0000067 "YH, SS")
+AnnotationAssertion(obo:IAO_0000118 obo:OAE_0000067 "surgical procedure")
+AnnotationAssertion(obo:IAO_0000119 obo:OAE_0000067 "WEB: http://en.wikipedia.org/wiki/Surgery")
+AnnotationAssertion(obo:IAO_0000119 obo:OAE_0000067 "WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm")
+AnnotationAssertion(obo:OAE_0004334 obo:OAE_0000067 "10042609")
+AnnotationAssertion(rdfs:label obo:OAE_0000067 "surgery")
+SubClassOf(obo:OAE_0000067 obo:OAE_0002807)
 
-# Class: <http://purl.obolibrary.org/obo/OAE_0002807> (medical procedure)
+# Class: obo:OAE_0002807 (medical procedure)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/OAE_0002807> "a medical intervention that refers to any series of pre-defined steps that should be followed to achieve a desired result.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000117> <http://purl.obolibrary.org/obo/OAE_0002807> "YH, SS")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/OAE_0002807> "WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/OAE_0002807> "medical procedure"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/OAE_0002807> <http://purl.obolibrary.org/obo/OAE_0000002>)
+AnnotationAssertion(obo:IAO_0000115 obo:OAE_0002807 "a medical intervention that refers to any series of pre-defined steps that should be followed to achieve a desired result.")
+AnnotationAssertion(obo:IAO_0000117 obo:OAE_0002807 "YH, SS")
+AnnotationAssertion(obo:IAO_0000119 obo:OAE_0002807 "WEB: http://www.wisegeekhealth.com/what-is-the-difference-between-a-surgery-and-a-procedure.htm")
+AnnotationAssertion(rdfs:label obo:OAE_0002807 "medical procedure"@en)
+SubClassOf(obo:OAE_0002807 obo:OAE_0000002)
 
 
 )

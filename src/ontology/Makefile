@@ -16,7 +16,7 @@
 # 3. [Update repo to latest ODK](update_repo)
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                e26d915d296be0f650f905a02d7b507f5e529907ba615ff0c43f155f5502eb3b
+CONFIG_HASH=                b8e67a9b8e19335a77dcb82a68045c3a18977c7e244efb2858df6e0b8d832003
 
 
 # ----------------------------------------
@@ -32,7 +32,8 @@ EDIT_FORMAT=                owl
 SRC =                       $(ONT)-edit.$(EDIT_FORMAT)
 MAKE_FAST=                  $(MAKE) IMP=false PAT=false COMP=false MIR=false
 CATALOG=                    catalog-v001.xml
-ROBOT=                      robot --catalog $(CATALOG)
+CONTEXT_FILE =              config/context.json
+ROBOT=                      robot --catalog $(CATALOG) --add-prefixes $(CONTEXT_FILE)
 REASONER=                   ELK
 OWLTOOLS =                  owltools --use-catalog
 RELEASEDIR=                 ../..
@@ -387,7 +388,7 @@ IMPORT_MODULE_TEMPLATE=$(TEMPLATEDIR)/external_import.tsv
 IMPORT_MODULE_SIGNATURE=$(TMPDIR)/external_import_terms.txt
 IMPORT_MODULE=$(IMPORTDIR)/external_import.owl
 $(IMPORT_MODULE): $(IMPORT_MODULE_TEMPLATE) | $(TMPDIR)
-	$(ROBOT) template --template $< \
+	$(ROBOT) template --template $< --add-prefixes $(CONTEXT_FILE) \
  		--ontology-iri "$(ONTBASE)/external_import.owl" \
   		convert -f ofn \
   		--output $@
