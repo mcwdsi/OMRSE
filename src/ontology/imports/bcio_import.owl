@@ -1,17 +1,18 @@
 Prefix(:=<http://purl.obolibrary.org/obo/omrse/imports/bcio_import.owl#>)
-Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(sdg:=<http://purl.unep.org/sdg/>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(zdc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(rdfa:=<http://www.w3.org/ns/rdfa#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
 Prefix(sssom:=<https://w3id.org/sssom/>)
-Prefix(terms:=<http://purl.org/dc/terms/>)
 Prefix(schema:=<https://schema.org/>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
 Prefix(Property:=<https://www.wikidata.org/wiki/Property:>)
 Prefix(metadata:=<http://data.bioontology.org/metadata/>)
 Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
@@ -19,9 +20,9 @@ Prefix(owlready_ontology:=<http://www.lesfleursdunormal.fr/static/_downloads/owl
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/bcio_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-04-26/imports/bcio_import.owl>
-Annotation(dc:source <http://humanbehaviourchange.org/ontology/bcio.owl/2026-03-23>)
-Annotation(owl:versionInfo "2026-04-26")
+<http://purl.obolibrary.org/obo/omrse/releases/2026-06-20/imports/bcio_import.owl>
+Annotation(zdc:source <http://humanbehaviourchange.org/ontology/bcio.owl/2026-04-28>)
+Annotation(owl:versionInfo "2026-06-20")
 
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010025>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010084>))
@@ -60,7 +61,7 @@ Declaration(AnnotationProperty(obo:IAO_0000114))
 Declaration(AnnotationProperty(obo:IAO_0000115))
 Declaration(AnnotationProperty(obo:IAO_0000119))
 Declaration(AnnotationProperty(obo:IAO_0000232))
-Declaration(AnnotationProperty(dc:source))
+Declaration(AnnotationProperty(zdc:source))
 
 
 ############################

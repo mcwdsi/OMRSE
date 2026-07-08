@@ -1,41 +1,46 @@
 Prefix(:=<http://purl.obolibrary.org/obo/omrse/imports/mf_import.owl#>)
+Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(zdc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(rdfa:=<http://www.w3.org/ns/rdfa#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(dcterms:=<http://purl.org/dc/terms/>)
+Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/mf_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-04-26/imports/mf_import.owl>
-Annotation(<http://purl.org/dc/elements/1.1/source> <http://purl.obolibrary.org/obo/MF/2025-07-08/MF.owl>)
-Annotation(owl:versionInfo "2026-04-26")
+<http://purl.obolibrary.org/obo/omrse/releases/2026-06-20/imports/mf_import.owl>
+Annotation(zdc:source <http://purl.obolibrary.org/obo/MF/2025-07-08/MF.owl>)
+Annotation(owl:versionInfo "2026-06-20")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000020>))
-Declaration(Class(<http://purl.obolibrary.org/obo/MF_0000030>))
-Declaration(Class(<http://purl.obolibrary.org/obo/MF_0000031>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
-Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000119>))
-Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
+Declaration(Class(obo:BFO_0000020))
+Declaration(Class(obo:MF_0000030))
+Declaration(Class(obo:MF_0000031))
+Declaration(AnnotationProperty(obo:IAO_0000115))
+Declaration(AnnotationProperty(obo:IAO_0000119))
+Declaration(AnnotationProperty(zdc:source))
 
 
 ############################
 #   Classes
 ############################
 
-# Class: <http://purl.obolibrary.org/obo/MF_0000030> (representation)
+# Class: obo:MF_0000030 (representation)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MF_0000030> "A dependent continuant which is about a portion of reality.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/MF_0000030> "http://www.jbiomedsem.com/content/1/1/10")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MF_0000030> "representation")
-SubClassOf(<http://purl.obolibrary.org/obo/MF_0000030> <http://purl.obolibrary.org/obo/BFO_0000020>)
+AnnotationAssertion(obo:IAO_0000115 obo:MF_0000030 "A dependent continuant which is about a portion of reality.")
+AnnotationAssertion(obo:IAO_0000119 obo:MF_0000030 "http://www.jbiomedsem.com/content/1/1/10")
+AnnotationAssertion(rdfs:label obo:MF_0000030 "representation")
+SubClassOf(obo:MF_0000030 obo:BFO_0000020)
 
-# Class: <http://purl.obolibrary.org/obo/MF_0000031> (cognitive representation)
+# Class: obo:MF_0000031 (cognitive representation)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/MF_0000031> "A representation which specifically depends on an anatomical structure in the cognitive system of an organism.")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000119> <http://purl.obolibrary.org/obo/MF_0000031> "http://www.jbiomedsem.com/content/1/1/10")
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/MF_0000031> "cognitive representation")
-SubClassOf(<http://purl.obolibrary.org/obo/MF_0000031> <http://purl.obolibrary.org/obo/MF_0000030>)
+AnnotationAssertion(obo:IAO_0000115 obo:MF_0000031 "A representation which specifically depends on an anatomical structure in the cognitive system of an organism.")
+AnnotationAssertion(obo:IAO_0000119 obo:MF_0000031 "http://www.jbiomedsem.com/content/1/1/10")
+AnnotationAssertion(rdfs:label obo:MF_0000031 "cognitive representation")
+SubClassOf(obo:MF_0000031 obo:MF_0000030)
 
 
 )
