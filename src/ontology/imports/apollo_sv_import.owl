@@ -12,9 +12,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/apollo_sv_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-06-20/imports/apollo_sv_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2026-07-08/imports/apollo_sv_import.owl>
 Annotation(zdc:source <http://purl.obolibrary.org/obo/apollo_sv/releases/2026-03-13/apollo_sv.owl>)
-Annotation(owl:versionInfo "2026-06-20")
+Annotation(owl:versionInfo "2026-07-08")
 
 Declaration(Class(obo:APOLLO_SV_00000032))
 Declaration(Class(obo:APOLLO_SV_00000480))

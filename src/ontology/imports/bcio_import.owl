@@ -20,9 +20,9 @@ Prefix(owlready_ontology:=<http://www.lesfleursdunormal.fr/static/_downloads/owl
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/bcio_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-06-20/imports/bcio_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2026-07-08/imports/bcio_import.owl>
 Annotation(zdc:source <http://humanbehaviourchange.org/ontology/bcio.owl/2026-04-28>)
-Annotation(owl:versionInfo "2026-06-20")
+Annotation(owl:versionInfo "2026-07-08")
 
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010025>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010084>))
