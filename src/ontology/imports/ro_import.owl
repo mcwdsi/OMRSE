@@ -12,9 +12,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/ro_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-06-20/imports/ro_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2026-07-08/imports/ro_import.owl>
 Annotation(zdc:source <http://purl.obolibrary.org/obo/ro/releases/2025-12-17/ro.owl>)
-Annotation(owl:versionInfo "2026-06-20")
+Annotation(owl:versionInfo "2026-07-08")
 
 Declaration(Class(obo:BFO_0000002))
 Declaration(Class(obo:BFO_0000003))
@@ -410,7 +410,7 @@ AnnotationAssertion(obo:IAO_0000233 oboInOwl:hasBroadSynonym "https://github.com
 AnnotationAssertion(rdfs:label oboInOwl:hasBroadSynonym "has broad synonym"@en)
 AnnotationAssertion(rdfs:label oboInOwl:hasBroadSynonym "has_broad_synonym")
 
-# Annotation Property: oboInOwl:hasDbXref (database_cross_reference)
+# Annotation Property: oboInOwl:hasDbXref (has cross-reference)
 
 AnnotationAssertion(obo:IAO_0000112 oboInOwl:hasDbXref "disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) \"NCIT:C41009\"^^xsd:string")
 AnnotationAssertion(obo:IAO_0000115 oboInOwl:hasDbXref "An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.")
