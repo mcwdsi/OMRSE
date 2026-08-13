@@ -1,10 +1,10 @@
 Prefix(:=<http://purl.obolibrary.org/obo/omrse.owl#>)
-Prefix(zdc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(obo:=<http://purl.obolibrary.org/obo/>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(zdc:=<http://purl.org/dc/elements/1.1/>)
 Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(dcterms:=<http://purl.org/dc/terms/>)
@@ -744,7 +744,7 @@ SubClassOf(obo:GO_0008150 obo:BFO_0000015)
 
 # Class: obo:IAO_0000572 (documenting)
 
-SubClassOf(obo:IAO_0000572 obo:COB_0000035)
+SubClassOf(obo:IAO_0000572 obo:COB_0000082)
 
 # Class: obo:IAO_0020021 (identity document)
 
@@ -752,7 +752,7 @@ SubClassOf(obo:IAO_0020021 obo:IAO_0000310)
 
 # Class: obo:IAO_0021003 (social act)
 
-SubClassOf(obo:IAO_0021003 obo:COB_0000035)
+SubClassOf(obo:IAO_0021003 obo:COB_0000082)
 
 # Class: obo:NCBITaxon_131567 (cellular organisms)
 
@@ -760,19 +760,19 @@ SubClassOf(obo:NCBITaxon_131567 obo:COB_0000022)
 
 # Class: obo:OAE_0000002 (medical intervention)
 
-SubClassOf(obo:OAE_0000002 obo:COB_0000035)
+SubClassOf(obo:OAE_0000002 obo:COB_0000082)
 
 # Class: obo:OBIB_0000710 (survey execution)
 
-SubClassOf(obo:OBIB_0000710 obo:COB_0000035)
+SubClassOf(obo:OBIB_0000710 obo:COB_0000082)
 
 # Class: obo:OBI_0200000 (data transformation)
 
-SubClassOf(obo:OBI_0200000 obo:COB_0000035)
+SubClassOf(obo:OBI_0200000 obo:COB_0000082)
 
 # Class: obo:OGMS_0000096 (health care process)
 
-SubClassOf(obo:OGMS_0000096 obo:COB_0000035)
+SubClassOf(obo:OGMS_0000096 obo:COB_0000082)
 
 # Class: obo:OGMS_0000097 (health care encounter)
 
@@ -1409,6 +1409,7 @@ SubClassOf(obo:OMRSE_00000075 ObjectSomeValuesFrom(obo:RO_0000052 ObjectIntersec
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000076 "A human or collection of humans that occupies a housing unit by storing their possessions there and habitually sleeping there thereby participating in the realization of that housing unit's residence function."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000076 "Amanda Hicks"@en)
+AnnotationAssertion(oboInOwl:hasDbXref obo:OMRSE_00000076 <obo:PCO_0000024>)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000076 "Note in OMRSE it is the housing unit, not the people living there, that are the bearers of a \"residence function\".  Note the distinction between being a residence and a resident.")
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000076 "Note that it is not possible in OWL 2, at least that we have yet found, to say that the housing unit in which the process occurs is the same one that is the bearer of the residence function (that the process realizes).")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000076 "household"@en)
@@ -1934,7 +1935,7 @@ SubClassOf(obo:OMRSE_00000145 oboInOwl:ObsoleteClass)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000146 "A planned process in which the bearer of an employer role provides wages or salary to the bearer of an employee roll in fullfillment of the arrangements specified in some declaration"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000146 "employment process"@en)
-SubClassOf(obo:OMRSE_00000146 obo:COB_0000035)
+SubClassOf(obo:OMRSE_00000146 obo:COB_0000082)
 SubClassOf(obo:OMRSE_00000146 ObjectIntersectionOf(ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000077) ObjectSomeValuesFrom(obo:BFO_0000055 obo:OMRSE_00000087)))
 
 # Class: obo:OMRSE_00000147 (pediatric surgeon role)
@@ -2003,7 +2004,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000153 "They include assistance 
 http://ahca.myflorida.com/Medicaid/acs/index.shtml"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000153 "Amanda Hicks")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000153 "assistive care encounter"@en)
-SubClassOf(obo:OMRSE_00000153 obo:COB_0000035)
+SubClassOf(obo:OMRSE_00000153 obo:COB_0000082)
 
 # Class: obo:OMRSE_00000154 (assistance with activities of daily living care encounter)
 
@@ -2371,7 +2372,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000202 "A planned process of det
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000202 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000202 "tumor summary staging"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000202 "cancer summary staging"@en)
-SubClassOf(obo:OMRSE_00000202 obo:COB_0000035)
+SubClassOf(obo:OMRSE_00000202 obo:COB_0000082)
 
 # Class: obo:OMRSE_00000203 (cancer summary staging code)
 
@@ -2687,7 +2688,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000227 "Matthew Diller"@en)
 AnnotationAssertion(zdc:contributor obo:OMRSE_00000227 "S. Clint Dowland"@en)
 AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000227 "healthcare administrative process"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000227 "health care administrative process"@en)
-SubClassOf(obo:OMRSE_00000227 obo:COB_0000035)
+SubClassOf(obo:OMRSE_00000227 obo:COB_0000082)
 
 # Class: obo:OMRSE_00000228 (principal diagnosis-assignment process)
 
@@ -2794,7 +2795,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000237 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000237 "barter"@en)
 AnnotationAssertion(zdc:contributor obo:OMRSE_00000237 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000237 "exchange of ownership"@en)
-SubClassOf(obo:OMRSE_00000237 obo:COB_0000035)
+SubClassOf(obo:OMRSE_00000237 obo:COB_0000082)
 
 # Class: obo:OMRSE_00000238 (financial transaction)
 
@@ -2805,7 +2806,7 @@ AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000238 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:OMRSE_00000238 "monetary transaction"@en)
 AnnotationAssertion(zdc:contributor obo:OMRSE_00000238 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000238 "financial transaction"@en)
-SubClassOf(obo:OMRSE_00000238 obo:COB_0000035)
+SubClassOf(obo:OMRSE_00000238 obo:COB_0000082)
 
 # Class: obo:OMRSE_00000239 (payment of debt)
 
@@ -2815,7 +2816,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000239 "A planned process whereb
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000239 "Matthew Diller"@en)
 AnnotationAssertion(zdc:contributor obo:OMRSE_00000239 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000239 "payment of debt"@en)
-SubClassOf(obo:OMRSE_00000239 obo:COB_0000035)
+SubClassOf(obo:OMRSE_00000239 obo:COB_0000082)
 
 # Class: obo:OMRSE_00000240 (financial valuation process)
 
@@ -2825,7 +2826,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000240 "A planned process that h
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000240 "Matthew Diller"@en)
 AnnotationAssertion(zdc:contributor obo:OMRSE_00000240 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000240 "financial valuation process"@en)
-SubClassOf(obo:OMRSE_00000240 obo:COB_0000035)
+SubClassOf(obo:OMRSE_00000240 obo:COB_0000082)
 
 # Class: obo:OMRSE_00000241 (prospective financial valuation process)
 
@@ -2835,7 +2836,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000241 "A planned process that h
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000241 "Matthew Diller"@en)
 AnnotationAssertion(zdc:contributor obo:OMRSE_00000241 "William R. Hogan"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000241 "prospective financial valuation process"@en)
-SubClassOf(obo:OMRSE_00000241 obo:COB_0000035)
+SubClassOf(obo:OMRSE_00000241 obo:COB_0000082)
 
 # Class: obo:OMRSE_00000242 (intimate partnership)
 
@@ -3073,18 +3074,19 @@ AnnotationAssertion(rdfs:label obo:OMRSE_00000274 "personal data disclosure"@en)
 SubClassOf(obo:OMRSE_00000274 obo:OMRSE_00002068)
 SubClassOf(obo:OMRSE_00000274 ObjectSomeValuesFrom(obo:BFO_0000051 ObjectIntersectionOf(obo:OMRSE_00002062 ObjectSomeValuesFrom(obo:RO_0000057 ObjectIntersectionOf(obo:BFO_0000020 ObjectSomeValuesFrom(obo:RO_0000059 obo:IAO_0000027))))))
 
-# Class: obo:OMRSE_00000277 (subjective representation)
+# Class: obo:OMRSE_00000277 (self representation)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000277 "A cognitive representation in which the representation’s bearer is represented as being its bearer."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000277 "Matthew Diller"@en)
 AnnotationAssertion(zdc:contributor obo:OMRSE_00000277 "S. Clint Dowland"@en)
 AnnotationAssertion(zdc:contributor obo:OMRSE_00000277 "William R. Hogan"@en)
-AnnotationAssertion(rdfs:label obo:OMRSE_00000277 "subjective representation"@en)
+AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000277 "subjective representation"@en)
+AnnotationAssertion(rdfs:label obo:OMRSE_00000277 "self representation"@en)
 SubClassOf(obo:OMRSE_00000277 obo:MF_0000031)
 
 # Class: obo:OMRSE_00000278 (social identity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000278 "A subjective representation of themselves by a person or group."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000278 "A self representation of themselves by a person or group."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000278 "Matthew Diller"@en)
 AnnotationAssertion(zdc:contributor obo:OMRSE_00000278 "S. Clint Dowland"@en)
 AnnotationAssertion(zdc:contributor obo:OMRSE_00000278 "William R. Hogan"@en)
@@ -3498,7 +3500,7 @@ SubClassOf(obo:OMRSE_00000507 oboInOwl:ObsoleteClass)
 
 # Class: obo:OMRSE_00000925 (self-identity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000925 "An identity that a person has about themselves."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000925 "A social identity that a person has about themselves."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OMRSE_00000925 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000232 obo:OMRSE_00000925 "The term 'self' sounds tautologous but is required to reflect the fact that this is not identity in terms of who you are but how you represent yourself to yourself."@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000925 "Adopted from AddictO"@en)
@@ -3508,7 +3510,7 @@ SubClassOf(obo:OMRSE_00000925 obo:OMRSE_00000278)
 
 # Class: obo:OMRSE_00000926 (group identity)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000926 "An identity that a group holds about itself."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000926 "A social identity that a group holds about itself."@en)
 AnnotationAssertion(obo:IAO_0000232 obo:OMRSE_00000926 "Matthew Diller"@en)
 AnnotationAssertion(obo:IAO_0000232 obo:OMRSE_00000926 "can a socially shared representtaion be said to be purely cognitive? I.e query parent entity?"@en)
 AnnotationAssertion(rdfs:comment obo:OMRSE_00000926 "Adopted from AddictO"@en)
@@ -3578,7 +3580,7 @@ AnnotationAssertion(rdfs:comment obo:OMRSE_00002029 "The loss of a \"bad\" capab
 
 This addition to the definition notwithstanding, we do not intend to incorporate the receipt of punishment into the definition of educating."@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00002029 "education process"@en)
-SubClassOf(obo:OMRSE_00002029 obo:COB_0000035)
+SubClassOf(obo:OMRSE_00002029 obo:COB_0000082)
 
 # Class: obo:OMRSE_00002030 (educational objective)
 

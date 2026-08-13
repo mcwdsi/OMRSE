@@ -118,6 +118,15 @@ release_diff: reports/omrse-release-diff-merged.txt
 
 OMRSE_BASE_IRI=http://purl.obolibrary.org/obo/OMRSE_
 
+# Force a custom recipe for the pre_seed file
+# Note: GNU Make will give an 'overriding recipe' warning, which is expected here.
+$(TMPDIR)/pre_seed.txt:
+	@echo "Running custom pre_seed generation..."
+	$(ROBOT) query --input $(SRC) --query $(SPARQLDIR)/preseed-start.sparql $(TMPDIR)/pre_pre_seed.txt
+	grep -v "http://www.geneontology.org/formats/oboInOwl#hasDbXref,P" $(TMPDIR)/pre_pre_seed.txt > $(TMPDIR)/filtered_pre_pre_seed.txt
+	tail -n +2 $(TMPDIR)/filtered_pre_pre_seed.txt| cut -d',' -f1 | sort -u > $(TMPDIR)/pre_seed.txt
+
+
 # tmp/external-%.tsv: tmp/external-%.owl
 # 	$(ROBOT) query -i $< -q ../sparql/triple-table.sparql $@
 # 	python ../scripts/summarize-table.py sort --input $@

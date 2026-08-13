@@ -20,9 +20,9 @@ Prefix(owlready_ontology:=<http://www.lesfleursdunormal.fr/static/_downloads/owl
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/bcio_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-07-08/imports/bcio_import.owl>
-Annotation(zdc:source <http://humanbehaviourchange.org/ontology/bcio.owl/2026-04-28>)
-Annotation(owl:versionInfo "2026-07-08")
+<http://purl.obolibrary.org/obo/omrse/releases/2026-08-13/imports/bcio_import.owl>
+Annotation(zdc:source <http://humanbehaviourchange.org/ontology/bcio.owl/2026-08-06>)
+Annotation(owl:versionInfo "2026-08-13")
 
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010025>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_010084>))
@@ -42,17 +42,9 @@ Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015048>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015049>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015050>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015051>))
-Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015083>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015084>))
-Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015085>))
-Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015086>))
-Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015087>))
-Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015088>))
-Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015089>))
-Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_015090>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_026022>))
 Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_050300>))
-Declaration(Class(<http://humanbehaviourchange.org/ontology/BCIO_050475>))
 Declaration(Class(obo:BFO_0000020))
 Declaration(Class(obo:BFO_0000023))
 Declaration(Class(obo:OMRSE_00000062))
@@ -84,65 +76,65 @@ AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BC
 AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010084> "student or trainee role")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010084> obo:BFO_0000023)
 
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_010085> (informal education student or trainee)
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010085> (informal education student role)
 
 AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010085> "Published")
 AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010085> "A student or trainee that is currently learning in a non-institutional setting.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010085> "informal education student or trainee")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010085> "informal education student role")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010085> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
 
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_010086> (school student or trainee)
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010086> (school student role)
 
 AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010086> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010086> "A student or trainee that is currently learning at a primary or secondary education level in an institutional, organised setting.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010086> "school student or trainee")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010086> "A student or trainee role realised by currently learning at a primary or secondary education level in an institutional, organised setting.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010086> "school student role")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010086> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
 
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_010087> (vocational training student or trainee)
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010087> (trainee role)
 
 AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010087> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010087> "A student or trainee that is currently learning the curriculum material of vocational programme, normally in preparation for employment in a trade, job or profession.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010087> "vocational training student or trainee")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010087> "A student or trainee role that is currently learning the curriculum material of vocational programme, normally in preparation for employment in a trade, job or profession.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010087> "trainee role")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010087> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
 
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_010088> (higher education student or trainee)
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010088> (higher education student role)
 
 AnnotationAssertion(obo:IAO_0000112 <http://humanbehaviourchange.org/ontology/BCIO_010088> "completing a university bachelor's or master's course of study, medical school or other professional school.")
 AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010088> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010088> "A student or trainee that is currently learning on an advanced educational programme in a university, college or professional school.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010088> "higher education student or trainee")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010088> "A student or trainee role realised by currently learning on an advanced educational programme in a university, college or professional school.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010088> "higher education student role")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010088> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
 
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_010089> (undergraduate student or trainee)
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010089> (undergraduate student role)
 
 AnnotationAssertion(obo:IAO_0000112 <http://humanbehaviourchange.org/ontology/BCIO_010089> "undergraduate student")
 AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010089> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010089> "A higher education student or trainee that is currently studying for an undergraduate degree.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010089> "undergraduate student or trainee")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010089> "A higher education student role realised by currently studying for an undergraduate degree.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010089> "undergraduate student role")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010089> <http://humanbehaviourchange.org/ontology/BCIO_010088>)
 
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_010090> (graduate student or trainee)
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010090> (graduate student role)
 
 AnnotationAssertion(obo:IAO_0000112 <http://humanbehaviourchange.org/ontology/BCIO_010090> "graduate student")
 AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010090> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010090> "A higher education student or trainee that has completed an undergraduate degree.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010090> "graduate student or trainee")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010090> "A higher education student role realised by currently studying for a more advanced degree after completing an undergraduate degree.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010090> "graduate student role")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010090> <http://humanbehaviourchange.org/ontology/BCIO_010088>)
 
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_010091> (masters student or trainee)
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010091> (masters student role)
 
 AnnotationAssertion(obo:IAO_0000112 <http://humanbehaviourchange.org/ontology/BCIO_010091> "MSc student, Masters student")
 AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010091> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010091> "A higher education student or trainee that is currently studying for a Masters degree.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010091> "masters student or trainee")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010091> "A higher education student  role realised by currently studying for a masters degree.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010091> "masters student role")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010091> <http://humanbehaviourchange.org/ontology/BCIO_010088>)
 
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_010092> (doctoral student or trainee)
+# Class: <http://humanbehaviourchange.org/ontology/BCIO_010092> (doctoral student role)
 
 AnnotationAssertion(obo:IAO_0000112 <http://humanbehaviourchange.org/ontology/BCIO_010092> "PhD student")
 AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_010092> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010092> "A higher education student or trainee that is currently studying for a doctoral degree.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010092> "doctoral student or trainee")
+AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_010092> "A higher education student  role realised by currently studying for a doctoral degree.")
+AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_010092> "doctoral student role")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_010092> <http://humanbehaviourchange.org/ontology/BCIO_010088>)
 
 # Class: <http://humanbehaviourchange.org/ontology/BCIO_015043> (highest level of formal educational qualification achieved)
@@ -210,61 +202,12 @@ AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_
 AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015051> "achieved doctoral or equivalent level education")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015051> <http://humanbehaviourchange.org/ontology/BCIO_015043>)
 
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_015083> (informal education student role)
-
-AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015083> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015083> "A student or trainee role realised by  currently learning in a non-institutional setting.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015083> "informal education student role")
-SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015083> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
-
 # Class: <http://humanbehaviourchange.org/ontology/BCIO_015084> (preschool student role)
 
 AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015084> "Published")
 AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015084> "A student or trainee role realised by  currently learning at an initial level of organised instruction, primarily to familiarise the bearer to the school-type environment.")
 AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015084> "preschool student role")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015084> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
-
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_015085> (school student role)
-
-AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015085> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015085> "A student or trainee role realised by currently learning at a primary or secondary education level in an institutional, organised setting.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015085> "school student role")
-SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015085> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
-
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_015086> (vocational training student or trainee role)
-
-AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015086> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015086> "A student or trainee role realised by currently learning the curriculum material of vocational programme, normally in preparation for employment in a trade, job or profession.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015086> "vocational training student or trainee role")
-SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015086> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
-
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_015087> (higher education student role)
-
-AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015087> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015087> "A student or trainee role realised by currently learning on an advanced educational programme in a university, college or professional school. For example, completing a university bachelor's or master's course of study, medical school or other professional school.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015087> "higher education student role")
-SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015087> <http://humanbehaviourchange.org/ontology/BCIO_010084>)
-
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_015088> (undergraduate student role)
-
-AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015088> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015088> "A higher education student role realised by currently studying for an undergraduate degree.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015088> "undergraduate student role")
-SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015088> <http://humanbehaviourchange.org/ontology/BCIO_015087>)
-
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_015089> (graduate student role)
-
-AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015089> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015089> "A higher education student role realised by currently studying for a more advanced degree after completing an undergraduate degree.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015089> "graduate student role")
-SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015089> <http://humanbehaviourchange.org/ontology/BCIO_015087>)
-
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_015090> (masters student role)
-
-AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_015090> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_015090> "A higher education student  role realised by currently studying for a masters degree.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_015090> "masters student role")
-SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_015090> <http://humanbehaviourchange.org/ontology/BCIO_015087>)
 
 # Class: <http://humanbehaviourchange.org/ontology/BCIO_026022> (educational facility)
 
@@ -283,13 +226,6 @@ AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_
 AnnotationAssertion(rdfs:comment <http://humanbehaviourchange.org/ontology/BCIO_050300> "Includes everything that can be said about a person: the most general class under which all other qualities, dispositions, roles etc belong.")
 AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_050300> "personal attribute")
 SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_050300> obo:BFO_0000020)
-
-# Class: <http://humanbehaviourchange.org/ontology/BCIO_050475> (doctoral student role)
-
-AnnotationAssertion(obo:IAO_0000114 <http://humanbehaviourchange.org/ontology/BCIO_050475> "Published")
-AnnotationAssertion(obo:IAO_0000115 <http://humanbehaviourchange.org/ontology/BCIO_050475> "A higher education student  role realised by currently studying for a doctoral degree.")
-AnnotationAssertion(rdfs:label <http://humanbehaviourchange.org/ontology/BCIO_050475> "doctoral student role")
-SubClassOf(<http://humanbehaviourchange.org/ontology/BCIO_050475> <http://humanbehaviourchange.org/ontology/BCIO_015087>)
 
 
 )

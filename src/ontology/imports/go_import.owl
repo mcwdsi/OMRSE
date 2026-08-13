@@ -12,18 +12,15 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/go_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-07-08/imports/go_import.owl>
-Annotation(zdc:source <http://purl.obolibrary.org/obo/go/releases/2026-06-15/go.owl>)
-Annotation(owl:versionInfo "2026-07-08")
+<http://purl.obolibrary.org/obo/omrse/releases/2026-08-13/imports/go_import.owl>
+Annotation(zdc:source <http://purl.obolibrary.org/obo/go/releases/2026-07-26/go.owl>)
+Annotation(owl:versionInfo "2026-08-13")
 
 Declaration(Class(obo:GO_0007610))
 Declaration(Class(obo:GO_0008150))
 Declaration(AnnotationProperty(obo:IAO_0000115))
-Declaration(AnnotationProperty(obo:IAO_0000233))
 Declaration(AnnotationProperty(zdc:source))
 Declaration(AnnotationProperty(oboInOwl:hasDbXref))
-Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
-Declaration(AnnotationProperty(oboInOwl:hasRelatedSynonym))
 
 
 ############################
@@ -34,10 +31,6 @@ Declaration(AnnotationProperty(oboInOwl:hasRelatedSynonym))
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:ems") Annotation(oboInOwl:hasDbXref "GOC:jl") Annotation(oboInOwl:hasDbXref "ISBN:0395448956") Annotation(oboInOwl:hasDbXref "PMID:20160973") obo:IAO_0000115 obo:GO_0007610 "The internally coordinated responses (actions or inactions) of animals (individuals or groups) to internal or external stimuli, via a mechanism that involves nervous system activity.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:GO_0007610 "Wikipedia:Behavior")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0007610 "behavioral response to stimulus")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0007610 "behaviour")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0007610 "behavioural response to stimulus")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:GO_0007610 "single-organism behavior")
 AnnotationAssertion(rdfs:comment obo:GO_0007610 "1. Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation reviews.
 2. While a broader definition of behavior encompassing plants and single cell organisms would be justified on the basis of some usage (see PMID:20160973 for discussion), GO uses a tight definition that limits behavior to animals and to responses involving the nervous system, excluding plant responses that GO classifies under development, and responses of unicellular organisms that has general classifications for covering the responses of cells in multicellular organisms (e.g. cell chemotaxis).")
 AnnotationAssertion(rdfs:label obo:GO_0007610 "behavior")
@@ -46,12 +39,7 @@ SubClassOf(obo:GO_0007610 obo:GO_0008150)
 # Class: obo:GO_0008150 (biological_process)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:pdt") obo:IAO_0000115 obo:GO_0008150 "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.")
-AnnotationAssertion(obo:IAO_0000233 obo:GO_0008150 "https://github.com/geneontology/go-ontology/issues/24968"^^xsd:anyURI)
 AnnotationAssertion(oboInOwl:hasDbXref obo:GO_0008150 "Wikipedia:Biological_process")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0008150 "biological process")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0008150 "physiological process")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:GO_0008150 "single organism process")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:GO_0008150 "single-organism process")
 AnnotationAssertion(rdfs:comment obo:GO_0008150 "Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.")
 AnnotationAssertion(rdfs:label obo:GO_0008150 "biological_process")
 
