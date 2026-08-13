@@ -12,9 +12,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/ro_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-07-08/imports/ro_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2026-08-13/imports/ro_import.owl>
 Annotation(zdc:source <http://purl.obolibrary.org/obo/ro/releases/2025-12-17/ro.owl>)
-Annotation(owl:versionInfo "2026-07-08")
+Annotation(owl:versionInfo "2026-08-13")
 
 Declaration(Class(obo:BFO_0000002))
 Declaration(Class(obo:BFO_0000003))
@@ -29,7 +29,6 @@ Declaration(Class(obo:BFO_0000031))
 Declaration(Class(obo:BFO_0000034))
 Declaration(Class(obo:BFO_0000040))
 Declaration(Class(obo:COB_0000022))
-Declaration(Class(obo:COB_0000035))
 Declaration(Class(obo:GO_0003674))
 Declaration(Class(obo:GO_0008150))
 Declaration(Class(obo:GO_0016301))
@@ -233,27 +232,15 @@ Declaration(AnnotationProperty(obo:IAO_0000117))
 Declaration(AnnotationProperty(obo:IAO_0000118))
 Declaration(AnnotationProperty(obo:IAO_0000119))
 Declaration(AnnotationProperty(obo:IAO_0000232))
-Declaration(AnnotationProperty(obo:IAO_0000233))
 Declaration(AnnotationProperty(obo:IAO_0000412))
 Declaration(AnnotationProperty(obo:IAO_0000600))
 Declaration(AnnotationProperty(obo:IAO_0100001))
 Declaration(AnnotationProperty(zdc:contributor))
 Declaration(AnnotationProperty(zdc:source))
-Declaration(AnnotationProperty(zdc:title))
-Declaration(AnnotationProperty(dcterms:contributor))
-Declaration(AnnotationProperty(dcterms:created))
-Declaration(AnnotationProperty(dcterms:creator))
-Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
-Declaration(AnnotationProperty(dcterms:source))
-Declaration(AnnotationProperty(dcterms:title))
-Declaration(AnnotationProperty(oboInOwl:hasBroadSynonym))
 Declaration(AnnotationProperty(oboInOwl:hasDbXref))
-Declaration(AnnotationProperty(oboInOwl:hasExactSynonym))
-Declaration(AnnotationProperty(oboInOwl:hasRelatedSynonym))
 Declaration(AnnotationProperty(rdfs:comment))
 Declaration(AnnotationProperty(rdfs:label))
-Declaration(Datatype(xsd:date))
 ############################
 #   Annotation Properties
 ############################
@@ -363,17 +350,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000232 "An administrative note of u
 AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000232 "PERSON:Alan Ruttenberg"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000232 "curator note"@en)
 
-# Annotation Property: obo:IAO_0000233 (term tracker item)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000233 "term tracker item"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000233 "the URI for an OBI Terms ticket at sourceforge, such as https://sourceforge.net/p/obi/obi-terms/772/"@en)
-AnnotationAssertion(obo:IAO_0000114 obo:IAO_0000233 obo:IAO_0000125)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000233 "An IRI or similar locator for a request or discussion of an ontology term."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000233 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000233 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
-AnnotationAssertion(rdfs:comment obo:IAO_0000233 "The 'tracker item' can associate a tracker with a specific ontology term."@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000233 "term tracker item"@en)
-
 # Annotation Property: obo:IAO_0000412 (imported from)
 
 AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000412 "imported from"@en)
@@ -401,40 +377,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:IAO_0100001 "Person:Alan Ruttenberg"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0100001 "Person:Alan Ruttenberg"@en)
 AnnotationAssertion(rdfs:comment obo:IAO_0100001 "Add as annotation triples in the granting ontology"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0100001 "term replaced by"@en)
-
-# Annotation Property: oboInOwl:hasBroadSynonym (has_broad_synonym)
-
-AnnotationAssertion(obo:IAO_0000115 oboInOwl:hasBroadSynonym "An alternative label for a class or property which has a more general meaning than the preferred name/primary label.")
-AnnotationAssertion(obo:IAO_0000117 oboInOwl:hasBroadSynonym <http://orcid.org/0000-0001-5208-3432>)
-AnnotationAssertion(obo:IAO_0000233 oboInOwl:hasBroadSynonym "https://github.com/information-artifact-ontology/ontology-metadata/issues/18")
-AnnotationAssertion(rdfs:label oboInOwl:hasBroadSynonym "has broad synonym"@en)
-AnnotationAssertion(rdfs:label oboInOwl:hasBroadSynonym "has_broad_synonym")
-
-# Annotation Property: oboInOwl:hasDbXref (has cross-reference)
-
-AnnotationAssertion(obo:IAO_0000112 oboInOwl:hasDbXref "disease characteristic (MONDO:0021125) has cross-reference (http://www.geneontology.org/formats/oboInOwl#hasDbXref) \"NCIT:C41009\"^^xsd:string")
-AnnotationAssertion(obo:IAO_0000115 oboInOwl:hasDbXref "An annotation property that links an ontology entity or a statement to a prefixed identifier or URI.")
-AnnotationAssertion(obo:IAO_0000233 oboInOwl:hasDbXref <https://github.com/information-artifact-ontology/ontology-metadata/issues/123>)
-AnnotationAssertion(dcterms:contributor oboInOwl:hasDbXref <https://orcid.org/0000-0002-7356-1779>)
-AnnotationAssertion(dcterms:created oboInOwl:hasDbXref "2024-03-18"^^xsd:date)
-AnnotationAssertion(rdfs:label oboInOwl:hasDbXref "database_cross_reference")
-AnnotationAssertion(rdfs:label oboInOwl:hasDbXref "has cross-reference")
-
-# Annotation Property: oboInOwl:hasExactSynonym (has exact synonym)
-
-AnnotationAssertion(obo:IAO_0000115 oboInOwl:hasExactSynonym "An alternative label for a class or property which has the exact same meaning than the preferred name/primary label.")
-AnnotationAssertion(obo:IAO_0000117 oboInOwl:hasExactSynonym <http://orcid.org/0000-0001-5208-3432>)
-AnnotationAssertion(obo:IAO_0000233 oboInOwl:hasExactSynonym "https://github.com/information-artifact-ontology/ontology-metadata/issues/20")
-AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has exact synonym"@en)
-AnnotationAssertion(rdfs:label oboInOwl:hasExactSynonym "has_exact_synonym")
-
-# Annotation Property: oboInOwl:hasRelatedSynonym (has_related_synonym)
-
-AnnotationAssertion(obo:IAO_0000115 oboInOwl:hasRelatedSynonym "An alternative label for a class or property that has been used synonymously with the primary term name, but the usage is not strictly correct.")
-AnnotationAssertion(obo:IAO_0000117 oboInOwl:hasRelatedSynonym <http://orcid.org/0000-0001-5208-3432>)
-AnnotationAssertion(obo:IAO_0000233 oboInOwl:hasRelatedSynonym "https://github.com/information-artifact-ontology/ontology-metadata/issues/21")
-AnnotationAssertion(rdfs:label oboInOwl:hasRelatedSynonym "has related synonym"@en)
-AnnotationAssertion(rdfs:label oboInOwl:hasRelatedSynonym "has_related_synonym")
 
 
 ############################
@@ -511,7 +453,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:BFO_0000062 "x is preceded by y if and o
 AnnotationAssertion(obo:IAO_0000116 obo:BFO_0000062 "An example is: translation preceded_by transcription; aging preceded_by development (not however death preceded_by aging). Where derives_from links classes of continuants, preceded_by links classes of processes. Clearly, however, these two relations are not independent of each other. Thus if cells of type C1 derive_from cells of type C, then any cell division involving an instance of C1 in a given lineage is preceded_by cellular processes involving an instance of C.    The assertion P preceded_by P1 tells us something about Ps in general: that is, it tells us something about what happened earlier, given what we know about what happened later. Thus it does not provide information pointing in the opposite direction, concerning instances of P1 in general; that is, that each is such as to be succeeded by some instance of P. Note that an assertion to the effect that P preceded_by P1 is rather weak; it tells us little about the relations between the underlying instances in virtue of which the preceded_by relation obtains. Typically we will be interested in stronger relations, for example in the relation immediately_preceded_by, or in relations which combine preceded_by with a condition to the effect that the corresponding instances of P and P1 share participants, or that their participants are connected by relations of derivation, or (as a first step along the road to a treatment of causality) that the one process in some way affects (for example, initiates or regulates) the other."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:BFO_0000062 "is preceded by"@en)
 AnnotationAssertion(obo:IAO_0000118 obo:BFO_0000062 "preceded_by"@en)
-AnnotationAssertion(dcterms:source obo:BFO_0000062 "http://www.obofoundry.org/ro/#OBO_REL:preceded_by")
 AnnotationAssertion(rdfs:label obo:BFO_0000062 "preceded by"@en)
 SubObjectPropertyOf(obo:BFO_0000062 obo:RO_0002086)
 InverseObjectProperties(obo:BFO_0000062 obo:BFO_0000063)
@@ -597,7 +538,6 @@ AnnotationAssertion(obo:IAO_0000112 obo:RO_0000057 "this process has participant
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0000057 "a relation between a process and a continuant, in which the continuant is somehow involved in the process"@en)
 AnnotationAssertion(obo:IAO_0000116 obo:RO_0000057 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time."@en)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0000057 "has_participant"@en)
-AnnotationAssertion(dcterms:source obo:RO_0000057 "http://www.obofoundry.org/ro/#OBO_REL:has_participant")
 AnnotationAssertion(rdfs:label obo:RO_0000057 "has participant"@en)
 ObjectPropertyDomain(obo:RO_0000057 obo:BFO_0000003)
 ObjectPropertyRange(obo:RO_0000057 obo:BFO_0000002)
@@ -925,7 +865,6 @@ AnnotationAssertion(obo:IAO_0000114 obo:RO_0002222 obo:IAO_0000125)
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0002222 <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(obo:IAO_0000119 obo:RO_0002222 <https://en.wikipedia.org/wiki/Allen%27s_interval_algebra>)
 AnnotationAssertion(obo:IAO_0000232 obo:RO_0002222 "Do not use this relation directly. It is ended as a grouping for relations between occurrents involving the relative timing of their starts and ends.")
-AnnotationAssertion(dcterms:source obo:RO_0002222 "https://docs.google.com/document/d/1kBv1ep_9g3sTR-SD3jqzFqhuwo9TPNF-l-9fUDbO6rM/edit?pli=1"^^xsd:anyURI)
 AnnotationAssertion(rdfs:comment obo:RO_0002222 "A relation that holds between two occurrents. This is a grouping relation that collects together all the Allen relations.")
 AnnotationAssertion(rdfs:label obo:RO_0002222 "temporally related to"@en)
 ObjectPropertyDomain(obo:RO_0002222 obo:BFO_0000003)
@@ -1029,14 +968,12 @@ SubObjectPropertyOf(obo:RO_0002263 obo:RO_0002264)
 
 AnnotationAssertion(obo:IAO_0000112 obo:RO_0002264 "A gene product that has some activity, where that activity may be a part of a pathway or upstream of the pathway.")
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0002264 "c acts upstream of or within p if c is enables f, and f is causally upstream of or within p. c is a material entity and p is an process.")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:RO_0002264 "affects")
 AnnotationAssertion(rdfs:label obo:RO_0002264 "acts upstream of or within")
 SubObjectPropertyOf(obo:RO_0002264 obo:RO_0002500)
 
 # Object Property: obo:RO_0002304 (causally upstream of, positive effect)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0002304 "p is causally upstream of, positive effect q iff p is casually upstream of q, and the execution of p is required for the execution of q.")
-AnnotationAssertion(dcterms:creator obo:RO_0002304 <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(rdfs:comment obo:RO_0002304 "holds between x and y if and only if x is causally upstream of y and the progression of x increases the frequency, rate or extent of y")
 AnnotationAssertion(rdfs:label obo:RO_0002304 "causally upstream of, positive effect")
 SubObjectPropertyOf(obo:RO_0002304 obo:RO_0002411)
@@ -1045,7 +982,6 @@ SubObjectPropertyOf(obo:RO_0002304 obo:RO_0004047)
 # Object Property: obo:RO_0002305 (causally upstream of, negative effect)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0002305 "p is causally upstream of, negative effect q iff p is casually upstream of q, and the execution of p decreases the execution of q.")
-AnnotationAssertion(dcterms:creator obo:RO_0002305 <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(rdfs:label obo:RO_0002305 "causally upstream of, negative effect")
 SubObjectPropertyOf(obo:RO_0002305 obo:RO_0002411)
 SubObjectPropertyOf(obo:RO_0002305 obo:RO_0004046)
@@ -1280,7 +1216,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:RO_0002418 "p is 'causally upstream or w
 AnnotationAssertion(obo:IAO_0000116 obo:RO_0002418 "We would like to make this disjoint with 'preceded by', but this is prohibited in OWL2")
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0002418 <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0002418 "influences (processual)")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:RO_0002418 "affects")
 AnnotationAssertion(rdfs:label obo:RO_0002418 "causally upstream of or within")
 SubObjectPropertyOf(obo:RO_0002418 obo:RO_0002501)
 InverseObjectProperties(obo:RO_0002418 obo:RO_0002427)
@@ -1334,7 +1269,6 @@ AnnotationAssertion(obo:IAO_0000112 obo:RO_0002432 "A protein that enables activ
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-6601-2165>) Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-7073-9172>) obo:IAO_0000115 obo:RO_0002432 "c executes activity in d if and only if c enables p and p occurs_in d.  Assuming no action at a distance by gene products, if a gene product enables (is capable of) a process that occurs in some structure, it must have at least some part in that structure.")
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0002432 <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0002432 "executes activity in")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0002432 "enables activity in")
 AnnotationAssertion(rdfs:label obo:RO_0002432 "is active in")
 SubObjectPropertyOf(obo:RO_0002432 obo:RO_0002131)
 SubObjectPropertyOf(obo:RO_0002432 obo:RO_0002328)
@@ -1346,7 +1280,6 @@ AnnotationAssertion(obo:IAO_0000116 obo:RO_0002434 "This relation and all sub-re
 AnnotationAssertion(obo:IAO_0000116 obo:RO_0002434 "Considering relabeling as 'pairwise interacts with'"^^xsd:anyURI)
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0002434 <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(obo:IAO_0000232 obo:RO_0002434 "Note that this relationship type, and sub-relationship types may be redundant with process terms from other ontologies. For example, the symbiotic relationship hierarchy parallels GO. The relations are provided as a convenient shortcut. Consider using the more expressive processual form to capture your data. In the future, these relations will be linked to their cognate processes through rules.")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0002434 "in pairwise interaction with")
 AnnotationAssertion(rdfs:label obo:RO_0002434 "interacts with")
 SymmetricObjectProperty(obo:RO_0002434)
 ObjectPropertyDomain(obo:RO_0002434 obo:BFO_0000040)
@@ -1377,7 +1310,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:RO_0002448 "The entity A, immediately up
 A and B can be physically interacting but not necessarily. Immediately upstream means there are no intermediate entity between A and B.")
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0002448 <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0002448 <https://orcid.org/0000-0003-4639-4431>)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0002448 "molecularly controls")
 AnnotationAssertion(rdfs:label obo:RO_0002448 "directly regulates activity of")
 SubObjectPropertyOf(obo:RO_0002448 obo:RO_0002436)
 SubObjectPropertyOf(obo:RO_0002448 obo:RO_0011002)
@@ -1391,7 +1323,6 @@ For example, A and B may be gene products and binding of B by A negatively regul
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0002449 <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0002449 <https://orcid.org/0000-0003-4639-4431>)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0002449 "directly inhibits")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0002449 "molecularly decreases activity of")
 AnnotationAssertion(rdfs:label obo:RO_0002449 "directly negatively regulates activity of")
 SubObjectPropertyOf(obo:RO_0002449 obo:RO_0002448)
 ObjectPropertyDomain(obo:RO_0002449 obo:BFO_0000040)
@@ -1404,7 +1335,6 @@ For example, A and B may be gene products and binding of B by A positively regul
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0002450 <https://orcid.org/0000-0002-6601-2165>)
 AnnotationAssertion(obo:IAO_0000117 obo:RO_0002450 <https://orcid.org/0000-0003-4639-4431>)
 AnnotationAssertion(obo:IAO_0000118 obo:RO_0002450 "directly activates")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0002450 "molecularly increases activity of")
 AnnotationAssertion(rdfs:label obo:RO_0002450 "directly positively regulates activity of")
 SubObjectPropertyOf(obo:RO_0002450 obo:RO_0002448)
 ObjectPropertyDomain(obo:RO_0002450 obo:BFO_0000040)
@@ -1645,11 +1575,6 @@ AnnotationAssertion(obo:IAO_0000112 obo:RO_0009501 "A drought sensitivity trait 
 AnnotationAssertion(obo:IAO_0000112 obo:RO_0009501 "An inflammatory disease that is realized in response to an inflammatory process occurring in the gut (which is itself the realization of a process realized in response to harmful stimuli in the mucosal lining of th gut)")
 AnnotationAssertion(obo:IAO_0000112 obo:RO_0009501 "Environmental polymorphism in butterflies: These butterflies have a 'responsivity to day length trait' that is realized in response to the duration of the day, and is realized in developmental processes that lead to increased or decreased pigmentation in the adult morph.")
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0009501 "r 'realized in response to' s iff, r is a realizable (e.g. a plant trait such as responsivity to drought), s is an environmental stimulus (a process), and s directly causes the realization of r.")
-AnnotationAssertion(dcterms:contributor obo:RO_0009501 <https://orcid.org/0000-0001-6996-0040>)
-AnnotationAssertion(dcterms:contributor obo:RO_0009501 <https://orcid.org/0000-0002-6601-2165>)
-AnnotationAssertion(dcterms:contributor obo:RO_0009501 <https://orcid.org/0000-0002-7073-9172>)
-AnnotationAssertion(dcterms:contributor obo:RO_0009501 <https://orcid.org/0000-0002-8461-9745>)
-AnnotationAssertion(Annotation(oboInOwl:hasDbXref <https://orcid.org/0000-0002-6601-2165>) oboInOwl:hasExactSynonym obo:RO_0009501 "triggered by process")
 AnnotationAssertion(rdfs:label obo:RO_0009501 "realized in response to"@en)
 SubObjectPropertyOf(obo:RO_0009501 obo:RO_0002410)
 ObjectPropertyDomain(obo:RO_0009501 obo:BFO_0000017)
@@ -1664,7 +1589,6 @@ AnnotationAssertion(obo:IAO_0000112 obo:RO_0010001 "The score of a symphony g-de
 AnnotationAssertion(obo:IAO_0000112 obo:RO_0010001 "This pdf file generically depends on this server.")
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0010001 "A generically dependent continuant *b* generically depends on an independent continuant *c* at time *t* means: there inheres in *c* a specifically deendent continuant which concretizes *b* at *t*.")
 AnnotationAssertion(obo:IAO_0000119 obo:RO_0010001 "[072-ISO]")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:RO_0010001 "g-depends on")
 AnnotationAssertion(rdfs:label obo:RO_0010001 "generically depends on")
 InverseObjectProperties(obo:RO_0010001 obo:RO_0010002)
 ObjectPropertyDomain(obo:RO_0010001 obo:BFO_0000031)
@@ -1709,15 +1633,11 @@ AnnotationAssertion(obo:IAO_0000112 obo:RO_0017001 "A diagnostic testing device 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0017001 "X device utilizes material Y means X and Y are material entities, and X is capable of some process P that has input Y.")
 AnnotationAssertion(obo:IAO_0000232 obo:RO_0017001 "A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input.")
 AnnotationAssertion(obo:IAO_0000232 obo:RO_0017001 "See github ticket https://github.com/oborel/obo-relations/issues/497")
-AnnotationAssertion(dcterms:contributor obo:RO_0017001 <https://orcid.org/0000-0001-9625-1899>)
-AnnotationAssertion(dcterms:contributor obo:RO_0017001 <https://orcid.org/0000-0003-2620-0345>)
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:RO_0017001 "utilizes")
 AnnotationAssertion(rdfs:label obo:RO_0017001 "device utilizes material"@en)
 
 # Object Property: obo:RO_0019000 (regulates characteristic)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0019000 "A relationship that holds between a process and a characteristic in which process (P) regulates characteristic (C) iff: P results in the existence of C OR affects the intensity or magnitude of C.")
-AnnotationAssertion(dcterms:contributor obo:RO_0019000 <https://orcid.org/0000-0002-8688-6599>)
 AnnotationAssertion(rdfs:label obo:RO_0019000 "regulates characteristic")
 SubObjectPropertyOf(obo:RO_0019000 obo:RO_0002410)
 ObjectPropertyDomain(obo:RO_0019000 obo:BFO_0000015)
@@ -1726,21 +1646,18 @@ ObjectPropertyRange(obo:RO_0019000 obo:PATO_0000001)
 # Object Property: obo:RO_0019001 (positively regulates characteristic)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0019001 "A relationship that holds between a process and a characteristic in which process (P) positively regulates characteristic (C) iff: P results in an increase in the intensity or magnitude of C.")
-AnnotationAssertion(dcterms:contributor obo:RO_0019001 <https://orcid.org/0000-0002-8688-6599>)
 AnnotationAssertion(rdfs:label obo:RO_0019001 "positively regulates characteristic")
 SubObjectPropertyOf(obo:RO_0019001 obo:RO_0019000)
 
 # Object Property: obo:RO_0019002 (negatively regulates characteristic)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0019002 "A relationship that holds between a process and a characteristic in which process (P) negatively regulates characteristic (C) iff: P results in a decrease in the intensity or magnitude of C.")
-AnnotationAssertion(dcterms:contributor obo:RO_0019002 <https://orcid.org/0000-0002-8688-6599>)
 AnnotationAssertion(rdfs:label obo:RO_0019002 "negatively regulates characteristic")
 SubObjectPropertyOf(obo:RO_0019002 obo:RO_0019000)
 
 # Object Property: obo:RO_0020105 (is anatomical entity)
 
 AnnotationAssertion(obo:IAO_0000115 obo:RO_0020105 "This property only applies to anatomical entities.")
-AnnotationAssertion(dcterms:contributor obo:RO_0020105 <https://orcid.org/0000-0001-6677-8489>)
 AnnotationAssertion(rdfs:label obo:RO_0020105 "is anatomical entity")
 ObjectPropertyDomain(obo:RO_0020105 obo:UBERON_0001062)
 
@@ -1845,16 +1762,10 @@ AnnotationAssertion(obo:IAO_0000116 obo:COB_0000022 "Includes virus - we will la
 AnnotationAssertion(rdfs:label obo:COB_0000022 "organism"@en)
 SubClassOf(obo:COB_0000022 obo:UBERON_0000465)
 
-# Class: obo:COB_0000035 (completely executed planned process)
-
-AnnotationAssertion(rdfs:label obo:COB_0000035 "completely executed planned process"@en)
-SubClassOf(obo:COB_0000035 obo:BFO_0000015)
-
 # Class: obo:GO_0003674 (molecular_function)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:pdt") obo:IAO_0000115 obo:GO_0003674 "A molecular process that can be carried out by the action of a single macromolecular machine, usually via direct physical interactions with other molecular entities. Function in this sense denotes an action, or activity, that a gene product (or a complex) performs.")
 AnnotationAssertion(obo:IAO_0000116 obo:GO_0003674 "This is the same as GO molecular function"@en)
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0003674 "molecular function")
 AnnotationAssertion(rdfs:comment obo:GO_0003674 "Note that, in addition to forming the root of the molecular function ontology, this term is recommended for the annotation of gene products whose molecular function is unknown. When this term is used for annotation, it indicates that no information was available about the molecular function of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this. Despite its name, this is not a type of 'function' in the sense typically defined by upper ontologies such as Basic Formal Ontology (BFO). It is instead a BFO:process carried out by a single gene product or complex.")
 AnnotationAssertion(rdfs:label obo:GO_0003674 "gene product or complex activity"@en)
 AnnotationAssertion(rdfs:label obo:GO_0003674 "molecular_function")
@@ -1864,10 +1775,6 @@ SubClassOf(obo:GO_0003674 obo:BFO_0000015)
 
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "GOC:pdt") obo:IAO_0000115 obo:GO_0008150 "A biological process is the execution of a genetically-encoded biological module or program. It consists of all the steps required to achieve the specific biological objective of the module. A biological process is accomplished by a particular set of molecular functions carried out by specific gene products (or macromolecular complexes), often in a highly regulated manner and in a particular temporal sequence.")
 AnnotationAssertion(oboInOwl:hasDbXref obo:GO_0008150 "Wikipedia:Biological_process")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0008150 "biological process")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0008150 "physiological process")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:GO_0008150 "single organism process")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:GO_0008150 "single-organism process")
 AnnotationAssertion(rdfs:comment obo:GO_0008150 "Note that, in addition to forming the root of the biological process ontology, this term is recommended for the annotation of gene products whose biological process is unknown. When this term is used for annotation, it indicates that no information was available about the biological process of the gene product annotated as of the date the annotation was made; the evidence code 'no data' (ND), is used to indicate this.")
 AnnotationAssertion(rdfs:label obo:GO_0008150 "biological process"@en)
 AnnotationAssertion(rdfs:label obo:GO_0008150 "biological_process")
@@ -1878,7 +1785,6 @@ SubClassOf(obo:GO_0008150 obo:BFO_0000015)
 AnnotationAssertion(Annotation(oboInOwl:hasDbXref "ISBN:0198506732") obo:IAO_0000115 obo:GO_0016301 "Catalysis of the transfer of a phosphate group, usually from ATP, to a substrate molecule.")
 AnnotationAssertion(Annotation(rdfs:label "FN3KRP phosphorylates PsiAm, RibAm") oboInOwl:hasDbXref obo:GO_0016301 "Reactome:R-HSA-6788855")
 AnnotationAssertion(Annotation(rdfs:label "FN3K phosphorylates ketosamines") oboInOwl:hasDbXref obo:GO_0016301 "Reactome:R-HSA-6788867")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:GO_0016301 "phosphokinase activity")
 AnnotationAssertion(rdfs:comment obo:GO_0016301 "Note that this term encompasses all activities that transfer a single phosphate group; although ATP is by far the most common phosphate donor, reactions using other phosphate donors are included in this term.")
 AnnotationAssertion(rdfs:label obo:GO_0016301 "kinase activity")
 SubClassOf(obo:GO_0016301 obo:GO_0003674)
@@ -1958,7 +1864,6 @@ SubClassOf(obo:UBERON_0001062 obo:BFO_0000004)
 
 # Individual: obo:ENVO_01001569 (Western Australian Mulga Shrublands Ecoregion)
 
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:ENVO_01001569 "Western Australia Ecoregion")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001569 "WWF:AA1310")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001569 "https://www.worldwildlife.org/ecoregions/aa1310")
 AnnotationAssertion(rdfs:label obo:ENVO_01001569 "Western Australian Mulga Shrublands Ecoregion"@en)
@@ -1971,7 +1876,6 @@ AnnotationAssertion(rdfs:label obo:ENVO_01001571 "Australasia Ecoregion"@en)
 
 # Individual: obo:ENVO_01001572 (Tirari-Sturt Stony Desert Ecoregion)
 
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:ENVO_01001572 "Southern central Australia Ecoregion"@en)
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001572 "WWF:AA1309")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001572 "https://www.worldwildlife.org/ecoregions/aa1309")
 AnnotationAssertion(rdfs:label obo:ENVO_01001572 "Tirari-Sturt Stony Desert Ecoregion")
@@ -1979,7 +1883,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001572 obo:ENVO_01001571)
 
 # Individual: obo:ENVO_01001573 (Simpson Desert Region)
 
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:ENVO_01001573 "Eastern central Australia Ecoregion")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001573 "WWF:AA1308")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001573 "https://www.worldwildlife.org/ecoregions/aa1308")
 AnnotationAssertion(rdfs:label obo:ENVO_01001573 "Simpson Desert Region"@en)
@@ -1987,7 +1890,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001573 obo:ENVO_01001571)
 
 # Individual: obo:ENVO_01001574 (Pilbara Shrublands Ecoregion)
 
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:ENVO_01001574 "Western Australia Ecoregion")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001574 "WWF:AA1307")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001574 "https://www.worldwildlife.org/ecoregions/aa1307")
 AnnotationAssertion(rdfs:label obo:ENVO_01001574 "Pilbara Shrublands Ecoregion"@en)
@@ -1995,7 +1897,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001574 obo:ENVO_01001571)
 
 # Individual: obo:ENVO_01001575 (Carnarvon Xeric Shrublands Ecoregion)
 
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:ENVO_01001575 "Western coast of Australia Ecoregion")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001575 "WWF:AA1301")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001575 "https://www.worldwildlife.org/ecoregions/aa1301")
 AnnotationAssertion(rdfs:label obo:ENVO_01001575 "Carnarvon Xeric Shrublands Ecoregion"@en)
@@ -2003,7 +1904,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001575 obo:ENVO_01001571)
 
 # Individual: obo:ENVO_01001576 (Central Ranges Xeric Shrub Ecoregion)
 
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:ENVO_01001576 "Central Australia Ecoregion")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001576 "WWF:AA1302")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001576 "https://www.worldwildlife.org/ecoregions/aa1302")
 AnnotationAssertion(rdfs:label obo:ENVO_01001576 "Central Ranges Xeric Shrub Ecoregion"@en)
@@ -2011,7 +1911,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001576 obo:ENVO_01001571)
 
 # Individual: obo:ENVO_01001577 (Gibson Desert Ecoregion)
 
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:ENVO_01001577 "Western central Australia")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001577 "WWF:AA1303")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001577 "https://www.worldwildlife.org/ecoregions/aa1303")
 AnnotationAssertion(rdfs:label obo:ENVO_01001577 "Gibson Desert Ecoregion"@en)
@@ -2019,7 +1918,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001577 obo:ENVO_01001571)
 
 # Individual: obo:ENVO_01001578 (The Great Sandy-Tanami Desert Ecoregion)
 
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:ENVO_01001578 "Northwestern Australia")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001578 "WWF:AA1304")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001578 "https://www.worldwildlife.org/ecoregions/aa1304")
 AnnotationAssertion(rdfs:label obo:ENVO_01001578 "The Great Sandy-Tanami Desert Ecoregion"@en)
@@ -2027,7 +1925,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001578 obo:ENVO_01001571)
 
 # Individual: obo:ENVO_01001579 (Great Victoria Desert Ecoregion)
 
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:ENVO_01001579 "Southern Australia Ecoregion")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001579 "WWF:AA1305")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001579 "https://www.worldwildlife.org/ecoregions/aa1305")
 AnnotationAssertion(rdfs:label obo:ENVO_01001579 "Great Victoria Desert Ecoregion"@en)
@@ -2035,7 +1932,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001579 obo:ENVO_01001571)
 
 # Individual: obo:ENVO_01001580 (Nullarbor Plains Xeric Shrubland Ecoregion)
 
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:ENVO_01001580 "Southern Australia Ecoregion")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001580 "WWF:AA1306")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001580 "https://www.worldwildlife.org/ecoregions/aa1306")
 AnnotationAssertion(rdfs:label obo:ENVO_01001580 "Nullarbor Plains Xeric Shrubland Ecoregion"@en)
@@ -2048,7 +1944,6 @@ AnnotationAssertion(rdfs:label obo:ENVO_01001583 "Afrotropical Ecoregion"@en)
 
 # Individual: obo:ENVO_01001584 (Succulent Karoo Ecoregion)
 
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:ENVO_01001584 "Southern Africa: Southern Namibia into South Africa")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001584 "WWF:AT1322")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001584 "https://www.worldwildlife.org/ecoregions/at1322")
 AnnotationAssertion(rdfs:label obo:ENVO_01001584 "Succulent Karoo Ecoregion"@en)
@@ -2058,7 +1953,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001584 obo:ENVO_01001583)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001585 "WWF:AT1321")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001585 "https://www.worldwildlife.org/ecoregions/at1321")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:ENVO_01001585 "Arabian Peninsula: Yemen and Saudi Arabia")
 AnnotationAssertion(rdfs:label obo:ENVO_01001585 "Yemen and Saudi Arabia Ecoregion"@en)
 ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001585 obo:ENVO_01001583)
 
@@ -2066,7 +1960,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001585 obo:ENVO_01001583)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001586 "WWF:AT1320")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001586 "https://www.worldwildlife.org/ecoregions/at1320")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:ENVO_01001586 "Arabian Peninsula: Yemen, Saudi Arabia, and Oman")
 AnnotationAssertion(rdfs:label obo:ENVO_01001586 "Yemen, Saudi Arabia, and Oman Ecoregion"@en)
 ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001586 obo:ENVO_01001583)
 
@@ -2074,13 +1967,11 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001586 obo:ENVO_01001583)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001587 "WWF:AT1319")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001587 "https://www.worldwildlife.org/ecoregions/at1319")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:ENVO_01001587 "Somali montane xeric woodlands ecoregion")
 AnnotationAssertion(rdfs:label obo:ENVO_01001587 "Somali Montane Xeric Woodland Ecoregion"@en)
 ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001587 obo:ENVO_01001583)
 
 # Individual: obo:ENVO_01001588 (Socotran Archipelago Ecoregion)
 
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:ENVO_01001588 "Islands east of the Horn of Africa and south of Yemen Ecoregion")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001588 "WWF:AT1318")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001588 "https://www.worldwildlife.org/ecoregions/at1318")
 AnnotationAssertion(rdfs:label obo:ENVO_01001588 "Socotran Archipelago Ecoregion"@en)
@@ -2102,7 +1993,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001590 obo:ENVO_01001583)
 
 # Individual: obo:ENVO_01001591 (Namib Desert Ecoregion)
 
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:ENVO_01001591 "Africa: Namibia Ecoregion")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001591 "WWF:AT1315")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001591 "https://www.worldwildlife.org/ecoregions/at1315")
 AnnotationAssertion(rdfs:label obo:ENVO_01001591 "Namib Desert Ecoregion"@en)
@@ -2133,7 +2023,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001594 obo:ENVO_01001583)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001595 "WWF:AT1311")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001595 "https://www.worldwildlife.org/ecoregions/at1311")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:ENVO_01001595 "Madagascar spiny desert ecoregion")
 AnnotationAssertion(rdfs:label obo:ENVO_01001595 "Madagascar Spiny Thickets Ecoregion"@en)
 ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001595 obo:ENVO_01001583)
 
@@ -2141,7 +2030,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001595 obo:ENVO_01001583)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001596 "WWF:AT1310")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001596 "https://www.worldwildlife.org/ecoregions/at1310")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:ENVO_01001596 "Africa: Coastal Namibia and Angola Ecoregion")
 AnnotationAssertion(rdfs:label obo:ENVO_01001596 "Kaokoveld Desert Ecoregion"@en)
 ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001596 obo:ENVO_01001583)
 
@@ -2156,13 +2044,11 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001597 obo:ENVO_01001583)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001598 "WWF:AT1308")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001598 "https://www.worldwildlife.org/ecoregions/at1308")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:ENVO_01001598 "Southern Africa: Islands about half-way between southern Madagascar and southern Mozambique Ecoregion")
 AnnotationAssertion(rdfs:label obo:ENVO_01001598 "Ile Europa and Bassas da India Ecoregion"@en)
 ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001598 obo:ENVO_01001583)
 
 # Individual: obo:ENVO_01001599 (Hobyo Grassland and Shrubland Ecoregion)
 
-AnnotationAssertion(oboInOwl:hasBroadSynonym obo:ENVO_01001599 "Eastern Africa: Somalia")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001599 "WWF:AT1307")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001599 "https://www.worldwildlife.org/ecoregions/at1307")
 AnnotationAssertion(rdfs:label obo:ENVO_01001599 "Hobyo Grassland and Shrubland Ecoregion"@en)
@@ -2172,7 +2058,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001599 obo:ENVO_01001583)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001600 "WWF:AT1306")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001600 "https://www.worldwildlife.org/ecoregions/at1306")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:ENVO_01001600 "Arabian Peninsula: Oman and United Arab Emirates Ecoregion")
 AnnotationAssertion(rdfs:label obo:ENVO_01001600 "Oman and United Arab Emirates Ecoregion"@en)
 ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001600 obo:ENVO_01001583)
 
@@ -2194,7 +2079,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001602 obo:ENVO_01001583)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001603 "WWF:AT1303")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001603 "https://www.worldwildlife.org/ecoregions/at1303")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:ENVO_01001603 "North central Africa: Eastern Chad and small area of western Sudan")
 AnnotationAssertion(rdfs:label obo:ENVO_01001603 "East Saharan Montane Xeric Woodland Ecoregion"@en)
 ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001603 obo:ENVO_01001583)
 
@@ -2202,7 +2086,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001603 obo:ENVO_01001583)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001604 "WWF:AT1302")
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001604 "https://www.worldwildlife.org/ecoregions/at1302")
-AnnotationAssertion(oboInOwl:hasExactSynonym obo:ENVO_01001604 "Western Asia: Oman, Yemen, and Saudi Arabia Ecoregion")
 AnnotationAssertion(rdfs:label obo:ENVO_01001604 "Oman, Yemen, and Saudi Arabia Ecoregion"@en)
 ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001604 obo:ENVO_01001583)
 
@@ -2222,7 +2105,6 @@ AnnotationAssertion(rdfs:label obo:ENVO_01001626 "Indo-Malay Ecoregion"@en)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001627 <https://www.worldwildlife.org/ecoregions/im1304>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001627 "WWF:IM1304")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:ENVO_01001627 "Southern Asia: Western India into Pakistan")
 AnnotationAssertion(rdfs:label obo:ENVO_01001627 "Thar Desert"@en)
 ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001627 obo:ENVO_01001626)
 
@@ -2230,7 +2112,6 @@ ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001627 obo:ENVO_01001626)
 
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001628 <https://www.worldwildlife.org/ecoregions/im1303>)
 AnnotationAssertion(oboInOwl:hasDbXref obo:ENVO_01001628 "WWF:IM1303")
-AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:ENVO_01001628 "Southern Asia: Eastern India and western Pakistan")
 AnnotationAssertion(rdfs:label obo:ENVO_01001628 "Northwestern Thorn Scrub Forests"@en)
 ObjectPropertyAssertion(obo:BFO_0000050 obo:ENVO_01001628 obo:ENVO_01001626)
 
@@ -2301,16 +2182,6 @@ AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000428 "Alan Ruttenberg"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000428 "group:OBI"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000428 "requires discussion"@en)
 ClassAssertion(obo:IAO_0000078 obo:IAO_0000428)
-
-# Individual: <https://orcid.org/0000-0003-1834-3856> (Mathias Brochhausen)
-
-AnnotationAssertion(Annotation(dcterms:source <http://www.wikidata.org/entity/Q57161944>) dcterms:description <https://orcid.org/0000-0003-1834-3856> "researcher")
-AnnotationAssertion(Annotation(dcterms:source <http://www.wikidata.org/entity/Q57161944>) rdfs:label <https://orcid.org/0000-0003-1834-3856> "Mathias Brochhausen")
-
-# Individual: <https://orcid.org/0000-0003-1909-9269> (S. Clint Dowland)
-
-AnnotationAssertion(Annotation(dcterms:source <http://www.wikidata.org/entity/Q123250399>) dcterms:description <https://orcid.org/0000-0003-1909-9269> "Researcher ORCID=0000-0003-1909-9269")
-AnnotationAssertion(Annotation(dcterms:source <http://www.wikidata.org/entity/Q123250399>) rdfs:label <https://orcid.org/0000-0003-1909-9269> "S. Clint Dowland")
 
 
 SubClassOf(ObjectSomeValuesFrom(obo:RO_0002566 obo:BFO_0000040) ObjectUnionOf(ObjectSomeValuesFrom(obo:RO_0000056 ObjectSomeValuesFrom(obo:RO_0002418 obo:BFO_0000015)) ObjectSomeValuesFrom(obo:RO_0002215 ObjectSomeValuesFrom(obo:RO_0000056 ObjectSomeValuesFrom(obo:RO_0002418 obo:BFO_0000015)))))

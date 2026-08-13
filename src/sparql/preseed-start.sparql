@@ -1,0 +1,22 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+
+SELECT * WHERE {
+{
+  SELECT DISTINCT ?term ?p ("P" as ?direction)
+  WHERE { 
+    ?s1 ?p ?term . 
+    FILTER(?p!=rdf:type) .
+    FILTER(isIRI(?term))
+  }
+}
+UNION 
+{
+  SELECT DISTINCT ?term ?p ("S" as ?direction)
+  WHERE { 
+    ?term ?p ?o2 .
+    FILTER(?o2!=owl:Ontology) .
+    FILTER(isIRI(?term))
+  }
+}
+}

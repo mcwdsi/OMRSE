@@ -12,8 +12,8 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/geo_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-07-08/imports/geo_import.owl>
-Annotation(owl:versionInfo "2026-07-08")
+<http://purl.obolibrary.org/obo/omrse/releases/2026-08-13/imports/geo_import.owl>
+Annotation(owl:versionInfo "2026-08-13")
 
 Declaration(Class(obo:GEO_000000400))
 Declaration(AnnotationProperty(obo:IAO_0000115))

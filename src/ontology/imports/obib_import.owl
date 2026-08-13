@@ -12,9 +12,9 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/obib_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-07-08/imports/obib_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2026-08-13/imports/obib_import.owl>
 Annotation(zdc:source <http://purl.obolibrary.org/obo/obib/2023-04-05/obib.owl>)
-Annotation(owl:versionInfo "2026-07-08")
+Annotation(owl:versionInfo "2026-08-13")
 
 Declaration(Class(obo:BFO_0000015))
 Declaration(Class(obo:BFO_0000016))
@@ -145,7 +145,6 @@ AnnotationAssertion(rdfs:label obo:BFO_0000067 "contains process"@en)
 
 AnnotationAssertion(obo:IAO_0000117 obo:OBIB_0000732 "Mathias Brochhausen")
 AnnotationAssertion(obo:IAO_0000600 obo:OBIB_0000732 "This is a primitive relation. This relation is the foundation to the owners right to have the owned entity at his/her full disposal."@en)
-AnnotationAssertion(zdc:source obo:OBIB_0000732 "Reinach, A. Sämtliche Werke. Texkritische Ausgabe, München: Philosophia Verlag, 1989, p.189-204.")
 AnnotationAssertion(rdfs:label obo:OBIB_0000732 "owns"@en)
 SubObjectPropertyOf(obo:OBIB_0000732 owl:topObjectProperty)
 InverseObjectProperties(obo:OBIB_0000732 obo:OBIB_0000735)

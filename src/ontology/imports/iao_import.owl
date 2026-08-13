@@ -12,12 +12,11 @@ Prefix(oboInOwl:=<http://www.geneontology.org/formats/oboInOwl#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/omrse/imports/iao_import.owl>
-<http://purl.obolibrary.org/obo/omrse/releases/2026-07-08/imports/iao_import.owl>
+<http://purl.obolibrary.org/obo/omrse/releases/2026-08-13/imports/iao_import.owl>
 Annotation(zdc:source <http://purl.obolibrary.org/obo/iao/2026-03-30/iao.owl>)
-Annotation(owl:versionInfo "2026-07-08")
+Annotation(owl:versionInfo "2026-08-13")
 
 Declaration(Class(obo:BFO_0000031))
-Declaration(Class(obo:COB_0000035))
 Declaration(Class(obo:IAO_0000001))
 Declaration(Class(obo:IAO_0000005))
 Declaration(Class(obo:IAO_0000007))
@@ -43,7 +42,6 @@ Declaration(AnnotationProperty(obo:IAO_0000118))
 Declaration(AnnotationProperty(obo:IAO_0000119))
 Declaration(AnnotationProperty(obo:IAO_0000231))
 Declaration(AnnotationProperty(obo:IAO_0000232))
-Declaration(AnnotationProperty(obo:IAO_0000233))
 Declaration(AnnotationProperty(obo:IAO_0000412))
 Declaration(AnnotationProperty(obo:IAO_0000600))
 Declaration(AnnotationProperty(obo:IAO_0100001))
@@ -154,16 +152,6 @@ AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000232 "curator note"@en)
 AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000232 "An administrative note of use for a curator but of no use for a user"@en)
 AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000232 "PERSON:Alan Ruttenberg"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000232 "curator note"@en)
-
-# Annotation Property: obo:IAO_0000233 (term tracker item)
-
-AnnotationAssertion(obo:IAO_0000111 obo:IAO_0000233 "term tracker item"@en)
-AnnotationAssertion(obo:IAO_0000112 obo:IAO_0000233 "the URL for an ontology term tracker issue, such as https://github.com/monarch-initiative/mondo/issues/7588"@en)
-AnnotationAssertion(obo:IAO_0000115 obo:IAO_0000233 "A URL for a request or discussion of an ontology term."@en)
-AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000233 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
-AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000233 "Person: Jie Zheng, Chris Stoeckert, Alan Ruttenberg"@en)
-AnnotationAssertion(rdfs:comment obo:IAO_0000233 "The 'tracker item' can associate a tracker with a specific ontology term."@en)
-AnnotationAssertion(rdfs:label obo:IAO_0000233 "term tracker item"@en)
 
 # Annotation Property: obo:IAO_0000412 (imported from)
 
@@ -396,7 +384,6 @@ AnnotationAssertion(obo:IAO_0000116 obo:IAO_0000572 "6/11/9: Edited at OBI works
 AnnotationAssertion(obo:IAO_0000117 obo:IAO_0000572 "Bjoern Peters"@en)
 AnnotationAssertion(obo:IAO_0000119 obo:IAO_0000572 "wikipedia http://en.wikipedia.org/wiki/Documenting"@en)
 AnnotationAssertion(rdfs:label obo:IAO_0000572 "documenting"@en)
-SubClassOf(obo:IAO_0000572 obo:COB_0000035)
 
 # Class: obo:IAO_0000578 (centrally registered identifier)
 
