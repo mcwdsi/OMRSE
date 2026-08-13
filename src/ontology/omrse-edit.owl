@@ -511,7 +511,11 @@ Declaration(AnnotationProperty(obo:OMRSE_00002027))
 Declaration(AnnotationProperty(obo:OMRSE_00002028))
 Declaration(AnnotationProperty(zdc:contributor))
 Declaration(AnnotationProperty(zdc:date))
+Declaration(AnnotationProperty(dcterms:creator))
+Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
+Declaration(AnnotationProperty(dcterms:source))
+Declaration(AnnotationProperty(dcterms:title))
 ############################
 #   Annotation Properties
 ############################
@@ -4470,7 +4474,7 @@ ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-1834-3856> "Mathias Brochhausen"@en)
 ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0003-1834-3856>)
 
-# Individual: <https://orcid.org/0000-0003-1909-9269> (S. Clint Dowland)
+# Individual: <https://orcid.org/0000-0003-1909-9269> (<https://orcid.org/0000-0003-1909-9269>)
 
 ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0003-1909-9269>)
 
