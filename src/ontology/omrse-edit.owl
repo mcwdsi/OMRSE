@@ -4129,7 +4129,7 @@ SubClassOf(obo:OOSTT_00000077 obo:OMRSE_00000300)
 
 # Class: obo:OOSTT_00000090 (orthopedic surgeon role)
 
-AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000090 "A surgeon role borne by a human being and, that, if realized, is realized by its bearer using operative manual or instrumental techniques on the musculoskeletal system of a patient to investigate or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair unwanted ruptured areas."@en)
+AnnotationAssertion(obo:IAO_0000115 obo:OOSTT_00000090 "A surgeon role that, if realized, is realized by its bearer performing surgery on the structures of the appendicular musculoskeletal system or spine."@en)
 AnnotationAssertion(obo:IAO_0000117 obo:OOSTT_00000090 "Mathias Brochhausen"@en)
 AnnotationAssertion(obo:OOSTT_00000030 obo:OOSTT_00000090 "A surgeon who specializes in performing operative manual and instrumental techniques on the musculoskeletal system of a patient to investigate or treat a pathological condition such as disease or injury, to help improve bodily function or appearance or to repair ruptured areas."@en)
 AnnotationAssertion(rdfs:comment obo:OOSTT_00000090 "term requested in OMRSE. Do not use outside the CAFE application!"@en)
@@ -4456,7 +4456,7 @@ ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(rdfs:label <https://orcid.org/0000-0003-1834-3856> "Mathias Brochhausen"@en)
 ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0003-1834-3856>)
 
-# Individual: <https://orcid.org/0000-0003-1909-9269> (<https://orcid.org/0000-0003-1909-9269>)
+# Individual: <https://orcid.org/0000-0003-1909-9269> (S. Clint Dowland)
 
 ClassAssertion(obo:NCBITaxon_9606 <https://orcid.org/0000-0003-1909-9269>)
 
