@@ -27,6 +27,8 @@ Agenda: https://docs.google.com/document/d/1UUD-53SaioJO7btrs8ie3yjFYJIF6HV3RUU3
 
 ## Projects and ontologies that use OMRSE
 
+[The APRICOT Project - part of the Human Behaviour Change Project](https://humanbehaviourchange.org)
+
 [Apollo Structured Vocabulary](https://github.com/ApolloDev)
 
 [OBIB](https://github.com/biobanking/biobanking): Ontology for Biobanking
