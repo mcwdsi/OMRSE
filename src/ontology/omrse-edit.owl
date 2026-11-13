@@ -355,6 +355,7 @@ Declaration(Class(obo:OMRSE_00000308))
 Declaration(Class(obo:OMRSE_00000309))
 Declaration(Class(obo:OMRSE_00000310))
 Declaration(Class(obo:OMRSE_00000311))
+Declaration(Class(obo:OMRSE_00000312))
 Declaration(Class(obo:OMRSE_00000500))
 Declaration(Class(obo:OMRSE_00000501))
 Declaration(Class(obo:OMRSE_00000502))
@@ -3444,6 +3445,16 @@ AnnotationAssertion(oboInOwl:hasExactSynonym obo:OMRSE_00000311 "individual huma
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:OMRSE_00000311 "individual income data item"@en)
 AnnotationAssertion(rdfs:label obo:OMRSE_00000311 "individual person income data item"@en)
 SubClassOf(obo:OMRSE_00000311 obo:OMRSE_00002061)
+
+# Class: obo:OMRSE_00000312 (psychiatrist role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000312 "A physician role realized by the evaluation and treatment of mental, addictive, and emotional disorders."@en)
+AnnotationAssertion(dcterms:contributor obo:OMRSE_00000312 <https://orcid.org/0000-0001-6378-1703>)
+AnnotationAssertion(dcterms:contributor obo:OMRSE_00000312 <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:created obo:OMRSE_00000312 "2026-11-13T17:14:16Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator obo:OMRSE_00000312 "renuka")
+AnnotationAssertion(rdfs:label obo:OMRSE_00000312 "psychiatrist role"@en)
+SubClassOf(obo:OMRSE_00000312 obo:OMRSE_00000013)
 
 # Class: obo:OMRSE_00000500 (job role data item)
 
