@@ -3449,6 +3449,7 @@ SubClassOf(obo:OMRSE_00000311 obo:OMRSE_00002061)
 # Class: obo:OMRSE_00000312 (psychiatrist role)
 
 AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000312 "A physician role realized by the evaluation and treatment of mental, addictive, and emotional disorders."@en)
+AnnotationAssertion(obo:IAO_0000233 obo:OMRSE_00000312 <https://github.com/mcwdsi/OMRSE/issues/348>)
 AnnotationAssertion(dcterms:contributor obo:OMRSE_00000312 <https://orcid.org/0000-0001-6378-1703>)
 AnnotationAssertion(dcterms:contributor obo:OMRSE_00000312 <https://orcid.org/0000-0002-9881-1017>)
 AnnotationAssertion(dcterms:created obo:OMRSE_00000312 "2026-11-13T17:14:16Z"^^xsd:dateTime)
