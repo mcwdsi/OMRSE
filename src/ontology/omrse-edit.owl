@@ -356,6 +356,7 @@ Declaration(Class(obo:OMRSE_00000309))
 Declaration(Class(obo:OMRSE_00000310))
 Declaration(Class(obo:OMRSE_00000311))
 Declaration(Class(obo:OMRSE_00000312))
+Declaration(Class(obo:OMRSE_00000313))
 Declaration(Class(obo:OMRSE_00000500))
 Declaration(Class(obo:OMRSE_00000501))
 Declaration(Class(obo:OMRSE_00000502))
@@ -3456,6 +3457,17 @@ AnnotationAssertion(dcterms:created obo:OMRSE_00000312 "2026-11-13T17:14:16Z"^^x
 AnnotationAssertion(dcterms:creator obo:OMRSE_00000312 "renuka")
 AnnotationAssertion(rdfs:label obo:OMRSE_00000312 "psychiatrist role"@en)
 SubClassOf(obo:OMRSE_00000312 obo:OMRSE_00000013)
+
+# Class: obo:OMRSE_00000313 (vascular surgeon role)
+
+AnnotationAssertion(obo:IAO_0000115 obo:OMRSE_00000313 "A surgeon role that, if realized, is realized by its bearer performing surgery on the structures of the arterial, venous and lymphatic systems, excluding vessels of the brain and the heart."@en)
+AnnotationAssertion(obo:IAO_0000233 obo:OMRSE_00000313 <https://github.com/mcwdsi/OMRSE/issues/352>)
+AnnotationAssertion(dcterms:contributor obo:OMRSE_00000313 <https://orcid.org/0000-0001-6378-1703>)
+AnnotationAssertion(dcterms:contributor obo:OMRSE_00000313 <https://orcid.org/0000-0002-9881-1017>)
+AnnotationAssertion(dcterms:created obo:OMRSE_00000313 "2026-11-20T16:12:40Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:creator obo:OMRSE_00000313 "renuka")
+AnnotationAssertion(rdfs:label obo:OMRSE_00000313 "vascular surgeon role"@en)
+SubClassOf(obo:OMRSE_00000313 obo:OMRSE_00000139)
 
 # Class: obo:OMRSE_00000500 (job role data item)
 
